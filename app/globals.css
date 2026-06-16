@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  background-color: #0a0a0a;
+  color: #e5e7eb;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Glassmorphism reutilizável */
+@layer components {
+  .glass {
+    @apply border border-white/10 bg-white/[0.04] backdrop-blur-xl;
+  }
+  .glass-card {
+    @apply rounded-2xl border border-white/10 bg-brand-card/70 backdrop-blur-xl;
+  }
+  .gradient-text {
+    @apply bg-gradient-to-r from-brand-primary to-brand-secondary bg-clip-text text-transparent;
+  }
+  .btn-primary {
+    @apply rounded-xl bg-gradient-to-r from-brand-primary to-brand-secondary px-6 py-3 font-semibold text-black transition-all hover:shadow-glow disabled:opacity-50;
+  }
+}
+
+/* Brilho de fundo radial atrás do herói */
+.aurora {
+  background:
+    radial-gradient(40% 50% at 20% 10%, rgba(0, 229, 255, 0.18), transparent 60%),
+    radial-gradient(40% 50% at 85% 15%, rgba(123, 47, 255, 0.22), transparent 60%);
+}
+
+/* Scrollbar discreta */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 229, 255, 0.4);
+}
