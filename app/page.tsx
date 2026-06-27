@@ -171,7 +171,22 @@ export default function Home({
           <h2 className="mb-10 text-center text-3xl font-bold">
             Ferramentas <span className="gradient-text">inteligentes</span>
           </h2>
-          <div className="grid gap-5 md:grid-cols-3">
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            <Link
+              href="/catalogo"
+              className="glass-card group flex items-start gap-4 p-6 transition hover:shadow-glow"
+            >
+              <span className="text-4xl">📂</span>
+              <span>
+                <span className="flex items-center gap-2 text-lg font-semibold text-white">
+                  Catálogo de produtos
+                  <span className="text-brand-primary transition group-hover:translate-x-1">→</span>
+                </span>
+                <span className="mt-1 block text-sm text-gray-400">
+                  Escolha de uma lista por categoria e compare, sem digitar.
+                </span>
+              </span>
+            </Link>
             <Link
               href="/montar"
               className="glass-card group flex items-start gap-4 p-6 transition hover:shadow-glow"
