@@ -3,6 +3,7 @@ import { NextResponse } from "next/server";
 import { createClient } from "@/lib/supabase/server";
 import { getUserPlan, countUsageToday, recordUsage } from "@/lib/usage";
 import { freeDailyLimit, todayBR, type Plan } from "@/lib/plans";
+import { isAdminEmail } from "@/lib/admin";
 
 const COOKIE = "hwai_usage";
 
@@ -23,6 +24,7 @@ export async function resolveLimit(): Promise<LimitContext> {
   const supabase = createClient();
   let userId: string | null = null;
   let plano: Plan = "free";
+  let isAdmin = false;
 
   if (supabase) {
     const {
@@ -31,6 +33,8 @@ export async function resolveLimit(): Promise<LimitContext> {
     if (user) {
       userId = user.id;
       plano = await getUserPlan(supabase, user.id);
+      // Administradores têm uso ilimitado (para testes e suporte).
+      isAdmin = isAdminEmail(user.email);
     }
   }
 
@@ -51,7 +55,7 @@ export async function resolveLimit(): Promise<LimitContext> {
     supabase,
     userId,
     plano,
-    ehGratis: plano === "free",
+    ehGratis: plano === "free" && !isAdmin,
     cookieCount,
     hoje,
     limite,
