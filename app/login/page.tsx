@@ -41,7 +41,7 @@ export default function LoginPage() {
 
         <div className="glass-card p-8">
           <h1 className="text-center text-2xl font-bold">
-            Entrar no <span className="gradient-text">Hardware AI</span>
+            Entrar no <span className="gradient-text">BestHard</span>
           </h1>
           <p className="mt-2 text-center text-sm text-gray-400">
             Acesse para salvar seu histórico de comparações na nuvem.

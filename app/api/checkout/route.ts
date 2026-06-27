@@ -38,7 +38,7 @@ export async function POST(req: Request) {
   try {
     const pre = await getPreApproval().create({
       body: {
-        reason: `Hardware AI Compare — Plano ${info.nome}`,
+        reason: `BestHard — Plano ${info.nome}`,
         external_reference: `${user.id}:${plan}`,
         payer_email: user.email!,
         back_url: `${getSiteUrl()}/?assinatura=sucesso`,

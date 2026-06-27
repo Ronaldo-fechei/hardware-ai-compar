@@ -21,7 +21,7 @@ export default function BuildsPage() {
               ⚡
             </span>
             <span>
-              Hardware<span className="gradient-text">AI</span>
+              Best<span className="gradient-text">Hard</span>
             </span>
           </Link>
           <AuthNav />

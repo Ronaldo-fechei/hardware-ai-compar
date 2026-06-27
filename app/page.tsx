@@ -119,7 +119,7 @@ export default function Home({
               ⚡
             </span>
             <span className="text-lg">
-              Hardware<span className="gradient-text">AI</span>
+              Best<span className="gradient-text">Hard</span>
             </span>
           </div>
           <div className="hidden gap-6 text-sm text-gray-400 md:flex">
@@ -291,10 +291,10 @@ export default function Home({
         {/* RODAPÉ */}
         <footer className="mx-auto max-w-6xl px-6 py-10 text-center text-sm text-gray-500">
           <p>
-            Hardware AI Compare — comparações geradas por IA são estimativas, não
+            BestHard — comparações geradas por IA são estimativas, não
             benchmarks oficiais.
           </p>
-          <p className="mt-1">© {new Date().getFullYear()} Hardware AI Compare.</p>
+          <p className="mt-1">© {new Date().getFullYear()} BestHard.</p>
         </footer>
       </div>
 
@@ -305,7 +305,7 @@ export default function Home({
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebApplication",
-            name: "Hardware AI Compare",
+            name: "BestHard",
             applicationCategory: "Utility",
             operatingSystem: "Web",
             description:
