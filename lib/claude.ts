@@ -37,22 +37,23 @@ const SCHEMA = {
         additionalProperties: false,
         properties: {
           name: { type: "string" },
-          category: { type: "string", enum: CATEGORIAS },
+          category: { type: "string" },
           notaGeral: { type: "integer" },
-          fpsEstimado: { type: ["integer", "null"] },
-          consumoW: { type: ["integer", "null"] },
-          tempC: { type: ["integer", "null"] },
           precoFaixa: { type: "string" },
         },
-        required: [
-          "name",
-          "category",
-          "notaGeral",
-          "fpsEstimado",
-          "consumoW",
-          "tempC",
-          "precoFaixa",
-        ],
+        required: ["name", "category", "notaGeral", "precoFaixa"],
+      },
+    },
+    atributos: {
+      type: "array",
+      items: {
+        type: "object",
+        additionalProperties: false,
+        properties: {
+          label: { type: "string" },
+          valores: { type: "array", items: { type: "string" } },
+        },
+        required: ["label", "valores"],
       },
     },
     criterios: {
@@ -67,35 +68,48 @@ const SCHEMA = {
         required: ["label", "scores"],
       },
     },
-    melhorPara: {
-      type: "object",
-      additionalProperties: false,
-      properties: {
-        jogos: { type: "string" },
-        trabalho: { type: "string" },
-        streaming: { type: "string" },
-        ia: { type: "string" },
-        customBeneficio: { type: "string" },
+    recomendacoes: {
+      type: "array",
+      items: {
+        type: "object",
+        additionalProperties: false,
+        properties: {
+          uso: { type: "string" },
+          item: { type: "string" },
+        },
+        required: ["uso", "item"],
       },
-      required: ["jogos", "trabalho", "streaming", "ia", "customBeneficio"],
     },
     veredito: { type: "string" },
   },
-  required: ["titulo", "itens", "criterios", "melhorPara", "veredito"],
+  required: ["titulo", "itens", "atributos", "criterios", "recomendacoes", "veredito"],
 } as const;
 
-const SYSTEM_PROMPT = `Você é um especialista sênior em hardware de computadores (processadores, placas de vídeo, memórias, SSDs, placas-mãe, fontes, notebooks, PCs, smartphones e consoles), no nível de sites como TechPowerUp, Tom's Hardware e NanoReview.
+const SYSTEM_PROMPT = `Você é um especialista sênior em hardware de PC (placas de vídeo, processadores, memórias, SSDs, placas-mãe, fontes, gabinetes, coolers, monitores, notebooks), no nível de TechPowerUp e Tom's Hardware. Responda em português do Brasil.
 
-Sua tarefa é comparar os produtos pedidos pelo usuário e devolver dados técnicos estimados, em português do Brasil.
+PASSO 1 — Detecte a CATEGORIA dos produtos e preencha "category" de cada item com o tipo real (ex.: "Placa de Vídeo", "Processador", "Fonte", "Monitor", "SSD", "Gabinete", "Cooler", "Placa-mãe", "Memória RAM", "Notebook").
 
-Regras:
-- Use sempre 0 a 100 nas notas (notaGeral e scores dos critérios), onde 100 é o melhor.
-- Os "scores" de cada critério devem ter exatamente um valor por item comparado, na MESMA ordem dos itens.
-- Inclua de 5 a 7 critérios relevantes para a categoria (ex.: desempenho geral, jogos 1080p/1440p, custo-benefício, eficiência energética, ray tracing/IA, produtividade).
-- Preços em reais (mercado brasileiro), em faixa, ex: "R$ 2.000 - R$ 2.400".
-- Para itens onde uma métrica não se aplica (ex.: FPS de um SSD), use null.
-- O "veredito" deve ser explicativo e humano, em 2 a 4 frases, dando contexto prático de compra (ex.: para quem joga em 1440p, para trabalho, para IA).
-- Seja honesto sobre incertezas; são estimativas, não benchmarks oficiais.`;
+PASSO 2 — Escolha "atributos" ESPECÍFICOS daquela categoria (4 a 7). Cada atributo tem "label" e "valores" (um valor em TEXTO por item, na MESMA ordem dos itens; use unidades e "Sim"/"Não" quando fizer sentido). Guia por categoria:
+- Placa de Vídeo: VRAM, FPS 1080p (estimado), FPS 1440p, Ray Tracing/DLSS, Consumo (TDP), Barramento.
+- Processador: Núcleos/Threads, Clock turbo, Cache, Consumo (TDP), Soquete, Vídeo integrado (Sim/Não).
+- Fonte: Potência (W), Selo 80 Plus, Modular (Sim/Não/Semi), Conector PCIe 5.0 (Sim/Não), Garantia.
+- Monitor: Resolução, Taxa de atualização, Tipo de painel, Tempo de resposta, Tamanho, HDR (Sim/Não).
+- SSD: Capacidade, Interface (SATA/NVMe Gen), Leitura, Gravação, Cache DRAM (Sim/Não).
+- Placa-mãe: Soquete, Chipset, Slots de RAM, VRM, Wi-Fi (Sim/Não), Slots M.2.
+- Gabinete: Tipo/Tamanho suportado, Fluxo de ar, Comprimento máx. de GPU, Fans inclusos, Painel lateral.
+- Cooler: Tipo (ar/water), Dissipação (TDP suportado), Tamanho (mm), Ruído, Soquetes compatíveis.
+- Memória RAM: Capacidade, Tipo (DDR4/DDR5), Frequência, Latência (CL), Kit (módulos).
+- Notebook: Processador, Placa de vídeo, Tela, RAM, Armazenamento, Bateria.
+
+PASSO 3 — "criterios": 4 a 7 critérios com notas 0-100 (um por item, mesma ordem), adequados à categoria (ex.: GPU → desempenho, custo-benefício, eficiência, ray tracing; Fonte → eficiência, confiabilidade, ruído, custo-benefício; Monitor → imagem, fluidez, custo-benefício).
+
+PASSO 4 — "recomendacoes": 2 a 4 entradas {uso, item} dizendo para qual PERFIL/USO cada produto é melhor, ADEQUADO à categoria. NÃO use sempre "jogos/streaming/IA" — adapte (ex.: Fonte → "PC de entrada", "PC gamer high-end", "Custo-benefício"; Monitor → "Jogos competitivos", "Trabalho/edição", "Uso geral").
+
+Regras gerais:
+- "notaGeral" e "scores" de 0 a 100 (100 = melhor).
+- Preços em reais (mercado BR), em faixa, ex: "R$ 550 - R$ 700".
+- "veredito" humano, 2 a 4 frases, com contexto prático de compra.
+- São estimativas, não benchmarks oficiais.`;
 
 let client: Anthropic | null = null;
 

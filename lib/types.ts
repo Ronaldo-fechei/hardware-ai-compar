@@ -21,41 +21,45 @@ export interface ComparisonCriterion {
   scores: number[];
 }
 
-/** Métricas estimadas de um item individual. */
+/** Um item comparado (cabeçalho com nota e preço). */
 export interface ItemMetrics {
   /** Nome do produto, ex: "RTX 4060" */
   name: string;
-  /** Categoria detectada. */
-  category: HardwareCategory;
+  /** Tipo do produto detectado, ex: "Placa de Vídeo", "Fonte", "Monitor". */
+  category: string;
   /** Nota geral de 0 a 100. */
   notaGeral: number;
-  /** FPS médio estimado (jogos AAA em 1080p) — ou null se não se aplica. */
-  fpsEstimado: number | null;
-  /** Consumo de energia em watts — ou null. */
-  consumoW: number | null;
-  /** Temperatura média em °C sob carga — ou null. */
-  tempC: number | null;
   /** Faixa de preço estimada em reais, ex: "R$ 2.000 - R$ 2.400". */
   precoFaixa: string;
+}
+
+/** Um atributo comparado, específico da categoria (ex: "VRAM", "Selo 80 Plus"). */
+export interface ComparisonAttribute {
+  /** Nome do atributo, ex: "Taxa de atualização". */
+  label: string;
+  /** Valor de cada item (texto), na mesma ordem dos itens. Ex: ["144 Hz", "165 Hz"]. */
+  valores: string[];
+}
+
+/** Recomendação de uso, adequada à categoria (ex: "Jogos 1440p" → item). */
+export interface ComparisonRecommendation {
+  uso: string;
+  item: string;
 }
 
 /** Resultado completo de uma comparação. */
 export interface ComparisonResult {
   /** Título amigável, ex: "RTX 4060 vs RX 7700 XT". */
   titulo: string;
-  /** Lista de itens comparados (normalmente 2). */
+  /** Itens comparados (normalmente 2). */
   itens: ItemMetrics[];
-  /** Critérios comparativos para gráficos de barra e radar. */
+  /** Atributos técnicos específicos da categoria (tabela comparativa). */
+  atributos: ComparisonAttribute[];
+  /** Critérios com notas 0-100 para gráficos de barra e radar. */
   criterios: ComparisonCriterion[];
-  /** Para cada uso, o nome do item recomendado. */
-  melhorPara: {
-    jogos: string;
-    trabalho: string;
-    streaming: string;
-    ia: string;
-    customBeneficio: string;
-  };
-  /** Veredito em linguagem humana (o diferencial do produto). */
+  /** Recomendações de uso adequadas à categoria. */
+  recomendacoes: ComparisonRecommendation[];
+  /** Veredito em linguagem humana. */
   veredito: string;
   /** Indica se veio de dados simulados (sem chave de IA). */
   demo?: boolean;

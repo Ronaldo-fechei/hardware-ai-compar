@@ -9,8 +9,8 @@ import ComparisonResultView from "./ComparisonResultView";
 const EXEMPLOS = [
   "RTX 4060 vs RX 7700 XT",
   "Ryzen 7 7800X3D vs Core i7 14700K",
-  "Samsung 990 Pro vs WD Black SN850X",
-  "PS5 vs Xbox Series X",
+  "Corsair RM750e vs Seasonic Focus GX-850",
+  "LG 27GP850 vs Gigabyte M27Q",
 ];
 
 export default function ComparePanel() {

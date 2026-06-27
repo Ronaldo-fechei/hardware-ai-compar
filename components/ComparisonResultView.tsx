@@ -10,6 +10,8 @@ export default function ComparisonResultView({
 }: {
   result: ComparisonResult;
 }) {
+  const nomes = result.itens.map((i) => i.name);
+
   return (
     <div className="animate-fade-up space-y-6">
       {result.demo && (
@@ -23,43 +25,72 @@ export default function ComparisonResultView({
         {result.titulo}
       </h2>
 
-      {/* Cards dos itens */}
+      {/* Cabeçalho dos itens: nota + preço */}
       <div className="grid gap-4 sm:grid-cols-2">
         {result.itens.map((item, i) => (
           <div
             key={i}
-            className="glass-card p-5"
+            className="glass-card flex items-center justify-between p-5"
             style={{ boxShadow: `0 0 30px -16px ${COLORS[i % COLORS.length]}` }}
           >
-            <div className="flex items-center justify-between">
-              <div>
-                <span
-                  className="text-xs font-semibold uppercase tracking-wider"
-                  style={{ color: COLORS[i % COLORS.length] }}
-                >
-                  {item.category}
-                </span>
-                <h3 className="text-xl font-bold text-white">{item.name}</h3>
-              </div>
-              <div className="text-right">
-                <div
-                  className="text-3xl font-black"
-                  style={{ color: COLORS[i % COLORS.length] }}
-                >
-                  {item.notaGeral}
-                </div>
-                <div className="text-[10px] uppercase text-gray-500">nota geral</div>
-              </div>
+            <div className="min-w-0">
+              <span
+                className="text-xs font-semibold uppercase tracking-wider"
+                style={{ color: COLORS[i % COLORS.length] }}
+              >
+                {item.category}
+              </span>
+              <h3 className="truncate text-xl font-bold text-white">{item.name}</h3>
+              <p className="mt-1 text-sm text-gray-400">{item.precoFaixa}</p>
             </div>
-            <dl className="mt-4 grid grid-cols-2 gap-3 text-sm">
-              <Metric label="FPS médio" value={fmt(item.fpsEstimado)} />
-              <Metric label="Consumo" value={fmtW(item.consumoW)} />
-              <Metric label="Temperatura" value={fmtC(item.tempC)} />
-              <Metric label="Preço" value={item.precoFaixa} />
-            </dl>
+            <div className="ml-3 shrink-0 text-right">
+              <div
+                className="text-3xl font-black"
+                style={{ color: COLORS[i % COLORS.length] }}
+              >
+                {item.notaGeral}
+              </div>
+              <div className="text-[10px] uppercase text-gray-500">nota geral</div>
+            </div>
           </div>
         ))}
       </div>
+
+      {/* Tabela de atributos específicos da categoria */}
+      {result.atributos?.length > 0 && (
+        <div className="glass-card overflow-hidden p-0">
+          <div className="grid grid-cols-3 gap-2 border-b border-white/10 p-4">
+            <span className="text-xs uppercase tracking-wide text-gray-500">
+              Atributo
+            </span>
+            {nomes.map((nome, i) => (
+              <span
+                key={i}
+                className="truncate text-right text-sm font-semibold sm:text-center"
+                style={{ color: COLORS[i % COLORS.length] }}
+              >
+                {nome}
+              </span>
+            ))}
+          </div>
+          {result.atributos.map((attr, idx) => (
+            <div
+              key={idx}
+              className="grid grid-cols-3 gap-2 border-b border-white/5 px-4 py-3 text-sm last:border-0 odd:bg-white/[0.02]"
+            >
+              <span className="text-gray-400">{attr.label}</span>
+              {result.itens.map((_, i) => (
+                <span
+                  key={i}
+                  className="text-right font-medium text-white sm:text-center"
+                >
+                  {attr.valores[i] ?? "—"}
+                </span>
+              ))}
+            </div>
+          ))}
+        </div>
+      )}
 
       {/* Veredito da IA */}
       <div className="glass-card p-5">
@@ -73,68 +104,35 @@ export default function ComparisonResultView({
       <div className="grid gap-6 lg:grid-cols-2">
         <div className="glass-card p-5">
           <h3 className="mb-4 font-semibold text-white">Comparativo visual</h3>
-          <BarCompare
-            criterios={result.criterios}
-            nomes={result.itens.map((i) => i.name)}
-          />
+          <BarCompare criterios={result.criterios} nomes={nomes} />
         </div>
         <div className="glass-card p-5">
           <h3 className="mb-4 font-semibold text-white">Radar de desempenho</h3>
-          <RadarChart
-            criterios={result.criterios}
-            nomes={result.itens.map((i) => i.name)}
-          />
+          <RadarChart criterios={result.criterios} nomes={nomes} />
         </div>
       </div>
 
-      {/* Melhor para */}
-      <div className="glass-card p-5">
-        <h3 className="mb-4 font-semibold text-white">Melhor para cada uso</h3>
-        <div className="grid grid-cols-2 gap-3 sm:grid-cols-5">
-          <BestFor emoji="🎮" label="Jogos" value={result.melhorPara.jogos} />
-          <BestFor emoji="💼" label="Trabalho" value={result.melhorPara.trabalho} />
-          <BestFor emoji="📹" label="Streaming" value={result.melhorPara.streaming} />
-          <BestFor emoji="🤖" label="IA" value={result.melhorPara.ia} />
-          <BestFor
-            emoji="💰"
-            label="Custo-benefício"
-            value={result.melhorPara.customBeneficio}
-          />
+      {/* Recomendações por uso (adequadas à categoria) */}
+      {result.recomendacoes?.length > 0 && (
+        <div className="glass-card p-5">
+          <h3 className="mb-4 font-semibold text-white">Melhor para cada caso</h3>
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {result.recomendacoes.map((rec, i) => (
+              <div
+                key={i}
+                className="rounded-lg border border-white/10 bg-white/5 p-3 text-center"
+              >
+                <div className="text-[10px] uppercase tracking-wide text-gray-500">
+                  {rec.uso}
+                </div>
+                <div className="mt-0.5 text-sm font-semibold text-brand-primary">
+                  {rec.item}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 }
-
-function Metric({ label, value }: { label: string; value: string }) {
-  return (
-    <div className="rounded-lg bg-white/5 p-2">
-      <dt className="text-[10px] uppercase tracking-wide text-gray-500">{label}</dt>
-      <dd className="font-semibold text-white">{value}</dd>
-    </div>
-  );
-}
-
-function BestFor({
-  emoji,
-  label,
-  value,
-}: {
-  emoji: string;
-  label: string;
-  value: string;
-}) {
-  return (
-    <div className="rounded-lg border border-white/10 bg-white/5 p-3 text-center">
-      <div className="text-xl">{emoji}</div>
-      <div className="mt-1 text-[10px] uppercase tracking-wide text-gray-500">
-        {label}
-      </div>
-      <div className="mt-0.5 text-sm font-semibold text-brand-primary">{value}</div>
-    </div>
-  );
-}
-
-const fmt = (n: number | null) => (n == null ? "—" : `${n}`);
-const fmtW = (n: number | null) => (n == null ? "—" : `${n} W`);
-const fmtC = (n: number | null) => (n == null ? "—" : `${n} °C`);

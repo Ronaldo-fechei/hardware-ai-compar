@@ -23,24 +23,14 @@ export function mockComparison(query: string): ComparisonResult {
     titulo: `${nomeA} vs ${nomeB}`,
     demo: true,
     itens: [
-      {
-        name: nomeA,
-        category: "GPU",
-        notaGeral: 82,
-        fpsEstimado: 118,
-        consumoW: 115,
-        tempC: 68,
-        precoFaixa: "R$ 2.000 - R$ 2.400",
-      },
-      {
-        name: nomeB,
-        category: "GPU",
-        notaGeral: 88,
-        fpsEstimado: 139,
-        consumoW: 245,
-        tempC: 74,
-        precoFaixa: "R$ 2.600 - R$ 3.100",
-      },
+      { name: nomeA, category: "Placa de Vídeo", notaGeral: 82, precoFaixa: "R$ 2.000 - R$ 2.400" },
+      { name: nomeB, category: "Placa de Vídeo", notaGeral: 88, precoFaixa: "R$ 2.600 - R$ 3.100" },
+    ],
+    atributos: [
+      { label: "VRAM", valores: ["8 GB GDDR6", "12 GB GDDR6"] },
+      { label: "FPS 1080p (estimado)", valores: ["118", "139"] },
+      { label: "Consumo (TDP)", valores: ["115 W", "245 W"] },
+      { label: "Ray Tracing / DLSS", valores: ["Sim (forte)", "Sim"] },
     ],
     criterios: [
       { label: "Desempenho geral", scores: [82, 90] },
@@ -48,21 +38,16 @@ export function mockComparison(query: string): ComparisonResult {
       { label: "Jogos 1440p", scores: [74, 90] },
       { label: "Custo-benefício", scores: [88, 80] },
       { label: "Eficiência energética", scores: [90, 68] },
-      { label: "Ray Tracing / IA", scores: [88, 72] },
     ],
-    melhorPara: {
-      jogos: nomeB,
-      trabalho: nomeB,
-      streaming: nomeA,
-      ia: nomeA,
-      customBeneficio: nomeA,
-    },
+    recomendacoes: [
+      { uso: "Jogos em 1080p", item: nomeA },
+      { uso: "Jogos em 1440p", item: nomeB },
+      { uso: "Custo-benefício", item: nomeA },
+    ],
     veredito:
-      `[MODO DEMONSTRAÇÃO — dados simulados] Para quem joga em 1440p, a ${nomeB} ` +
-      `oferece aproximadamente 18% mais desempenho e maior quantidade de VRAM, ` +
-      `enquanto a ${nomeA} se destaca em eficiência energética, temperaturas mais ` +
-      `baixas e melhor custo-benefício. Configure sua chave da Anthropic para ` +
-      `gerar análises reais com a IA.`,
+      `[MODO DEMONSTRAÇÃO — dados simulados] A ${nomeB} oferece mais desempenho e ` +
+      `VRAM, enquanto a ${nomeA} se destaca em eficiência e custo-benefício. ` +
+      `Configure sua chave da Anthropic para gerar análises reais com a IA.`,
   };
 }
 
