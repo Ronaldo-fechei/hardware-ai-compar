@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import AppHeader from "@/components/AppHeader";
+import AppSidebar from "@/components/AppSidebar";
+import AppFooter from "@/components/AppFooter";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://hardware-ai-compare.vercel.app"),
@@ -39,7 +42,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <body className="font-sans antialiased">{children}</body>
+      <body className="flex min-h-screen flex-col font-sans antialiased">
+        <AppHeader />
+        <div className="flex flex-1">
+          <AppSidebar />
+          <main className="min-w-0 flex-1">{children}</main>
+        </div>
+        <AppFooter />
+      </body>
     </html>
   );
 }

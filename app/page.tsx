@@ -1,6 +1,5 @@
 import Link from "next/link";
 import ComparePanel from "@/components/ComparePanel";
-import AuthNav from "@/components/AuthNav";
 import PlanButton from "@/components/PlanButton";
 import type { Plan } from "@/lib/plans";
 import { PRODUTOS_ENRIQUECIDOS } from "@/lib/hardware-data";
@@ -98,7 +97,7 @@ export default function Home({
 }) {
   const assinaturaOk = searchParams?.assinatura === "sucesso";
   return (
-    <main className="relative overflow-hidden">
+    <div className="relative overflow-hidden">
       {/* fundo grade tech */}
       <div className="pointer-events-none absolute inset-0 bg-grid-tech bg-[size:48px_48px] opacity-40" />
       <div className="pointer-events-none absolute inset-0 aurora" />
@@ -113,24 +112,6 @@ export default function Home({
       )}
 
       <div className="relative">
-        {/* NAV */}
-        <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
-          <div className="flex items-center gap-2 font-bold">
-            <span className="grid h-8 w-8 place-items-center rounded-lg bg-gradient-to-br from-brand-primary to-brand-secondary text-black">
-              ⚡
-            </span>
-            <span className="text-lg">
-              Best<span className="gradient-text">Hard</span>
-            </span>
-          </div>
-          <div className="hidden gap-6 text-sm text-gray-400 md:flex">
-            <a href="#ferramentas" className="hover:text-white">Ferramentas</a>
-            <a href="#rankings" className="hover:text-white">Rankings</a>
-            <a href="#planos" className="hover:text-white">Planos</a>
-          </div>
-          <AuthNav />
-        </nav>
-
         {/* HERO + COMPARADOR */}
         <section className="mx-auto max-w-6xl px-6 pb-16 pt-10 text-center sm:pt-16">
           <div className="mx-auto mb-5 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs text-gray-300">
@@ -354,14 +335,6 @@ export default function Home({
           </div>
         </section>
 
-        {/* RODAPÉ */}
-        <footer className="mx-auto max-w-6xl px-6 py-10 text-center text-sm text-gray-500">
-          <p>
-            BestHard — comparações geradas por IA são estimativas, não
-            benchmarks oficiais.
-          </p>
-          <p className="mt-1">© {new Date().getFullYear()} BestHard.</p>
-        </footer>
       </div>
 
       {/* SEO: dados estruturados */}
@@ -384,6 +357,6 @@ export default function Home({
           }),
         }}
       />
-    </main>
+    </div>
   );
 }

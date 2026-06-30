@@ -11,12 +11,22 @@ const config: Config = {
         brand: {
           primary: "#00E5FF",
           secondary: "#7B2FFF",
-          bg: "#0A0A0A",
-          card: "#111827",
+          bg: "#0A0C10",
+          card: "#111318",
         },
+        // Paleta do design v5
+        bg: "#0A0C10",
+        surface: "#111318",
+        surface2: "#181B22",
+        borderc: "#1E2230",
+        accent: "#00E5FF",
+        muted: "#5A6070",
+        label: "#8A92A6",
+        textc: "#E8EAF0",
       },
       fontFamily: {
-        sans: ["Inter", "system-ui", "sans-serif"],
+        sans: ["Space Grotesk", "system-ui", "sans-serif"],
+        mono: ["JetBrains Mono", "monospace"],
       },
       boxShadow: {
         glow: "0 0 40px -10px rgba(0, 229, 255, 0.45)",
