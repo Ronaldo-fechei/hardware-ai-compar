@@ -1,5 +1,6 @@
 'use client'
 import type { Produto, PrecoLoja } from '@/types/hardware'
+import { linkAfiliado } from '@/lib/afiliados'
 
 const LOJAS: Record<PrecoLoja['loja'], { nome: string; emoji: string; cor: string; bg: string }> = {
   amazon:       { nome: 'Amazon',        emoji: '📦', cor: '#FF9900', bg: 'rgba(255,153,0,0.08)' },
@@ -90,7 +91,7 @@ function CardPreco({ produto, isWinner, fullWidth }: {
           return (
             <a
               key={item.loja}
-              href={item.url}
+              href={linkAfiliado(item.loja, item.url)}
               target="_blank"
               rel="noopener noreferrer sponsored"
               className="flex items-center gap-3 rounded-lg px-3 py-[9px] transition-all hover:-translate-y-px group"
