@@ -5,7 +5,7 @@ import AppSidebar from "@/components/AppSidebar";
 import AppFooter from "@/components/AppFooter";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://hardware-ai-compare.vercel.app"),
+  metadataBase: new URL("https://besthard.com.br"),
   title: {
     default: "BestHard — Comparador de Hardware com IA",
     template: "%s | BestHard",
