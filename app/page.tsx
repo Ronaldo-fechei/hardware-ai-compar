@@ -3,6 +3,7 @@ import ComparePanel from "@/components/ComparePanel";
 import AuthNav from "@/components/AuthNav";
 import PlanButton from "@/components/PlanButton";
 import type { Plan } from "@/lib/plans";
+import { PRODUTOS_ENRIQUECIDOS } from "@/lib/hardware-data";
 
 const RECURSOS = [
   {
@@ -232,6 +233,56 @@ export default function Home({
                 </span>
               </span>
             </Link>
+          </div>
+        </section>
+
+        {/* PRODUTOS EM DESTAQUE */}
+        <section id="produtos" className="mx-auto max-w-6xl px-6 py-16">
+          <h2 className="mb-3 text-center text-3xl font-bold">
+            Produtos em <span className="gradient-text">destaque</span>
+          </h2>
+          <p className="mb-10 text-center text-gray-400">
+            Fichas completas com specs, prós e contras e onde comprar.
+          </p>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {PRODUTOS_ENRIQUECIDOS.slice(0, 6).map((p) => {
+              const menor = (p.precos || [])
+                .filter((x) => x.disponivel)
+                .sort((a, b) => a.preco - b.preco)[0];
+              return (
+                <Link
+                  key={p.slug}
+                  href={`/produto/${p.slug}`}
+                  className="glass-card group p-5 transition hover:shadow-glow"
+                >
+                  <div className="flex items-start justify-between">
+                    <div className="min-w-0">
+                      <span className="text-[10px] uppercase tracking-wider text-gray-500">
+                        {p.marca}
+                      </span>
+                      <h3 className="truncate text-lg font-bold text-white">{p.nome}</h3>
+                    </div>
+                    <span className="ml-2 shrink-0 text-2xl font-black gradient-text">
+                      {p.score}
+                    </span>
+                  </div>
+                  {menor && (
+                    <p className="mt-3 text-sm text-gray-400">
+                      a partir de{" "}
+                      <span className="font-semibold text-brand-primary">
+                        {menor.preco.toLocaleString("pt-BR", {
+                          style: "currency",
+                          currency: "BRL",
+                        })}
+                      </span>
+                    </p>
+                  )}
+                  <span className="mt-2 inline-block text-xs text-brand-primary opacity-0 transition group-hover:opacity-100">
+                    Ver ficha completa →
+                  </span>
+                </Link>
+              );
+            })}
           </div>
         </section>
 

@@ -25,6 +25,9 @@ export default async function AuthNav() {
           Admin
         </Link>
       )}
+      <Link href="/blog" className="hidden text-gray-400 hover:text-white sm:inline">
+        Blog
+      </Link>
       <Link href="/historico" className="text-gray-400 hover:text-white">
         Histórico
       </Link>
