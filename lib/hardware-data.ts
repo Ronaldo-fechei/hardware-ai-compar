@@ -19,7 +19,7 @@ export const CATEGORIAS: CategoriaConfig[] = [
     subtitle: 'NVIDIA RTX vs AMD RX — compare VRAM, TDP e ray tracing',
     subcats: ['Todos', 'Gaming', 'Workstation'],
     menorMelhor: ['Consumo (W)'],
-    disponivel: false,
+    disponivel: true,
   },
   {
     slug: 'monitores',
@@ -49,7 +49,7 @@ export const CATEGORIAS: CategoriaConfig[] = [
     subtitle: 'NVMe Gen 4 vs Gen 5 — compare velocidade e durabilidade',
     subcats: ['Todos', 'NVMe', 'SATA'],
     menorMelhor: [],
-    disponivel: false,
+    disponivel: true,
   },
   {
     slug: 'coolers',
@@ -395,6 +395,145 @@ export const PRODUTOS: Produto[] = [
       },
     ],
   },
+
+  // ══════════════════════════════════════
+  // PLACAS DE VÍDEO
+  // ══════════════════════════════════════
+  {
+    slug: 'nvidia-geforce-rtx-4090',
+    marca: 'NVIDIA',
+    nome: 'GeForce RTX 4090',
+    categoria: 'gpus',
+    score: 100,
+    specs: { 'VRAM': '24 GB GDDR6X', 'Consumo (W)': 450, 'Clock Boost (GHz)': 2.52, 'Ray Tracing': 'Sim (3ª gen)', 'Barramento': '384-bit' },
+    precos: [
+      { loja: 'amazon', preco: 14999, url: 'https://www.amazon.com.br/s?k=rtx+4090&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '12x R$ 1.249,92' },
+      { loja: 'kabum', preco: 14499, url: 'https://www.kabum.com.br/produto/rtx-4090?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '12x R$ 1.208,25' },
+      { loja: 'pichau', preco: 15299, url: 'https://www.pichau.com.br/placa-de-video?ref=besthard', disponivel: true, frete: 'gratis', parcelamento: '12x R$ 1.274,92' },
+    ],
+  },
+  {
+    slug: 'nvidia-geforce-rtx-4070-super',
+    marca: 'NVIDIA',
+    nome: 'GeForce RTX 4070 Super',
+    categoria: 'gpus',
+    score: 88,
+    specs: { 'VRAM': '12 GB GDDR6X', 'Consumo (W)': 220, 'Clock Boost (GHz)': 2.48, 'Ray Tracing': 'Sim', 'Barramento': '192-bit' },
+    precos: [
+      { loja: 'amazon', preco: 4699, url: 'https://www.amazon.com.br/s?k=rtx+4070+super&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '12x R$ 391,58' },
+      { loja: 'kabum', preco: 4499, url: 'https://www.kabum.com.br/produto/rtx-4070-super?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '12x R$ 374,92' },
+      { loja: 'terabyte', preco: 4799, url: 'https://www.terabyteshop.com.br/produto/rtx-4070-super?aff=besthard', disponivel: true, frete: 'gratis', parcelamento: '12x R$ 399,92' },
+    ],
+  },
+  {
+    slug: 'nvidia-geforce-rtx-4060',
+    marca: 'NVIDIA',
+    nome: 'GeForce RTX 4060',
+    categoria: 'gpus',
+    score: 76,
+    specs: { 'VRAM': '8 GB GDDR6', 'Consumo (W)': 115, 'Clock Boost (GHz)': 2.46, 'Ray Tracing': 'Sim', 'Barramento': '128-bit' },
+    precos: [
+      { loja: 'amazon', preco: 1999, url: 'https://www.amazon.com.br/s?k=rtx+4060&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '12x R$ 166,58' },
+      { loja: 'kabum', preco: 1899, url: 'https://www.kabum.com.br/produto/rtx-4060?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '12x R$ 158,25' },
+      { loja: 'pichau', preco: 2049, url: 'https://www.pichau.com.br/placa-de-video?ref=besthard', disponivel: true, frete: 'gratis', parcelamento: '12x R$ 170,75' },
+    ],
+  },
+  {
+    slug: 'amd-radeon-rx-7800-xt',
+    marca: 'AMD',
+    nome: 'Radeon RX 7800 XT',
+    categoria: 'gpus',
+    score: 86,
+    specs: { 'VRAM': '16 GB GDDR6', 'Consumo (W)': 263, 'Clock Boost (GHz)': 2.43, 'Ray Tracing': 'Sim', 'Barramento': '256-bit' },
+    precos: [
+      { loja: 'amazon', preco: 3899, url: 'https://www.amazon.com.br/s?k=rx+7800+xt&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '12x R$ 324,92' },
+      { loja: 'kabum', preco: 3699, url: 'https://www.kabum.com.br/produto/rx-7800-xt?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '12x R$ 308,25' },
+      { loja: 'pichau', preco: 3999, url: 'https://www.pichau.com.br/placa-de-video/amd?ref=besthard', disponivel: true, frete: 'gratis', parcelamento: '12x R$ 333,25' },
+    ],
+  },
+  {
+    slug: 'amd-radeon-rx-7600',
+    marca: 'AMD',
+    nome: 'Radeon RX 7600',
+    categoria: 'gpus',
+    score: 72,
+    specs: { 'VRAM': '8 GB GDDR6', 'Consumo (W)': 165, 'Clock Boost (GHz)': 2.66, 'Ray Tracing': 'Sim', 'Barramento': '128-bit' },
+    precos: [
+      { loja: 'amazon', preco: 1799, url: 'https://www.amazon.com.br/s?k=rx+7600&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '12x R$ 149,92' },
+      { loja: 'kabum', preco: 1699, url: 'https://www.kabum.com.br/produto/rx-7600?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '12x R$ 141,58' },
+    ],
+  },
+
+  // ══════════════════════════════════════
+  // SSDs
+  // ══════════════════════════════════════
+  {
+    slug: 'samsung-990-pro-2tb',
+    marca: 'Samsung',
+    nome: '990 Pro 2TB',
+    categoria: 'ssds',
+    score: 95,
+    specs: { 'Capacidade': '2 TB', 'Interface': 'NVMe Gen4', 'Leitura (MB/s)': 7450, 'Gravação (MB/s)': 6900, 'Cache DRAM': 'Sim' },
+    precos: [
+      { loja: 'amazon', preco: 1299, url: 'https://www.amazon.com.br/s?k=samsung+990+pro+2tb&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '12x R$ 108,25' },
+      { loja: 'kabum', preco: 1249, url: 'https://www.kabum.com.br/produto/samsung-990-pro-2tb?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '12x R$ 104,08' },
+      { loja: 'pichau', preco: 1349, url: 'https://www.pichau.com.br/armazenamento?ref=besthard', disponivel: true, frete: 'gratis', parcelamento: '12x R$ 112,42' },
+    ],
+  },
+  {
+    slug: 'wd-black-sn850x-2tb',
+    marca: 'Western Digital',
+    nome: 'Black SN850X 2TB',
+    categoria: 'ssds',
+    score: 93,
+    specs: { 'Capacidade': '2 TB', 'Interface': 'NVMe Gen4', 'Leitura (MB/s)': 7300, 'Gravação (MB/s)': 6600, 'Cache DRAM': 'Sim' },
+    precos: [
+      { loja: 'amazon', preco: 1199, url: 'https://www.amazon.com.br/s?k=wd+black+sn850x+2tb&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '12x R$ 99,92' },
+      { loja: 'kabum', preco: 1149, url: 'https://www.kabum.com.br/produto/wd-black-sn850x-2tb?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '12x R$ 95,75' },
+    ],
+  },
+  {
+    slug: 'kingston-nv2-1tb',
+    marca: 'Kingston',
+    nome: 'NV2 1TB',
+    categoria: 'ssds',
+    score: 78,
+    specs: { 'Capacidade': '1 TB', 'Interface': 'NVMe Gen4', 'Leitura (MB/s)': 3500, 'Gravação (MB/s)': 2100, 'Cache DRAM': 'Não' },
+    precos: [
+      { loja: 'amazon', preco: 449, url: 'https://www.amazon.com.br/s?k=kingston+nv2+1tb&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '10x R$ 44,90' },
+      { loja: 'kabum', preco: 429, url: 'https://www.kabum.com.br/produto/kingston-nv2-1tb?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 42,90' },
+      { loja: 'pichau', preco: 459, url: 'https://www.pichau.com.br/armazenamento?ref=besthard', disponivel: true, frete: 'gratis', parcelamento: '10x R$ 45,90' },
+    ],
+  },
+
+  // ══════════════════════════════════════
+  // PROCESSADORES (extras)
+  // ══════════════════════════════════════
+  {
+    slug: 'amd-ryzen-7-9800x3d',
+    marca: 'AMD',
+    nome: 'Ryzen 7 9800X3D',
+    categoria: 'processadores',
+    score: 100,
+    specs: { 'Núcleos': 8, 'Threads': 16, 'Clock Boost (GHz)': 5.2, 'Soquete': 'AM5', 'Consumo (W)': 120 },
+    precos: [
+      { loja: 'amazon', preco: 3599, url: 'https://www.amazon.com.br/s?k=ryzen+7+9800x3d&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '12x R$ 299,92' },
+      { loja: 'kabum', preco: 3499, url: 'https://www.kabum.com.br/produto/ryzen-7-9800x3d?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '12x R$ 291,58' },
+      { loja: 'terabyte', preco: 3699, url: 'https://www.terabyteshop.com.br/produto/ryzen-7-9800x3d?aff=besthard', disponivel: true, frete: 'gratis', parcelamento: '12x R$ 308,25' },
+    ],
+  },
+  {
+    slug: 'amd-ryzen-9-7950x3d',
+    marca: 'AMD',
+    nome: 'Ryzen 9 7950X3D',
+    categoria: 'processadores',
+    score: 97,
+    specs: { 'Núcleos': 16, 'Threads': 32, 'Clock Boost (GHz)': 5.7, 'Soquete': 'AM5', 'Consumo (W)': 120 },
+    precos: [
+      { loja: 'amazon', preco: 4299, url: 'https://www.amazon.com.br/s?k=ryzen+9+7950x3d&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '12x R$ 358,25' },
+      { loja: 'kabum', preco: 4149, url: 'https://www.kabum.com.br/produto/ryzen-9-7950x3d?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '12x R$ 345,75' },
+    ],
+  },
 ]
 
 // funções exportadas abaixo após enrichment
@@ -532,6 +671,97 @@ const ENRICHMENT: Record<string, Partial<import('@/types/hardware').Produto>> = 
       ],
     },
     relacionados: ['asus-rog-swift-pg27aqdm', 'samsung-odyssey-g7', 'aoc-24g2sp'],
+  },
+
+  'nvidia-geforce-rtx-4090': {
+    tier: 'flagship', anoLancamento: 2022, scoreCustoBeneficio: 60,
+    descricao: 'A NVIDIA GeForce RTX 4090 é a placa de vídeo mais poderosa para consumidores, com 24 GB de GDDR6X e desempenho imbatível em 4K com ray tracing máximo e DLSS 3. É a escolha de quem não abre mão de nada — jogos em 4K 120fps, criação de conteúdo e cargas de IA.',
+    proCons: {
+      pros: ['Desempenho líder absoluto em 4K', '24 GB de VRAM — ótima para IA e edição', 'Ray tracing e DLSS 3 de ponta', 'Roda qualquer jogo no máximo'],
+      contras: ['Preço muito alto', 'Consumo elevado (450W) exige fonte forte', 'Tamanho enorme — confira o gabinete', 'Exagerada para 1080p/1440p'],
+    },
+    relacionados: ['nvidia-geforce-rtx-4070-super', 'amd-radeon-rx-7800-xt', 'nvidia-geforce-rtx-4060'],
+  },
+  'nvidia-geforce-rtx-4070-super': {
+    tier: 'high-end', anoLancamento: 2024, scoreCustoBeneficio: 85,
+    descricao: 'A RTX 4070 Super é uma das melhores opções para jogos em 1440p com ray tracing, entregando ótimo desempenho com consumo moderado de 220W. O DLSS 3 garante folga em títulos pesados e a eficiência energética é excelente.',
+    proCons: {
+      pros: ['Excelente para 1440p com ray tracing', 'DLSS 3 (Frame Generation)', 'Consumo eficiente (220W)', 'Ótimo equilíbrio preço/desempenho'],
+      contras: ['12 GB de VRAM podem limitar no futuro em 4K', 'Mais cara que a concorrente RX 7800 XT', 'Sem grandes ganhos sobre a 4070 normal fora do DLSS'],
+    },
+    relacionados: ['amd-radeon-rx-7800-xt', 'nvidia-geforce-rtx-4090', 'nvidia-geforce-rtx-4060'],
+  },
+  'nvidia-geforce-rtx-4060': {
+    tier: 'mid-range', anoLancamento: 2023, scoreCustoBeneficio: 84,
+    descricao: 'A RTX 4060 é a porta de entrada da geração Ada para jogos em 1080p, com baixo consumo (115W) e suporte a DLSS 3. Ideal para quem quer um PC gamer eficiente e silencioso sem gastar muito.',
+    proCons: {
+      pros: ['Ótima para jogos em 1080p', 'Consumo baixíssimo (115W)', 'DLSS 3 ajuda bastante', 'Roda fria e silenciosa'],
+      contras: ['Apenas 8 GB de VRAM', 'Barramento estreito (128-bit)', 'Ganho modesto sobre a geração anterior'],
+    },
+    relacionados: ['amd-radeon-rx-7600', 'nvidia-geforce-rtx-4070-super', 'amd-radeon-rx-7800-xt'],
+  },
+  'amd-radeon-rx-7800-xt': {
+    tier: 'high-end', anoLancamento: 2023, scoreCustoBeneficio: 88,
+    descricao: 'A Radeon RX 7800 XT entrega desempenho excelente em 1440p com 16 GB de VRAM — bem mais memória que as concorrentes diretas pelo mesmo preço. É a escolha de custo-benefício para quem joga em rasterização.',
+    proCons: {
+      pros: ['16 GB de VRAM — folga para o futuro', 'Ótimo desempenho em 1440p', 'Melhor custo-benefício que a RTX 4070', 'Forte em rasterização pura'],
+      contras: ['Ray tracing inferior à NVIDIA', 'FSR ainda atrás do DLSS', 'Consumo maior (263W)'],
+    },
+    relacionados: ['nvidia-geforce-rtx-4070-super', 'amd-radeon-rx-7600', 'nvidia-geforce-rtx-4060'],
+  },
+  'amd-radeon-rx-7600': {
+    tier: 'entrada', anoLancamento: 2023, scoreCustoBeneficio: 82,
+    descricao: 'A Radeon RX 7600 é uma opção acessível para jogos em 1080p, com bom desempenho em rasterização e preço competitivo. Boa pedida para o primeiro PC gamer.',
+    proCons: {
+      pros: ['Preço acessível', 'Bom desempenho em 1080p', 'Eficiente para a faixa'],
+      contras: ['8 GB de VRAM', 'Ray tracing fraco', 'Pouco espaço para 1440p'],
+    },
+    relacionados: ['nvidia-geforce-rtx-4060', 'amd-radeon-rx-7800-xt', 'nvidia-geforce-rtx-4070-super'],
+  },
+  'samsung-990-pro-2tb': {
+    tier: 'high-end', anoLancamento: 2022, scoreCustoBeneficio: 86,
+    descricao: 'O Samsung 990 Pro é um dos SSDs NVMe Gen4 mais rápidos do mercado, com leitura de 7450 MB/s e cache DRAM dedicado. Excelente para jogos, edição de vídeo e uso profissional intenso.',
+    proCons: {
+      pros: ['Entre os Gen4 mais rápidos', 'Cache DRAM dedicado', 'Ótima durabilidade e software', 'Eficiência térmica boa'],
+      contras: ['Preço premium', 'Ganho real pequeno vs Gen4 mais baratos no dia a dia'],
+    },
+    relacionados: ['wd-black-sn850x-2tb', 'kingston-nv2-1tb'],
+  },
+  'wd-black-sn850x-2tb': {
+    tier: 'high-end', anoLancamento: 2022, scoreCustoBeneficio: 88,
+    descricao: 'O WD Black SN850X é um SSD NVMe Gen4 de altíssimo desempenho voltado a gamers, com leitura de 7300 MB/s e modo de jogo dedicado. Rivaliza diretamente com o Samsung 990 Pro, geralmente por um preço melhor.',
+    proCons: {
+      pros: ['Desempenho de topo Gen4', 'Ótimo para jogos (Game Mode)', 'Cache DRAM dedicado', 'Bom custo-benefício no segmento premium'],
+      contras: ['Esquenta sob carga — ideal com dissipador', 'Preço acima dos Gen4 de entrada'],
+    },
+    relacionados: ['samsung-990-pro-2tb', 'kingston-nv2-1tb'],
+  },
+  'kingston-nv2-1tb': {
+    tier: 'entrada', anoLancamento: 2022, scoreCustoBeneficio: 90,
+    descricao: 'O Kingston NV2 é um SSD NVMe Gen4 de entrada com excelente custo por GB. Sem cache DRAM, não é o mais rápido, mas é muito mais ágil que um HD e perfeito para uso geral e jogos casuais.',
+    proCons: {
+      pros: ['Preço muito acessível', 'NVMe Gen4 — bem mais rápido que SATA/HD', 'Ótimo para upgrade econômico'],
+      contras: ['Sem cache DRAM', 'Velocidade de gravação cai em transferências grandes', 'Especificações podem variar por lote'],
+    },
+    relacionados: ['samsung-990-pro-2tb', 'wd-black-sn850x-2tb'],
+  },
+  'amd-ryzen-7-9800x3d': {
+    tier: 'flagship', anoLancamento: 2024, scoreCustoBeneficio: 90,
+    descricao: 'O AMD Ryzen 7 9800X3D é o melhor processador para jogos disponível, com a 2ª geração de 3D V-Cache sobre a arquitetura Zen 5. Domina os benchmarks de games e, diferente do antecessor, permite overclock.',
+    proCons: {
+      pros: ['Melhor CPU para jogos do mercado', '3D V-Cache de 2ª geração', 'Permite overclock (diferente do 7800X3D)', 'Plataforma AM5 com futuro'],
+      contras: ['Preço elevado', 'Exige placa AM5 + DDR5', 'Excesso para quem não joga em alto FPS'],
+    },
+    relacionados: ['amd-ryzen-7-7800x3d', 'amd-ryzen-9-7950x3d', 'intel-core-i7-14700k'],
+  },
+  'amd-ryzen-9-7950x3d': {
+    tier: 'flagship', anoLancamento: 2023, scoreCustoBeneficio: 78,
+    descricao: 'O Ryzen 9 7950X3D combina 16 núcleos com 3D V-Cache, entregando desempenho de ponta tanto em jogos quanto em produtividade pesada (renderização, compilação). É a escolha para quem joga E trabalha em alto nível.',
+    proCons: {
+      pros: ['16 núcleos — excelente em produtividade', '3D V-Cache para jogos', 'Topo de linha versátil', 'Eficiência boa para o desempenho'],
+      contras: ['Preço alto', 'Gerenciamento de cache entre CCDs pode exigir ajuste', 'Para jogos puros, o 9800X3D custa menos e rende igual ou mais'],
+    },
+    relacionados: ['amd-ryzen-7-9800x3d', 'amd-ryzen-7-7800x3d', 'intel-core-i7-14700k'],
   },
 }
 
