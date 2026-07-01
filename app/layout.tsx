@@ -34,6 +34,10 @@ export const metadata: Metadata = {
     title: "BestHard",
     description: "Compare hardware de PC com inteligência artificial.",
   },
+  // Meta tag de verificação do Google AdSense (renderizada no <head>).
+  other: {
+    "google-adsense-account": "ca-pub-7131553700052528",
+  },
 };
 
 export default function RootLayout({
@@ -43,15 +47,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <body className="flex min-h-screen flex-col font-sans antialiased">
-        {/* Google AdSense — carregado em todas as páginas */}
+      <head>
+        {/* Google AdSense — script no <head> de todas as páginas */}
         <Script
           id="adsbygoogle-init"
           async
-          strategy="afterInteractive"
+          strategy="beforeInteractive"
           crossOrigin="anonymous"
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7131553700052528"
         />
+      </head>
+      <body className="flex min-h-screen flex-col font-sans antialiased">
         <AppHeader />
         <div className="flex flex-1">
           <AppSidebar />
