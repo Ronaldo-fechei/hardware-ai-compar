@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import AppHeader from "@/components/AppHeader";
-import AppSidebar from "@/components/AppSidebar";
-import AppFooter from "@/components/AppFooter";
+import { Header } from "@/components/Header";
+import { Sidebar } from "@/components/Sidebar";
+import { Footer } from "@/components/Footer";
+import AuthNav from "@/components/AuthNav";
+import { CATEGORIAS } from "@/lib/hardware-data";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://besthard.com.br"),
@@ -55,12 +57,15 @@ export default function RootLayout({
         />
       </head>
       <body className="flex min-h-screen flex-col font-sans antialiased">
-        <AppHeader />
+        {/* Header com o botão de login preservado (AuthNav via children) */}
+        <Header>
+          <AuthNav />
+        </Header>
         <div className="flex flex-1">
-          <AppSidebar />
-          <main className="min-w-0 flex-1">{children}</main>
+          <Sidebar categorias={CATEGORIAS} />
+          <main className="min-w-0 flex-1 overflow-y-auto">{children}</main>
         </div>
-        <AppFooter />
+        <Footer />
       </body>
     </html>
   );

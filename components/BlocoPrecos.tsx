@@ -1,6 +1,6 @@
 'use client'
 import type { Produto, PrecoLoja } from '@/types/hardware'
-import { linkAfiliado } from '@/lib/afiliados'
+import { linkAfiliado, ehAfiliado } from '@/lib/afiliados'
 
 const LOJAS: Record<PrecoLoja['loja'], { nome: string; emoji: string; cor: string; bg: string }> = {
   amazon:       { nome: 'Amazon',        emoji: '📦', cor: '#FF9900', bg: 'rgba(255,153,0,0.08)' },
@@ -26,11 +26,13 @@ function trackAfiliado(slug: string, loja: string) {
 function CardPreco({ produto, isWinner, fullWidth }: {
   produto: Produto; isWinner?: boolean; fullWidth?: boolean
 }) {
+  // Só lojas onde somos afiliados, ordenadas do menor preço ao maior,
+  // limitadas aos 3 melhores preços.
   const disponiveis = (produto.precos || [])
-    .filter(p => p.disponivel)
+    .filter(p => p.disponivel && ehAfiliado(p.loja))
     .sort((a, b) => a.preco - b.preco)
-  const indisponiveis = (produto.precos || []).filter(p => !p.disponivel)
-  if (disponiveis.length === 0 && indisponiveis.length === 0) return null
+    .slice(0, 3)
+  if (disponiveis.length === 0) return null
   const menor = disponiveis[0]
 
   return (
@@ -136,18 +138,6 @@ function CardPreco({ produto, isWinner, fullWidth }: {
             </a>
           )
         })}
-
-        {/* Indisponíveis */}
-        {indisponiveis.map(item => (
-          <div key={item.loja}
-            className="flex items-center gap-3 rounded-lg px-3 py-[9px] opacity-40"
-            style={{ border: '1px solid var(--border)' }}
-          >
-            <span className="text-[15px] w-5 text-center">{LOJAS[item.loja].emoji}</span>
-            <span className="text-[12px] flex-1" style={{ color: 'var(--muted)' }}>{LOJAS[item.loja].nome}</span>
-            <span className="text-[11px]" style={{ color: 'var(--muted)' }}>Sem estoque</span>
-          </div>
-        ))}
       </div>
 
       {/* Disclaimer */}
@@ -204,16 +194,6 @@ export function BlocoPrecos({ prodA, prodB, scoreA, scoreB, singleMode }: Props)
           <CardPreco produto={prodB} isWinner={scoreB > scoreA} />
         </div>
       )}
-
-      {/* AdSense placeholder */}
-      <div
-        className="mt-4 rounded-xl flex items-center justify-center"
-        style={{ height: '90px', background: 'var(--surface)', border: '1px dashed var(--border)' }}
-      >
-        <span className="font-mono text-[10px]" style={{ color: 'var(--muted)' }}>
-          [ Google AdSense — 728×90 ]
-        </span>
-      </div>
     </div>
   )
 }

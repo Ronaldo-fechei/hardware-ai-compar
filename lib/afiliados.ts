@@ -66,3 +66,20 @@ export function linkAfiliado(loja: PrecoLoja["loja"], url: string): string {
 export function temAfiliados(): boolean {
   return Boolean(AMAZON_TAG || AWIN_AFFID);
 }
+
+/**
+ * Lojas onde o BestHard é afiliado. Só essas aparecem nas caixas de preço.
+ * (Amazon já ativa; KaBuM/Pichau/Terabyte aparecem e passam a gerar comissão
+ * assim que os IDs da Awin forem preenchidos nas variáveis de ambiente.)
+ */
+export const LOJAS_AFILIADAS: PrecoLoja["loja"][] = [
+  "amazon",
+  "kabum",
+  "pichau",
+  "terabyte",
+];
+
+/** Verdadeiro se a loja é um parceiro afiliado (deve ser exibida nos preços). */
+export function ehAfiliado(loja: PrecoLoja["loja"]): boolean {
+  return LOJAS_AFILIADAS.includes(loja);
+}
