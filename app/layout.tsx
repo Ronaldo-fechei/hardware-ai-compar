@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import "./globals.css";
 import AppHeader from "@/components/AppHeader";
 import AppSidebar from "@/components/AppSidebar";
@@ -48,13 +47,11 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <head>
-        {/* Google AdSense — script no <head> de todas as páginas */}
-        <Script
-          id="adsbygoogle-init"
+        {/* Google AdSense — tag <script> literal no <head> de todas as páginas */}
+        <script
           async
-          strategy="beforeInteractive"
-          crossOrigin="anonymous"
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7131553700052528"
+          crossOrigin="anonymous"
         />
       </head>
       <body className="flex min-h-screen flex-col font-sans antialiased">
