@@ -4,8 +4,9 @@ import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
+import { getSiteUrl } from "@/lib/supabase/config";
 
-type Modo = "entrar" | "criar";
+type Modo = "entrar" | "criar" | "recuperar";
 
 export default function LoginPage() {
   const router = useRouter();
@@ -14,16 +15,41 @@ export default function LoginPage() {
   const [senha, setSenha] = useState("");
   const [carregando, setCarregando] = useState(false);
   const [erro, setErro] = useState("");
+  const [enviado, setEnviado] = useState(false);
 
   const supabase = createClient();
   const configurado = Boolean(supabase);
 
+  function trocarModo(novo: Modo) {
+    setModo(novo);
+    setErro("");
+    setEnviado(false);
+  }
+
   async function onSubmit(e: React.FormEvent) {
     e.preventDefault();
-    if (!supabase || !email.trim() || !senha) return;
+    if (!supabase || !email.trim()) return;
     setErro("");
     setCarregando(true);
 
+    // Recuperação de senha: envia e-mail com link para redefinir.
+    if (modo === "recuperar") {
+      const { error } = await supabase.auth.resetPasswordForEmail(email.trim(), {
+        redirectTo: `${getSiteUrl()}/auth/callback?next=/redefinir-senha`,
+      });
+      if (error) {
+        setErro(traduzErro(error.message));
+      } else {
+        setEnviado(true);
+      }
+      setCarregando(false);
+      return;
+    }
+
+    if (!senha) {
+      setCarregando(false);
+      return;
+    }
     const credenciais = { email: email.trim(), password: senha };
 
     if (modo === "criar") {
@@ -33,7 +59,6 @@ export default function LoginPage() {
         setCarregando(false);
         return;
       }
-      // Se o e-mail já existe, o Supabase devolve um usuário sem identidades.
       if (data.user && data.user.identities && data.user.identities.length === 0) {
         setErro("Este e-mail já tem cadastro. Escolha “Entrar”.");
         setModo("entrar");
@@ -49,10 +74,23 @@ export default function LoginPage() {
       }
     }
 
-    // Recarrega para o servidor reconhecer a sessão (cookies) e vai para a home.
     router.refresh();
     window.location.href = "/";
   }
+
+  const titulo =
+    modo === "criar"
+      ? "Criar conta no"
+      : modo === "recuperar"
+        ? "Recuperar senha —"
+        : "Entrar no";
+
+  const subtitulo =
+    modo === "criar"
+      ? "Crie sua conta com e-mail e senha para salvar seu histórico."
+      : modo === "recuperar"
+        ? "Digite seu e-mail que enviaremos um link para criar uma nova senha."
+        : "Acesse com seu e-mail e senha.";
 
   return (
     <main className="relative min-h-screen overflow-hidden">
@@ -64,14 +102,9 @@ export default function LoginPage() {
 
         <div className="glass-card p-8">
           <h1 className="text-center text-2xl font-bold">
-            {modo === "criar" ? "Criar conta no" : "Entrar no"}{" "}
-            <span className="gradient-text">BestHard</span>
+            {titulo} <span className="gradient-text">BestHard</span>
           </h1>
-          <p className="mt-2 text-center text-sm text-gray-400">
-            {modo === "criar"
-              ? "Crie sua conta com e-mail e senha para salvar seu histórico."
-              : "Acesse com seu e-mail e senha."}
-          </p>
+          <p className="mt-2 text-center text-sm text-gray-400">{subtitulo}</p>
 
           {!configurado ? (
             <div className="mt-6 rounded-lg border border-amber-500/30 bg-amber-500/10 p-4 text-sm text-amber-200">
@@ -88,6 +121,20 @@ export default function LoginPage() {
                 Ver histórico deste navegador →
               </Link>
             </div>
+          ) : modo === "recuperar" && enviado ? (
+            <div className="mt-6 rounded-lg border border-brand-primary/30 bg-brand-primary/10 p-4 text-center text-sm text-gray-200">
+              ✉️ Enviamos um link para <strong>{email}</strong>.
+              <br />
+              Abra seu e-mail e clique no link para criar uma nova senha.
+              <br />
+              <button
+                type="button"
+                onClick={() => trocarModo("entrar")}
+                className="mt-3 text-brand-primary hover:underline"
+              >
+                ← Voltar para o login
+              </button>
+            </div>
           ) : (
             <>
               <form onSubmit={onSubmit} className="mt-6 space-y-3">
@@ -100,29 +147,39 @@ export default function LoginPage() {
                   placeholder="seu@email.com"
                   className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none focus:border-brand-primary/50"
                 />
-                <input
-                  type="password"
-                  required
-                  minLength={6}
-                  autoComplete={modo === "criar" ? "new-password" : "current-password"}
-                  value={senha}
-                  onChange={(e) => setSenha(e.target.value)}
-                  placeholder="Sua senha (mínimo 6 caracteres)"
-                  className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none focus:border-brand-primary/50"
-                />
-                <button
-                  type="submit"
-                  disabled={carregando}
-                  className="btn-primary w-full"
-                >
+                {modo !== "recuperar" && (
+                  <input
+                    type="password"
+                    required
+                    minLength={6}
+                    autoComplete={modo === "criar" ? "new-password" : "current-password"}
+                    value={senha}
+                    onChange={(e) => setSenha(e.target.value)}
+                    placeholder="Sua senha (mínimo 6 caracteres)"
+                    className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none focus:border-brand-primary/50"
+                  />
+                )}
+                <button type="submit" disabled={carregando} className="btn-primary w-full">
                   {carregando
                     ? "Aguarde…"
                     : modo === "criar"
                       ? "Criar conta"
-                      : "Entrar"}
+                      : modo === "recuperar"
+                        ? "Enviar link de redefinição"
+                        : "Entrar"}
                 </button>
                 {erro && <p className="text-center text-sm text-red-400">{erro}</p>}
               </form>
+
+              {modo === "entrar" && (
+                <button
+                  type="button"
+                  onClick={() => trocarModo("recuperar")}
+                  className="mt-3 block w-full text-center text-sm text-gray-400 hover:text-white"
+                >
+                  Esqueci minha senha
+                </button>
+              )}
 
               <p className="mt-5 text-center text-sm text-gray-400">
                 {modo === "criar" ? (
@@ -130,13 +187,21 @@ export default function LoginPage() {
                     Já tem conta?{" "}
                     <button
                       type="button"
-                      onClick={() => {
-                        setModo("entrar");
-                        setErro("");
-                      }}
+                      onClick={() => trocarModo("entrar")}
                       className="text-brand-primary hover:underline"
                     >
                       Entrar
+                    </button>
+                  </>
+                ) : modo === "recuperar" ? (
+                  <>
+                    Lembrou a senha?{" "}
+                    <button
+                      type="button"
+                      onClick={() => trocarModo("entrar")}
+                      className="text-brand-primary hover:underline"
+                    >
+                      Voltar para o login
                     </button>
                   </>
                 ) : (
@@ -144,10 +209,7 @@ export default function LoginPage() {
                     Ainda não tem conta?{" "}
                     <button
                       type="button"
-                      onClick={() => {
-                        setModo("criar");
-                        setErro("");
-                      }}
+                      onClick={() => trocarModo("criar")}
                       className="text-brand-primary hover:underline"
                     >
                       Criar conta
@@ -176,5 +238,7 @@ function traduzErro(msg: string): string {
     return "Confirme seu e-mail antes de entrar.";
   if (m.includes("unable to validate email"))
     return "E-mail inválido.";
+  if (m.includes("for security purposes") || m.includes("rate limit"))
+    return "Aguarde alguns segundos antes de tentar de novo.";
   return msg;
 }
