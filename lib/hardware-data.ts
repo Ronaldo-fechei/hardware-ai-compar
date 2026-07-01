@@ -39,7 +39,7 @@ export const CATEGORIAS: CategoriaConfig[] = [
     subtitle: 'DDR4 vs DDR5 — compare velocidade e latência',
     subcats: ['Todos', 'DDR4', 'DDR5'],
     menorMelhor: ['Latência (CL)'],
-    disponivel: false,
+    disponivel: true,
   },
   {
     slug: 'ssds',
@@ -59,7 +59,7 @@ export const CATEGORIAS: CategoriaConfig[] = [
     subtitle: 'Air vs Water cooling — compare TDP e ruído',
     subcats: ['Todos', 'Air Cooling', 'Water Cooling'],
     menorMelhor: ['Ruído (dBA)'],
-    disponivel: false,
+    disponivel: true,
   },
   {
     slug: 'fontes',
@@ -69,7 +69,7 @@ export const CATEGORIAS: CategoriaConfig[] = [
     subtitle: 'Bronze vs Gold vs Platinum — compare eficiência e potência',
     subcats: ['Todos', 'Modular', 'Semi-modular'],
     menorMelhor: [],
-    disponivel: false,
+    disponivel: true,
   },
   {
     slug: 'gabinetes',
@@ -79,7 +79,7 @@ export const CATEGORIAS: CategoriaConfig[] = [
     subtitle: 'ATX vs ITX — compare tamanho, airflow e espaço',
     subcats: ['Todos', 'Full Tower', 'Mid Tower', 'Mini ITX'],
     menorMelhor: [],
-    disponivel: false,
+    disponivel: true,
   },
 ]
 
@@ -719,6 +719,153 @@ export const PRODUTOS: Produto[] = [
     specs: { 'Tipo': 'Mid Tower ATX', 'Suporta GPU (mm)': 350, 'Baias': '2x 3.5" + 2x 2.5"', 'Fans inclusos': '4x ARGB', 'Painel': 'Vidro temperado' },
     precos: [
       { loja: 'kabum', preco: 299, url: 'https://www.kabum.com.br/produto/gamemax-vega?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '6x R$ 49,83' },
+    ],
+  },
+
+  // ══════════════════════════════════════
+  // NOVOS PRODUTOS (catálogo expandido)
+  // ══════════════════════════════════════
+
+  // ── Memórias RAM (novos) ──
+  {
+    slug: 'corsair-vengeance-32gb-ddr5-6400', marca: 'Corsair', nome: 'Vengeance 32GB DDR5 6400MHz', categoria: 'memorias', score: 90,
+    specs: { 'Capacidade': '32 GB', 'Tipo': 'DDR5', 'Frequência (MHz)': 6400, 'Latência (CL)': 32, 'Kit': '2x16GB' },
+    precos: [
+      { loja: 'amazon', preco: 949, url: 'https://www.amazon.com.br/s?k=corsair+vengeance+32gb+ddr5+6400&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '10x R$ 94,90' },
+      { loja: 'kabum', preco: 929, url: 'https://www.kabum.com.br/produto/corsair-vengeance-32gb-ddr5-6400?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 92,90' },
+      { loja: 'pichau', preco: 979, url: 'https://www.pichau.com.br/memoria-ram?ref=besthard', disponivel: true, frete: 'gratis', parcelamento: '10x R$ 97,90' },
+    ],
+  },
+  {
+    slug: 'kingston-fury-beast-32gb-ddr5-6000', marca: 'Kingston', nome: 'Fury Beast 32GB DDR5 6000MHz', categoria: 'memorias', score: 87,
+    specs: { 'Capacidade': '32 GB', 'Tipo': 'DDR5', 'Frequência (MHz)': 6000, 'Latência (CL)': 36, 'Kit': '2x16GB' },
+    precos: [
+      { loja: 'kabum', preco: 799, url: 'https://www.kabum.com.br/produto/kingston-fury-beast-32gb-ddr5?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 79,90' },
+      { loja: 'amazon', preco: 829, url: 'https://www.amazon.com.br/s?k=kingston+fury+beast+32gb+ddr5+6000&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '10x R$ 82,90' },
+      { loja: 'terabyte', preco: 849, url: 'https://www.terabyteshop.com.br/produto/kingston-fury-beast-32gb-ddr5?aff=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 84,90' },
+    ],
+  },
+  {
+    slug: 'kingston-fury-beast-16gb-ddr4-3600', marca: 'Kingston', nome: 'Fury Beast 16GB DDR4 3600MHz', categoria: 'memorias', score: 71,
+    specs: { 'Capacidade': '16 GB', 'Tipo': 'DDR4', 'Frequência (MHz)': 3600, 'Latência (CL)': 18, 'Kit': '2x8GB' },
+    precos: [
+      { loja: 'kabum', preco: 279, url: 'https://www.kabum.com.br/produto/kingston-fury-beast-16gb-ddr4-3600?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '6x R$ 46,50' },
+      { loja: 'amazon', preco: 299, url: 'https://www.amazon.com.br/s?k=kingston+fury+beast+16gb+ddr4+3600&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '6x R$ 49,83' },
+    ],
+  },
+  {
+    slug: 'gskill-ripjaws-s5-32gb-ddr5-6000', marca: 'G.Skill', nome: 'Ripjaws S5 32GB DDR5 6000MHz', categoria: 'memorias', score: 89,
+    specs: { 'Capacidade': '32 GB', 'Tipo': 'DDR5', 'Frequência (MHz)': 6000, 'Latência (CL)': 30, 'Kit': '2x16GB' },
+    precos: [
+      { loja: 'kabum', preco: 859, url: 'https://www.kabum.com.br/produto/gskill-ripjaws-s5-32gb-ddr5?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 85,90' },
+      { loja: 'pichau', preco: 889, url: 'https://www.pichau.com.br/memoria-ram?ref=besthard', disponivel: true, frete: 'gratis', parcelamento: '10x R$ 88,90' },
+    ],
+  },
+
+  // ── Fontes (novos) ──
+  {
+    slug: 'corsair-rm850e-850w', marca: 'Corsair', nome: 'RM850e 850W', categoria: 'fontes', score: 90,
+    specs: { 'Potência (W)': 850, 'Selo': '80 Plus Gold', 'Modular': 'Total', 'Conector PCIe 5.0': 'Sim (ATX 3.0)', 'Garantia': '7 anos' },
+    precos: [
+      { loja: 'kabum', preco: 699, url: 'https://www.kabum.com.br/produto/corsair-rm850e?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 69,90' },
+      { loja: 'amazon', preco: 729, url: 'https://www.amazon.com.br/s?k=corsair+rm850e+850w&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '10x R$ 72,90' },
+      { loja: 'pichau', preco: 749, url: 'https://www.pichau.com.br/fonte?ref=besthard', disponivel: true, frete: 'gratis', parcelamento: '10x R$ 74,90' },
+    ],
+  },
+  {
+    slug: 'seasonic-focus-gx-750', marca: 'Seasonic', nome: 'Focus GX-750 750W', categoria: 'fontes', score: 89,
+    specs: { 'Potência (W)': 750, 'Selo': '80 Plus Gold', 'Modular': 'Total', 'Conector PCIe 5.0': 'Não', 'Garantia': '10 anos' },
+    precos: [
+      { loja: 'terabyte', preco: 649, url: 'https://www.terabyteshop.com.br/produto/seasonic-focus-gx-750?aff=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 64,90' },
+      { loja: 'kabum', preco: 679, url: 'https://www.kabum.com.br/produto/seasonic-focus-gx-750?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 67,90' },
+    ],
+  },
+  {
+    slug: 'corsair-hx1000-1000w', marca: 'Corsair', nome: 'HX1000 1000W', categoria: 'fontes', score: 93,
+    specs: { 'Potência (W)': 1000, 'Selo': '80 Plus Platinum', 'Modular': 'Total', 'Conector PCIe 5.0': 'Sim (ATX 3.0)', 'Garantia': '10 anos' },
+    precos: [
+      { loja: 'kabum', preco: 1199, url: 'https://www.kabum.com.br/produto/corsair-hx1000?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 119,90' },
+      { loja: 'pichau', preco: 1249, url: 'https://www.pichau.com.br/fonte?ref=besthard', disponivel: true, frete: 'gratis', parcelamento: '10x R$ 124,90' },
+      { loja: 'amazon', preco: 1279, url: 'https://www.amazon.com.br/s?k=corsair+hx1000+1000w&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '10x R$ 127,90' },
+    ],
+  },
+  {
+    slug: 'xpg-pylon-550w', marca: 'XPG', nome: 'Pylon 550W', categoria: 'fontes', score: 60,
+    specs: { 'Potência (W)': 550, 'Selo': '80 Plus Bronze', 'Modular': 'Não', 'Conector PCIe 5.0': 'Não', 'Garantia': '5 anos' },
+    precos: [
+      { loja: 'kabum', preco: 289, url: 'https://www.kabum.com.br/produto/xpg-pylon-550w?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '6x R$ 48,16' },
+      { loja: 'amazon', preco: 309, url: 'https://www.amazon.com.br/s?k=xpg+pylon+550w&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '6x R$ 51,50' },
+    ],
+  },
+
+  // ── Coolers (novos) ──
+  {
+    slug: 'deepcool-lt720-360mm', marca: 'DeepCool', nome: 'LT720 360mm', categoria: 'coolers', score: 92,
+    specs: { 'Tipo': 'Água (AIO 360mm)', 'TDP (W)': 300, 'Tamanho (mm)': 360, 'Ruído (dBA)': 32, 'Soquetes': 'AM5/AM4/LGA1700' },
+    precos: [
+      { loja: 'kabum', preco: 749, url: 'https://www.kabum.com.br/produto/deepcool-lt720?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 74,90' },
+      { loja: 'pichau', preco: 779, url: 'https://www.pichau.com.br/water-cooler?ref=besthard', disponivel: true, frete: 'gratis', parcelamento: '10x R$ 77,90' },
+      { loja: 'amazon', preco: 799, url: 'https://www.amazon.com.br/s?k=deepcool+lt720+360mm&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '10x R$ 79,90' },
+    ],
+  },
+  {
+    slug: 'arctic-liquid-freezer-iii-240', marca: 'Arctic', nome: 'Liquid Freezer III 240', categoria: 'coolers', score: 90,
+    specs: { 'Tipo': 'Água (AIO 240mm)', 'TDP (W)': 280, 'Tamanho (mm)': 240, 'Ruído (dBA)': 30, 'Soquetes': 'AM5/AM4/LGA1700' },
+    precos: [
+      { loja: 'kabum', preco: 599, url: 'https://www.kabum.com.br/produto/arctic-liquid-freezer-iii-240?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 59,90' },
+      { loja: 'terabyte', preco: 629, url: 'https://www.terabyteshop.com.br/produto/arctic-liquid-freezer-iii-240?aff=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 62,90' },
+    ],
+  },
+  {
+    slug: 'noctua-nh-d15', marca: 'Noctua', nome: 'NH-D15', categoria: 'coolers', score: 91,
+    specs: { 'Tipo': 'Ar (torre dupla)', 'TDP (W)': 250, 'Tamanho (mm)': 165, 'Ruído (dBA)': 24, 'Soquetes': 'AM5/AM4/LGA1700' },
+    precos: [
+      { loja: 'amazon', preco: 649, url: 'https://www.amazon.com.br/s?k=noctua+nh-d15&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '10x R$ 64,90' },
+      { loja: 'kabum', preco: 669, url: 'https://www.kabum.com.br/produto/noctua-nh-d15?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 66,90' },
+      { loja: 'pichau', preco: 699, url: 'https://www.pichau.com.br/air-cooler?ref=besthard', disponivel: true, frete: 'gratis', parcelamento: '10x R$ 69,90' },
+    ],
+  },
+  {
+    slug: 'thermalright-peerless-assassin-120-se', marca: 'Thermalright', nome: 'Peerless Assassin 120 SE', categoria: 'coolers', score: 84,
+    specs: { 'Tipo': 'Ar (torre dupla)', 'TDP (W)': 220, 'Tamanho (mm)': 155, 'Ruído (dBA)': 26, 'Soquetes': 'AM5/AM4/LGA1700' },
+    precos: [
+      { loja: 'kabum', preco: 229, url: 'https://www.kabum.com.br/produto/thermalright-peerless-assassin-120-se?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '4x R$ 57,25' },
+      { loja: 'amazon', preco: 249, url: 'https://www.amazon.com.br/s?k=thermalright+peerless+assassin+120+se&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '5x R$ 49,80' },
+    ],
+  },
+
+  // ── Gabinetes (novos) ──
+  {
+    slug: 'corsair-4000d-airflow', marca: 'Corsair', nome: '4000D Airflow', categoria: 'gabinetes', score: 87,
+    specs: { 'Tipo': 'Mid Tower ATX', 'Suporta GPU (mm)': 360, 'Baias': '2x 3.5" + 2x 2.5"', 'Fans inclusos': '2x 120mm', 'Painel': 'Vidro temperado' },
+    precos: [
+      { loja: 'kabum', preco: 549, url: 'https://www.kabum.com.br/produto/corsair-4000d-airflow?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 54,90' },
+      { loja: 'amazon', preco: 579, url: 'https://www.amazon.com.br/s?k=corsair+4000d+airflow&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '10x R$ 57,90' },
+    ],
+  },
+  {
+    slug: 'nzxt-h7-flow', marca: 'NZXT', nome: 'H7 Flow', categoria: 'gabinetes', score: 86,
+    specs: { 'Tipo': 'Mid Tower ATX', 'Suporta GPU (mm)': 400, 'Baias': '2x 3.5" + 4x 2.5"', 'Fans inclusos': '2x 120mm', 'Painel': 'Vidro temperado' },
+    precos: [
+      { loja: 'kabum', preco: 699, url: 'https://www.kabum.com.br/produto/nzxt-h7-flow?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 69,90' },
+      { loja: 'pichau', preco: 729, url: 'https://www.pichau.com.br/gabinete?ref=besthard', disponivel: true, frete: 'gratis', parcelamento: '10x R$ 72,90' },
+    ],
+  },
+  {
+    slug: 'lian-li-o11-dynamic-evo', marca: 'Lian Li', nome: 'O11 Dynamic EVO', categoria: 'gabinetes', score: 90,
+    specs: { 'Tipo': 'Mid Tower ATX', 'Suporta GPU (mm)': 422, 'Baias': '4x 2.5" + 2x 3.5"', 'Fans inclusos': 'Nenhum', 'Painel': 'Vidro temperado (duplo)' },
+    precos: [
+      { loja: 'kabum', preco: 899, url: 'https://www.kabum.com.br/produto/lian-li-o11-dynamic-evo?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 89,90' },
+      { loja: 'terabyte', preco: 929, url: 'https://www.terabyteshop.com.br/produto/lian-li-o11-dynamic-evo?aff=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 92,90' },
+      { loja: 'amazon', preco: 949, url: 'https://www.amazon.com.br/s?k=lian+li+o11+dynamic+evo&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '10x R$ 94,90' },
+    ],
+  },
+  {
+    slug: 'cooler-master-nr200p', marca: 'Cooler Master', nome: 'NR200P', categoria: 'gabinetes', score: 83,
+    specs: { 'Tipo': 'Mini ITX', 'Suporta GPU (mm)': 330, 'Baias': '2x 2.5" + 1x 3.5"', 'Fans inclusos': '2x 120mm', 'Painel': 'Vidro temperado' },
+    precos: [
+      { loja: 'kabum', preco: 649, url: 'https://www.kabum.com.br/produto/cooler-master-nr200p?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 64,90' },
+      { loja: 'pichau', preco: 679, url: 'https://www.pichau.com.br/gabinete?ref=besthard', disponivel: true, frete: 'gratis', parcelamento: '10x R$ 67,90' },
     ],
   },
 ]
