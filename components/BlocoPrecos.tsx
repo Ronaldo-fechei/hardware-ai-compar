@@ -1,6 +1,6 @@
 'use client'
 import type { Produto, PrecoLoja } from '@/types/hardware'
-import { linkAfiliado, ehAfiliado } from '@/lib/afiliados'
+import { linkAfiliado, ehAfiliado, buscaAmazon } from '@/lib/afiliados'
 
 const LOJAS: Record<PrecoLoja['loja'], { nome: string; emoji: string; cor: string; bg: string }> = {
   amazon:       { nome: 'Amazon',        emoji: '📦', cor: '#FF9900', bg: 'rgba(255,153,0,0.08)' },
@@ -32,8 +32,11 @@ function CardPreco({ produto, isWinner, fullWidth }: {
     .filter(p => p.disponivel && ehAfiliado(p.loja))
     .sort((a, b) => a.preco - b.preco)
     .slice(0, 3)
-  if (disponiveis.length === 0) return null
   const menor = disponiveis[0]
+  // Amazon já está na lista de preços? Se não, mostramos um botão dedicado
+  // para garantir que todo produto tenha link (de busca, com a tag).
+  const temAmazon = disponiveis.some(p => p.loja === 'amazon')
+  const linkAmazon = buscaAmazon(`${produto.marca} ${produto.nome}`)
 
   return (
     <div
@@ -93,7 +96,9 @@ function CardPreco({ produto, isWinner, fullWidth }: {
           return (
             <a
               key={item.loja}
-              href={linkAfiliado(item.loja, item.url)}
+              href={item.loja === 'amazon'
+                ? buscaAmazon(`${produto.marca} ${produto.nome}`)
+                : linkAfiliado(item.loja, item.url)}
               target="_blank"
               rel="noopener noreferrer sponsored"
               className="flex items-center gap-3 rounded-lg px-3 py-[9px] transition-all hover:-translate-y-px group"
@@ -138,6 +143,30 @@ function CardPreco({ produto, isWinner, fullWidth }: {
             </a>
           )
         })}
+
+        {/* Botão garantido da Amazon (busca com a tag de afiliado) */}
+        {!temAmazon && (
+          <a
+            href={linkAmazon}
+            target="_blank"
+            rel="noopener noreferrer sponsored"
+            className="flex items-center gap-3 rounded-lg px-3 py-[9px] transition-all hover:-translate-y-px group"
+            style={{ background: 'rgba(255,153,0,0.08)', border: '1px solid #FF990040' }}
+            onClick={() => trackAfiliado(produto.slug, 'amazon')}
+          >
+            <span className="text-[15px] w-5 text-center flex-shrink-0">📦</span>
+            <div className="flex-1 min-w-0">
+              <span className="text-[12px] font-semibold" style={{ color: '#FF9900' }}>Amazon</span>
+              <p className="text-[10px] mt-[1px]" style={{ color: 'var(--muted)' }}>Ver ofertas e preço atual</p>
+            </div>
+            <span
+              className="rounded-lg px-3 py-[5px] text-[10px] font-bold transition-opacity group-hover:opacity-85 flex-shrink-0"
+              style={{ background: '#FF9900', color: '#fff' }}
+            >
+              Ver na Amazon →
+            </span>
+          </a>
+        )}
       </div>
 
       {/* Disclaimer */}
@@ -161,9 +190,6 @@ interface Props {
 }
 
 export function BlocoPrecos({ prodA, prodB, scoreA, scoreB, singleMode }: Props) {
-  const temPrecos = (prodA.precos?.length ?? 0) > 0 || (!singleMode && (prodB.precos?.length ?? 0) > 0)
-  if (!temPrecos) return null
-
   return (
     <div className="mt-4">
       {/* Header */}

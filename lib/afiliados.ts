@@ -83,3 +83,14 @@ export const LOJAS_AFILIADAS: PrecoLoja["loja"][] = [
 export function ehAfiliado(loja: PrecoLoja["loja"]): boolean {
   return LOJAS_AFILIADAS.includes(loja);
 }
+
+/**
+ * Gera um link de BUSCA da Amazon já com a tag de afiliado, a partir do nome
+ * do produto. A busca cai numa página filtrada mostrando o produto, e a
+ * comissão fica isolada no seu link (a tag vai na URL). Funciona para todos os
+ * produtos sem depender de scraping nem de ASIN fixo.
+ */
+export function buscaAmazon(termo: string): string {
+  const base = `https://www.amazon.com.br/s?k=${encodeURIComponent(termo.trim())}`;
+  return linkAfiliado("amazon", base);
+}
