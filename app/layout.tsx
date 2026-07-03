@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { Header } from "@/components/Header";
 import { Sidebar } from "@/components/Sidebar";
 import { Footer } from "@/components/Footer";
@@ -67,6 +68,8 @@ export default function RootLayout({
         </div>
         <Footer />
       </body>
+      {/* Google Analytics 4 (carregamento otimizado via @next/third-parties) */}
+      <GoogleAnalytics gaId="G-GT70ZCKLQF" />
     </html>
   );
 }
