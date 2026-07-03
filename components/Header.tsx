@@ -28,7 +28,7 @@ export function Header({ children }: { children?: React.ReactNode }) {
       style={{ background: 'rgba(10,12,16,.95)', borderColor: 'var(--border)', backdropFilter: 'blur(12px)' }}
     >
       <Link href="/" className="flex items-center gap-2 text-[17px] font-bold flex-shrink-0" style={{ letterSpacing: '-0.5px' }}>
-        <span className="h-[7px] w-[7px] rounded-full" style={{ background: 'var(--accent)', animation: 'pulse 2s infinite' }} />
+        <img src="/logo.svg" alt="BestHard" width={30} height={30} className="rounded-md" />
         Best<span style={{ color: 'var(--accent)' }}>Hard</span>
       </Link>
 
