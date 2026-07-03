@@ -1122,6 +1122,514 @@ export const ARTIGOS: Artigo[] = [
     ],
   },
 
+  // ════════════════════════════════════════════════════════
+  // ARTIGO 9 — Quanto de RAM para jogos 2026
+  // ════════════════════════════════════════════════════════
+  {
+    slug: 'quanto-de-ram-para-jogos-2026',
+    titulo: 'Quanto de RAM Preciso para Jogos em 2026? 16GB ou 32GB, DDR4 ou DDR5',
+    subtitulo: '16GB ainda dá conta? Quando vale 32GB? E DDR4 morreu? Respondemos sem enrolação',
+    descricao: 'Quanto de memória RAM você precisa para jogos em 2026? Explicamos 16GB vs 32GB, DDR4 vs DDR5, velocidade (MHz), dual channel e os melhores kits para comprar no Brasil.',
+    categoria: 'guias',
+    tags: ['ram', 'memória', '16gb', '32gb', 'ddr4', 'ddr5', 'dual channel', 'guia ram 2026'],
+    autor: 'BestHard',
+    dataPublicacao: '2026-07-01',
+    tempoLeitura: 8,
+    destaque: false,
+    produtosRelacionados: ['corsair-vengeance-lpx-16gb-ddr4-3200', 'corsair-vengeance-16gb-ddr5-5200', 'gskill-trident-z5-32gb-ddr5-6000', 'kingston-fury-beast-16gb-ddr4-3600'],
+    conteudo: [
+      {
+        tipo: 'intro',
+        texto: 'Memória RAM é uma das peças que mais gera dúvida — e onde as pessoas mais erram, para mais ou para menos. Em 2026, com os preços de memória em alta, comprar RAM demais é jogar dinheiro fora, e comprar de menos trava o seu PC nos jogos novos. Este guia responde direto ao ponto: quantos GB você precisa, se ainda vale DDR4, o que significam os números de velocidade e por que "dual channel" é mais importante do que a maioria imagina.',
+      },
+      {
+        tipo: 'adsense',
+        anuncioId: 'ram-topo',
+      },
+      {
+        tipo: 'h2',
+        titulo: '16GB ou 32GB para jogos em 2026?',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '✅ 16GB: ainda é o suficiente para a MAIORIA dos jogos em 2026, se você não deixa 20 abas do navegador abertas junto',
+          '🥇 32GB: o novo ponto ideal para quem joga títulos pesados (Cities Skylines 2, Star Citizen, Flight Simulator) e/ou faz stream, edição e multitarefa',
+          '⚠️ 8GB: insuficiente em 2026 — trava e engasga em jogos modernos. Só para PC de tarefas básicas',
+          '💡 64GB: exagero para jogos. Só faz sentido para criação de conteúdo profissional, máquinas virtuais e renderização',
+        ],
+      },
+      {
+        tipo: 'destaque',
+        destaqueTipo: 'recomendacao',
+        texto: '✓ Recomendação 2026: se o orçamento permite, monte com 32GB (2×16GB) — é o melhor seguro contra jogos futuros e multitarefa. Se precisa economizar, 16GB (2×8GB) em dual channel roda tudo bem hoje, e você adiciona mais depois.',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Dual channel: o detalhe que dobra o desempenho da RAM',
+        texto: 'Este é o erro mais comum e mais barato de evitar: comprar UM pente de 16GB em vez de DOIS de 8GB. Com dois pentes, a memória trabalha em "dual channel" e a largura de banda praticamente dobra — o que pode significar 10 a 20% mais FPS em alguns jogos, de graça. Regra simples: sempre compre a RAM em par (2 pentes iguais), nunca um pente só.',
+      },
+      {
+        tipo: 'destaque',
+        destaqueTipo: 'aviso',
+        texto: '⚠️ Nunca misture pentes diferentes se puder evitar. Um kit vendido junto (2×8GB ou 2×16GB) garante que os pentes são idênticos e vão rodar em dual channel na velocidade anunciada. Misturar marcas/velocidades pode causar instabilidade e obrigar a memória a rodar mais devagar.',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'DDR4 ainda vale a pena em 2026?',
+        texto: 'Depende da plataforma. Se você está montando um PC novo com processador AMD AM5 (Ryzen 7000/9000) ou Intel de 12ª geração ou mais recente com placa que só aceita DDR5, então é DDR5 obrigatório. Mas se você usa uma plataforma DDR4 (Intel LGA1700 com placa B760 DDR4, AMD AM4) ou está reaproveitando peças, a DDR4 continua excelente para jogos — a diferença de FPS para a DDR5 é pequena na maioria dos títulos, e a DDR4 sai bem mais barata.',
+      },
+      {
+        tipo: 'tabela',
+        colunas: ['Critério', 'DDR4', 'DDR5'],
+        linhas: [
+          ['Velocidade típica gamer', '3200-3600 MHz', '6000-6400 MHz'],
+          ['Ganho real em jogos',     'Referência',    '+3 a 8% na média'],
+          ['Preço (2026)',            '💰 Mais barata', 'Mais cara'],
+          ['Plataformas',             'AM4, LGA1700 (DDR4)', 'AM5, LGA1700/1851 (DDR5)'],
+          ['Vale para',               'Reaproveitar / economizar', 'Builds novos e futuros'],
+        ],
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Velocidade (MHz) e latência: o que importa de verdade',
+        texto: 'Não adianta comprar a RAM mais rápida do mundo — cada plataforma tem um ponto ideal. Para DDR4, o alvo é 3200-3600 MHz. Para DDR5 em AM5, o famoso "sweet spot" é 6000 MHz CL30, que a AMD recomenda oficialmente. Comprar acima disso raramente compensa o preço extra. Lembre também de ativar o perfil XMP (Intel) ou EXPO (AMD) na BIOS — sem isso, a memória roda na velocidade baixa padrão e você perde o desempenho que pagou.',
+      },
+      {
+        tipo: 'h2',
+        titulo: '🛒 Melhores kits de RAM por perfil (2026)',
+      },
+      {
+        tipo: 'h3',
+        titulo: 'Custo-benefício DDR4 (plataformas AM4 / LGA1700 DDR4)',
+      },
+      {
+        tipo: 'afiliado',
+        produtoSlug: 'corsair-vengeance-lpx-16gb-ddr4-3200',
+      },
+      {
+        tipo: 'afiliado',
+        produtoSlug: 'kingston-fury-beast-16gb-ddr4-3600',
+      },
+      {
+        tipo: 'h3',
+        titulo: 'DDR5 para builds novos (AM5 / Intel recente)',
+      },
+      {
+        tipo: 'afiliado',
+        produtoSlug: 'corsair-vengeance-16gb-ddr5-5200',
+      },
+      {
+        tipo: 'h3',
+        titulo: '32GB DDR5 — o novo padrão para quem quer folga',
+      },
+      {
+        tipo: 'afiliado',
+        produtoSlug: 'gskill-trident-z5-32gb-ddr5-6000',
+      },
+      {
+        tipo: 'cta',
+        ctaTexto: 'Comparar memórias RAM lado a lado →',
+        ctaHref: '/comparar/memorias',
+      },
+      {
+        tipo: 'adsense',
+        anuncioId: 'ram-fim',
+      },
+    ],
+    faq: [
+      {
+        pergunta: '16GB de RAM ainda é suficiente para jogos em 2026?',
+        resposta: 'Sim, para a maioria dos jogos, desde que em dual channel (2×8GB). Alguns títulos muito pesados e a multitarefa (jogar + stream + navegador) já pedem 32GB. Se o orçamento permitir, 32GB é o mais seguro para os próximos anos.',
+      },
+      {
+        pergunta: 'Vale a pena DDR5 ou DDR4 é suficiente?',
+        resposta: 'Se a sua placa e processador só aceitam DDR5 (AM5, Intel recente), é DDR5. Se você usa uma plataforma DDR4 ou vai reaproveitar peças, a DDR4 continua ótima para jogos — a diferença de FPS é pequena e ela é bem mais barata.',
+      },
+      {
+        pergunta: 'Por que comprar 2 pentes em vez de 1?',
+        resposta: 'Dois pentes ativam o "dual channel", que praticamente dobra a largura de banda da memória e pode render 10-20% mais FPS em alguns jogos — de graça. Comprar um único pente de 16GB desperdiça esse ganho. Sempre compre a RAM em par.',
+      },
+      {
+        pergunta: 'Qual a velocidade ideal de RAM para AMD AM5?',
+        resposta: 'O ponto ideal para Ryzen 7000/9000 (AM5) é DDR5 6000 MHz CL30 — recomendação oficial da AMD. Velocidades muito acima disso raramente compensam o preço extra. Lembre de ativar o perfil EXPO na BIOS para atingir a velocidade anunciada.',
+      },
+    ],
+  },
+
+  // ════════════════════════════════════════════════════════
+  // ARTIGO 10 — Water cooler ou cooler a ar 2026
+  // ════════════════════════════════════════════════════════
+  {
+    slug: 'water-cooler-ou-cooler-ar-2026',
+    titulo: 'Water Cooler ou Cooler a Ar? Qual o Melhor em 2026',
+    subtitulo: 'A verdade que os vídeos de setup não contam: quando o ar vence a água',
+    descricao: 'Water cooler ou cooler a ar em 2026? Comparamos desempenho, preço, ruído, manutenção e risco. Veja quando cada um vale a pena e os melhores modelos para seu processador no Brasil.',
+    categoria: 'guias',
+    tags: ['cooler', 'water cooler', 'air cooler', 'refrigeração', 'aio', 'temperatura cpu', 'guia cooler 2026'],
+    autor: 'BestHard',
+    dataPublicacao: '2026-06-30',
+    tempoLeitura: 7,
+    destaque: false,
+    produtosRelacionados: ['deepcool-ak620', 'thermalright-peerless-assassin-120-se', 'deepcool-lt720-360mm', 'cooler-master-hyper-212'],
+    conteudo: [
+      {
+        tipo: 'intro',
+        texto: 'Poucos temas dividem tanto a comunidade quanto a briga entre water cooler e cooler a ar. A água parece mais bonita e "profissional", mas a verdade técnica surpreende: um bom cooler a ar de torre dupla empata ou até vence water coolers de valor parecido — com menos risco e sem manutenção. Neste guia mostramos quando cada opção realmente vale a pena, sem o hype dos vídeos de setup.',
+      },
+      {
+        tipo: 'adsense',
+        anuncioId: 'cooler-topo',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Resumo honesto: ar vs água em 2026',
+      },
+      {
+        tipo: 'tabela',
+        colunas: ['Critério', 'Cooler a Ar', 'Water Cooler (AIO)'],
+        linhas: [
+          ['Desempenho (custo igual)', '🥇 Empata ou vence', 'Depende do radiador'],
+          ['Preço',                    '💰 Mais barato',     'Mais caro'],
+          ['Ruído',                    'Bom (torre dupla)',  '🥇 Pode ser mais silencioso'],
+          ['Manutenção',               '🥇 Zero',            'Bomba pode falhar em anos'],
+          ['Risco',                    '🥇 Nenhum',          'Vazamento (raro) e fim de vida da bomba'],
+          ['Estética',                 'Discreto',           '🥇 Visual "clean"'],
+          ['Espaço no gabinete',       'Ocupa altura (RAM)', 'Precisa de suporte a radiador'],
+        ],
+      },
+      {
+        tipo: 'destaque',
+        destaqueTipo: 'recomendacao',
+        texto: '✓ Regra prática: até processadores intermediários (i5, Ryzen 5/7 não-X3D), um bom cooler a ar de torre dupla é a escolha mais inteligente — mais barato, sem manutenção e sem risco. Water cooler faz mais sentido em CPUs de alto TDP (i7/i9, Ryzen 9) ou por questão de estética e espaço.',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Quando o cooler a ar é a melhor escolha',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '💰 Você quer o melhor custo-benefício — o ar entrega mais resfriamento por real',
+          '🔧 Não quer se preocupar com manutenção ou vida útil de bomba',
+          '🛡️ Prefere zero risco de vazamento',
+          '🎯 Seu processador é um i5/i3 ou Ryzen 5/7 de TDP moderado',
+          '⚠️ Só confira a altura do cooler x largura do gabinete e a folga sobre a RAM antes de comprar',
+        ],
+      },
+      {
+        tipo: 'h3',
+        titulo: 'Melhor custo-benefício absoluto a ar',
+        texto: 'O Thermalright Peerless Assassin 120 SE virou fenômeno por um motivo: ele resfria como coolers premium que custam o triplo. Para a maioria dos PCs, é a compra mais inteligente em refrigeração.',
+      },
+      {
+        tipo: 'afiliado',
+        produtoSlug: 'thermalright-peerless-assassin-120-se',
+      },
+      {
+        tipo: 'h3',
+        titulo: 'Torre dupla parruda para i7/Ryzen 7',
+      },
+      {
+        tipo: 'afiliado',
+        produtoSlug: 'deepcool-ak620',
+      },
+      {
+        tipo: 'h3',
+        titulo: 'Entrada / troca do cooler stock',
+      },
+      {
+        tipo: 'afiliado',
+        produtoSlug: 'cooler-master-hyper-212',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Quando o water cooler vale a pena',
+        texto: 'Water cooler (AIO) faz sentido em três situações: processadores de alto consumo (i7-14700K, i9, Ryzen 9) que geram muito calor e se beneficiam de um radiador de 280/360mm; gabinetes onde um cooler a ar de torre alta não cabe; e para quem valoriza a estética "clean" com a CPU sem aquele bloco enorme de alumínio. Se for de água, evite modelos baratos de 120mm — prefira 240mm ou mais para ver vantagem real.',
+      },
+      {
+        tipo: 'afiliado',
+        produtoSlug: 'deepcool-lt720-360mm',
+      },
+      {
+        tipo: 'destaque',
+        destaqueTipo: 'dica',
+        texto: '💡 Mito derrubado: water cooler NÃO é automaticamente melhor que ar. Um AIO de 120mm barato costuma perder para um cooler a ar de torre dupla de preço parecido. A vantagem da água aparece nos radiadores maiores (240/280/360mm) e em CPUs de alto TDP.',
+      },
+      {
+        tipo: 'cta',
+        ctaTexto: 'Comparar coolers lado a lado →',
+        ctaHref: '/comparar/coolers',
+      },
+      {
+        tipo: 'adsense',
+        anuncioId: 'cooler-fim',
+      },
+    ],
+    faq: [
+      {
+        pergunta: 'Water cooler é melhor que cooler a ar?',
+        resposta: 'Nem sempre. Por preço parecido, um bom cooler a ar de torre dupla empata ou vence AIOs de água — sem manutenção e sem risco de vazamento. A água leva vantagem nos radiadores maiores (240/360mm) e em processadores de alto consumo (i7/i9, Ryzen 9).',
+      },
+      {
+        pergunta: 'Preciso de water cooler para um i5 ou Ryzen 5?',
+        resposta: 'Não. Para i5, i3, Ryzen 5 e Ryzen 7 de TDP moderado, um bom cooler a ar como o Thermalright Peerless Assassin ou DeepCool AK620 resfria de sobra, é mais barato e não exige manutenção.',
+      },
+      {
+        pergunta: 'Water cooler pode vazar e estragar o PC?',
+        resposta: 'É raro em modelos de marca, mas existe o risco, além do desgaste natural da bomba ao longo dos anos. O cooler a ar não tem líquido nem bomba, por isso tem risco praticamente zero e vida útil muito longa.',
+      },
+      {
+        pergunta: 'Qual o melhor cooler custo-benefício em 2026?',
+        resposta: 'O Thermalright Peerless Assassin 120 SE é o campeão de custo-benefício — resfria como coolers premium por uma fração do preço. Para CPUs mais quentes (i7/Ryzen 7), o DeepCool AK620 é uma excelente torre dupla.',
+      },
+    ],
+  },
+
+  // ════════════════════════════════════════════════════════
+  // ARTIGO 11 — Ranking de placas de vídeo custo-benefício 2026
+  // ════════════════════════════════════════════════════════
+  {
+    slug: 'melhor-placa-de-video-custo-beneficio-2026',
+    titulo: 'Melhor Placa de Vídeo Custo-Benefício em 2026: Ranking por Faixa de Preço',
+    subtitulo: 'Do R$ 900 ao topo absoluto — a placa certa para cada bolso e cada resolução',
+    descricao: 'Ranking das melhores placas de vídeo custo-benefício em 2026 por faixa de preço. De GPUs de entrada para 1080p até a RTX 4090 para 4K. Veja qual GPU comprar para o seu monitor e orçamento.',
+    categoria: 'comparativos',
+    tags: ['placa de vídeo', 'gpu', 'ranking gpu', 'custo-benefício', '1080p', '1440p', '4k', 'melhor gpu 2026'],
+    autor: 'BestHard',
+    dataPublicacao: '2026-06-29',
+    dataAtualizacao: '2026-07-02',
+    tempoLeitura: 9,
+    destaque: true,
+    produtosRelacionados: ['amd-radeon-rx-7600', 'nvidia-geforce-rtx-4060', 'nvidia-geforce-rtx-4070-super', 'amd-radeon-rx-7800-xt'],
+    conteudo: [
+      {
+        tipo: 'intro',
+        texto: 'A placa de vídeo é a peça que mais define a experiência em jogos — e a mais cara de errar. Em 2026, com tantos modelos no mercado, a pergunta certa não é "qual a melhor GPU", e sim "qual a melhor GPU para o MEU monitor e o MEU orçamento". Este ranking organiza as placas por faixa de preço e por resolução, para você comprar exatamente o que precisa sem pagar por potência que não vai usar.',
+      },
+      {
+        tipo: 'adsense',
+        anuncioId: 'ranking-gpu-topo',
+      },
+      {
+        tipo: 'destaque',
+        destaqueTipo: 'dica',
+        texto: '💡 A regra número 1: combine a GPU com o seu monitor. Placa potente demais para um monitor 1080p 60Hz é desperdício; placa fraca para um monitor 1440p 144Hz é frustração. Escolha pela resolução e taxa de atualização que você realmente usa.',
+      },
+      {
+        tipo: 'h2',
+        titulo: '🎮 Qual GPU para cada resolução em 2026',
+      },
+      {
+        tipo: 'tabela',
+        colunas: ['Resolução / Monitor', 'GPU recomendada', 'Experiência'],
+        linhas: [
+          ['1080p 60Hz (econômico)',   'RX 7600 / RTX 4060',      '✅ Roda tudo em Alto'],
+          ['1080p 144Hz+ (competitivo)','RTX 4060 / RX 7600',      '✅ FPS alto em e-sports'],
+          ['1440p 60-144Hz',           'RTX 4070 Super / RX 7800 XT','🥇 Sweet spot 2026'],
+          ['4K 60Hz',                  'RTX 4080 Super / RX 7900 XTX','Premium'],
+          ['4K 120Hz+ / máximo',       'RTX 4090 / RTX 5090',      '👑 Topo absoluto'],
+        ],
+      },
+      {
+        tipo: 'h2',
+        titulo: '💰 Faixa econômica (até ~R$ 1.800) — 1080p',
+        texto: 'Aqui está a maior parte dos jogadores brasileiros. A RX 7600 e a RTX 4060 dominam essa faixa: ambas rodam qualquer jogo atual em 1080p com folga. A RX 7600 costuma ser mais barata; a RTX 4060 tem o DLSS 3 e ray tracing melhor. Para e-sports (CS2, Valorant, LoL), qualquer uma entrega centenas de FPS.',
+      },
+      {
+        tipo: 'afiliado',
+        produtoSlug: 'amd-radeon-rx-7600',
+      },
+      {
+        tipo: 'afiliado',
+        produtoSlug: 'nvidia-geforce-rtx-4060',
+      },
+      {
+        tipo: 'h2',
+        titulo: '🥇 Faixa intermediária (~R$ 3.000-4.000) — o sweet spot 1440p',
+        texto: 'Se você quer o melhor equilíbrio entre preço e longevidade, é aqui. A RTX 4070 Super e a RX 7800 XT abrem a porta para o 1440p com folga e ainda rodam bem em 4K com ajustes. São as placas que "duram" — o investimento que vale mais a pena para quem troca de GPU a cada 3-4 anos. A RTX 4070 Super leva vantagem em ray tracing e DLSS; a RX 7800 XT oferece mais VRAM (16GB) por um preço competitivo.',
+      },
+      {
+        tipo: 'afiliado',
+        produtoSlug: 'nvidia-geforce-rtx-4070-super',
+      },
+      {
+        tipo: 'afiliado',
+        produtoSlug: 'amd-radeon-rx-7800-xt',
+      },
+      {
+        tipo: 'h2',
+        titulo: '👑 Topo de linha — 4K e máximo desempenho',
+        texto: 'Para quem quer o melhor sem olhar preço, a RTX 4090 (e a nova RTX 5090) reinam no 4K com ray tracing no máximo. São placas caríssimas e voltadas para entusiastas e criadores de conteúdo. Para a esmagadora maioria, é potência além do necessário — mas para 4K 120Hz com tudo ligado, não há substituto.',
+      },
+      {
+        tipo: 'afiliado',
+        produtoSlug: 'nvidia-geforce-rtx-4090',
+      },
+      {
+        tipo: 'h2',
+        titulo: '⚠️ Cuidado com o gargalo: a GPU não trabalha sozinha',
+        texto: 'De nada adianta comprar uma RTX 4070 Super e ligar num processador antigo — o processador vira gargalo e "segura" a placa, desperdiçando dinheiro. Antes de escolher a GPU, confira se o seu processador acompanha. Você pode testar combinações no nosso simulador de gargalo.',
+      },
+      {
+        tipo: 'cta',
+        ctaTexto: 'Testar gargalo entre CPU e GPU →',
+        ctaHref: '/gargalo',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Resumo do ranking 2026',
+      },
+      {
+        tipo: 'tabela',
+        colunas: ['Faixa', 'Melhor escolha', 'Para'],
+        linhas: [
+          ['Econômica',      'RX 7600 / RTX 4060',        '1080p'],
+          ['Intermediária',  'RTX 4070 Super / RX 7800 XT','1440p (sweet spot)'],
+          ['Premium',        'RTX 4080 Super / RX 7900 XTX','4K 60Hz'],
+          ['Topo absoluto',  'RTX 4090 / RTX 5090',        '4K 120Hz+'],
+        ],
+      },
+      {
+        tipo: 'cta',
+        ctaTexto: 'Comparar placas de vídeo lado a lado →',
+        ctaHref: '/comparar/gpus',
+      },
+      {
+        tipo: 'adsense',
+        anuncioId: 'ranking-gpu-fim',
+      },
+    ],
+    faq: [
+      {
+        pergunta: 'Qual a melhor placa de vídeo custo-benefício em 2026?',
+        resposta: 'Depende da resolução. Para 1080p, a RX 7600 e a RTX 4060 são as melhores por preço. Para 1440p, a RTX 4070 Super e a RX 7800 XT são o sweet spot — o melhor equilíbrio entre preço e longevidade.',
+      },
+      {
+        pergunta: 'Qual GPU comprar para um monitor 1440p?',
+        resposta: 'A RTX 4070 Super ou a RX 7800 XT são as recomendações para 1440p em 2026. Ambas rodam jogos atuais em 1440p com folga e ainda se viram bem em 4K com ajustes. A 7800 XT tem 16GB de VRAM; a 4070 Super leva vantagem em ray tracing e DLSS.',
+      },
+      {
+        pergunta: 'Vale a pena comprar uma RTX 4090 para jogar?',
+        resposta: 'Só se você joga em 4K com tudo no máximo ou é criador de conteúdo. Para 1080p e 1440p, é potência muito além do necessário — o dinheiro rende mais investindo numa RTX 4070 Super e sobrando para o resto do PC.',
+      },
+      {
+        pergunta: 'Preciso me preocupar com o processador ao trocar a placa de vídeo?',
+        resposta: 'Sim. Um processador fraco vira gargalo e limita o desempenho da GPU, desperdiçando o investimento. Antes de comprar uma placa mais potente, confira se o seu processador acompanha — dá para testar no simulador de gargalo do BestHard.',
+      },
+    ],
+  },
+
+  // ════════════════════════════════════════════════════════
+  // ARTIGO 12 — O que é gargalo (bottleneck) e como evitar
+  // ════════════════════════════════════════════════════════
+  {
+    slug: 'o-que-e-gargalo-bottleneck-como-evitar-2026',
+    titulo: 'O Que é Gargalo (Bottleneck) e Como Evitar no Seu PC',
+    subtitulo: 'Por que sua placa de vídeo cara pode estar rodando pela metade — e como descobrir',
+    descricao: 'O que é gargalo (bottleneck) no PC? Explicamos de forma simples como o processador pode limitar a placa de vídeo, como identificar, medir e evitar o gargalo ao montar ou fazer upgrade.',
+    categoria: 'guias',
+    tags: ['gargalo', 'bottleneck', 'cpu', 'gpu', 'upgrade', 'desempenho', 'guia pc 2026'],
+    autor: 'BestHard',
+    dataPublicacao: '2026-06-27',
+    tempoLeitura: 7,
+    destaque: false,
+    conteudo: [
+      {
+        tipo: 'intro',
+        texto: 'Você comprou uma placa de vídeo poderosa, mas o FPS não subiu como esperava? Provavelmente você está sofrendo de "gargalo" (bottleneck) — um dos conceitos mais importantes e mais mal compreendidos na montagem de PCs. A boa notícia é que ele é fácil de entender e, na maioria dos casos, fácil de evitar. Este guia explica em português claro o que é, como identificar e como não cair nessa armadilha ao montar ou dar upgrade no seu PC.',
+      },
+      {
+        tipo: 'adsense',
+        anuncioId: 'gargalo-topo',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'O que é gargalo, na prática',
+        texto: 'Imagine uma estrada de 8 pistas que de repente afunila para 1 pista — não importa quantos carros cabem antes, o trânsito vai travar naquele ponto estreito. No PC é igual: as peças trabalham em equipe, e a mais lenta "segura" as outras. Quando o processador não consegue alimentar a placa de vídeo rápido o suficiente, a GPU fica ociosa esperando — você pagou por 100% de placa, mas usa 60%. Isso é o gargalo.',
+      },
+      {
+        tipo: 'destaque',
+        destaqueTipo: 'dica',
+        texto: '💡 Gargalo é quase sempre CPU segurando a GPU, mas pode ser o contrário. Em resoluções baixas (1080p) e jogos competitivos, o processador costuma ser o limite. Em 4K, quase sempre a placa de vídeo é o limite — e isso é normal e desejável.',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Como identificar um gargalo no seu PC',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '📊 Abra um monitor de uso (MSI Afterburner, ou o próprio Gerenciador de Tarefas) enquanto joga',
+          '🔴 Se a CPU está em ~100% e a GPU abaixo de ~90%: gargalo de processador',
+          '🟢 Se a GPU está em ~99% e a CPU folgada: tudo certo — a placa é o limite (ideal em jogos)',
+          '⚠️ FPS travado bem abaixo do esperado para a sua GPU é o sintoma clássico de gargalo de CPU',
+          '💡 Teste em jogos diferentes: alguns dependem mais de CPU (estratégia, simulação), outros de GPU (mundo aberto, gráficos pesados)',
+        ],
+      },
+      {
+        tipo: 'h2',
+        titulo: 'A resolução muda tudo',
+        texto: 'Este é o ponto que confunde muita gente. Quanto MAIOR a resolução, MENOS o processador importa e mais a placa de vídeo trabalha. Ou seja: um mesmo PC pode ter gargalo de CPU em 1080p e nenhum gargalo em 1440p ou 4K. Por isso, subir a resolução (ou os gráficos) às vezes "resolve" um gargalo de processador — você joga a carga para a GPU, que fica em 99% de uso.',
+      },
+      {
+        tipo: 'tabela',
+        colunas: ['Resolução', 'Quem costuma ser o limite', 'Observação'],
+        linhas: [
+          ['1080p',  'Processador (CPU)', 'FPS altos exigem CPU forte'],
+          ['1440p',  'Equilíbrio',        'Sweet spot — CPU e GPU dividem'],
+          ['4K',     'Placa de vídeo (GPU)', 'CPU quase não importa'],
+        ],
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Como evitar o gargalo ao montar ou dar upgrade',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '⚖️ Equilibre CPU e GPU: não ligue uma RTX 4070 Super num processador de 5+ anos, nem um i9 numa GPU de entrada',
+          '🎯 Escolha as peças pela resolução do seu monitor — em 1080p competitivo priorize a CPU; em 1440p/4K priorize a GPU',
+          '🔄 Ao dar upgrade só de GPU, confira se o processador acompanha o novo patamar',
+          '🧮 Use um simulador de gargalo antes de comprar — ele mostra o equilíbrio da combinação',
+          '💡 Um gargalo pequeno (5-10%) é normal e aceitável; o problema é quando passa de 20-25%',
+        ],
+      },
+      {
+        tipo: 'destaque',
+        destaqueTipo: 'recomendacao',
+        texto: '✓ Antes de comprar qualquer peça nova, teste a combinação no simulador de gargalo do BestHard. Você informa o processador e a placa de vídeo, e ele mostra se as duas peças estão equilibradas para a resolução que você joga — evitando que você desperdice dinheiro.',
+      },
+      {
+        tipo: 'cta',
+        ctaTexto: 'Testar o gargalo do meu PC agora →',
+        ctaHref: '/gargalo',
+      },
+      {
+        tipo: 'adsense',
+        anuncioId: 'gargalo-fim',
+      },
+    ],
+    faq: [
+      {
+        pergunta: 'O que é gargalo (bottleneck) no PC?',
+        resposta: 'É quando uma peça mais lenta limita o desempenho de outra mais rápida. O caso mais comum é o processador não conseguir alimentar a placa de vídeo rápido o suficiente, fazendo a GPU trabalhar abaixo do seu potencial — você tem a placa, mas não usa tudo que ela oferece.',
+      },
+      {
+        pergunta: 'Como sei se meu PC tem gargalo?',
+        resposta: 'Monitore o uso de CPU e GPU enquanto joga (com MSI Afterburner ou o Gerenciador de Tarefas). Se a CPU fica em ~100% e a GPU abaixo de 90%, há gargalo de processador. Se a GPU fica em 99% e a CPU folgada, está tudo certo.',
+      },
+      {
+        pergunta: 'Aumentar a resolução resolve o gargalo?',
+        resposta: 'Muitas vezes sim, quando o gargalo é de CPU. Em resoluções maiores (1440p, 4K), a carga vai para a placa de vídeo e o processador deixa de ser o limite. Por isso um PC pode ter gargalo em 1080p e nenhum em 4K.',
+      },
+      {
+        pergunta: 'Qual o nível de gargalo aceitável?',
+        resposta: 'Um gargalo de 5-10% é normal e praticamente imperceptível — nenhum PC é 100% equilibrado. O problema aparece quando passa de 20-25%, quando você realmente desperdiça desempenho. Vale testar a combinação num simulador antes de comprar.',
+      },
+    ],
+  },
+
 ]
 
 export function getArtigos() {
