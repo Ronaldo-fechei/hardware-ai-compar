@@ -689,6 +689,439 @@ export const ARTIGOS: Artigo[] = [
     ],
   },
 
+  // ════════════════════════════════════════════════════════
+  // ARTIGO 6 — RTX 4060 vale a pena em 2026?
+  // ════════════════════════════════════════════════════════
+  {
+    slug: 'rtx-4060-vale-a-pena-2026',
+    titulo: 'RTX 4060 Vale a Pena em 2026? Análise Completa e Alternativas',
+    subtitulo: 'Ainda é a placa de vídeo mais vendida do Brasil — mas será que é a compra mais inteligente?',
+    descricao: 'A RTX 4060 vale a pena em 2026? Analisamos desempenho em 1080p, ray tracing, DLSS, consumo e preço no Brasil, e comparamos com RX 7600, RTX 3060 e RTX 4070 Super. Veja qual comprar.',
+    categoria: 'comparativos',
+    tags: ['rtx 4060', 'placa de vídeo', 'gpu', '1080p', 'custo-benefício', 'dlss', 'rx 7600', 'melhor gpu 2026'],
+    autor: 'BestHard',
+    dataPublicacao: '2026-06-24',
+    dataAtualizacao: '2026-07-01',
+    tempoLeitura: 9,
+    destaque: true,
+    produtosRelacionados: ['nvidia-geforce-rtx-4060', 'amd-radeon-rx-7600', 'nvidia-geforce-rtx-4070-super', 'nvidia-geforce-rtx-3060'],
+    conteudo: [
+      {
+        tipo: 'intro',
+        texto: 'A GeForce RTX 4060 continua sendo a placa de vídeo mais vendida do Brasil em 2026 — e não é por acaso. Ela entrega jogos em 1080p com folga, tem o DLSS 3 com Frame Generation e um consumo de energia baixíssimo. Mas com a chegada de novas gerações e a queda de preço de placas mais potentes, será que ela ainda é a compra mais inteligente para o seu dinheiro? Neste guia respondemos de forma direta, com dados de desempenho e comparação com as principais alternativas.',
+      },
+      {
+        tipo: 'adsense',
+        anuncioId: 'rtx4060-topo',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Resposta rápida: para quem a RTX 4060 vale a pena em 2026',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '✅ VALE se você joga em 1080p e quer o melhor consumo de energia da categoria (só 115W)',
+          '✅ VALE se você usa muito o DLSS 3 com Frame Generation — recurso exclusivo NVIDIA que dobra o FPS em jogos compatíveis',
+          '✅ VALE para quem tem fonte modesta (até 550W) e não quer trocar de fonte',
+          '⚠️ PENSE BEM se você joga em 1440p — os 8GB de VRAM começam a apertar em jogos novos',
+          '❌ NÃO VALE se você acha por perto uma RX 7600 mais barata com desempenho parecido, ou uma RTX 4070 em promoção',
+        ],
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Desempenho da RTX 4060 em 1080p (2026)',
+        texto: 'Em 1080p, que é a resolução da esmagadora maioria dos jogadores brasileiros, a RTX 4060 continua muito competente. Ela roda praticamente todos os jogos atuais entre 60 e 144 FPS na qualidade Alta, e com o DLSS ligado os números sobem ainda mais. O calcanhar de aquiles são os 8GB de VRAM: em alguns lançamentos pesados de 2025/2026 com texturas em Ultra, a memória satura e causa quedas — baixar as texturas de Ultra para Alto resolve sem perda visual perceptível.',
+      },
+      {
+        tipo: 'tabela',
+        colunas: ['Jogo (1080p Alto)', 'Sem DLSS', 'Com DLSS Qualidade', 'Experiência'],
+        linhas: [
+          ['Counter-Strike 2',    '190+ FPS', '—',         '✅ Competitivo tranquilo'],
+          ['Valorant',            '300+ FPS', '—',         '✅ Perfeito'],
+          ['Fortnite (Alto)',     '120 FPS',  '165+ FPS',  '✅ Excelente'],
+          ['Cyberpunk 2077',      '58 FPS',   '85 FPS',    '✅ Ótimo com DLSS'],
+          ['Black Myth: Wukong',  '48 FPS',   '72 FPS',    '⚠️ Precisa do DLSS'],
+          ['Hogwarts Legacy',     '68 FPS',   '95 FPS',    '✅ Confortável'],
+          ['Alan Wake 2',         '45 FPS',   '68 FPS',    '⚠️ DLSS recomendado'],
+        ],
+      },
+      {
+        tipo: 'destaque',
+        destaqueTipo: 'dica',
+        texto: '💡 O trunfo da RTX 4060 é o DLSS 3 com Frame Generation. Em jogos compatíveis, ele gera quadros intermediários por IA e pode praticamente dobrar o FPS. É a principal razão para escolher NVIDIA nesta faixa — a AMD tem o FSR, mas o DLSS ainda entrega imagem mais limpa.',
+      },
+      {
+        tipo: 'afiliado',
+        produtoSlug: 'nvidia-geforce-rtx-4060',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'RTX 4060 vs RX 7600: a rival direta da AMD',
+        texto: 'A Radeon RX 7600 é a concorrente direta e costuma custar um pouco menos. Em rasterização pura (jogos sem ray tracing), as duas ficam praticamente empatadas em 1080p. A RTX 4060 abre vantagem em dois pontos: ray tracing (bem melhor na NVIDIA) e o DLSS 3 Frame Generation. Já a RX 7600 defende o menor preço. Se você não liga para ray tracing e encontra a RX 7600 mais barata, ela é uma compra igualmente válida.',
+      },
+      {
+        tipo: 'tabela',
+        colunas: ['Critério', 'RTX 4060', 'RX 7600'],
+        linhas: [
+          ['Desempenho 1080p (raster)', 'Empate técnico', 'Empate técnico'],
+          ['Ray Tracing',              '🥇 Bem melhor',  'Fraco'],
+          ['Upscaling',                '🥇 DLSS 3 + FG', 'FSR 3'],
+          ['VRAM',                     '8GB',            '8GB'],
+          ['Consumo',                  '🥇 115W',        '165W'],
+          ['Preço BR aprox.',          'R$ 1.799',       'R$ 1.599 💰'],
+        ],
+      },
+      {
+        tipo: 'afiliado',
+        produtoSlug: 'amd-radeon-rx-7600',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'E a RTX 3060 12GB usada, ainda vale?',
+        texto: 'Muita gente considera uma RTX 3060 12GB usada para economizar. Ela é mais lenta que a 4060 e não tem o DLSS 3 Frame Generation, mas tem 12GB de VRAM — o que ajuda em jogos com texturas pesadas. Como compra nova ela não faz mais sentido; usada por um bom preço (R$ 900-1.100) pode ser uma alternativa econômica para quem joga títulos mais leves e quer os 12GB de memória.',
+      },
+      {
+        tipo: 'afiliado',
+        produtoSlug: 'nvidia-geforce-rtx-3060',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Quer durar mais? Considere subir para a RTX 4070 Super',
+        texto: 'Se o seu orçamento permite esticar, a RTX 4070 Super é o próximo degrau que realmente muda o jogo. Ela tem 12GB de VRAM, desempenho muito superior e abre a porta para 1440p com folga — resolução que valoriza mais o investimento a longo prazo. Para quem pretende manter a placa por 4+ anos ou jogar em monitor 1440p, o custo extra se paga em durabilidade.',
+      },
+      {
+        tipo: 'afiliado',
+        produtoSlug: 'nvidia-geforce-rtx-4070-super',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Veredito: comprar a RTX 4060 em 2026?',
+      },
+      {
+        tipo: 'destaque',
+        destaqueTipo: 'recomendacao',
+        texto: '✓ A RTX 4060 continua sendo uma compra sólida para 1080p em 2026, principalmente pelo DLSS 3 e pelo baixo consumo. Só não compre no automático: cheque o preço da RX 7600 (pode sair mais barata com desempenho parecido) e, se puder investir mais, veja a RTX 4070 Super para durar mais tempo. Use o comparador do BestHard para ver o preço das quatro nas lojas antes de decidir.',
+      },
+      {
+        tipo: 'cta',
+        ctaTexto: 'Comparar placas de vídeo lado a lado →',
+        ctaHref: '/comparar/gpus',
+      },
+      {
+        tipo: 'adsense',
+        anuncioId: 'rtx4060-fim',
+      },
+    ],
+    faq: [
+      {
+        pergunta: 'A RTX 4060 roda os jogos de 2026 em 1080p?',
+        resposta: 'Sim. Em 1080p a RTX 4060 roda praticamente todos os jogos atuais entre 60 e 144 FPS na qualidade Alta. Nos títulos mais pesados (Alan Wake 2, Black Myth: Wukong), ativar o DLSS garante uma experiência fluida acima de 60 FPS.',
+      },
+      {
+        pergunta: '8GB de VRAM são suficientes em 2026?',
+        resposta: 'Para 1080p, sim, na maioria dos casos. Em alguns lançamentos recentes com texturas em Ultra, os 8GB saturam e causam quedas de FPS — a solução é usar texturas em Alto em vez de Ultra, sem perda visual perceptível. Para 1440p, 8GB começam a ser limitantes.',
+      },
+      {
+        pergunta: 'RTX 4060 ou RX 7600, qual é melhor?',
+        resposta: 'Em jogos sem ray tracing elas empatam em 1080p. A RTX 4060 ganha em ray tracing, DLSS 3 Frame Generation e consumo de energia. A RX 7600 ganha no preço, costuma ser mais barata. Se você encontra a RX 7600 significativamente mais barata e não liga para ray tracing, ela vale a pena.',
+      },
+      {
+        pergunta: 'Qual fonte preciso para a RTX 4060?',
+        resposta: 'A RTX 4060 consome apenas 115W, uma das menores da categoria. Uma fonte de qualidade de 500-550W 80 Plus é suficiente para um PC completo com ela. Isso é uma vantagem: você não precisa trocar de fonte na maioria dos upgrades.',
+      },
+    ],
+  },
+
+  // ════════════════════════════════════════════════════════
+  // ARTIGO 7 — Qual fonte comprar? Guia de watts 2026
+  // ════════════════════════════════════════════════════════
+  {
+    slug: 'qual-fonte-comprar-guia-watts-2026',
+    titulo: 'Qual Fonte Comprar em 2026? Guia de Watts + Melhores Fontes',
+    subtitulo: 'Quantos watts você realmente precisa — e por que a fonte é a peça que você NÃO deve economizar',
+    descricao: 'Guia completo de fontes de alimentação em 2026: quantos watts você precisa para sua placa de vídeo, o que significa 80 Plus Bronze/Gold, fonte modular vale a pena e quais os melhores modelos por faixa de preço no Brasil.',
+    categoria: 'guias',
+    tags: ['fonte', 'psu', 'quantos watts', '80 plus', 'fonte modular', 'corsair', 'guia fonte 2026'],
+    autor: 'BestHard',
+    dataPublicacao: '2026-06-28',
+    tempoLeitura: 8,
+    destaque: false,
+    produtosRelacionados: ['corsair-rm750e-750w', 'corsair-cx650-650w', 'corsair-rm850e-850w', 'seasonic-focus-gx-750'],
+    conteudo: [
+      {
+        tipo: 'intro',
+        texto: 'A fonte de alimentação é, de longe, a peça mais subestimada de um PC — e a mais perigosa de economizar. Uma fonte ruim não só entrega menos potência do que promete, como pode literalmente queimar os outros componentes ao falhar. Ao mesmo tempo, muita gente gasta demais comprando fonte de 850W para um PC que precisa de 550W. Este guia resolve as duas dúvidas: quantos watts você realmente precisa e qual fonte confiável comprar em cada faixa de preço.',
+      },
+      {
+        tipo: 'adsense',
+        anuncioId: 'fonte-topo',
+      },
+      {
+        tipo: 'destaque',
+        destaqueTipo: 'aviso',
+        texto: '⚠️ Regra de ouro: nunca compre fonte "genérica" sem selo 80 Plus. Fontes sem certificação frequentemente entregam metade da potência anunciada e não têm proteções contra picos e curtos. Uma fonte ruim de R$ 150 pode custar sua placa de vídeo de R$ 2.000.',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Quantos watts eu preciso? Tabela por placa de vídeo',
+        texto: 'A placa de vídeo é o componente que mais consome energia num PC gamer, então ela dita o tamanho da fonte. A tabela abaixo mostra a potência recomendada (já com folga para o resto do PC e para upgrades futuros). A dica é sempre deixar uma margem de 30% acima do consumo total — isso mantém a fonte trabalhando na faixa mais eficiente e silenciosa.',
+      },
+      {
+        tipo: 'tabela',
+        colunas: ['Placa de vídeo', 'Consumo GPU', 'Fonte recomendada'],
+        linhas: [
+          ['Sem GPU dedicada / GTX 1650', '75W',  '400-450W'],
+          ['RTX 4060 / RX 7600',         '115-165W', '550W'],
+          ['RTX 4060 Ti / RX 7700 XT',   '165-245W', '650W'],
+          ['RTX 4070 Super / RX 7800 XT','220-263W', '700-750W'],
+          ['RTX 4080 Super / RX 7900 XTX','320-355W','850W'],
+          ['RTX 4090 / RTX 5090',        '450-575W', '1000W+'],
+        ],
+      },
+      {
+        tipo: 'destaque',
+        destaqueTipo: 'dica',
+        texto: '💡 Na dúvida entre dois tamanhos, pegue o maior — mas sem exagero. Uma fonte de 750W num PC que puxa 400W trabalha folgada, silenciosa e sobra margem para um upgrade de GPU no futuro. Já uma de 1000W nesse mesmo PC é dinheiro jogado fora.',
+      },
+      {
+        tipo: 'h2',
+        titulo: '80 Plus: Bronze, Gold ou Platinum?',
+        texto: 'O selo 80 Plus mede a eficiência da fonte — quanta energia da tomada vira energia útil, sem virar calor. Quanto mais eficiente, menos calor, menos barulho e uma conta de luz um pouco menor. Não muda o desempenho do PC, mas muda a durabilidade e o silêncio.',
+      },
+      {
+        tipo: 'tabela',
+        colunas: ['Certificação', 'Eficiência aprox.', 'Para quem'],
+        linhas: [
+          ['80 Plus (branco)', '~80%', 'Evite se puder — mínimo aceitável'],
+          ['80 Plus Bronze',   '~85%', '✅ PC de entrada e custo-benefício'],
+          ['80 Plus Gold',     '~90%', '🥇 Melhor equilíbrio — recomendado'],
+          ['80 Plus Platinum', '~92%', 'Entusiastas, PCs high-end 24/7'],
+        ],
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Fonte modular vale a pena?',
+        texto: 'Fonte modular permite conectar só os cabos que você usa, deixando o gabinete mais limpo e o fluxo de ar melhor. Existem três tipos: não-modular (cabos fixos), semi-modular (cabos essenciais fixos, o resto removível) e full-modular (todos removíveis). Para a maioria das pessoas, semi-modular é o ponto ideal de custo-benefício. Full-modular é ótimo para quem liga para estética e organização, mas não afeta o desempenho.',
+      },
+      {
+        tipo: 'h2',
+        titulo: '🏆 Melhores fontes por faixa de preço (2026)',
+      },
+      {
+        tipo: 'h3',
+        titulo: 'Entrada — PC básico até RTX 4060',
+        texto: 'Para um PC de entrada com GPU de baixo consumo, uma boa fonte Bronze de 550-650W de marca confiável já resolve com segurança e sobra.',
+      },
+      {
+        tipo: 'afiliado',
+        produtoSlug: 'corsair-cx650-650w',
+      },
+      {
+        tipo: 'h3',
+        titulo: 'Custo-benefício — o ponto ideal para a maioria',
+        texto: 'Se você quer a melhor relação entre preço, eficiência e durabilidade, uma fonte Gold de 750W é a escolha que raramente decepciona. Ela cobre desde uma RTX 4060 até uma RTX 4070 Super com folga para upgrades.',
+      },
+      {
+        tipo: 'afiliado',
+        produtoSlug: 'corsair-rm750e-750w',
+      },
+      {
+        tipo: 'afiliado',
+        produtoSlug: 'seasonic-focus-gx-750',
+      },
+      {
+        tipo: 'h3',
+        titulo: 'High-end — placas potentes e futuro-proof',
+        texto: 'Para builds com placas mais parrudas (RTX 4080 Super / RX 7900 XTX) ou quem quer margem enorme para o futuro, uma Gold de 850W é o alvo. Full-modular ajuda na organização de um gabinete cheio.',
+      },
+      {
+        tipo: 'afiliado',
+        produtoSlug: 'corsair-rm850e-850w',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Erros comuns na hora de comprar fonte',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '❌ Comprar fonte genérica sem selo 80 Plus só porque é barata — é o maior risco para o seu PC inteiro',
+          '❌ Olhar só os watts e ignorar a certificação e a marca — 600W de fonte ruim é pior que 550W de fonte boa',
+          '❌ Superdimensionar demais (1000W para um PC que puxa 400W) — desperdício de dinheiro sem benefício',
+          '❌ Esquecer do conector da placa de vídeo — GPUs modernas podem exigir conector 12VHPWR ou múltiplos PCIe',
+          '✅ Priorizar marcas reconhecidas (Corsair, Seasonic, XPG, Cooler Master, MSI) com garantia longa',
+        ],
+      },
+      {
+        tipo: 'cta',
+        ctaTexto: 'Comparar fontes lado a lado →',
+        ctaHref: '/comparar/fontes',
+      },
+      {
+        tipo: 'adsense',
+        anuncioId: 'fonte-fim',
+      },
+    ],
+    faq: [
+      {
+        pergunta: 'Quantos watts de fonte eu preciso para uma RTX 4060?',
+        resposta: 'Uma fonte de qualidade de 550W 80 Plus (Bronze ou Gold) é suficiente para um PC completo com RTX 4060, que consome apenas 115W. Isso deixa boa margem para o processador e para eventuais upgrades.',
+      },
+      {
+        pergunta: 'Vale a pena comprar fonte modular?',
+        resposta: 'Sim, principalmente semi-modular, que oferece o melhor custo-benefício. Você conecta só os cabos necessários, deixando o gabinete organizado e com melhor fluxo de ar. Full-modular é ótimo para estética, mas não muda o desempenho.',
+      },
+      {
+        pergunta: '80 Plus Bronze ou Gold: qual escolher?',
+        resposta: 'Gold é a recomendação para a maioria — melhor eficiência (~90%), menos calor e mais silêncio, por um preço um pouco maior. Bronze (~85%) é perfeitamente aceitável para PCs de entrada e custo-benefício. Evite fontes sem certificação 80 Plus.',
+      },
+      {
+        pergunta: 'Fonte de mais watts deixa o PC mais rápido?',
+        resposta: 'Não. A fonte só entrega a energia que os componentes pedem. Uma fonte de 1000W num PC que consome 400W não deixa nada mais rápido — só significa margem sobrando. Escolha a potência conforme o consumo real dos componentes, com cerca de 30% de folga.',
+      },
+    ],
+  },
+
+  // ════════════════════════════════════════════════════════
+  // ARTIGO 8 — Melhor SSD para jogos 2026: Gen4 vs Gen5
+  // ════════════════════════════════════════════════════════
+  {
+    slug: 'melhor-ssd-para-jogos-2026',
+    titulo: 'Melhor SSD para Jogos em 2026: Gen4 vs Gen5 e Qual Comprar',
+    subtitulo: 'SSD NVMe virou obrigatório — mas será que vale pagar caro num Gen5? Descubra a verdade',
+    descricao: 'Qual o melhor SSD para jogos em 2026? Comparamos NVMe Gen4 vs Gen5, SATA vs NVMe, e os melhores modelos: Kingston NV2, WD Black SN850X, Samsung 990 Pro e Crucial T705. Veja qual realmente vale a pena.',
+    categoria: 'comparativos',
+    tags: ['ssd', 'nvme', 'gen4', 'gen5', 'ssd para jogos', 'wd black', 'samsung 990 pro', 'melhor ssd 2026'],
+    autor: 'BestHard',
+    dataPublicacao: '2026-07-01',
+    tempoLeitura: 8,
+    destaque: false,
+    produtosRelacionados: ['kingston-nv2-1tb', 'wd-black-sn850x-2tb', 'samsung-990-pro-2tb', 'crucial-t705-2tb'],
+    conteudo: [
+      {
+        tipo: 'intro',
+        texto: 'Em 2026 ninguém mais discute se você precisa de um SSD — a dúvida é qual. Com os preços de armazenamento em alta neste ano, escolher errado significa pagar caro por velocidade que você nem vai perceber nos jogos. A boa notícia: para jogar, o SSD "perfeito" quase nunca é o mais caro. Neste guia mostramos a diferença real entre SATA, NVMe Gen4 e Gen5, e indicamos o modelo certo para cada bolso — sem cair no marketing de números gigantes que não fazem diferença na prática.',
+      },
+      {
+        tipo: 'adsense',
+        anuncioId: 'ssd-topo',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'SATA, NVMe Gen4 ou Gen5: o que muda para jogos?',
+        texto: 'A verdade que poucos contam: para carregar jogos, a diferença entre um bom NVMe Gen4 e um Gen5 topo de linha é de frações de segundo — muitas vezes imperceptível. O salto que realmente importa é sair do HD ou do SSD SATA para qualquer NVMe. A partir daí, os ganhos são cada vez menores. O Gen5 só faz sentido para trabalho profissional pesado (edição de vídeo 8K, transferência de arquivos enormes), não para jogar.',
+      },
+      {
+        tipo: 'tabela',
+        colunas: ['Tipo', 'Velocidade típica', 'Ganho real em jogos', 'Custo'],
+        linhas: [
+          ['HD (disco)',    '120 MB/s',        'Lento demais — evite',          'Barato'],
+          ['SSD SATA',      '550 MB/s',        'Enorme vs HD, ok para jogos',   '💰 Baixo'],
+          ['NVMe Gen3',     '3.500 MB/s',      'Excelente, mais que suficiente','Baixo'],
+          ['NVMe Gen4',     '5.000-7.400 MB/s','🥇 Ideal — sweet spot',         'Médio'],
+          ['NVMe Gen5',     '10.000-14.500 MB/s','Ganho mínimo em jogos',       'Alto'],
+        ],
+      },
+      {
+        tipo: 'destaque',
+        destaqueTipo: 'recomendacao',
+        texto: '✓ Para 95% dos jogadores, o ponto ideal em 2026 é um NVMe Gen4 de boa marca. Ele é rápido o suficiente para o DirectStorage (tecnologia que acelera o carregamento em jogos novos), tem preço razoável e não esquenta como os Gen5. Pagar a mais por Gen5 só para jogar é desperdício.',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'De quanto de espaço você precisa?',
+        texto: 'Os jogos estão cada vez maiores — vários passam de 100GB. Em 2026, 1TB é o mínimo confortável para quem tem uma biblioteca ativa, e 2TB é o ponto ideal para quem instala muitos jogos ao mesmo tempo. 500GB serve para quem joga poucos títulos por vez e não se importa em desinstalar para instalar outro.',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '💾 500GB: sistema + 3 a 5 jogos grandes. Econômico, exige gerenciar espaço',
+          '💾 1TB: o mínimo recomendado em 2026 — sistema + biblioteca ativa razoável',
+          '💾 2TB: o sweet spot para gamers — instala vários jogos pesados sem preocupação',
+          '💾 4TB+: para quem também edita vídeo, guarda muita mídia ou nunca quer desinstalar nada',
+        ],
+      },
+      {
+        tipo: 'h2',
+        titulo: '💰 Melhor custo-benefício: Kingston NV2 1TB',
+        texto: 'Para quem quer entrar no mundo NVMe sem gastar muito, o Kingston NV2 1TB é a compra mais inteligente. É um Gen4 de entrada — não é o mais rápido, mas na prática dos jogos você não vai perceber diferença para modelos que custam o dobro. É a escolha certa para builds de custo-benefício.',
+      },
+      {
+        tipo: 'afiliado',
+        produtoSlug: 'kingston-nv2-1tb',
+      },
+      {
+        tipo: 'h2',
+        titulo: '🥇 O equilíbrio perfeito: WD Black SN850X 2TB',
+        texto: 'Se existe um "melhor SSD para jogos" em 2026, é o WD Black SN850X. Ele é um Gen4 top de linha, com velocidades altíssimas, ótima performance em jogos (inclusive com DirectStorage) e uma versão com dissipador ideal para PS5. Os 2TB dão espaço de sobra e o preço, embora premium, é justo pelo que entrega. É a recomendação para quem quer o melhor sem entrar no exagero do Gen5.',
+      },
+      {
+        tipo: 'afiliado',
+        produtoSlug: 'wd-black-sn850x-2tb',
+      },
+      {
+        tipo: 'h2',
+        titulo: '👑 Alternativa premium: Samsung 990 Pro 2TB',
+        texto: 'O Samsung 990 Pro é o rival direto do SN850X e disputa voto a voto no posto de melhor Gen4. Tem excelente eficiência energética, ótimo software de gerenciamento (Samsung Magician) e confiabilidade lendária da Samsung. Entre ele e o SN850X, escolha pelo preço do dia — os dois são excelentes.',
+      },
+      {
+        tipo: 'afiliado',
+        produtoSlug: 'samsung-990-pro-2tb',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'E o Gen5 (Crucial T705)? Só para casos específicos',
+        texto: 'O Crucial T705 é um monstro Gen5 com velocidades acima de 14.000 MB/s. Impressiona nos números, mas para jogar não entrega uma experiência perceptivelmente melhor que um bom Gen4 — e custa bem mais, esquenta mais e muitas vezes exige um dissipador robusto. Só vale a pena para profissionais que movem arquivos gigantescos (edição de vídeo em alta resolução, ciência de dados). Para jogos, é dinheiro mal gasto.',
+      },
+      {
+        tipo: 'afiliado',
+        produtoSlug: 'crucial-t705-2tb',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Resumo: qual SSD comprar em 2026?',
+      },
+      {
+        tipo: 'tabela',
+        colunas: ['Perfil', 'Recomendação', 'Tipo'],
+        linhas: [
+          ['Custo-benefício / primeiro NVMe', 'Kingston NV2 1TB',      'Gen4 entrada'],
+          ['Melhor para jogos (geral)',       'WD Black SN850X 2TB',   'Gen4 top'],
+          ['Premium / confiabilidade',        'Samsung 990 Pro 2TB',    'Gen4 top'],
+          ['Trabalho pesado com arquivos',    'Crucial T705 2TB',       'Gen5'],
+        ],
+      },
+      {
+        tipo: 'cta',
+        ctaTexto: 'Comparar SSDs lado a lado →',
+        ctaHref: '/comparar/ssds',
+      },
+      {
+        tipo: 'adsense',
+        anuncioId: 'ssd-fim',
+      },
+    ],
+    faq: [
+      {
+        pergunta: 'Vale a pena comprar um SSD Gen5 para jogos em 2026?',
+        resposta: 'Não para a maioria. Para jogar, um bom NVMe Gen4 entrega experiência praticamente idêntica a um Gen5, por um preço bem menor e com menos aquecimento. O Gen5 só compensa para trabalho profissional com arquivos gigantes (edição de vídeo em alta resolução, por exemplo).',
+      },
+      {
+        pergunta: 'Qual a diferença real entre SATA e NVMe nos jogos?',
+        resposta: 'O maior salto de todos é sair do HD ou SSD SATA para um NVMe: os tempos de carregamento caem bastante e o DirectStorage (em jogos compatíveis) só funciona bem em NVMe. Entre um NVMe Gen4 e um Gen5, porém, a diferença nos jogos é mínima.',
+      },
+      {
+        pergunta: 'Quantos GB de SSD preciso para jogos em 2026?',
+        resposta: '1TB é o mínimo confortável, já que muitos jogos passam de 100GB. 2TB é o ideal para quem mantém vários jogos instalados ao mesmo tempo. 500GB serve para quem joga poucos títulos por vez e não se importa em desinstalar para liberar espaço.',
+      },
+      {
+        pergunta: 'Qual o melhor SSD para PS5?',
+        resposta: 'O WD Black SN850X com dissipador é uma das melhores escolhas para PS5, pois atende ao requisito de velocidade do console e tem versão com heatsink compatível. Qualquer NVMe Gen4 com mais de 5.500 MB/s e dissipador adequado funciona bem no PS5.',
+      },
+    ],
+  },
+
 ]
 
 export function getArtigos() {
