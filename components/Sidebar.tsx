@@ -2,6 +2,7 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import type { CategoriaConfig } from '@/types/hardware'
+import { getProdutosByCategoria } from '@/lib/hardware-data'
 
 interface Props { categorias: CategoriaConfig[] }
 
@@ -40,7 +41,7 @@ export function Sidebar({ categorias }: Props) {
                     background: 'var(--bg)', border: '1px solid var(--border)',
                     color: cat.disponivel ? 'var(--accent)' : 'var(--muted)',
                   }}>
-                  {cat.disponivel ? '4' : 'breve'}
+                  {cat.disponivel ? getProdutosByCategoria(cat.slug).length : 'breve'}
                 </span>
               </Link>
             )
