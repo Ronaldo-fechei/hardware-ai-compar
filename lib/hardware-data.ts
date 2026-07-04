@@ -868,6 +868,237 @@ export const PRODUTOS: Produto[] = [
       { loja: 'pichau', preco: 679, url: 'https://www.pichau.com.br/gabinete?ref=besthard', disponivel: true, frete: 'gratis', parcelamento: '10x R$ 67,90' },
     ],
   },
+
+  // ══════════════════════════════════════
+  // CATÁLOGO EXPANDIDO 2026-07 (mais opções p/ comparação)
+  // ══════════════════════════════════════
+
+  // ── GPUs (novos) ──
+  {
+    slug: 'nvidia-geforce-rtx-4070', marca: 'NVIDIA', nome: 'GeForce RTX 4070', categoria: 'gpus', score: 83,
+    specs: { 'VRAM': '12 GB GDDR6X', 'Consumo (W)': 200, 'Clock Boost (GHz)': 2.48, 'Ray Tracing': 'Sim', 'Barramento': '192-bit' },
+    precos: [
+      { loja: 'amazon', preco: 4499, url: 'https://www.amazon.com.br/s?k=rtx+4070&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '12x R$ 374,92' },
+      { loja: 'kabum', preco: 4299, url: 'https://www.kabum.com.br/produto/rtx-4070?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '12x R$ 358,25' },
+      { loja: 'pichau', preco: 4499, url: 'https://www.pichau.com.br/placa-de-video?ref=besthard', disponivel: true, frete: 'gratis', parcelamento: '12x R$ 374,92' },
+    ],
+  },
+  {
+    slug: 'nvidia-geforce-rtx-4060-ti', marca: 'NVIDIA', nome: 'GeForce RTX 4060 Ti', categoria: 'gpus', score: 76,
+    specs: { 'VRAM': '8 GB GDDR6', 'Consumo (W)': 160, 'Clock Boost (GHz)': 2.54, 'Ray Tracing': 'Sim', 'Barramento': '128-bit' },
+    precos: [
+      { loja: 'amazon', preco: 2799, url: 'https://www.amazon.com.br/s?k=rtx+4060+ti&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '12x R$ 233,25' },
+      { loja: 'kabum', preco: 2599, url: 'https://www.kabum.com.br/produto/rtx-4060-ti?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '12x R$ 216,58' },
+    ],
+  },
+  {
+    slug: 'amd-radeon-rx-7700-xt', marca: 'AMD', nome: 'Radeon RX 7700 XT', categoria: 'gpus', score: 80,
+    specs: { 'VRAM': '12 GB GDDR6', 'Consumo (W)': 245, 'Clock Boost (GHz)': 2.54, 'Ray Tracing': 'Sim', 'Barramento': '192-bit' },
+    precos: [
+      { loja: 'kabum', preco: 2999, url: 'https://www.kabum.com.br/produto/rx-7700-xt?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '12x R$ 249,92' },
+      { loja: 'pichau', preco: 3199, url: 'https://www.pichau.com.br/placa-de-video/amd?ref=besthard', disponivel: true, frete: 'gratis', parcelamento: '12x R$ 266,58' },
+    ],
+  },
+  {
+    slug: 'amd-radeon-rx-7900-xt', marca: 'AMD', nome: 'Radeon RX 7900 XT', categoria: 'gpus', score: 88,
+    specs: { 'VRAM': '20 GB GDDR6', 'Consumo (W)': 300, 'Clock Boost (GHz)': 2.40, 'Ray Tracing': 'Sim', 'Barramento': '320-bit' },
+    precos: [
+      { loja: 'kabum', preco: 5499, url: 'https://www.kabum.com.br/produto/rx-7900-xt?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '12x R$ 458,25' },
+      { loja: 'amazon', preco: 5799, url: 'https://www.amazon.com.br/s?k=rx+7900+xt&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '12x R$ 483,25' },
+    ],
+  },
+
+  // ── CPUs (novos) ──
+  {
+    slug: 'amd-ryzen-9-9950x', marca: 'AMD', nome: 'Ryzen 9 9950X', categoria: 'processadores', score: 96,
+    specs: { 'Núcleos': 16, 'Threads': 32, 'Clock Boost (GHz)': 5.7, 'Soquete': 'AM5', 'Consumo (W)': 170 },
+    precos: [
+      { loja: 'amazon', preco: 4999, url: 'https://www.amazon.com.br/s?k=ryzen+9+9950x&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '12x R$ 416,58' },
+      { loja: 'kabum', preco: 4799, url: 'https://www.kabum.com.br/produto/ryzen-9-9950x?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '12x R$ 399,92' },
+    ],
+  },
+  {
+    slug: 'intel-core-ultra-7-265k', marca: 'Intel', nome: 'Core Ultra 7 265K', categoria: 'processadores', score: 90,
+    specs: { 'Núcleos': 20, 'Threads': 20, 'Clock Boost (GHz)': 5.5, 'Soquete': 'LGA1851', 'Consumo (W)': 125 },
+    precos: [
+      { loja: 'kabum', preco: 2599, url: 'https://www.kabum.com.br/produto/intel-core-ultra-7-265k?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '12x R$ 216,58' },
+      { loja: 'pichau', preco: 2699, url: 'https://www.pichau.com.br/processadores?ref=besthard', disponivel: true, frete: 'gratis', parcelamento: '12x R$ 224,92' },
+    ],
+  },
+  {
+    slug: 'amd-ryzen-7-9700x', marca: 'AMD', nome: 'Ryzen 7 9700X', categoria: 'processadores', score: 86,
+    specs: { 'Núcleos': 8, 'Threads': 16, 'Clock Boost (GHz)': 5.5, 'Soquete': 'AM5', 'Consumo (W)': 65 },
+    precos: [
+      { loja: 'amazon', preco: 2299, url: 'https://www.amazon.com.br/s?k=ryzen+7+9700x&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '12x R$ 191,58' },
+      { loja: 'kabum', preco: 2199, url: 'https://www.kabum.com.br/produto/ryzen-7-9700x?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '12x R$ 183,25' },
+    ],
+  },
+  {
+    slug: 'amd-ryzen-5-9600x', marca: 'AMD', nome: 'Ryzen 5 9600X', categoria: 'processadores', score: 82,
+    specs: { 'Núcleos': 6, 'Threads': 12, 'Clock Boost (GHz)': 5.4, 'Soquete': 'AM5', 'Consumo (W)': 65 },
+    precos: [
+      { loja: 'amazon', preco: 1499, url: 'https://www.amazon.com.br/s?k=ryzen+5+9600x&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '12x R$ 124,92' },
+      { loja: 'kabum', preco: 1399, url: 'https://www.kabum.com.br/produto/ryzen-5-9600x?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '12x R$ 116,58' },
+      { loja: 'pichau', preco: 1499, url: 'https://www.pichau.com.br/processadores/amd?ref=besthard', disponivel: true, frete: 'gratis', parcelamento: '12x R$ 124,92' },
+    ],
+  },
+
+  // ── SSDs (novos) ──
+  {
+    slug: 'samsung-990-pro-1tb', marca: 'Samsung', nome: '990 Pro 1TB', categoria: 'ssds', score: 90,
+    specs: { 'Capacidade': '1 TB', 'Interface': 'NVMe Gen4', 'Leitura (MB/s)': 7450, 'Gravação (MB/s)': 6900, 'Cache DRAM': 'Sim' },
+    precos: [
+      { loja: 'amazon', preco: 799, url: 'https://www.amazon.com.br/s?k=samsung+990+pro+1tb&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '10x R$ 79,90' },
+      { loja: 'kabum', preco: 749, url: 'https://www.kabum.com.br/produto/samsung-990-pro-1tb?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 74,90' },
+    ],
+  },
+  {
+    slug: 'kingston-nv3-2tb', marca: 'Kingston', nome: 'NV3 2TB', categoria: 'ssds', score: 78,
+    specs: { 'Capacidade': '2 TB', 'Interface': 'NVMe Gen4', 'Leitura (MB/s)': 6000, 'Gravação (MB/s)': 5000, 'Cache DRAM': 'Não' },
+    precos: [
+      { loja: 'kabum', preco: 999, url: 'https://www.kabum.com.br/produto/kingston-nv3-2tb?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 99,90' },
+      { loja: 'amazon', preco: 1049, url: 'https://www.amazon.com.br/s?k=kingston+nv3+2tb&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '10x R$ 104,90' },
+    ],
+  },
+  {
+    slug: 'crucial-p3-plus-1tb', marca: 'Crucial', nome: 'P3 Plus 1TB', categoria: 'ssds', score: 74,
+    specs: { 'Capacidade': '1 TB', 'Interface': 'NVMe Gen4', 'Leitura (MB/s)': 5000, 'Gravação (MB/s)': 4200, 'Cache DRAM': 'Não' },
+    precos: [
+      { loja: 'kabum', preco: 549, url: 'https://www.kabum.com.br/produto/crucial-p3-plus-1tb?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '8x R$ 68,63' },
+      { loja: 'terabyte', preco: 569, url: 'https://www.terabyteshop.com.br/produto/crucial-p3-plus-1tb?aff=besthard', disponivel: true, frete: 'pago', parcelamento: '8x R$ 71,13' },
+    ],
+  },
+  {
+    slug: 'wd-blue-sn580-1tb', marca: 'Western Digital', nome: 'WD Blue SN580 1TB', categoria: 'ssds', score: 72,
+    specs: { 'Capacidade': '1 TB', 'Interface': 'NVMe Gen4', 'Leitura (MB/s)': 4150, 'Gravação (MB/s)': 4150, 'Cache DRAM': 'Não' },
+    precos: [
+      { loja: 'kabum', preco: 499, url: 'https://www.kabum.com.br/produto/wd-blue-sn580-1tb?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '6x R$ 83,16' },
+      { loja: 'amazon', preco: 529, url: 'https://www.amazon.com.br/s?k=wd+blue+sn580+1tb&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '8x R$ 66,13' },
+    ],
+  },
+  {
+    slug: 'samsung-980-1tb', marca: 'Samsung', nome: '980 1TB', categoria: 'ssds', score: 68,
+    specs: { 'Capacidade': '1 TB', 'Interface': 'NVMe Gen3', 'Leitura (MB/s)': 3500, 'Gravação (MB/s)': 3000, 'Cache DRAM': 'Não' },
+    precos: [
+      { loja: 'amazon', preco: 449, url: 'https://www.amazon.com.br/s?k=samsung+980+1tb&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '6x R$ 74,83' },
+      { loja: 'kabum', preco: 429, url: 'https://www.kabum.com.br/produto/samsung-980-1tb?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '6x R$ 71,50' },
+    ],
+  },
+
+  // ── Monitores (novos) ──
+  {
+    slug: 'samsung-odyssey-oled-g6', marca: 'Samsung', nome: 'Odyssey OLED G6 27"', categoria: 'monitores', score: 95,
+    specs: { 'Polegadas': '27"', 'Painel': 'OLED', 'Resolução': '2560×1440', 'Taxa (Hz)': 360, 'Resposta (ms)': 0.03 },
+    precos: [
+      { loja: 'amazon', preco: 3999, url: 'https://www.amazon.com.br/s?k=samsung+odyssey+oled+g6+27&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '12x R$ 333,25' },
+      { loja: 'kabum', preco: 3899, url: 'https://www.kabum.com.br/produto/samsung-odyssey-oled-g6?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '12x R$ 324,92' },
+    ],
+  },
+  {
+    slug: 'lg-ultragear-27gp850', marca: 'LG', nome: 'UltraGear 27GP850', categoria: 'monitores', score: 86,
+    specs: { 'Polegadas': '27"', 'Painel': 'Nano IPS', 'Resolução': '2560×1440', 'Taxa (Hz)': 165, 'Resposta (ms)': 1 },
+    precos: [
+      { loja: 'amazon', preco: 1899, url: 'https://www.amazon.com.br/s?k=lg+ultragear+27gp850&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '12x R$ 158,25' },
+      { loja: 'kabum', preco: 1799, url: 'https://www.kabum.com.br/produto/lg-ultragear-27gp850?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '12x R$ 149,92' },
+      { loja: 'pichau', preco: 1899, url: 'https://www.pichau.com.br/monitor?ref=besthard', disponivel: true, frete: 'gratis', parcelamento: '12x R$ 158,25' },
+    ],
+  },
+  {
+    slug: 'dell-s2721dgf', marca: 'Dell', nome: 'S2721DGF 27"', categoria: 'monitores', score: 85,
+    specs: { 'Polegadas': '27"', 'Painel': 'IPS', 'Resolução': '2560×1440', 'Taxa (Hz)': 165, 'Resposta (ms)': 1 },
+    precos: [
+      { loja: 'amazon', preco: 1999, url: 'https://www.amazon.com.br/s?k=dell+s2721dgf&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '12x R$ 166,58' },
+      { loja: 'kabum', preco: 1899, url: 'https://www.kabum.com.br/produto/dell-s2721dgf?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '12x R$ 158,25' },
+    ],
+  },
+  {
+    slug: 'gigabyte-m27q', marca: 'Gigabyte', nome: 'M27Q 27"', categoria: 'monitores', score: 84,
+    specs: { 'Polegadas': '27"', 'Painel': 'IPS (SS)', 'Resolução': '2560×1440', 'Taxa (Hz)': 170, 'Resposta (ms)': 0.5 },
+    precos: [
+      { loja: 'kabum', preco: 1699, url: 'https://www.kabum.com.br/produto/gigabyte-m27q?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '12x R$ 141,58' },
+      { loja: 'terabyte', preco: 1749, url: 'https://www.terabyteshop.com.br/produto/gigabyte-m27q?aff=besthard', disponivel: true, frete: 'pago', parcelamento: '12x R$ 145,75' },
+    ],
+  },
+  {
+    slug: 'aoc-24g4', marca: 'AOC', nome: 'Gaming 24G4 24"', categoria: 'monitores', score: 76,
+    specs: { 'Polegadas': '24"', 'Painel': 'IPS', 'Resolução': '1920×1080', 'Taxa (Hz)': 180, 'Resposta (ms)': 1 },
+    precos: [
+      { loja: 'kabum', preco: 899, url: 'https://www.kabum.com.br/produto/aoc-24g4?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 89,90' },
+      { loja: 'amazon', preco: 949, url: 'https://www.amazon.com.br/s?k=aoc+gaming+24g4&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '10x R$ 94,90' },
+    ],
+  },
+
+  // ── Memórias RAM (novos) ──
+  {
+    slug: 'corsair-vengeance-rgb-32gb-ddr5-6000', marca: 'Corsair', nome: 'Vengeance RGB 32GB DDR5 6000MHz', categoria: 'memorias', score: 88,
+    specs: { 'Capacidade': '32 GB', 'Tipo': 'DDR5', 'Frequência (MHz)': 6000, 'Latência (CL)': 30, 'Kit': '2x16GB' },
+    precos: [
+      { loja: 'kabum', preco: 949, url: 'https://www.kabum.com.br/produto/corsair-vengeance-rgb-32gb-ddr5-6000?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 94,90' },
+      { loja: 'amazon', preco: 989, url: 'https://www.amazon.com.br/s?k=corsair+vengeance+rgb+32gb+ddr5+6000&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '10x R$ 98,90' },
+    ],
+  },
+  {
+    slug: 'kingston-fury-beast-16gb-ddr5-5600', marca: 'Kingston', nome: 'Fury Beast 16GB DDR5 5600MHz', categoria: 'memorias', score: 74,
+    specs: { 'Capacidade': '16 GB', 'Tipo': 'DDR5', 'Frequência (MHz)': 5600, 'Latência (CL)': 36, 'Kit': '2x8GB' },
+    precos: [
+      { loja: 'kabum', preco: 449, url: 'https://www.kabum.com.br/produto/kingston-fury-beast-16gb-ddr5-5600?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '8x R$ 56,13' },
+      { loja: 'terabyte', preco: 469, url: 'https://www.terabyteshop.com.br/produto/kingston-fury-beast-16gb-ddr5-5600?aff=besthard', disponivel: true, frete: 'pago', parcelamento: '8x R$ 58,63' },
+    ],
+  },
+
+  // ── Fontes (novos) ──
+  {
+    slug: 'corsair-rm650e-650w', marca: 'Corsair', nome: 'RM650e 650W', categoria: 'fontes', score: 84,
+    specs: { 'Potência (W)': 650, 'Selo': '80 Plus Gold', 'Modular': 'Total', 'Conector PCIe 5.0': 'Sim (ATX 3.0)', 'Garantia': '7 anos' },
+    precos: [
+      { loja: 'kabum', preco: 499, url: 'https://www.kabum.com.br/produto/corsair-rm650e?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '8x R$ 62,38' },
+      { loja: 'amazon', preco: 529, url: 'https://www.amazon.com.br/s?k=corsair+rm650e+650w&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '10x R$ 52,90' },
+    ],
+  },
+  {
+    slug: 'msi-mag-a850gl-850w', marca: 'MSI', nome: 'MAG A850GL 850W', categoria: 'fontes', score: 85,
+    specs: { 'Potência (W)': 850, 'Selo': '80 Plus Gold', 'Modular': 'Total', 'Conector PCIe 5.0': 'Sim (ATX 3.0)', 'Garantia': '10 anos' },
+    precos: [
+      { loja: 'kabum', preco: 679, url: 'https://www.kabum.com.br/produto/msi-mag-a850gl?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 67,90' },
+      { loja: 'pichau', preco: 699, url: 'https://www.pichau.com.br/fonte?ref=besthard', disponivel: true, frete: 'gratis', parcelamento: '10x R$ 69,90' },
+    ],
+  },
+
+  // ── Coolers (novos) ──
+  {
+    slug: 'deepcool-ak400', marca: 'DeepCool', nome: 'AK400', categoria: 'coolers', score: 76,
+    specs: { 'Tipo': 'Ar (torre)', 'TDP (W)': 220, 'Tamanho (mm)': 155, 'Ruído (dBA)': 29, 'Soquetes': 'AM5/AM4/LGA1700' },
+    precos: [
+      { loja: 'kabum', preco: 179, url: 'https://www.kabum.com.br/produto/deepcool-ak400?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '4x R$ 44,75' },
+      { loja: 'amazon', preco: 199, url: 'https://www.amazon.com.br/s?k=deepcool+ak400&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '4x R$ 49,75' },
+    ],
+  },
+  {
+    slug: 'lian-li-galahad-ii-360', marca: 'Lian Li', nome: 'Galahad II LCD 360mm', categoria: 'coolers', score: 89,
+    specs: { 'Tipo': 'Água (AIO 360mm)', 'TDP (W)': 300, 'Tamanho (mm)': 360, 'Ruído (dBA)': 29, 'Soquetes': 'AM5/AM4/LGA1700' },
+    precos: [
+      { loja: 'kabum', preco: 899, url: 'https://www.kabum.com.br/produto/lian-li-galahad-ii-360?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 89,90' },
+      { loja: 'pichau', preco: 949, url: 'https://www.pichau.com.br/water-cooler?ref=besthard', disponivel: true, frete: 'gratis', parcelamento: '10x R$ 94,90' },
+    ],
+  },
+
+  // ── Gabinetes (novos) ──
+  {
+    slug: 'lian-li-lancool-207', marca: 'Lian Li', nome: 'Lancool 207', categoria: 'gabinetes', score: 84,
+    specs: { 'Tipo': 'Mid Tower ATX', 'Suporta GPU (mm)': 355, 'Baias': '2x 3.5" + 2x 2.5"', 'Fans inclusos': '2x 140mm + 1x 140mm', 'Painel': 'Vidro temperado' },
+    precos: [
+      { loja: 'kabum', preco: 549, url: 'https://www.kabum.com.br/produto/lian-li-lancool-207?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 54,90' },
+      { loja: 'terabyte', preco: 579, url: 'https://www.terabyteshop.com.br/produto/lian-li-lancool-207?aff=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 57,90' },
+    ],
+  },
+  {
+    slug: 'montech-air-903-max', marca: 'Montech', nome: 'Air 903 Max', categoria: 'gabinetes', score: 80,
+    specs: { 'Tipo': 'Mid Tower ATX', 'Suporta GPU (mm)': 400, 'Baias': '2x 3.5" + 2x 2.5"', 'Fans inclusos': '4x 140mm ARGB', 'Painel': 'Vidro temperado' },
+    precos: [
+      { loja: 'kabum', preco: 399, url: 'https://www.kabum.com.br/produto/montech-air-903-max?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '8x R$ 49,88' },
+      { loja: 'amazon', preco: 429, url: 'https://www.amazon.com.br/s?k=montech+air+903+max&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '8x R$ 53,63' },
+    ],
+  },
 ]
 
 // funções exportadas abaixo após enrichment
