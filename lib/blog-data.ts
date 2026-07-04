@@ -1783,6 +1783,248 @@ export const ARTIGOS: Artigo[] = [
     ],
   },
 
+  // ════════════════════════════════════════════════════════
+  // ARTIGO 14 — Melhor placa de vídeo para GTA 6
+  // ════════════════════════════════════════════════════════
+  {
+    slug: 'melhor-placa-de-video-para-gta-6-2026',
+    titulo: 'Melhor Placa de Vídeo para GTA 6: Qual GPU Comprar por Orçamento',
+    subtitulo: 'Do 1080p ao 4K — a placa certa para jogar Grand Theft Auto VI sem travar',
+    descricao: 'Qual a melhor placa de vídeo para rodar GTA 6? Recomendamos a GPU ideal para cada orçamento e resolução — de RTX 3060 no 1080p à RTX 4090 no 4K — com base nos requisitos estimados de GTA 6.',
+    categoria: 'comparativos',
+    tags: ['gta 6', 'placa de vídeo', 'gpu para gta 6', 'melhor gpu gta 6', 'rtx 4060', 'requisitos gta 6', '1080p', '4k'],
+    autor: 'BestHard',
+    dataPublicacao: '2026-07-03',
+    destaque: true,
+    tempoLeitura: 9,
+    produtosRelacionados: ['nvidia-geforce-rtx-4060', 'amd-radeon-rx-7600', 'nvidia-geforce-rtx-4070', 'nvidia-geforce-rtx-4080-super'],
+    conteudo: [
+      {
+        tipo: 'intro',
+        texto: 'A placa de vídeo é a peça mais importante para rodar GTA 6 com bons gráficos — é ela que vai determinar se você joga liso em 1080p, sobe para 1440p ou encara o 4K. Como a Rockstar ainda não divulgou os requisitos oficiais de PC, este guia usa estimativas realistas para recomendar a melhor GPU para GTA 6 em cada faixa de preço, ajudando você a comprar sem gastar demais nem de menos.',
+      },
+      {
+        tipo: 'adsense',
+        anuncioId: 'gpu-gta6-topo',
+      },
+      {
+        tipo: 'destaque',
+        destaqueTipo: 'aviso',
+        texto: '⚠️ Requisitos ainda não oficiais: a Rockstar não publicou os requisitos de PC de GTA 6. As recomendações abaixo são estimativas baseadas na ambição gráfica do jogo e no hardware dos consoles atuais (PS5/Xbox Series X). Atualizaremos assim que os requisitos oficiais saírem.',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Qual placa de vídeo para GTA 6 em cada resolução',
+      },
+      {
+        tipo: 'tabela',
+        colunas: ['Sua meta', 'GPU recomendada', 'VRAM', 'Expectativa'],
+        linhas: [
+          ['1080p no básico', 'RTX 3060 / RX 6600', '8-12 GB', 'Roda bem em médio'],
+          ['1080p 60fps (alto)', 'RTX 4060 / RX 7600', '8 GB', '✅ Ponto ideal'],
+          ['1440p 60fps', 'RTX 4070 / RX 7700 XT', '12 GB', '🥇 Sweet spot'],
+          ['4K', 'RTX 4080 Super / RX 7900 XTX', '16-24 GB', 'Alto desempenho'],
+          ['4K máximo + RT', 'RTX 4090', '24 GB', '👑 Topo absoluto'],
+        ],
+      },
+      {
+        tipo: 'h2',
+        titulo: '💰 Melhor GPU custo-benefício para GTA 6 (1080p)',
+        texto: 'Para a maioria dos jogadores brasileiros, que jogam em 1080p, a RTX 4060 e a RX 7600 são as melhores escolhas para GTA 6. Elas têm folga para rodar o jogo em gráficos altos a 60fps (a estimativa aponta para isso), com o bônus do DLSS 3 na NVIDIA para dar aquele empurrão extra de FPS. É o ponto de equilíbrio entre preço e desempenho.',
+      },
+      {
+        tipo: 'afiliado',
+        produtoSlug: 'nvidia-geforce-rtx-4060',
+      },
+      {
+        tipo: 'afiliado',
+        produtoSlug: 'amd-radeon-rx-7600',
+      },
+      {
+        tipo: 'h2',
+        titulo: '🥇 O sweet spot para GTA 6 em 1440p',
+        texto: 'Se você quer jogar GTA 6 em 1440p — resolução que valoriza o visual caprichado do jogo — a RTX 4070 e a RX 7700 XT são as recomendações. Com 12GB de VRAM e desempenho de sobra, elas devem entregar uma experiência excelente e ainda garantem longevidade para outros lançamentos além do GTA 6.',
+      },
+      {
+        tipo: 'afiliado',
+        produtoSlug: 'nvidia-geforce-rtx-4070',
+      },
+      {
+        tipo: 'afiliado',
+        produtoSlug: 'amd-radeon-rx-7700-xt',
+      },
+      {
+        tipo: 'h2',
+        titulo: '👑 Para GTA 6 em 4K com tudo no máximo',
+        texto: 'Para encarar GTA 6 em 4K com todos os efeitos e possível ray tracing, é preciso investir pesado na GPU. A RTX 4080 Super dá conta do 4K com folga, e a RTX 4090 é a escolha para quem não quer abrir mão de absolutamente nada. Lembre de acompanhar a placa com um processador forte (como o Ryzen 7 9800X3D) para não criar gargalo.',
+      },
+      {
+        tipo: 'afiliado',
+        produtoSlug: 'nvidia-geforce-rtx-4080-super',
+      },
+      {
+        tipo: 'afiliado',
+        produtoSlug: 'nvidia-geforce-rtx-4090',
+      },
+      {
+        tipo: 'destaque',
+        destaqueTipo: 'dica',
+        texto: '💡 Fique de olho na VRAM: GTA 6 deve usar texturas pesadas. Placas com 8GB devem dar conta do 1080p, mas para 1440p/4K com texturas no máximo, 12GB ou mais é o ideal. Se você monta pensando no futuro, priorize placas com boa quantidade de memória de vídeo.',
+      },
+      {
+        tipo: 'cta',
+        ctaTexto: 'Comparar placas de vídeo lado a lado →',
+        ctaHref: '/comparar/gpus',
+      },
+      {
+        tipo: 'adsense',
+        anuncioId: 'gpu-gta6-fim',
+      },
+    ],
+    faq: [
+      {
+        pergunta: 'Qual a melhor placa de vídeo para GTA 6?',
+        resposta: 'Depende da resolução. Para 1080p, a RTX 4060 e a RX 7600 são o melhor custo-benefício. Para 1440p, a RTX 4070 ou RX 7700 XT. Para 4K, RTX 4080 Super ou RTX 4090. Como os requisitos oficiais ainda não saíram, são estimativas baseadas na ambição do jogo.',
+      },
+      {
+        pergunta: 'Uma RTX 4060 é suficiente para GTA 6?',
+        resposta: 'Pela nossa estimativa, sim, para jogar em 1080p com bons gráficos e 60fps — inclusive com ajuda do DLSS. Para 1440p ou 4K com tudo no máximo, será preciso uma placa mais potente.',
+      },
+      {
+        pergunta: 'Quanto de VRAM preciso para GTA 6?',
+        resposta: '8GB devem dar conta do 1080p. Para 1440p e 4K com texturas no máximo, o ideal é 12GB ou mais. GTA 6 deve usar texturas pesadas, então placas com mais VRAM ficam mais tranquilas para o futuro.',
+      },
+      {
+        pergunta: 'Placa da AMD ou NVIDIA para GTA 6?',
+        resposta: 'As duas são ótimas opções. A NVIDIA leva vantagem em ray tracing e no DLSS (upscaling que aumenta FPS). A AMD costuma oferecer mais VRAM pelo preço. Escolha pela faixa de preço e pelo que encontra mais barato na sua resolução-alvo.',
+      },
+    ],
+  },
+
+  // ════════════════════════════════════════════════════════
+  // ARTIGO 15 — GTA 6 vai rodar no meu PC?
+  // ════════════════════════════════════════════════════════
+  {
+    slug: 'gta-6-vai-rodar-no-meu-pc-como-descobrir',
+    titulo: 'GTA 6 Vai Rodar no Meu PC? Como Descobrir Agora',
+    subtitulo: 'Passo a passo para saber se o seu PC aguenta Grand Theft Auto VI — sem ser técnico',
+    descricao: 'Será que GTA 6 vai rodar no seu PC? Ensinamos, passo a passo, como descobrir a configuração do seu computador e comparar com os requisitos estimados de GTA 6 — mesmo sem entender de hardware.',
+    categoria: 'guias',
+    tags: ['gta 6', 'gta 6 roda no meu pc', 'requisitos gta 6', 'configuração do pc', 'como ver specs do pc', 'gargalo'],
+    autor: 'BestHard',
+    dataPublicacao: '2026-07-03',
+    destaque: false,
+    tempoLeitura: 8,
+    conteudo: [
+      {
+        tipo: 'intro',
+        texto: 'Antes de sonhar com GTA 6, a pergunta prática é: o meu PC atual aguenta? A boa notícia é que descobrir isso é mais fácil do que parece — você nem precisa entender de hardware. Neste guia mostramos, passo a passo, como ver a configuração do seu PC e comparar com os requisitos estimados de GTA 6, para saber se você precisa (ou não) fazer algum upgrade.',
+      },
+      {
+        tipo: 'adsense',
+        anuncioId: 'gta6-roda-topo',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Passo 1: Descubra a configuração do seu PC',
+        texto: 'Você precisa saber 4 coisas: o processador, a placa de vídeo, a quantidade de memória RAM e se você tem SSD. Veja como descobrir cada uma no Windows sem instalar nada:',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '🖥️ Processador e RAM: aperte as teclas Ctrl + Shift + Esc para abrir o Gerenciador de Tarefas, vá na aba "Desempenho". Ali aparece o nome da CPU e a quantidade de memória',
+          '🎮 Placa de vídeo: ainda no Gerenciador de Tarefas, aba "Desempenho", clique em "GPU" — o nome da sua placa aparece no canto superior',
+          '💾 SSD ou HD: na aba "Desempenho", clique no disco (Disco 0). Se aparecer "SSD" está ótimo; se aparecer "HDD", é HD (upgrade recomendado)',
+          '⌨️ Atalho rápido: aperte a tecla Windows + R, digite "dxdiag" e Enter — abre um resumo com processador, memória e placa de vídeo',
+        ],
+      },
+      {
+        tipo: 'destaque',
+        destaqueTipo: 'dica',
+        texto: '💡 Anote os nomes exatos (ex: "Ryzen 5 5600", "RTX 3060", "16GB"). Você vai usar isso no próximo passo para comparar com os requisitos e para testar se as peças estão equilibradas.',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Passo 2: Compare com os requisitos estimados de GTA 6',
+        texto: 'Com a configuração em mãos, compare com a nossa estimativa de requisitos. Lembre: a Rockstar ainda não divulgou os números oficiais, então use isto como um guia aproximado.',
+      },
+      {
+        tipo: 'tabela',
+        colunas: ['Componente', 'Mínimo estimado', 'Recomendado estimado'],
+        linhas: [
+          ['Processador', 'Ryzen 5 3600 / i5-10400', 'Ryzen 5 7600 / i5-13400F'],
+          ['Placa de Vídeo', 'GTX 1660 Super / RX 5600 XT', 'RTX 4060 / RX 7600'],
+          ['Memória RAM', '16 GB', '16 GB (ideal 32 GB)'],
+          ['Armazenamento', 'SSD (obrigatório)', 'SSD NVMe'],
+        ],
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '✅ Se o seu PC está igual ou acima do "recomendado": ótimo, você deve jogar GTA 6 tranquilo em 1080p/1440p',
+          '🟡 Se está entre o "mínimo" e o "recomendado": deve rodar, provavelmente em gráficos médios/baixos',
+          '🔴 Se está abaixo do "mínimo" (ou usa HD): vai precisar de upgrade — geralmente placa de vídeo, RAM e/ou SSD',
+        ],
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Passo 3: Verifique o gargalo entre suas peças',
+        texto: 'Não adianta ter uma placa de vídeo boa se o processador for muito fraco (ou vice-versa) — isso é o gargalo, e faz você desperdiçar desempenho. Use o nosso simulador de gargalo: informe o seu processador e a sua placa de vídeo, e veja se as duas peças estão equilibradas para rodar GTA 6 na resolução que você quer.',
+      },
+      {
+        tipo: 'cta',
+        ctaTexto: 'Testar o gargalo do meu PC →',
+        ctaHref: '/gargalo',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Passo 4: Se precisar de upgrade, comece pelo mais importante',
+        texto: 'Descobriu que precisa melhorar o PC? A ordem de prioridade para GTA 6 costuma ser esta:',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '1️⃣ SSD — se você ainda usa HD, esse é o upgrade número 1 (barato e transformador)',
+          '2️⃣ Placa de vídeo — é o que mais impacta os gráficos e o FPS em jogos',
+          '3️⃣ Memória RAM — garanta pelo menos 16GB (em 2 pentes, para dual channel)',
+          '4️⃣ Processador — só troque se ele for realmente antigo e estiver segurando a placa de vídeo (gargalo)',
+        ],
+      },
+      {
+        tipo: 'destaque',
+        destaqueTipo: 'recomendacao',
+        texto: '✓ Não sabe por onde começar o upgrade ou a montagem? Use o assistente de montagem do BestHard: você informa seu orçamento e uso, e a IA monta uma configuração equilibrada e compatível para rodar GTA 6 e outros jogos.',
+      },
+      {
+        tipo: 'cta',
+        ctaTexto: 'Montar/atualizar meu PC com a IA →',
+        ctaHref: '/montar',
+      },
+      {
+        tipo: 'adsense',
+        anuncioId: 'gta6-roda-fim',
+      },
+    ],
+    faq: [
+      {
+        pergunta: 'Como saber se GTA 6 vai rodar no meu PC?',
+        resposta: 'Descubra a configuração do seu PC (processador, placa de vídeo, RAM e se tem SSD) pelo Gerenciador de Tarefas ou pelo comando dxdiag, e compare com os requisitos estimados de GTA 6. Se estiver igual ou acima do recomendado, deve rodar bem. Como os requisitos oficiais ainda não saíram, use como guia aproximado.',
+      },
+      {
+        pergunta: 'Como vejo a configuração do meu PC no Windows?',
+        resposta: 'Aperte Ctrl + Shift + Esc para abrir o Gerenciador de Tarefas e vá na aba "Desempenho" — ali aparecem processador, memória, disco (SSD ou HD) e placa de vídeo. Outra forma é apertar Windows + R, digitar "dxdiag" e dar Enter.',
+      },
+      {
+        pergunta: 'Meu PC é fraco para GTA 6. O que faço primeiro?',
+        resposta: 'A ordem de prioridade costuma ser: primeiro um SSD (se ainda usa HD), depois a placa de vídeo, então garantir 16GB de RAM e, por último, o processador (só se ele estiver segurando a GPU). Um simulador de gargalo ajuda a identificar o que trocar.',
+      },
+      {
+        pergunta: 'Preciso trocar o PC inteiro para jogar GTA 6?',
+        resposta: 'Nem sempre. Muitas vezes um upgrade pontual (SSD, placa de vídeo ou RAM) já resolve. Vale descobrir sua configuração atual e comparar com os requisitos antes de pensar em trocar tudo — assim você economiza.',
+      },
+    ],
+  },
+
 ]
 
 export function getArtigos() {
