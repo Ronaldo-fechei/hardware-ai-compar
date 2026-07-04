@@ -56,10 +56,10 @@ export function Sidebar({ categorias }: Props) {
           Blog
         </p>
         {[
-          { icon: '🏆', label: 'Melhor CPU 2026',   href: '/blog/melhor-processador-para-jogos-2026' },
+          { icon: '🎮', label: 'PC para GTA 6',      href: '/blog/pc-para-rodar-gta-6-requisitos-2026' },
+          { icon: '🏆', label: 'Melhor CPU 2026',    href: '/blog/melhor-processador-para-jogos-2026' },
           { icon: '🛠️', label: 'Build R$ 3.000',     href: '/blog/monte-pc-gamer-r3000-2026' },
           { icon: '🖥️', label: 'Melhor Monitor',     href: '/blog/melhor-monitor-gamer-2026' },
-          { icon: '💡', label: 'Build Xeon Barato',  href: '/blog/build-xeon-x99-custo-beneficio-2026' },
           { icon: '📖', label: 'Ver todos →',        href: '/blog' },
         ].map(({ icon, label, href }) => {
           const isActive = pathname === href
