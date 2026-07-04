@@ -1467,6 +1467,288 @@ const ENRICHMENT: Record<string, Partial<import('@/types/hardware').Produto>> = 
     proCons: { pros: ['Barato com 4 fans ARGB', 'Vidro temperado', 'Visual gamer'], contras: ['Fluxo de ar mediano', 'Material mais simples'] },
     relacionados: ['lian-li-lancool-216'],
   },
+
+  // ══════ FICHAS RICAS — catálogo expandido 2026-07 ══════
+
+  // ── Processadores ──
+  'amd-ryzen-9-9950x': {
+    tier: 'flagship', anoLancamento: 2024, scoreCustoBeneficio: 82,
+    descricao: 'O AMD Ryzen 9 9950X é o topo da linha Zen 5 para desktop, com 16 núcleos e 32 threads voltados a produtividade extrema — renderização, edição de vídeo, compilação e cargas multi-thread pesadas. Com boost de até 5.7 GHz na plataforma AM5, também joga muito bem, embora em jogos puros o 9800X3D leve vantagem pelo 3D V-Cache.',
+    proCons: { pros: ['16 núcleos / 32 threads — monstro em produtividade', 'Boost altíssimo de 5.7 GHz', 'Plataforma AM5 com futuro', 'Eficiência boa para o desempenho'], contras: ['Caro', 'Consumo e calor elevados (170W)', 'Exige cooler robusto', 'Overkill para quem só joga'] },
+    relacionados: ['amd-ryzen-7-9800x3d', 'intel-core-i9-14900k', 'amd-ryzen-7-9700x'],
+  },
+  'intel-core-ultra-7-265k': {
+    tier: 'high-end', anoLancamento: 2024, scoreCustoBeneficio: 84,
+    descricao: 'O Intel Core Ultra 7 265K é o representante da nova plataforma LGA1851 (Arrow Lake) com foco em eficiência e produtividade. Seus 20 núcleos entregam ótimo desempenho multi-thread com consumo mais controlado que a geração anterior. É uma boa escolha para quem equilibra jogos e trabalho, embora em jogos puros ainda perca para os X3D da AMD.',
+    proCons: { pros: ['20 núcleos — forte em produtividade', 'Plataforma LGA1851 nova', 'Consumo mais eficiente que a 14ª geração', 'Bom para criadores de conteúdo'], contras: ['Exige placa Z890 e DDR5 (custo)', 'Perde para AMD X3D em jogos', 'Plataforma recente, ecossistema em amadurecimento'] },
+    relacionados: ['intel-core-i7-14700k', 'amd-ryzen-7-9700x', 'amd-ryzen-9-9950x'],
+  },
+  'amd-ryzen-7-9700x': {
+    tier: 'high-end', anoLancamento: 2024, scoreCustoBeneficio: 86,
+    descricao: 'O AMD Ryzen 7 9700X traz a arquitetura Zen 5 para a faixa intermediária-alta com 8 núcleos, alto IPC e consumo baixíssimo de apenas 65W. É excelente para jogos e uso geral, rodando frio e silencioso. Para quem quer o máximo de FPS, o 9800X3D ainda é superior, mas o 9700X entrega ótimo equilíbrio entre jogos e produtividade.',
+    proCons: { pros: ['Zen 5 com alto IPC', 'Apenas 65W — frio e eficiente', 'Ótimo em jogos e uso geral', 'Plataforma AM5 com upgrades futuros'], contras: ['Perde para o 9800X3D em jogos', 'Só 8 núcleos', 'Exige DDR5'] },
+    relacionados: ['amd-ryzen-7-9800x3d', 'amd-ryzen-5-9600x', 'intel-core-i7-14700k'],
+  },
+  'amd-ryzen-5-9600x': {
+    tier: 'mid-range', anoLancamento: 2024, scoreCustoBeneficio: 88,
+    descricao: 'O AMD Ryzen 5 9600X é a porta de entrada do Zen 5 na plataforma AM5, com 6 núcleos, boost de 5.4 GHz e consumo de apenas 65W. Entrega desempenho de jogos muito próximo de processadores mais caros e é uma excelente base para um PC gamer que poderá receber upgrades futuros sem trocar a placa-mãe.',
+    proCons: { pros: ['Excelente custo-benefício em jogos', 'Consumo baixíssimo (65W)', 'Plataforma AM5 com futuro', 'Roda frio e silencioso'], contras: ['Apenas 6 núcleos', 'Exige DDR5 (custo de plataforma)', 'Limitado em produtividade pesada'] },
+    relacionados: ['intel-core-i5-14600k', 'amd-ryzen-7-9700x', 'amd-ryzen-5-7600x'],
+  },
+
+  // ── Placas de Vídeo ──
+  'nvidia-geforce-rtx-4070': {
+    tier: 'high-end', anoLancamento: 2023, scoreCustoBeneficio: 82,
+    descricao: 'A GeForce RTX 4070 é uma das melhores placas para 1440p, com 12GB de VRAM, ótimo desempenho em ray tracing e o DLSS 3 com Frame Generation. Consome apenas 200W, dispensando fontes muito grandes. É a escolha equilibrada para quem quer jogar em 1440p com folga sem entrar na faixa premium.',
+    proCons: { pros: ['Ótima para 1440p', '12GB de VRAM', 'DLSS 3 + Frame Generation', 'Consumo eficiente (200W)'], contras: ['Preço acima da faixa de entrada', 'Barramento de 192-bit', 'RT pesado ainda pede DLSS'] },
+    relacionados: ['nvidia-geforce-rtx-4070-super', 'amd-radeon-rx-7700-xt', 'nvidia-geforce-rtx-4060-ti'],
+  },
+  'nvidia-geforce-rtx-4060-ti': {
+    tier: 'mid-range', anoLancamento: 2023, scoreCustoBeneficio: 76,
+    descricao: 'A GeForce RTX 4060 Ti fica entre a RTX 4060 e a RTX 4070, entregando um pouco mais de desempenho em 1080p e 1440p leve. Tem o DLSS 3 e bom ray tracing, mas os 8GB de VRAM e o barramento de 128-bit limitam em jogos mais pesados. Vale quando o preço está próximo da RTX 4060.',
+    proCons: { pros: ['Melhor que a RTX 4060', 'DLSS 3 + Frame Generation', 'Ótima em 1080p, ok em 1440p', 'Consumo baixo (160W)'], contras: ['Apenas 8GB de VRAM', 'Barramento estreito (128-bit)', 'Custo-benefício discutível vs 4060'] },
+    relacionados: ['nvidia-geforce-rtx-4060', 'nvidia-geforce-rtx-4070', 'amd-radeon-rx-7700-xt'],
+  },
+  'amd-radeon-rx-7700-xt': {
+    tier: 'high-end', anoLancamento: 2023, scoreCustoBeneficio: 80,
+    descricao: 'A Radeon RX 7700 XT é uma ótima opção AMD para 1440p, com 12GB de VRAM e forte desempenho em rasterização. Costuma custar menos que a RTX 4070 e entregar desempenho parecido em jogos sem ray tracing. Perde em ray tracing e no upscaling (FSR vs DLSS), mas compensa no preço.',
+    proCons: { pros: ['Ótima para 1440p', '12GB de VRAM', 'Bom preço vs concorrência NVIDIA', 'Forte em rasterização'], contras: ['Ray tracing inferior à NVIDIA', 'FSR ainda atrás do DLSS', 'Consumo maior (245W)'] },
+    relacionados: ['nvidia-geforce-rtx-4070', 'amd-radeon-rx-7800-xt', 'nvidia-geforce-rtx-4060-ti'],
+  },
+  'amd-radeon-rx-7900-xt': {
+    tier: 'flagship', anoLancamento: 2022, scoreCustoBeneficio: 84,
+    descricao: 'A Radeon RX 7900 XT é uma placa de alto desempenho para 1440p e 4K, com generosos 20GB de VRAM. Entrega performance excelente em rasterização, rivalizando com placas NVIDIA mais caras, e a VRAM enorme garante folga para jogos pesados e criação de conteúdo. Ray tracing é seu ponto mais fraco frente à NVIDIA.',
+    proCons: { pros: ['20GB de VRAM — muita folga', 'Ótima para 1440p e 4K', 'Forte em rasterização', 'Bom preço por desempenho'], contras: ['Ray tracing atrás da RTX 4080', 'Consumo alto (300W)', 'FSR ainda inferior ao DLSS'] },
+    relacionados: ['amd-radeon-rx-7900-xtx', 'nvidia-geforce-rtx-4080-super', 'amd-radeon-rx-7800-xt'],
+  },
+
+  // ── SSDs ──
+  'samsung-990-pro-1tb': {
+    tier: 'high-end', anoLancamento: 2023, scoreCustoBeneficio: 86,
+    descricao: 'O Samsung 990 Pro 1TB é um dos melhores SSDs NVMe Gen4 do mercado, com velocidades próximas do limite da interface, cache DRAM dedicado e confiabilidade lendária da Samsung. É perfeito para jogos com DirectStorage e cargas exigentes, sem o custo e o calor de um Gen5. Ótima escolha premium na capacidade de 1TB.',
+    proCons: { pros: ['Um dos Gen4 mais rápidos', 'Cache DRAM dedicado', 'Confiabilidade Samsung', 'Software Magician excelente'], contras: ['Mais caro que Gen4 de entrada', 'Versão sem dissipador esquenta', '1TB pode ser pouco para bibliotecas grandes'] },
+    relacionados: ['wd-black-sn850x-2tb', 'samsung-990-pro-2tb', 'kingston-nv3-2tb'],
+  },
+  'kingston-nv3-2tb': {
+    tier: 'mid-range', anoLancamento: 2024, scoreCustoBeneficio: 88,
+    descricao: 'O Kingston NV3 2TB é um SSD NVMe Gen4 de custo-benefício com bastante espaço. Não tem cache DRAM e não é o mais rápido, mas na prática dos jogos a diferença para modelos premium é imperceptível. É a escolha inteligente para quem quer 2TB de armazenamento rápido gastando pouco.',
+    proCons: { pros: ['2TB por bom preço', 'Rápido o suficiente para jogos', 'Marca confiável', 'Gen4 moderno'], contras: ['Sem cache DRAM', 'Velocidade abaixo dos topo de linha', 'Desempenho cai em transferências longas'] },
+    relacionados: ['samsung-990-pro-1tb', 'crucial-p3-plus-1tb', 'wd-black-sn850x-2tb'],
+  },
+  'crucial-p3-plus-1tb': {
+    tier: 'entrada', anoLancamento: 2022, scoreCustoBeneficio: 85,
+    descricao: 'O Crucial P3 Plus 1TB é um NVMe Gen4 de entrada com ótimo custo por gigabyte. Sem cache DRAM, mas com desempenho mais que suficiente para instalar o sistema e jogos com carregamento rápido. Uma das formas mais baratas de entrar no mundo Gen4 com 1TB.',
+    proCons: { pros: ['Ótimo preço por 1TB', 'Gen4 com bom carregamento', 'Marca Crucial (Micron)', 'Baixo consumo'], contras: ['Sem cache DRAM', 'Não é dos mais rápidos', 'Desempenho cai com o SSD cheio'] },
+    relacionados: ['wd-blue-sn580-1tb', 'kingston-nv3-2tb', 'samsung-980-1tb'],
+  },
+  'wd-blue-sn580-1tb': {
+    tier: 'entrada', anoLancamento: 2023, scoreCustoBeneficio: 84,
+    descricao: 'O WD Blue SN580 1TB é um NVMe Gen4 de entrada equilibrado, com velocidades de leitura e gravação parelhas e bom desempenho no dia a dia. É uma opção confiável e econômica para quem quer sair do SATA e ganhar carregamento rápido em jogos e no sistema.',
+    proCons: { pros: ['Bom equilíbrio leitura/gravação', 'Confiabilidade WD', 'Preço acessível', 'Baixo consumo'], contras: ['Sem cache DRAM', 'Não é o mais veloz do segmento', 'Sem dissipador incluso'] },
+    relacionados: ['crucial-p3-plus-1tb', 'samsung-980-1tb', 'kingston-nv3-2tb'],
+  },
+  'samsung-980-1tb': {
+    tier: 'entrada', anoLancamento: 2021, scoreCustoBeneficio: 80,
+    descricao: 'O Samsung 980 1TB é um NVMe Gen3 econômico e confiável. Mesmo sendo Gen3, é muito mais rápido que qualquer SSD SATA e entrega carregamentos rápidos em jogos. Boa opção para placas que só têm slot Gen3 ou para quem quer o nome Samsung pagando menos.',
+    proCons: { pros: ['Confiabilidade Samsung', 'Muito mais rápido que SATA', 'Bom preço', 'Software Magician'], contras: ['Gen3 (mais lento que Gen4)', 'Sem cache DRAM', 'Sem ganho em placas Gen4'] },
+    relacionados: ['wd-blue-sn580-1tb', 'crucial-p3-plus-1tb', 'kingston-a400-480gb'],
+  },
+
+  // ── Monitores ──
+  'samsung-odyssey-oled-g6': {
+    tier: 'flagship', anoLancamento: 2025, scoreCustoBeneficio: 82,
+    descricao: 'O Samsung Odyssey OLED G6 27" é um monitor gamer de altíssimo nível, unindo painel OLED com impressionantes 360Hz e resposta de 0,03ms. Entrega pretos absolutos, cores vibrantes e fluidez extrema — ideal para jogadores competitivos que também querem qualidade de imagem premium. É um dos monitores mais desejados de 2026.',
+    proCons: { pros: ['OLED com 360Hz — fluidez extrema', 'Pretos absolutos e cores perfeitas', 'Resposta de 0,03ms', 'Top para competitivo e imersão'], contras: ['Preço premium', 'Risco de burn-in em uso estático', 'Brilho menor que mini-LED em HDR'] },
+    relacionados: ['asus-rog-swift-pg27aqdm', 'lg-ultragear-27gp850', 'samsung-odyssey-g7'],
+  },
+  'lg-ultragear-27gp850': {
+    tier: 'high-end', anoLancamento: 2021, scoreCustoBeneficio: 87,
+    descricao: 'O LG UltraGear 27GP850 é um dos monitores 1440p mais recomendados em custo-benefício. Com painel Nano IPS de 27", 165Hz (overclock até 180Hz) e cores excelentes, é a escolha ideal para quem quer subir de 1080p para 1440p sem gastar o preço de um OLED. Ótimo tanto para jogos quanto para trabalho.',
+    proCons: { pros: ['1440p 165Hz com ótimo preço', 'Nano IPS com cores precisas', 'Overclock até 180Hz', 'Ótimo para jogos e trabalho'], contras: ['Sem HDR real de destaque', 'Pretos típicos de IPS', 'Brilho mediano em HDR'] },
+    relacionados: ['dell-s2721dgf', 'gigabyte-m27q', 'samsung-odyssey-g7'],
+  },
+  'dell-s2721dgf': {
+    tier: 'high-end', anoLancamento: 2020, scoreCustoBeneficio: 85,
+    descricao: 'O Dell S2721DGF é um monitor 1440p 165Hz IPS muito respeitado, com excelente fidelidade de cores, ampla cobertura de gamut e construção robusta com stand ajustável completo. É uma opção sólida tanto para gamers quanto para quem trabalha com imagem e quer precisão de cor.',
+    proCons: { pros: ['IPS 1440p 165Hz de qualidade', 'Ótima cobertura de cores', 'Stand com ajuste completo', 'Construção robusta'], contras: ['Preço um pouco acima da média', 'HDR limitado', 'Design mais sóbrio que gamer'] },
+    relacionados: ['lg-ultragear-27gp850', 'gigabyte-m27q', 'asus-rog-swift-pg27aqdm'],
+  },
+  'gigabyte-m27q': {
+    tier: 'mid-range', anoLancamento: 2021, scoreCustoBeneficio: 86,
+    descricao: 'O Gigabyte M27Q é um monitor 1440p 170Hz com ótimo custo-benefício e um diferencial: um KVM embutido que permite controlar dois computadores com um só teclado e mouse. Painel rápido de 0,5ms e boas cores fazem dele uma escolha popular para quem quer 1440p de alta taxa sem pagar caro.',
+    proCons: { pros: ['1440p 170Hz por bom preço', 'KVM embutido (2 PCs, 1 setup)', 'Resposta rápida (0,5ms)', 'Boas cores'], contras: ['Subpixel BGR pode afetar texto', 'HDR básico', 'Brilho mediano'] },
+    relacionados: ['lg-ultragear-27gp850', 'dell-s2721dgf', 'samsung-odyssey-g7'],
+  },
+  'aoc-24g4': {
+    tier: 'entrada', anoLancamento: 2023, scoreCustoBeneficio: 88,
+    descricao: 'O AOC Gaming 24G4 24" é um excelente monitor de entrada 1080p com painel IPS e 180Hz. Entrega cores boas, alta fluidez e resposta rápida por um preço muito acessível — ideal para quem monta o primeiro setup gamer ou quer um monitor competitivo sem gastar muito.',
+    proCons: { pros: ['1080p 180Hz muito acessível', 'Painel IPS com boas cores', 'Ótimo para FPS competitivo', 'Ótimo custo-benefício'], contras: ['Resolução 1080p', 'Sem HDR relevante', 'Stand simples'] },
+    relacionados: ['aoc-24g2sp', 'lg-ultragear-27gn650', 'gigabyte-m27q'],
+  },
+  'samsung-odyssey-g7': {
+    tier: 'high-end', anoLancamento: 2020, scoreCustoBeneficio: 84,
+    descricao: 'O Samsung Odyssey G7 27" é um monitor gamer curvo (1000R) VA de 1440p e 240Hz. O alto contraste do painel VA faz diferença em jogos escuros, e a curvatura acentuada cria imersão real. Continua sendo uma ótima opção mid-range para quem quer 1440p em alta taxa com pretos profundos.',
+    proCons: { pros: ['VA 1440p 240Hz', 'Alto contraste e pretos profundos', 'Curvatura 1000R imersiva', 'Ótimo para jogos escuros'], contras: ['Curvatura agressiva não agrada a todos', 'Ghosting possível em cenas rápidas', 'Ângulos de visão inferiores a IPS'] },
+    relacionados: ['lg-ultragear-27gp850', 'dell-s2721dgf', 'asus-rog-swift-pg27aqdm'],
+  },
+  'aoc-24g2sp': {
+    tier: 'entrada', anoLancamento: 2021, scoreCustoBeneficio: 89,
+    descricao: 'O AOC 24G2SP 24" é um clássico do custo-benefício: painel IPS 1080p com 165Hz, cores boas e stand com ajuste de altura. É uma das melhores portas de entrada para o mundo gamer de alta taxa de atualização, entregando o essencial por um preço baixo.',
+    proCons: { pros: ['IPS 1080p 165Hz barato', 'Stand com ajuste de altura', 'Boas cores para a faixa', 'Ótimo primeiro monitor gamer'], contras: ['Resolução 1080p', 'Sem HDR real', 'Brilho mediano'] },
+    relacionados: ['aoc-24g4', 'lg-ultragear-27gn650', 'gigabyte-m27q'],
+  },
+
+  // ── Memórias RAM ──
+  'corsair-vengeance-rgb-32gb-ddr5-6000': {
+    tier: 'high-end', anoLancamento: 2023, scoreCustoBeneficio: 87,
+    descricao: 'O kit Corsair Vengeance RGB 32GB DDR5 6000MHz CL30 é ideal para plataformas AM5, atingindo exatamente o sweet spot recomendado pela AMD. Além do desempenho de ponta, tem iluminação RGB para quem quer visual. Os 32GB dão folga para jogos pesados, multitarefa e criação de conteúdo.',
+    proCons: { pros: ['6000MHz CL30 — sweet spot AM5', '32GB para folga total', 'RGB personalizável', 'Perfil EXPO/XMP fácil'], contras: ['Mais caro que kits sem RGB', 'RGB exige software', 'Overkill para uso básico'] },
+    relacionados: ['gskill-trident-z5-32gb-ddr5-6000', 'corsair-vengeance-32gb-ddr5-6400', 'kingston-fury-beast-32gb-ddr5-6000'],
+  },
+  'corsair-vengeance-32gb-ddr5-6400': {
+    tier: 'high-end', anoLancamento: 2023, scoreCustoBeneficio: 86,
+    descricao: 'O Corsair Vengeance 32GB DDR5 6400MHz é um kit rápido para quem busca alta frequência em plataformas Intel e AM5 bem configuradas. Com 32GB e CL32, entrega desempenho de ponta em jogos e produtividade, com o design discreto e a confiabilidade tradicional da Corsair.',
+    proCons: { pros: ['Alta frequência (6400MHz)', '32GB para multitarefa pesada', 'Design discreto', 'Confiabilidade Corsair'], contras: ['6400MHz nem sempre estável em todo AM5', 'Preço acima da média', 'Precisa ativar XMP/EXPO'] },
+    relacionados: ['corsair-vengeance-rgb-32gb-ddr5-6000', 'gskill-ripjaws-s5-32gb-ddr5-6000', 'kingston-fury-beast-32gb-ddr5-6000'],
+  },
+  'kingston-fury-beast-32gb-ddr5-6000': {
+    tier: 'mid-range', anoLancamento: 2023, scoreCustoBeneficio: 88,
+    descricao: 'O Kingston Fury Beast 32GB DDR5 6000MHz é um kit de ótimo custo-benefício para builds novos. Com 32GB e frequência de 6000MHz, atende jogos pesados e multitarefa com sobra, por um preço mais acessível que os concorrentes premium. Escolha segura para AM5 e Intel recentes.',
+    proCons: { pros: ['32GB 6000MHz por bom preço', 'Ótimo custo-benefício', 'Confiabilidade Kingston', 'Perfil XMP/EXPO'], contras: ['CL36 (latência maior)', 'Sem RGB na versão base', 'Design simples'] },
+    relacionados: ['gskill-ripjaws-s5-32gb-ddr5-6000', 'corsair-vengeance-rgb-32gb-ddr5-6000', 'corsair-vengeance-32gb-ddr5-6400'],
+  },
+  'gskill-ripjaws-s5-32gb-ddr5-6000': {
+    tier: 'high-end', anoLancamento: 2022, scoreCustoBeneficio: 89,
+    descricao: 'O G.Skill Ripjaws S5 32GB DDR5 6000MHz CL30 é um dos kits favoritos para AM5, com o perfil ideal de 6000MHz CL30 e um dissipador de perfil baixo que garante compatibilidade com coolers grandes. Excelente equilíbrio entre desempenho, preço e compatibilidade.',
+    proCons: { pros: ['6000MHz CL30 — ideal para AM5', 'Perfil baixo (cabe sob coolers grandes)', 'Ótimo custo-benefício', 'Alta estabilidade'], contras: ['Sem RGB', 'Visual discreto', 'Disponibilidade varia'] },
+    relacionados: ['gskill-trident-z5-32gb-ddr5-6000', 'kingston-fury-beast-32gb-ddr5-6000', 'corsair-vengeance-rgb-32gb-ddr5-6000'],
+  },
+  'kingston-fury-beast-16gb-ddr4-3600': {
+    tier: 'mid-range', anoLancamento: 2021, scoreCustoBeneficio: 85,
+    descricao: 'O Kingston Fury Beast 16GB DDR4 3600MHz é um kit ideal para plataformas DDR4 (AM4 e Intel LGA1700 DDR4). Com 3600MHz e boa latência, é a memória perfeita para builds de custo-benefício que reaproveitam plataforma DDR4, entregando ótimo desempenho em jogos.',
+    proCons: { pros: ['3600MHz ideal para AM4', 'Ótimo para builds DDR4', 'Confiabilidade Kingston', 'Bom preço'], contras: ['DDR4 (plataformas mais antigas)', '16GB pode ser pouco para multitarefa pesada', 'Sem RGB na base'] },
+    relacionados: ['corsair-vengeance-lpx-16gb-ddr4-3200', 'kingston-fury-beast-16gb-ddr5-5600', 'kingston-fury-beast-32gb-ddr5-6000'],
+  },
+  'kingston-fury-beast-16gb-ddr5-5600': {
+    tier: 'entrada', anoLancamento: 2022, scoreCustoBeneficio: 82,
+    descricao: 'O Kingston Fury Beast 16GB DDR5 5600MHz é um kit DDR5 de entrada para quem monta um PC novo com orçamento controlado. Os 16GB atendem a maioria dos jogos, e a base DDR5 permite subir para 32GB no futuro. Boa opção econômica para Intel e AM5.',
+    proCons: { pros: ['DDR5 acessível', '16GB para a maioria dos jogos', 'Base para upgrade futuro', 'Confiabilidade Kingston'], contras: ['16GB começa a apertar em 2026', '5600MHz abaixo do sweet spot AM5', 'CL36'] },
+    relacionados: ['corsair-vengeance-16gb-ddr5-5200', 'kingston-fury-beast-32gb-ddr5-6000', 'gskill-ripjaws-s5-32gb-ddr5-6000'],
+  },
+
+  // ── Fontes ──
+  'corsair-rm850e-850w': {
+    tier: 'high-end', anoLancamento: 2023, scoreCustoBeneficio: 88,
+    descricao: 'A Corsair RM850e 850W é uma fonte 80 Plus Gold totalmente modular com conector PCIe 5.0 (ATX 3.0), ideal para placas de vídeo modernas e builds potentes. Silenciosa, eficiente e com 7 anos de garantia, entrega tranquilidade para PCs com GPUs de alto consumo.',
+    proCons: { pros: ['850W Gold para GPUs potentes', 'Totalmente modular', 'Conector PCIe 5.0 (ATX 3.0)', '7 anos de garantia'], contras: ['Preço acima de fontes básicas', 'Overkill para PCs de entrada'] },
+    relacionados: ['corsair-rm750e-750w', 'msi-mag-a850gl-850w', 'corsair-hx1000-1000w'],
+  },
+  'seasonic-focus-gx-750': {
+    tier: 'high-end', anoLancamento: 2021, scoreCustoBeneficio: 89,
+    descricao: 'A Seasonic Focus GX-750 750W é uma das fontes mais respeitadas do mercado, 80 Plus Gold, totalmente modular e com impressionantes 10 anos de garantia. A Seasonic é referência em qualidade de fabricação, tornando esta fonte uma escolha extremamente confiável para qualquer build.',
+    proCons: { pros: ['Qualidade Seasonic (referência)', '10 anos de garantia', 'Totalmente modular', 'Silenciosa e eficiente'], contras: ['Sem conector PCIe 5.0 nativo', 'Preço um pouco acima', 'Cabos um pouco rígidos'] },
+    relacionados: ['corsair-rm750e-750w', 'msi-mag-a850gl-850w', 'corsair-rm650e-650w'],
+  },
+  'corsair-hx1000-1000w': {
+    tier: 'flagship', anoLancamento: 2021, scoreCustoBeneficio: 82,
+    descricao: 'A Corsair HX1000 1000W é uma fonte premium 80 Plus Platinum, totalmente modular, para builds high-end com placas como RTX 4090/5090. Extremamente eficiente e silenciosa, com 10 anos de garantia, é a escolha para quem monta um PC topo de linha sem se preocupar com energia.',
+    proCons: { pros: ['1000W para GPUs topo de linha', '80 Plus Platinum (máxima eficiência)', 'PCIe 5.0 e 10 anos de garantia', 'Silenciosa mesmo sob carga'], contras: ['Cara', 'Overkill para a maioria dos PCs', 'Grande — confira o espaço no gabinete'] },
+    relacionados: ['corsair-rm850e-850w', 'msi-mag-a850gl-850w', 'corsair-rm750e-750w'],
+  },
+  'xpg-pylon-550w': {
+    tier: 'entrada', anoLancamento: 2021, scoreCustoBeneficio: 80,
+    descricao: 'A XPG Pylon 550W é uma fonte de entrada 80 Plus Bronze para PCs econômicos com GPUs de baixo consumo (RTX 4060, RX 7600). Não é modular, mas entrega a potência certificada com segurança e um bom preço — muito melhor que fontes genéricas sem selo.',
+    proCons: { pros: ['80 Plus Bronze certificada', 'Ótima para PCs de entrada', 'Preço acessível', 'Marca confiável (ADATA/XPG)'], contras: ['Não é modular', 'Sem conector PCIe 5.0', '550W limita upgrades de GPU'] },
+    relacionados: ['corsair-cx650-650w', 'corsair-rm650e-650w', 'corsair-rm750e-750w'],
+  },
+  'corsair-rm650e-650w': {
+    tier: 'mid-range', anoLancamento: 2023, scoreCustoBeneficio: 87,
+    descricao: 'A Corsair RM650e 650W é uma fonte 80 Plus Gold totalmente modular com conector PCIe 5.0, ideal para PCs de custo-benefício com GPUs como RTX 4060 e RX 7600. Silenciosa, eficiente e com 7 anos de garantia — o ponto ideal para a maioria dos builds mid-range.',
+    proCons: { pros: ['650W Gold para builds mid-range', 'Totalmente modular', 'Conector PCIe 5.0 (ATX 3.0)', '7 anos de garantia'], contras: ['650W limita GPUs muito potentes', 'Preço acima de fontes Bronze'] },
+    relacionados: ['corsair-rm750e-750w', 'corsair-cx650-650w', 'xpg-pylon-550w'],
+  },
+  'msi-mag-a850gl-850w': {
+    tier: 'high-end', anoLancamento: 2023, scoreCustoBeneficio: 86,
+    descricao: 'A MSI MAG A850GL 850W é uma fonte 80 Plus Gold totalmente modular com conector PCIe 5.0 (ATX 3.0) e 10 anos de garantia. Entrega potência de sobra para builds com GPUs potentes, com boa eficiência e um preço competitivo frente às concorrentes.',
+    proCons: { pros: ['850W Gold com PCIe 5.0', 'Totalmente modular', '10 anos de garantia', 'Preço competitivo'], contras: ['Marca menos tradicional em fontes que Corsair/Seasonic', 'Overkill para PCs de entrada'] },
+    relacionados: ['corsair-rm850e-850w', 'seasonic-focus-gx-750', 'corsair-rm750e-750w'],
+  },
+
+  // ── Coolers ──
+  'deepcool-ak400': {
+    tier: 'mid-range', anoLancamento: 2022, scoreCustoBeneficio: 90,
+    descricao: 'O DeepCool AK400 é um cooler a ar de torre single com ótimo custo-benefício, dando conta de processadores i5/Ryzen 5 e 7 com folga e baixo ruído. É a troca perfeita para o cooler stock, melhorando bastante as temperaturas sem gastar muito.',
+    proCons: { pros: ['Ótimo custo-benefício', 'Dá conta de i5/Ryzen 5 e 7', 'Silencioso', 'Fácil de instalar'], contras: ['Não recomendado para i9/Ryzen 9 sob carga', 'Torre single (menos que torre dupla)', 'Sem RGB na versão base'] },
+    relacionados: ['thermalright-peerless-assassin-120-se', 'cooler-master-hyper-212', 'deepcool-ak620'],
+  },
+  'thermalright-peerless-assassin-120-se': {
+    tier: 'high-end', anoLancamento: 2022, scoreCustoBeneficio: 96,
+    descricao: 'O Thermalright Peerless Assassin 120 SE virou fenômeno mundial por resfriar como coolers premium que custam o triplo. Com torre dupla e dois fans, dá conta até de CPUs potentes com baixo ruído. É provavelmente o melhor custo-benefício em refrigeração a ar do mercado.',
+    proCons: { pros: ['Desempenho de cooler premium', 'Preço imbatível', 'Torre dupla silenciosa', 'Dá conta de CPUs potentes'], contras: ['Grande — confira folga sobre a RAM', 'Sem RGB na versão base', 'Instalação exige atenção'] },
+    relacionados: ['deepcool-ak620', 'deepcool-ak400', 'noctua-nh-d15'],
+  },
+  'noctua-nh-d15': {
+    tier: 'flagship', anoLancamento: 2014, scoreCustoBeneficio: 85,
+    descricao: 'O Noctua NH-D15 é uma lenda entre os coolers a ar: torre dupla enorme que rivaliza com water coolers de 280mm, com o famoso silêncio e a qualidade de fabricação Noctua. Dá conta das CPUs mais potentes e vem com garantia longa e excelente durabilidade.',
+    proCons: { pros: ['Desempenho de water cooler 280mm', 'Extremamente silencioso', 'Qualidade e durabilidade Noctua', 'Sem risco de vazamento'], contras: ['Muito grande (165mm)', 'Cor bege polêmica (versão clássica)', 'Pode cobrir RAM alta', 'Preço premium para ar'] },
+    relacionados: ['thermalright-peerless-assassin-120-se', 'deepcool-ak620', 'lian-li-galahad-ii-360'],
+  },
+  'deepcool-lt720-360mm': {
+    tier: 'high-end', anoLancamento: 2022, scoreCustoBeneficio: 88,
+    descricao: 'O DeepCool LT720 360mm é um water cooler AIO de alto desempenho, com radiador grande capaz de domar até os processadores mais quentes (i9/Ryzen 9). A bomba potente e o visual clean fazem dele uma ótima escolha para builds high-end que valorizam estética.',
+    proCons: { pros: ['Radiador 360mm — resfria CPUs potentes', 'Ótimo para i9/Ryzen 9', 'Visual clean', 'Bomba potente'], contras: ['Exige gabinete com suporte a 360mm', 'Manutenção/vida útil da bomba', 'Mais caro que cooler a ar'] },
+    relacionados: ['lian-li-galahad-ii-360', 'arctic-liquid-freezer-iii-240', 'noctua-nh-d15'],
+  },
+  'arctic-liquid-freezer-iii-240': {
+    tier: 'high-end', anoLancamento: 2024, scoreCustoBeneficio: 92,
+    descricao: 'O Arctic Liquid Freezer III 240 é um water cooler AIO com fama de entregar desempenho acima do esperado para 240mm, muitas vezes rivalizando com 360mm de concorrentes. Ótimo custo-benefício, silencioso e com longa garantia — uma das melhores escolhas em refrigeração líquida.',
+    proCons: { pros: ['Desempenho acima do esperado para 240mm', 'Excelente custo-benefício', 'Silencioso', 'Longa garantia Arctic'], contras: ['Sem tela/RGB chamativo', 'Ainda exige manutenção de AIO', 'Estética discreta'] },
+    relacionados: ['deepcool-lt720-360mm', 'lian-li-galahad-ii-360', 'deepcool-ak620'],
+  },
+  'lian-li-galahad-ii-360': {
+    tier: 'flagship', anoLancamento: 2023, scoreCustoBeneficio: 84,
+    descricao: 'O Lian Li Galahad II LCD 360mm é um water cooler AIO premium com radiador de 360mm e tela LCD na bomba para exibir temperaturas, GIFs e personalizações. Une alto desempenho de resfriamento com o visual mais chamativo do mercado — ideal para builds show.',
+    proCons: { pros: ['Radiador 360mm de alto desempenho', 'Tela LCD personalizável', 'Visual premium para builds show', 'Qualidade Lian Li'], contras: ['Preço elevado', 'Exige gabinete grande', 'Configurar a tela dá trabalho'] },
+    relacionados: ['deepcool-lt720-360mm', 'arctic-liquid-freezer-iii-240', 'noctua-nh-d15'],
+  },
+
+  // ── Gabinetes ──
+  'corsair-4000d-airflow': {
+    tier: 'high-end', anoLancamento: 2020, scoreCustoBeneficio: 90,
+    descricao: 'O Corsair 4000D Airflow é um dos gabinetes mais recomendados do mundo, com excelente fluxo de ar, ótimo gerenciamento de cabos e espaço generoso para GPUs e water coolers. Construção de qualidade e visual limpo fazem dele uma escolha segura para qualquer build.',
+    proCons: { pros: ['Excelente fluxo de ar', 'Ótimo gerenciamento de cabos', 'Espaço amplo para GPU e AIO', 'Construção de qualidade'], contras: ['Apenas 2 fans inclusos', 'Visual sóbrio (pouco gamer)', 'Sem RGB'] },
+    relacionados: ['nzxt-h7-flow', 'lian-li-lancool-207', 'lian-li-lancool-216'],
+  },
+  'nzxt-h7-flow': {
+    tier: 'high-end', anoLancamento: 2022, scoreCustoBeneficio: 86,
+    descricao: 'O NZXT H7 Flow combina o visual clean característico da NZXT com um painel frontal perfurado que melhora bastante o fluxo de ar. Espaçoso, com ótimo espaço para gerenciamento de cabos e suporte a GPUs longas e radiadores grandes. Escolha popular para builds elegantes.',
+    proCons: { pros: ['Visual clean e elegante', 'Bom fluxo de ar (painel Flow)', 'Ótimo cable management', 'Suporta GPUs longas e AIO 360'], contras: ['Apenas 2 fans inclusos', 'Preço acima da média', 'Sem RGB na base'] },
+    relacionados: ['corsair-4000d-airflow', 'lian-li-o11-dynamic-evo', 'lian-li-lancool-207'],
+  },
+  'lian-li-o11-dynamic-evo': {
+    tier: 'flagship', anoLancamento: 2022, scoreCustoBeneficio: 85,
+    descricao: 'O Lian Li O11 Dynamic EVO é o gabinete favorito para builds de exposição e custom water cooling, com painéis de vidro duplos, layout flexível e enorme suporte a radiadores. É o queridinho de quem monta setups impressionantes, embora não venha com fans inclusos.',
+    proCons: { pros: ['Visual premium com vidro duplo', 'Layout flexível (montagem versátil)', 'Enorme suporte a radiadores', 'Ideal para custom water cooling'], contras: ['Não vem com fans', 'Fluxo de ar depende dos fans que você comprar', 'Preço elevado'] },
+    relacionados: ['nzxt-h7-flow', 'corsair-4000d-airflow', 'lian-li-lancool-207'],
+  },
+  'cooler-master-nr200p': {
+    tier: 'high-end', anoLancamento: 2020, scoreCustoBeneficio: 87,
+    descricao: 'O Cooler Master NR200P é um dos gabinetes Mini-ITX mais amados, permitindo montar um PC potente e compacto sem abrir mão de GPUs grandes e boa refrigeração. Ideal para quem quer economizar espaço na mesa com um PC pequeno mas capaz.',
+    proCons: { pros: ['Compacto Mini-ITX', 'Suporta GPUs grandes para o tamanho', 'Boa refrigeração para o formato', 'Acompanha painel extra de vidro'], contras: ['Exige placa Mini-ITX (mais cara)', 'Montagem mais trabalhosa', 'Espaço apertado para cabos'] },
+    relacionados: ['lian-li-lancool-207', 'corsair-4000d-airflow', 'montech-air-903-max'],
+  },
+  'lian-li-lancool-207': {
+    tier: 'high-end', anoLancamento: 2024, scoreCustoBeneficio: 89,
+    descricao: 'O Lian Li Lancool 207 é a evolução da linha custo-benefício da Lian Li, com fans de 140mm inclusos, ótimo fluxo de ar e um design que prioriza refrigeração da GPU. Excelente espaço interno e organização por um preço muito competitivo.',
+    proCons: { pros: ['Fans 140mm inclusos', 'Ótimo fluxo de ar para a GPU', 'Bom espaço e organização', 'Preço competitivo'], contras: ['Design mais funcional que chamativo', 'Painel mesh acumula poeira', 'Mid tower grande'] },
+    relacionados: ['lian-li-lancool-216', 'corsair-4000d-airflow', 'montech-air-903-max'],
+  },
+  'montech-air-903-max': {
+    tier: 'mid-range', anoLancamento: 2023, scoreCustoBeneficio: 90,
+    descricao: 'O Montech Air 903 Max é um gabinete de custo-benefício imbatível: vem com 4 fans de 140mm ARGB inclusos e um painel frontal mesh que garante excelente fluxo de ar. Espaço de sobra para GPUs longas e radiadores, com visual gamer por um preço baixo.',
+    proCons: { pros: ['4 fans 140mm ARGB inclusos', 'Excelente fluxo de ar', 'Suporta GPUs longas', 'Preço muito acessível'], contras: ['Material mais simples que premium', 'Cable management básico', 'Acabamento nível custo-benefício'] },
+    relacionados: ['lian-li-lancool-207', 'gamemax-vega', 'corsair-4000d-airflow'],
+  },
 }
 
 // Merge enrichment nos produtos
