@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ComparePanel from "@/components/ComparePanel";
+import { BannerDestaques } from "@/components/BannerDestaques";
 import PlanButton from "@/components/PlanButton";
 import type { Plan } from "@/lib/plans";
 import { PRODUTOS_ENRIQUECIDOS } from "@/lib/hardware-data";
@@ -131,6 +132,9 @@ export default function Home({
             <ComparePanel />
           </div>
         </section>
+
+        {/* BANNER DE PRODUTOS EM DESTAQUE (afiliados) */}
+        <BannerDestaques />
 
         {/* RECURSOS */}
         <section id="recursos" className="mx-auto max-w-6xl px-6 py-16">
