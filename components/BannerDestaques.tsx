@@ -1,4 +1,4 @@
-import { getProdutoBySlug, getCategoriaConfig } from '@/lib/hardware-data'
+import { getProdutoBySlug, getCategoriaConfig, tipoProduto } from '@/lib/hardware-data'
 import { ehAfiliado, buscaAmazon } from '@/lib/afiliados'
 
 // ⭐ Produtos em destaque no banner — troque os slugs para mudar as ofertas.
@@ -80,7 +80,7 @@ export function BannerDestaques() {
                   )}
                 </div>
                 <p className="font-mono text-[9px] uppercase tracking-[1px]" style={{ color: 'var(--muted)' }}>
-                  {p.marca}
+                  <span style={{ color: 'var(--accent)' }}>{tipoProduto(p.categoria)}</span> · {p.marca}
                 </p>
                 <p className="mb-2 line-clamp-2 text-[13px] font-bold leading-tight" style={{ color: 'var(--text)' }}>
                   {p.nome}

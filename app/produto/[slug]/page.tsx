@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { getProdutoBySlug, getCategoriaConfig, getProdutosByCategoria } from '@/lib/hardware-data'
+import { getProdutoBySlug, getCategoriaConfig, getProdutosByCategoria, tipoProduto } from '@/lib/hardware-data'
 import { BlocoPrecos } from '@/components/BlocoPrecos'
 import { SITE_URL } from '@/lib/site'
 
@@ -136,8 +136,14 @@ export default function ProdutoPage({ params }: Props) {
         {/* ── HERO DO PRODUTO ────────────────────────────────── */}
         <div className="px-8 pt-4 pb-6" style={{ borderBottom: '1px solid var(--border)' }}>
           <div className="max-w-4xl">
-            {/* Tier + marca */}
+            {/* Tipo + tier + marca */}
             <div className="flex items-center gap-3 mb-3">
+              <span
+                className="rounded px-2 py-[3px] font-mono text-[9px] font-bold uppercase"
+                style={{ background: 'rgba(0,229,255,.1)', color: 'var(--accent)', border: '1px solid rgba(0,229,255,.25)' }}
+              >
+                {tipoProduto(produto.categoria)}
+              </span>
               {produto.tier && (
                 <span
                   className="rounded px-2 py-[3px] font-mono text-[9px] font-bold uppercase"

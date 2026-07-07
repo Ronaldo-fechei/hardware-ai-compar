@@ -1769,3 +1769,19 @@ export function getProdutoBySlug(slug: string) {
 export function getCategoriaConfig(slug: string) {
   return CATEGORIAS.find((c) => c.slug === slug)
 }
+
+// Nome do tipo de produto no singular (para cabeçalhos/etiquetas).
+export const TIPO_SINGULAR: Record<string, string> = {
+  processadores: 'Processador',
+  gpus: 'Placa de Vídeo',
+  monitores: 'Monitor',
+  memorias: 'Memória RAM',
+  ssds: 'SSD',
+  coolers: 'Cooler',
+  fontes: 'Fonte',
+  gabinetes: 'Gabinete',
+}
+
+export function tipoProduto(categoria: string): string {
+  return TIPO_SINGULAR[categoria] ?? categoria
+}
