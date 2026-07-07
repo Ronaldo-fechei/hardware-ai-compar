@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { getArtigoBySlug, getArtigosRelacionados } from '@/lib/blog-data'
 import { getProdutoBySlug } from '@/lib/hardware-data'
+import { CTAAmazon } from '@/components/CTAAmazon'
 import { SITE_URL } from '@/lib/site'
 
 interface Props { params: { slug: string } }
@@ -298,6 +299,9 @@ export default function ArtigoPage({ params }: Props) {
               </div>
             </div>
           )}
+
+          {/* CTA AMAZON (afiliado) */}
+          <CTAAmazon />
 
           {/* ARTIGOS RELACIONADOS */}
           {relacionados.length > 0 && (

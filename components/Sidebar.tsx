@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import type { CategoriaConfig } from '@/types/hardware'
 import { getProdutosByCategoria } from '@/lib/hardware-data'
+import { buscaAmazon } from '@/lib/afiliados'
 
 interface Props { categorias: CategoriaConfig[] }
 
@@ -77,7 +78,22 @@ export function Sidebar({ categorias }: Props) {
         })}
       </div>
 
-      <div className="mt-auto p-3">
+      <div className="mt-auto p-3 space-y-2">
+        {/* Atalho de afiliado — Ofertas na Amazon */}
+        <a
+          href={buscaAmazon('hardware para PC gamer')}
+          target="_blank"
+          rel="noopener noreferrer sponsored"
+          className="flex items-center gap-[10px] rounded-[9px] px-[10px] py-[9px] transition-all hover:-translate-y-px"
+          style={{ background: 'rgba(255,153,0,0.08)', border: '1px solid rgba(255,153,0,0.25)' }}
+        >
+          <span className="w-5 text-center text-sm">📦</span>
+          <span className="flex-1 text-[12px] font-semibold" style={{ color: '#FF9900' }}>
+            Ofertas na Amazon
+          </span>
+          <span className="text-[12px] font-bold" style={{ color: '#FF9900' }}>→</span>
+        </a>
+
         <div className="rounded-[9px] p-3 text-[10px] leading-relaxed"
           style={{ background: 'rgba(0,229,255,.05)', border: '1px solid rgba(0,229,255,.15)', color: 'var(--label)' }}>
           <strong style={{ color: 'var(--accent)' }}>💡 Dica</strong><br />
