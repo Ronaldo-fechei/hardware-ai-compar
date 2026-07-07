@@ -28,6 +28,18 @@ const RECURSOS = [
   },
 ];
 
+// Tipo (categoria) no singular, para o cabeçalho dos cards de produto.
+const TIPO_LABEL: Record<string, string> = {
+  processadores: "Processador",
+  gpus: "Placa de Vídeo",
+  monitores: "Monitor",
+  memorias: "Memória RAM",
+  ssds: "SSD",
+  coolers: "Cooler",
+  fontes: "Fonte",
+  gabinetes: "Gabinete",
+};
+
 const RANKINGS: { titulo: string; itens: string[] }[] = [
   {
     titulo: "🏆 Top GPUs",
@@ -242,10 +254,15 @@ export default function Home({
                 >
                   <div className="flex items-start justify-between">
                     <div className="min-w-0">
-                      <span className="text-[10px] uppercase tracking-wider text-gray-500">
-                        {p.marca}
-                      </span>
-                      <h3 className="truncate text-lg font-bold text-white">{p.nome}</h3>
+                      <div className="flex items-center gap-2">
+                        <span className="rounded bg-brand-primary/10 px-1.5 py-0.5 text-[9px] font-semibold uppercase tracking-wider text-brand-primary">
+                          {TIPO_LABEL[p.categoria] ?? p.categoria}
+                        </span>
+                        <span className="text-[10px] uppercase tracking-wider text-gray-500">
+                          {p.marca}
+                        </span>
+                      </div>
+                      <h3 className="mt-1 truncate text-lg font-bold text-white">{p.nome}</h3>
                     </div>
                     <span className="ml-2 shrink-0 text-2xl font-black gradient-text">
                       {p.score}
