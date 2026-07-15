@@ -4,6 +4,7 @@ import { BannerDestaques } from "@/components/BannerDestaques";
 import PlanButton from "@/components/PlanButton";
 import type { Plan } from "@/lib/plans";
 import { PRODUTOS_ENRIQUECIDOS } from "@/lib/hardware-data";
+import { ehAfiliado } from "@/lib/afiliados";
 
 const RECURSOS = [
   {
@@ -244,7 +245,7 @@ export default function Home({
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {PRODUTOS_ENRIQUECIDOS.slice(0, 6).map((p) => {
               const menor = (p.precos || [])
-                .filter((x) => x.disponivel)
+                .filter((x) => x.disponivel && ehAfiliado(x.loja))
                 .sort((a, b) => a.preco - b.preco)[0];
               return (
                 <Link

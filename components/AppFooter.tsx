@@ -23,8 +23,8 @@ export default function AppFooter() {
         </a>
       </nav>
       <p className="mt-1 w-full text-[10px] text-[#5a6070] opacity-70">
-        Comparações geradas por IA são estimativas. * Alguns links são de
-        afiliado — ao comprar por eles, você apoia o BestHard sem custo extra.
+        Comparações geradas por IA são estimativas. Como participante do Programa de
+        Associados da Amazon, sou remunerado pelas compras qualificadas efetuadas.
       </p>
     </footer>
   );

@@ -111,7 +111,7 @@ function CardPreco({ produto, isWinner, fullWidth }: {
               <span className="text-[15px] w-5 text-center flex-shrink-0">{loja.emoji}</span>
               <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-[6px] flex-wrap">
-                  <span className="text-[12px] font-semibold" style={{ color: loja.cor }}>{loja.nome}</span>
+                  <span className="text-[12px] font-semibold" style={{ color: loja.cor }}>{loja.nome} · Publicidade</span>
                   {isMenor && (
                     <span className="rounded px-[5px] py-[1px] font-mono text-[8px] font-bold uppercase"
                       style={{ background: loja.cor + '20', color: loja.cor }}>menor preço</span>
@@ -156,7 +156,7 @@ function CardPreco({ produto, isWinner, fullWidth }: {
           >
             <span className="text-[15px] w-5 text-center flex-shrink-0">📦</span>
             <div className="flex-1 min-w-0">
-              <span className="text-[12px] font-semibold" style={{ color: '#FF9900' }}>Amazon</span>
+              <span className="text-[12px] font-semibold" style={{ color: '#FF9900' }}>Amazon · Publicidade</span>
               <p className="text-[10px] mt-[1px]" style={{ color: 'var(--muted)' }}>Ver ofertas e preço atual</p>
             </div>
             <span
@@ -172,7 +172,7 @@ function CardPreco({ produto, isWinner, fullWidth }: {
       {/* Disclaimer */}
       <div className="px-4 pb-3">
         <p className="text-[9px] leading-relaxed" style={{ color: 'var(--muted)', opacity: 0.6 }}>
-          * Links de afiliado — ao comprar você apoia o BestHard sem custo extra para você.
+          Como participante do Programa de Associados da Amazon, sou remunerado pelas compras qualificadas efetuadas.
           Preços verificados periodicamente e podem variar.
         </p>
       </div>
@@ -206,7 +206,7 @@ export function BlocoPrecos({ prodA, prodB, scoreA, scoreB, singleMode }: Props)
             <div className="h-px flex-1" style={{ background: 'var(--border)' }} />
           </div>
           <p className="text-[12px] text-center mb-4" style={{ color: 'var(--muted)' }}>
-            Compare os preços nas principais lojas e encontre a melhor oferta agora
+            Confira ofertas e disponibilidade na Amazon
           </p>
         </>
       )}

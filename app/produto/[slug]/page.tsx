@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { getProdutoBySlug, getCategoriaConfig, getProdutosByCategoria, tipoProduto } from '@/lib/hardware-data'
 import { BlocoPrecos } from '@/components/BlocoPrecos'
 import { SITE_URL } from '@/lib/site'
+import { ehAfiliado } from '@/lib/afiliados'
 
 interface Props {
   params: { slug: string }
@@ -61,7 +62,7 @@ const TIER_COR: Record<string, string> = {
 function ProdutoSchema({ produto }: { produto: ReturnType<typeof getProdutoBySlug> }) {
   if (!produto) return null
   const menorPreco = produto.precos
-    ?.filter(p => p.disponivel)
+    ?.filter(p => p.disponivel && ehAfiliado(p.loja))
     .sort((a, b) => a.preco - b.preco)[0]
 
   const schema = {
@@ -82,7 +83,7 @@ function ProdutoSchema({ produto }: { produto: ReturnType<typeof getProdutoBySlu
         '@type': 'AggregateOffer',
         priceCurrency: 'BRL',
         lowPrice: menorPreco.preco.toString(),
-        offerCount: produto.precos?.filter(p => p.disponivel).length.toString(),
+        offerCount: produto.precos?.filter(p => p.disponivel && ehAfiliado(p.loja)).length.toString(),
         availability: 'https://schema.org/InStock',
       },
     }),
@@ -102,7 +103,7 @@ export default function ProdutoPage({ params }: Props) {
   if (!produto) notFound()
 
   const cat = getCategoriaConfig(produto.categoria)
-  const menorPreco = produto.precos?.filter(p => p.disponivel).sort((a, b) => a.preco - b.preco)[0]
+  const menorPreco = produto.precos?.filter(p => p.disponivel && ehAfiliado(p.loja)).sort((a, b) => a.preco - b.preco)[0]
   const tierCor = TIER_COR[produto.tier || ''] || 'var(--label)'
   const tierLabel = TIER_LABEL[produto.tier || ''] || ''
   const relacionados = (produto.relacionados || [])
@@ -320,7 +321,7 @@ export default function ProdutoPage({ params }: Props) {
                 Onde comprar
               </h2>
               <p className="text-[12px] mb-4" style={{ color: 'var(--muted)' }}>
-                Preços atualizados nas principais lojas do Brasil
+                Confira ofertas e disponibilidade na Amazon
               </p>
               {/* reutiliza BlocoPrecos passando o mesmo produto nos dois slots */}
               <BlocoPrecos
@@ -389,8 +390,8 @@ export default function ProdutoPage({ params }: Props) {
                 {
                   q: `Qual o preço do ${produto.marca} ${produto.nome} no Brasil?`,
                   a: menorPreco
-                    ? `O menor preço encontrado atualmente é de ${menorPreco.preco.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}. Consulte as lojas acima para verificar disponibilidade e parcelamento.`
-                    : `Consulte as lojas acima para verificar o preço atual e disponibilidade no Brasil.`,
+                    ? `O preço de referência encontrado na Amazon é de ${menorPreco.preco.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}. Consulte a oferta acima para verificar disponibilidade e parcelamento.`
+                    : `Consulte a Amazon acima para verificar o preço atual e a disponibilidade no Brasil.`,
                 },
                 {
                   q: `Com quais outros ${cat?.label || 'produtos'} posso comparar o ${produto.nome}?`,

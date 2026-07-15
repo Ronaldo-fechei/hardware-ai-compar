@@ -36,7 +36,7 @@ export default function PrivacidadePage() {
         <div className="rounded-xl px-5 py-4"
           style={{ background: 'rgba(0,229,255,.06)', border: '1px solid rgba(0,229,255,.2)' }}>
           <p className="text-[13px] leading-relaxed" style={{ color: 'var(--text)' }}>
-            <strong style={{ color: 'var(--accent)' }}>Resumo simples:</strong> O BestHard coleta dados básicos de navegação para melhorar a experiência do site e medir o desempenho do conteúdo. Não vendemos seus dados a terceiros. Alguns links no site são de afiliados — ao comprar por eles, você apoia o BestHard sem custo adicional.
+            <strong style={{ color: 'var(--accent)' }}>Resumo simples:</strong> O BestHard coleta dados básicos de navegação para melhorar a experiência do site e medir o desempenho do conteúdo. Não vendemos seus dados a terceiros. Alguns links são publicidade do Programa de Associados da Amazon e podem gerar comissão por compras qualificadas.
           </p>
         </div>
 
@@ -123,7 +123,7 @@ export default function PrivacidadePage() {
           <div className="rounded-xl px-5 py-4 mb-4"
             style={{ background: 'rgba(34,197,94,.06)', border: '1px solid rgba(34,197,94,.2)' }}>
             <p className="text-[13px]" style={{ color: 'var(--text)' }}>
-              <strong style={{ color: '#22C55E' }}>Declaração obrigatória:</strong> O BestHard participa de programas de afiliados com Amazon Associados, KaBuM Afiliados, Pichau e Terabyte. Quando você clica em um link marcado como &quot;Comprar&quot; e realiza uma compra, o BestHard pode receber uma comissão sem qualquer custo adicional para você.
+              <strong style={{ color: '#22C55E' }}>Declaração obrigatória:</strong> Como participante do Programa de Associados da Amazon, sou remunerado pelas compras qualificadas efetuadas. Os links comerciais são identificados como publicidade.
             </p>
           </div>
           <Lista itens={[
@@ -143,7 +143,7 @@ export default function PrivacidadePage() {
           <Lista itens={[
             'Google Analytics 4 — dados de navegação anonimizados para análise de tráfego',
             'Google AdSense — dados de comportamento para personalização de anúncios',
-            'Programas de afiliados (Amazon, KaBuM, Pichau, Terabyte) — apenas dados de clique/conversão via parâmetros de URL',
+            'Programa de Associados da Amazon — apenas dados de clique/conversão por meio dos links identificados',
             'Supabase — armazenamento seguro de conta e histórico (quando você faz login)',
             'Autoridades públicas — somente quando exigido por lei ou ordem judicial',
           ]} />

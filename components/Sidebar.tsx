@@ -89,7 +89,7 @@ export function Sidebar({ categorias }: Props) {
         >
           <span className="w-5 text-center text-sm">📦</span>
           <span className="flex-1 text-[12px] font-semibold" style={{ color: '#FF9900' }}>
-            Ofertas na Amazon
+            Amazon <span className="block text-[8px] uppercase tracking-[1px] opacity-70">Publicidade</span>
           </span>
           <span className="text-[12px] font-bold" style={{ color: '#FF9900' }}>→</span>
         </a>

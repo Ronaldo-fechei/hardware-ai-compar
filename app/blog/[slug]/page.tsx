@@ -5,6 +5,7 @@ import { getArtigoBySlug, getArtigosRelacionados } from '@/lib/blog-data'
 import { getProdutoBySlug } from '@/lib/hardware-data'
 import { CTAAmazon } from '@/components/CTAAmazon'
 import { SITE_URL } from '@/lib/site'
+import { buscaAmazon } from '@/lib/afiliados'
 
 interface Props { params: { slug: string } }
 
@@ -157,11 +158,9 @@ function RenderSecao({ secao }: { secao: any }) {
     case 'afiliado': {
       const produto = getProdutoBySlug(secao.produtoSlug)
       if (!produto || !produto.precos?.length) return null
-      const menor = produto.precos.filter((p: any) => p.disponivel).sort((a: any, b: any) => a.preco - b.preco)[0]
-      if (!menor) return null
-      const LCOR: Record<string, string> = { amazon:'#FF9900', kabum:'#FF6500', pichau:'#00B4D8', terabyte:'#7C3AED', mercadolivre:'#FFE600' }
-      const LNOME: Record<string, string> = { amazon:'Amazon', kabum:'KaBuM!', pichau:'Pichau', terabyte:'Terabyte', mercadolivre:'Mercado Livre' }
-      const cor = LCOR[menor.loja] || 'var(--accent)'
+      const ofertaAmazon = produto.precos.find((p: any) => p.disponivel && p.loja === 'amazon')
+      const linkAmazon = buscaAmazon(`${produto.marca} ${produto.nome}`)
+      const cor = '#FF9900'
       return (
         <div className="rounded-xl overflow-hidden" style={{ border: '1px solid var(--border)' }}>
           <div className="px-5 py-3 flex items-center justify-between"
@@ -179,19 +178,25 @@ function RenderSecao({ secao }: { secao: any }) {
           <div className="px-5 py-4 flex items-center justify-between" style={{ background: 'var(--surface)' }}>
             <div>
               <p className="font-mono text-[9px] uppercase tracking-[1px] mb-1" style={{ color: 'var(--muted)' }}>
-                Menor preço — {LNOME[menor.loja]}
+                Publicidade • Oferta na Amazon
               </p>
-              <p className="font-mono text-xl font-bold" style={{ color: 'var(--accent)', letterSpacing: '-1px' }}>
-                {menor.preco.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}
-              </p>
-              {menor.parcelamento && (
-                <p className="text-[11px]" style={{ color: 'var(--label)' }}>ou {menor.parcelamento}</p>
+              {ofertaAmazon ? (
+                <>
+                  <p className="font-mono text-xl font-bold" style={{ color: 'var(--accent)', letterSpacing: '-1px' }}>
+                    {ofertaAmazon.preco.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}
+                  </p>
+                  {ofertaAmazon.parcelamento && (
+                    <p className="text-[11px]" style={{ color: 'var(--label)' }}>ou {ofertaAmazon.parcelamento}</p>
+                  )}
+                </>
+              ) : (
+                <p className="text-[13px] font-semibold" style={{ color: 'var(--label)' }}>Consultar preço atual</p>
               )}
             </div>
-            <a href={menor.url} target="_blank" rel="noopener noreferrer sponsored"
+            <a href={linkAmazon} target="_blank" rel="noopener noreferrer sponsored"
               className="flex items-center gap-2 rounded-xl px-5 py-3 text-[13px] font-bold hover:-translate-y-px hover:opacity-90 transition-all"
-              style={{ background: cor, color: cor === '#FFE600' ? '#0A0C10' : '#fff' }}>
-              Comprar agora →
+              style={{ background: cor, color: '#fff' }}>
+              Ver na Amazon →
             </a>
           </div>
         </div>

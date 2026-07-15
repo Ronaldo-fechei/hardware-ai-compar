@@ -25,8 +25,8 @@ export function Footer() {
         ))}
       </nav>
       <p className="text-[10px] w-full mt-1" style={{ color: 'var(--muted)', opacity: 0.6 }}>
-        * Links de afiliado: ao comprar por nossos links, apoiamos o BestHard sem custo extra para você.
-        Preços verificados periodicamente e sujeitos a alteração pelas lojas.
+        Como participante do Programa de Associados da Amazon, sou remunerado pelas compras qualificadas efetuadas.
+        Preços verificados periodicamente e sujeitos a alteração pela Amazon.
       </p>
     </footer>
   )
