@@ -26,7 +26,7 @@ export function Footer() {
       </nav>
       <p className="text-[10px] w-full mt-1" style={{ color: 'var(--muted)', opacity: 0.6 }}>
         Como participante do Programa de Associados da Amazon, sou remunerado pelas compras qualificadas efetuadas.
-        Preços verificados periodicamente e sujeitos a alteração pela Amazon.
+        Alguns links do Mercado Livre também podem gerar comissão. Preços estão sujeitos a alteração pelas lojas.
       </p>
     </footer>
   )

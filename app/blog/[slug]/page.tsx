@@ -6,6 +6,7 @@ import { getProdutoBySlug } from '@/lib/hardware-data'
 import { CTAAmazon } from '@/components/CTAAmazon'
 import { SITE_URL } from '@/lib/site'
 import { buscaAmazon } from '@/lib/afiliados'
+import { linkMercadoLivre } from '@/lib/mercadolivre-links'
 
 interface Props { params: { slug: string } }
 
@@ -160,6 +161,7 @@ function RenderSecao({ secao }: { secao: any }) {
       if (!produto || !produto.precos?.length) return null
       const ofertaAmazon = produto.precos.find((p: any) => p.disponivel && p.loja === 'amazon')
       const linkAmazon = buscaAmazon(`${produto.marca} ${produto.nome}`)
+      const linkML = linkMercadoLivre(produto.slug)
       const cor = '#FF9900'
       return (
         <div className="rounded-xl overflow-hidden" style={{ border: '1px solid var(--border)' }}>
@@ -193,11 +195,20 @@ function RenderSecao({ secao }: { secao: any }) {
                 <p className="text-[13px] font-semibold" style={{ color: 'var(--label)' }}>Consultar preço atual</p>
               )}
             </div>
-            <a href={linkAmazon} target="_blank" rel="noopener noreferrer sponsored"
-              className="flex items-center gap-2 rounded-xl px-5 py-3 text-[13px] font-bold hover:-translate-y-px hover:opacity-90 transition-all"
-              style={{ background: cor, color: '#fff' }}>
-              Ver na Amazon →
-            </a>
+            <div className="flex flex-wrap justify-end gap-2">
+              <a href={linkAmazon} target="_blank" rel="noopener noreferrer sponsored"
+                className="flex items-center gap-2 rounded-xl px-5 py-3 text-[13px] font-bold hover:-translate-y-px hover:opacity-90 transition-all"
+                style={{ background: cor, color: '#fff' }}>
+                Ver na Amazon →
+              </a>
+              {linkML && (
+                <a href={linkML} target="_blank" rel="noopener noreferrer sponsored"
+                  className="flex items-center gap-2 rounded-xl px-5 py-3 text-[13px] font-bold hover:-translate-y-px hover:opacity-90 transition-all"
+                  style={{ background: '#FFE600', color: '#0A0C10' }}>
+                  Mercado Livre →
+                </a>
+              )}
+            </div>
           </div>
         </div>
       )

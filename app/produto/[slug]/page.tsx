@@ -321,7 +321,7 @@ export default function ProdutoPage({ params }: Props) {
                 Onde comprar
               </h2>
               <p className="text-[12px] mb-4" style={{ color: 'var(--muted)' }}>
-                Confira ofertas e disponibilidade na Amazon
+                Confira ofertas e disponibilidade na Amazon e no Mercado Livre
               </p>
               {/* reutiliza BlocoPrecos passando o mesmo produto nos dois slots */}
               <BlocoPrecos
@@ -391,7 +391,7 @@ export default function ProdutoPage({ params }: Props) {
                   q: `Qual o preço do ${produto.marca} ${produto.nome} no Brasil?`,
                   a: menorPreco
                     ? `O preço de referência encontrado na Amazon é de ${menorPreco.preco.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}. Consulte a oferta acima para verificar disponibilidade e parcelamento.`
-                    : `Consulte a Amazon acima para verificar o preço atual e a disponibilidade no Brasil.`,
+                    : `Consulte as lojas acima para verificar o preço atual e a disponibilidade no Brasil.`,
                 },
                 {
                   q: `Com quais outros ${cat?.label || 'produtos'} posso comparar o ${produto.nome}?`,

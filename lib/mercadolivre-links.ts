@@ -1,0 +1,61 @@
+/**
+ * Links de produtos gerados na Central de Afiliados do Mercado Livre.
+ * Todos usam a etiqueta `besthardsite` e foram conferidos contra o modelo
+ * cadastrado no catálogo antes de serem publicados.
+ */
+export const MERCADOLIVRE_LINKS: Readonly<Record<string, string>> = {
+  "intel-core-i7-14700k": "https://meli.la/1uxMJWK",
+  "amd-ryzen-7-7800x3d": "https://meli.la/1dK8jC8",
+  "amd-ryzen-5-7600x": "https://meli.la/2igi7Vk",
+  "nvidia-geforce-rtx-4090": "https://meli.la/1BeNaku",
+  "nvidia-geforce-rtx-4060": "https://meli.la/2S4LrE9",
+  "amd-radeon-rx-7600": "https://meli.la/2HivnzX",
+  "samsung-990-pro-2tb": "https://meli.la/29ga37X",
+  "wd-black-sn850x-2tb": "https://meli.la/2xYUNy3",
+  "kingston-nv2-1tb": "https://meli.la/14tpxyS",
+  "amd-ryzen-7-9800x3d": "https://meli.la/1euXgVd",
+  "amd-ryzen-9-7950x3d": "https://meli.la/1QcPChz",
+  "nvidia-geforce-rtx-5090": "https://meli.la/1nEX4z7",
+  "nvidia-geforce-rtx-4080-super": "https://meli.la/19ARfKi",
+  "nvidia-geforce-rtx-3060": "https://meli.la/11m4RhW",
+  "nvidia-geforce-rtx-3050": "https://meli.la/163BzdX",
+  "nvidia-geforce-gtx-1650": "https://meli.la/25dhZg9",
+  "intel-core-i9-14900k": "https://meli.la/26UWuvs",
+  "amd-ryzen-5-5600": "https://meli.la/2XPHJiS",
+  "intel-core-i5-12400f": "https://meli.la/2NaYZDA",
+  "intel-core-i3-12100f": "https://meli.la/1aZoPxZ",
+  "amd-athlon-3000g": "https://meli.la/2bRhmrM",
+  "crucial-t705-2tb": "https://meli.la/18SbGmu",
+  "kingston-a400-480gb": "https://meli.la/1bqAEf7",
+  "gskill-trident-z5-32gb-ddr5-6000": "https://meli.la/1MV11zq",
+  "corsair-vengeance-16gb-ddr5-5200": "https://meli.la/2dPi9nn",
+  "corsair-vengeance-lpx-16gb-ddr4-3200": "https://meli.la/2HH4Jd5",
+  "corsair-rm750e-750w": "https://meli.la/25rDN4D",
+  "corsair-cx650-650w": "https://meli.la/1qJc2E6",
+  "cooler-master-hyper-212": "https://meli.la/2prUdHs",
+  "corsair-vengeance-32gb-ddr5-6400": "https://meli.la/1huincE",
+  "kingston-fury-beast-32gb-ddr5-6000": "https://meli.la/2VV5TPS",
+  "kingston-fury-beast-16gb-ddr4-3600": "https://meli.la/2WbtvXY",
+  "corsair-rm850e-850w": "https://meli.la/1xFYTRX",
+  "thermalright-peerless-assassin-120-se": "https://meli.la/1XJfNAX",
+  "nzxt-h7-flow": "https://meli.la/1iGAwPq",
+  "nvidia-geforce-rtx-4070": "https://meli.la/1EuTRVT",
+  "nvidia-geforce-rtx-4060-ti": "https://meli.la/2MGpS12",
+  "amd-radeon-rx-7700-xt": "https://meli.la/1GXD44T",
+  "amd-ryzen-9-9950x": "https://meli.la/1axxx8U",
+  "amd-ryzen-7-9700x": "https://meli.la/2t4TgVH",
+  "samsung-990-pro-1tb": "https://meli.la/1FwRCiL",
+  "crucial-p3-plus-1tb": "https://meli.la/1qB5PHq",
+  "samsung-980-1tb": "https://meli.la/1U49BB5",
+  "aoc-24g4": "https://meli.la/25SPazE",
+  "corsair-vengeance-rgb-32gb-ddr5-6000": "https://meli.la/2MZC6jC",
+  "kingston-fury-beast-16gb-ddr5-5600": "https://meli.la/1voJJp9",
+  "msi-mag-a850gl-850w": "https://meli.la/23ZaZq8",
+  "deepcool-ak400": "https://meli.la/2Z7M4we",
+  "lian-li-galahad-ii-360": "https://meli.la/1iD9L4X",
+  "lian-li-lancool-207": "https://meli.la/1FBaKpj",
+};
+
+export function linkMercadoLivre(slug: string): string | undefined {
+  return MERCADOLIVRE_LINKS[slug];
+}

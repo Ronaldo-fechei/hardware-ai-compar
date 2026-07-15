@@ -24,7 +24,8 @@ export default function AppFooter() {
       </nav>
       <p className="mt-1 w-full text-[10px] text-[#5a6070] opacity-70">
         Comparações geradas por IA são estimativas. Como participante do Programa de
-        Associados da Amazon, sou remunerado pelas compras qualificadas efetuadas.
+        Associados da Amazon, sou remunerado pelas compras qualificadas efetuadas. Alguns
+        links do Mercado Livre também podem gerar comissão, sem custo adicional para você.
       </p>
     </footer>
   );
