@@ -36,7 +36,7 @@ export default function PrivacidadePage() {
         <div className="rounded-xl px-5 py-4"
           style={{ background: 'rgba(0,229,255,.06)', border: '1px solid rgba(0,229,255,.2)' }}>
           <p className="text-[13px] leading-relaxed" style={{ color: 'var(--text)' }}>
-            <strong style={{ color: 'var(--accent)' }}>Resumo simples:</strong> O BestHard coleta dados básicos de navegação para melhorar a experiência do site e medir o desempenho do conteúdo. Não vendemos seus dados a terceiros. Alguns links são publicidade dos programas de afiliados da Amazon e do Mercado Livre e podem gerar comissão por compras qualificadas.
+            <strong style={{ color: 'var(--accent)' }}>Resumo simples:</strong> O BestHard coleta dados básicos de navegação para melhorar a experiência do site e medir o desempenho do conteúdo. Não vendemos seus dados a terceiros. Alguns links são publicidade dos programas de afiliados da Amazon, do Mercado Livre e da Shopee e podem gerar comissão por compras qualificadas.
           </p>
         </div>
 
@@ -123,7 +123,7 @@ export default function PrivacidadePage() {
           <div className="rounded-xl px-5 py-4 mb-4"
             style={{ background: 'rgba(34,197,94,.06)', border: '1px solid rgba(34,197,94,.2)' }}>
             <p className="text-[13px]" style={{ color: 'var(--text)' }}>
-              <strong style={{ color: '#22C55E' }}>Declaração obrigatória:</strong> Como participante do Programa de Associados da Amazon, sou remunerado pelas compras qualificadas efetuadas. O BestHard também participa do Programa de Afiliados do Mercado Livre e pode receber comissão por compras feitas através dos links identificados como publicidade.
+              <strong style={{ color: '#22C55E' }}>Declaração obrigatória:</strong> Como participante do Programa de Associados da Amazon, sou remunerado pelas compras qualificadas efetuadas. O BestHard também participa dos programas de afiliados do Mercado Livre e da Shopee e pode receber comissão por compras feitas através dos links identificados como publicidade.
             </p>
           </div>
           <Lista itens={[
@@ -145,6 +145,7 @@ export default function PrivacidadePage() {
             'Google AdSense — dados de comportamento para personalização de anúncios',
             'Programa de Associados da Amazon — apenas dados de clique/conversão por meio dos links identificados',
             'Programa de Afiliados do Mercado Livre — apenas dados de clique/conversão por meio dos links identificados',
+            'Programa de Afiliados da Shopee — apenas dados de clique/conversão por meio dos links identificados',
             'Supabase — armazenamento seguro de conta e histórico (quando você faz login)',
             'Autoridades públicas — somente quando exigido por lei ou ordem judicial',
           ]} />

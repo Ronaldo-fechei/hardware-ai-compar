@@ -2,6 +2,7 @@
 import type { Produto, PrecoLoja } from '@/types/hardware'
 import { linkAfiliado, ehAfiliado, buscaAmazon } from '@/lib/afiliados'
 import { linkMercadoLivre } from '@/lib/mercadolivre-links'
+import { linkShopee } from '@/lib/shopee-links'
 
 const LOJAS: Record<PrecoLoja['loja'], { nome: string; emoji: string; cor: string; bg: string }> = {
   amazon:       { nome: 'Amazon',        emoji: '📦', cor: '#FF9900', bg: 'rgba(255,153,0,0.08)' },
@@ -39,6 +40,7 @@ function CardPreco({ produto, isWinner, fullWidth }: {
   const temAmazon = disponiveis.some(p => p.loja === 'amazon')
   const linkAmazon = buscaAmazon(`${produto.marca} ${produto.nome}`)
   const linkML = linkMercadoLivre(produto.slug)
+  const linkSP = linkShopee(produto.slug)
 
   return (
     <div
@@ -192,13 +194,36 @@ function CardPreco({ produto, isWinner, fullWidth }: {
             </span>
           </a>
         )}
+
+        {linkSP && (
+          <a
+            href={linkSP}
+            target="_blank"
+            rel="noopener noreferrer sponsored"
+            className="flex items-center gap-3 rounded-lg px-3 py-[9px] transition-all hover:-translate-y-px group"
+            style={{ background: 'rgba(238,77,45,0.08)', border: '1px solid #EE4D2D40' }}
+            onClick={() => trackAfiliado(produto.slug, 'shopee')}
+          >
+            <span className="text-[15px] w-5 text-center flex-shrink-0">🛒</span>
+            <div className="flex-1 min-w-0">
+              <span className="text-[12px] font-semibold" style={{ color: '#EE4D2D' }}>Shopee · Publicidade</span>
+              <p className="text-[10px] mt-[1px]" style={{ color: 'var(--muted)' }}>Consultar preço e disponibilidade</p>
+            </div>
+            <span
+              className="rounded-lg px-3 py-[5px] text-[10px] font-bold transition-opacity group-hover:opacity-85 flex-shrink-0"
+              style={{ background: '#EE4D2D', color: '#fff' }}
+            >
+              Ver oferta →
+            </span>
+          </a>
+        )}
       </div>
 
       {/* Disclaimer */}
       <div className="px-4 pb-3">
         <p className="text-[9px] leading-relaxed" style={{ color: 'var(--muted)', opacity: 0.6 }}>
           Como participante do Programa de Associados da Amazon, sou remunerado pelas compras qualificadas efetuadas.
-          Alguns links do Mercado Livre também geram comissão. Preços podem variar.
+          Alguns links do Mercado Livre e da Shopee também geram comissão. Preços podem variar.
         </p>
       </div>
     </div>
@@ -231,7 +256,7 @@ export function BlocoPrecos({ prodA, prodB, scoreA, scoreB, singleMode }: Props)
             <div className="h-px flex-1" style={{ background: 'var(--border)' }} />
           </div>
           <p className="text-[12px] text-center mb-4" style={{ color: 'var(--muted)' }}>
-            Confira ofertas e disponibilidade na Amazon e no Mercado Livre
+            Confira ofertas e disponibilidade na Amazon, no Mercado Livre e na Shopee
           </p>
         </>
       )}

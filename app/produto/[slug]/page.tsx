@@ -321,7 +321,7 @@ export default function ProdutoPage({ params }: Props) {
                 Onde comprar
               </h2>
               <p className="text-[12px] mb-4" style={{ color: 'var(--muted)' }}>
-                Confira ofertas e disponibilidade na Amazon e no Mercado Livre
+                Confira ofertas e disponibilidade na Amazon, no Mercado Livre e na Shopee
               </p>
               {/* reutiliza BlocoPrecos passando o mesmo produto nos dois slots */}
               <BlocoPrecos

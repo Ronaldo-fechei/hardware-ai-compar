@@ -7,6 +7,7 @@ import { CTAAmazon } from '@/components/CTAAmazon'
 import { SITE_URL } from '@/lib/site'
 import { buscaAmazon } from '@/lib/afiliados'
 import { linkMercadoLivre } from '@/lib/mercadolivre-links'
+import { linkShopee } from '@/lib/shopee-links'
 
 interface Props { params: { slug: string } }
 
@@ -162,6 +163,7 @@ function RenderSecao({ secao }: { secao: any }) {
       const ofertaAmazon = produto.precos.find((p: any) => p.disponivel && p.loja === 'amazon')
       const linkAmazon = buscaAmazon(`${produto.marca} ${produto.nome}`)
       const linkML = linkMercadoLivre(produto.slug)
+      const linkSP = linkShopee(produto.slug)
       const cor = '#FF9900'
       return (
         <div className="rounded-xl overflow-hidden" style={{ border: '1px solid var(--border)' }}>
@@ -206,6 +208,13 @@ function RenderSecao({ secao }: { secao: any }) {
                   className="flex items-center gap-2 rounded-xl px-5 py-3 text-[13px] font-bold hover:-translate-y-px hover:opacity-90 transition-all"
                   style={{ background: '#FFE600', color: '#0A0C10' }}>
                   Mercado Livre →
+                </a>
+              )}
+              {linkSP && (
+                <a href={linkSP} target="_blank" rel="noopener noreferrer sponsored"
+                  className="flex items-center gap-2 rounded-xl px-5 py-3 text-[13px] font-bold hover:-translate-y-px hover:opacity-90 transition-all"
+                  style={{ background: '#EE4D2D', color: '#fff' }}>
+                  Shopee →
                 </a>
               )}
             </div>
