@@ -20,6 +20,9 @@ const CATEGORIAS = [
   "PC",
   "Smartphone",
   "Console",
+  "Mouse",
+  "Teclado",
+  "Headset",
   "Outro",
 ];
 

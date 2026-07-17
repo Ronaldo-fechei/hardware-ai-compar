@@ -7,6 +7,9 @@ export type Categoria =
   | 'coolers'
   | 'fontes'
   | 'gabinetes'
+  | 'mouses'
+  | 'teclados'
+  | 'headsets'
 
 export interface PrecoLoja {
   loja: 'amazon' | 'kabum' | 'pichau' | 'terabyte' | 'mercadolivre'
