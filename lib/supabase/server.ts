@@ -6,10 +6,10 @@ import { getSupabaseEnv, isSupabaseConfigured } from "./config";
  * Cliente Supabase para uso no servidor (Server Components, Route Handlers).
  * Retorna null se o Supabase não estiver configurado.
  */
-export function createClient() {
+export async function createClient() {
   if (!isSupabaseConfigured()) return null;
   const { url, anonKey } = getSupabaseEnv();
-  const cookieStore = cookies();
+  const cookieStore = await cookies();
 
   return createServerClient(url!, anonKey!, {
     cookies: {

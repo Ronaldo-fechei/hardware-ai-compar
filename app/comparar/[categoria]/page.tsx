@@ -4,12 +4,13 @@ import { ComparadorClient } from '@/components/ComparadorClient'
 import type { Metadata } from 'next'
 
 interface Props {
-  params: { categoria: string }
-  searchParams: { a?: string; b?: string }
+  params: Promise<{ categoria: string }>
+  searchParams: Promise<{ a?: string; b?: string }>
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const cat = getCategoriaConfig(params.categoria)
+  const { categoria } = await params
+  const cat = getCategoriaConfig(categoria)
   if (!cat) return { title: 'BestHard' }
   return {
     title: `Comparar ${cat.label} — BestHard`,
@@ -17,15 +18,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 }
 
-export default function ComparadorPage({ params, searchParams }: Props) {
-  const cat = getCategoriaConfig(params.categoria)
+export default async function ComparadorPage({ params, searchParams }: Props) {
+  const [{ categoria }, query] = await Promise.all([params, searchParams])
+  const cat = getCategoriaConfig(categoria)
   if (!cat) notFound()
 
-  const produtos = getProdutosByCategoria(params.categoria)
+  const produtos = getProdutosByCategoria(categoria)
 
   // slugs vindos da URL: /comparar/processadores?a=amd-ryzen-7-7800x3d&b=intel-core-i7-14700k
-  const slugA = searchParams.a || produtos[0]?.slug
-  const slugB = searchParams.b || produtos[1]?.slug
+  const slugA = query.a || produtos[0]?.slug
+  const slugB = query.b || produtos[1]?.slug
 
   return (
     <ComparadorClient

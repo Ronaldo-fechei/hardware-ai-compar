@@ -11,11 +11,14 @@ export function Footer() {
         <span className="text-[13px] font-bold" style={{ color: 'var(--text)' }}>BestHard</span>
         <span className="text-[12px]" style={{ color: 'var(--muted)' }}>© {ano} besthard.com.br</span>
       </div>
-      <nav className="flex items-center gap-5">
+      <nav className="flex items-center gap-x-5 gap-y-2 flex-wrap" aria-label="Links institucionais">
         {[
           { label: 'Blog', href: '/blog' },
+          { label: 'Sobre', href: '/sobre' },
+          { label: 'Metodologia', href: '/metodologia' },
+          { label: 'Transparência', href: '/transparencia' },
           { label: 'Privacidade', href: '/privacidade' },
-          { label: 'Contato', href: 'mailto:contato@besthard.com.br' },
+          { label: 'Contato', href: '/contato' },
         ].map(({ label, href }) => (
           <Link key={href} href={href}
             className="text-[12px] transition-colors hover:text-[var(--text)]"
@@ -25,8 +28,8 @@ export function Footer() {
         ))}
       </nav>
       <p className="text-[10px] w-full mt-1" style={{ color: 'var(--muted)', opacity: 0.6 }}>
-        Como participante do Programa de Associados da Amazon, sou remunerado pelas compras qualificadas efetuadas.
-        Alguns links do Mercado Livre e da Shopee também podem gerar comissão. Preços estão sujeitos a alteração pelas lojas.
+        Como participante do Programa de Associados da Amazon, o BestHard é remunerado pelas compras qualificadas efetuadas.
+        Alguns links do Mercado Livre e da Shopee também podem gerar comissão. A comissão não interfere nas análises e os preços podem mudar nas lojas.
       </p>
     </footer>
   )

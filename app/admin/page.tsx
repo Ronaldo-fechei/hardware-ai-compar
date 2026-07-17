@@ -26,7 +26,7 @@ function Aviso({ titulo, children }: { titulo: string; children: React.ReactNode
 }
 
 export default async function AdminPage() {
-  const supabase = createClient();
+  const supabase = await createClient();
   if (!supabase) {
     return (
       <Aviso titulo="Login não configurado">

@@ -8,7 +8,7 @@ export async function GET(request: Request) {
   const next = searchParams.get("next") ?? "/historico";
 
   if (code) {
-    const supabase = createClient();
+    const supabase = await createClient();
     if (supabase) {
       const { error } = await supabase.auth.exchangeCodeForSession(code);
       if (!error) {

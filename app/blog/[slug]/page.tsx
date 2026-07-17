@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { getArtigoBySlug, getArtigosRelacionados } from '@/lib/blog-data'
+import { getArtigoBySlug, getArtigos, getArtigosRelacionados } from '@/lib/blog-data'
 import { getProdutoBySlug } from '@/lib/hardware-data'
 import { CTAAmazon } from '@/components/CTAAmazon'
 import { SITE_URL } from '@/lib/site'
@@ -9,13 +9,14 @@ import { buscaAmazon } from '@/lib/afiliados'
 import { linkMercadoLivre } from '@/lib/mercadolivre-links'
 import { linkShopee } from '@/lib/shopee-links'
 
-interface Props { params: { slug: string } }
+interface Props { params: Promise<{ slug: string }> }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const a = getArtigoBySlug(params.slug)
+  const { slug } = await params
+  const a = getArtigoBySlug(slug)
   if (!a) return { title: 'Artigo não encontrado' }
   return {
-    title: `${a.titulo} | BestHard`,
+    title: a.titulo,
     description: a.descricao,
     keywords: a.tags,
     openGraph: {
@@ -27,8 +28,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       locale: 'pt_BR',
     },
     twitter: { card: 'summary_large_image', title: a.titulo, description: a.descricao },
-    alternates: { canonical: `${SITE_URL}/blog/${params.slug}` },
+    alternates: { canonical: `${SITE_URL}/blog/${slug}` },
   }
+}
+
+export function generateStaticParams() {
+  return getArtigos().map(artigo => ({ slug: artigo.slug }))
 }
 
 const CAT_COR: Record<string, string> = {
@@ -48,8 +53,8 @@ function ArticleSchema({ artigo }: { artigo: ReturnType<typeof getArtigoBySlug> 
     '@context': 'https://schema.org', '@type': 'Article',
     headline: artigo.titulo, description: artigo.descricao,
     datePublished: artigo.dataPublicacao, dateModified: artigo.dataAtualizacao || artigo.dataPublicacao,
-    author: { '@type': 'Organization', name: artigo.autor },
-    publisher: { '@type': 'Organization', name: 'BestHard', url: SITE_URL },
+    author: { '@type': 'Organization', name: 'Equipe Editorial BestHard', url: `${SITE_URL}/autores/equipe-besthard` },
+    publisher: { '@type': 'Organization', name: 'BestHard', url: SITE_URL, logo: { '@type': 'ImageObject', url: `${SITE_URL}/logo.svg` } },
     mainEntityOfPage: `${SITE_URL}/blog/${artigo.slug}`,
     keywords: artigo.tags.join(', '),
     inLanguage: 'pt-BR',
@@ -235,24 +240,19 @@ function RenderSecao({ secao }: { secao: any }) {
       )
 
     case 'adsense':
-      return (
-        <div className="rounded-xl flex items-center justify-center"
-          style={{ height: '90px', background: 'var(--surface)', border: '1px dashed var(--border)' }}>
-          <span className="font-mono text-[10px]" style={{ color: 'var(--muted)' }}>
-            [ Google AdSense — 728×90 — {secao.anuncioId} ]
-          </span>
-        </div>
-      )
+      // O AdSense automático escolhe os posicionamentos. Marcadores internos não são exibidos ao leitor.
+      return null
 
     default: return null
   }
 }
 
-export default function ArtigoPage({ params }: Props) {
-  const artigo = getArtigoBySlug(params.slug)
+export default async function ArtigoPage({ params }: Props) {
+  const { slug } = await params
+  const artigo = getArtigoBySlug(slug)
   if (!artigo) notFound()
 
-  const relacionados = getArtigosRelacionados(params.slug, 3)
+  const relacionados = getArtigosRelacionados(slug, 3)
   const cor = CAT_COR[artigo.categoria] || 'var(--accent)'
 
   return (
@@ -294,6 +294,16 @@ export default function ArtigoPage({ params }: Props) {
               ⏱ {artigo.tempoLeitura} min de leitura
             </span>
           </div>
+          <div className="mt-4 flex items-center gap-3 rounded-xl px-4 py-3" style={{ background: 'var(--surface)', border: '1px solid var(--border)' }}>
+            <div className="flex h-9 w-9 items-center justify-center rounded-full font-bold" style={{ background: 'rgba(0,229,255,.1)', color: 'var(--accent)' }}>BH</div>
+            <div>
+              <p className="text-[12px] font-bold">Escrito e revisado pela Equipe Editorial BestHard</p>
+              <p className="text-[11px]" style={{ color: 'var(--muted)' }}>
+                Pesquisa técnica, contexto brasileiro e revisão de compatibilidade.{' '}
+                <Link href="/autores/equipe-besthard" className="font-semibold" style={{ color: 'var(--accent)' }}>Conheça a equipe</Link>
+              </p>
+            </div>
+          </div>
           {/* Tags */}
           <div className="flex flex-wrap gap-2 mt-4">
             {artigo.tags.map(tag => (
@@ -307,6 +317,11 @@ export default function ArtigoPage({ params }: Props) {
 
         {/* CONTEÚDO */}
         <div className="px-8 pt-8 max-w-3xl space-y-8">
+          <aside className="rounded-xl p-5 text-[12px] leading-relaxed" style={{ background: 'rgba(0,229,255,.05)', border: '1px solid rgba(0,229,255,.18)', color: 'var(--label)' }}>
+            <strong style={{ color: 'var(--text)' }}>Como produzimos este conteúdo:</strong>{' '}
+            cruzamos especificações de fabricantes, referências técnicas públicas e contexto de preço no Brasil. Benchmarks citados são referências de terceiros; projeções são identificadas como estimativas. Veja nossa{' '}
+            <Link href="/metodologia" className="font-semibold" style={{ color: 'var(--accent)' }}>metodologia completa</Link>.
+          </aside>
           {artigo.conteudo.map((secao, i) => <RenderSecao key={i} secao={secao} />)}
 
           {/* FAQ */}
@@ -327,6 +342,11 @@ export default function ArtigoPage({ params }: Props) {
 
           {/* CTA AMAZON (afiliado) */}
           <CTAAmazon />
+
+          <p className="text-[11px] leading-relaxed" style={{ color: 'var(--muted)' }}>
+            Transparência: alguns links desta página podem gerar comissão para o BestHard, sem custo adicional para você. Isso não altera a seleção dos produtos nem o veredito editorial.{' '}
+            <Link href="/transparencia" className="font-semibold" style={{ color: 'var(--accent)' }}>Entenda como funciona</Link>.
+          </p>
 
           {/* ARTIGOS RELACIONADOS */}
           {relacionados.length > 0 && (

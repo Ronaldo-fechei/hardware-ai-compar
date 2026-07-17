@@ -47,6 +47,21 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const organizationSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'BestHard',
+    url: 'https://besthard.com.br',
+    logo: 'https://besthard.com.br/logo.svg',
+    contactPoint: {
+      '@type': 'ContactPoint',
+      email: 'contato@besthard.com.br',
+      contactType: 'editorial',
+      availableLanguage: 'Portuguese',
+    },
+    publishingPrinciples: 'https://besthard.com.br/metodologia',
+  };
+
   return (
     <html lang="pt-BR">
       <head>
@@ -58,6 +73,10 @@ export default function RootLayout({
         />
       </head>
       <body className="flex min-h-screen flex-col font-sans antialiased">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
         {/* Header com o botão de login preservado (AuthNav via children) */}
         <Header>
           <AuthNav />
