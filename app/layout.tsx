@@ -6,9 +6,10 @@ import { Sidebar } from "@/components/Sidebar";
 import { Footer } from "@/components/Footer";
 import AuthNav from "@/components/AuthNav";
 import { CATEGORIAS } from "@/lib/hardware-data";
+import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://besthard.com.br"),
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "BestHard — Comparador de Hardware com IA",
     template: "%s | BestHard",
@@ -51,15 +52,15 @@ export default function RootLayout({
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'BestHard',
-    url: 'https://besthard.com.br',
-    logo: 'https://besthard.com.br/logo.svg',
+    url: SITE_URL,
+    logo: `${SITE_URL}/logo.svg`,
     contactPoint: {
       '@type': 'ContactPoint',
       email: 'contato@besthard.com.br',
       contactType: 'editorial',
       availableLanguage: 'Portuguese',
     },
-    publishingPrinciples: 'https://besthard.com.br/metodologia',
+    publishingPrinciples: `${SITE_URL}/metodologia`,
   };
 
   return (

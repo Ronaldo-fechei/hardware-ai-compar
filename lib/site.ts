@@ -1,5 +1,3 @@
-// URL base do site (para SEO: canonical, sitemap, robots, Open Graph).
-// Usa a variável NEXT_PUBLIC_SITE_URL; cai para o endereço atual da Vercel.
-// Quando o domínio besthard.com.br for ligado, basta atualizar a variável.
-export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL || "https://besthard.com.br";
+// Domínio canônico usado em sitemap, robots, metadados e dados estruturados.
+// A versão sem www redireciona para esta origem definitiva na Vercel.
+export const SITE_URL = "https://www.besthard.com.br";
