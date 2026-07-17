@@ -1,11 +1,12 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: 'Política de Privacidade | BestHard',
   description: 'Política de privacidade do BestHard — como coletamos, usamos e protegemos seus dados pessoais, cookies e links de afiliados.',
   robots: { index: true, follow: true },
-  alternates: { canonical: 'https://besthard.com.br/privacidade' },
+  alternates: { canonical: `${SITE_URL}/privacidade` },
 }
 
 const ULTIMA_ATUALIZACAO = '30 de junho de 2026'
