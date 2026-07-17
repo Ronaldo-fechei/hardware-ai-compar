@@ -76,7 +76,7 @@ function CardPreco({ produto, isWinner, fullWidth }: {
       {menor && (
         <div className="px-4 py-3" style={{ borderBottom: '1px solid var(--border)' }}>
           <p className="font-mono text-[9px] uppercase tracking-[1px] mb-1" style={{ color: 'var(--muted)' }}>
-            Melhor preço encontrado
+            Preço de referência editorial
           </p>
           <div className="flex items-baseline gap-2">
             <span className="font-mono text-2xl font-bold" style={{ color: 'var(--accent)', letterSpacing: '-1px' }}>
@@ -89,6 +89,7 @@ function CardPreco({ produto, isWinner, fullWidth }: {
               ou {menor.parcelamento} sem juros
             </p>
           )}
+          <p className="mt-1 text-[9px]" style={{ color: 'var(--muted)' }}>Não é atualização em tempo real. Confirme na loja.</p>
         </div>
       )}
 
@@ -118,7 +119,7 @@ function CardPreco({ produto, isWinner, fullWidth }: {
                   <span className="text-[12px] font-semibold" style={{ color: loja.cor }}>{loja.nome} · Publicidade</span>
                   {isMenor && (
                     <span className="rounded px-[5px] py-[1px] font-mono text-[8px] font-bold uppercase"
-                      style={{ background: loja.cor + '20', color: loja.cor }}>menor preço</span>
+                      style={{ background: loja.cor + '20', color: loja.cor }}>referência</span>
                   )}
                   {item.frete === 'gratis' && (
                     <span className="rounded px-[5px] py-[1px] font-mono text-[8px]"
@@ -222,8 +223,8 @@ function CardPreco({ produto, isWinner, fullWidth }: {
       {/* Disclaimer */}
       <div className="px-4 pb-3">
         <p className="text-[9px] leading-relaxed" style={{ color: 'var(--muted)', opacity: 0.6 }}>
-          Como participante do Programa de Associados da Amazon, sou remunerado pelas compras qualificadas efetuadas.
-          Alguns links do Mercado Livre e da Shopee também geram comissão. Preços podem variar.
+          Como participante do Programa de Associados da Amazon, o BestHard é remunerado pelas compras qualificadas efetuadas.
+          Alguns links do Mercado Livre e da Shopee também podem gerar comissão. Valores são referências e devem ser confirmados nas lojas.
         </p>
       </div>
     </div>

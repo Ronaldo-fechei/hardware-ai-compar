@@ -135,7 +135,7 @@ export default function PrivacidadePage() {
         </Secao>
 
         <Secao titulo="6. Google AdSense e publicidade">
-          <p>O BestHard exibe anúncios do Google AdSense. O Google pode usar cookies para exibir anúncios com base em suas visitas ao nosso site e a outros sites. Você pode desativar a publicidade personalizada em <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent)' }}>Configurações de anúncios do Google</a>. O BestHard não tem acesso nem controle sobre os cookies usados pelo Google AdSense.</p>
+          <p>O BestHard poderá exibir anúncios do Google AdSense após a ativação do serviço. O Google pode usar cookies para exibir anúncios com base em suas visitas ao nosso site e a outros sites. Você pode desativar a publicidade personalizada em <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent)' }}>Configurações de anúncios do Google</a>. O BestHard não tem acesso nem controle sobre os cookies usados pelo Google AdSense.</p>
         </Secao>
 
         <Secao titulo="7. Compartilhamento de dados com terceiros">

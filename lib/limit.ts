@@ -8,7 +8,7 @@ import { isAdminEmail } from "@/lib/admin";
 const COOKIE = "hwai_usage";
 
 export interface LimitContext {
-  supabase: ReturnType<typeof createClient>;
+  supabase: Awaited<ReturnType<typeof createClient>>;
   userId: string | null;
   plano: Plan;
   ehGratis: boolean;
@@ -21,7 +21,7 @@ export interface LimitContext {
 export async function resolveLimit(): Promise<LimitContext> {
   const limite = freeDailyLimit();
   const hoje = todayBR();
-  const supabase = createClient();
+  const supabase = await createClient();
   let userId: string | null = null;
   let plano: Plan = "free";
   let isAdmin = false;
@@ -40,7 +40,7 @@ export async function resolveLimit(): Promise<LimitContext> {
 
   let cookieCount = 0;
   if (!userId) {
-    const raw = cookies().get(COOKIE)?.value;
+    const raw = (await cookies()).get(COOKIE)?.value;
     if (raw) {
       try {
         const parsed = JSON.parse(raw) as { date: string; count: number };

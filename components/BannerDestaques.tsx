@@ -92,7 +92,7 @@ export function BannerDestaques() {
                         <span className="font-mono text-[15px] font-bold" style={{ color: 'var(--accent)' }}>
                           {formatBRL(menor.preco)}
                         </span>
-                        <p className="text-[9px]" style={{ color: 'var(--muted)' }}>menor preço</p>
+                        <p className="text-[9px]" style={{ color: 'var(--muted)' }}>referência; confirme na loja</p>
                       </>
                     ) : (
                       <span className="text-[11px]" style={{ color: 'var(--label)' }}>Ver preço</span>

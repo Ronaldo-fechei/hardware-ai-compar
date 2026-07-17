@@ -104,12 +104,13 @@ const PLANOS: {
   },
 ];
 
-export default function Home({
+export default async function Home({
   searchParams,
 }: {
-  searchParams: { assinatura?: string };
+  searchParams: Promise<{ assinatura?: string }>;
 }) {
-  const assinaturaOk = searchParams?.assinatura === "sucesso";
+  const query = await searchParams;
+  const assinaturaOk = query?.assinatura === "sucesso";
   return (
     <div className="relative overflow-hidden">
       {/* fundo grade tech */}
@@ -271,7 +272,7 @@ export default function Home({
                   </div>
                   {menor && (
                     <p className="mt-3 text-sm text-gray-400">
-                      a partir de{" "}
+                      referência de{" "}
                       <span className="font-semibold text-brand-primary">
                         {menor.preco.toLocaleString("pt-BR", {
                           style: "currency",

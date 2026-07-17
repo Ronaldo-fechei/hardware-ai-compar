@@ -14,7 +14,7 @@ export async function POST(req: Request) {
   }
 
   // Precisa estar logado (para associar a assinatura à conta).
-  const supabase = createClient();
+  const supabase = await createClient();
   if (!supabase) {
     return NextResponse.json(
       { error: "Login indisponível (configure o Supabase)." },

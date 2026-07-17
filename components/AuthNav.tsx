@@ -8,7 +8,7 @@ import { isAdminEmail } from "@/lib/admin";
  * Quando o Supabase não está configurado, mostra só "Histórico".
  */
 export default async function AuthNav() {
-  const supabase = createClient();
+  const supabase = await createClient();
 
   let email: string | null = null;
   if (supabase) {

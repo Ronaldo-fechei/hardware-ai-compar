@@ -1,22 +1,23 @@
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { getProdutoBySlug, getCategoriaConfig, getProdutosByCategoria, tipoProduto } from '@/lib/hardware-data'
+import { PRODUTOS_ENRIQUECIDOS, getProdutoBySlug, getCategoriaConfig, getProdutosByCategoria, tipoProduto } from '@/lib/hardware-data'
 import { BlocoPrecos } from '@/components/BlocoPrecos'
 import { SITE_URL } from '@/lib/site'
 import { ehAfiliado } from '@/lib/afiliados'
 
 interface Props {
-  params: { slug: string }
+  params: Promise<{ slug: string }>
 }
 
 // ── Metadata dinâmica para SEO ─────────────────────────────────────────
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const p = getProdutoBySlug(params.slug)
+  const { slug } = await params
+  const p = getProdutoBySlug(slug)
   if (!p) return { title: 'Produto não encontrado — BestHard' }
 
   const cat = getCategoriaConfig(p.categoria)
-  const title = `${p.marca} ${p.nome} — Review, Specs e Onde Comprar | BestHard`
+  const title = `${p.marca} ${p.nome} — análise, especificações e comparação`
   const description = p.descricao
     ? p.descricao.slice(0, 155) + '...'
     : `Confira as especificações completas, benchmarks e os melhores preços do ${p.marca} ${p.nome}. Compare com outros ${cat?.label || 'produtos'} e encontre a melhor oferta.`
@@ -39,9 +40,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     twitter: { card: 'summary_large_image', title, description },
     alternates: {
-      canonical: `${SITE_URL}/produto/${params.slug}`,
+      canonical: `${SITE_URL}/produto/${slug}`,
     },
+    authors: [{ name: 'Equipe Editorial BestHard', url: `${SITE_URL}/autores/equipe-besthard` }],
   }
+}
+
+export function generateStaticParams() {
+  return PRODUTOS_ENRIQUECIDOS.map(produto => ({ slug: produto.slug }))
 }
 
 // ── Helpers visuais ────────────────────────────────────────────────────
@@ -61,9 +67,6 @@ const TIER_COR: Record<string, string> = {
 // ── Schema.org JSON-LD (SEO estruturado) ──────────────────────────────
 function ProdutoSchema({ produto }: { produto: ReturnType<typeof getProdutoBySlug> }) {
   if (!produto) return null
-  const menorPreco = produto.precos
-    ?.filter(p => p.disponivel && ehAfiliado(p.loja))
-    .sort((a, b) => a.preco - b.preco)[0]
 
   const schema = {
     '@context': 'https://schema.org',
@@ -71,22 +74,11 @@ function ProdutoSchema({ produto }: { produto: ReturnType<typeof getProdutoBySlu
     name: `${produto.marca} ${produto.nome}`,
     brand: { '@type': 'Brand', name: produto.marca },
     description: produto.descricao || '',
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: (produto.score / 20).toFixed(1), // converte 0-100 para 0-5
-      bestRating: '5',
-      worstRating: '1',
-      ratingCount: '47',
-    },
-    ...(menorPreco && {
-      offers: {
-        '@type': 'AggregateOffer',
-        priceCurrency: 'BRL',
-        lowPrice: menorPreco.preco.toString(),
-        offerCount: produto.precos?.filter(p => p.disponivel && ehAfiliado(p.loja)).length.toString(),
-        availability: 'https://schema.org/InStock',
-      },
-    }),
+    category: tipoProduto(produto.categoria),
+    url: `${SITE_URL}/produto/${produto.slug}`,
+    additionalProperty: Object.entries(produto.specs).map(([name, value]) => ({
+      '@type': 'PropertyValue', name, value: String(value),
+    })),
   }
 
   return (
@@ -98,8 +90,9 @@ function ProdutoSchema({ produto }: { produto: ReturnType<typeof getProdutoBySlu
 }
 
 // ── Página principal ───────────────────────────────────────────────────
-export default function ProdutoPage({ params }: Props) {
-  const produto = getProdutoBySlug(params.slug)
+export default async function ProdutoPage({ params }: Props) {
+  const { slug } = await params
+  const produto = getProdutoBySlug(slug)
   if (!produto) notFound()
 
   const cat = getCategoriaConfig(produto.categoria)
@@ -197,7 +190,7 @@ export default function ProdutoPage({ params }: Props) {
               {menorPreco && (
                 <div>
                   <p className="font-mono text-[9px] uppercase tracking-[1px]" style={{ color: 'var(--muted)' }}>
-                    Menor preço encontrado
+                    Preço de referência
                   </p>
                   <p className="font-mono text-2xl font-bold" style={{ color: 'var(--accent)', letterSpacing: '-1px' }}>
                     {menorPreco.preco.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}
@@ -207,6 +200,7 @@ export default function ProdutoPage({ params }: Props) {
                       ou {menorPreco.parcelamento} sem juros
                     </p>
                   )}
+                  <p className="mt-1 text-[10px]" style={{ color: 'var(--muted)' }}>Confirme o valor atual na loja.</p>
                 </div>
               )}
 
@@ -223,6 +217,12 @@ export default function ProdutoPage({ params }: Props) {
         </div>
 
         <div className="px-8 mt-6 max-w-4xl space-y-8">
+
+          <aside className="rounded-xl p-5 text-[12px] leading-relaxed" style={{ background: 'rgba(0,229,255,.05)', border: '1px solid rgba(0,229,255,.18)', color: 'var(--label)' }}>
+            <strong style={{ color: 'var(--text)' }}>Análise editorial:</strong> ficha revisada pela{' '}
+            <Link href="/autores/equipe-besthard" className="font-semibold" style={{ color: 'var(--accent)' }}>Equipe BestHard</Link>. O score é um índice comparativo da categoria, não uma média de avaliações de consumidores. Consulte a{' '}
+            <Link href="/metodologia" className="font-semibold" style={{ color: 'var(--accent)' }}>metodologia</Link> para entender os critérios.
+          </aside>
 
           {/* ── DESCRIÇÃO (SEO) ────────────────────────────── */}
           {produto.descricao && (
@@ -321,7 +321,7 @@ export default function ProdutoPage({ params }: Props) {
                 Onde comprar
               </h2>
               <p className="text-[12px] mb-4" style={{ color: 'var(--muted)' }}>
-                Confira ofertas e disponibilidade na Amazon, no Mercado Livre e na Shopee
+                Links comerciais. Valores são referências e podem mudar; confirme preço, vendedor e disponibilidade na loja antes da compra.
               </p>
               {/* reutiliza BlocoPrecos passando o mesmo produto nos dois slots */}
               <BlocoPrecos
@@ -382,7 +382,7 @@ export default function ProdutoPage({ params }: Props) {
             <div className="space-y-3">
               {[
                 {
-                  q: `O ${produto.marca} ${produto.nome} vale a pena em 2025?`,
+                  q: `O ${produto.marca} ${produto.nome} vale a pena em 2026?`,
                   a: produto.descricao
                     ? produto.descricao.split('.')[0] + '.'
                     : `O ${produto.marca} ${produto.nome} é uma excelente escolha com score de desempenho ${produto.score}/100 na nossa análise.`,
@@ -390,7 +390,7 @@ export default function ProdutoPage({ params }: Props) {
                 {
                   q: `Qual o preço do ${produto.marca} ${produto.nome} no Brasil?`,
                   a: menorPreco
-                    ? `O preço de referência encontrado na Amazon é de ${menorPreco.preco.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}. Consulte a oferta acima para verificar disponibilidade e parcelamento.`
+                    ? `O preço de referência registrado é de ${menorPreco.preco.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}. Esse valor não é atualizado em tempo real; consulte as lojas acima para confirmar preço, vendedor, disponibilidade e parcelamento.`
                     : `Consulte as lojas acima para verificar o preço atual e a disponibilidade no Brasil.`,
                 },
                 {
