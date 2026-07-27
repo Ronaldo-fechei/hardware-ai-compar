@@ -31,6 +31,7 @@ export interface Produto {
   anoLancamento?: number
   specs: Record<string, string | number>
   precos?: PrecoLoja[]
+  imagem?: string           // URL da foto do produto (ex: link de imagem do SiteStripe da Amazon)
   // SEO
   descricao?: string        // parágrafo descritivo para a página
   proCons?: {               // prós e contras para rich content

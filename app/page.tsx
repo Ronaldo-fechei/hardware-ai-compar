@@ -1,6 +1,7 @@
 import Link from "next/link";
 import ComparePanel from "@/components/ComparePanel";
 import { BannerDestaques } from "@/components/BannerDestaques";
+import { ProdutoThumb } from "@/components/ProdutoThumb";
 import PlanButton from "@/components/PlanButton";
 import type { Plan } from "@/lib/plans";
 import { PRODUTOS_ENRIQUECIDOS } from "@/lib/hardware-data";
@@ -254,8 +255,9 @@ export default async function Home({
                   href={`/produto/${p.slug}`}
                   className="glass-card group p-5 transition hover:shadow-glow"
                 >
-                  <div className="flex items-start justify-between">
-                    <div className="min-w-0">
+                  <div className="flex items-start gap-3">
+                    <ProdutoThumb produto={p} size={44} radius={10} />
+                    <div className="min-w-0 flex-1">
                       <div className="flex items-center gap-2">
                         <span className="rounded bg-brand-primary/10 px-1.5 py-0.5 text-[9px] font-semibold uppercase tracking-wider text-brand-primary">
                           {TIPO_LABEL[p.categoria] ?? p.categoria}

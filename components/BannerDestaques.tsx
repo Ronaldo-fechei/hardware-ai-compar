@@ -1,5 +1,6 @@
-import { getProdutoBySlug, getCategoriaConfig, tipoProduto } from '@/lib/hardware-data'
+import { getProdutoBySlug, tipoProduto } from '@/lib/hardware-data'
 import { ehAfiliado, buscaAmazon } from '@/lib/afiliados'
+import { ProdutoThumb } from '@/components/ProdutoThumb'
 
 // ⭐ Produtos em destaque no banner — troque os slugs para mudar as ofertas.
 const DESTAQUES = [
@@ -49,7 +50,6 @@ export function BannerDestaques() {
         {/* Cards */}
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {produtos.map((p) => {
-            const cat = getCategoriaConfig(p.categoria)
             const menor = (p.precos || [])
               .filter((x) => x.disponivel && ehAfiliado(x.loja))
               .sort((a, b) => a.preco - b.preco)[0]
@@ -64,12 +64,7 @@ export function BannerDestaques() {
                 style={{ background: 'var(--bg)', borderColor: 'var(--border)' }}
               >
                 <div className="mb-2 flex items-center justify-between">
-                  <span
-                    className="flex h-9 w-9 items-center justify-center rounded-lg text-lg"
-                    style={{ background: 'var(--surface2)', border: '1px solid var(--border)' }}
-                  >
-                    {cat?.icon ?? '🔧'}
-                  </span>
+                  <ProdutoThumb produto={p} size={40} radius={9} />
                   {p.tier && (
                     <span
                       className="rounded px-[6px] py-[2px] font-mono text-[8px] font-bold uppercase"
