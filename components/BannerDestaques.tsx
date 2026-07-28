@@ -1,13 +1,15 @@
 import { getProdutoBySlug, tipoProduto } from '@/lib/hardware-data'
-import { ehAfiliado, buscaAmazon } from '@/lib/afiliados'
+import { ehAfiliado } from '@/lib/afiliados'
 import { ProdutoThumb } from '@/components/ProdutoThumb'
+import { BotoesLojas } from '@/components/BotoesLojas'
 
-// ⭐ Produtos em destaque no banner — troque os slugs para mudar as ofertas.
+// ⭐ Produtos em destaque no banner — custo-benefício / preços populares.
+// Troque os slugs para mudar as ofertas.
 const DESTAQUES = [
-  'amd-ryzen-7-7800x3d',
-  'nvidia-geforce-rtx-4080-super',
-  'crucial-t705-2tb',
-  'corsair-rm850x-850w',
+  'amd-ryzen-5-5600',
+  'amd-radeon-rx-6600',
+  'kingston-nv2-1tb',
+  'corsair-vengeance-lpx-16gb-ddr4-3200',
 ]
 
 function formatBRL(v: number) {
@@ -53,14 +55,11 @@ export function BannerDestaques() {
             const menor = (p.precos || [])
               .filter((x) => x.disponivel && ehAfiliado(x.loja))
               .sort((a, b) => a.preco - b.preco)[0]
-            const link = buscaAmazon(`${p.marca} ${p.nome}`)
+            const termo = `${p.marca} ${p.nome}`
             return (
-              <a
+              <div
                 key={p.slug}
-                href={link}
-                target="_blank"
-                rel="noopener noreferrer sponsored"
-                className="group flex flex-col rounded-xl border p-3 transition-all hover:-translate-y-[2px]"
+                className="flex flex-col rounded-xl border p-3"
                 style={{ background: 'var(--bg)', borderColor: 'var(--border)' }}
               >
                 <div className="mb-2 flex items-center justify-between">
@@ -80,27 +79,22 @@ export function BannerDestaques() {
                 <p className="mb-2 line-clamp-2 text-[13px] font-bold leading-tight" style={{ color: 'var(--text)' }}>
                   {p.nome}
                 </p>
-                <div className="mt-auto flex items-center justify-between gap-2">
-                  <div className="min-w-0">
+                <div className="mt-auto">
+                  <div className="mb-2 min-w-0">
                     {menor ? (
                       <>
                         <span className="font-mono text-[15px] font-bold" style={{ color: 'var(--accent)' }}>
                           {formatBRL(menor.preco)}
                         </span>
-                        <p className="text-[9px]" style={{ color: 'var(--muted)' }}>referência; confirme na loja</p>
+                        <span className="ml-1 text-[9px]" style={{ color: 'var(--muted)' }}>a partir de</span>
                       </>
                     ) : (
-                      <span className="text-[11px]" style={{ color: 'var(--label)' }}>Ver preço</span>
+                      <span className="text-[11px]" style={{ color: 'var(--label)' }}>Ver preço nas lojas</span>
                     )}
                   </div>
-                  <span
-                    className="flex-shrink-0 rounded-lg px-3 py-[6px] text-[10px] font-bold transition-opacity group-hover:opacity-85"
-                    style={{ background: 'var(--accent)', color: '#0A0C10' }}
-                  >
-                    Comprar →
-                  </span>
+                  <BotoesLojas termo={termo} />
                 </div>
-              </a>
+              </div>
             )
           })}
         </div>

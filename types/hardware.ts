@@ -12,7 +12,7 @@ export type Categoria =
   | 'headsets'
 
 export interface PrecoLoja {
-  loja: 'amazon' | 'kabum' | 'pichau' | 'terabyte' | 'mercadolivre'
+  loja: 'amazon' | 'kabum' | 'pichau' | 'terabyte' | 'mercadolivre' | 'shopee'
   preco: number
   url: string
   disponivel: boolean

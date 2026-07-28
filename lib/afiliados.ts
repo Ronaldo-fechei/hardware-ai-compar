@@ -91,3 +91,21 @@ export function buscaAmazon(termo: string): string {
   const base = `https://www.amazon.com.br/s?k=${encodeURIComponent(termo.trim())}`;
   return linkAfiliado("amazon", base);
 }
+
+const ML_AFF = process.env.NEXT_PUBLIC_ML_AFF || "";
+const SHOPEE_AFF = process.env.NEXT_PUBLIC_SHOPEE_AFF || "";
+
+/** Link de busca no Mercado Livre (com id de afiliado quando configurado). */
+export function buscaMercadoLivre(termo: string): string {
+  const slug = termo.trim().toLowerCase().replace(/\s+/g, "-");
+  let url = `https://lista.mercadolivre.com.br/${encodeURIComponent(slug)}`;
+  if (ML_AFF) url += `?matt_tool=${encodeURIComponent(ML_AFF)}`;
+  return url;
+}
+
+/** Link de busca na Shopee (com id de afiliado quando configurado). */
+export function buscaShopee(termo: string): string {
+  let url = `https://shopee.com.br/search?keyword=${encodeURIComponent(termo.trim())}`;
+  if (SHOPEE_AFF) url += `&af_id=${encodeURIComponent(SHOPEE_AFF)}`;
+  return url;
+}

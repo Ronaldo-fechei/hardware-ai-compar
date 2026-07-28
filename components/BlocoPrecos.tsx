@@ -10,6 +10,7 @@ const LOJAS: Record<PrecoLoja['loja'], { nome: string; emoji: string; cor: strin
   pichau:       { nome: 'Pichau',        emoji: '⚡', cor: '#00B4D8', bg: 'rgba(0,180,216,0.08)' },
   terabyte:     { nome: 'Terabyte',      emoji: '💻', cor: '#7C3AED', bg: 'rgba(124,58,237,0.08)' },
   mercadolivre: { nome: 'Mercado Livre', emoji: '🛍️', cor: '#FFE600', bg: 'rgba(255,230,0,0.08)' },
+  shopee:       { nome: 'Shopee',        emoji: '🛒', cor: '#EE4D2D', bg: 'rgba(238,77,45,0.08)' },
 }
 
 function formatBRL(v: number) {
