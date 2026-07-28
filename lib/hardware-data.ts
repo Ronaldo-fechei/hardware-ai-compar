@@ -168,6 +168,7 @@ export const PRODUTOS: Produto[] = [
     nome: 'Ryzen 7 7800X3D',
     categoria: 'processadores',
     score: 98,
+    imagem: 'https://m.media-amazon.com/images/I/51HqC0rU9HL._AC_SL320_.jpg',
     specs: {
       'Núcleos': 8, 'Threads': 16, 'Clock Boost (GHz)': 5.0,
       'Soquete': 'AM5', 'Consumo (W)': 120,
@@ -576,6 +577,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'nvidia-geforce-rtx-4080-super', marca: 'NVIDIA', nome: 'GeForce RTX 4080 Super', categoria: 'gpus', score: 93,
+    imagem: 'https://m.media-amazon.com/images/I/71FnZ0aXR2L._AC_SL320_.jpg',
     specs: { 'VRAM': '16 GB GDDR6X', 'Consumo (W)': 320, 'Clock Boost (GHz)': 2.55, 'Ray Tracing': 'Sim', 'Barramento': '256-bit' },
     precos: [
       { loja: 'amazon', preco: 8499, url: 'https://www.amazon.com.br/s?k=rtx+4080+super&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '12x R$ 708,25' },
@@ -665,6 +667,7 @@ export const PRODUTOS: Produto[] = [
   // ── SSDs (faixa completa) ──
   {
     slug: 'crucial-t705-2tb', marca: 'Crucial', nome: 'T705 2TB', categoria: 'ssds', score: 99,
+    imagem: 'https://m.media-amazon.com/images/I/51dhbsC8C4L._AC_SL320_.jpg',
     specs: { 'Capacidade': '2 TB', 'Interface': 'NVMe Gen5', 'Leitura (MB/s)': 14500, 'Gravação (MB/s)': 12700, 'Cache DRAM': 'Sim' },
     precos: [
       { loja: 'amazon', preco: 2499, url: 'https://www.amazon.com.br/s?k=crucial+t705+2tb&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '12x R$ 208,25' },
@@ -795,6 +798,7 @@ export const PRODUTOS: Produto[] = [
   // ── Fontes (novos) ──
   {
     slug: 'corsair-rm850e-850w', marca: 'Corsair', nome: 'RM850e 850W', categoria: 'fontes', score: 90,
+    imagem: 'https://m.media-amazon.com/images/I/61eC0EoK9QL._AC_SL320_.jpg',
     specs: { 'Potência (W)': 850, 'Selo': '80 Plus Gold', 'Modular': 'Total', 'Conector PCIe 5.0': 'Sim (ATX 3.0)', 'Garantia': '7 anos' },
     precos: [
       { loja: 'kabum', preco: 699, url: 'https://www.kabum.com.br/produto/corsair-rm850e?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 69,90' },
