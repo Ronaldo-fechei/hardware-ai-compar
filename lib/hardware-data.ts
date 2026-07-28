@@ -798,12 +798,22 @@ export const PRODUTOS: Produto[] = [
   // ── Fontes (novos) ──
   {
     slug: 'corsair-rm850e-850w', marca: 'Corsair', nome: 'RM850e 850W', categoria: 'fontes', score: 90,
-    imagem: 'https://m.media-amazon.com/images/I/61eC0EoK9QL._AC_SL320_.jpg',
     specs: { 'Potência (W)': 850, 'Selo': '80 Plus Gold', 'Modular': 'Total', 'Conector PCIe 5.0': 'Sim (ATX 3.0)', 'Garantia': '7 anos' },
     precos: [
       { loja: 'kabum', preco: 699, url: 'https://www.kabum.com.br/produto/corsair-rm850e?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 69,90' },
       { loja: 'amazon', preco: 729, url: 'https://www.amazon.com.br/s?k=corsair+rm850e+850w&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '10x R$ 72,90' },
       { loja: 'pichau', preco: 749, url: 'https://www.pichau.com.br/fonte?ref=besthard', disponivel: true, frete: 'gratis', parcelamento: '10x R$ 74,90' },
+    ],
+  },
+  {
+    slug: 'corsair-rm850x-850w', marca: 'Corsair', nome: 'RM850x 850W', categoria: 'fontes', score: 91,
+    tier: 'high-end',
+    imagem: 'https://m.media-amazon.com/images/I/61eC0EoK9QL._AC_SL320_.jpg',
+    specs: { 'Potência (W)': 850, 'Selo': '80 Plus Gold', 'Modular': 'Total', 'Conector PCIe 5.0': 'Sim (ATX 3.0)', 'Garantia': '10 anos' },
+    precos: [
+      { loja: 'kabum', preco: 1199, url: 'https://www.kabum.com.br/produto/corsair-rm850x?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 119,90' },
+      { loja: 'amazon', preco: 1265, url: 'https://www.amazon.com.br/s?k=corsair+rm850x+850w&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '10x R$ 126,50' },
+      { loja: 'pichau', preco: 1289, url: 'https://www.pichau.com.br/fonte?ref=besthard', disponivel: true, frete: 'gratis', parcelamento: '10x R$ 128,90' },
     ],
   },
   {

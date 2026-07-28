@@ -7,7 +7,7 @@ const DESTAQUES = [
   'amd-ryzen-7-7800x3d',
   'nvidia-geforce-rtx-4080-super',
   'crucial-t705-2tb',
-  'corsair-rm850e-850w',
+  'corsair-rm850x-850w',
 ]
 
 function formatBRL(v: number) {
