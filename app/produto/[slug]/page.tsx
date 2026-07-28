@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { PRODUTOS_ENRIQUECIDOS, getProdutoBySlug, getCategoriaConfig, getProdutosByCategoria, tipoProduto } from '@/lib/hardware-data'
 import { BlocoPrecos } from '@/components/BlocoPrecos'
+import { ProdutoThumb } from '@/components/ProdutoThumb'
 import { SITE_URL } from '@/lib/site'
 import { ehAfiliado } from '@/lib/afiliados'
 
@@ -130,6 +131,10 @@ export default async function ProdutoPage({ params }: Props) {
         {/* ── HERO DO PRODUTO ────────────────────────────────── */}
         <div className="px-8 pt-4 pb-6" style={{ borderBottom: '1px solid var(--border)' }}>
           <div className="max-w-4xl">
+            {/* Foto do produto */}
+            <div className="mb-4">
+              <ProdutoThumb produto={produto} size={110} radius={16} />
+            </div>
             {/* Tipo + tier + marca */}
             <div className="flex items-center gap-3 mb-3">
               <span

@@ -1,4 +1,5 @@
 import type { Produto } from '@/types/hardware'
+import { ProdutoThumb } from './ProdutoThumb'
 
 interface Props {
   produto: Produto
@@ -30,6 +31,9 @@ export function ScoreCard({ produto, isWinner }: Props) {
         </span>
       )}
 
+      <div className="mb-3 flex justify-center">
+        <ProdutoThumb produto={produto} size={72} radius={12} />
+      </div>
       <p className="mb-[6px] font-mono text-[9px] uppercase tracking-[1.5px]" style={{ color: 'var(--label)' }}>
         {produto.marca}
       </p>
