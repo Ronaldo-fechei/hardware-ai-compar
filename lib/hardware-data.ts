@@ -118,6 +118,87 @@ export const PRODUTOS: Produto[] = [
   // PROCESSADORES
   // ══════════════════════════════════════
   {
+    slug: 'intel-core-i5-13600k', marca: 'Intel', nome: 'Core i5-13600K', categoria: 'processadores', score: 90, tier: 'high-end',
+    specs: { 'Núcleos': 14, 'Threads': 20, 'Clock Boost (GHz)': 5.1, 'Soquete': 'LGA1700', 'Consumo (W)': 125 },
+    precos: [
+      { loja: 'kabum', preco: 1499, url: 'https://www.kabum.com.br/produto/intel-core-i5-13600k?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 149,90' },
+      { loja: 'amazon', preco: 1549, url: 'https://www.amazon.com.br/s?k=intel+core+i5-13600k&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '10x R$ 154,90' },
+      { loja: 'pichau', preco: 1579, url: 'https://www.pichau.com.br/processadores?ref=besthard', disponivel: true, frete: 'gratis', parcelamento: '10x R$ 157,90' },
+    ],
+  },
+  {
+    slug: 'intel-core-i5-14400f', marca: 'Intel', nome: 'Core i5-14400F', categoria: 'processadores', score: 82, tier: 'mid-range',
+    specs: { 'Núcleos': 10, 'Threads': 16, 'Clock Boost (GHz)': 4.7, 'Soquete': 'LGA1700', 'Consumo (W)': 65 },
+    precos: [
+      { loja: 'kabum', preco: 899, url: 'https://www.kabum.com.br/produto/intel-core-i5-14400f?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 89,90' },
+      { loja: 'amazon', preco: 949, url: 'https://www.amazon.com.br/s?k=intel+core+i5-14400f&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '10x R$ 94,90' },
+    ],
+  },
+  {
+    slug: 'intel-core-i7-13700k', marca: 'Intel', nome: 'Core i7-13700K', categoria: 'processadores', score: 93, tier: 'high-end',
+    specs: { 'Núcleos': 16, 'Threads': 24, 'Clock Boost (GHz)': 5.4, 'Soquete': 'LGA1700', 'Consumo (W)': 125 },
+    precos: [
+      { loja: 'kabum', preco: 1999, url: 'https://www.kabum.com.br/produto/intel-core-i7-13700k?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 199,90' },
+      { loja: 'pichau', preco: 2049, url: 'https://www.pichau.com.br/processadores?ref=besthard', disponivel: true, frete: 'gratis', parcelamento: '10x R$ 204,90' },
+    ],
+  },
+  {
+    slug: 'amd-ryzen-7-5700x', marca: 'AMD', nome: 'Ryzen 7 5700X', categoria: 'processadores', score: 82, tier: 'mid-range',
+    specs: { 'Núcleos': 8, 'Threads': 16, 'Clock Boost (GHz)': 4.6, 'Soquete': 'AM4', 'Consumo (W)': 65 },
+    precos: [
+      { loja: 'kabum', preco: 899, url: 'https://www.kabum.com.br/produto/amd-ryzen-7-5700x?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 89,90' },
+      { loja: 'amazon', preco: 949, url: 'https://www.amazon.com.br/s?k=amd+ryzen+7+5700x&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '10x R$ 94,90' },
+    ],
+  },
+  {
+    slug: 'amd-ryzen-7-5800x3d', marca: 'AMD', nome: 'Ryzen 7 5800X3D', categoria: 'processadores', score: 91, tier: 'high-end',
+    specs: { 'Núcleos': 8, 'Threads': 16, 'Clock Boost (GHz)': 4.5, 'Soquete': 'AM4', 'Consumo (W)': 105 },
+    precos: [
+      { loja: 'kabum', preco: 1699, url: 'https://www.kabum.com.br/produto/amd-ryzen-7-5800x3d?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 169,90' },
+      { loja: 'amazon', preco: 1749, url: 'https://www.amazon.com.br/s?k=amd+ryzen+7+5800x3d&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '10x R$ 174,90' },
+    ],
+  },
+  {
+    slug: 'amd-ryzen-9-7900x', marca: 'AMD', nome: 'Ryzen 9 7900X', categoria: 'processadores', score: 92, tier: 'high-end',
+    specs: { 'Núcleos': 12, 'Threads': 24, 'Clock Boost (GHz)': 5.6, 'Soquete': 'AM5', 'Consumo (W)': 170 },
+    precos: [
+      { loja: 'kabum', preco: 2399, url: 'https://www.kabum.com.br/produto/amd-ryzen-9-7900x?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 239,90' },
+      { loja: 'pichau', preco: 2449, url: 'https://www.pichau.com.br/processadores?ref=besthard', disponivel: true, frete: 'gratis', parcelamento: '10x R$ 244,90' },
+    ],
+  },
+  {
+    slug: 'intel-core-i9-13900k', marca: 'Intel', nome: 'Core i9-13900K', categoria: 'processadores', score: 95, tier: 'flagship',
+    specs: { 'Núcleos': 24, 'Threads': 32, 'Clock Boost (GHz)': 5.8, 'Soquete': 'LGA1700', 'Consumo (W)': 125 },
+    precos: [
+      { loja: 'kabum', preco: 2899, url: 'https://www.kabum.com.br/produto/intel-core-i9-13900k?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 289,90' },
+      { loja: 'amazon', preco: 2999, url: 'https://www.amazon.com.br/s?k=intel+core+i9-13900k&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '10x R$ 299,90' },
+    ],
+  },
+  {
+    slug: 'intel-core-i3-14100f', marca: 'Intel', nome: 'Core i3-14100F', categoria: 'processadores', score: 70, tier: 'entrada',
+    specs: { 'Núcleos': 4, 'Threads': 8, 'Clock Boost (GHz)': 4.7, 'Soquete': 'LGA1700', 'Consumo (W)': 58 },
+    precos: [
+      { loja: 'kabum', preco: 599, url: 'https://www.kabum.com.br/produto/intel-core-i3-14100f?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '8x R$ 74,88' },
+      { loja: 'amazon', preco: 629, url: 'https://www.amazon.com.br/s?k=intel+core+i3-14100f&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '8x R$ 78,63' },
+    ],
+  },
+  {
+    slug: 'amd-ryzen-5-7500f', marca: 'AMD', nome: 'Ryzen 5 7500F', categoria: 'processadores', score: 84, tier: 'mid-range',
+    specs: { 'Núcleos': 6, 'Threads': 12, 'Clock Boost (GHz)': 5.0, 'Soquete': 'AM5', 'Consumo (W)': 65 },
+    precos: [
+      { loja: 'kabum', preco: 1049, url: 'https://www.kabum.com.br/produto/amd-ryzen-5-7500f?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 104,90' },
+      { loja: 'pichau', preco: 1099, url: 'https://www.pichau.com.br/processadores?ref=besthard', disponivel: true, frete: 'gratis', parcelamento: '10x R$ 109,90' },
+    ],
+  },
+  {
+    slug: 'amd-ryzen-7-7700', marca: 'AMD', nome: 'Ryzen 7 7700', categoria: 'processadores', score: 89, tier: 'high-end',
+    specs: { 'Núcleos': 8, 'Threads': 16, 'Clock Boost (GHz)': 5.3, 'Soquete': 'AM5', 'Consumo (W)': 65 },
+    precos: [
+      { loja: 'kabum', preco: 1799, url: 'https://www.kabum.com.br/produto/amd-ryzen-7-7700?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 179,90' },
+      { loja: 'amazon', preco: 1849, url: 'https://www.amazon.com.br/s?k=amd+ryzen+7+7700&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '10x R$ 184,90' },
+    ],
+  },
+  {
     slug: 'intel-core-i7-14700k',
     marca: 'Intel',
     nome: 'Core i7-14700K',
