@@ -119,6 +119,7 @@ export const PRODUTOS: Produto[] = [
   // ══════════════════════════════════════
   {
     slug: 'hyperx-cloud-ii', marca: 'HyperX', nome: 'Cloud II', categoria: 'headsets', score: 88, tier: 'high-end',
+    imagem: 'https://m.media-amazon.com/images/I/71ltsViEA8L._AC_SL320_.jpg',
     specs: { 'Conexão': 'USB / P2 3,5 mm', 'Drivers (mm)': 53, 'Microfone': 'Removível com redução de ruído', 'Peso (g)': 320, 'Resposta': '15 Hz–25 kHz', 'Formato': 'Over-ear fechado' },
     precos: [
       { loja: 'kabum', preco: 449, url: 'https://www.kabum.com.br/produto/hyperx-cloud-ii?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '8x R$ 56,13' },
@@ -127,6 +128,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'logitech-g-pro-x', marca: 'Logitech', nome: 'G Pro X', categoria: 'headsets', score: 87, tier: 'high-end',
+    imagem: 'https://m.media-amazon.com/images/I/71mGNXSFX8L._AC_SL320_.jpg',
     specs: { 'Conexão': 'USB / P2 3,5 mm', 'Drivers (mm)': 50, 'Microfone': 'Destacável Blue VO!CE', 'Peso (g)': 320, 'Resposta': '20 Hz–20 kHz', 'Formato': 'Over-ear fechado' },
     precos: [
       { loja: 'kabum', preco: 599, url: 'https://www.kabum.com.br/produto/logitech-g-pro-x?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 59,90' },
@@ -134,6 +136,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'razer-kraken-v3-x', marca: 'Razer', nome: 'Kraken V3 X', categoria: 'headsets', score: 84, tier: 'mid-range',
+    imagem: 'https://m.media-amazon.com/images/I/61q7dqyoSBL._AC_SL320_.jpg',
     specs: { 'Conexão': 'USB', 'Drivers (mm)': 40, 'Microfone': 'Cardioide com redução de ruído', 'Peso (g)': 285, 'Resposta': '12 Hz–28 kHz', 'Formato': 'Over-ear fechado' },
     precos: [
       { loja: 'kabum', preco: 349, url: 'https://www.kabum.com.br/produto/razer-kraken-v3-x?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '8x R$ 43,63' },
@@ -141,6 +144,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'hyperx-cloud-alpha', marca: 'HyperX', nome: 'Cloud Alpha', categoria: 'headsets', score: 86, tier: 'high-end',
+    imagem: 'https://m.media-amazon.com/images/I/71++S+DNJ+L._AC_SL320_.jpg',
     specs: { 'Conexão': 'P2 3,5 mm', 'Drivers (mm)': 50, 'Microfone': 'Removível com redução de ruído', 'Peso (g)': 298, 'Resposta': '13 Hz–27 kHz', 'Formato': 'Over-ear fechado' },
     precos: [
       { loja: 'kabum', preco: 399, url: 'https://www.kabum.com.br/produto/hyperx-cloud-alpha?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '8x R$ 49,88' },
@@ -148,6 +152,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'jbl-quantum-200', marca: 'JBL', nome: 'Quantum 200', categoria: 'headsets', score: 76, tier: 'mid-range',
+    imagem: 'https://m.media-amazon.com/images/I/51+BfGCq3QL._AC_SL320_.jpg',
     specs: { 'Conexão': 'P2 3,5 mm', 'Drivers (mm)': 50, 'Microfone': 'Direcional flip-up', 'Peso (g)': 240, 'Resposta': '20 Hz–20 kHz', 'Formato': 'Over-ear fechado' },
     precos: [
       { loja: 'kabum', preco: 249, url: 'https://www.kabum.com.br/produto/jbl-quantum-200?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '6x R$ 41,50' },
@@ -155,6 +160,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'redragon-zeus-x-h510', marca: 'Redragon', nome: 'Zeus X H510', categoria: 'headsets', score: 78, tier: 'mid-range',
+    imagem: 'https://m.media-amazon.com/images/I/61xGkFmsP6L._AC_SL320_.jpg',
     specs: { 'Conexão': 'USB / P2 3,5 mm', 'Drivers (mm)': 53, 'Microfone': 'Removível', 'Peso (g)': 360, 'Resposta': '20 Hz–20 kHz', 'Formato': 'Over-ear fechado' },
     precos: [
       { loja: 'kabum', preco: 229, url: 'https://www.kabum.com.br/produto/redragon-zeus-x-h510?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '4x R$ 57,25' },
@@ -162,6 +168,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'corsair-hs55-surround', marca: 'Corsair', nome: 'HS55 Surround', categoria: 'headsets', score: 82, tier: 'mid-range',
+    imagem: 'https://m.media-amazon.com/images/I/614YIc8AWML._AC_SL320_.jpg',
     specs: { 'Conexão': 'USB / P2 3,5 mm', 'Drivers (mm)': 50, 'Microfone': 'Omnidirecional flip-up', 'Peso (g)': 266, 'Resposta': '20 Hz–20 kHz', 'Formato': 'Over-ear fechado' },
     precos: [
       { loja: 'kabum', preco: 379, url: 'https://www.kabum.com.br/produto/corsair-hs55-surround?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '8x R$ 47,38' },
@@ -169,6 +176,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'logitech-g733', marca: 'Logitech', nome: 'G733 LIGHTSPEED', categoria: 'headsets', score: 85, tier: 'high-end',
+    imagem: 'https://m.media-amazon.com/images/I/71xNjrzG69L._AC_SL320_.jpg',
     specs: { 'Conexão': 'Sem fio LIGHTSPEED', 'Drivers (mm)': 40, 'Microfone': 'Destacável Blue VO!CE', 'Peso (g)': 278, 'Resposta': '20 Hz–20 kHz', 'Formato': 'Over-ear fechado' },
     precos: [
       { loja: 'kabum', preco: 699, url: 'https://www.kabum.com.br/produto/logitech-g733?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 69,90' },
@@ -176,6 +184,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'steelseries-arctis-nova-1', marca: 'SteelSeries', nome: 'Arctis Nova 1', categoria: 'headsets', score: 84, tier: 'mid-range',
+    imagem: 'https://m.media-amazon.com/images/I/71pY4rbIg0L._AC_SL320_.jpg',
     specs: { 'Conexão': 'P2 3,5 mm', 'Drivers (mm)': 40, 'Microfone': 'Retrátil ClearCast Gen 2', 'Peso (g)': 236, 'Resposta': '10 Hz–22 kHz', 'Formato': 'Over-ear fechado' },
     precos: [
       { loja: 'kabum', preco: 399, url: 'https://www.kabum.com.br/produto/arctis-nova-1?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '8x R$ 49,88' },
@@ -183,6 +192,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'redragon-lamia-2-h320', marca: 'Redragon', nome: 'Lamia 2 H320', categoria: 'headsets', score: 66, tier: 'entrada',
+    imagem: 'https://m.media-amazon.com/images/I/51UJDqMTn3L._AC_SL320_.jpg',
     specs: { 'Conexão': 'USB', 'Drivers (mm)': 40, 'Microfone': 'Removível', 'Peso (g)': 320, 'Resposta': '20 Hz–20 kHz', 'Formato': 'Over-ear fechado' },
     precos: [
       { loja: 'kabum', preco: 179, url: 'https://www.kabum.com.br/produto/redragon-lamia-2-h320?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '4x R$ 44,75' },
@@ -194,6 +204,7 @@ export const PRODUTOS: Produto[] = [
   // ══════════════════════════════════════
   {
     slug: 'hyperx-alloy-origins-core', marca: 'HyperX', nome: 'Alloy Origins Core', categoria: 'teclados', score: 87, tier: 'high-end',
+    imagem: 'https://m.media-amazon.com/images/I/61fjJX9Jq2L._AC_SL320_.jpg',
     specs: { 'Tipo': 'Mecânico', 'Formato': 'Tenkeyless (TKL)', 'Conexão': 'USB com fio', 'Layout': 'ABNT2', 'Teclado numérico': 'Não', 'Iluminação': 'RGB' },
     precos: [
       { loja: 'kabum', preco: 449, url: 'https://www.kabum.com.br/produto/alloy-origins-core?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '8x R$ 56,13' },
@@ -201,6 +212,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'logitech-g413-se', marca: 'Logitech', nome: 'G413 SE', categoria: 'teclados', score: 82, tier: 'mid-range',
+    imagem: 'https://m.media-amazon.com/images/I/61uHFEQiOcL._AC_SL320_.jpg',
     specs: { 'Tipo': 'Mecânico', 'Formato': 'Completo', 'Conexão': 'USB com fio', 'Layout': 'ABNT2', 'Teclado numérico': 'Sim', 'Iluminação': 'Branca' },
     precos: [
       { loja: 'kabum', preco: 349, url: 'https://www.kabum.com.br/produto/logitech-g413-se?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '8x R$ 43,63' },
@@ -208,6 +220,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'razer-cynosa-v2', marca: 'Razer', nome: 'Cynosa V2', categoria: 'teclados', score: 76, tier: 'mid-range',
+    imagem: 'https://m.media-amazon.com/images/I/61QvcxSzaUL._AC_SL320_.jpg',
     specs: { 'Tipo': 'Membrana', 'Formato': 'Completo', 'Conexão': 'USB com fio', 'Layout': 'US', 'Teclado numérico': 'Sim', 'Iluminação': 'RGB Chroma' },
     precos: [
       { loja: 'kabum', preco: 299, url: 'https://www.kabum.com.br/produto/razer-cynosa-v2?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '6x R$ 49,83' },
@@ -215,6 +228,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'keychron-k8', marca: 'Keychron', nome: 'K8', categoria: 'teclados', score: 88, tier: 'high-end',
+    imagem: 'https://m.media-amazon.com/images/I/71mGOrFUSeL._AC_SL320_.jpg',
     specs: { 'Tipo': 'Mecânico', 'Formato': 'Tenkeyless (TKL)', 'Conexão': 'Sem fio / USB-C', 'Layout': 'US', 'Teclado numérico': 'Não', 'Iluminação': 'RGB' },
     precos: [
       { loja: 'kabum', preco: 499, url: 'https://www.kabum.com.br/produto/keychron-k8?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 49,90' },
@@ -222,6 +236,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'logitech-g213-prodigy', marca: 'Logitech', nome: 'G213 Prodigy', categoria: 'teclados', score: 72, tier: 'entrada',
+    imagem: 'https://m.media-amazon.com/images/I/71Nqzh-u2rL._AC_SL320_.jpg',
     specs: { 'Tipo': 'Membrana', 'Formato': 'Completo', 'Conexão': 'USB com fio', 'Layout': 'ABNT2', 'Teclado numérico': 'Sim', 'Iluminação': 'RGB LIGHTSYNC' },
     precos: [
       { loja: 'kabum', preco: 249, url: 'https://www.kabum.com.br/produto/logitech-g213-prodigy?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '6x R$ 41,50' },
@@ -229,6 +244,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'redragon-draconic-k530', marca: 'Redragon', nome: 'Draconic K530 Pro', categoria: 'teclados', score: 80, tier: 'mid-range',
+    imagem: 'https://m.media-amazon.com/images/I/61+o0-vdc+L._AC_SL320_.jpg',
     specs: { 'Tipo': 'Mecânico', 'Formato': 'Compacto 60%', 'Conexão': 'Sem fio / Bluetooth', 'Layout': 'US', 'Teclado numérico': 'Não', 'Iluminação': 'RGB' },
     precos: [
       { loja: 'kabum', preco: 279, url: 'https://www.kabum.com.br/produto/redragon-draconic-k530?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '6x R$ 46,50' },
@@ -236,6 +252,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'hyperx-alloy-origins-65', marca: 'HyperX', nome: 'Alloy Origins 65', categoria: 'teclados', score: 85, tier: 'high-end',
+    imagem: 'https://m.media-amazon.com/images/I/714Sw9DWfWL._AC_SL320_.jpg',
     specs: { 'Tipo': 'Mecânico', 'Formato': 'Compacto 65%', 'Conexão': 'USB com fio', 'Layout': 'US', 'Teclado numérico': 'Não', 'Iluminação': 'RGB' },
     precos: [
       { loja: 'kabum', preco: 429, url: 'https://www.kabum.com.br/produto/alloy-origins-65?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '8x R$ 53,63' },
@@ -243,6 +260,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'redragon-lakshmi-k606', marca: 'Redragon', nome: 'Lakshmi K606', categoria: 'teclados', score: 60, tier: 'entrada',
+    imagem: 'https://m.media-amazon.com/images/I/61Rs1Gg8JhL._AC_SL320_.jpg',
     specs: { 'Tipo': 'Membrana', 'Formato': 'Completo', 'Conexão': 'USB com fio', 'Layout': 'ABNT2', 'Teclado numérico': 'Sim', 'Iluminação': 'RGB' },
     precos: [
       { loja: 'kabum', preco: 129, url: 'https://www.kabum.com.br/produto/redragon-lakshmi-k606?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '3x R$ 43,00' },
@@ -250,6 +268,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'logitech-g915-tkl', marca: 'Logitech', nome: 'G915 TKL LIGHTSPEED', categoria: 'teclados', score: 92, tier: 'flagship',
+    imagem: 'https://m.media-amazon.com/images/I/617cojBhWIL._AC_SL320_.jpg',
     specs: { 'Tipo': 'Mecânico (low profile)', 'Formato': 'Tenkeyless (TKL)', 'Conexão': 'Sem fio LIGHTSPEED', 'Layout': 'US', 'Teclado numérico': 'Não', 'Iluminação': 'RGB LIGHTSYNC' },
     precos: [
       { loja: 'kabum', preco: 1299, url: 'https://www.kabum.com.br/produto/logitech-g915-tkl?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 129,90' },
@@ -257,6 +276,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'redragon-kumara-k552-rgb', marca: 'Redragon', nome: 'Kumara K552 RGB', categoria: 'teclados', score: 74, tier: 'entrada',
+    imagem: 'https://m.media-amazon.com/images/I/61CkGWYpsPL._AC_SL320_.jpg',
     specs: { 'Tipo': 'Mecânico', 'Formato': 'Tenkeyless (TKL)', 'Conexão': 'USB com fio', 'Layout': 'ABNT2', 'Teclado numérico': 'Não', 'Iluminação': 'RGB' },
     precos: [
       { loja: 'kabum', preco: 199, url: 'https://www.kabum.com.br/produto/redragon-kumara-k552-rgb?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '4x R$ 49,75' },
@@ -268,6 +288,7 @@ export const PRODUTOS: Produto[] = [
   // ══════════════════════════════════════
   {
     slug: 'logitech-g502-hero', marca: 'Logitech', nome: 'G502 HERO', categoria: 'mouses', score: 88, tier: 'high-end',
+    imagem: 'https://m.media-amazon.com/images/I/61mpMH5TzkL._AC_SL320_.jpg',
     specs: { 'DPI': 25600, 'Peso (g)': 121, 'Botões': 11, 'Conexão': 'USB com fio', 'Polling rate': '1000 Hz', 'Iluminação': 'RGB LIGHTSYNC' },
     precos: [
       { loja: 'kabum', preco: 249, url: 'https://www.kabum.com.br/produto/logitech-g502-hero?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '6x R$ 41,50' },
@@ -276,6 +297,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'razer-viper-v3-hyperspeed', marca: 'Razer', nome: 'Viper V3 HyperSpeed', categoria: 'mouses', score: 90, tier: 'high-end',
+    imagem: 'https://m.media-amazon.com/images/I/517nfncP9BL._AC_SL320_.jpg',
     specs: { 'DPI': 30000, 'Peso (g)': 82, 'Botões': 6, 'Conexão': 'Sem fio 2.4GHz', 'Polling rate': '1000 Hz', 'Iluminação': 'Não' },
     precos: [
       { loja: 'kabum', preco: 349, url: 'https://www.kabum.com.br/produto/razer-viper-v3-hyperspeed?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '8x R$ 43,63' },
@@ -283,6 +305,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'glorious-model-o', marca: 'Glorious', nome: 'Model O', categoria: 'mouses', score: 86, tier: 'mid-range',
+    imagem: 'https://m.media-amazon.com/images/I/71gPyCyreBL._AC_SL320_.jpg',
     specs: { 'DPI': 12000, 'Peso (g)': 67, 'Botões': 6, 'Conexão': 'USB com fio', 'Polling rate': '1000 Hz', 'Iluminação': 'RGB' },
     precos: [
       { loja: 'kabum', preco: 299, url: 'https://www.kabum.com.br/produto/glorious-model-o?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '6x R$ 49,83' },
@@ -290,6 +313,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'logitech-g-pro-x-superlight', marca: 'Logitech', nome: 'G Pro X Superlight', categoria: 'mouses', score: 93, tier: 'flagship',
+    imagem: 'https://m.media-amazon.com/images/I/61WRvXLabPL._AC_SL320_.jpg',
     specs: { 'DPI': 25600, 'Peso (g)': 63, 'Botões': 5, 'Conexão': 'Sem fio LIGHTSPEED', 'Polling rate': '1000 Hz', 'Iluminação': 'Não' },
     precos: [
       { loja: 'kabum', preco: 649, url: 'https://www.kabum.com.br/produto/g-pro-x-superlight?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 64,90' },
@@ -297,6 +321,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'razer-basilisk-v3', marca: 'Razer', nome: 'Basilisk V3', categoria: 'mouses', score: 87, tier: 'high-end',
+    imagem: 'https://m.media-amazon.com/images/I/61AcT0ZuO3L._AC_SL320_.jpg',
     specs: { 'DPI': 26000, 'Peso (g)': 101, 'Botões': 11, 'Conexão': 'USB com fio', 'Polling rate': '1000 Hz', 'Iluminação': 'RGB Chroma' },
     precos: [
       { loja: 'kabum', preco: 329, url: 'https://www.kabum.com.br/produto/razer-basilisk-v3?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '8x R$ 41,13' },
@@ -304,6 +329,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'hyperx-pulsefire-haste-2', marca: 'HyperX', nome: 'Pulsefire Haste 2', categoria: 'mouses', score: 85, tier: 'mid-range',
+    imagem: 'https://m.media-amazon.com/images/I/613O4O2dNQL._AC_SL320_.jpg',
     specs: { 'DPI': 26000, 'Peso (g)': 53, 'Botões': 6, 'Conexão': 'USB com fio', 'Polling rate': '1000 Hz', 'Iluminação': 'RGB' },
     precos: [
       { loja: 'kabum', preco: 279, url: 'https://www.kabum.com.br/produto/pulsefire-haste-2?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '6x R$ 46,50' },
@@ -311,6 +337,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'logitech-g403-hero', marca: 'Logitech', nome: 'G403 HERO', categoria: 'mouses', score: 82, tier: 'mid-range',
+    imagem: 'https://m.media-amazon.com/images/I/61CF3xAQtEL._AC_SL320_.jpg',
     specs: { 'DPI': 25600, 'Peso (g)': 87, 'Botões': 6, 'Conexão': 'USB com fio', 'Polling rate': '1000 Hz', 'Iluminação': 'RGB LIGHTSYNC' },
     precos: [
       { loja: 'kabum', preco: 199, url: 'https://www.kabum.com.br/produto/logitech-g403-hero?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '4x R$ 49,75' },
@@ -318,6 +345,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'razer-deathadder-v3', marca: 'Razer', nome: 'DeathAdder V3', categoria: 'mouses', score: 89, tier: 'high-end',
+    imagem: 'https://m.media-amazon.com/images/I/61Syl8a3uwL._AC_SL320_.jpg',
     specs: { 'DPI': 30000, 'Peso (g)': 59, 'Botões': 6, 'Conexão': 'USB com fio', 'Polling rate': '1000 Hz', 'Iluminação': 'Não' },
     precos: [
       { loja: 'kabum', preco: 359, url: 'https://www.kabum.com.br/produto/razer-deathadder-v3?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '8x R$ 44,88' },
@@ -325,6 +353,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'redragon-storm-pro', marca: 'Redragon', nome: 'Storm Pro M808', categoria: 'mouses', score: 74, tier: 'entrada',
+    imagem: 'https://m.media-amazon.com/images/I/51KZg4TLvIL._AC_SL320_.jpg',
     specs: { 'DPI': 12400, 'Peso (g)': 78, 'Botões': 8, 'Conexão': 'USB com fio', 'Polling rate': '1000 Hz', 'Iluminação': 'RGB' },
     precos: [
       { loja: 'kabum', preco: 129, url: 'https://www.kabum.com.br/produto/redragon-storm-pro?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '3x R$ 43,00' },
@@ -332,6 +361,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'redragon-m612-predator', marca: 'Redragon', nome: 'M612 Predator', categoria: 'mouses', score: 70, tier: 'entrada',
+    imagem: 'https://m.media-amazon.com/images/I/51AVGfhKbOL._AC_SL320_.jpg',
     specs: { 'DPI': 8000, 'Peso (g)': 85, 'Botões': 8, 'Conexão': 'USB com fio', 'Polling rate': '1000 Hz', 'Iluminação': 'RGB' },
     precos: [
       { loja: 'kabum', preco: 99, url: 'https://www.kabum.com.br/produto/redragon-m612-predator?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '2x R$ 49,50' },
@@ -343,6 +373,7 @@ export const PRODUTOS: Produto[] = [
   // ══════════════════════════════════════
   {
     slug: 'nzxt-h5-flow', marca: 'NZXT', nome: 'H5 Flow', categoria: 'gabinetes', score: 85, tier: 'mid-range',
+    imagem: 'https://m.media-amazon.com/images/I/61DPqFb+98L._AC_SL320_.jpg',
     specs: { 'Tipo': 'Mid Tower ATX', 'Suporta GPU (mm)': 365, 'Baias': '1x 3.5" + 3x 2.5"', 'Fans inclusos': '2x 120mm', 'Painel': 'Vidro temperado' },
     precos: [
       { loja: 'kabum', preco: 499, url: 'https://www.kabum.com.br/produto/nzxt-h5-flow?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 49,90' },
@@ -350,6 +381,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'corsair-3500x', marca: 'Corsair', nome: '3500X ARGB', categoria: 'gabinetes', score: 87, tier: 'high-end',
+    imagem: 'https://m.media-amazon.com/images/I/617cgWIs-mL._AC_SL320_.jpg',
     specs: { 'Tipo': 'Mid Tower ATX', 'Suporta GPU (mm)': 400, 'Baias': '2x 3.5" + 3x 2.5"', 'Fans inclusos': '3x 120mm ARGB', 'Painel': 'Vidro temperado' },
     precos: [
       { loja: 'kabum', preco: 649, url: 'https://www.kabum.com.br/produto/corsair-3500x?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 64,90' },
@@ -357,6 +389,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'montech-air-1000-premium', marca: 'Montech', nome: 'Air 1000 Premium', categoria: 'gabinetes', score: 84, tier: 'mid-range',
+    imagem: 'https://m.media-amazon.com/images/I/71AOMbZ8ohL._AC_SL320_.jpg',
     specs: { 'Tipo': 'Mid Tower ATX', 'Suporta GPU (mm)': 400, 'Baias': '2x 3.5" + 2x 2.5"', 'Fans inclusos': '4x 120mm ARGB', 'Painel': 'Vidro temperado' },
     precos: [
       { loja: 'kabum', preco: 429, url: 'https://www.kabum.com.br/produto/montech-air-1000?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '8x R$ 53,63' },
@@ -364,6 +397,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'lian-li-lancool-iii', marca: 'Lian Li', nome: 'Lancool III', categoria: 'gabinetes', score: 89, tier: 'high-end',
+    imagem: 'https://m.media-amazon.com/images/I/81qrq8o9MlL._AC_SL320_.jpg',
     specs: { 'Tipo': 'Full Tower ATX', 'Suporta GPU (mm)': 435, 'Baias': '4x 3.5" + 3x 2.5"', 'Fans inclusos': '4x 140mm', 'Painel': 'Vidro temperado' },
     precos: [
       { loja: 'kabum', preco: 899, url: 'https://www.kabum.com.br/produto/lian-li-lancool-iii?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 89,90' },
@@ -378,6 +412,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'cooler-master-td500-mesh', marca: 'Cooler Master', nome: 'MasterBox TD500 Mesh V2', categoria: 'gabinetes', score: 86, tier: 'high-end',
+    imagem: 'https://m.media-amazon.com/images/I/515ro5MtL6L._AC_SL320_.jpg',
     specs: { 'Tipo': 'Mid Tower ATX', 'Suporta GPU (mm)': 410, 'Baias': '2x 3.5" + 2x 2.5"', 'Fans inclusos': '3x 120mm ARGB', 'Painel': 'Vidro temperado' },
     precos: [
       { loja: 'kabum', preco: 599, url: 'https://www.kabum.com.br/produto/td500-mesh-v2?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 59,90' },
@@ -385,6 +420,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'gamemax-infinity', marca: 'Gamemax', nome: 'Infinity', categoria: 'gabinetes', score: 68, tier: 'entrada',
+    imagem: 'https://m.media-amazon.com/images/I/71d720ZeMbS._AC_SL320_.jpg',
     specs: { 'Tipo': 'Mid Tower ATX', 'Suporta GPU (mm)': 340, 'Baias': '2x 3.5" + 2x 2.5"', 'Fans inclusos': '4x 120mm ARGB', 'Painel': 'Vidro temperado' },
     precos: [
       { loja: 'kabum', preco: 329, url: 'https://www.kabum.com.br/produto/gamemax-infinity?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '6x R$ 54,83' },
@@ -392,6 +428,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'corsair-icue-4000x', marca: 'Corsair', nome: 'iCUE 4000X RGB', categoria: 'gabinetes', score: 88, tier: 'high-end',
+    imagem: 'https://m.media-amazon.com/images/I/81ff1w5fdYL._AC_SL320_.jpg',
     specs: { 'Tipo': 'Mid Tower ATX', 'Suporta GPU (mm)': 360, 'Baias': '2x 3.5" + 2x 2.5"', 'Fans inclusos': '3x 120mm RGB', 'Painel': 'Vidro temperado' },
     precos: [
       { loja: 'kabum', preco: 699, url: 'https://www.kabum.com.br/produto/corsair-icue-4000x?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 69,90' },
@@ -399,6 +436,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'redragon-grimoire', marca: 'Redragon', nome: 'Grimoire', categoria: 'gabinetes', score: 64, tier: 'entrada',
+    imagem: 'https://m.media-amazon.com/images/I/61Dvr-tmhQL._AC_SL320_.jpg',
     specs: { 'Tipo': 'Mid Tower ATX', 'Suporta GPU (mm)': 330, 'Baias': '2x 3.5" + 2x 2.5"', 'Fans inclusos': '4x 120mm ARGB', 'Painel': 'Vidro temperado' },
     precos: [
       { loja: 'kabum', preco: 279, url: 'https://www.kabum.com.br/produto/redragon-grimoire?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '6x R$ 46,50' },
@@ -406,6 +444,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'thermaltake-s100-tg', marca: 'Thermaltake', nome: 'S100 TG', categoria: 'gabinetes', score: 60, tier: 'entrada',
+    imagem: 'https://m.media-amazon.com/images/I/51MVYwo5iJL._AC_SL320_.jpg',
     specs: { 'Tipo': 'Mini Tower mATX', 'Suporta GPU (mm)': 300, 'Baias': '2x 3.5" + 2x 2.5"', 'Fans inclusos': '1x 120mm', 'Painel': 'Vidro temperado' },
     precos: [
       { loja: 'kabum', preco: 249, url: 'https://www.kabum.com.br/produto/thermaltake-s100-tg?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '6x R$ 41,50' },
@@ -417,6 +456,7 @@ export const PRODUTOS: Produto[] = [
   // ══════════════════════════════════════
   {
     slug: 'corsair-rm1000e-1000w', marca: 'Corsair', nome: 'RM1000e 1000W', categoria: 'fontes', score: 92, tier: 'high-end',
+    imagem: 'https://m.media-amazon.com/images/I/61n-RFtZVgL._AC_SL320_.jpg',
     specs: { 'Potência (W)': 1000, 'Selo': '80 Plus Gold', 'Modular': 'Total', 'Conector PCIe 5.0': 'Sim (ATX 3.0)', 'Garantia': '7 anos' },
     precos: [
       { loja: 'kabum', preco: 899, url: 'https://www.kabum.com.br/produto/corsair-rm1000e?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 89,90' },
@@ -424,6 +464,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'seasonic-focus-gx-850', marca: 'Seasonic', nome: 'Focus GX-850 850W', categoria: 'fontes', score: 91, tier: 'high-end',
+    imagem: 'https://m.media-amazon.com/images/I/71i6bBc1H8L._AC_SL320_.jpg',
     specs: { 'Potência (W)': 850, 'Selo': '80 Plus Gold', 'Modular': 'Total', 'Conector PCIe 5.0': 'Sim (ATX 3.0)', 'Garantia': '10 anos' },
     precos: [
       { loja: 'kabum', preco: 799, url: 'https://www.kabum.com.br/produto/seasonic-focus-gx-850?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 79,90' },
@@ -431,6 +472,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'msi-mag-a750gl-750w', marca: 'MSI', nome: 'MAG A750GL 750W', categoria: 'fontes', score: 86, tier: 'mid-range',
+    imagem: 'https://m.media-amazon.com/images/I/716c-SjLwPL._AC_SL320_.jpg',
     specs: { 'Potência (W)': 750, 'Selo': '80 Plus Gold', 'Modular': 'Total', 'Conector PCIe 5.0': 'Sim (ATX 3.0)', 'Garantia': '10 anos' },
     precos: [
       { loja: 'kabum', preco: 549, url: 'https://www.kabum.com.br/produto/msi-mag-a750gl?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 54,90' },
@@ -438,6 +480,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'corsair-cx750-750w', marca: 'Corsair', nome: 'CX750 750W', categoria: 'fontes', score: 78, tier: 'mid-range',
+    imagem: 'https://m.media-amazon.com/images/I/61S6eCj1BNL._AC_SL320_.jpg',
     specs: { 'Potência (W)': 750, 'Selo': '80 Plus Bronze', 'Modular': 'Não', 'Conector PCIe 5.0': 'Não', 'Garantia': '5 anos' },
     precos: [
       { loja: 'kabum', preco: 449, url: 'https://www.kabum.com.br/produto/corsair-cx750?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '8x R$ 56,13' },
@@ -445,6 +488,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'gigabyte-ud750gm-750w', marca: 'Gigabyte', nome: 'UD750GM 750W', categoria: 'fontes', score: 80, tier: 'mid-range',
+    imagem: 'https://m.media-amazon.com/images/I/71FAUQmc0sL._AC_SL320_.jpg',
     specs: { 'Potência (W)': 750, 'Selo': '80 Plus Gold', 'Modular': 'Total', 'Conector PCIe 5.0': 'Não', 'Garantia': '5 anos' },
     precos: [
       { loja: 'kabum', preco: 499, url: 'https://www.kabum.com.br/produto/gigabyte-ud750gm?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 49,90' },
@@ -466,6 +510,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'nzxt-c750-750w', marca: 'NZXT', nome: 'C750 750W', categoria: 'fontes', score: 85, tier: 'mid-range',
+    imagem: 'https://m.media-amazon.com/images/I/71zlP8ma6wL._AC_SL320_.jpg',
     specs: { 'Potência (W)': 750, 'Selo': '80 Plus Gold', 'Modular': 'Total', 'Conector PCIe 5.0': 'Não', 'Garantia': '10 anos' },
     precos: [
       { loja: 'kabum', preco: 559, url: 'https://www.kabum.com.br/produto/nzxt-c750?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 55,90' },
@@ -473,6 +518,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'thermaltake-smart-600w', marca: 'Thermaltake', nome: 'Smart 600W', categoria: 'fontes', score: 58, tier: 'entrada',
+    imagem: 'https://m.media-amazon.com/images/I/71GNnNSyIrL._AC_SL320_.jpg',
     specs: { 'Potência (W)': 600, 'Selo': '80 Plus White', 'Modular': 'Não', 'Conector PCIe 5.0': 'Não', 'Garantia': '3 anos' },
     precos: [
       { loja: 'kabum', preco: 299, url: 'https://www.kabum.com.br/produto/thermaltake-smart-600w?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '6x R$ 49,83' },
@@ -480,6 +526,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'corsair-rm750-750w', marca: 'Corsair', nome: 'RM750 750W', categoria: 'fontes', score: 89, tier: 'high-end',
+    imagem: 'https://m.media-amazon.com/images/I/71VX0SPnbvL._AC_SL320_.jpg',
     specs: { 'Potência (W)': 750, 'Selo': '80 Plus Gold', 'Modular': 'Total', 'Conector PCIe 5.0': 'Sim (ATX 3.0)', 'Garantia': '10 anos' },
     precos: [
       { loja: 'kabum', preco: 649, url: 'https://www.kabum.com.br/produto/corsair-rm750?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 64,90' },
@@ -491,6 +538,7 @@ export const PRODUTOS: Produto[] = [
   // ══════════════════════════════════════
   {
     slug: 'nzxt-kraken-240', marca: 'NZXT', nome: 'Kraken 240', categoria: 'coolers', score: 89, tier: 'high-end',
+    imagem: 'https://m.media-amazon.com/images/I/61HGp8olR1L._AC_SL320_.jpg',
     specs: { 'Tipo': 'Água (AIO 240mm)', 'TDP (W)': 280, 'Tamanho (mm)': 240, 'Ruído (dBA)': 30, 'Soquetes': 'AM5/AM4/LGA1700' },
     precos: [
       { loja: 'kabum', preco: 799, url: 'https://www.kabum.com.br/produto/nzxt-kraken-240?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 79,90' },
@@ -498,6 +546,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'corsair-icue-h100i-elite', marca: 'Corsair', nome: 'iCUE H100i Elite', categoria: 'coolers', score: 90, tier: 'high-end',
+    imagem: 'https://m.media-amazon.com/images/I/61oVmEzqeUL._AC_SL320_.jpg',
     specs: { 'Tipo': 'Água (AIO 240mm)', 'TDP (W)': 280, 'Tamanho (mm)': 240, 'Ruído (dBA)': 31, 'Soquetes': 'AM5/AM4/LGA1700' },
     precos: [
       { loja: 'kabum', preco: 899, url: 'https://www.kabum.com.br/produto/corsair-h100i-elite?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 89,90' },
@@ -519,6 +568,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'arctic-freezer-36', marca: 'Arctic', nome: 'Freezer 36', categoria: 'coolers', score: 86, tier: 'mid-range',
+    imagem: 'https://m.media-amazon.com/images/I/710Z5PcNlLL._AC_SL320_.jpg',
     specs: { 'Tipo': 'Ar (torre dupla)', 'TDP (W)': 230, 'Tamanho (mm)': 159, 'Ruído (dBA)': 25, 'Soquetes': 'AM5/AM4/LGA1700' },
     precos: [
       { loja: 'kabum', preco: 259, url: 'https://www.kabum.com.br/produto/arctic-freezer-36?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '6x R$ 43,16' },
@@ -526,6 +576,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'thermalright-frozen-notte-360', marca: 'Thermalright', nome: 'Frozen Notte 360 ARGB', categoria: 'coolers', score: 89, tier: 'high-end',
+    imagem: 'https://m.media-amazon.com/images/I/61-Hwk0DxCL._AC_SL320_.jpg',
     specs: { 'Tipo': 'Água (AIO 360mm)', 'TDP (W)': 300, 'Tamanho (mm)': 360, 'Ruído (dBA)': 30, 'Soquetes': 'AM5/AM4/LGA1700' },
     precos: [
       { loja: 'kabum', preco: 549, url: 'https://www.kabum.com.br/produto/thermalright-frozen-notte-360?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 54,90' },
@@ -533,6 +584,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'be-quiet-pure-rock-2', marca: 'be quiet!', nome: 'Pure Rock 2', categoria: 'coolers', score: 80, tier: 'mid-range',
+    imagem: 'https://m.media-amazon.com/images/I/71AxavpZsBL._AC_SL320_.jpg',
     specs: { 'Tipo': 'Ar (torre)', 'TDP (W)': 150, 'Tamanho (mm)': 155, 'Ruído (dBA)': 25, 'Soquetes': 'AM5/AM4/LGA1700' },
     precos: [
       { loja: 'kabum', preco: 269, url: 'https://www.kabum.com.br/produto/be-quiet-pure-rock-2?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '6x R$ 44,83' },
@@ -565,6 +617,7 @@ export const PRODUTOS: Produto[] = [
   // ══════════════════════════════════════
   {
     slug: 'gskill-trident-z5-neo-32gb-ddr5-6000', marca: 'G.Skill', nome: 'Trident Z5 Neo 32GB DDR5 6000MHz', categoria: 'memorias', score: 91, tier: 'high-end',
+    imagem: 'https://m.media-amazon.com/images/I/51jIjdpZBfL._AC_SL320_.jpg',
     specs: { 'Capacidade': '32 GB', 'Tipo': 'DDR5', 'Frequência (MHz)': 6000, 'Latência (CL)': 30, 'Kit': '2x16GB' },
     precos: [
       { loja: 'kabum', preco: 869, url: 'https://www.kabum.com.br/produto/gskill-trident-z5-neo-32gb?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 86,90' },
@@ -572,6 +625,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'teamgroup-tforce-delta-32gb-ddr5-6000', marca: 'TeamGroup', nome: 'T-Force Delta RGB 32GB DDR5 6000MHz', categoria: 'memorias', score: 87, tier: 'mid-range',
+    imagem: 'https://m.media-amazon.com/images/I/81JEfdUVCTL._AC_SL320_.jpg',
     specs: { 'Capacidade': '32 GB', 'Tipo': 'DDR5', 'Frequência (MHz)': 6000, 'Latência (CL)': 30, 'Kit': '2x16GB' },
     precos: [
       { loja: 'kabum', preco: 799, url: 'https://www.kabum.com.br/produto/tforce-delta-32gb-ddr5?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 79,90' },
@@ -579,6 +633,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'kingston-fury-renegade-32gb-ddr5-6400', marca: 'Kingston', nome: 'Fury Renegade 32GB DDR5 6400MHz', categoria: 'memorias', score: 92, tier: 'high-end',
+    imagem: 'https://m.media-amazon.com/images/I/61tbFEFVHFL._AC_SL320_.jpg',
     specs: { 'Capacidade': '32 GB', 'Tipo': 'DDR5', 'Frequência (MHz)': 6400, 'Latência (CL)': 32, 'Kit': '2x16GB' },
     precos: [
       { loja: 'kabum', preco: 999, url: 'https://www.kabum.com.br/produto/kingston-fury-renegade-32gb?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 99,90' },
@@ -586,6 +641,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'corsair-vengeance-lpx-32gb-ddr4-3600', marca: 'Corsair', nome: 'Vengeance LPX 32GB DDR4 3600MHz', categoria: 'memorias', score: 80, tier: 'mid-range',
+    imagem: 'https://m.media-amazon.com/images/I/51gLnYN1W7L._AC_SL320_.jpg',
     specs: { 'Capacidade': '32 GB', 'Tipo': 'DDR4', 'Frequência (MHz)': 3600, 'Latência (CL)': 18, 'Kit': '2x16GB' },
     precos: [
       { loja: 'kabum', preco: 599, url: 'https://www.kabum.com.br/produto/corsair-vengeance-lpx-32gb-ddr4?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 59,90' },
@@ -594,6 +650,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'adata-xpg-lancer-32gb-ddr5-6000', marca: 'ADATA', nome: 'XPG Lancer 32GB DDR5 6000MHz', categoria: 'memorias', score: 85, tier: 'mid-range',
+    imagem: 'https://m.media-amazon.com/images/I/51mPMidQV5L._AC_SL320_.jpg',
     specs: { 'Capacidade': '32 GB', 'Tipo': 'DDR5', 'Frequência (MHz)': 6000, 'Latência (CL)': 30, 'Kit': '2x16GB' },
     precos: [
       { loja: 'kabum', preco: 769, url: 'https://www.kabum.com.br/produto/xpg-lancer-32gb-ddr5?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 76,90' },
@@ -601,6 +658,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'patriot-viper-venom-32gb-ddr5-6000', marca: 'Patriot', nome: 'Viper Venom 32GB DDR5 6000MHz', categoria: 'memorias', score: 86, tier: 'mid-range',
+    imagem: 'https://m.media-amazon.com/images/I/71AV5PQu1yL._AC_SL320_.jpg',
     specs: { 'Capacidade': '32 GB', 'Tipo': 'DDR5', 'Frequência (MHz)': 6000, 'Latência (CL)': 30, 'Kit': '2x16GB' },
     precos: [
       { loja: 'kabum', preco: 789, url: 'https://www.kabum.com.br/produto/patriot-viper-venom-32gb?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 78,90' },
@@ -608,6 +666,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'crucial-pro-32gb-ddr5-5600', marca: 'Crucial', nome: 'Pro 32GB DDR5 5600MHz', categoria: 'memorias', score: 82, tier: 'mid-range',
+    imagem: 'https://m.media-amazon.com/images/I/51qZqQI02oL._AC_SL320_.jpg',
     specs: { 'Capacidade': '32 GB', 'Tipo': 'DDR5', 'Frequência (MHz)': 5600, 'Latência (CL)': 46, 'Kit': '2x16GB' },
     precos: [
       { loja: 'kabum', preco: 699, url: 'https://www.kabum.com.br/produto/crucial-pro-32gb-ddr5?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 69,90' },
@@ -615,6 +674,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'gskill-ripjaws-v-16gb-ddr4-3200', marca: 'G.Skill', nome: 'Ripjaws V 16GB DDR4 3200MHz', categoria: 'memorias', score: 72, tier: 'entrada',
+    imagem: 'https://m.media-amazon.com/images/I/618SEnJR1nL._AC_SL320_.jpg',
     specs: { 'Capacidade': '16 GB', 'Tipo': 'DDR4', 'Frequência (MHz)': 3200, 'Latência (CL)': 16, 'Kit': '2x8GB' },
     precos: [
       { loja: 'kabum', preco: 299, url: 'https://www.kabum.com.br/produto/gskill-ripjaws-v-16gb-ddr4?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '6x R$ 49,83' },
@@ -622,6 +682,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'kingston-fury-beast-rgb-32gb-ddr5-6000', marca: 'Kingston', nome: 'Fury Beast RGB 32GB DDR5 6000MHz', categoria: 'memorias', score: 88, tier: 'mid-range',
+    imagem: 'https://m.media-amazon.com/images/I/717cPftxQgL._AC_SL320_.jpg',
     specs: { 'Capacidade': '32 GB', 'Tipo': 'DDR5', 'Frequência (MHz)': 6000, 'Latência (CL)': 36, 'Kit': '2x16GB' },
     precos: [
       { loja: 'kabum', preco: 849, url: 'https://www.kabum.com.br/produto/kingston-fury-beast-rgb-32gb?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 84,90' },
@@ -629,6 +690,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'teamgroup-elite-16gb-ddr4-3200', marca: 'TeamGroup', nome: 'Elite 16GB DDR4 3200MHz', categoria: 'memorias', score: 68, tier: 'entrada',
+    imagem: 'https://m.media-amazon.com/images/I/81lsEPvoOqL._AC_SL320_.jpg',
     specs: { 'Capacidade': '16 GB', 'Tipo': 'DDR4', 'Frequência (MHz)': 3200, 'Latência (CL)': 22, 'Kit': '1x16GB' },
     precos: [
       { loja: 'kabum', preco: 259, url: 'https://www.kabum.com.br/produto/teamgroup-elite-16gb-ddr4?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '6x R$ 43,16' },
@@ -640,6 +702,7 @@ export const PRODUTOS: Produto[] = [
   // ══════════════════════════════════════
   {
     slug: 'lg-ultragear-32gn600', marca: 'LG', nome: 'UltraGear 32GN600', categoria: 'monitores', score: 84, tier: 'mid-range',
+    imagem: 'https://m.media-amazon.com/images/I/71qs7g2gluL._AC_SL320_.jpg',
     specs: { 'Polegadas': 32, 'Painel': 'VA', 'Resolução': 'QHD 2560x1440', 'Taxa (Hz)': 165, 'Resposta (ms)': 1 },
     precos: [
       { loja: 'kabum', preco: 1499, url: 'https://www.kabum.com.br/produto/lg-32gn600?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 149,90' },
@@ -648,6 +711,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'samsung-odyssey-g5-27', marca: 'Samsung', nome: 'Odyssey G5 27"', categoria: 'monitores', score: 82, tier: 'mid-range',
+    imagem: 'https://m.media-amazon.com/images/I/61Jv+Gj6aBL._AC_SL320_.jpg',
     specs: { 'Polegadas': 27, 'Painel': 'VA', 'Resolução': 'QHD 2560x1440', 'Taxa (Hz)': 165, 'Resposta (ms)': 1 },
     precos: [
       { loja: 'kabum', preco: 1299, url: 'https://www.kabum.com.br/produto/samsung-odyssey-g5-27?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 129,90' },
@@ -662,6 +726,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'gigabyte-g24f-2', marca: 'Gigabyte', nome: 'G24F 2 24"', categoria: 'monitores', score: 81, tier: 'mid-range',
+    imagem: 'https://m.media-amazon.com/images/I/51zYOMVkgnL._AC_SL320_.jpg',
     specs: { 'Polegadas': 24, 'Painel': 'IPS', 'Resolução': 'Full HD 1920x1080', 'Taxa (Hz)': 180, 'Resposta (ms)': 1 },
     precos: [
       { loja: 'kabum', preco: 999, url: 'https://www.kabum.com.br/produto/gigabyte-g24f-2?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 99,90' },
@@ -683,6 +748,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'samsung-odyssey-g4-25', marca: 'Samsung', nome: 'Odyssey G4 25"', categoria: 'monitores', score: 83, tier: 'mid-range',
+    imagem: 'https://m.media-amazon.com/images/I/81ZFyP9atiL._AC_SL320_.jpg',
     specs: { 'Polegadas': 25, 'Painel': 'IPS', 'Resolução': 'Full HD 1920x1080', 'Taxa (Hz)': 240, 'Resposta (ms)': 1 },
     precos: [
       { loja: 'kabum', preco: 1399, url: 'https://www.kabum.com.br/produto/samsung-odyssey-g4-25?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 139,90' },
@@ -715,6 +781,7 @@ export const PRODUTOS: Produto[] = [
   // ══════════════════════════════════════
   {
     slug: 'samsung-980-pro-2tb', marca: 'Samsung', nome: '980 Pro 2TB', categoria: 'ssds', score: 93, tier: 'high-end',
+    imagem: 'https://m.media-amazon.com/images/I/71KeDAkw+0L._AC_SL320_.jpg',
     specs: { 'Capacidade': '2 TB', 'Interface': 'NVMe Gen4', 'Leitura (MB/s)': 7000, 'Gravação (MB/s)': 5100, 'Cache DRAM': 'Sim' },
     precos: [
       { loja: 'kabum', preco: 1199, url: 'https://www.kabum.com.br/produto/samsung-980-pro-2tb?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 119,90' },
@@ -723,6 +790,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'wd-black-sn770-1tb', marca: 'Western Digital', nome: 'WD Black SN770 1TB', categoria: 'ssds', score: 86, tier: 'mid-range',
+    imagem: 'https://m.media-amazon.com/images/I/414kTltLARL._AC_SL320_.jpg',
     specs: { 'Capacidade': '1 TB', 'Interface': 'NVMe Gen4', 'Leitura (MB/s)': 5150, 'Gravação (MB/s)': 4900, 'Cache DRAM': 'Não' },
     precos: [
       { loja: 'kabum', preco: 549, url: 'https://www.kabum.com.br/produto/wd-black-sn770-1tb?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 54,90' },
@@ -730,6 +798,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'kingston-kc3000-1tb', marca: 'Kingston', nome: 'KC3000 1TB', categoria: 'ssds', score: 90, tier: 'high-end',
+    imagem: 'https://m.media-amazon.com/images/I/61b1pY91OlL._AC_SL320_.jpg',
     specs: { 'Capacidade': '1 TB', 'Interface': 'NVMe Gen4', 'Leitura (MB/s)': 7000, 'Gravação (MB/s)': 6000, 'Cache DRAM': 'Sim' },
     precos: [
       { loja: 'kabum', preco: 699, url: 'https://www.kabum.com.br/produto/kingston-kc3000-1tb?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 69,90' },
@@ -737,6 +806,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'crucial-p3-1tb', marca: 'Crucial', nome: 'P3 1TB', categoria: 'ssds', score: 78, tier: 'entrada',
+    imagem: 'https://m.media-amazon.com/images/I/51iNNIdPqkL._AC_SL320_.jpg',
     specs: { 'Capacidade': '1 TB', 'Interface': 'NVMe Gen3', 'Leitura (MB/s)': 3500, 'Gravação (MB/s)': 3000, 'Cache DRAM': 'Não' },
     precos: [
       { loja: 'kabum', preco: 379, url: 'https://www.kabum.com.br/produto/crucial-p3-1tb?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '8x R$ 47,38' },
@@ -745,6 +815,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'adata-legend-800-1tb', marca: 'ADATA', nome: 'Legend 800 1TB', categoria: 'ssds', score: 80, tier: 'entrada',
+    imagem: 'https://m.media-amazon.com/images/I/51JWjuCsoNL._AC_SL320_.jpg',
     specs: { 'Capacidade': '1 TB', 'Interface': 'NVMe Gen4', 'Leitura (MB/s)': 3500, 'Gravação (MB/s)': 2800, 'Cache DRAM': 'Não' },
     precos: [
       { loja: 'kabum', preco: 429, url: 'https://www.kabum.com.br/produto/adata-legend-800-1tb?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '8x R$ 53,63' },
@@ -759,6 +830,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'samsung-870-evo-1tb', marca: 'Samsung', nome: '870 EVO 1TB', categoria: 'ssds', score: 74, tier: 'entrada',
+    imagem: 'https://m.media-amazon.com/images/I/911ujeCkGfL._AC_SL320_.jpg',
     specs: { 'Capacidade': '1 TB', 'Interface': 'SATA III', 'Leitura (MB/s)': 560, 'Gravação (MB/s)': 530, 'Cache DRAM': 'Sim' },
     precos: [
       { loja: 'kabum', preco: 499, url: 'https://www.kabum.com.br/produto/samsung-870-evo-1tb?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 49,90' },
@@ -767,6 +839,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'crucial-mx500-1tb', marca: 'Crucial', nome: 'MX500 1TB', categoria: 'ssds', score: 73, tier: 'entrada',
+    imagem: 'https://m.media-amazon.com/images/I/61qpwctb5uL._AC_SL320_.jpg',
     specs: { 'Capacidade': '1 TB', 'Interface': 'SATA III', 'Leitura (MB/s)': 560, 'Gravação (MB/s)': 510, 'Cache DRAM': 'Sim' },
     precos: [
       { loja: 'kabum', preco: 469, url: 'https://www.kabum.com.br/produto/crucial-mx500-1tb?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 46,90' },
@@ -774,6 +847,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'kingston-nv2-500gb', marca: 'Kingston', nome: 'NV2 500GB', categoria: 'ssds', score: 70, tier: 'entrada',
+    imagem: 'https://m.media-amazon.com/images/I/71NfMZKkpQL._AC_SL320_.jpg',
     specs: { 'Capacidade': '500 GB', 'Interface': 'NVMe Gen4', 'Leitura (MB/s)': 3500, 'Gravação (MB/s)': 2100, 'Cache DRAM': 'Não' },
     precos: [
       { loja: 'kabum', preco: 249, url: 'https://www.kabum.com.br/produto/kingston-nv2-500gb?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '6x R$ 41,50' },
@@ -781,6 +855,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'wd-blue-sa510-500gb', marca: 'Western Digital', nome: 'WD Blue SA510 500GB', categoria: 'ssds', score: 68, tier: 'entrada',
+    imagem: 'https://m.media-amazon.com/images/I/71s1mOypsUL._AC_SL320_.jpg',
     specs: { 'Capacidade': '500 GB', 'Interface': 'SATA III', 'Leitura (MB/s)': 560, 'Gravação (MB/s)': 510, 'Cache DRAM': 'Sim' },
     precos: [
       { loja: 'kabum', preco: 279, url: 'https://www.kabum.com.br/produto/wd-blue-sa510-500gb?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '6x R$ 46,50' },
@@ -792,6 +867,7 @@ export const PRODUTOS: Produto[] = [
   // ══════════════════════════════════════
   {
     slug: 'nvidia-geforce-rtx-5080', marca: 'NVIDIA', nome: 'GeForce RTX 5080', categoria: 'gpus', score: 96, tier: 'flagship',
+    imagem: 'https://m.media-amazon.com/images/I/81a-sVwj8FL._AC_SL320_.jpg',
     specs: { 'VRAM': '16 GB GDDR7', 'Consumo (W)': 360, 'Clock Boost (GHz)': 2.62, 'Ray Tracing': 'Sim (4ª gen)', 'Barramento': '256-bit' },
     precos: [
       { loja: 'kabum', preco: 10499, url: 'https://www.kabum.com.br/produto/rtx-5080?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '12x R$ 874,92' },
@@ -800,6 +876,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'nvidia-geforce-rtx-5070', marca: 'NVIDIA', nome: 'GeForce RTX 5070', categoria: 'gpus', score: 90, tier: 'high-end',
+    imagem: 'https://m.media-amazon.com/images/I/61r4E88gZGL._AC_SL320_.jpg',
     specs: { 'VRAM': '12 GB GDDR7', 'Consumo (W)': 250, 'Clock Boost (GHz)': 2.51, 'Ray Tracing': 'Sim (4ª gen)', 'Barramento': '192-bit' },
     precos: [
       { loja: 'kabum', preco: 4899, url: 'https://www.kabum.com.br/produto/rtx-5070?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '12x R$ 408,25' },
@@ -808,6 +885,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'nvidia-geforce-rtx-4080', marca: 'NVIDIA', nome: 'GeForce RTX 4080', categoria: 'gpus', score: 94, tier: 'high-end',
+    imagem: 'https://m.media-amazon.com/images/I/71FnZ0aXR2L._AC_SL320_.jpg',
     specs: { 'VRAM': '16 GB GDDR6X', 'Consumo (W)': 320, 'Clock Boost (GHz)': 2.51, 'Ray Tracing': 'Sim (3ª gen)', 'Barramento': '256-bit' },
     precos: [
       { loja: 'kabum', preco: 8999, url: 'https://www.kabum.com.br/produto/rtx-4080?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '12x R$ 749,92' },
@@ -816,6 +894,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'nvidia-geforce-rtx-3070', marca: 'NVIDIA', nome: 'GeForce RTX 3070', categoria: 'gpus', score: 85, tier: 'mid-range',
+    imagem: 'https://m.media-amazon.com/images/I/51zQkvYUnSL._AC_SL320_.jpg',
     specs: { 'VRAM': '8 GB GDDR6', 'Consumo (W)': 220, 'Clock Boost (GHz)': 1.73, 'Ray Tracing': 'Sim (2ª gen)', 'Barramento': '256-bit' },
     precos: [
       { loja: 'kabum', preco: 2799, url: 'https://www.kabum.com.br/produto/rtx-3070?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '12x R$ 233,25' },
@@ -823,6 +902,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'nvidia-geforce-rtx-3060-ti', marca: 'NVIDIA', nome: 'GeForce RTX 3060 Ti', categoria: 'gpus', score: 83, tier: 'mid-range',
+    imagem: 'https://m.media-amazon.com/images/I/61OZT+94I8L._AC_SL320_.jpg',
     specs: { 'VRAM': '8 GB GDDR6', 'Consumo (W)': 200, 'Clock Boost (GHz)': 1.67, 'Ray Tracing': 'Sim (2ª gen)', 'Barramento': '256-bit' },
     precos: [
       { loja: 'kabum', preco: 2299, url: 'https://www.kabum.com.br/produto/rtx-3060-ti?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '12x R$ 191,58' },
@@ -830,6 +910,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'amd-radeon-rx-6700-xt', marca: 'AMD', nome: 'Radeon RX 6700 XT', categoria: 'gpus', score: 82, tier: 'mid-range',
+    imagem: 'https://m.media-amazon.com/images/I/81L7-qPS0ZL._AC_SL320_.jpg',
     specs: { 'VRAM': '12 GB GDDR6', 'Consumo (W)': 230, 'Clock Boost (GHz)': 2.58, 'Ray Tracing': 'Sim (1ª gen)', 'Barramento': '192-bit' },
     precos: [
       { loja: 'kabum', preco: 2199, url: 'https://www.kabum.com.br/produto/rx-6700-xt?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '12x R$ 183,25' },
@@ -844,6 +925,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'amd-radeon-rx-6650-xt', marca: 'AMD', nome: 'Radeon RX 6650 XT', categoria: 'gpus', score: 78, tier: 'entrada',
+    imagem: 'https://m.media-amazon.com/images/I/71SNd1LPeOL._AC_SL320_.jpg',
     specs: { 'VRAM': '8 GB GDDR6', 'Consumo (W)': 180, 'Clock Boost (GHz)': 2.64, 'Ray Tracing': 'Sim (1ª gen)', 'Barramento': '128-bit' },
     precos: [
       { loja: 'kabum', preco: 1699, url: 'https://www.kabum.com.br/produto/rx-6650-xt?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '12x R$ 141,58' },
@@ -851,6 +933,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'intel-arc-b580', marca: 'Intel', nome: 'Arc B580', categoria: 'gpus', score: 80, tier: 'mid-range',
+    imagem: 'https://m.media-amazon.com/images/I/81igM3aW65L._AC_SL320_.jpg',
     specs: { 'VRAM': '12 GB GDDR6', 'Consumo (W)': 190, 'Clock Boost (GHz)': 2.67, 'Ray Tracing': 'Sim', 'Barramento': '192-bit' },
     precos: [
       { loja: 'kabum', preco: 1899, url: 'https://www.kabum.com.br/produto/intel-arc-b580?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '12x R$ 158,25' },
@@ -858,6 +941,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'amd-radeon-rx-6500-xt', marca: 'AMD', nome: 'Radeon RX 6500 XT', categoria: 'gpus', score: 65, tier: 'entrada',
+    imagem: 'https://m.media-amazon.com/images/I/61AzTXUQJhL._AC_SL320_.jpg',
     specs: { 'VRAM': '4 GB GDDR6', 'Consumo (W)': 107, 'Clock Boost (GHz)': 2.82, 'Ray Tracing': 'Sim (1ª gen)', 'Barramento': '64-bit' },
     precos: [
       { loja: 'kabum', preco: 899, url: 'https://www.kabum.com.br/produto/rx-6500-xt?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 89,90' },
@@ -869,6 +953,7 @@ export const PRODUTOS: Produto[] = [
   // ══════════════════════════════════════
   {
     slug: 'intel-core-i5-13600k', marca: 'Intel', nome: 'Core i5-13600K', categoria: 'processadores', score: 90, tier: 'high-end',
+    imagem: 'https://m.media-amazon.com/images/I/61lNEpDfdcL._AC_SL320_.jpg',
     specs: { 'Núcleos': 14, 'Threads': 20, 'Clock Boost (GHz)': 5.1, 'Soquete': 'LGA1700', 'Consumo (W)': 125 },
     precos: [
       { loja: 'kabum', preco: 1499, url: 'https://www.kabum.com.br/produto/intel-core-i5-13600k?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 149,90' },
@@ -878,6 +963,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'intel-core-i5-14400f', marca: 'Intel', nome: 'Core i5-14400F', categoria: 'processadores', score: 82, tier: 'mid-range',
+    imagem: 'https://m.media-amazon.com/images/I/611rIbNXc1L._AC_SL320_.jpg',
     specs: { 'Núcleos': 10, 'Threads': 16, 'Clock Boost (GHz)': 4.7, 'Soquete': 'LGA1700', 'Consumo (W)': 65 },
     precos: [
       { loja: 'kabum', preco: 899, url: 'https://www.kabum.com.br/produto/intel-core-i5-14400f?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 89,90' },
@@ -886,6 +972,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'intel-core-i7-13700k', marca: 'Intel', nome: 'Core i7-13700K', categoria: 'processadores', score: 93, tier: 'high-end',
+    imagem: 'https://m.media-amazon.com/images/I/61IUbGdPo6L._AC_SL320_.jpg',
     specs: { 'Núcleos': 16, 'Threads': 24, 'Clock Boost (GHz)': 5.4, 'Soquete': 'LGA1700', 'Consumo (W)': 125 },
     precos: [
       { loja: 'kabum', preco: 1999, url: 'https://www.kabum.com.br/produto/intel-core-i7-13700k?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 199,90' },
@@ -894,6 +981,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'amd-ryzen-7-5700x', marca: 'AMD', nome: 'Ryzen 7 5700X', categoria: 'processadores', score: 82, tier: 'mid-range',
+    imagem: 'https://m.media-amazon.com/images/I/51gRv8z+K6L._AC_SL320_.jpg',
     specs: { 'Núcleos': 8, 'Threads': 16, 'Clock Boost (GHz)': 4.6, 'Soquete': 'AM4', 'Consumo (W)': 65 },
     precos: [
       { loja: 'kabum', preco: 899, url: 'https://www.kabum.com.br/produto/amd-ryzen-7-5700x?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 89,90' },
@@ -902,6 +990,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'amd-ryzen-7-5800x3d', marca: 'AMD', nome: 'Ryzen 7 5800X3D', categoria: 'processadores', score: 91, tier: 'high-end',
+    imagem: 'https://m.media-amazon.com/images/I/61vkFq7H9tL._AC_SL320_.jpg',
     specs: { 'Núcleos': 8, 'Threads': 16, 'Clock Boost (GHz)': 4.5, 'Soquete': 'AM4', 'Consumo (W)': 105 },
     precos: [
       { loja: 'kabum', preco: 1699, url: 'https://www.kabum.com.br/produto/amd-ryzen-7-5800x3d?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 169,90' },
@@ -910,6 +999,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'amd-ryzen-9-7900x', marca: 'AMD', nome: 'Ryzen 9 7900X', categoria: 'processadores', score: 92, tier: 'high-end',
+    imagem: 'https://m.media-amazon.com/images/I/51OEiWrUtqL._AC_SL320_.jpg',
     specs: { 'Núcleos': 12, 'Threads': 24, 'Clock Boost (GHz)': 5.6, 'Soquete': 'AM5', 'Consumo (W)': 170 },
     precos: [
       { loja: 'kabum', preco: 2399, url: 'https://www.kabum.com.br/produto/amd-ryzen-9-7900x?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 239,90' },
@@ -918,6 +1008,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'intel-core-i9-13900k', marca: 'Intel', nome: 'Core i9-13900K', categoria: 'processadores', score: 95, tier: 'flagship',
+    imagem: 'https://m.media-amazon.com/images/I/51CsbchCa-L._AC_SL320_.jpg',
     specs: { 'Núcleos': 24, 'Threads': 32, 'Clock Boost (GHz)': 5.8, 'Soquete': 'LGA1700', 'Consumo (W)': 125 },
     precos: [
       { loja: 'kabum', preco: 2899, url: 'https://www.kabum.com.br/produto/intel-core-i9-13900k?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 289,90' },
@@ -926,6 +1017,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'intel-core-i3-14100f', marca: 'Intel', nome: 'Core i3-14100F', categoria: 'processadores', score: 70, tier: 'entrada',
+    imagem: 'https://m.media-amazon.com/images/I/612vOhWmeIL._AC_SL320_.jpg',
     specs: { 'Núcleos': 4, 'Threads': 8, 'Clock Boost (GHz)': 4.7, 'Soquete': 'LGA1700', 'Consumo (W)': 58 },
     precos: [
       { loja: 'kabum', preco: 599, url: 'https://www.kabum.com.br/produto/intel-core-i3-14100f?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '8x R$ 74,88' },
@@ -934,6 +1026,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'amd-ryzen-5-7500f', marca: 'AMD', nome: 'Ryzen 5 7500F', categoria: 'processadores', score: 84, tier: 'mid-range',
+    imagem: 'https://m.media-amazon.com/images/I/71SwhaQlpAL._AC_SL320_.jpg',
     specs: { 'Núcleos': 6, 'Threads': 12, 'Clock Boost (GHz)': 5.0, 'Soquete': 'AM5', 'Consumo (W)': 65 },
     precos: [
       { loja: 'kabum', preco: 1049, url: 'https://www.kabum.com.br/produto/amd-ryzen-5-7500f?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 104,90' },
@@ -942,6 +1035,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'amd-ryzen-7-7700', marca: 'AMD', nome: 'Ryzen 7 7700', categoria: 'processadores', score: 89, tier: 'high-end',
+    imagem: 'https://m.media-amazon.com/images/I/51hfER1cZVL._AC_SL320_.jpg',
     specs: { 'Núcleos': 8, 'Threads': 16, 'Clock Boost (GHz)': 5.3, 'Soquete': 'AM5', 'Consumo (W)': 65 },
     precos: [
       { loja: 'kabum', preco: 1799, url: 'https://www.kabum.com.br/produto/amd-ryzen-7-7700?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 179,90' },
@@ -1696,6 +1790,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'corsair-hx1000-1000w', marca: 'Corsair', nome: 'HX1000 1000W', categoria: 'fontes', score: 93,
+    imagem: 'https://m.media-amazon.com/images/I/71x2jzPR5fL._AC_SL320_.jpg',
     specs: { 'Potência (W)': 1000, 'Selo': '80 Plus Platinum', 'Modular': 'Total', 'Conector PCIe 5.0': 'Sim (ATX 3.0)', 'Garantia': '10 anos' },
     precos: [
       { loja: 'kabum', preco: 1199, url: 'https://www.kabum.com.br/produto/corsair-hx1000?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 119,90' },
@@ -1987,6 +2082,7 @@ export const PRODUTOS: Produto[] = [
   // ── Fontes (novos) ──
   {
     slug: 'corsair-rm650e-650w', marca: 'Corsair', nome: 'RM650e 650W', categoria: 'fontes', score: 84,
+    imagem: 'https://m.media-amazon.com/images/I/71grFXVil3L._AC_SL320_.jpg',
     specs: { 'Potência (W)': 650, 'Selo': '80 Plus Gold', 'Modular': 'Total', 'Conector PCIe 5.0': 'Sim (ATX 3.0)', 'Garantia': '7 anos' },
     precos: [
       { loja: 'kabum', preco: 499, url: 'https://www.kabum.com.br/produto/corsair-rm650e?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '8x R$ 62,38' },
@@ -2281,6 +2377,7 @@ export const PRODUTOS: Produto[] = [
   {
     slug: 'corsair-cv550-550w', marca: 'Corsair', nome: 'CV550 550W', categoria: 'fontes', score: 68,
     scoreCustoBeneficio: 86, tier: 'entrada', anoLancamento: 2020,
+    imagem: 'https://m.media-amazon.com/images/I/61UyJjVZcBL._AC_SL320_.jpg',
     specs: { 'Potência (W)': 550, 'Selo': '80 Plus Bronze', 'Modular': 'Não', 'PCIe 6+2': '2 conectores', 'Ventoinha': '120 mm', 'Garantia': '3 anos' },
     precos: [{ loja: 'amazon', preco: 329, url: 'https://www.amazon.com.br/s?k=corsair+cv550&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '6x R$ 54,83' }],
     descricao: 'A Corsair CV550 é uma fonte Bronze básica para PCs domésticos e gamers de entrada. Entrega 550W contínuos, possui proteções elétricas e dois conectores PCIe, mas seus cabos são fixos e a garantia é menor que a da MSI A550BN.',
