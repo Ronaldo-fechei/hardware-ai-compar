@@ -115,6 +115,310 @@ export const CATEGORIAS: CategoriaConfig[] = [
 
 export const PRODUTOS: Produto[] = [
   // ══════════════════════════════════════
+  // NOVAS MEMORIAS
+  // ══════════════════════════════════════
+  {
+    slug: 'gskill-trident-z5-neo-32gb-ddr5-6000', marca: 'G.Skill', nome: 'Trident Z5 Neo 32GB DDR5 6000MHz', categoria: 'memorias', score: 91, tier: 'high-end',
+    specs: { 'Capacidade': '32 GB', 'Tipo': 'DDR5', 'Frequência (MHz)': 6000, 'Latência (CL)': 30, 'Kit': '2x16GB' },
+    precos: [
+      { loja: 'kabum', preco: 869, url: 'https://www.kabum.com.br/produto/gskill-trident-z5-neo-32gb?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 86,90' },
+    ],
+  },
+  {
+    slug: 'teamgroup-tforce-delta-32gb-ddr5-6000', marca: 'TeamGroup', nome: 'T-Force Delta RGB 32GB DDR5 6000MHz', categoria: 'memorias', score: 87, tier: 'mid-range',
+    specs: { 'Capacidade': '32 GB', 'Tipo': 'DDR5', 'Frequência (MHz)': 6000, 'Latência (CL)': 30, 'Kit': '2x16GB' },
+    precos: [
+      { loja: 'kabum', preco: 799, url: 'https://www.kabum.com.br/produto/tforce-delta-32gb-ddr5?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 79,90' },
+    ],
+  },
+  {
+    slug: 'kingston-fury-renegade-32gb-ddr5-6400', marca: 'Kingston', nome: 'Fury Renegade 32GB DDR5 6400MHz', categoria: 'memorias', score: 92, tier: 'high-end',
+    specs: { 'Capacidade': '32 GB', 'Tipo': 'DDR5', 'Frequência (MHz)': 6400, 'Latência (CL)': 32, 'Kit': '2x16GB' },
+    precos: [
+      { loja: 'kabum', preco: 999, url: 'https://www.kabum.com.br/produto/kingston-fury-renegade-32gb?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 99,90' },
+    ],
+  },
+  {
+    slug: 'corsair-vengeance-lpx-32gb-ddr4-3600', marca: 'Corsair', nome: 'Vengeance LPX 32GB DDR4 3600MHz', categoria: 'memorias', score: 80, tier: 'mid-range',
+    specs: { 'Capacidade': '32 GB', 'Tipo': 'DDR4', 'Frequência (MHz)': 3600, 'Latência (CL)': 18, 'Kit': '2x16GB' },
+    precos: [
+      { loja: 'kabum', preco: 599, url: 'https://www.kabum.com.br/produto/corsair-vengeance-lpx-32gb-ddr4?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 59,90' },
+      { loja: 'amazon', preco: 629, url: 'https://www.amazon.com.br/s?k=corsair+vengeance+lpx+32gb+ddr4+3600&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '10x R$ 62,90' },
+    ],
+  },
+  {
+    slug: 'adata-xpg-lancer-32gb-ddr5-6000', marca: 'ADATA', nome: 'XPG Lancer 32GB DDR5 6000MHz', categoria: 'memorias', score: 85, tier: 'mid-range',
+    specs: { 'Capacidade': '32 GB', 'Tipo': 'DDR5', 'Frequência (MHz)': 6000, 'Latência (CL)': 30, 'Kit': '2x16GB' },
+    precos: [
+      { loja: 'kabum', preco: 769, url: 'https://www.kabum.com.br/produto/xpg-lancer-32gb-ddr5?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 76,90' },
+    ],
+  },
+  {
+    slug: 'patriot-viper-venom-32gb-ddr5-6000', marca: 'Patriot', nome: 'Viper Venom 32GB DDR5 6000MHz', categoria: 'memorias', score: 86, tier: 'mid-range',
+    specs: { 'Capacidade': '32 GB', 'Tipo': 'DDR5', 'Frequência (MHz)': 6000, 'Latência (CL)': 30, 'Kit': '2x16GB' },
+    precos: [
+      { loja: 'kabum', preco: 789, url: 'https://www.kabum.com.br/produto/patriot-viper-venom-32gb?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 78,90' },
+    ],
+  },
+  {
+    slug: 'crucial-pro-32gb-ddr5-5600', marca: 'Crucial', nome: 'Pro 32GB DDR5 5600MHz', categoria: 'memorias', score: 82, tier: 'mid-range',
+    specs: { 'Capacidade': '32 GB', 'Tipo': 'DDR5', 'Frequência (MHz)': 5600, 'Latência (CL)': 46, 'Kit': '2x16GB' },
+    precos: [
+      { loja: 'kabum', preco: 699, url: 'https://www.kabum.com.br/produto/crucial-pro-32gb-ddr5?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 69,90' },
+    ],
+  },
+  {
+    slug: 'gskill-ripjaws-v-16gb-ddr4-3200', marca: 'G.Skill', nome: 'Ripjaws V 16GB DDR4 3200MHz', categoria: 'memorias', score: 72, tier: 'entrada',
+    specs: { 'Capacidade': '16 GB', 'Tipo': 'DDR4', 'Frequência (MHz)': 3200, 'Latência (CL)': 16, 'Kit': '2x8GB' },
+    precos: [
+      { loja: 'kabum', preco: 299, url: 'https://www.kabum.com.br/produto/gskill-ripjaws-v-16gb-ddr4?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '6x R$ 49,83' },
+    ],
+  },
+  {
+    slug: 'kingston-fury-beast-rgb-32gb-ddr5-6000', marca: 'Kingston', nome: 'Fury Beast RGB 32GB DDR5 6000MHz', categoria: 'memorias', score: 88, tier: 'mid-range',
+    specs: { 'Capacidade': '32 GB', 'Tipo': 'DDR5', 'Frequência (MHz)': 6000, 'Latência (CL)': 36, 'Kit': '2x16GB' },
+    precos: [
+      { loja: 'kabum', preco: 849, url: 'https://www.kabum.com.br/produto/kingston-fury-beast-rgb-32gb?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 84,90' },
+    ],
+  },
+  {
+    slug: 'teamgroup-elite-16gb-ddr4-3200', marca: 'TeamGroup', nome: 'Elite 16GB DDR4 3200MHz', categoria: 'memorias', score: 68, tier: 'entrada',
+    specs: { 'Capacidade': '16 GB', 'Tipo': 'DDR4', 'Frequência (MHz)': 3200, 'Latência (CL)': 22, 'Kit': '1x16GB' },
+    precos: [
+      { loja: 'kabum', preco: 259, url: 'https://www.kabum.com.br/produto/teamgroup-elite-16gb-ddr4?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '6x R$ 43,16' },
+    ],
+  },
+
+  // ══════════════════════════════════════
+  // NOVOS MONITORES
+  // ══════════════════════════════════════
+  {
+    slug: 'lg-ultragear-32gn600', marca: 'LG', nome: 'UltraGear 32GN600', categoria: 'monitores', score: 84, tier: 'mid-range',
+    specs: { 'Polegadas': 32, 'Painel': 'VA', 'Resolução': 'QHD 2560x1440', 'Taxa (Hz)': 165, 'Resposta (ms)': 1 },
+    precos: [
+      { loja: 'kabum', preco: 1499, url: 'https://www.kabum.com.br/produto/lg-32gn600?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 149,90' },
+      { loja: 'amazon', preco: 1549, url: 'https://www.amazon.com.br/s?k=lg+ultragear+32gn600&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '10x R$ 154,90' },
+    ],
+  },
+  {
+    slug: 'samsung-odyssey-g5-27', marca: 'Samsung', nome: 'Odyssey G5 27"', categoria: 'monitores', score: 82, tier: 'mid-range',
+    specs: { 'Polegadas': 27, 'Painel': 'VA', 'Resolução': 'QHD 2560x1440', 'Taxa (Hz)': 165, 'Resposta (ms)': 1 },
+    precos: [
+      { loja: 'kabum', preco: 1299, url: 'https://www.kabum.com.br/produto/samsung-odyssey-g5-27?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 129,90' },
+    ],
+  },
+  {
+    slug: 'aoc-cq27g2', marca: 'AOC', nome: 'CQ27G2 27"', categoria: 'monitores', score: 80, tier: 'mid-range',
+    specs: { 'Polegadas': 27, 'Painel': 'VA', 'Resolução': 'QHD 2560x1440', 'Taxa (Hz)': 144, 'Resposta (ms)': 1 },
+    precos: [
+      { loja: 'kabum', preco: 1199, url: 'https://www.kabum.com.br/produto/aoc-cq27g2?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 119,90' },
+    ],
+  },
+  {
+    slug: 'gigabyte-g24f-2', marca: 'Gigabyte', nome: 'G24F 2 24"', categoria: 'monitores', score: 81, tier: 'mid-range',
+    specs: { 'Polegadas': 24, 'Painel': 'IPS', 'Resolução': 'Full HD 1920x1080', 'Taxa (Hz)': 180, 'Resposta (ms)': 1 },
+    precos: [
+      { loja: 'kabum', preco: 999, url: 'https://www.kabum.com.br/produto/gigabyte-g24f-2?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 99,90' },
+    ],
+  },
+  {
+    slug: 'asus-tuf-vg249q1a', marca: 'ASUS', nome: 'TUF VG249Q1A 24"', categoria: 'monitores', score: 79, tier: 'mid-range',
+    specs: { 'Polegadas': 24, 'Painel': 'IPS', 'Resolução': 'Full HD 1920x1080', 'Taxa (Hz)': 165, 'Resposta (ms)': 1 },
+    precos: [
+      { loja: 'kabum', preco: 949, url: 'https://www.kabum.com.br/produto/asus-tuf-vg249q1a?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 94,90' },
+    ],
+  },
+  {
+    slug: 'lg-24gn600', marca: 'LG', nome: 'UltraGear 24GN600 24"', categoria: 'monitores', score: 78, tier: 'entrada',
+    specs: { 'Polegadas': 24, 'Painel': 'IPS', 'Resolução': 'Full HD 1920x1080', 'Taxa (Hz)': 144, 'Resposta (ms)': 1 },
+    precos: [
+      { loja: 'kabum', preco: 899, url: 'https://www.kabum.com.br/produto/lg-24gn600?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 89,90' },
+    ],
+  },
+  {
+    slug: 'samsung-odyssey-g4-25', marca: 'Samsung', nome: 'Odyssey G4 25"', categoria: 'monitores', score: 83, tier: 'mid-range',
+    specs: { 'Polegadas': 25, 'Painel': 'IPS', 'Resolução': 'Full HD 1920x1080', 'Taxa (Hz)': 240, 'Resposta (ms)': 1 },
+    precos: [
+      { loja: 'kabum', preco: 1399, url: 'https://www.kabum.com.br/produto/samsung-odyssey-g4-25?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 139,90' },
+    ],
+  },
+  {
+    slug: 'aoc-24g15n', marca: 'AOC', nome: 'Gaming 24G15N 24"', categoria: 'monitores', score: 76, tier: 'entrada',
+    specs: { 'Polegadas': 24, 'Painel': 'VA', 'Resolução': 'Full HD 1920x1080', 'Taxa (Hz)': 180, 'Resposta (ms)': 1 },
+    precos: [
+      { loja: 'kabum', preco: 749, url: 'https://www.kabum.com.br/produto/aoc-24g15n?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '8x R$ 93,63' },
+    ],
+  },
+  {
+    slug: 'philips-241e1', marca: 'Philips', nome: '241E1 24"', categoria: 'monitores', score: 62, tier: 'entrada',
+    specs: { 'Polegadas': 24, 'Painel': 'IPS', 'Resolução': 'Full HD 1920x1080', 'Taxa (Hz)': 75, 'Resposta (ms)': 4 },
+    precos: [
+      { loja: 'kabum', preco: 599, url: 'https://www.kabum.com.br/produto/philips-241e1?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '8x R$ 74,88' },
+    ],
+  },
+  {
+    slug: 'dell-g2724d', marca: 'Dell', nome: 'G2724D 27"', categoria: 'monitores', score: 85, tier: 'high-end',
+    specs: { 'Polegadas': 27, 'Painel': 'IPS', 'Resolução': 'QHD 2560x1440', 'Taxa (Hz)': 165, 'Resposta (ms)': 1 },
+    precos: [
+      { loja: 'kabum', preco: 1799, url: 'https://www.kabum.com.br/produto/dell-g2724d?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 179,90' },
+    ],
+  },
+
+  // ══════════════════════════════════════
+  // NOVOS SSDS
+  // ══════════════════════════════════════
+  {
+    slug: 'samsung-980-pro-2tb', marca: 'Samsung', nome: '980 Pro 2TB', categoria: 'ssds', score: 93, tier: 'high-end',
+    specs: { 'Capacidade': '2 TB', 'Interface': 'NVMe Gen4', 'Leitura (MB/s)': 7000, 'Gravação (MB/s)': 5100, 'Cache DRAM': 'Sim' },
+    precos: [
+      { loja: 'kabum', preco: 1199, url: 'https://www.kabum.com.br/produto/samsung-980-pro-2tb?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 119,90' },
+      { loja: 'amazon', preco: 1249, url: 'https://www.amazon.com.br/s?k=samsung+980+pro+2tb&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '10x R$ 124,90' },
+    ],
+  },
+  {
+    slug: 'wd-black-sn770-1tb', marca: 'Western Digital', nome: 'WD Black SN770 1TB', categoria: 'ssds', score: 86, tier: 'mid-range',
+    specs: { 'Capacidade': '1 TB', 'Interface': 'NVMe Gen4', 'Leitura (MB/s)': 5150, 'Gravação (MB/s)': 4900, 'Cache DRAM': 'Não' },
+    precos: [
+      { loja: 'kabum', preco: 549, url: 'https://www.kabum.com.br/produto/wd-black-sn770-1tb?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 54,90' },
+    ],
+  },
+  {
+    slug: 'kingston-kc3000-1tb', marca: 'Kingston', nome: 'KC3000 1TB', categoria: 'ssds', score: 90, tier: 'high-end',
+    specs: { 'Capacidade': '1 TB', 'Interface': 'NVMe Gen4', 'Leitura (MB/s)': 7000, 'Gravação (MB/s)': 6000, 'Cache DRAM': 'Sim' },
+    precos: [
+      { loja: 'kabum', preco: 699, url: 'https://www.kabum.com.br/produto/kingston-kc3000-1tb?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 69,90' },
+    ],
+  },
+  {
+    slug: 'crucial-p3-1tb', marca: 'Crucial', nome: 'P3 1TB', categoria: 'ssds', score: 78, tier: 'entrada',
+    specs: { 'Capacidade': '1 TB', 'Interface': 'NVMe Gen3', 'Leitura (MB/s)': 3500, 'Gravação (MB/s)': 3000, 'Cache DRAM': 'Não' },
+    precos: [
+      { loja: 'kabum', preco: 379, url: 'https://www.kabum.com.br/produto/crucial-p3-1tb?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '8x R$ 47,38' },
+      { loja: 'amazon', preco: 399, url: 'https://www.amazon.com.br/s?k=crucial+p3+1tb&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '8x R$ 49,88' },
+    ],
+  },
+  {
+    slug: 'adata-legend-800-1tb', marca: 'ADATA', nome: 'Legend 800 1TB', categoria: 'ssds', score: 80, tier: 'entrada',
+    specs: { 'Capacidade': '1 TB', 'Interface': 'NVMe Gen4', 'Leitura (MB/s)': 3500, 'Gravação (MB/s)': 2800, 'Cache DRAM': 'Não' },
+    precos: [
+      { loja: 'kabum', preco: 429, url: 'https://www.kabum.com.br/produto/adata-legend-800-1tb?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '8x R$ 53,63' },
+    ],
+  },
+  {
+    slug: 'seagate-firecuda-530-1tb', marca: 'Seagate', nome: 'FireCuda 530 1TB', categoria: 'ssds', score: 91, tier: 'high-end',
+    specs: { 'Capacidade': '1 TB', 'Interface': 'NVMe Gen4', 'Leitura (MB/s)': 7300, 'Gravação (MB/s)': 6000, 'Cache DRAM': 'Sim' },
+    precos: [
+      { loja: 'kabum', preco: 749, url: 'https://www.kabum.com.br/produto/seagate-firecuda-530-1tb?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 74,90' },
+    ],
+  },
+  {
+    slug: 'samsung-870-evo-1tb', marca: 'Samsung', nome: '870 EVO 1TB', categoria: 'ssds', score: 74, tier: 'entrada',
+    specs: { 'Capacidade': '1 TB', 'Interface': 'SATA III', 'Leitura (MB/s)': 560, 'Gravação (MB/s)': 530, 'Cache DRAM': 'Sim' },
+    precos: [
+      { loja: 'kabum', preco: 499, url: 'https://www.kabum.com.br/produto/samsung-870-evo-1tb?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 49,90' },
+      { loja: 'amazon', preco: 529, url: 'https://www.amazon.com.br/s?k=samsung+870+evo+1tb&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '10x R$ 52,90' },
+    ],
+  },
+  {
+    slug: 'crucial-mx500-1tb', marca: 'Crucial', nome: 'MX500 1TB', categoria: 'ssds', score: 73, tier: 'entrada',
+    specs: { 'Capacidade': '1 TB', 'Interface': 'SATA III', 'Leitura (MB/s)': 560, 'Gravação (MB/s)': 510, 'Cache DRAM': 'Sim' },
+    precos: [
+      { loja: 'kabum', preco: 469, url: 'https://www.kabum.com.br/produto/crucial-mx500-1tb?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 46,90' },
+    ],
+  },
+  {
+    slug: 'kingston-nv2-500gb', marca: 'Kingston', nome: 'NV2 500GB', categoria: 'ssds', score: 70, tier: 'entrada',
+    specs: { 'Capacidade': '500 GB', 'Interface': 'NVMe Gen4', 'Leitura (MB/s)': 3500, 'Gravação (MB/s)': 2100, 'Cache DRAM': 'Não' },
+    precos: [
+      { loja: 'kabum', preco: 249, url: 'https://www.kabum.com.br/produto/kingston-nv2-500gb?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '6x R$ 41,50' },
+    ],
+  },
+  {
+    slug: 'wd-blue-sa510-500gb', marca: 'Western Digital', nome: 'WD Blue SA510 500GB', categoria: 'ssds', score: 68, tier: 'entrada',
+    specs: { 'Capacidade': '500 GB', 'Interface': 'SATA III', 'Leitura (MB/s)': 560, 'Gravação (MB/s)': 510, 'Cache DRAM': 'Sim' },
+    precos: [
+      { loja: 'kabum', preco: 279, url: 'https://www.kabum.com.br/produto/wd-blue-sa510-500gb?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '6x R$ 46,50' },
+    ],
+  },
+
+  // ══════════════════════════════════════
+  // NOVAS GPUS
+  // ══════════════════════════════════════
+  {
+    slug: 'nvidia-geforce-rtx-5080', marca: 'NVIDIA', nome: 'GeForce RTX 5080', categoria: 'gpus', score: 96, tier: 'flagship',
+    specs: { 'VRAM': '16 GB GDDR7', 'Consumo (W)': 360, 'Clock Boost (GHz)': 2.62, 'Ray Tracing': 'Sim (4ª gen)', 'Barramento': '256-bit' },
+    precos: [
+      { loja: 'kabum', preco: 10499, url: 'https://www.kabum.com.br/produto/rtx-5080?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '12x R$ 874,92' },
+      { loja: 'pichau', preco: 10799, url: 'https://www.pichau.com.br/placa-de-video?ref=besthard', disponivel: true, frete: 'gratis', parcelamento: '12x R$ 899,92' },
+    ],
+  },
+  {
+    slug: 'nvidia-geforce-rtx-5070', marca: 'NVIDIA', nome: 'GeForce RTX 5070', categoria: 'gpus', score: 90, tier: 'high-end',
+    specs: { 'VRAM': '12 GB GDDR7', 'Consumo (W)': 250, 'Clock Boost (GHz)': 2.51, 'Ray Tracing': 'Sim (4ª gen)', 'Barramento': '192-bit' },
+    precos: [
+      { loja: 'kabum', preco: 4899, url: 'https://www.kabum.com.br/produto/rtx-5070?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '12x R$ 408,25' },
+      { loja: 'amazon', preco: 4999, url: 'https://www.amazon.com.br/s?k=rtx+5070&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '12x R$ 416,58' },
+    ],
+  },
+  {
+    slug: 'nvidia-geforce-rtx-4080', marca: 'NVIDIA', nome: 'GeForce RTX 4080', categoria: 'gpus', score: 94, tier: 'high-end',
+    specs: { 'VRAM': '16 GB GDDR6X', 'Consumo (W)': 320, 'Clock Boost (GHz)': 2.51, 'Ray Tracing': 'Sim (3ª gen)', 'Barramento': '256-bit' },
+    precos: [
+      { loja: 'kabum', preco: 8999, url: 'https://www.kabum.com.br/produto/rtx-4080?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '12x R$ 749,92' },
+      { loja: 'pichau', preco: 9299, url: 'https://www.pichau.com.br/placa-de-video?ref=besthard', disponivel: true, frete: 'gratis', parcelamento: '12x R$ 774,92' },
+    ],
+  },
+  {
+    slug: 'nvidia-geforce-rtx-3070', marca: 'NVIDIA', nome: 'GeForce RTX 3070', categoria: 'gpus', score: 85, tier: 'mid-range',
+    specs: { 'VRAM': '8 GB GDDR6', 'Consumo (W)': 220, 'Clock Boost (GHz)': 1.73, 'Ray Tracing': 'Sim (2ª gen)', 'Barramento': '256-bit' },
+    precos: [
+      { loja: 'kabum', preco: 2799, url: 'https://www.kabum.com.br/produto/rtx-3070?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '12x R$ 233,25' },
+    ],
+  },
+  {
+    slug: 'nvidia-geforce-rtx-3060-ti', marca: 'NVIDIA', nome: 'GeForce RTX 3060 Ti', categoria: 'gpus', score: 83, tier: 'mid-range',
+    specs: { 'VRAM': '8 GB GDDR6', 'Consumo (W)': 200, 'Clock Boost (GHz)': 1.67, 'Ray Tracing': 'Sim (2ª gen)', 'Barramento': '256-bit' },
+    precos: [
+      { loja: 'kabum', preco: 2299, url: 'https://www.kabum.com.br/produto/rtx-3060-ti?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '12x R$ 191,58' },
+    ],
+  },
+  {
+    slug: 'amd-radeon-rx-6700-xt', marca: 'AMD', nome: 'Radeon RX 6700 XT', categoria: 'gpus', score: 82, tier: 'mid-range',
+    specs: { 'VRAM': '12 GB GDDR6', 'Consumo (W)': 230, 'Clock Boost (GHz)': 2.58, 'Ray Tracing': 'Sim (1ª gen)', 'Barramento': '192-bit' },
+    precos: [
+      { loja: 'kabum', preco: 2199, url: 'https://www.kabum.com.br/produto/rx-6700-xt?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '12x R$ 183,25' },
+    ],
+  },
+  {
+    slug: 'amd-radeon-rx-6750-xt', marca: 'AMD', nome: 'Radeon RX 6750 XT', categoria: 'gpus', score: 84, tier: 'mid-range',
+    specs: { 'VRAM': '12 GB GDDR6', 'Consumo (W)': 250, 'Clock Boost (GHz)': 2.6, 'Ray Tracing': 'Sim (1ª gen)', 'Barramento': '192-bit' },
+    precos: [
+      { loja: 'kabum', preco: 2499, url: 'https://www.kabum.com.br/produto/rx-6750-xt?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '12x R$ 208,25' },
+    ],
+  },
+  {
+    slug: 'amd-radeon-rx-6650-xt', marca: 'AMD', nome: 'Radeon RX 6650 XT', categoria: 'gpus', score: 78, tier: 'entrada',
+    specs: { 'VRAM': '8 GB GDDR6', 'Consumo (W)': 180, 'Clock Boost (GHz)': 2.64, 'Ray Tracing': 'Sim (1ª gen)', 'Barramento': '128-bit' },
+    precos: [
+      { loja: 'kabum', preco: 1699, url: 'https://www.kabum.com.br/produto/rx-6650-xt?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '12x R$ 141,58' },
+    ],
+  },
+  {
+    slug: 'intel-arc-b580', marca: 'Intel', nome: 'Arc B580', categoria: 'gpus', score: 80, tier: 'mid-range',
+    specs: { 'VRAM': '12 GB GDDR6', 'Consumo (W)': 190, 'Clock Boost (GHz)': 2.67, 'Ray Tracing': 'Sim', 'Barramento': '192-bit' },
+    precos: [
+      { loja: 'kabum', preco: 1899, url: 'https://www.kabum.com.br/produto/intel-arc-b580?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '12x R$ 158,25' },
+    ],
+  },
+  {
+    slug: 'amd-radeon-rx-6500-xt', marca: 'AMD', nome: 'Radeon RX 6500 XT', categoria: 'gpus', score: 65, tier: 'entrada',
+    specs: { 'VRAM': '4 GB GDDR6', 'Consumo (W)': 107, 'Clock Boost (GHz)': 2.82, 'Ray Tracing': 'Sim (1ª gen)', 'Barramento': '64-bit' },
+    precos: [
+      { loja: 'kabum', preco: 899, url: 'https://www.kabum.com.br/produto/rx-6500-xt?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 89,90' },
+    ],
+  },
+
+  // ══════════════════════════════════════
   // PROCESSADORES
   // ══════════════════════════════════════
   {
