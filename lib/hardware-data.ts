@@ -115,6 +115,230 @@ export const CATEGORIAS: CategoriaConfig[] = [
 
 export const PRODUTOS: Produto[] = [
   // ══════════════════════════════════════
+  // NOVOS HEADSETS
+  // ══════════════════════════════════════
+  {
+    slug: 'hyperx-cloud-ii', marca: 'HyperX', nome: 'Cloud II', categoria: 'headsets', score: 88, tier: 'high-end',
+    specs: { 'Conexão': 'USB / P2 3,5 mm', 'Drivers (mm)': 53, 'Microfone': 'Removível com redução de ruído', 'Peso (g)': 320, 'Resposta': '15 Hz–25 kHz', 'Formato': 'Over-ear fechado' },
+    precos: [
+      { loja: 'kabum', preco: 449, url: 'https://www.kabum.com.br/produto/hyperx-cloud-ii?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '8x R$ 56,13' },
+      { loja: 'amazon', preco: 479, url: 'https://www.amazon.com.br/s?k=hyperx+cloud+ii&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '8x R$ 59,88' },
+    ],
+  },
+  {
+    slug: 'logitech-g-pro-x', marca: 'Logitech', nome: 'G Pro X', categoria: 'headsets', score: 87, tier: 'high-end',
+    specs: { 'Conexão': 'USB / P2 3,5 mm', 'Drivers (mm)': 50, 'Microfone': 'Destacável Blue VO!CE', 'Peso (g)': 320, 'Resposta': '20 Hz–20 kHz', 'Formato': 'Over-ear fechado' },
+    precos: [
+      { loja: 'kabum', preco: 599, url: 'https://www.kabum.com.br/produto/logitech-g-pro-x?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 59,90' },
+    ],
+  },
+  {
+    slug: 'razer-kraken-v3-x', marca: 'Razer', nome: 'Kraken V3 X', categoria: 'headsets', score: 84, tier: 'mid-range',
+    specs: { 'Conexão': 'USB', 'Drivers (mm)': 40, 'Microfone': 'Cardioide com redução de ruído', 'Peso (g)': 285, 'Resposta': '12 Hz–28 kHz', 'Formato': 'Over-ear fechado' },
+    precos: [
+      { loja: 'kabum', preco: 349, url: 'https://www.kabum.com.br/produto/razer-kraken-v3-x?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '8x R$ 43,63' },
+    ],
+  },
+  {
+    slug: 'hyperx-cloud-alpha', marca: 'HyperX', nome: 'Cloud Alpha', categoria: 'headsets', score: 86, tier: 'high-end',
+    specs: { 'Conexão': 'P2 3,5 mm', 'Drivers (mm)': 50, 'Microfone': 'Removível com redução de ruído', 'Peso (g)': 298, 'Resposta': '13 Hz–27 kHz', 'Formato': 'Over-ear fechado' },
+    precos: [
+      { loja: 'kabum', preco: 399, url: 'https://www.kabum.com.br/produto/hyperx-cloud-alpha?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '8x R$ 49,88' },
+    ],
+  },
+  {
+    slug: 'jbl-quantum-200', marca: 'JBL', nome: 'Quantum 200', categoria: 'headsets', score: 76, tier: 'mid-range',
+    specs: { 'Conexão': 'P2 3,5 mm', 'Drivers (mm)': 50, 'Microfone': 'Direcional flip-up', 'Peso (g)': 240, 'Resposta': '20 Hz–20 kHz', 'Formato': 'Over-ear fechado' },
+    precos: [
+      { loja: 'kabum', preco: 249, url: 'https://www.kabum.com.br/produto/jbl-quantum-200?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '6x R$ 41,50' },
+    ],
+  },
+  {
+    slug: 'redragon-zeus-x-h510', marca: 'Redragon', nome: 'Zeus X H510', categoria: 'headsets', score: 78, tier: 'mid-range',
+    specs: { 'Conexão': 'USB / P2 3,5 mm', 'Drivers (mm)': 53, 'Microfone': 'Removível', 'Peso (g)': 360, 'Resposta': '20 Hz–20 kHz', 'Formato': 'Over-ear fechado' },
+    precos: [
+      { loja: 'kabum', preco: 229, url: 'https://www.kabum.com.br/produto/redragon-zeus-x-h510?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '4x R$ 57,25' },
+    ],
+  },
+  {
+    slug: 'corsair-hs55-surround', marca: 'Corsair', nome: 'HS55 Surround', categoria: 'headsets', score: 82, tier: 'mid-range',
+    specs: { 'Conexão': 'USB / P2 3,5 mm', 'Drivers (mm)': 50, 'Microfone': 'Omnidirecional flip-up', 'Peso (g)': 266, 'Resposta': '20 Hz–20 kHz', 'Formato': 'Over-ear fechado' },
+    precos: [
+      { loja: 'kabum', preco: 379, url: 'https://www.kabum.com.br/produto/corsair-hs55-surround?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '8x R$ 47,38' },
+    ],
+  },
+  {
+    slug: 'logitech-g733', marca: 'Logitech', nome: 'G733 LIGHTSPEED', categoria: 'headsets', score: 85, tier: 'high-end',
+    specs: { 'Conexão': 'Sem fio LIGHTSPEED', 'Drivers (mm)': 40, 'Microfone': 'Destacável Blue VO!CE', 'Peso (g)': 278, 'Resposta': '20 Hz–20 kHz', 'Formato': 'Over-ear fechado' },
+    precos: [
+      { loja: 'kabum', preco: 699, url: 'https://www.kabum.com.br/produto/logitech-g733?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 69,90' },
+    ],
+  },
+  {
+    slug: 'steelseries-arctis-nova-1', marca: 'SteelSeries', nome: 'Arctis Nova 1', categoria: 'headsets', score: 84, tier: 'mid-range',
+    specs: { 'Conexão': 'P2 3,5 mm', 'Drivers (mm)': 40, 'Microfone': 'Retrátil ClearCast Gen 2', 'Peso (g)': 236, 'Resposta': '10 Hz–22 kHz', 'Formato': 'Over-ear fechado' },
+    precos: [
+      { loja: 'kabum', preco: 399, url: 'https://www.kabum.com.br/produto/arctis-nova-1?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '8x R$ 49,88' },
+    ],
+  },
+  {
+    slug: 'redragon-lamia-2-h320', marca: 'Redragon', nome: 'Lamia 2 H320', categoria: 'headsets', score: 66, tier: 'entrada',
+    specs: { 'Conexão': 'USB', 'Drivers (mm)': 40, 'Microfone': 'Removível', 'Peso (g)': 320, 'Resposta': '20 Hz–20 kHz', 'Formato': 'Over-ear fechado' },
+    precos: [
+      { loja: 'kabum', preco: 179, url: 'https://www.kabum.com.br/produto/redragon-lamia-2-h320?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '4x R$ 44,75' },
+    ],
+  },
+
+  // ══════════════════════════════════════
+  // NOVOS TECLADOS
+  // ══════════════════════════════════════
+  {
+    slug: 'hyperx-alloy-origins-core', marca: 'HyperX', nome: 'Alloy Origins Core', categoria: 'teclados', score: 87, tier: 'high-end',
+    specs: { 'Tipo': 'Mecânico', 'Formato': 'Tenkeyless (TKL)', 'Conexão': 'USB com fio', 'Layout': 'ABNT2', 'Teclado numérico': 'Não', 'Iluminação': 'RGB' },
+    precos: [
+      { loja: 'kabum', preco: 449, url: 'https://www.kabum.com.br/produto/alloy-origins-core?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '8x R$ 56,13' },
+    ],
+  },
+  {
+    slug: 'logitech-g413-se', marca: 'Logitech', nome: 'G413 SE', categoria: 'teclados', score: 82, tier: 'mid-range',
+    specs: { 'Tipo': 'Mecânico', 'Formato': 'Completo', 'Conexão': 'USB com fio', 'Layout': 'ABNT2', 'Teclado numérico': 'Sim', 'Iluminação': 'Branca' },
+    precos: [
+      { loja: 'kabum', preco: 349, url: 'https://www.kabum.com.br/produto/logitech-g413-se?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '8x R$ 43,63' },
+    ],
+  },
+  {
+    slug: 'razer-cynosa-v2', marca: 'Razer', nome: 'Cynosa V2', categoria: 'teclados', score: 76, tier: 'mid-range',
+    specs: { 'Tipo': 'Membrana', 'Formato': 'Completo', 'Conexão': 'USB com fio', 'Layout': 'US', 'Teclado numérico': 'Sim', 'Iluminação': 'RGB Chroma' },
+    precos: [
+      { loja: 'kabum', preco: 299, url: 'https://www.kabum.com.br/produto/razer-cynosa-v2?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '6x R$ 49,83' },
+    ],
+  },
+  {
+    slug: 'keychron-k8', marca: 'Keychron', nome: 'K8', categoria: 'teclados', score: 88, tier: 'high-end',
+    specs: { 'Tipo': 'Mecânico', 'Formato': 'Tenkeyless (TKL)', 'Conexão': 'Sem fio / USB-C', 'Layout': 'US', 'Teclado numérico': 'Não', 'Iluminação': 'RGB' },
+    precos: [
+      { loja: 'kabum', preco: 499, url: 'https://www.kabum.com.br/produto/keychron-k8?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 49,90' },
+    ],
+  },
+  {
+    slug: 'logitech-g213-prodigy', marca: 'Logitech', nome: 'G213 Prodigy', categoria: 'teclados', score: 72, tier: 'entrada',
+    specs: { 'Tipo': 'Membrana', 'Formato': 'Completo', 'Conexão': 'USB com fio', 'Layout': 'ABNT2', 'Teclado numérico': 'Sim', 'Iluminação': 'RGB LIGHTSYNC' },
+    precos: [
+      { loja: 'kabum', preco: 249, url: 'https://www.kabum.com.br/produto/logitech-g213-prodigy?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '6x R$ 41,50' },
+    ],
+  },
+  {
+    slug: 'redragon-draconic-k530', marca: 'Redragon', nome: 'Draconic K530 Pro', categoria: 'teclados', score: 80, tier: 'mid-range',
+    specs: { 'Tipo': 'Mecânico', 'Formato': 'Compacto 60%', 'Conexão': 'Sem fio / Bluetooth', 'Layout': 'US', 'Teclado numérico': 'Não', 'Iluminação': 'RGB' },
+    precos: [
+      { loja: 'kabum', preco: 279, url: 'https://www.kabum.com.br/produto/redragon-draconic-k530?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '6x R$ 46,50' },
+    ],
+  },
+  {
+    slug: 'hyperx-alloy-origins-65', marca: 'HyperX', nome: 'Alloy Origins 65', categoria: 'teclados', score: 85, tier: 'high-end',
+    specs: { 'Tipo': 'Mecânico', 'Formato': 'Compacto 65%', 'Conexão': 'USB com fio', 'Layout': 'US', 'Teclado numérico': 'Não', 'Iluminação': 'RGB' },
+    precos: [
+      { loja: 'kabum', preco: 429, url: 'https://www.kabum.com.br/produto/alloy-origins-65?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '8x R$ 53,63' },
+    ],
+  },
+  {
+    slug: 'redragon-lakshmi-k606', marca: 'Redragon', nome: 'Lakshmi K606', categoria: 'teclados', score: 60, tier: 'entrada',
+    specs: { 'Tipo': 'Membrana', 'Formato': 'Completo', 'Conexão': 'USB com fio', 'Layout': 'ABNT2', 'Teclado numérico': 'Sim', 'Iluminação': 'RGB' },
+    precos: [
+      { loja: 'kabum', preco: 129, url: 'https://www.kabum.com.br/produto/redragon-lakshmi-k606?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '3x R$ 43,00' },
+    ],
+  },
+  {
+    slug: 'logitech-g915-tkl', marca: 'Logitech', nome: 'G915 TKL LIGHTSPEED', categoria: 'teclados', score: 92, tier: 'flagship',
+    specs: { 'Tipo': 'Mecânico (low profile)', 'Formato': 'Tenkeyless (TKL)', 'Conexão': 'Sem fio LIGHTSPEED', 'Layout': 'US', 'Teclado numérico': 'Não', 'Iluminação': 'RGB LIGHTSYNC' },
+    precos: [
+      { loja: 'kabum', preco: 1299, url: 'https://www.kabum.com.br/produto/logitech-g915-tkl?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 129,90' },
+    ],
+  },
+  {
+    slug: 'redragon-kumara-k552-rgb', marca: 'Redragon', nome: 'Kumara K552 RGB', categoria: 'teclados', score: 74, tier: 'entrada',
+    specs: { 'Tipo': 'Mecânico', 'Formato': 'Tenkeyless (TKL)', 'Conexão': 'USB com fio', 'Layout': 'ABNT2', 'Teclado numérico': 'Não', 'Iluminação': 'RGB' },
+    precos: [
+      { loja: 'kabum', preco: 199, url: 'https://www.kabum.com.br/produto/redragon-kumara-k552-rgb?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '4x R$ 49,75' },
+    ],
+  },
+
+  // ══════════════════════════════════════
+  // NOVOS MOUSES
+  // ══════════════════════════════════════
+  {
+    slug: 'logitech-g502-hero', marca: 'Logitech', nome: 'G502 HERO', categoria: 'mouses', score: 88, tier: 'high-end',
+    specs: { 'DPI': 25600, 'Peso (g)': 121, 'Botões': 11, 'Conexão': 'USB com fio', 'Polling rate': '1000 Hz', 'Iluminação': 'RGB LIGHTSYNC' },
+    precos: [
+      { loja: 'kabum', preco: 249, url: 'https://www.kabum.com.br/produto/logitech-g502-hero?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '6x R$ 41,50' },
+      { loja: 'amazon', preco: 269, url: 'https://www.amazon.com.br/s?k=logitech+g502+hero&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '6x R$ 44,83' },
+    ],
+  },
+  {
+    slug: 'razer-viper-v3-hyperspeed', marca: 'Razer', nome: 'Viper V3 HyperSpeed', categoria: 'mouses', score: 90, tier: 'high-end',
+    specs: { 'DPI': 30000, 'Peso (g)': 82, 'Botões': 6, 'Conexão': 'Sem fio 2.4GHz', 'Polling rate': '1000 Hz', 'Iluminação': 'Não' },
+    precos: [
+      { loja: 'kabum', preco: 349, url: 'https://www.kabum.com.br/produto/razer-viper-v3-hyperspeed?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '8x R$ 43,63' },
+    ],
+  },
+  {
+    slug: 'glorious-model-o', marca: 'Glorious', nome: 'Model O', categoria: 'mouses', score: 86, tier: 'mid-range',
+    specs: { 'DPI': 12000, 'Peso (g)': 67, 'Botões': 6, 'Conexão': 'USB com fio', 'Polling rate': '1000 Hz', 'Iluminação': 'RGB' },
+    precos: [
+      { loja: 'kabum', preco: 299, url: 'https://www.kabum.com.br/produto/glorious-model-o?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '6x R$ 49,83' },
+    ],
+  },
+  {
+    slug: 'logitech-g-pro-x-superlight', marca: 'Logitech', nome: 'G Pro X Superlight', categoria: 'mouses', score: 93, tier: 'flagship',
+    specs: { 'DPI': 25600, 'Peso (g)': 63, 'Botões': 5, 'Conexão': 'Sem fio LIGHTSPEED', 'Polling rate': '1000 Hz', 'Iluminação': 'Não' },
+    precos: [
+      { loja: 'kabum', preco: 649, url: 'https://www.kabum.com.br/produto/g-pro-x-superlight?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 64,90' },
+    ],
+  },
+  {
+    slug: 'razer-basilisk-v3', marca: 'Razer', nome: 'Basilisk V3', categoria: 'mouses', score: 87, tier: 'high-end',
+    specs: { 'DPI': 26000, 'Peso (g)': 101, 'Botões': 11, 'Conexão': 'USB com fio', 'Polling rate': '1000 Hz', 'Iluminação': 'RGB Chroma' },
+    precos: [
+      { loja: 'kabum', preco: 329, url: 'https://www.kabum.com.br/produto/razer-basilisk-v3?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '8x R$ 41,13' },
+    ],
+  },
+  {
+    slug: 'hyperx-pulsefire-haste-2', marca: 'HyperX', nome: 'Pulsefire Haste 2', categoria: 'mouses', score: 85, tier: 'mid-range',
+    specs: { 'DPI': 26000, 'Peso (g)': 53, 'Botões': 6, 'Conexão': 'USB com fio', 'Polling rate': '1000 Hz', 'Iluminação': 'RGB' },
+    precos: [
+      { loja: 'kabum', preco: 279, url: 'https://www.kabum.com.br/produto/pulsefire-haste-2?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '6x R$ 46,50' },
+    ],
+  },
+  {
+    slug: 'logitech-g403-hero', marca: 'Logitech', nome: 'G403 HERO', categoria: 'mouses', score: 82, tier: 'mid-range',
+    specs: { 'DPI': 25600, 'Peso (g)': 87, 'Botões': 6, 'Conexão': 'USB com fio', 'Polling rate': '1000 Hz', 'Iluminação': 'RGB LIGHTSYNC' },
+    precos: [
+      { loja: 'kabum', preco: 199, url: 'https://www.kabum.com.br/produto/logitech-g403-hero?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '4x R$ 49,75' },
+    ],
+  },
+  {
+    slug: 'razer-deathadder-v3', marca: 'Razer', nome: 'DeathAdder V3', categoria: 'mouses', score: 89, tier: 'high-end',
+    specs: { 'DPI': 30000, 'Peso (g)': 59, 'Botões': 6, 'Conexão': 'USB com fio', 'Polling rate': '1000 Hz', 'Iluminação': 'Não' },
+    precos: [
+      { loja: 'kabum', preco: 359, url: 'https://www.kabum.com.br/produto/razer-deathadder-v3?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '8x R$ 44,88' },
+    ],
+  },
+  {
+    slug: 'redragon-storm-pro', marca: 'Redragon', nome: 'Storm Pro M808', categoria: 'mouses', score: 74, tier: 'entrada',
+    specs: { 'DPI': 12400, 'Peso (g)': 78, 'Botões': 8, 'Conexão': 'USB com fio', 'Polling rate': '1000 Hz', 'Iluminação': 'RGB' },
+    precos: [
+      { loja: 'kabum', preco: 129, url: 'https://www.kabum.com.br/produto/redragon-storm-pro?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '3x R$ 43,00' },
+    ],
+  },
+  {
+    slug: 'redragon-m612-predator', marca: 'Redragon', nome: 'M612 Predator', categoria: 'mouses', score: 70, tier: 'entrada',
+    specs: { 'DPI': 8000, 'Peso (g)': 85, 'Botões': 8, 'Conexão': 'USB com fio', 'Polling rate': '1000 Hz', 'Iluminação': 'RGB' },
+    precos: [
+      { loja: 'kabum', preco: 99, url: 'https://www.kabum.com.br/produto/redragon-m612-predator?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '2x R$ 49,50' },
+    ],
+  },
+
+  // ══════════════════════════════════════
   // NOVOS GABINETES
   // ══════════════════════════════════════
   {
