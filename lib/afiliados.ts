@@ -92,14 +92,16 @@ export function buscaAmazon(termo: string): string {
   return linkAfiliado("amazon", base);
 }
 
-const ML_AFF = process.env.NEXT_PUBLIC_ML_AFF || "";
+// ID de afiliado do Mercado Livre (parâmetro matt_tool). Pode ser sobrescrito
+// pela env NEXT_PUBLIC_ML_AFF; default deixado no código para funcionar sem env.
+const ML_AFF = process.env.NEXT_PUBLIC_ML_AFF || "5SEPGP-BJMP";
 const SHOPEE_AFF = process.env.NEXT_PUBLIC_SHOPEE_AFF || "";
 
-/** Link de busca no Mercado Livre (com id de afiliado quando configurado). */
+/** Link de busca no Mercado Livre (com id de afiliado matt_tool). */
 export function buscaMercadoLivre(termo: string): string {
   const slug = termo.trim().toLowerCase().replace(/\s+/g, "-");
   let url = `https://lista.mercadolivre.com.br/${encodeURIComponent(slug)}`;
-  if (ML_AFF) url += `?matt_tool=${encodeURIComponent(ML_AFF)}`;
+  if (ML_AFF) url += `?matt_tool=${encodeURIComponent(ML_AFF)}&matt_word=besthard`;
   return url;
 }
 
