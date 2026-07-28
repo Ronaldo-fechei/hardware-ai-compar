@@ -106,6 +106,10 @@ export function buscaMercadoLivre(termo: string): string {
 /** Link de busca na Shopee (com id de afiliado quando configurado). */
 export function buscaShopee(termo: string): string {
   let url = `https://shopee.com.br/search?keyword=${encodeURIComponent(termo.trim())}`;
-  if (SHOPEE_AFF) url += `&af_id=${encodeURIComponent(SHOPEE_AFF)}`;
+  if (SHOPEE_AFF) {
+    // Formato de afiliado da Shopee: PID no padrão an_<id> em utm_source e mmp_pid.
+    const pid = `an_${SHOPEE_AFF}`;
+    url += `&utm_source=${pid}&utm_medium=affiliates&mmp_pid=${pid}`;
+  }
   return url;
 }
