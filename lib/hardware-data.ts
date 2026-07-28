@@ -115,6 +115,228 @@ export const CATEGORIAS: CategoriaConfig[] = [
 
 export const PRODUTOS: Produto[] = [
   // ══════════════════════════════════════
+  // NOVOS GABINETES
+  // ══════════════════════════════════════
+  {
+    slug: 'nzxt-h5-flow', marca: 'NZXT', nome: 'H5 Flow', categoria: 'gabinetes', score: 85, tier: 'mid-range',
+    specs: { 'Tipo': 'Mid Tower ATX', 'Suporta GPU (mm)': 365, 'Baias': '1x 3.5" + 3x 2.5"', 'Fans inclusos': '2x 120mm', 'Painel': 'Vidro temperado' },
+    precos: [
+      { loja: 'kabum', preco: 499, url: 'https://www.kabum.com.br/produto/nzxt-h5-flow?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 49,90' },
+    ],
+  },
+  {
+    slug: 'corsair-3500x', marca: 'Corsair', nome: '3500X ARGB', categoria: 'gabinetes', score: 87, tier: 'high-end',
+    specs: { 'Tipo': 'Mid Tower ATX', 'Suporta GPU (mm)': 400, 'Baias': '2x 3.5" + 3x 2.5"', 'Fans inclusos': '3x 120mm ARGB', 'Painel': 'Vidro temperado' },
+    precos: [
+      { loja: 'kabum', preco: 649, url: 'https://www.kabum.com.br/produto/corsair-3500x?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 64,90' },
+    ],
+  },
+  {
+    slug: 'montech-air-1000-premium', marca: 'Montech', nome: 'Air 1000 Premium', categoria: 'gabinetes', score: 84, tier: 'mid-range',
+    specs: { 'Tipo': 'Mid Tower ATX', 'Suporta GPU (mm)': 400, 'Baias': '2x 3.5" + 2x 2.5"', 'Fans inclusos': '4x 120mm ARGB', 'Painel': 'Vidro temperado' },
+    precos: [
+      { loja: 'kabum', preco: 429, url: 'https://www.kabum.com.br/produto/montech-air-1000?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '8x R$ 53,63' },
+    ],
+  },
+  {
+    slug: 'lian-li-lancool-iii', marca: 'Lian Li', nome: 'Lancool III', categoria: 'gabinetes', score: 89, tier: 'high-end',
+    specs: { 'Tipo': 'Full Tower ATX', 'Suporta GPU (mm)': 435, 'Baias': '4x 3.5" + 3x 2.5"', 'Fans inclusos': '4x 140mm', 'Painel': 'Vidro temperado' },
+    precos: [
+      { loja: 'kabum', preco: 899, url: 'https://www.kabum.com.br/produto/lian-li-lancool-iii?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 89,90' },
+    ],
+  },
+  {
+    slug: 'deepcool-ch510', marca: 'DeepCool', nome: 'CH510', categoria: 'gabinetes', score: 82, tier: 'mid-range',
+    specs: { 'Tipo': 'Mid Tower ATX', 'Suporta GPU (mm)': 380, 'Baias': '2x 3.5" + 2x 2.5"', 'Fans inclusos': '1x 120mm', 'Painel': 'Vidro temperado' },
+    precos: [
+      { loja: 'kabum', preco: 399, url: 'https://www.kabum.com.br/produto/deepcool-ch510?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '8x R$ 49,88' },
+    ],
+  },
+  {
+    slug: 'cooler-master-td500-mesh', marca: 'Cooler Master', nome: 'MasterBox TD500 Mesh V2', categoria: 'gabinetes', score: 86, tier: 'high-end',
+    specs: { 'Tipo': 'Mid Tower ATX', 'Suporta GPU (mm)': 410, 'Baias': '2x 3.5" + 2x 2.5"', 'Fans inclusos': '3x 120mm ARGB', 'Painel': 'Vidro temperado' },
+    precos: [
+      { loja: 'kabum', preco: 599, url: 'https://www.kabum.com.br/produto/td500-mesh-v2?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 59,90' },
+    ],
+  },
+  {
+    slug: 'gamemax-infinity', marca: 'Gamemax', nome: 'Infinity', categoria: 'gabinetes', score: 68, tier: 'entrada',
+    specs: { 'Tipo': 'Mid Tower ATX', 'Suporta GPU (mm)': 340, 'Baias': '2x 3.5" + 2x 2.5"', 'Fans inclusos': '4x 120mm ARGB', 'Painel': 'Vidro temperado' },
+    precos: [
+      { loja: 'kabum', preco: 329, url: 'https://www.kabum.com.br/produto/gamemax-infinity?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '6x R$ 54,83' },
+    ],
+  },
+  {
+    slug: 'corsair-icue-4000x', marca: 'Corsair', nome: 'iCUE 4000X RGB', categoria: 'gabinetes', score: 88, tier: 'high-end',
+    specs: { 'Tipo': 'Mid Tower ATX', 'Suporta GPU (mm)': 360, 'Baias': '2x 3.5" + 2x 2.5"', 'Fans inclusos': '3x 120mm RGB', 'Painel': 'Vidro temperado' },
+    precos: [
+      { loja: 'kabum', preco: 699, url: 'https://www.kabum.com.br/produto/corsair-icue-4000x?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 69,90' },
+    ],
+  },
+  {
+    slug: 'redragon-grimoire', marca: 'Redragon', nome: 'Grimoire', categoria: 'gabinetes', score: 64, tier: 'entrada',
+    specs: { 'Tipo': 'Mid Tower ATX', 'Suporta GPU (mm)': 330, 'Baias': '2x 3.5" + 2x 2.5"', 'Fans inclusos': '4x 120mm ARGB', 'Painel': 'Vidro temperado' },
+    precos: [
+      { loja: 'kabum', preco: 279, url: 'https://www.kabum.com.br/produto/redragon-grimoire?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '6x R$ 46,50' },
+    ],
+  },
+  {
+    slug: 'thermaltake-s100-tg', marca: 'Thermaltake', nome: 'S100 TG', categoria: 'gabinetes', score: 60, tier: 'entrada',
+    specs: { 'Tipo': 'Mini Tower mATX', 'Suporta GPU (mm)': 300, 'Baias': '2x 3.5" + 2x 2.5"', 'Fans inclusos': '1x 120mm', 'Painel': 'Vidro temperado' },
+    precos: [
+      { loja: 'kabum', preco: 249, url: 'https://www.kabum.com.br/produto/thermaltake-s100-tg?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '6x R$ 41,50' },
+    ],
+  },
+
+  // ══════════════════════════════════════
+  // NOVAS FONTES
+  // ══════════════════════════════════════
+  {
+    slug: 'corsair-rm1000e-1000w', marca: 'Corsair', nome: 'RM1000e 1000W', categoria: 'fontes', score: 92, tier: 'high-end',
+    specs: { 'Potência (W)': 1000, 'Selo': '80 Plus Gold', 'Modular': 'Total', 'Conector PCIe 5.0': 'Sim (ATX 3.0)', 'Garantia': '7 anos' },
+    precos: [
+      { loja: 'kabum', preco: 899, url: 'https://www.kabum.com.br/produto/corsair-rm1000e?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 89,90' },
+    ],
+  },
+  {
+    slug: 'seasonic-focus-gx-850', marca: 'Seasonic', nome: 'Focus GX-850 850W', categoria: 'fontes', score: 91, tier: 'high-end',
+    specs: { 'Potência (W)': 850, 'Selo': '80 Plus Gold', 'Modular': 'Total', 'Conector PCIe 5.0': 'Sim (ATX 3.0)', 'Garantia': '10 anos' },
+    precos: [
+      { loja: 'kabum', preco: 799, url: 'https://www.kabum.com.br/produto/seasonic-focus-gx-850?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 79,90' },
+    ],
+  },
+  {
+    slug: 'msi-mag-a750gl-750w', marca: 'MSI', nome: 'MAG A750GL 750W', categoria: 'fontes', score: 86, tier: 'mid-range',
+    specs: { 'Potência (W)': 750, 'Selo': '80 Plus Gold', 'Modular': 'Total', 'Conector PCIe 5.0': 'Sim (ATX 3.0)', 'Garantia': '10 anos' },
+    precos: [
+      { loja: 'kabum', preco: 549, url: 'https://www.kabum.com.br/produto/msi-mag-a750gl?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 54,90' },
+    ],
+  },
+  {
+    slug: 'corsair-cx750-750w', marca: 'Corsair', nome: 'CX750 750W', categoria: 'fontes', score: 78, tier: 'mid-range',
+    specs: { 'Potência (W)': 750, 'Selo': '80 Plus Bronze', 'Modular': 'Não', 'Conector PCIe 5.0': 'Não', 'Garantia': '5 anos' },
+    precos: [
+      { loja: 'kabum', preco: 449, url: 'https://www.kabum.com.br/produto/corsair-cx750?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '8x R$ 56,13' },
+    ],
+  },
+  {
+    slug: 'gigabyte-ud750gm-750w', marca: 'Gigabyte', nome: 'UD750GM 750W', categoria: 'fontes', score: 80, tier: 'mid-range',
+    specs: { 'Potência (W)': 750, 'Selo': '80 Plus Gold', 'Modular': 'Total', 'Conector PCIe 5.0': 'Não', 'Garantia': '5 anos' },
+    precos: [
+      { loja: 'kabum', preco: 499, url: 'https://www.kabum.com.br/produto/gigabyte-ud750gm?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 49,90' },
+    ],
+  },
+  {
+    slug: 'xpg-core-reactor-ii-750w', marca: 'XPG', nome: 'Core Reactor II 750W', categoria: 'fontes', score: 87, tier: 'high-end',
+    specs: { 'Potência (W)': 750, 'Selo': '80 Plus Gold', 'Modular': 'Total', 'Conector PCIe 5.0': 'Sim (ATX 3.0)', 'Garantia': '10 anos' },
+    precos: [
+      { loja: 'kabum', preco: 579, url: 'https://www.kabum.com.br/produto/xpg-core-reactor-ii-750w?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 57,90' },
+    ],
+  },
+  {
+    slug: 'cooler-master-mwe-650-v2', marca: 'Cooler Master', nome: 'MWE 650 Gold V2', categoria: 'fontes', score: 79, tier: 'mid-range',
+    specs: { 'Potência (W)': 650, 'Selo': '80 Plus Gold', 'Modular': 'Total', 'Conector PCIe 5.0': 'Não', 'Garantia': '5 anos' },
+    precos: [
+      { loja: 'kabum', preco: 429, url: 'https://www.kabum.com.br/produto/cooler-master-mwe-650-v2?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '8x R$ 53,63' },
+    ],
+  },
+  {
+    slug: 'nzxt-c750-750w', marca: 'NZXT', nome: 'C750 750W', categoria: 'fontes', score: 85, tier: 'mid-range',
+    specs: { 'Potência (W)': 750, 'Selo': '80 Plus Gold', 'Modular': 'Total', 'Conector PCIe 5.0': 'Não', 'Garantia': '10 anos' },
+    precos: [
+      { loja: 'kabum', preco: 559, url: 'https://www.kabum.com.br/produto/nzxt-c750?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 55,90' },
+    ],
+  },
+  {
+    slug: 'thermaltake-smart-600w', marca: 'Thermaltake', nome: 'Smart 600W', categoria: 'fontes', score: 58, tier: 'entrada',
+    specs: { 'Potência (W)': 600, 'Selo': '80 Plus White', 'Modular': 'Não', 'Conector PCIe 5.0': 'Não', 'Garantia': '3 anos' },
+    precos: [
+      { loja: 'kabum', preco: 299, url: 'https://www.kabum.com.br/produto/thermaltake-smart-600w?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '6x R$ 49,83' },
+    ],
+  },
+  {
+    slug: 'corsair-rm750-750w', marca: 'Corsair', nome: 'RM750 750W', categoria: 'fontes', score: 89, tier: 'high-end',
+    specs: { 'Potência (W)': 750, 'Selo': '80 Plus Gold', 'Modular': 'Total', 'Conector PCIe 5.0': 'Sim (ATX 3.0)', 'Garantia': '10 anos' },
+    precos: [
+      { loja: 'kabum', preco: 649, url: 'https://www.kabum.com.br/produto/corsair-rm750?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 64,90' },
+    ],
+  },
+
+  // ══════════════════════════════════════
+  // NOVOS COOLERS
+  // ══════════════════════════════════════
+  {
+    slug: 'nzxt-kraken-240', marca: 'NZXT', nome: 'Kraken 240', categoria: 'coolers', score: 89, tier: 'high-end',
+    specs: { 'Tipo': 'Água (AIO 240mm)', 'TDP (W)': 280, 'Tamanho (mm)': 240, 'Ruído (dBA)': 30, 'Soquetes': 'AM5/AM4/LGA1700' },
+    precos: [
+      { loja: 'kabum', preco: 799, url: 'https://www.kabum.com.br/produto/nzxt-kraken-240?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 79,90' },
+    ],
+  },
+  {
+    slug: 'corsair-icue-h100i-elite', marca: 'Corsair', nome: 'iCUE H100i Elite', categoria: 'coolers', score: 90, tier: 'high-end',
+    specs: { 'Tipo': 'Água (AIO 240mm)', 'TDP (W)': 280, 'Tamanho (mm)': 240, 'Ruído (dBA)': 31, 'Soquetes': 'AM5/AM4/LGA1700' },
+    precos: [
+      { loja: 'kabum', preco: 899, url: 'https://www.kabum.com.br/produto/corsair-h100i-elite?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 89,90' },
+    ],
+  },
+  {
+    slug: 'deepcool-ak500', marca: 'DeepCool', nome: 'AK500', categoria: 'coolers', score: 85, tier: 'mid-range',
+    specs: { 'Tipo': 'Ar (torre)', 'TDP (W)': 240, 'Tamanho (mm)': 158, 'Ruído (dBA)': 29, 'Soquetes': 'AM5/AM4/LGA1700' },
+    precos: [
+      { loja: 'kabum', preco: 279, url: 'https://www.kabum.com.br/produto/deepcool-ak500?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '6x R$ 46,50' },
+    ],
+  },
+  {
+    slug: 'cooler-master-ml240l-v2', marca: 'Cooler Master', nome: 'MasterLiquid ML240L V2', categoria: 'coolers', score: 84, tier: 'mid-range',
+    specs: { 'Tipo': 'Água (AIO 240mm)', 'TDP (W)': 250, 'Tamanho (mm)': 240, 'Ruído (dBA)': 30, 'Soquetes': 'AM5/AM4/LGA1700' },
+    precos: [
+      { loja: 'kabum', preco: 499, url: 'https://www.kabum.com.br/produto/ml240l-v2?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 49,90' },
+    ],
+  },
+  {
+    slug: 'arctic-freezer-36', marca: 'Arctic', nome: 'Freezer 36', categoria: 'coolers', score: 86, tier: 'mid-range',
+    specs: { 'Tipo': 'Ar (torre dupla)', 'TDP (W)': 230, 'Tamanho (mm)': 159, 'Ruído (dBA)': 25, 'Soquetes': 'AM5/AM4/LGA1700' },
+    precos: [
+      { loja: 'kabum', preco: 259, url: 'https://www.kabum.com.br/produto/arctic-freezer-36?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '6x R$ 43,16' },
+    ],
+  },
+  {
+    slug: 'thermalright-frozen-notte-360', marca: 'Thermalright', nome: 'Frozen Notte 360 ARGB', categoria: 'coolers', score: 89, tier: 'high-end',
+    specs: { 'Tipo': 'Água (AIO 360mm)', 'TDP (W)': 300, 'Tamanho (mm)': 360, 'Ruído (dBA)': 30, 'Soquetes': 'AM5/AM4/LGA1700' },
+    precos: [
+      { loja: 'kabum', preco: 549, url: 'https://www.kabum.com.br/produto/thermalright-frozen-notte-360?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 54,90' },
+    ],
+  },
+  {
+    slug: 'be-quiet-pure-rock-2', marca: 'be quiet!', nome: 'Pure Rock 2', categoria: 'coolers', score: 80, tier: 'mid-range',
+    specs: { 'Tipo': 'Ar (torre)', 'TDP (W)': 150, 'Tamanho (mm)': 155, 'Ruído (dBA)': 25, 'Soquetes': 'AM5/AM4/LGA1700' },
+    precos: [
+      { loja: 'kabum', preco: 269, url: 'https://www.kabum.com.br/produto/be-quiet-pure-rock-2?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '6x R$ 44,83' },
+    ],
+  },
+  {
+    slug: 'deepcool-le520', marca: 'DeepCool', nome: 'LE520', categoria: 'coolers', score: 82, tier: 'mid-range',
+    specs: { 'Tipo': 'Água (AIO 240mm)', 'TDP (W)': 220, 'Tamanho (mm)': 240, 'Ruído (dBA)': 32, 'Soquetes': 'AM5/AM4/LGA1700' },
+    precos: [
+      { loja: 'kabum', preco: 399, url: 'https://www.kabum.com.br/produto/deepcool-le520?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '8x R$ 49,88' },
+    ],
+  },
+  {
+    slug: 'id-cooling-frozn-a620', marca: 'ID-Cooling', nome: 'FROZN A620', categoria: 'coolers', score: 83, tier: 'mid-range',
+    specs: { 'Tipo': 'Ar (torre dupla)', 'TDP (W)': 270, 'Tamanho (mm)': 159, 'Ruído (dBA)': 28, 'Soquetes': 'AM5/AM4/LGA1700' },
+    precos: [
+      { loja: 'kabum', preco: 299, url: 'https://www.kabum.com.br/produto/id-cooling-frozn-a620?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '6x R$ 49,83' },
+    ],
+  },
+  {
+    slug: 'deepcool-gammaxx-400', marca: 'DeepCool', nome: 'Gammaxx 400 V2', categoria: 'coolers', score: 66, tier: 'entrada',
+    specs: { 'Tipo': 'Ar (torre)', 'TDP (W)': 130, 'Tamanho (mm)': 155, 'Ruído (dBA)': 30, 'Soquetes': 'AM4/LGA1700' },
+    precos: [
+      { loja: 'kabum', preco: 149, url: 'https://www.kabum.com.br/produto/deepcool-gammaxx-400?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '4x R$ 37,25' },
+    ],
+  },
+
+  // ══════════════════════════════════════
   // NOVAS MEMORIAS
   // ══════════════════════════════════════
   {
