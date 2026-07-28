@@ -21,8 +21,10 @@ export function ProdutoThumb({ produto, size = 40, radius = 8 }: Props) {
         width: size,
         height: size,
         borderRadius: radius,
-        background: 'var(--surface2)',
+        // Foto de produto sempre em fundo branco (padrão das lojas); ícone no fundo escuro.
+        background: produto.imagem ? '#ffffff' : 'var(--surface2)',
         border: '1px solid var(--border)',
+        padding: produto.imagem ? Math.round(size * 0.08) : 0,
       }}
     >
       {produto.imagem ? (

@@ -123,6 +123,7 @@ export const PRODUTOS: Produto[] = [
     nome: 'Core i7-14700K',
     categoria: 'processadores',
     score: 95,
+    imagem: 'https://m.media-amazon.com/images/I/61aAAg73uLL._AC_SL320_.jpg',
     specs: {
       'Núcleos': 20, 'Threads': 28, 'Clock Boost (GHz)': 5.6,
       'Soquete': 'LGA1700', 'Consumo (W)': 125,
@@ -214,6 +215,7 @@ export const PRODUTOS: Produto[] = [
     nome: 'Core i5-14600K',
     categoria: 'processadores',
     score: 88,
+    imagem: 'https://m.media-amazon.com/images/I/61mTntMQ4OL._AC_SL320_.jpg',
     specs: {
       'Núcleos': 14, 'Threads': 20, 'Clock Boost (GHz)': 5.3,
       'Soquete': 'LGA1700', 'Consumo (W)': 125,
@@ -251,6 +253,7 @@ export const PRODUTOS: Produto[] = [
     nome: 'Ryzen 5 7600X',
     categoria: 'processadores',
     score: 84,
+    imagem: 'https://m.media-amazon.com/images/I/51m7L9bQI8L._AC_SL320_.jpg',
     specs: {
       'Núcleos': 6, 'Threads': 12, 'Clock Boost (GHz)': 5.3,
       'Soquete': 'AM5', 'Consumo (W)': 105,
@@ -329,6 +332,7 @@ export const PRODUTOS: Produto[] = [
     nome: 'ROG Swift PG27AQDM',
     categoria: 'monitores',
     score: 99,
+    imagem: 'https://m.media-amazon.com/images/I/61rpZTslNtL._AC_SL320_.jpg',
     specs: {
       'Polegadas': '27"', 'Painel': 'OLED', 'Resolução': '2560×1440',
       'Taxa (Hz)': 240, 'Resposta (ms)': 0.03,
@@ -366,6 +370,7 @@ export const PRODUTOS: Produto[] = [
     nome: 'Odyssey G7 27"',
     categoria: 'monitores',
     score: 90,
+    imagem: 'https://m.media-amazon.com/images/I/81ligAc8N4L._AC_SL320_.jpg',
     specs: {
       'Polegadas': '27"', 'Painel': 'VA', 'Resolução': '2560×1440',
       'Taxa (Hz)': 240, 'Resposta (ms)': 1,
@@ -449,6 +454,7 @@ export const PRODUTOS: Produto[] = [
     nome: 'GeForce RTX 4070 Super',
     categoria: 'gpus',
     score: 88,
+    imagem: 'https://m.media-amazon.com/images/I/51PaJUnpGRL._AC_SL320_.jpg',
     specs: { 'VRAM': '12 GB GDDR6X', 'Consumo (W)': 220, 'Clock Boost (GHz)': 2.48, 'Ray Tracing': 'Sim', 'Barramento': '192-bit' },
     precos: [
       { loja: 'amazon', preco: 4699, url: 'https://www.amazon.com.br/s?k=rtx+4070+super&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '12x R$ 391,58' },
@@ -462,6 +468,7 @@ export const PRODUTOS: Produto[] = [
     nome: 'GeForce RTX 4060',
     categoria: 'gpus',
     score: 76,
+    imagem: 'https://m.media-amazon.com/images/I/617uDFLVAML._AC_SL320_.jpg',
     specs: { 'VRAM': '8 GB GDDR6', 'Consumo (W)': 115, 'Clock Boost (GHz)': 2.46, 'Ray Tracing': 'Sim', 'Barramento': '128-bit' },
     precos: [
       { loja: 'amazon', preco: 1999, url: 'https://www.amazon.com.br/s?k=rtx+4060&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '12x R$ 166,58' },
@@ -475,6 +482,7 @@ export const PRODUTOS: Produto[] = [
     nome: 'Radeon RX 7800 XT',
     categoria: 'gpus',
     score: 86,
+    imagem: 'https://m.media-amazon.com/images/I/616u0NhF5iL._AC_SL320_.jpg',
     specs: { 'VRAM': '16 GB GDDR6', 'Consumo (W)': 263, 'Clock Boost (GHz)': 2.43, 'Ray Tracing': 'Sim', 'Barramento': '256-bit' },
     precos: [
       { loja: 'amazon', preco: 3899, url: 'https://www.amazon.com.br/s?k=rx+7800+xt&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '12x R$ 324,92' },
@@ -488,6 +496,7 @@ export const PRODUTOS: Produto[] = [
     nome: 'Radeon RX 7600',
     categoria: 'gpus',
     score: 72,
+    imagem: 'https://m.media-amazon.com/images/I/71U03CcRZzL._AC_SL320_.jpg',
     specs: { 'VRAM': '8 GB GDDR6', 'Consumo (W)': 165, 'Clock Boost (GHz)': 2.66, 'Ray Tracing': 'Sim', 'Barramento': '128-bit' },
     precos: [
       { loja: 'amazon', preco: 1799, url: 'https://www.amazon.com.br/s?k=rx+7600&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '12x R$ 149,92' },
@@ -504,6 +513,7 @@ export const PRODUTOS: Produto[] = [
     nome: '990 Pro 2TB',
     categoria: 'ssds',
     score: 95,
+    imagem: 'https://m.media-amazon.com/images/I/71OWtcxKgvL._AC_SL320_.jpg',
     specs: { 'Capacidade': '2 TB', 'Interface': 'NVMe Gen4', 'Leitura (MB/s)': 7450, 'Gravação (MB/s)': 6900, 'Cache DRAM': 'Sim' },
     precos: [
       { loja: 'amazon', preco: 1299, url: 'https://www.amazon.com.br/s?k=samsung+990+pro+2tb&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '12x R$ 108,25' },
@@ -517,6 +527,7 @@ export const PRODUTOS: Produto[] = [
     nome: 'Black SN850X 2TB',
     categoria: 'ssds',
     score: 93,
+    imagem: 'https://m.media-amazon.com/images/I/61jQCrK6mFL._AC_SL320_.jpg',
     specs: { 'Capacidade': '2 TB', 'Interface': 'NVMe Gen4', 'Leitura (MB/s)': 7300, 'Gravação (MB/s)': 6600, 'Cache DRAM': 'Sim' },
     precos: [
       { loja: 'amazon', preco: 1199, url: 'https://www.amazon.com.br/s?k=wd+black+sn850x+2tb&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '12x R$ 99,92' },
@@ -529,6 +540,7 @@ export const PRODUTOS: Produto[] = [
     nome: 'NV2 1TB',
     categoria: 'ssds',
     score: 78,
+    imagem: 'https://m.media-amazon.com/images/I/71NfMZKkpQL._AC_SL320_.jpg',
     specs: { 'Capacidade': '1 TB', 'Interface': 'NVMe Gen4', 'Leitura (MB/s)': 3500, 'Gravação (MB/s)': 2100, 'Cache DRAM': 'Não' },
     precos: [
       { loja: 'amazon', preco: 449, url: 'https://www.amazon.com.br/s?k=kingston+nv2+1tb&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '10x R$ 44,90' },
@@ -546,6 +558,7 @@ export const PRODUTOS: Produto[] = [
     nome: 'Ryzen 7 9800X3D',
     categoria: 'processadores',
     score: 100,
+    imagem: 'https://m.media-amazon.com/images/I/71NMFO0iUhL._AC_SL320_.jpg',
     specs: { 'Núcleos': 8, 'Threads': 16, 'Clock Boost (GHz)': 5.2, 'Soquete': 'AM5', 'Consumo (W)': 120 },
     precos: [
       { loja: 'amazon', preco: 3599, url: 'https://www.amazon.com.br/s?k=ryzen+7+9800x3d&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '12x R$ 299,92' },
@@ -559,6 +572,7 @@ export const PRODUTOS: Produto[] = [
     nome: 'Ryzen 9 7950X3D',
     categoria: 'processadores',
     score: 97,
+    imagem: 'https://m.media-amazon.com/images/I/51jNS8epPeL._AC_SL320_.jpg',
     specs: { 'Núcleos': 16, 'Threads': 32, 'Clock Boost (GHz)': 5.7, 'Soquete': 'AM5', 'Consumo (W)': 120 },
     precos: [
       { loja: 'amazon', preco: 4299, url: 'https://www.amazon.com.br/s?k=ryzen+9+7950x3d&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '12x R$ 358,25' },
@@ -569,6 +583,7 @@ export const PRODUTOS: Produto[] = [
   // ── GPUs (faixa completa) ──
   {
     slug: 'nvidia-geforce-rtx-5090', marca: 'NVIDIA', nome: 'GeForce RTX 5090', categoria: 'gpus', score: 100,
+    imagem: 'https://m.media-amazon.com/images/I/71IRIvHOVDL._AC_SL320_.jpg',
     specs: { 'VRAM': '32 GB GDDR7', 'Consumo (W)': 575, 'Clock Boost (GHz)': 2.41, 'Ray Tracing': 'Sim (4ª gen)', 'Barramento': '512-bit' },
     precos: [
       { loja: 'kabum', preco: 18999, url: 'https://www.kabum.com.br/produto/rtx-5090?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '12x R$ 1.583,25' },
@@ -586,6 +601,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'amd-radeon-rx-7900-xtx', marca: 'AMD', nome: 'Radeon RX 7900 XTX', categoria: 'gpus', score: 92,
+    imagem: 'https://m.media-amazon.com/images/I/61Hah+UYylL._AC_SL320_.jpg',
     specs: { 'VRAM': '24 GB GDDR6', 'Consumo (W)': 355, 'Clock Boost (GHz)': 2.50, 'Ray Tracing': 'Sim', 'Barramento': '384-bit' },
     precos: [
       { loja: 'kabum', preco: 6999, url: 'https://www.kabum.com.br/produto/rx-7900-xtx?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '12x R$ 583,25' },
@@ -594,6 +610,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'nvidia-geforce-rtx-3060', marca: 'NVIDIA', nome: 'GeForce RTX 3060 12GB', categoria: 'gpus', score: 70,
+    imagem: 'https://m.media-amazon.com/images/I/61OZT+94I8L._AC_SL320_.jpg',
     specs: { 'VRAM': '12 GB GDDR6', 'Consumo (W)': 170, 'Clock Boost (GHz)': 1.78, 'Ray Tracing': 'Sim', 'Barramento': '192-bit' },
     precos: [
       { loja: 'amazon', preco: 1699, url: 'https://www.amazon.com.br/s?k=rtx+3060+12gb&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '12x R$ 141,58' },
@@ -602,6 +619,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'nvidia-geforce-rtx-3050', marca: 'NVIDIA', nome: 'GeForce RTX 3050 8GB', categoria: 'gpus', score: 60,
+    imagem: 'https://m.media-amazon.com/images/I/710ErKHDAJL._AC_SL320_.jpg',
     specs: { 'VRAM': '8 GB GDDR6', 'Consumo (W)': 130, 'Clock Boost (GHz)': 1.78, 'Ray Tracing': 'Sim', 'Barramento': '128-bit' },
     precos: [
       { loja: 'amazon', preco: 1299, url: 'https://www.amazon.com.br/s?k=rtx+3050&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '12x R$ 108,25' },
@@ -610,6 +628,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'amd-radeon-rx-6600', marca: 'AMD', nome: 'Radeon RX 6600', categoria: 'gpus', score: 66,
+    imagem: 'https://m.media-amazon.com/images/I/61gtuB3TYAL._AC_SL320_.jpg',
     specs: { 'VRAM': '8 GB GDDR6', 'Consumo (W)': 132, 'Clock Boost (GHz)': 2.49, 'Ray Tracing': 'Sim (limitado)', 'Barramento': '128-bit' },
     precos: [
       { loja: 'kabum', preco: 1149, url: 'https://www.kabum.com.br/produto/rx-6600?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '12x R$ 95,75' },
@@ -618,6 +637,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'nvidia-geforce-gtx-1650', marca: 'NVIDIA', nome: 'GeForce GTX 1650', categoria: 'gpus', score: 45,
+    imagem: 'https://m.media-amazon.com/images/I/51aeftiv9nL._AC_SL320_.jpg',
     specs: { 'VRAM': '4 GB GDDR6', 'Consumo (W)': 75, 'Clock Boost (GHz)': 1.66, 'Ray Tracing': 'Não', 'Barramento': '128-bit' },
     precos: [
       { loja: 'kabum', preco: 899, url: 'https://www.kabum.com.br/produto/gtx-1650?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 89,90' },
@@ -627,6 +647,7 @@ export const PRODUTOS: Produto[] = [
   // ── CPUs (faixa completa) ──
   {
     slug: 'intel-core-i9-14900k', marca: 'Intel', nome: 'Core i9-14900K', categoria: 'processadores', score: 99,
+    imagem: 'https://m.media-amazon.com/images/I/619ytLAytAL._AC_SL320_.jpg',
     specs: { 'Núcleos': 24, 'Threads': 32, 'Clock Boost (GHz)': 6.0, 'Soquete': 'LGA1700', 'Consumo (W)': 125 },
     precos: [
       { loja: 'amazon', preco: 3299, url: 'https://www.amazon.com.br/s?k=i9-14900k&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '12x R$ 274,92' },
@@ -635,6 +656,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'amd-ryzen-5-5600', marca: 'AMD', nome: 'Ryzen 5 5600', categoria: 'processadores', score: 72,
+    imagem: 'https://m.media-amazon.com/images/I/51So7GoGvxL._AC_SL320_.jpg',
     specs: { 'Núcleos': 6, 'Threads': 12, 'Clock Boost (GHz)': 4.4, 'Soquete': 'AM4', 'Consumo (W)': 65 },
     precos: [
       { loja: 'amazon', preco: 699, url: 'https://www.amazon.com.br/s?k=ryzen+5+5600&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '10x R$ 69,90' },
@@ -643,6 +665,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'intel-core-i5-12400f', marca: 'Intel', nome: 'Core i5-12400F', categoria: 'processadores', score: 74,
+    imagem: 'https://m.media-amazon.com/images/I/51EwtPjHkIL._AC_SL320_.jpg',
     specs: { 'Núcleos': 6, 'Threads': 12, 'Clock Boost (GHz)': 4.4, 'Soquete': 'LGA1700', 'Consumo (W)': 65 },
     precos: [
       { loja: 'amazon', preco: 799, url: 'https://www.amazon.com.br/s?k=i5-12400f&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '10x R$ 79,90' },
@@ -651,6 +674,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'intel-core-i3-12100f', marca: 'Intel', nome: 'Core i3-12100F', categoria: 'processadores', score: 58,
+    imagem: 'https://m.media-amazon.com/images/I/51h+4XuLsSL._AC_SL320_.jpg',
     specs: { 'Núcleos': 4, 'Threads': 8, 'Clock Boost (GHz)': 4.3, 'Soquete': 'LGA1700', 'Consumo (W)': 58 },
     precos: [
       { loja: 'kabum', preco: 499, url: 'https://www.kabum.com.br/produto/i3-12100f?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 49,90' },
@@ -658,6 +682,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'amd-athlon-3000g', marca: 'AMD', nome: 'Athlon 3000G', categoria: 'processadores', score: 35,
+    imagem: 'https://m.media-amazon.com/images/I/41-v8IwxMjL._AC_SL320_.jpg',
     specs: { 'Núcleos': 2, 'Threads': 4, 'Clock Boost (GHz)': 3.5, 'Soquete': 'AM4', 'Consumo (W)': 35 },
     precos: [
       { loja: 'kabum', preco: 349, url: 'https://www.kabum.com.br/produto/athlon-3000g?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '6x R$ 58,16' },
@@ -676,6 +701,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'kingston-a400-480gb', marca: 'Kingston', nome: 'A400 480GB', categoria: 'ssds', score: 45,
+    imagem: 'https://m.media-amazon.com/images/I/71veNz-BVNL._AC_SL320_.jpg',
     specs: { 'Capacidade': '480 GB', 'Interface': 'SATA', 'Leitura (MB/s)': 500, 'Gravação (MB/s)': 450, 'Cache DRAM': 'Não' },
     precos: [
       { loja: 'kabum', preco: 199, url: 'https://www.kabum.com.br/produto/kingston-a400-480gb?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '4x R$ 49,75' },
@@ -685,6 +711,7 @@ export const PRODUTOS: Produto[] = [
   // ── Memórias RAM ──
   {
     slug: 'gskill-trident-z5-32gb-ddr5-6000', marca: 'G.Skill', nome: 'Trident Z5 32GB DDR5 6000MHz', categoria: 'memorias', score: 92,
+    imagem: 'https://m.media-amazon.com/images/I/51jIjdpZBfL._AC_SL320_.jpg',
     specs: { 'Capacidade': '32 GB', 'Tipo': 'DDR5', 'Frequência (MHz)': 6000, 'Latência (CL)': 30, 'Kit': '2x16GB' },
     precos: [
       { loja: 'kabum', preco: 899, url: 'https://www.kabum.com.br/produto/gskill-trident-z5-32gb?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 89,90' },
@@ -693,6 +720,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'corsair-vengeance-16gb-ddr5-5200', marca: 'Corsair', nome: 'Vengeance 16GB DDR5 5200MHz', categoria: 'memorias', score: 76,
+    imagem: 'https://m.media-amazon.com/images/I/61mf24GAOuL._AC_SL320_.jpg',
     specs: { 'Capacidade': '16 GB', 'Tipo': 'DDR5', 'Frequência (MHz)': 5200, 'Latência (CL)': 40, 'Kit': '2x8GB' },
     precos: [
       { loja: 'kabum', preco: 399, url: 'https://www.kabum.com.br/produto/corsair-vengeance-16gb-ddr5?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '8x R$ 49,88' },
@@ -700,6 +728,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'corsair-vengeance-lpx-16gb-ddr4-3200', marca: 'Corsair', nome: 'Vengeance LPX 16GB DDR4 3200MHz', categoria: 'memorias', score: 68,
+    imagem: 'https://m.media-amazon.com/images/I/51Gs2sm696L._AC_SL320_.jpg',
     specs: { 'Capacidade': '16 GB', 'Tipo': 'DDR4', 'Frequência (MHz)': 3200, 'Latência (CL)': 16, 'Kit': '2x8GB' },
     precos: [
       { loja: 'kabum', preco: 299, url: 'https://www.kabum.com.br/produto/corsair-vengeance-lpx-16gb-ddr4?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '6x R$ 49,83' },
@@ -709,6 +738,7 @@ export const PRODUTOS: Produto[] = [
   // ── Fontes ──
   {
     slug: 'corsair-rm750e-750w', marca: 'Corsair', nome: 'RM750e 750W', categoria: 'fontes', score: 88,
+    imagem: 'https://m.media-amazon.com/images/I/51TO+Fm8DvL._AC_SL320_.jpg',
     specs: { 'Potência (W)': 750, 'Selo': '80 Plus Gold', 'Modular': 'Total', 'Conector PCIe 5.0': 'Sim (ATX 3.0)', 'Garantia': '7 anos' },
     precos: [
       { loja: 'kabum', preco: 549, url: 'https://www.kabum.com.br/produto/corsair-rm750e?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 54,90' },
@@ -717,6 +747,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'corsair-cx650-650w', marca: 'Corsair', nome: 'CX650 650W', categoria: 'fontes', score: 65,
+    imagem: 'https://m.media-amazon.com/images/I/51P0huQIsmL._AC_SL320_.jpg',
     specs: { 'Potência (W)': 650, 'Selo': '80 Plus Bronze', 'Modular': 'Não', 'Conector PCIe 5.0': 'Não', 'Garantia': '5 anos' },
     precos: [
       { loja: 'kabum', preco: 379, url: 'https://www.kabum.com.br/produto/corsair-cx650?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '8x R$ 47,38' },
@@ -733,6 +764,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'cooler-master-hyper-212', marca: 'Cooler Master', nome: 'Hyper 212 Black', categoria: 'coolers', score: 68,
+    imagem: 'https://m.media-amazon.com/images/I/71P2FGn9ruL._AC_SL320_.jpg',
     specs: { 'Tipo': 'Ar (torre)', 'TDP (W)': 150, 'Tamanho (mm)': 159, 'Ruído (dBA)': 26, 'Soquetes': 'AM5/AM4/LGA1700' },
     precos: [
       { loja: 'kabum', preco: 199, url: 'https://www.kabum.com.br/produto/hyper-212-black?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '4x R$ 49,75' },
@@ -742,6 +774,7 @@ export const PRODUTOS: Produto[] = [
   // ── Gabinetes ──
   {
     slug: 'lian-li-lancool-216', marca: 'Lian Li', nome: 'Lancool 216', categoria: 'gabinetes', score: 88,
+    imagem: 'https://m.media-amazon.com/images/I/61Mxm4YndEL._AC_SL320_.jpg',
     specs: { 'Tipo': 'Mid Tower ATX', 'Suporta GPU (mm)': 392, 'Baias': '2x 3.5" + 2x 2.5"', 'Fans inclusos': '2x 160mm + 1x 140mm', 'Painel': 'Vidro temperado' },
     precos: [
       { loja: 'kabum', preco: 599, url: 'https://www.kabum.com.br/produto/lian-li-lancool-216?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 59,90' },
@@ -749,6 +782,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'gamemax-vega', marca: 'Gamemax', nome: 'Vega', categoria: 'gabinetes', score: 58,
+    imagem: 'https://m.media-amazon.com/images/I/81ZNKGPg-SL._AC_SL320_.jpg',
     specs: { 'Tipo': 'Mid Tower ATX', 'Suporta GPU (mm)': 350, 'Baias': '2x 3.5" + 2x 2.5"', 'Fans inclusos': '4x ARGB', 'Painel': 'Vidro temperado' },
     precos: [
       { loja: 'kabum', preco: 299, url: 'https://www.kabum.com.br/produto/gamemax-vega?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '6x R$ 49,83' },
@@ -762,6 +796,7 @@ export const PRODUTOS: Produto[] = [
   // ── Memórias RAM (novos) ──
   {
     slug: 'corsair-vengeance-32gb-ddr5-6400', marca: 'Corsair', nome: 'Vengeance 32GB DDR5 6400MHz', categoria: 'memorias', score: 90,
+    imagem: 'https://m.media-amazon.com/images/I/61D2DDpDITL._AC_SL320_.jpg',
     specs: { 'Capacidade': '32 GB', 'Tipo': 'DDR5', 'Frequência (MHz)': 6400, 'Latência (CL)': 32, 'Kit': '2x16GB' },
     precos: [
       { loja: 'amazon', preco: 949, url: 'https://www.amazon.com.br/s?k=corsair+vengeance+32gb+ddr5+6400&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '10x R$ 94,90' },
@@ -771,6 +806,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'kingston-fury-beast-32gb-ddr5-6000', marca: 'Kingston', nome: 'Fury Beast 32GB DDR5 6000MHz', categoria: 'memorias', score: 87,
+    imagem: 'https://m.media-amazon.com/images/I/51W8vjDKe6L._AC_SL320_.jpg',
     specs: { 'Capacidade': '32 GB', 'Tipo': 'DDR5', 'Frequência (MHz)': 6000, 'Latência (CL)': 36, 'Kit': '2x16GB' },
     precos: [
       { loja: 'kabum', preco: 799, url: 'https://www.kabum.com.br/produto/kingston-fury-beast-32gb-ddr5?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 79,90' },
@@ -780,6 +816,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'kingston-fury-beast-16gb-ddr4-3600', marca: 'Kingston', nome: 'Fury Beast 16GB DDR4 3600MHz', categoria: 'memorias', score: 71,
+    imagem: 'https://m.media-amazon.com/images/I/61NK9Y9WlpL._AC_SL320_.jpg',
     specs: { 'Capacidade': '16 GB', 'Tipo': 'DDR4', 'Frequência (MHz)': 3600, 'Latência (CL)': 18, 'Kit': '2x8GB' },
     precos: [
       { loja: 'kabum', preco: 279, url: 'https://www.kabum.com.br/produto/kingston-fury-beast-16gb-ddr4-3600?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '6x R$ 46,50' },
@@ -798,6 +835,7 @@ export const PRODUTOS: Produto[] = [
   // ── Fontes (novos) ──
   {
     slug: 'corsair-rm850e-850w', marca: 'Corsair', nome: 'RM850e 850W', categoria: 'fontes', score: 90,
+    imagem: 'https://m.media-amazon.com/images/I/51Kks9wwyHL._AC_SL320_.jpg',
     specs: { 'Potência (W)': 850, 'Selo': '80 Plus Gold', 'Modular': 'Total', 'Conector PCIe 5.0': 'Sim (ATX 3.0)', 'Garantia': '7 anos' },
     precos: [
       { loja: 'kabum', preco: 699, url: 'https://www.kabum.com.br/produto/corsair-rm850e?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 69,90' },
@@ -818,6 +856,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'seasonic-focus-gx-750', marca: 'Seasonic', nome: 'Focus GX-750 750W', categoria: 'fontes', score: 89,
+    imagem: 'https://m.media-amazon.com/images/I/816Ka97cDyL._AC_SL320_.jpg',
     specs: { 'Potência (W)': 750, 'Selo': '80 Plus Gold', 'Modular': 'Total', 'Conector PCIe 5.0': 'Não', 'Garantia': '10 anos' },
     precos: [
       { loja: 'terabyte', preco: 649, url: 'https://www.terabyteshop.com.br/produto/seasonic-focus-gx-750?aff=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 64,90' },
@@ -854,6 +893,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'arctic-liquid-freezer-iii-240', marca: 'Arctic', nome: 'Liquid Freezer III 240', categoria: 'coolers', score: 90,
+    imagem: 'https://m.media-amazon.com/images/I/71YmfKozesL._AC_SL320_.jpg',
     specs: { 'Tipo': 'Água (AIO 240mm)', 'TDP (W)': 280, 'Tamanho (mm)': 240, 'Ruído (dBA)': 30, 'Soquetes': 'AM5/AM4/LGA1700' },
     precos: [
       { loja: 'kabum', preco: 599, url: 'https://www.kabum.com.br/produto/arctic-liquid-freezer-iii-240?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 59,90' },
@@ -862,6 +902,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'noctua-nh-d15', marca: 'Noctua', nome: 'NH-D15', categoria: 'coolers', score: 91,
+    imagem: 'https://m.media-amazon.com/images/I/91t48GBv8TL._AC_SL320_.jpg',
     specs: { 'Tipo': 'Ar (torre dupla)', 'TDP (W)': 250, 'Tamanho (mm)': 165, 'Ruído (dBA)': 24, 'Soquetes': 'AM5/AM4/LGA1700' },
     precos: [
       { loja: 'amazon', preco: 649, url: 'https://www.amazon.com.br/s?k=noctua+nh-d15&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '10x R$ 64,90' },
@@ -871,6 +912,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'thermalright-peerless-assassin-120-se', marca: 'Thermalright', nome: 'Peerless Assassin 120 SE', categoria: 'coolers', score: 84,
+    imagem: 'https://m.media-amazon.com/images/I/71j6VKsz-fL._AC_SL320_.jpg',
     specs: { 'Tipo': 'Ar (torre dupla)', 'TDP (W)': 220, 'Tamanho (mm)': 155, 'Ruído (dBA)': 26, 'Soquetes': 'AM5/AM4/LGA1700' },
     precos: [
       { loja: 'kabum', preco: 229, url: 'https://www.kabum.com.br/produto/thermalright-peerless-assassin-120-se?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '4x R$ 57,25' },
@@ -881,6 +923,7 @@ export const PRODUTOS: Produto[] = [
   // ── Gabinetes (novos) ──
   {
     slug: 'corsair-4000d-airflow', marca: 'Corsair', nome: '4000D Airflow', categoria: 'gabinetes', score: 87,
+    imagem: 'https://m.media-amazon.com/images/I/61sg2x6mdJL._AC_SL320_.jpg',
     specs: { 'Tipo': 'Mid Tower ATX', 'Suporta GPU (mm)': 360, 'Baias': '2x 3.5" + 2x 2.5"', 'Fans inclusos': '2x 120mm', 'Painel': 'Vidro temperado' },
     precos: [
       { loja: 'kabum', preco: 549, url: 'https://www.kabum.com.br/produto/corsair-4000d-airflow?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 54,90' },
@@ -889,6 +932,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'nzxt-h7-flow', marca: 'NZXT', nome: 'H7 Flow', categoria: 'gabinetes', score: 86,
+    imagem: 'https://m.media-amazon.com/images/I/819ZQMMOfAL._AC_SL320_.jpg',
     specs: { 'Tipo': 'Mid Tower ATX', 'Suporta GPU (mm)': 400, 'Baias': '2x 3.5" + 4x 2.5"', 'Fans inclusos': '2x 120mm', 'Painel': 'Vidro temperado' },
     precos: [
       { loja: 'kabum', preco: 699, url: 'https://www.kabum.com.br/produto/nzxt-h7-flow?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 69,90' },
@@ -897,6 +941,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'lian-li-o11-dynamic-evo', marca: 'Lian Li', nome: 'O11 Dynamic EVO', categoria: 'gabinetes', score: 90,
+    imagem: 'https://m.media-amazon.com/images/I/61OeOaBlAIL._AC_SL320_.jpg',
     specs: { 'Tipo': 'Mid Tower ATX', 'Suporta GPU (mm)': 422, 'Baias': '4x 2.5" + 2x 3.5"', 'Fans inclusos': 'Nenhum', 'Painel': 'Vidro temperado (duplo)' },
     precos: [
       { loja: 'kabum', preco: 899, url: 'https://www.kabum.com.br/produto/lian-li-o11-dynamic-evo?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 89,90' },
@@ -906,6 +951,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'cooler-master-nr200p', marca: 'Cooler Master', nome: 'NR200P', categoria: 'gabinetes', score: 83,
+    imagem: 'https://m.media-amazon.com/images/I/617V4n5O0vL._AC_SL320_.jpg',
     specs: { 'Tipo': 'Mini ITX', 'Suporta GPU (mm)': 330, 'Baias': '2x 2.5" + 1x 3.5"', 'Fans inclusos': '2x 120mm', 'Painel': 'Vidro temperado' },
     precos: [
       { loja: 'kabum', preco: 649, url: 'https://www.kabum.com.br/produto/cooler-master-nr200p?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 64,90' },
@@ -920,6 +966,7 @@ export const PRODUTOS: Produto[] = [
   // ── GPUs (novos) ──
   {
     slug: 'nvidia-geforce-rtx-4070', marca: 'NVIDIA', nome: 'GeForce RTX 4070', categoria: 'gpus', score: 83,
+    imagem: 'https://m.media-amazon.com/images/I/51PaJUnpGRL._AC_SL320_.jpg',
     specs: { 'VRAM': '12 GB GDDR6X', 'Consumo (W)': 200, 'Clock Boost (GHz)': 2.48, 'Ray Tracing': 'Sim', 'Barramento': '192-bit' },
     precos: [
       { loja: 'amazon', preco: 4499, url: 'https://www.amazon.com.br/s?k=rtx+4070&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '12x R$ 374,92' },
@@ -929,6 +976,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'nvidia-geforce-rtx-4060-ti', marca: 'NVIDIA', nome: 'GeForce RTX 4060 Ti', categoria: 'gpus', score: 76,
+    imagem: 'https://m.media-amazon.com/images/I/51WynZQZehL._AC_SL320_.jpg',
     specs: { 'VRAM': '8 GB GDDR6', 'Consumo (W)': 160, 'Clock Boost (GHz)': 2.54, 'Ray Tracing': 'Sim', 'Barramento': '128-bit' },
     precos: [
       { loja: 'amazon', preco: 2799, url: 'https://www.amazon.com.br/s?k=rtx+4060+ti&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '12x R$ 233,25' },
@@ -937,6 +985,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'amd-radeon-rx-7700-xt', marca: 'AMD', nome: 'Radeon RX 7700 XT', categoria: 'gpus', score: 80,
+    imagem: 'https://m.media-amazon.com/images/I/61tneI9kg4L._AC_SL320_.jpg',
     specs: { 'VRAM': '12 GB GDDR6', 'Consumo (W)': 245, 'Clock Boost (GHz)': 2.54, 'Ray Tracing': 'Sim', 'Barramento': '192-bit' },
     precos: [
       { loja: 'kabum', preco: 2999, url: 'https://www.kabum.com.br/produto/rx-7700-xt?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '12x R$ 249,92' },
@@ -945,6 +994,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'amd-radeon-rx-7900-xt', marca: 'AMD', nome: 'Radeon RX 7900 XT', categoria: 'gpus', score: 88,
+    imagem: 'https://m.media-amazon.com/images/I/61o+vHSp9ML._AC_SL320_.jpg',
     specs: { 'VRAM': '20 GB GDDR6', 'Consumo (W)': 300, 'Clock Boost (GHz)': 2.40, 'Ray Tracing': 'Sim', 'Barramento': '320-bit' },
     precos: [
       { loja: 'kabum', preco: 5499, url: 'https://www.kabum.com.br/produto/rx-7900-xt?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '12x R$ 458,25' },
@@ -955,6 +1005,7 @@ export const PRODUTOS: Produto[] = [
   // ── CPUs (novos) ──
   {
     slug: 'amd-ryzen-9-9950x', marca: 'AMD', nome: 'Ryzen 9 9950X', categoria: 'processadores', score: 96,
+    imagem: 'https://m.media-amazon.com/images/I/61dukbEGziL._AC_SL320_.jpg',
     specs: { 'Núcleos': 16, 'Threads': 32, 'Clock Boost (GHz)': 5.7, 'Soquete': 'AM5', 'Consumo (W)': 170 },
     precos: [
       { loja: 'amazon', preco: 4999, url: 'https://www.amazon.com.br/s?k=ryzen+9+9950x&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '12x R$ 416,58' },
@@ -963,6 +1014,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'intel-core-ultra-7-265k', marca: 'Intel', nome: 'Core Ultra 7 265K', categoria: 'processadores', score: 90,
+    imagem: 'https://m.media-amazon.com/images/I/51gf0NAUHkL._AC_SL320_.jpg',
     specs: { 'Núcleos': 20, 'Threads': 20, 'Clock Boost (GHz)': 5.5, 'Soquete': 'LGA1851', 'Consumo (W)': 125 },
     precos: [
       { loja: 'kabum', preco: 2599, url: 'https://www.kabum.com.br/produto/intel-core-ultra-7-265k?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '12x R$ 216,58' },
@@ -971,6 +1023,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'amd-ryzen-7-9700x', marca: 'AMD', nome: 'Ryzen 7 9700X', categoria: 'processadores', score: 86,
+    imagem: 'https://m.media-amazon.com/images/I/61F3ZChalyL._AC_SL320_.jpg',
     specs: { 'Núcleos': 8, 'Threads': 16, 'Clock Boost (GHz)': 5.5, 'Soquete': 'AM5', 'Consumo (W)': 65 },
     precos: [
       { loja: 'amazon', preco: 2299, url: 'https://www.amazon.com.br/s?k=ryzen+7+9700x&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '12x R$ 191,58' },
@@ -979,6 +1032,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'amd-ryzen-5-9600x', marca: 'AMD', nome: 'Ryzen 5 9600X', categoria: 'processadores', score: 82,
+    imagem: 'https://m.media-amazon.com/images/I/61RfWUr4kvL._AC_SL320_.jpg',
     specs: { 'Núcleos': 6, 'Threads': 12, 'Clock Boost (GHz)': 5.4, 'Soquete': 'AM5', 'Consumo (W)': 65 },
     precos: [
       { loja: 'amazon', preco: 1499, url: 'https://www.amazon.com.br/s?k=ryzen+5+9600x&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '12x R$ 124,92' },
@@ -990,6 +1044,7 @@ export const PRODUTOS: Produto[] = [
   // ── SSDs (novos) ──
   {
     slug: 'samsung-990-pro-1tb', marca: 'Samsung', nome: '990 Pro 1TB', categoria: 'ssds', score: 90,
+    imagem: 'https://m.media-amazon.com/images/I/61ZL9Qpo1-L._AC_SL320_.jpg',
     specs: { 'Capacidade': '1 TB', 'Interface': 'NVMe Gen4', 'Leitura (MB/s)': 7450, 'Gravação (MB/s)': 6900, 'Cache DRAM': 'Sim' },
     precos: [
       { loja: 'amazon', preco: 799, url: 'https://www.amazon.com.br/s?k=samsung+990+pro+1tb&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '10x R$ 79,90' },
@@ -998,6 +1053,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'kingston-nv3-2tb', marca: 'Kingston', nome: 'NV3 2TB', categoria: 'ssds', score: 78,
+    imagem: 'https://m.media-amazon.com/images/I/71sYA7JZeOL._AC_SL320_.jpg',
     specs: { 'Capacidade': '2 TB', 'Interface': 'NVMe Gen4', 'Leitura (MB/s)': 6000, 'Gravação (MB/s)': 5000, 'Cache DRAM': 'Não' },
     precos: [
       { loja: 'kabum', preco: 999, url: 'https://www.kabum.com.br/produto/kingston-nv3-2tb?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 99,90' },
@@ -1006,6 +1062,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'crucial-p3-plus-1tb', marca: 'Crucial', nome: 'P3 Plus 1TB', categoria: 'ssds', score: 74,
+    imagem: 'https://m.media-amazon.com/images/I/51iNNIdPqkL._AC_SL320_.jpg',
     specs: { 'Capacidade': '1 TB', 'Interface': 'NVMe Gen4', 'Leitura (MB/s)': 5000, 'Gravação (MB/s)': 4200, 'Cache DRAM': 'Não' },
     precos: [
       { loja: 'kabum', preco: 549, url: 'https://www.kabum.com.br/produto/crucial-p3-plus-1tb?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '8x R$ 68,63' },
@@ -1022,6 +1079,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'samsung-980-1tb', marca: 'Samsung', nome: '980 1TB', categoria: 'ssds', score: 68,
+    imagem: 'https://m.media-amazon.com/images/I/61sveEgbI2L._AC_SL320_.jpg',
     specs: { 'Capacidade': '1 TB', 'Interface': 'NVMe Gen3', 'Leitura (MB/s)': 3500, 'Gravação (MB/s)': 3000, 'Cache DRAM': 'Não' },
     precos: [
       { loja: 'amazon', preco: 449, url: 'https://www.amazon.com.br/s?k=samsung+980+1tb&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '6x R$ 74,83' },
@@ -1032,6 +1090,7 @@ export const PRODUTOS: Produto[] = [
   // ── Monitores (novos) ──
   {
     slug: 'samsung-odyssey-oled-g6', marca: 'Samsung', nome: 'Odyssey OLED G6 27"', categoria: 'monitores', score: 95,
+    imagem: 'https://m.media-amazon.com/images/I/61ojK89Xc2L._AC_SL320_.jpg',
     specs: { 'Polegadas': '27"', 'Painel': 'OLED', 'Resolução': '2560×1440', 'Taxa (Hz)': 360, 'Resposta (ms)': 0.03 },
     precos: [
       { loja: 'amazon', preco: 3999, url: 'https://www.amazon.com.br/s?k=samsung+odyssey+oled+g6+27&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '12x R$ 333,25' },
@@ -1057,6 +1116,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'gigabyte-m27q', marca: 'Gigabyte', nome: 'M27Q 27"', categoria: 'monitores', score: 84,
+    imagem: 'https://m.media-amazon.com/images/I/611hRv8LcBL._AC_SL320_.jpg',
     specs: { 'Polegadas': '27"', 'Painel': 'IPS (SS)', 'Resolução': '2560×1440', 'Taxa (Hz)': 170, 'Resposta (ms)': 0.5 },
     precos: [
       { loja: 'kabum', preco: 1699, url: 'https://www.kabum.com.br/produto/gigabyte-m27q?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '12x R$ 141,58' },
@@ -1065,6 +1125,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'aoc-24g4', marca: 'AOC', nome: 'Gaming 24G4 24"', categoria: 'monitores', score: 76,
+    imagem: 'https://m.media-amazon.com/images/I/8135eU6HjJL._AC_SL320_.jpg',
     specs: { 'Polegadas': '24"', 'Painel': 'IPS', 'Resolução': '1920×1080', 'Taxa (Hz)': 180, 'Resposta (ms)': 1 },
     precos: [
       { loja: 'kabum', preco: 899, url: 'https://www.kabum.com.br/produto/aoc-24g4?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 89,90' },
@@ -1075,6 +1136,7 @@ export const PRODUTOS: Produto[] = [
   // ── Memórias RAM (novos) ──
   {
     slug: 'corsair-vengeance-rgb-32gb-ddr5-6000', marca: 'Corsair', nome: 'Vengeance RGB 32GB DDR5 6000MHz', categoria: 'memorias', score: 88,
+    imagem: 'https://m.media-amazon.com/images/I/51wIFRMiMYL._AC_SL320_.jpg',
     specs: { 'Capacidade': '32 GB', 'Tipo': 'DDR5', 'Frequência (MHz)': 6000, 'Latência (CL)': 30, 'Kit': '2x16GB' },
     precos: [
       { loja: 'kabum', preco: 949, url: 'https://www.kabum.com.br/produto/corsair-vengeance-rgb-32gb-ddr5-6000?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 94,90' },
@@ -1083,6 +1145,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'kingston-fury-beast-16gb-ddr5-5600', marca: 'Kingston', nome: 'Fury Beast 16GB DDR5 5600MHz', categoria: 'memorias', score: 74,
+    imagem: 'https://m.media-amazon.com/images/I/611n3F+AQJL._AC_SL320_.jpg',
     specs: { 'Capacidade': '16 GB', 'Tipo': 'DDR5', 'Frequência (MHz)': 5600, 'Latência (CL)': 36, 'Kit': '2x8GB' },
     precos: [
       { loja: 'kabum', preco: 449, url: 'https://www.kabum.com.br/produto/kingston-fury-beast-16gb-ddr5-5600?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '8x R$ 56,13' },
@@ -1101,6 +1164,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'msi-mag-a850gl-850w', marca: 'MSI', nome: 'MAG A850GL 850W', categoria: 'fontes', score: 85,
+    imagem: 'https://m.media-amazon.com/images/I/71ExG4gEKWL._AC_SL320_.jpg',
     specs: { 'Potência (W)': 850, 'Selo': '80 Plus Gold', 'Modular': 'Total', 'Conector PCIe 5.0': 'Sim (ATX 3.0)', 'Garantia': '10 anos' },
     precos: [
       { loja: 'kabum', preco: 679, url: 'https://www.kabum.com.br/produto/msi-mag-a850gl?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 67,90' },
@@ -1111,6 +1175,7 @@ export const PRODUTOS: Produto[] = [
   // ── Coolers (novos) ──
   {
     slug: 'deepcool-ak400', marca: 'DeepCool', nome: 'AK400', categoria: 'coolers', score: 76,
+    imagem: 'https://m.media-amazon.com/images/I/71mOg2z50mL._AC_SL320_.jpg',
     specs: { 'Tipo': 'Ar (torre)', 'TDP (W)': 220, 'Tamanho (mm)': 155, 'Ruído (dBA)': 29, 'Soquetes': 'AM5/AM4/LGA1700' },
     precos: [
       { loja: 'kabum', preco: 179, url: 'https://www.kabum.com.br/produto/deepcool-ak400?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '4x R$ 44,75' },
@@ -1119,6 +1184,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'lian-li-galahad-ii-360', marca: 'Lian Li', nome: 'Galahad II LCD 360mm', categoria: 'coolers', score: 89,
+    imagem: 'https://m.media-amazon.com/images/I/61DMTS2O1xL._AC_SL320_.jpg',
     specs: { 'Tipo': 'Água (AIO 360mm)', 'TDP (W)': 300, 'Tamanho (mm)': 360, 'Ruído (dBA)': 29, 'Soquetes': 'AM5/AM4/LGA1700' },
     precos: [
       { loja: 'kabum', preco: 899, url: 'https://www.kabum.com.br/produto/lian-li-galahad-ii-360?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 89,90' },
@@ -1129,6 +1195,7 @@ export const PRODUTOS: Produto[] = [
   // ── Gabinetes (novos) ──
   {
     slug: 'lian-li-lancool-207', marca: 'Lian Li', nome: 'Lancool 207', categoria: 'gabinetes', score: 84,
+    imagem: 'https://m.media-amazon.com/images/I/81vDG+f6b4L._AC_SL320_.jpg',
     specs: { 'Tipo': 'Mid Tower ATX', 'Suporta GPU (mm)': 355, 'Baias': '2x 3.5" + 2x 2.5"', 'Fans inclusos': '2x 140mm + 1x 140mm', 'Painel': 'Vidro temperado' },
     precos: [
       { loja: 'kabum', preco: 549, url: 'https://www.kabum.com.br/produto/lian-li-lancool-207?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 54,90' },
@@ -1137,6 +1204,7 @@ export const PRODUTOS: Produto[] = [
   },
   {
     slug: 'montech-air-903-max', marca: 'Montech', nome: 'Air 903 Max', categoria: 'gabinetes', score: 80,
+    imagem: 'https://m.media-amazon.com/images/I/91U5KxXJDgL._AC_SL320_.jpg',
     specs: { 'Tipo': 'Mid Tower ATX', 'Suporta GPU (mm)': 400, 'Baias': '2x 3.5" + 2x 2.5"', 'Fans inclusos': '4x 140mm ARGB', 'Painel': 'Vidro temperado' },
     precos: [
       { loja: 'kabum', preco: 399, url: 'https://www.kabum.com.br/produto/montech-air-903-max?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '8x R$ 49,88' },
@@ -1148,6 +1216,7 @@ export const PRODUTOS: Produto[] = [
   {
     slug: 'amd-ryzen-5-5500', marca: 'AMD', nome: 'Ryzen 5 5500', categoria: 'processadores', score: 72,
     scoreCustoBeneficio: 94, tier: 'entrada', anoLancamento: 2022,
+    imagem: 'https://m.media-amazon.com/images/I/51So7GoGvxL._AC_SL320_.jpg',
     specs: { 'Núcleos': 6, 'Threads': 12, 'Clock Boost (GHz)': 4.2, 'Soquete': 'AM4', 'Consumo (W)': 65, 'Vídeo integrado': 'Não' },
     precos: [{ loja: 'amazon', preco: 579, url: 'https://www.amazon.com.br/s?k=amd+ryzen+5+5500&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '10x R$ 57,90' }],
     descricao: 'O Ryzen 5 5500 é uma das formas mais baratas de montar um PC gamer AM4 com seis núcleos e doze threads. Ele combina bem com placas como RX 6600 e RTX 3060, mas exige uma placa de vídeo dedicada porque não possui gráficos integrados.',
@@ -1157,6 +1226,7 @@ export const PRODUTOS: Produto[] = [
   {
     slug: 'amd-ryzen-5-5600gt', marca: 'AMD', nome: 'Ryzen 5 5600GT', categoria: 'processadores', score: 76,
     scoreCustoBeneficio: 95, tier: 'entrada', anoLancamento: 2024,
+    imagem: 'https://m.media-amazon.com/images/I/61c6fimxtXL._AC_SL320_.jpg',
     specs: { 'Núcleos': 6, 'Threads': 12, 'Clock Boost (GHz)': 4.6, 'Soquete': 'AM4', 'Consumo (W)': 65, 'Vídeo integrado': 'Radeon Graphics' },
     precos: [{ loja: 'amazon', preco: 899, url: 'https://www.amazon.com.br/s?k=amd+ryzen+5+5600gt&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '10x R$ 89,90' }],
     descricao: 'O Ryzen 5 5600GT permite montar um computador completo sem comprar placa de vídeo logo no início. Seus gráficos Radeon integrados atendem estudo, trabalho e jogos competitivos leves, deixando aberta a possibilidade de instalar uma GPU dedicada depois.',
@@ -1166,6 +1236,7 @@ export const PRODUTOS: Produto[] = [
   {
     slug: 'kingston-a400-240gb', marca: 'Kingston', nome: 'A400 240GB', categoria: 'ssds', score: 41,
     scoreCustoBeneficio: 84, tier: 'entrada', anoLancamento: 2017,
+    imagem: 'https://m.media-amazon.com/images/I/61zRswD4f0L._AC_SL320_.jpg',
     specs: { 'Capacidade': '240 GB', 'Interface': 'SATA III', 'Leitura (MB/s)': 500, 'Gravação (MB/s)': 350, 'Formato': '2,5 polegadas', 'TBW': 80 },
     precos: [{ loja: 'amazon', preco: 169, url: 'https://www.amazon.com.br/s?k=kingston+a400+240gb&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '3x R$ 56,33' }],
     descricao: 'O Kingston A400 de 240GB é um SSD SATA básico para dar vida nova a computadores antigos ou servir como unidade de sistema em uma montagem extremamente econômica. É muito mais rápido que um HD, embora o espaço seja limitado para jogos grandes.',
@@ -1175,6 +1246,7 @@ export const PRODUTOS: Produto[] = [
   {
     slug: 'kingston-nv3-500gb', marca: 'Kingston', nome: 'NV3 500GB', categoria: 'ssds', score: 69,
     scoreCustoBeneficio: 92, tier: 'entrada', anoLancamento: 2024,
+    imagem: 'https://m.media-amazon.com/images/I/71lCFgczaBL._AC_SL320_.jpg',
     specs: { 'Capacidade': '500 GB', 'Interface': 'PCIe 4.0 NVMe', 'Leitura (MB/s)': 5000, 'Gravação (MB/s)': 3000, 'Formato': 'M.2 2280', 'TBW': 160 },
     precos: [{ loja: 'amazon', preco: 299, url: 'https://www.amazon.com.br/s?k=kingston+nv3+500gb&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '5x R$ 59,80' }],
     descricao: 'O Kingston NV3 de 500GB é um NVMe compacto e rápido para quem quer inicialização ágil e espaço para alguns jogos sem pagar por 1TB. A capacidade é o principal limite; para bibliotecas grandes, vale planejar um segundo SSD no futuro.',
@@ -1184,6 +1256,7 @@ export const PRODUTOS: Produto[] = [
   {
     slug: 'kingston-fury-beast-8gb-ddr4-3200', marca: 'Kingston', nome: 'Fury Beast 8GB DDR4 3200MHz', categoria: 'memorias', score: 58,
     scoreCustoBeneficio: 88, tier: 'entrada', anoLancamento: 2021,
+    imagem: 'https://m.media-amazon.com/images/I/51irIqZhg9L._AC_SL320_.jpg',
     specs: { 'Capacidade': '8 GB', 'Tipo': 'DDR4', 'Frequência (MHz)': 3200, 'Latência (CL)': 16, 'Kit': '1x8GB', 'Tensão': '1,35 V' },
     precos: [{ loja: 'amazon', preco: 159, url: 'https://www.amazon.com.br/s?k=kingston+fury+beast+8gb+ddr4+3200&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '3x R$ 53,00' }],
     descricao: 'Um módulo de 8GB é a porta de entrada mais barata para uma plataforma DDR4. Para uso leve ele funciona sozinho, mas a recomendação é comprar duas unidades iguais para chegar a 16GB e ativar dual channel, especialmente em PCs com vídeo integrado.',
@@ -1193,6 +1266,7 @@ export const PRODUTOS: Produto[] = [
   {
     slug: 'xpg-gammix-d35-16gb-ddr4-3200', marca: 'XPG', nome: 'Gammix D35 16GB DDR4 3200MHz', categoria: 'memorias', score: 67,
     scoreCustoBeneficio: 93, tier: 'entrada', anoLancamento: 2023,
+    imagem: 'https://m.media-amazon.com/images/I/41g9rk94FlL._AC_SL320_.jpg',
     specs: { 'Capacidade': '16 GB', 'Tipo': 'DDR4', 'Frequência (MHz)': 3200, 'Latência (CL)': 16, 'Kit': '1x16GB', 'Tensão': '1,35 V' },
     precos: [{ loja: 'amazon', preco: 269, url: 'https://www.amazon.com.br/s?k=xpg+gammix+d35+16gb+ddr4+3200&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '5x R$ 53,80' }],
     descricao: 'O XPG Gammix D35 de 16GB oferece capacidade suficiente para a maioria dos jogos e tarefas cotidianas em um único módulo. É uma compra prática para começar, embora dois módulos de 8GB ou dois de 16GB entreguem mais desempenho por usar dual channel.',
@@ -1202,6 +1276,7 @@ export const PRODUTOS: Produto[] = [
   {
     slug: 'lg-24ms500-b', marca: 'LG', nome: '24MS500-B 24” 100Hz', categoria: 'monitores', score: 72,
     scoreCustoBeneficio: 94, tier: 'entrada', anoLancamento: 2024,
+    imagem: 'https://m.media-amazon.com/images/I/61oWoZ+68iL._AC_SL320_.jpg',
     specs: { 'Tamanho': '24 polegadas', 'Resolução': '1920x1080', 'Painel': 'IPS', 'Taxa (Hz)': 100, 'Resposta (ms)': 5, 'Conexões': '2x HDMI' },
     precos: [{ loja: 'amazon', preco: 649, url: 'https://www.amazon.com.br/s?k=lg+24ms500-b&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '10x R$ 64,90' }],
     descricao: 'O LG 24MS500-B combina painel IPS, resolução Full HD e 100Hz em uma faixa acessível. É uma escolha equilibrada para trabalho, estudo e jogos casuais, com imagem melhor e movimento mais fluido que monitores básicos de 60Hz.',
@@ -1211,6 +1286,7 @@ export const PRODUTOS: Produto[] = [
   {
     slug: 'msi-mag-a550bn-550w', marca: 'MSI', nome: 'MAG A550BN 550W', categoria: 'fontes', score: 72,
     scoreCustoBeneficio: 92, tier: 'entrada', anoLancamento: 2021,
+    imagem: 'https://m.media-amazon.com/images/I/81kjvnj0WkL._AC_SL320_.jpg',
     specs: { 'Potência (W)': 550, 'Selo': '80 Plus Bronze', 'Modular': 'Não', 'PCIe 6+2': '2 conectores', 'Ventoinha': '120 mm', 'Garantia': '5 anos' },
     precos: [{ loja: 'amazon', preco: 329, url: 'https://www.amazon.com.br/s?k=msi+mag+a550bn&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '6x R$ 54,83' }],
     descricao: 'A MSI MAG A550BN é uma fonte de entrada segura para PCs com placas de vídeo econômicas. Possui certificação 80 Plus Bronze, circuito DC-DC, proteções elétricas e cinco anos de garantia, sendo muito mais indicada que fontes genéricas sem procedência.',
@@ -1222,6 +1298,7 @@ export const PRODUTOS: Produto[] = [
   {
     slug: 'logitech-g203-lightsync', marca: 'Logitech', nome: 'G203 LIGHTSYNC', categoria: 'mouses', score: 78,
     scoreCustoBeneficio: 95, tier: 'entrada', anoLancamento: 2020,
+    imagem: 'https://m.media-amazon.com/images/I/61oE1NouXuL._AC_SL320_.jpg',
     specs: { 'DPI': 8000, 'Peso (g)': 85, 'Botões': 6, 'Conexão': 'USB com fio', 'Polling rate': '1000 Hz', 'Iluminação': 'RGB LIGHTSYNC' },
     precos: [{ loja: 'amazon', preco: 149, url: 'https://www.amazon.com.br/s?k=logitech+g203+lightsync&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '3x R$ 49,67' }],
     descricao: 'O Logitech G203 é um mouse gamer de entrada muito equilibrado: sensor preciso, seis botões programáveis e resposta de 1000Hz. Seu formato simples funciona bem para mãos pequenas e médias e o software permite ajustar DPI e iluminação.',
@@ -1231,6 +1308,7 @@ export const PRODUTOS: Produto[] = [
   {
     slug: 'logitech-m90', marca: 'Logitech', nome: 'M90', categoria: 'mouses', score: 48,
     scoreCustoBeneficio: 86, tier: 'entrada', anoLancamento: 2010,
+    imagem: 'https://m.media-amazon.com/images/I/617w9nbQooL._AC_SL320_.jpg',
     specs: { 'DPI': 1000, 'Peso (g)': 90, 'Botões': 3, 'Conexão': 'USB com fio', 'Pegada': 'Ambidestra', 'Iluminação': 'Não' },
     precos: [{ loja: 'amazon', preco: 49, url: 'https://www.amazon.com.br/s?k=logitech+m90&tag=SEUTAG-20', disponivel: true, frete: 'prime' }],
     descricao: 'O Logitech M90 é uma opção simples e barata para estudo, escritório e navegação. Basta conectar à porta USB; não precisa de bateria nem software. Não é voltado a jogos competitivos, mas oferece confiabilidade superior a modelos genéricos.',
@@ -1240,6 +1318,7 @@ export const PRODUTOS: Produto[] = [
   {
     slug: 'redragon-cobra-m711', marca: 'Redragon', nome: 'Cobra M711', categoria: 'mouses', score: 75,
     scoreCustoBeneficio: 92, tier: 'entrada', anoLancamento: 2017,
+    imagem: 'https://m.media-amazon.com/images/I/61saZHQI52L._AC_SL320_.jpg',
     specs: { 'DPI': 10000, 'Peso (g)': 130, 'Botões': 7, 'Conexão': 'USB com fio', 'Sensor': 'Pixart PMW3325', 'Polling rate': '1000 Hz' },
     precos: [{ loja: 'amazon', preco: 129, url: 'https://www.amazon.com.br/s?k=redragon+cobra+m711&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '3x R$ 43,00' }],
     descricao: 'O Redragon Cobra M711 entrega muitos recursos pelo preço: sensor Pixart, sete botões programáveis, memória interna e RGB. É mais pesado que o G203, mas pode agradar quem prefere um corpo maior e pegada para destros.',
@@ -1249,6 +1328,7 @@ export const PRODUTOS: Produto[] = [
   {
     slug: 'logitech-k120', marca: 'Logitech', nome: 'K120 ABNT2', categoria: 'teclados', score: 52,
     scoreCustoBeneficio: 90, tier: 'entrada', anoLancamento: 2010,
+    imagem: 'https://m.media-amazon.com/images/I/61quwkR0YzL._AC_SL320_.jpg',
     specs: { 'Tipo': 'Membrana', 'Formato': 'Completo', 'Conexão': 'USB com fio', 'Layout': 'ABNT2', 'Teclado numérico': 'Sim', 'Iluminação': 'Não' },
     precos: [{ loja: 'amazon', preco: 79, url: 'https://www.amazon.com.br/s?k=logitech+k120+abnt2&tag=SEUTAG-20', disponivel: true, frete: 'prime' }],
     descricao: 'O Logitech K120 é um teclado completo e resistente para trabalho, estudo e uso doméstico. O layout ABNT2 e o teclado numérico facilitam a rotina, enquanto a conexão USB elimina pilhas e configurações.',
@@ -1258,6 +1338,7 @@ export const PRODUTOS: Produto[] = [
   {
     slug: 'redragon-kumara-k552', marca: 'Redragon', nome: 'Kumara K552 ABNT2', categoria: 'teclados', score: 76,
     scoreCustoBeneficio: 93, tier: 'entrada', anoLancamento: 2016,
+    imagem: 'https://m.media-amazon.com/images/I/61dNq1QlZeL._AC_SL320_.jpg',
     specs: { 'Tipo': 'Mecânico', 'Formato': 'TKL', 'Conexão': 'USB com fio', 'Layout': 'ABNT2', 'Hot-swap': 'Sim', 'Iluminação': 'Varia por versão' },
     precos: [{ loja: 'amazon', preco: 249, url: 'https://www.amazon.com.br/s?k=redragon+kumara+k552+abnt2&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '5x R$ 49,80' }],
     descricao: 'O Redragon Kumara K552 é uma porta de entrada popular para teclados mecânicos. O formato TKL libera espaço para o mouse, o layout ABNT2 facilita a digitação em português e os switches removíveis simplificam manutenção e personalização.',
@@ -1267,6 +1348,7 @@ export const PRODUTOS: Produto[] = [
   {
     slug: 'hyperx-cloud-stinger-2-core', marca: 'HyperX', nome: 'Cloud Stinger 2 Core', categoria: 'headsets', score: 73,
     scoreCustoBeneficio: 91, tier: 'entrada', anoLancamento: 2022,
+    imagem: 'https://m.media-amazon.com/images/I/71WXVepOnFL._AC_SL320_.jpg',
     specs: { 'Conexão': 'P2 3,5 mm', 'Drivers (mm)': 40, 'Microfone': 'Bidirecional com redução de ruído', 'Peso (g)': 275, 'Resposta': '10 Hz–25 kHz', 'Formato': 'Over-ear fechado' },
     precos: [{ loja: 'amazon', preco: 199, url: 'https://www.amazon.com.br/s?k=hyperx+cloud+stinger+2+core&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '4x R$ 49,75' }],
     descricao: 'O HyperX Cloud Stinger 2 Core reúne o essencial para jogos: conchas fechadas, drivers de 40mm, microfone que silencia ao ser levantado e controles no próprio headset. É uma opção simples de marca conhecida para quem não quer gastar muito.',
@@ -1276,6 +1358,7 @@ export const PRODUTOS: Produto[] = [
   {
     slug: 'logitech-h390', marca: 'Logitech', nome: 'H390 USB', categoria: 'headsets', score: 69,
     scoreCustoBeneficio: 87, tier: 'entrada', anoLancamento: 2007,
+    imagem: 'https://m.media-amazon.com/images/I/6144+3nBNhL._AC_SL320_.jpg',
     specs: { 'Conexão': 'USB-A', 'Drivers (mm)': 30, 'Microfone': 'Bidirecional com redução de ruído', 'Peso (g)': 197, 'Resposta': '20 Hz–20 kHz', 'Controles': 'Volume e mudo no cabo' },
     precos: [{ loja: 'amazon', preco: 179, url: 'https://www.amazon.com.br/s?k=logitech+h390&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '3x R$ 59,67' }],
     descricao: 'O Logitech H390 é voltado a aulas, reuniões e atendimento remoto. A conexão USB entrega áudio consistente, o microfone reduz ruídos ao redor e os controles no cabo facilitam ajustar volume ou silenciar a chamada.',
@@ -1287,6 +1370,7 @@ export const PRODUTOS: Produto[] = [
   {
     slug: 'amd-ryzen-5-4500', marca: 'AMD', nome: 'Ryzen 5 4500', categoria: 'processadores', score: 67,
     scoreCustoBeneficio: 91, tier: 'entrada', anoLancamento: 2022,
+    imagem: 'https://m.media-amazon.com/images/I/91OZjLdueYL._AC_SL320_.jpg',
     specs: { 'Núcleos': 6, 'Threads': 12, 'Clock Boost (GHz)': 4.1, 'Soquete': 'AM4', 'Consumo (W)': 65, 'Vídeo integrado': 'Não' },
     precos: [{ loja: 'amazon', preco: 499, url: 'https://www.amazon.com.br/s?k=amd+ryzen+5+4500&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '10x R$ 49,90' }],
     descricao: 'O Ryzen 5 4500 é um processador AM4 de seis núcleos para montagens extremamente econômicas. Atende jogos competitivos, estudo e multitarefa leve, mas precisa de placa de vídeo dedicada e fica abaixo do Ryzen 5 5500 em cache e desempenho por núcleo.',
@@ -1296,6 +1380,7 @@ export const PRODUTOS: Produto[] = [
   {
     slug: 'amd-ryzen-3-4100', marca: 'AMD', nome: 'Ryzen 3 4100', categoria: 'processadores', score: 58,
     scoreCustoBeneficio: 86, tier: 'entrada', anoLancamento: 2022,
+    imagem: 'https://m.media-amazon.com/images/I/71S4Zxo0yrL._AC_SL320_.jpg',
     specs: { 'Núcleos': 4, 'Threads': 8, 'Clock Boost (GHz)': 4.0, 'Soquete': 'AM4', 'Consumo (W)': 65, 'Vídeo integrado': 'Não' },
     precos: [{ loja: 'amazon', preco: 399, url: 'https://www.amazon.com.br/s?k=amd+ryzen+3+4100&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '8x R$ 49,88' }],
     descricao: 'O Ryzen 3 4100 é indicado para quem precisa gastar o mínimo em uma plataforma AM4 e já possui placa de vídeo. Os quatro núcleos e oito threads atendem tarefas cotidianas e jogos leves, mas podem limitar títulos modernos e placas de vídeo mais fortes.',
@@ -1305,6 +1390,7 @@ export const PRODUTOS: Produto[] = [
   {
     slug: 'intel-core-i3-13100f', marca: 'Intel', nome: 'Core i3-13100F', categoria: 'processadores', score: 70,
     scoreCustoBeneficio: 89, tier: 'entrada', anoLancamento: 2023,
+    imagem: 'https://m.media-amazon.com/images/I/41XsVrkh8XL._AC_SL320_.jpg',
     specs: { 'Núcleos': 4, 'Threads': 8, 'Clock Boost (GHz)': 4.5, 'Soquete': 'LGA1700', 'Consumo (W)': 58, 'Vídeo integrado': 'Não' },
     precos: [{ loja: 'amazon', preco: 699, url: 'https://www.amazon.com.br/s?k=intel+core+i3-13100f&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '10x R$ 69,90' }],
     descricao: 'O Core i3-13100F entrega ótimo desempenho por núcleo para jogos de entrada e uso diário. É rápido em títulos competitivos e aceita memória DDR4 em placas compatíveis, mas possui apenas quatro núcleos e não inclui vídeo integrado.',
@@ -1314,6 +1400,7 @@ export const PRODUTOS: Produto[] = [
   {
     slug: 'amd-radeon-rx-6400', marca: 'AMD', nome: 'Radeon RX 6400 4GB', categoria: 'gpus', score: 52,
     scoreCustoBeneficio: 77, tier: 'entrada', anoLancamento: 2022,
+    imagem: 'https://m.media-amazon.com/images/I/611qVtcmuSL._AC_SL320_.jpg',
     specs: { 'VRAM': '4 GB GDDR6', 'Clock Boost (MHz)': 2321, 'Consumo (W)': 53, 'Ray Tracing': 'Sim', 'Barramento': '64-bit', 'Fonte recomendada': '350W' },
     precos: [{ loja: 'amazon', preco: 999, url: 'https://www.amazon.com.br/s?k=radeon+rx+6400+4gb&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '10x R$ 99,90' }],
     descricao: 'A Radeon RX 6400 é uma placa compacta e econômica para PCs de escritório ou gabinetes pequenos. Consome pouca energia e vários modelos dispensam conector extra, porém os 4GB de VRAM e a interface PCIe x4 limitam jogos pesados, especialmente em placas-mãe PCIe 3.0.',
@@ -1323,6 +1410,7 @@ export const PRODUTOS: Produto[] = [
   {
     slug: 'intel-arc-a380-6gb', marca: 'Intel', nome: 'Arc A380 6GB', categoria: 'gpus', score: 55,
     scoreCustoBeneficio: 81, tier: 'entrada', anoLancamento: 2022,
+    imagem: 'https://m.media-amazon.com/images/I/611GcTajUIL._AC_SL320_.jpg',
     specs: { 'VRAM': '6 GB GDDR6', 'Clock (MHz)': 2000, 'Consumo (W)': 75, 'Ray Tracing': 'Sim', 'Barramento': '96-bit', 'AV1': 'Codificação e decodificação' },
     precos: [{ loja: 'amazon', preco: 849, url: 'https://www.amazon.com.br/s?k=intel+arc+a380+6gb&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '10x R$ 84,90' }],
     descricao: 'A Intel Arc A380 oferece 6GB de VRAM e aceleração AV1 por um preço baixo, sendo interessante para mídia, streaming e jogos leves. Para atingir o desempenho esperado, exige drivers atuais e uma plataforma com Resizable BAR habilitado.',
@@ -1332,6 +1420,7 @@ export const PRODUTOS: Produto[] = [
   {
     slug: 'crucial-bx500-500gb', marca: 'Crucial', nome: 'BX500 500GB', categoria: 'ssds', score: 48,
     scoreCustoBeneficio: 89, tier: 'entrada', anoLancamento: 2018,
+    imagem: 'https://m.media-amazon.com/images/I/41t2uPN1ayL._AC_SL320_.jpg',
     specs: { 'Capacidade': '500 GB', 'Interface': 'SATA III', 'Leitura (MB/s)': 550, 'Gravação (MB/s)': 500, 'Formato': '2,5 polegadas', 'TBW': 120 },
     precos: [{ loja: 'amazon', preco: 299, url: 'https://www.amazon.com.br/s?k=crucial+bx500+500gb&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '5x R$ 59,80' }],
     descricao: 'O Crucial BX500 de 500GB é um SSD SATA acessível para atualizar computadores e notebooks que não possuem entrada NVMe. Entrega inicialização e abertura de programas muito mais rápidas que um HD, embora não alcance a velocidade de SSDs M.2.',
@@ -1341,6 +1430,7 @@ export const PRODUTOS: Produto[] = [
   {
     slug: 'wd-green-sn350-500gb', marca: 'Western Digital', nome: 'Green SN350 500GB', categoria: 'ssds', score: 61,
     scoreCustoBeneficio: 91, tier: 'entrada', anoLancamento: 2021,
+    imagem: 'https://m.media-amazon.com/images/I/5153bSSoCpL._AC_SL320_.jpg',
     specs: { 'Capacidade': '500 GB', 'Interface': 'PCIe 3.0 NVMe', 'Leitura (MB/s)': 2400, 'Gravação (MB/s)': 1500, 'Formato': 'M.2 2280', 'TBW': 60 },
     precos: [{ loja: 'amazon', preco: 279, url: 'https://www.amazon.com.br/s?k=wd+green+sn350+500gb&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '5x R$ 55,80' }],
     descricao: 'O WD Green SN350 de 500GB é um NVMe de entrada para sistemas e jogos cotidianos. É mais rápido e dispensa cabos em comparação com SSDs SATA, mas sua resistência de 60TBW é voltada a uso doméstico, não a gravação profissional intensa.',
@@ -1350,6 +1440,7 @@ export const PRODUTOS: Produto[] = [
   {
     slug: 'crucial-8gb-ddr4-3200', marca: 'Crucial', nome: '8GB DDR4 3200MHz', categoria: 'memorias', score: 55,
     scoreCustoBeneficio: 87, tier: 'entrada', anoLancamento: 2020,
+    imagem: 'https://m.media-amazon.com/images/I/61FsaYbk3UL._AC_SL320_.jpg',
     specs: { 'Capacidade': '8 GB', 'Tipo': 'DDR4', 'Frequência (MHz)': 3200, 'Latência (CL)': 22, 'Kit': '1x8GB', 'Tensão': '1,2 V' },
     precos: [{ loja: 'amazon', preco: 139, url: 'https://www.amazon.com.br/s?k=crucial+8gb+ddr4+3200+desktop&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '2x R$ 69,50' }],
     descricao: 'A memória Crucial DDR4 de 8GB é uma opção simples para ampliar computadores de trabalho ou montar um PC básico. Opera no padrão JEDEC sem exigir perfil de overclock, mas o ideal para jogos é utilizar duas unidades e totalizar 16GB em dual channel.',
@@ -1377,6 +1468,7 @@ export const PRODUTOS: Produto[] = [
   {
     slug: 'cooler-master-masterbox-q300l', marca: 'Cooler Master', nome: 'MasterBox Q300L', categoria: 'gabinetes', score: 67,
     scoreCustoBeneficio: 88, tier: 'entrada', anoLancamento: 2018,
+    imagem: 'https://m.media-amazon.com/images/I/81HL5QY+vuL._AC_SL320_.jpg',
     specs: { 'Tipo': 'Mini Tower mATX', 'Suporta GPU (mm)': 360, 'Baias': '1x 3.5" + 2x 2.5"', 'Fans inclusos': '1x 120mm', 'Painel': 'Acrílico', 'Placas-mãe': 'Micro-ATX/Mini-ITX' },
     precos: [{ loja: 'amazon', preco: 299, url: 'https://www.amazon.com.br/s?k=cooler+master+q300l&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '5x R$ 59,80' }],
     descricao: 'O MasterBox Q300L é um gabinete compacto para placas Micro-ATX e Mini-ITX, com filtros magnéticos e espaço para placas de vídeo longas. É barato e flexível, mas vem com apenas um fan e precisa de ventoinhas adicionais para melhorar o fluxo de ar.',
@@ -1386,6 +1478,7 @@ export const PRODUTOS: Produto[] = [
   {
     slug: 'aoc-22b2hm2-100hz', marca: 'AOC', nome: '22B2HM2 21,5” 100Hz', categoria: 'monitores', score: 65,
     scoreCustoBeneficio: 93, tier: 'entrada', anoLancamento: 2024,
+    imagem: 'https://m.media-amazon.com/images/I/61HtQ-bwDVL._AC_SL320_.jpg',
     specs: { 'Tamanho': '21,5 polegadas', 'Resolução': '1920x1080', 'Painel': 'VA', 'Taxa (Hz)': 100, 'Resposta (ms)': 4, 'Conexões': 'HDMI/VGA', 'Adaptive Sync': 'Sim' },
     precos: [{ loja: 'amazon', preco: 549, url: 'https://www.amazon.com.br/s?k=aoc+22b2hm2&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '10x R$ 54,90' }],
     descricao: 'O AOC 22B2HM2 é um monitor Full HD compacto de 100Hz para quem precisa economizar espaço e dinheiro. O painel VA oferece bom contraste e o Adaptive Sync ajuda em jogos leves, embora a tela seja menor e tenha apenas uma entrada HDMI.',
@@ -1397,6 +1490,7 @@ export const PRODUTOS: Produto[] = [
   {
     slug: 'hyperx-pulsefire-core', marca: 'HyperX', nome: 'Pulsefire Core', categoria: 'mouses', score: 74,
     scoreCustoBeneficio: 92, tier: 'entrada', anoLancamento: 2018,
+    imagem: 'https://m.media-amazon.com/images/I/61rqBrI4PML._AC_SL320_.jpg',
     specs: { 'DPI': 6200, 'Peso (g)': 87, 'Botões': 7, 'Conexão': 'USB com fio', 'Sensor': 'Pixart 3327', 'Iluminação': 'RGB' },
     precos: [{ loja: 'amazon', preco: 139, url: 'https://www.amazon.com.br/s?k=hyperx+pulsefire+core&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '2x R$ 69,50' }],
     descricao: 'O HyperX Pulsefire Core oferece sensor Pixart, sete botões programáveis e peso moderado por um preço acessível. O formato simétrico atende pegadas palm e claw, embora os botões laterais favoreçam usuários destros.',
@@ -1406,6 +1500,7 @@ export const PRODUTOS: Produto[] = [
   {
     slug: 'razer-deathadder-essential', marca: 'Razer', nome: 'DeathAdder Essential', categoria: 'mouses', score: 72,
     scoreCustoBeneficio: 90, tier: 'entrada', anoLancamento: 2018,
+    imagem: 'https://m.media-amazon.com/images/I/8189uwDnMkL._AC_SL320_.jpg',
     specs: { 'DPI': 6400, 'Peso (g)': 96, 'Botões': 5, 'Conexão': 'USB com fio', 'Pegada': 'Ergonômica para destros', 'Iluminação': 'Verde' },
     precos: [{ loja: 'amazon', preco: 149, url: 'https://www.amazon.com.br/s?k=razer+deathadder+essential&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '3x R$ 49,67' }],
     descricao: 'O DeathAdder Essential leva o formato ergonômico clássico da Razer para a faixa de entrada. É confortável para mãos médias e grandes e possui sensor de 6400 DPI, mas não oferece RGB completo nem o peso baixo de mouses competitivos recentes.',
@@ -1415,6 +1510,7 @@ export const PRODUTOS: Produto[] = [
   {
     slug: 'logitech-g305-lightspeed', marca: 'Logitech', nome: 'G305 LIGHTSPEED', categoria: 'mouses', score: 80,
     scoreCustoBeneficio: 91, tier: 'entrada', anoLancamento: 2018,
+    imagem: 'https://m.media-amazon.com/images/I/51sg9BLSMTL._AC_SL320_.jpg',
     specs: { 'DPI': 12000, 'Peso (g)': 99, 'Botões': 6, 'Conexão': 'Sem fio 2,4 GHz', 'Sensor': 'HERO', 'Bateria': 'Até 250 horas' },
     precos: [{ loja: 'amazon', preco: 249, url: 'https://www.amazon.com.br/s?k=logitech+g305+lightspeed&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '5x R$ 49,80' }],
     descricao: 'O Logitech G305 é uma das opções sem fio mais seguras para jogar gastando pouco. O sensor HERO e a conexão LIGHTSPEED entregam boa precisão e baixa latência, usando uma pilha AA substituível em vez de bateria interna.',
@@ -1424,6 +1520,7 @@ export const PRODUTOS: Produto[] = [
   {
     slug: 'redragon-fizz-k617', marca: 'Redragon', nome: 'Fizz K617 ABNT2', categoria: 'teclados', score: 75,
     scoreCustoBeneficio: 94, tier: 'entrada', anoLancamento: 2021,
+    imagem: 'https://m.media-amazon.com/images/I/61O0RmYgByL._AC_SL320_.jpg',
     specs: { 'Tipo': 'Mecânico', 'Formato': '60%', 'Conexão': 'USB-C com fio', 'Layout': 'ABNT2', 'Hot-swap': 'Sim', 'Iluminação': 'RGB' },
     precos: [{ loja: 'amazon', preco: 219, url: 'https://www.amazon.com.br/s?k=redragon+fizz+k617+abnt2&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '4x R$ 54,75' }],
     descricao: 'O Redragon Fizz K617 é um teclado mecânico 60% compacto para mesas pequenas e setups econômicos. Possui layout ABNT2, switches removíveis e cabo USB-C destacável, mas exige combinações de teclas para setas e várias funções.',
@@ -1433,6 +1530,7 @@ export const PRODUTOS: Produto[] = [
   {
     slug: 'hyperx-alloy-core-rgb', marca: 'HyperX', nome: 'Alloy Core RGB', categoria: 'teclados', score: 69,
     scoreCustoBeneficio: 87, tier: 'entrada', anoLancamento: 2018,
+    imagem: 'https://m.media-amazon.com/images/I/61XRKm0vZaL._AC_SL320_.jpg',
     specs: { 'Tipo': 'Membrana', 'Formato': 'Completo', 'Conexão': 'USB com fio', 'Layout': 'Verificar versão', 'Resistência': 'Até 120 ml', 'Iluminação': 'RGB em 5 zonas' },
     precos: [{ loja: 'amazon', preco: 249, url: 'https://www.amazon.com.br/s?k=hyperx+alloy+core+rgb+abnt2&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '5x R$ 49,80' }],
     descricao: 'O HyperX Alloy Core RGB é um teclado de membrana silencioso para quem quer iluminação e controles multimídia sem o ruído de switches mecânicos. É resistente a pequenos derramamentos, mas o comprador deve confirmar se o anúncio oferece layout ABNT2.',
@@ -1442,6 +1540,7 @@ export const PRODUTOS: Produto[] = [
   {
     slug: 'jbl-quantum-100', marca: 'JBL', nome: 'Quantum 100', categoria: 'headsets', score: 71,
     scoreCustoBeneficio: 91, tier: 'entrada', anoLancamento: 2020,
+    imagem: 'https://m.media-amazon.com/images/I/61KmVBD4ZfL._AC_SL320_.jpg',
     specs: { 'Conexão': 'P2 3,5 mm', 'Drivers (mm)': 40, 'Microfone': 'Direcional removível', 'Peso (g)': 220, 'Resposta': '20 Hz–20 kHz', 'Cabo': '1,2 m' },
     precos: [{ loja: 'amazon', preco: 179, url: 'https://www.amazon.com.br/s?k=jbl+quantum+100&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '3x R$ 59,67' }],
     descricao: 'O JBL Quantum 100 é um headset leve e versátil para PC, consoles e celular por usar conexão P2. O microfone removível facilita o uso fora dos jogos, embora o cabo curto e a ausência de USB limitem recursos de software.',
@@ -1451,6 +1550,7 @@ export const PRODUTOS: Produto[] = [
   {
     slug: 'logitech-g435', marca: 'Logitech', nome: 'G435 LIGHTSPEED', categoria: 'headsets', score: 78,
     scoreCustoBeneficio: 88, tier: 'entrada', anoLancamento: 2021,
+    imagem: 'https://m.media-amazon.com/images/I/81bQEkMevBL._AC_SL320_.jpg',
     specs: { 'Conexão': 'LIGHTSPEED e Bluetooth', 'Drivers (mm)': 40, 'Microfone': 'Duplo beamforming integrado', 'Peso (g)': 165, 'Bateria': 'Até 18 horas', 'Alcance': 'Até 10 m' },
     precos: [{ loja: 'amazon', preco: 349, url: 'https://www.amazon.com.br/s?k=logitech+g435&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '7x R$ 49,86' }],
     descricao: 'O Logitech G435 é um headset sem fio muito leve, com conexão LIGHTSPEED para jogos e Bluetooth para celular. Os microfones ficam embutidos, deixando o visual discreto, mas captam mais ruído ambiente que um microfone boom próximo da boca.',
