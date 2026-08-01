@@ -1,6 +1,6 @@
 'use client'
 import type { Produto, PrecoLoja } from '@/types/hardware'
-import { linkAfiliado, ehAfiliado, buscaAmazon } from '@/lib/afiliados'
+import { linkAfiliado, ehAfiliado, buscaAmazon, buscaTerabyte } from '@/lib/afiliados'
 import { linkMercadoLivre } from '@/lib/mercadolivre-links'
 import { linkShopee } from '@/lib/shopee-links'
 
@@ -104,6 +104,8 @@ function CardPreco({ produto, isWinner, fullWidth }: {
               key={item.loja}
               href={item.loja === 'amazon'
                 ? buscaAmazon(`${produto.marca} ${produto.nome}`)
+                : item.loja === 'terabyte'
+                ? buscaTerabyte(`${produto.marca} ${produto.nome}`)
                 : linkAfiliado(item.loja, item.url)}
               target="_blank"
               rel="noopener noreferrer sponsored"

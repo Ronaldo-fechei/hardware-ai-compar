@@ -105,6 +105,16 @@ export function buscaMercadoLivre(termo: string): string {
   return url;
 }
 
+// ID de parceiro da Terabyte (parâmetro ?p=). Override via NEXT_PUBLIC_TERABYTE_P.
+const TB_AFF = process.env.NEXT_PUBLIC_TERABYTE_P || "3404334";
+
+/** Link de busca na Terabyte já com o ID de afiliado (?p=). */
+export function buscaTerabyte(termo: string): string {
+  let url = `https://www.terabyteshop.com.br/busca?str=${encodeURIComponent(termo.trim())}`;
+  if (TB_AFF) url += `&p=${encodeURIComponent(TB_AFF)}`;
+  return url;
+}
+
 /** Link de busca na Shopee (com id de afiliado quando configurado). */
 export function buscaShopee(termo: string): string {
   let url = `https://shopee.com.br/search?keyword=${encodeURIComponent(termo.trim())}`;
