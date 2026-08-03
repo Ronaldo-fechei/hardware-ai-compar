@@ -251,7 +251,7 @@ function CardPreco({ produto, isWinner, fullWidth }: {
       <div className="px-4 pb-3">
         <p className="text-[9px] leading-relaxed" style={{ color: 'var(--muted)', opacity: 0.6 }}>
           Como participante do Programa de Associados da Amazon, o BestHard é remunerado pelas compras qualificadas efetuadas.
-          Alguns links do Mercado Livre e da Shopee também podem gerar comissão. Valores são referências e devem ser confirmados nas lojas.
+          Alguns links do Mercado Livre, da Shopee e da Terabyte também podem gerar comissão. Valores são referências e devem ser confirmados nas lojas.
         </p>
       </div>
     </div>
@@ -284,7 +284,7 @@ export function BlocoPrecos({ prodA, prodB, scoreA, scoreB, singleMode }: Props)
             <div className="h-px flex-1" style={{ background: 'var(--border)' }} />
           </div>
           <p className="text-[12px] text-center mb-4" style={{ color: 'var(--muted)' }}>
-            Confira ofertas e disponibilidade na Amazon, no Mercado Livre e na Shopee
+            Confira ofertas e disponibilidade na Amazon, no Mercado Livre, na Shopee e na Terabyte
           </p>
         </>
       )}
