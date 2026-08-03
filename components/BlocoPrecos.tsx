@@ -42,6 +42,7 @@ function CardPreco({ produto, isWinner, fullWidth }: {
   const linkAmazon = buscaAmazon(`${produto.marca} ${produto.nome}`)
   const linkML = linkMercadoLivre(produto.slug)
   const linkSP = linkShopee(produto.slug)
+  const linkTB = buscaTerabyte(`${produto.marca} ${produto.nome}`)
 
   return (
     <div
@@ -216,6 +217,29 @@ function CardPreco({ produto, isWinner, fullWidth }: {
             <span
               className="rounded-lg px-3 py-[5px] text-[10px] font-bold transition-opacity group-hover:opacity-85 flex-shrink-0"
               style={{ background: '#EE4D2D', color: '#fff' }}
+            >
+              Ver oferta →
+            </span>
+          </a>
+        )}
+
+        {linkTB && (
+          <a
+            href={linkTB}
+            target="_blank"
+            rel="noopener noreferrer sponsored"
+            className="flex items-center gap-3 rounded-lg px-3 py-[9px] transition-all hover:-translate-y-px group"
+            style={{ background: 'rgba(124,58,237,0.08)', border: '1px solid #7C3AED40' }}
+            onClick={() => trackAfiliado(produto.slug, 'terabyte')}
+          >
+            <span className="text-[15px] w-5 text-center flex-shrink-0">💻</span>
+            <div className="flex-1 min-w-0">
+              <span className="text-[12px] font-semibold" style={{ color: '#7C3AED' }}>Terabyte · Publicidade</span>
+              <p className="text-[10px] mt-[1px]" style={{ color: 'var(--muted)' }}>Consultar preço e disponibilidade</p>
+            </div>
+            <span
+              className="rounded-lg px-3 py-[5px] text-[10px] font-bold transition-opacity group-hover:opacity-85 flex-shrink-0"
+              style={{ background: '#7C3AED', color: '#fff' }}
             >
               Ver oferta →
             </span>

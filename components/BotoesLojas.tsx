@@ -1,9 +1,10 @@
-import { buscaAmazon, buscaMercadoLivre, buscaShopee } from '@/lib/afiliados'
+import { buscaAmazon, buscaMercadoLivre, buscaShopee, buscaTerabyte } from '@/lib/afiliados'
 
 const LOJAS = [
   { nome: 'Amazon', cor: '#FF9900', texto: '#fff', link: buscaAmazon },
   { nome: 'Mercado Livre', cor: '#FFE600', texto: '#2D3277', link: buscaMercadoLivre },
   { nome: 'Shopee', cor: '#EE4D2D', texto: '#fff', link: buscaShopee },
+  { nome: 'Terabyte', cor: '#7C3AED', texto: '#fff', link: buscaTerabyte },
 ]
 
 /**
