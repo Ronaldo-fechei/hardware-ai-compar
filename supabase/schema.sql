@@ -92,3 +92,39 @@ create policy "ver o proprio uso"
 drop policy if exists "registrar o proprio uso" on public.usage_log;
 create policy "registrar o proprio uso"
   on public.usage_log for insert with check (auth.uid() = user_id);
+
+-- ------------------------------------------------------------
+-- 4) Cache de comparações (compartilhado por TODOS os visitantes)
+--    A primeira pessoa que compara um par paga a chamada de IA;
+--    as seguintes leem daqui. A chave é ordenada, então
+--    "A vs B" e "B vs A" são a mesma linha.
+-- ------------------------------------------------------------
+create table if not exists public.comparison_cache (
+  slug        text primary key,
+  query       text not null,
+  titulo      text not null,
+  result      jsonb not null,
+  hits        integer not null default 0,
+  created_at  timestamptz not null default now(),
+  updated_at  timestamptz not null default now()
+);
+
+create index if not exists comparison_cache_updated_idx
+  on public.comparison_cache (updated_at desc);
+
+alter table public.comparison_cache enable row level security;
+
+-- Ninguém acessa esta tabela pelo navegador: a leitura e a escrita são
+-- feitas no servidor com a chave de serviço (que ignora RLS). Sem policy
+-- de select/insert, o anon key não enxerga nada — é o que queremos, senão
+-- um visitante poderia gravar lixo no cache de todo mundo.
+
+-- Contador de acertos, para medir a economia.
+create or replace function public.bump_cache_hit(p_slug text)
+returns void
+language sql
+security definer
+set search_path = public
+as $$
+  update public.comparison_cache set hits = hits + 1 where slug = p_slug;
+$$;
