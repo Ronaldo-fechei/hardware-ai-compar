@@ -3,6 +3,7 @@ import type { Produto, PrecoLoja } from '@/types/hardware'
 import { linkAfiliado, ehAfiliado, buscaAmazon, buscaTerabyte } from '@/lib/afiliados'
 import { linkMercadoLivre } from '@/lib/mercadolivre-links'
 import { linkShopee } from '@/lib/shopee-links'
+import { AvisoAfiliado } from '@/components/AvisoAfiliado'
 
 const LOJAS: Record<PrecoLoja['loja'], { nome: string; emoji: string; cor: string; bg: string }> = {
   amazon:       { nome: 'Amazon',        emoji: '📦', cor: '#FF9900', bg: 'rgba(255,153,0,0.08)' },
@@ -245,6 +246,11 @@ function CardPreco({ produto, isWinner, fullWidth }: {
             </span>
           </a>
         )}
+      </div>
+
+      {/* Aviso no ponto de decisão */}
+      <div className="px-4">
+        <AvisoAfiliado />
       </div>
 
       {/* Disclaimer */}

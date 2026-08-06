@@ -2,6 +2,7 @@ import { getProdutoBySlug, tipoProduto } from '@/lib/hardware-data'
 import { ehAfiliado } from '@/lib/afiliados'
 import { ProdutoThumb } from '@/components/ProdutoThumb'
 import { BotoesLojas } from '@/components/BotoesLojas'
+import { AvisoAfiliado } from '@/components/AvisoAfiliado'
 
 // ⭐ Produtos em destaque no banner — custo-benefício / preços populares.
 // Troque os slugs para mudar as ofertas.
@@ -98,6 +99,8 @@ export function BannerDestaques() {
             )
           })}
         </div>
+
+        <AvisoAfiliado />
       </div>
     </section>
   )
