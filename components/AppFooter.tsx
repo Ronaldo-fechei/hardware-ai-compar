@@ -18,9 +18,9 @@ export default function AppFooter() {
         <Link href="/blog" className="text-[12px] text-[#5a6070] transition-colors hover:text-[#e8eaf0]">
           Blog
         </Link>
-        <a href="#planos" className="text-[12px] text-[#5a6070] transition-colors hover:text-[#e8eaf0]">
-          Planos
-        </a>
+        <Link href="/transparencia" className="text-[12px] text-[#5a6070] transition-colors hover:text-[#e8eaf0]">
+          Transparência
+        </Link>
       </nav>
       <p className="mt-1 w-full text-[10px] text-[#5a6070] opacity-70">
         Comparações geradas por IA são estimativas. Como participante do Programa de

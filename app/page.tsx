@@ -2,8 +2,6 @@ import Link from "next/link";
 import ComparePanel from "@/components/ComparePanel";
 import { BannerDestaques } from "@/components/BannerDestaques";
 import { ProdutoThumb } from "@/components/ProdutoThumb";
-import PlanButton from "@/components/PlanButton";
-import type { Plan } from "@/lib/plans";
 import { PRODUTOS_ENRIQUECIDOS } from "@/lib/hardware-data";
 import { ehAfiliado } from "@/lib/afiliados";
 
@@ -57,54 +55,6 @@ const RANKINGS: { titulo: string; itens: string[] }[] = [
   },
 ];
 
-const PLANOS: {
-  id: Plan;
-  nome: string;
-  preco: string;
-  periodo: string;
-  destaque: boolean;
-  recursos: string[];
-  cta: string;
-}[] = [
-  {
-    id: "free",
-    nome: "Gratuito",
-    preco: "R$ 0",
-    periodo: "/mês",
-    destaque: false,
-    recursos: ["3 comparações por dia", "Gráficos básicos", "Veredito da IA"],
-    cta: "Começar grátis",
-  },
-  {
-    id: "pro",
-    nome: "Pro",
-    preco: "R$ 19",
-    periodo: "/mês",
-    destaque: true,
-    recursos: [
-      "Comparações ilimitadas",
-      "IA avançada",
-      "Simulador de gargalo",
-      "Histórico ilimitado",
-    ],
-    cta: "Assinar Pro",
-  },
-  {
-    id: "premium",
-    nome: "Premium",
-    preco: "R$ 49",
-    periodo: "/mês",
-    destaque: false,
-    recursos: [
-      "Tudo do Pro",
-      "Acesso à API",
-      "Exportação em PDF",
-      "Comparações em massa",
-    ],
-    cta: "Assinar Premium",
-  },
-];
-
 export default async function Home({
   searchParams,
 }: {
@@ -129,7 +79,7 @@ export default async function Home({
 
       <div className="relative">
         {/* HERO + COMPARADOR */}
-        <section className="mx-auto max-w-6xl px-6 pb-16 pt-10 text-center sm:pt-16">
+        <section id="comparar" className="mx-auto max-w-6xl px-6 pb-16 pt-10 text-center sm:pt-16">
           <div className="mx-auto mb-5 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs text-gray-300">
             <span className="h-2 w-2 animate-pulse-slow rounded-full bg-brand-primary" />
             Powered by Claude AI
@@ -319,45 +269,66 @@ export default async function Home({
           </div>
         </section>
 
-        {/* PLANOS */}
-        <section id="planos" className="mx-auto max-w-6xl px-6 py-16">
+        {/* GRATUITO */}
+        <section id="gratuito" className="mx-auto max-w-6xl px-6 py-16">
           <h2 className="mb-3 text-center text-3xl font-bold">
-            Planos para cada <span className="gradient-text">necessidade</span>
+            O BestHard é <span className="gradient-text">gratuito</span>
           </h2>
-          <p className="mb-10 text-center text-gray-400">
-            Comece grátis. Faça upgrade quando precisar de mais poder.
+          <p className="mx-auto mb-10 max-w-2xl text-center text-gray-400">
+            Sem plano, sem limite de comparações e sem cadastro obrigatório. O site se mantém com
+            comissões de afiliado quando você compra pelas lojas parceiras — e o preço para você
+            é exatamente o mesmo.
           </p>
+
           <div className="grid gap-5 md:grid-cols-3">
-            {PLANOS.map((p) => (
-              <div
-                key={p.nome}
-                className={`glass-card relative p-6 ${
-                  p.destaque ? "border-brand-primary/50 shadow-glow" : ""
-                }`}
-              >
-                {p.destaque && (
-                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-gradient-to-r from-brand-primary to-brand-secondary px-3 py-1 text-xs font-bold text-black">
-                    Mais popular
-                  </span>
-                )}
-                <h3 className="font-semibold text-white">{p.nome}</h3>
-                <div className="mt-2 flex items-end gap-1">
-                  <span className="text-4xl font-black gradient-text">{p.preco}</span>
-                  <span className="mb-1 text-sm text-gray-500">{p.periodo}</span>
-                </div>
-                <ul className="mt-5 space-y-2 text-sm text-gray-300">
-                  {p.recursos.map((r) => (
-                    <li key={r} className="flex items-center gap-2">
-                      <span className="text-brand-primary">✓</span> {r}
-                    </li>
-                  ))}
-                </ul>
-                <div className="mt-6">
-                  <PlanButton plan={p.id} label={p.cta} destaque={p.destaque} />
-                </div>
-              </div>
-            ))}
+            <div className="glass-card p-6">
+              <div className="text-2xl">♾️</div>
+              <h3 className="mt-3 font-semibold text-white">Tudo liberado</h3>
+              <p className="mt-2 text-sm text-gray-400">
+                Comparações ilimitadas, gráficos, veredito da IA, simulador de gargalo e montagem
+                de PC. Nada fica atrás de assinatura.
+              </p>
+            </div>
+
+            <div className="glass-card p-6">
+              <div className="text-2xl">🔓</div>
+              <h3 className="mt-3 font-semibold text-white">Sem cadastro</h3>
+              <p className="mt-2 text-sm text-gray-400">
+                Use direto, sem criar conta. O login existe só para quem quiser sincronizar o
+                histórico entre dispositivos.
+              </p>
+            </div>
+
+            <div className="glass-card p-6">
+              <div className="text-2xl">⚖️</div>
+              <h3 className="mt-3 font-semibold text-white">Comissão não compra ranking</h3>
+              <p className="mt-2 text-sm text-gray-400">
+                Nenhuma loja ou fabricante paga por nota, posição ou recomendação. Se o produto é
+                ruim, a gente escreve que é ruim.
+              </p>
+            </div>
           </div>
+
+          <div className="mt-10 flex flex-col items-center gap-3">
+            <a href="#comparar" className="btn-primary rounded-xl px-8 py-3 font-semibold">
+              Comparar hardware agora
+            </a>
+            <a
+              href="/transparencia"
+              className="text-sm text-gray-400 underline-offset-4 hover:text-brand-primary hover:underline"
+            >
+              Como o BestHard ganha dinheiro →
+            </a>
+          </div>
+
+          <p className="mt-10 text-center text-xs text-gray-500">
+            É loja, integrador ou criador de conteúdo e precisa de API, exportação em PDF ou
+            comparações em massa?{" "}
+            <a href="/contato" className="text-brand-primary hover:underline">
+              Fale com a gente
+            </a>
+            .
+          </p>
         </section>
 
       </div>

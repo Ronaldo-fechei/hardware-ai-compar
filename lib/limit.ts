@@ -1,7 +1,7 @@
 import { cookies } from "next/headers";
 import { NextResponse } from "next/server";
 import { createClient } from "@/lib/supabase/server";
-import { getUserPlan, countUsageToday, recordUsage } from "@/lib/usage";
+import { getUserPlan, recordUsage } from "@/lib/usage";
 import { freeDailyLimit, todayBR, type Plan } from "@/lib/plans";
 import { isAdminEmail } from "@/lib/admin";
 
@@ -62,18 +62,14 @@ export async function resolveLimit(): Promise<LimitContext> {
   };
 }
 
-/** Retorna uma resposta 429 se o limite foi atingido, ou null se pode seguir. */
+/**
+ * O BestHard é gratuito e sem limite de uso — o site se mantém com comissões
+ * de afiliado, não com assinatura. Esta função nunca bloqueia; o registro de
+ * uso segue ativo em `consumeLimit` apenas para estatísticas internas.
+ */
 export async function checkLimit(
-  ctx: LimitContext,
+  _ctx: LimitContext,
 ): Promise<NextResponse | null> {
-  if (!ctx.ehGratis) return null;
-
-  if (ctx.userId && ctx.supabase) {
-    const usados = await countUsageToday(ctx.supabase, ctx.userId);
-    if (usados >= ctx.limite) return limiteResposta(ctx);
-  } else if (ctx.cookieCount >= ctx.limite) {
-    return limiteResposta(ctx);
-  }
   return null;
 }
 
@@ -95,13 +91,3 @@ export async function consumeLimit(
   }
 }
 
-function limiteResposta(ctx: LimitContext) {
-  return NextResponse.json(
-    {
-      error: `Você atingiu o limite de ${ctx.limite} comparações por dia do plano grátis.`,
-      limite: true,
-      plano: ctx.plano,
-    },
-    { status: 429 },
-  );
-}

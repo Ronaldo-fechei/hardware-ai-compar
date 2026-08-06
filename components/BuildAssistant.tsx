@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 import type { AssistantResult } from "@/lib/types";
 
 const USOS = ["Jogos", "Trabalho/Produtividade", "Streaming", "Edição de vídeo", "IA", "Uso geral"];
@@ -13,14 +12,12 @@ export default function BuildAssistant() {
   const [resolucao, setResolucao] = useState("1080p");
   const [loading, setLoading] = useState(false);
   const [erro, setErro] = useState<string | null>(null);
-  const [limite, setLimite] = useState(false);
   const [r, setR] = useState<AssistantResult | null>(null);
 
   async function montar(e: React.FormEvent) {
     e.preventDefault();
     setLoading(true);
     setErro(null);
-    setLimite(false);
     try {
       const res = await fetch("/api/montar", {
         method: "POST",
@@ -28,11 +25,6 @@ export default function BuildAssistant() {
         body: JSON.stringify({ orcamento: Number(orcamento), uso, resolucao }),
       });
       const data = await res.json();
-      if (res.status === 429 && data.limite) {
-        setLimite(true);
-        setErro(data.error);
-        return;
-      }
       if (!res.ok) throw new Error(data.error || "Falha ao montar.");
       setR(data as AssistantResult);
     } catch (e) {
@@ -104,25 +96,7 @@ export default function BuildAssistant() {
         </button>
       </form>
 
-      {limite ? (
-        <div className="mt-4 rounded-xl border border-brand-secondary/40 bg-brand-secondary/10 p-5 text-center">
-          <p className="text-sm text-gray-100">{erro}</p>
-          <p className="mt-1 text-xs text-gray-400">
-            Faça upgrade para uso ilimitado — ou volte amanhã. 🚀
-          </p>
-          <div className="mt-4 flex justify-center gap-3">
-            <Link
-              href="/login"
-              className="rounded-lg border border-white/15 px-4 py-2 text-sm text-white hover:border-brand-primary/50"
-            >
-              Entrar
-            </Link>
-            <Link href="/#planos" className="btn-primary text-sm">
-              Ver planos
-            </Link>
-          </div>
-        </div>
-      ) : (
+      {(
         erro && (
           <p className="mt-4 rounded-lg border border-red-500/30 bg-red-500/10 p-3 text-center text-sm text-red-300">
             {erro}

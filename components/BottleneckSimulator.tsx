@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 import type { BottleneckResult } from "@/lib/types";
 
 const RESOLUCOES = ["1080p", "1440p", "4K"];
@@ -18,7 +17,6 @@ export default function BottleneckSimulator() {
   const [resolucao, setResolucao] = useState("1080p");
   const [loading, setLoading] = useState(false);
   const [erro, setErro] = useState<string | null>(null);
-  const [limite, setLimite] = useState(false);
   const [r, setR] = useState<BottleneckResult | null>(null);
 
   async function simular(e: React.FormEvent) {
@@ -26,7 +24,6 @@ export default function BottleneckSimulator() {
     if (!cpu.trim() || !gpu.trim()) return;
     setLoading(true);
     setErro(null);
-    setLimite(false);
     try {
       const res = await fetch("/api/bottleneck", {
         method: "POST",
@@ -34,11 +31,6 @@ export default function BottleneckSimulator() {
         body: JSON.stringify({ cpu, gpu, resolucao }),
       });
       const data = await res.json();
-      if (res.status === 429 && data.limite) {
-        setLimite(true);
-        setErro(data.error);
-        return;
-      }
       if (!res.ok) throw new Error(data.error || "Falha na simulação.");
       setR(data as BottleneckResult);
     } catch (e) {
@@ -106,14 +98,10 @@ export default function BottleneckSimulator() {
         }
       `}</style>
 
-      {limite ? (
-        <LimiteCTA msg={erro} />
-      ) : (
-        erro && (
-          <p className="mt-4 rounded-lg border border-red-500/30 bg-red-500/10 p-3 text-center text-sm text-red-300">
-            {erro}
-          </p>
-        )
+      {erro && (
+        <p className="mt-4 rounded-lg border border-red-500/30 bg-red-500/10 p-3 text-center text-sm text-red-300">
+          {erro}
+        </p>
       )}
 
       {loading && (
@@ -231,24 +219,3 @@ function DemoAviso() {
   );
 }
 
-function LimiteCTA({ msg }: { msg: string | null }) {
-  return (
-    <div className="mt-4 rounded-xl border border-brand-secondary/40 bg-brand-secondary/10 p-5 text-center">
-      <p className="text-sm text-gray-100">{msg}</p>
-      <p className="mt-1 text-xs text-gray-400">
-        Faça upgrade para uso ilimitado — ou volte amanhã. 🚀
-      </p>
-      <div className="mt-4 flex justify-center gap-3">
-        <Link
-          href="/login"
-          className="rounded-lg border border-white/15 px-4 py-2 text-sm text-white hover:border-brand-primary/50"
-        >
-          Entrar
-        </Link>
-        <Link href="/#planos" className="btn-primary text-sm">
-          Ver planos
-        </Link>
-      </div>
-    </div>
-  );
-}
