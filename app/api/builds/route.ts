@@ -2,7 +2,8 @@ import { NextResponse } from "next/server";
 import { generateBuildCompare, hasApiKey } from "@/lib/claude";
 import { mockBuilds } from "@/lib/mock";
 import { resolveLimit, checkLimit, consumeLimit } from "@/lib/limit";
-import type { BuildsRequestBody, BuildInput } from "@/lib/types";
+import { chaveBuilds, lerCache, gravarCache } from "@/lib/ia-cache";
+import type { BuildsRequestBody, BuildInput, BuildsResult } from "@/lib/types";
 
 export const maxDuration = 60;
 
@@ -39,9 +40,21 @@ export async function POST(req: Request) {
   const bloqueio = await checkLimit(ctx);
   if (bloqueio) return bloqueio;
 
+  // ── Cache: as duas montagens sem ordem definida (A vs B === B vs A).
+  //    O nome de cada build entra na chave, porque ele aparece no resultado.
+  const slug = chaveBuilds(buildA, buildB);
+  const doCache = await lerCache<BuildsResult>(slug);
+  if (doCache) {
+    const hit = NextResponse.json(doCache, { headers: { "X-Cache": "HIT" } });
+    await consumeLimit(ctx, hit);
+    return hit;
+  }
+
   let result;
+  let ehSimulado = false;
   if (!hasApiKey()) {
     result = mockBuilds(buildA, buildB);
+    ehSimulado = true;
   } else {
     try {
       result = await generateBuildCompare(buildA, buildB);
@@ -49,10 +62,19 @@ export async function POST(req: Request) {
       console.error("Erro no comparador de builds:", err);
       result = mockBuilds(buildA, buildB);
       result.veredito = "[IA indisponível — dados simulados] " + result.veredito;
+      ehSimulado = true;
     }
   }
 
-  const res = NextResponse.json(result);
+  // Resultado simulado nunca entra no cache.
+  if (!ehSimulado) {
+    const rotulo = `${buildA.nome} vs ${buildB.nome}`;
+    await gravarCache(slug, rotulo, rotulo, result);
+  }
+
+  const res = NextResponse.json(result, {
+    headers: { "X-Cache": ehSimulado ? "BYPASS" : "MISS" },
+  });
   await consumeLimit(ctx, res);
   return res;
 }

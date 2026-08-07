@@ -2,8 +2,8 @@ import { NextResponse } from "next/server";
 import { generateComparison, hasApiKey } from "@/lib/claude";
 import { mockComparison } from "@/lib/mock";
 import { resolveLimit, checkLimit, consumeLimit } from "@/lib/limit";
-import { chaveDaBusca, lerCache, gravarCache } from "@/lib/compare-cache";
-import type { CompareRequestBody } from "@/lib/types";
+import { chaveComparacao, lerCache, gravarCache } from "@/lib/ia-cache";
+import type { CompareRequestBody, ComparisonResult } from "@/lib/types";
 
 export const maxDuration = 60;
 
@@ -28,8 +28,8 @@ export async function POST(req: Request) {
   if (bloqueio) return bloqueio;
 
   // ── Cache: o custo de IA é por PAR de produtos, não por visita. ──
-  const slug = chaveDaBusca(query);
-  const doCache = await lerCache(slug);
+  const slug = chaveComparacao(query);
+  const doCache = await lerCache<ComparisonResult>(slug);
   if (doCache) {
     const hit = NextResponse.json(doCache, { headers: { "X-Cache": "HIT" } });
     await consumeLimit(ctx, hit);
@@ -57,7 +57,7 @@ export async function POST(req: Request) {
 
   // Só entra no cache o que veio da IA de verdade. Gravar um resultado
   // simulado o congelaria para todos os visitantes seguintes.
-  if (!ehSimulado) await gravarCache(slug, query, result);
+  if (!ehSimulado) await gravarCache(slug, query, result.titulo, result);
 
   const res = NextResponse.json(result, {
     headers: { "X-Cache": ehSimulado ? "BYPASS" : "MISS" },
