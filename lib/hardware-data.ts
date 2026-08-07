@@ -404,7 +404,7 @@ export const PRODUTOS: Produto[] = [
     ],
   },
   {
-    slug: 'deepcool-ch510', marca: 'DeepCool', nome: 'CH510', categoria: 'gabinetes', score: 82, tier: 'mid-range',
+    slug: 'deepcool-ch510', imagem: 'https://img.terabyteshop.com.br/produto/m/gabinete-gamer-deepcool-ch510-mid-tower-vidro-temperado-sem-fonte-com-1-fan-black-r-ch510-bknne1-g-1_155002.jpg', marca: 'DeepCool', nome: 'CH510', categoria: 'gabinetes', score: 82, tier: 'mid-range',
     specs: { 'Tipo': 'Mid Tower ATX', 'Suporta GPU (mm)': 380, 'Baias': '2x 3.5" + 2x 2.5"', 'Fans inclusos': '1x 120mm', 'Painel': 'Vidro temperado' },
     precos: [
       { loja: 'kabum', preco: 399, url: 'https://www.kabum.com.br/produto/deepcool-ch510?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '8x R$ 49,88' },
@@ -495,14 +495,14 @@ export const PRODUTOS: Produto[] = [
     ],
   },
   {
-    slug: 'xpg-core-reactor-ii-750w', marca: 'XPG', nome: 'Core Reactor II 750W', categoria: 'fontes', score: 87, tier: 'high-end',
+    slug: 'xpg-core-reactor-ii-750w', imagem: 'https://s3.us-east-2.amazonaws.com/img.terabyteshop.com.br/produto/m/fonte-xpg-core-reactor-ii-750w-80-plus-gold-atx-30-full-modular-pfc-ativo_187578.png', marca: 'XPG', nome: 'Core Reactor II 750W', categoria: 'fontes', score: 87, tier: 'high-end',
     specs: { 'Potência (W)': 750, 'Selo': '80 Plus Gold', 'Modular': 'Total', 'Conector PCIe 5.0': 'Sim (ATX 3.0)', 'Garantia': '10 anos' },
     precos: [
       { loja: 'kabum', preco: 579, url: 'https://www.kabum.com.br/produto/xpg-core-reactor-ii-750w?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 57,90' },
     ],
   },
   {
-    slug: 'cooler-master-mwe-650-v2', marca: 'Cooler Master', nome: 'MWE 650 Gold V2', categoria: 'fontes', score: 79, tier: 'mid-range',
+    slug: 'cooler-master-mwe-650-v2', imagem: 'https://img.terabyteshop.com.br/produto/m/fonte-cooler-master-mwe-650-bronze-v2-650w-80-plus-bronze-pfc-ativo-mpe-6501-acaaw-bbr_167440.png', marca: 'Cooler Master', nome: 'MWE 650 Gold V2', categoria: 'fontes', score: 79, tier: 'mid-range',
     specs: { 'Potência (W)': 650, 'Selo': '80 Plus Gold', 'Modular': 'Total', 'Conector PCIe 5.0': 'Não', 'Garantia': '5 anos' },
     precos: [
       { loja: 'kabum', preco: 429, url: 'https://www.kabum.com.br/produto/cooler-master-mwe-650-v2?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '8x R$ 53,63' },
@@ -553,14 +553,14 @@ export const PRODUTOS: Produto[] = [
     ],
   },
   {
-    slug: 'deepcool-ak500', marca: 'DeepCool', nome: 'AK500', categoria: 'coolers', score: 85, tier: 'mid-range',
+    slug: 'deepcool-ak500', imagem: 'https://img.terabyteshop.com.br/produto/m/cooler-para-processador-deepcool-ak500-digital-argb-120mm-intel-amd-black-r-ak500-bkadmn-g_195622.jpg', marca: 'DeepCool', nome: 'AK500', categoria: 'coolers', score: 85, tier: 'mid-range',
     specs: { 'Tipo': 'Ar (torre)', 'TDP (W)': 240, 'Tamanho (mm)': 158, 'Ruído (dBA)': 29, 'Soquetes': 'AM5/AM4/LGA1700' },
     precos: [
       { loja: 'kabum', preco: 279, url: 'https://www.kabum.com.br/produto/deepcool-ak500?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '6x R$ 46,50' },
     ],
   },
   {
-    slug: 'cooler-master-ml240l-v2', marca: 'Cooler Master', nome: 'MasterLiquid ML240L V2', categoria: 'coolers', score: 84, tier: 'mid-range',
+    slug: 'cooler-master-ml240l-v2', imagem: 'https://img.terabyteshop.com.br/produto/m/water-cooler-cooler-master-masterliquid-ml240l-v2-rgb-240mm-intel-amd-mlw-d12m-a18pc-r2_99994.jpg', marca: 'Cooler Master', nome: 'MasterLiquid ML240L V2', categoria: 'coolers', score: 84, tier: 'mid-range',
     specs: { 'Tipo': 'Água (AIO 240mm)', 'TDP (W)': 250, 'Tamanho (mm)': 240, 'Ruído (dBA)': 30, 'Soquetes': 'AM5/AM4/LGA1700' },
     precos: [
       { loja: 'kabum', preco: 499, url: 'https://www.kabum.com.br/produto/ml240l-v2?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 49,90' },
@@ -591,7 +591,7 @@ export const PRODUTOS: Produto[] = [
     ],
   },
   {
-    slug: 'deepcool-le520', marca: 'DeepCool', nome: 'LE520', categoria: 'coolers', score: 82, tier: 'mid-range',
+    slug: 'deepcool-le520', imagem: 'https://img.terabyteshop.com.br/produto/m/water-cooler-deepcool-le520-argb-240mm-intel-amd-r-le520-bkammn-g-1_165094.jpg', marca: 'DeepCool', nome: 'LE520', categoria: 'coolers', score: 82, tier: 'mid-range',
     specs: { 'Tipo': 'Água (AIO 240mm)', 'TDP (W)': 220, 'Tamanho (mm)': 240, 'Ruído (dBA)': 32, 'Soquetes': 'AM5/AM4/LGA1700' },
     precos: [
       { loja: 'kabum', preco: 399, url: 'https://www.kabum.com.br/produto/deepcool-le520?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '8x R$ 49,88' },
@@ -605,7 +605,7 @@ export const PRODUTOS: Produto[] = [
     ],
   },
   {
-    slug: 'deepcool-gammaxx-400', marca: 'DeepCool', nome: 'Gammaxx 400 V2', categoria: 'coolers', score: 66, tier: 'entrada',
+    slug: 'deepcool-gammaxx-400', imagem: 'https://img.terabyteshop.com.br/produto/m/cooler-para-processador-deepcool-gammaxx-400-xt-rgb-120mm-intel-amd-dp-mch4-gmx400-xt_127144.jpg', marca: 'DeepCool', nome: 'Gammaxx 400 V2', categoria: 'coolers', score: 66, tier: 'entrada',
     specs: { 'Tipo': 'Ar (torre)', 'TDP (W)': 130, 'Tamanho (mm)': 155, 'Ruído (dBA)': 30, 'Soquetes': 'AM4/LGA1700' },
     precos: [
       { loja: 'kabum', preco: 149, url: 'https://www.kabum.com.br/produto/deepcool-gammaxx-400?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '4x R$ 37,25' },
@@ -1681,7 +1681,7 @@ export const PRODUTOS: Produto[] = [
 
   // ── Coolers ──
   {
-    slug: 'deepcool-ak620', marca: 'DeepCool', nome: 'AK620', categoria: 'coolers', score: 86,
+    slug: 'deepcool-ak620', imagem: 'https://img.terabyteshop.com.br/produto/m/cooler-para-processador-deepcool-ak620-120mm-intel-amd-r-ak620-bknnmt-g_138062.jpg', marca: 'DeepCool', nome: 'AK620', categoria: 'coolers', score: 86,
     specs: { 'Tipo': 'Ar (torre dupla)', 'TDP (W)': 260, 'Tamanho (mm)': 160, 'Ruído (dBA)': 28, 'Soquetes': 'AM5/AM4/LGA1700' },
     precos: [
       { loja: 'kabum', preco: 349, url: 'https://www.kabum.com.br/produto/deepcool-ak620?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '6x R$ 58,16' },
@@ -1799,7 +1799,7 @@ export const PRODUTOS: Produto[] = [
     ],
   },
   {
-    slug: 'xpg-pylon-550w', marca: 'XPG', nome: 'Pylon 550W', categoria: 'fontes', score: 60,
+    slug: 'xpg-pylon-550w', imagem: 'https://s3.us-east-2.amazonaws.com/img.terabyteshop.com.br/produto/m/fonte-xpg-pylon-550w-80-plus-bronze-pfc-ativo-75260162_108377.png', marca: 'XPG', nome: 'Pylon 550W', categoria: 'fontes', score: 60,
     specs: { 'Potência (W)': 550, 'Selo': '80 Plus Bronze', 'Modular': 'Não', 'Conector PCIe 5.0': 'Não', 'Garantia': '5 anos' },
     precos: [
       { loja: 'kabum', preco: 289, url: 'https://www.kabum.com.br/produto/xpg-pylon-550w?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '6x R$ 48,16' },
@@ -1809,7 +1809,7 @@ export const PRODUTOS: Produto[] = [
 
   // ── Coolers (novos) ──
   {
-    slug: 'deepcool-lt720-360mm', marca: 'DeepCool', nome: 'LT720 360mm', categoria: 'coolers', score: 92,
+    slug: 'deepcool-lt720-360mm', imagem: 'https://img.terabyteshop.com.br/produto/m/water-cooler-deepcool-lt720-argb-360mm-intel-amd-black-r-lt720-bkamnf-g-1_165130.jpg', marca: 'DeepCool', nome: 'LT720 360mm', categoria: 'coolers', score: 92,
     specs: { 'Tipo': 'Água (AIO 360mm)', 'TDP (W)': 300, 'Tamanho (mm)': 360, 'Ruído (dBA)': 32, 'Soquetes': 'AM5/AM4/LGA1700' },
     precos: [
       { loja: 'kabum', preco: 749, url: 'https://www.kabum.com.br/produto/deepcool-lt720?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 74,90' },
@@ -2385,7 +2385,7 @@ export const PRODUTOS: Produto[] = [
     relacionados: ['msi-mag-a550bn-550w', 'xpg-pylon-550w', 'corsair-cx650-650w'],
   },
   {
-    slug: 'deepcool-ag400', marca: 'DeepCool', nome: 'AG400', categoria: 'coolers', score: 74,
+    slug: 'deepcool-ag400', imagem: 'https://img.terabyteshop.com.br/produto/m/cooler-para-processador-deepcool-ag400-digital-plus-argb-120mm-intel-amd-black-r-ag400-bkadmp-g-1_193547.jpg', marca: 'DeepCool', nome: 'AG400', categoria: 'coolers', score: 74,
     scoreCustoBeneficio: 95, tier: 'entrada', anoLancamento: 2022,
     specs: { 'Tipo': 'Ar (torre)', 'TDP (W)': 220, 'Tamanho (mm)': 150, 'Ruído (dBA)': 31.6, 'Heatpipes': 4, 'Soquetes': 'AM5/AM4/LGA1851/1700' },
     precos: [{ loja: 'amazon', preco: 159, url: 'https://www.amazon.com.br/s?k=deepcool+ag400&tag=SEUTAG-20', disponivel: true, frete: 'prime', parcelamento: '3x R$ 53,00' }],
