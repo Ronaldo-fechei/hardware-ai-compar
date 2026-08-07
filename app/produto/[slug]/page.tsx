@@ -77,6 +77,9 @@ function ProdutoSchema({ produto }: { produto: ReturnType<typeof getProdutoBySlu
     description: produto.descricao || '',
     category: tipoProduto(produto.categoria),
     url: `${SITE_URL}/produto/${produto.slug}`,
+    // `image` é obrigatório para o Google validar o snippet de produto.
+    // Só entra quando existe foto de verdade — campo vazio invalida o schema.
+    ...(produto.imagem ? { image: [produto.imagem] } : {}),
     additionalProperty: Object.entries(produto.specs).map(([name, value]) => ({
       '@type': 'PropertyValue', name, value: String(value),
     })),
