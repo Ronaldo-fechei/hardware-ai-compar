@@ -740,7 +740,7 @@ export const PRODUTOS: Produto[] = [
     ],
   },
   {
-    slug: 'lg-24gn600', marca: 'LG', nome: 'UltraGear 24GN600 24"', categoria: 'monitores', score: 78, tier: 'entrada',
+    slug: 'lg-24gn600', imagem: 'https://www.lg.com/content/dam/channel/wcms/br/images/monitores/md07533384/D-01.jpg', marca: 'LG', nome: 'UltraGear 24GN600 24"', categoria: 'monitores', score: 78, tier: 'entrada',
     specs: { 'Polegadas': 24, 'Painel': 'IPS', 'Resolução': 'Full HD 1920x1080', 'Taxa (Hz)': 144, 'Resposta (ms)': 1 },
     precos: [
       { loja: 'kabum', preco: 899, url: 'https://www.kabum.com.br/produto/lg-24gn600?utm_source=afiliado&utm_medium=besthard', disponivel: true, frete: 'pago', parcelamento: '10x R$ 89,90' },
