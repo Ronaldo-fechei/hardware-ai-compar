@@ -2491,6 +2491,91 @@ export const PRODUTOS: Produto[] = [
 
 // ── Enrichment: descrições, prós/contras e relacionados ──────────────────
 const ENRICHMENT: Record<string, Partial<import('@/types/hardware').Produto>> = {
+  'hyperx-cloud-ii': {
+    tier: 'mid-range', anoLancamento: 2015, scoreCustoBeneficio: 90,
+    descricao: 'O Cloud II é o headset que virou referência de conforto na faixa intermediária. As espumas em couro sintético e o arco de alumínio aguentam sessões longas sem apertar, e os drivers de 53 mm entregam um grave encorpado que agrada em jogos e música. A placa de som USB inclusa ativa o surround virtual 7.1 e melhora bastante o microfone removível — mas você pode ignorá-la e usar o P2 direto no celular ou no console.',
+    proCons: { pros: ['Conforto acima da média em sessões longas', 'Drivers de 53 mm com grave forte', 'Microfone removível com boa captação', 'Funciona em PC, console e celular pelo P2'], contras: ['Surround 7.1 só pela placa USB', 'Sem software de equalização no modo P2', 'Design já antigo perto dos concorrentes'] },
+    relacionados: ['hyperx-cloud-alpha', 'logitech-g-pro-x', 'corsair-hs55-surround'],
+  },
+  'logitech-g-pro-x': {
+    tier: 'high-end', anoLancamento: 2019, scoreCustoBeneficio: 78,
+    descricao: 'O G Pro X foi desenhado para quem se importa mais com a própria voz do que com o cenário sonoro. O diferencial é o Blue VO!CE, um pacote de processamento de microfone no software da Logitech que aplica compressor, de-esser e filtro de ruído em tempo real — o resultado é uma voz de qualidade próxima à de microfone dedicado. O áudio de 50 mm é neutro e preciso, bom para localizar passos em FPS.',
+    proCons: { pros: ['Microfone Blue VO!CE é o melhor da categoria', 'Assinatura sonora neutra, boa para FPS competitivo', 'Espumas de couro e veludo inclusas', 'Construção em alumínio e aço'], contras: ['Preço alto para um headset com fio', 'Grave contido demais para quem gosta de impacto', 'Blue VO!CE exige o software G HUB no PC'] },
+    relacionados: ['hyperx-cloud-ii', 'steelseries-arctis-nova-1', 'logitech-g733'],
+  },
+  'razer-kraken-v3-x': {
+    tier: 'entrada', anoLancamento: 2021, scoreCustoBeneficio: 84,
+    descricao: 'O Kraken V3 X é a porta de entrada da Razer no surround 7.1 por software. Pesando 285 g, é dos mais leves da linha e não cansa o pescoço. Os drivers TriForce de 40 mm dividem o alcance em agudos, médios e graves separados, o que ajuda na separação sonora apesar do tamanho modesto. A conexão é só USB — não funciona em console ou celular.',
+    proCons: { pros: ['Leve (285 g) para uso prolongado', 'Surround 7.1 por software incluso', 'Drivers TriForce com boa separação', 'Iluminação Chroma configurável'], contras: ['Só USB — não funciona em console ou celular', 'Microfone não é removível', 'Drivers de 40 mm têm grave modesto'] },
+    relacionados: ['hyperx-cloud-stinger-2-core', 'redragon-zeus-x-h510', 'jbl-quantum-200'],
+  },
+  'hyperx-cloud-alpha': {
+    tier: 'mid-range', anoLancamento: 2017, scoreCustoBeneficio: 92,
+    descricao: 'O Cloud Alpha usa um truque que poucos headsets têm nessa faixa: os drivers de 50 mm são de câmara dupla, separando fisicamente o grave dos médios e agudos. O efeito é um som mais limpo, com menos embolamento nas cenas cheias de explosão. Como é puramente analógico (P2), funciona em qualquer coisa que tenha entrada de fone — e por isso não depende de software nenhum.',
+    proCons: { pros: ['Drivers de câmara dupla reduzem embolamento', 'Compatível com tudo que tenha P2', 'Bateria não é preocupação — é com fio', 'Cabo destacável facilita a manutenção'], contras: ['Sem surround virtual', 'Sem controle por software', 'Cabo com controle de volume incomoda alguns'] },
+    relacionados: ['hyperx-cloud-ii', 'steelseries-arctis-nova-1', 'corsair-hs55-surround'],
+  },
+  'jbl-quantum-200': {
+    tier: 'entrada', anoLancamento: 2020, scoreCustoBeneficio: 88,
+    descricao: 'A JBL trouxe para o Quantum 200 a mesma assinatura sonora dos fones de música da marca: grave presente e agudo brilhante. É uma escolha interessante para quem usa o headset tanto para jogar quanto para ouvir música, já que a maioria dos concorrentes nessa faixa prioriza só o jogo. O microfone flip-up muda para mudo ao ser levantado, o que é prático em reunião.',
+    proCons: { pros: ['Assinatura JBL agrada em música', 'Microfone flip-up muda ao levantar', 'Leve, com 240 g', 'P2 funciona em console e celular'], contras: ['Sem surround virtual', 'Microfone não é removível', 'Espumas de tecido esquentam menos mas desgastam mais rápido'] },
+    relacionados: ['jbl-quantum-100', 'razer-kraken-v3-x', 'hyperx-cloud-stinger-2-core'],
+  },
+  'redragon-zeus-x-h510': {
+    tier: 'entrada', anoLancamento: 2020, scoreCustoBeneficio: 86,
+    descricao: 'O Zeus X é a aposta da Redragon em quem quer drivers grandes gastando pouco. Os 53 mm são do mesmo tamanho dos usados em headsets bem mais caros e entregam volume e grave de sobra. O preço dessa escolha aparece na balança: com 360 g, é o mais pesado da lista e pode incomodar em partidas de várias horas.',
+    proCons: { pros: ['Drivers de 53 mm por preço de entrada', 'Microfone removível', 'Aceita USB (7.1) e P2', 'Iluminação RGB no gabinete das conchas'], contras: ['Pesado — 360 g', 'Acabamento plástico simples', 'Surround virtual é básico'] },
+    relacionados: ['redragon-lamia-2-h320', 'razer-kraken-v3-x', 'hyperx-cloud-stinger-2-core'],
+  },
+  'corsair-hs55-surround': {
+    tier: 'mid-range', anoLancamento: 2022, scoreCustoBeneficio: 87,
+    descricao: 'O HS55 Surround é o meio-termo bem resolvido da Corsair: leve (266 g), com espumas de memória que distribuem bem a pressão, e adaptador USB incluso para Dolby Audio 7.1 no PC. Sem o adaptador, ele vira um headset P2 comum que funciona em PlayStation, Xbox e celular. O microfone omnidirecional capta bem, mas pega mais som do ambiente que os cardioides.',
+    proCons: { pros: ['Leve e confortável com espuma de memória', 'Dolby Audio 7.1 pelo adaptador USB incluso', 'Funciona em console e celular pelo P2', 'Microfone flip-up com mudo automático'], contras: ['Microfone omnidirecional capta ruído do ambiente', 'Sem iluminação (irrelevante para alguns)', 'Drivers de 50 mm sem câmara dupla'] },
+    relacionados: ['hyperx-cloud-ii', 'hyperx-cloud-alpha', 'steelseries-arctis-nova-1'],
+  },
+  'logitech-g733': {
+    tier: 'high-end', anoLancamento: 2020, scoreCustoBeneficio: 74,
+    descricao: 'O G733 é o headset sem fio para quem quer se livrar do cabo sem abrir mão de latência baixa. A tecnologia LIGHTSPEED opera em 2,4 GHz com atraso imperceptível, diferente do Bluetooth comum. O arco é uma faixa elástica de tecido substituível, que distribui o peso melhor que um arco rígido — e as cores chamativas são uma escolha estética que divide opiniões.',
+    proCons: { pros: ['Sem fio LIGHTSPEED com latência baixa', 'Apenas 278 g, leve para um sem fio', 'Microfone Blue VO!CE no software', 'Faixa de cabeça elástica e substituível'], contras: ['Drivers de 40 mm com grave modesto', 'Só funciona sem fio no PC (receptor USB)', 'Bateria exige recarga periódica'] },
+    relacionados: ['logitech-g435', 'logitech-g-pro-x', 'steelseries-arctis-nova-1'],
+  },
+  'steelseries-arctis-nova-1': {
+    tier: 'mid-range', anoLancamento: 2022, scoreCustoBeneficio: 89,
+    descricao: 'O Arctis Nova 1 herdou os drivers da linha topo da SteelSeries num corpo simples e barato. A resposta que desce a 10 Hz dá uma percepção de grave profundo pouco comum na faixa, e o microfone ClearCast Gen 2 se recolhe para dentro da concha quando não está em uso. Com 236 g é dos mais leves com fio, e o arco em elástico de tecido dispensa ajuste.',
+    proCons: { pros: ['Drivers herdados da linha topo', 'Resposta desce a 10 Hz — grave profundo', 'Microfone retrátil some na concha', 'Muito leve: 236 g'], contras: ['Sem surround virtual sem software', 'Acabamento plástico simples', 'Sem iluminação'] },
+    relacionados: ['hyperx-cloud-alpha', 'corsair-hs55-surround', 'logitech-g-pro-x'],
+  },
+  'redragon-lamia-2-h320': {
+    tier: 'entrada', anoLancamento: 2021, scoreCustoBeneficio: 85,
+    descricao: 'O Lamia 2 chama atenção por vir com um suporte de headset incluso na caixa, item que normalmente se compra à parte. É um headset USB com surround 7.1 por software e iluminação RGB, voltado para quem está montando o primeiro setup e quer resolver som e organização de uma vez. Por ser só USB, não serve para console ou celular.',
+    proCons: { pros: ['Vem com suporte de mesa incluso', 'Surround 7.1 por software', 'Microfone removível', 'Preço de entrada'], contras: ['Só USB — sem console ou celular', 'Drivers de 40 mm', '320 g pesam em sessões longas'] },
+    relacionados: ['redragon-zeus-x-h510', 'razer-kraken-v3-x', 'hyperx-cloud-stinger-2-core'],
+  },
+  'hyperx-cloud-stinger-2-core': {
+    tier: 'entrada', anoLancamento: 2022, scoreCustoBeneficio: 91,
+    descricao: 'O Stinger 2 Core é a porta de entrada da HyperX e mantém o que a marca faz melhor: conforto. As conchas giram 90 graus para descansar no pescoço e o ajuste é por deslize simples. O microfone é bidirecional com cancelamento e muda ao ser girado para cima. É analógico puro, então funciona em qualquer console, celular ou PC sem adaptador.',
+    proCons: { pros: ['Conforto da HyperX por preço de entrada', 'Conchas giram 90° para descansar no pescoço', 'Microfone muda ao levantar', 'Compatível com tudo que tenha P2'], contras: ['Drivers de 40 mm com grave discreto', 'Microfone não é removível', 'Sem surround virtual'] },
+    relacionados: ['jbl-quantum-200', 'razer-kraken-v3-x', 'hyperx-cloud-alpha'],
+  },
+  'logitech-h390': {
+    tier: 'entrada', anoLancamento: 2010, scoreCustoBeneficio: 93,
+    descricao: 'O H390 não é um headset gamer — é um headset de trabalho, e faz isso muito bem. O microfone bidirecional com cancelamento de ruído foi pensado para chamadas, e o controle de volume e mudo fica no cabo, ao alcance da mão durante uma reunião. Com 197 g, é o mais leve da lista. Para jogar ele deixa a desejar, mas para home office é difícil bater o preço.',
+    proCons: { pros: ['Microfone excelente para chamadas', 'Controle de volume e mudo no cabo', 'Apenas 197 g', 'Plug and play por USB, sem driver'], contras: ['Não é feito para jogos — drivers de 30 mm', 'Sem grave relevante', 'Só USB-A'] },
+    relacionados: ['jbl-quantum-100', 'hyperx-cloud-stinger-2-core', 'jbl-quantum-200'],
+  },
+  'jbl-quantum-100': {
+    tier: 'entrada', anoLancamento: 2020, scoreCustoBeneficio: 90,
+    descricao: 'O Quantum 100 é a versão mais enxuta da linha gamer da JBL e uma das opções mais baratas com microfone removível. O som traz o grave característico da marca, e o cabo de 1,2 m foi pensado para uso com celular ou controle de console, não para chegar ao gabinete embaixo da mesa — nesse caso é preciso uma extensão.',
+    proCons: { pros: ['Microfone removível por preço baixo', 'Grave característico da JBL', 'Leve: 220 g', 'Funciona em console e celular'], contras: ['Cabo curto de 1,2 m para uso em PC de mesa', 'Sem surround virtual', 'Acabamento simples'] },
+    relacionados: ['jbl-quantum-200', 'hyperx-cloud-stinger-2-core', 'logitech-h390'],
+  },
+  'logitech-g435': {
+    tier: 'mid-range', anoLancamento: 2021, scoreCustoBeneficio: 88,
+    descricao: 'O G435 resolve um problema que quase nenhum headset sem fio resolve: ele funciona tanto por LIGHTSPEED (2,4 GHz, no PC) quanto por Bluetooth, então serve para o PC e para o celular sem trocar de fone. Com 165 g é o mais leve desta lista com folga, e a bateria de até 18 horas cobre a semana inteira. O microfone é integrado (não tem haste), o que é discreto mas capta um pouco pior.',
+    proCons: { pros: ['LIGHTSPEED e Bluetooth no mesmo fone', 'Apenas 165 g — o mais leve da lista', 'Bateria de até 18 horas', 'Fabricado com plástico reciclado'], contras: ['Microfone integrado capta pior que os de haste', 'Sem entrada P2 — só sem fio', 'Sem controle de graves por software'] },
+    relacionados: ['logitech-g733', 'steelseries-arctis-nova-1', 'hyperx-cloud-stinger-2-core'],
+  },
+
   'amd-ryzen-7-7800x3d': {
     tier: 'high-end',
     anoLancamento: 2023,
