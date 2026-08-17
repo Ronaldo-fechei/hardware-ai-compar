@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { PRODUTOS_ENRIQUECIDOS } from "@/lib/hardware-data";
+import { CATEGORIAS, PRODUTOS_ENRIQUECIDOS } from "@/lib/hardware-data";
 import { ARTIGOS } from "@/lib/blog-data";
 import { SITE_URL } from "@/lib/site";
 
@@ -21,6 +21,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/autores/equipe-besthard`, lastModified: revisaoEditorial, changeFrequency: "yearly", priority: 0.5 },
   ];
 
+  // Páginas de categoria (/comparar/{slug}) — hub que lista todos os
+  // produtos daquela categoria com links reais para cada ficha.
+  const categorias: MetadataRoute.Sitemap = CATEGORIAS.filter((c) => c.disponivel).map((c) => ({
+    url: `${SITE_URL}/comparar/${c.slug}`,
+    lastModified: revisaoEditorial,
+    changeFrequency: "weekly" as const,
+    priority: 0.85,
+  }));
+
   const produtos: MetadataRoute.Sitemap = PRODUTOS_ENRIQUECIDOS.map((p) => ({
     url: `${SITE_URL}/produto/${p.slug}`,
     lastModified: revisaoEditorial,
@@ -35,5 +44,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: a.destaque ? 0.8 : 0.65,
   }));
 
-  return [...estaticas, ...artigos, ...produtos];
+  return [...estaticas, ...categorias, ...artigos, ...produtos];
 }
