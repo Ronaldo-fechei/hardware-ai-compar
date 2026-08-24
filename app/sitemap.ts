@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { CATEGORIAS, PRODUTOS_ENRIQUECIDOS } from "@/lib/hardware-data";
+import { CATEGORIAS } from "@/lib/hardware-data";
 import { ARTIGOS } from "@/lib/blog-data";
 import { SITE_URL } from "@/lib/site";
 
@@ -18,7 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/transparencia`, lastModified: revisaoEditorial, changeFrequency: "yearly", priority: 0.5 },
     { url: `${SITE_URL}/contato`, lastModified: revisaoEditorial, changeFrequency: "yearly", priority: 0.4 },
     { url: `${SITE_URL}/privacidade`, lastModified: revisaoEditorial, changeFrequency: "yearly", priority: 0.4 },
-    { url: `${SITE_URL}/autores/equipe-besthard`, lastModified: revisaoEditorial, changeFrequency: "yearly", priority: 0.5 },
+    { url: `${SITE_URL}/autores/ronaldo-bueno`, lastModified: revisaoEditorial, changeFrequency: "yearly", priority: 0.6 },
   ];
 
   // Páginas de categoria (/comparar/{slug}) — hub que lista todos os
@@ -30,12 +30,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.85,
   }));
 
-  const produtos: MetadataRoute.Sitemap = PRODUTOS_ENRIQUECIDOS.map((p) => ({
-    url: `${SITE_URL}/produto/${p.slug}`,
-    lastModified: revisaoEditorial,
-    changeFrequency: "monthly" as const,
-    priority: 0.65,
-  }));
+  // As fichas /produto/ NÃO entram mais no sitemap: são 230 páginas geradas a
+  // partir do mesmo template, com pouco texto único e link de afiliado. Essa
+  // proporção (230 template x 16 artigos) é o que o AdSense classificou como
+  // "conteúdo de baixo valor". Elas continuam navegáveis e continuam recebendo
+  // link interno — apenas saem do índice, via robots:{index:false} no
+  // generateMetadata de app/produto/[slug]/page.tsx.
 
   const artigos: MetadataRoute.Sitemap = ARTIGOS.map((a) => ({
     url: `${SITE_URL}/blog/${a.slug}`,
@@ -44,5 +44,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: a.destaque ? 0.8 : 0.65,
   }));
 
-  return [...estaticas, ...categorias, ...artigos, ...produtos];
+  return [...estaticas, ...categorias, ...artigos];
 }

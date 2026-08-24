@@ -36,9 +36,11 @@ export function ComparadorClient({ categoria, produtos, slugA, slugB }: Props) {
           <span style={{ opacity: 0.3 }}>/</span>
           <span style={{ color: 'var(--accent)' }}>{categoria.label}</span>
         </nav>
-        <h1 className="text-2xl font-bold tracking-tight md:text-3xl">
+        {/* Era <h1>. A página agora tem o h1 editorial em <IntroComparador />,
+            e dois h1 na mesma página é sinal de estrutura ruim para o Google. */}
+        <h2 className="text-2xl font-bold tracking-tight md:text-3xl">
           Comparar {categoria.label}
-        </h1>
+        </h2>
         <p className="mt-1 text-sm" style={{ color: 'var(--label)' }}>{categoria.subtitle}</p>
       </div>
 

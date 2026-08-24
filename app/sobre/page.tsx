@@ -22,9 +22,9 @@ export default function SobrePage() {
       </EditorialSection>
 
       <EditorialSection title="Quem produz o conteúdo">
-        <p>Os artigos e as fichas são produzidos e revisados pela Equipe Editorial BestHard. A revisão confere coerência técnica, compatibilidade, contexto de preço e clareza antes da publicação.</p>
-        <Link href="/autores/equipe-besthard" className="inline-flex font-semibold" style={{ color: 'var(--accent)' }}>
-          Conheça a equipe e o processo de revisão →
+        <p>Os artigos e as fichas são escritos e revisados por Ronaldo Bueno, fundador e editor da BestHard. A revisão confere coerência técnica, compatibilidade, contexto de preço e clareza antes da publicação.</p>
+        <Link href="/autores/ronaldo-bueno" className="inline-flex font-semibold" style={{ color: 'var(--accent)' }}>
+          Quem escreve e como o conteúdo é revisado →
         </Link>
       </EditorialSection>
 

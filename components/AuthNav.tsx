@@ -1,21 +1,26 @@
 import Link from "next/link";
 import { createClient } from "@/lib/supabase/server";
 import { isAdminEmail } from "@/lib/admin";
+import { comTimeout } from "@/lib/supabase/safe";
 
 /**
  * Menu de autenticação (Server Component).
  * Mostra "Entrar" ou o e-mail do usuário + "Sair".
  * Quando o Supabase não está configurado, mostra só "Histórico".
+ *
+ * ATENÇÃO: este componente está no layout raiz, ou seja, roda em TODA página
+ * do site. Antes ele chamava supabase.auth.getUser() sem timeout — se o
+ * Supabase demorasse, a página inteira ficava presa até a Vercel devolver 504.
+ * Agora a chamada tem teto de tempo e, se falhar, o menu simplesmente aparece
+ * como visitante deslogado. O conteúdo nunca deixa de carregar por causa disso.
  */
 export default async function AuthNav() {
   const supabase = await createClient();
 
   let email: string | null = null;
   if (supabase) {
-    const {
-      data: { user },
-    } = await supabase.auth.getUser();
-    email = user?.email ?? null;
+    const resultado = await comTimeout(supabase.auth.getUser());
+    email = resultado?.data?.user?.email ?? null;
   }
 
   return (

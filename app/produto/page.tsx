@@ -43,7 +43,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: {
       canonical: `${SITE_URL}/produto/${slug}`,
     },
-    authors: [{ name: 'Equipe Editorial BestHard', url: `${SITE_URL}/autores/equipe-besthard` }],
+    authors: [{ name: 'Ronaldo Bueno', url: `${SITE_URL}/autores/ronaldo-bueno` }],
   }
 }
 
@@ -228,7 +228,7 @@ export default async function ProdutoPage({ params }: Props) {
 
           <aside className="rounded-xl p-5 text-[12px] leading-relaxed" style={{ background: 'rgba(0,229,255,.05)', border: '1px solid rgba(0,229,255,.18)', color: 'var(--label)' }}>
             <strong style={{ color: 'var(--text)' }}>Análise editorial:</strong> ficha revisada pela{' '}
-            <Link href="/autores/equipe-besthard" className="font-semibold" style={{ color: 'var(--accent)' }}>Equipe BestHard</Link>. O score é um índice comparativo da categoria, não uma média de avaliações de consumidores. Consulte a{' '}
+            <Link href="/autores/ronaldo-bueno" className="font-semibold" style={{ color: 'var(--accent)' }}>Ronaldo Bueno</Link>. O score é um índice comparativo da categoria, não uma média de avaliações de consumidores. Consulte a{' '}
             <Link href="/metodologia" className="font-semibold" style={{ color: 'var(--accent)' }}>metodologia</Link> para entender os critérios.
           </aside>
 

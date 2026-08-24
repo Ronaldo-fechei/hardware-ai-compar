@@ -53,7 +53,9 @@ function ArticleSchema({ artigo }: { artigo: ReturnType<typeof getArtigoBySlug> 
     '@context': 'https://schema.org', '@type': 'Article',
     headline: artigo.titulo, description: artigo.descricao,
     datePublished: artigo.dataPublicacao, dateModified: artigo.dataAtualizacao || artigo.dataPublicacao,
-    author: { '@type': 'Organization', name: 'Equipe Editorial BestHard', url: `${SITE_URL}/autores/equipe-besthard` },
+    // author como Person (não Organization): o Google liga o artigo a uma
+    // pessoa real, que é o que sustenta E-E-A-T em conteúdo de recomendação.
+    author: { '@type': 'Person', '@id': `${SITE_URL}/autores/ronaldo-bueno#person`, name: 'Ronaldo Bueno', url: `${SITE_URL}/autores/ronaldo-bueno` },
     publisher: { '@type': 'Organization', name: 'BestHard', url: SITE_URL, logo: { '@type': 'ImageObject', url: `${SITE_URL}/logo.svg` } },
     mainEntityOfPage: `${SITE_URL}/blog/${artigo.slug}`,
     keywords: artigo.tags.join(', '),
@@ -295,12 +297,15 @@ export default async function ArtigoPage({ params }: Props) {
             </span>
           </div>
           <div className="mt-4 flex items-center gap-3 rounded-xl px-4 py-3" style={{ background: 'var(--surface)', border: '1px solid var(--border)' }}>
-            <div className="flex h-9 w-9 items-center justify-center rounded-full font-bold" style={{ background: 'rgba(0,229,255,.1)', color: 'var(--accent)' }}>BH</div>
+            <div className="flex h-9 w-9 items-center justify-center rounded-full font-bold" style={{ background: 'rgba(0,229,255,.1)', color: 'var(--accent)' }}>RB</div>
             <div>
-              <p className="text-[12px] font-bold">Escrito e revisado pela Equipe Editorial BestHard</p>
+              <p className="text-[12px] font-bold">
+                Por{' '}
+                <Link href="/autores/ronaldo-bueno" className="font-semibold" style={{ color: 'var(--accent)' }}>Ronaldo Bueno</Link>
+                {' '}· fundador e editor da BestHard
+              </p>
               <p className="text-[11px]" style={{ color: 'var(--muted)' }}>
-                Pesquisa técnica, contexto brasileiro e revisão de compatibilidade.{' '}
-                <Link href="/autores/equipe-besthard" className="font-semibold" style={{ color: 'var(--accent)' }}>Conheça a equipe</Link>
+                Pesquisa técnica, contexto brasileiro e revisão de compatibilidade.
               </p>
             </div>
           </div>
