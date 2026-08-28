@@ -17,7 +17,7 @@ import { SITE_URL } from '@/lib/site'
 
 // Assim que você colocar a foto em /public/autores/ronaldo-bueno.jpg,
 // troque null pelo caminho: const FOTO = '/autores/ronaldo-bueno.jpg'
-const FOTO: string | null = null
+const FOTO: string | null = "/autores/ronaldo-bueno.jpg"
 
 const NOME = 'Ronaldo Bueno'
 const CARGO = 'Fundador e editor da BestHard'
