@@ -42,7 +42,7 @@ export const ARTIGOS: Artigo[] = [
     descricao: 'Qual o melhor processador para jogos em 2026? Testamos Ryzen 7 9800X3D, Core Ultra 7 270K Plus, i7-14700K e mais. Veja qual vale mais a pena para o seu orçamento.',
     categoria: 'comparativos',
     tags: ['processador', 'cpu', 'jogos', 'ryzen 9800x3d', 'arrow lake', 'amd', 'intel', 'pc gamer 2026'],
-    autor: 'BestHard',
+    autor: 'Ronaldo Bueno',
     dataPublicacao: '2026-01-10',
     dataAtualizacao: '2026-06-15',
     tempoLeitura: 9,
@@ -197,7 +197,7 @@ export const ARTIGOS: Artigo[] = [
     descricao: 'Guia completo para montar um PC gamer por R$ 3.000 em 2026. Lista de peças com CPU, GPU, RAM, SSD, fonte, cooler e onde comprar com os melhores preços nas lojas brasileiras.',
     categoria: 'builds',
     tags: ['build pc', 'pc gamer', 'montar pc', 'r$ 3000', 'custo-benefício', 'guia 2026'],
-    autor: 'BestHard',
+    autor: 'Ronaldo Bueno',
     dataPublicacao: '2026-01-20',
     dataAtualizacao: '2026-06-01',
     tempoLeitura: 11,
@@ -345,7 +345,7 @@ export const ARTIGOS: Artigo[] = [
     descricao: 'Qual o melhor monitor gamer em 2026? Analisamos do AOC 24G2SP (R$ 749) ao ASUS ROG Swift OLED (R$ 4.599). IPS, VA ou OLED? 144Hz, 165Hz ou 240Hz? Respondemos tudo.',
     categoria: 'comparativos',
     tags: ['monitor gamer', 'oled', 'ips', '144hz', '240hz', '1440p', '4k', 'melhor monitor 2026'],
-    autor: 'BestHard',
+    autor: 'Ronaldo Bueno',
     dataPublicacao: '2026-02-05',
     dataAtualizacao: '2026-05-20',
     tempoLeitura: 8,
@@ -461,7 +461,7 @@ export const ARTIGOS: Artigo[] = [
     descricao: 'Como montar um PC com Xeon E5 e placa X99 por menos de R$ 1.000 em 2026. Guia completo com lista de peças, onde comprar no Mercado Livre e AliExpress, e o que evitar.',
     categoria: 'builds',
     tags: ['xeon', 'x99', 'build barato', 'e5-2678 v3', 'mercado livre', 'pc econômico 2026', 'huanan'],
-    autor: 'BestHard',
+    autor: 'Ronaldo Bueno',
     dataPublicacao: '2026-02-15',
     dataAtualizacao: '2026-06-10',
     tempoLeitura: 10,
@@ -600,7 +600,7 @@ export const ARTIGOS: Artigo[] = [
     descricao: 'Comparativo completo Ryzen 5 9600X vs i5-14600K em 2026: benchmarks em jogos, produtividade, consumo de energia e preços no Brasil. Qual é a melhor compra para o seu setup?',
     categoria: 'comparativos',
     tags: ['ryzen 5 9600x', 'i5-14600k', 'comparativo cpu', 'custo-benefício', 'zen 5', 'intel 14ª geração'],
-    autor: 'BestHard',
+    autor: 'Ronaldo Bueno',
     dataPublicacao: '2026-03-01',
     dataAtualizacao: '2026-06-01',
     tempoLeitura: 7,
@@ -699,7 +699,7 @@ export const ARTIGOS: Artigo[] = [
     descricao: 'A RTX 4060 vale a pena em 2026? Analisamos desempenho em 1080p, ray tracing, DLSS, consumo e preço no Brasil, e comparamos com RX 7600, RTX 3060 e RTX 4070 Super. Veja qual comprar.',
     categoria: 'comparativos',
     tags: ['rtx 4060', 'placa de vídeo', 'gpu', '1080p', 'custo-benefício', 'dlss', 'rx 7600', 'melhor gpu 2026'],
-    autor: 'BestHard',
+    autor: 'Ronaldo Bueno',
     dataPublicacao: '2026-06-24',
     dataAtualizacao: '2026-07-01',
     tempoLeitura: 9,
@@ -843,7 +843,7 @@ export const ARTIGOS: Artigo[] = [
     descricao: 'Guia completo de fontes de alimentação em 2026: quantos watts você precisa para sua placa de vídeo, o que significa 80 Plus Bronze/Gold, fonte modular vale a pena e quais os melhores modelos por faixa de preço no Brasil.',
     categoria: 'guias',
     tags: ['fonte', 'psu', 'quantos watts', '80 plus', 'fonte modular', 'corsair', 'guia fonte 2026'],
-    autor: 'BestHard',
+    autor: 'Ronaldo Bueno',
     dataPublicacao: '2026-06-28',
     tempoLeitura: 8,
     destaque: false,
@@ -993,7 +993,7 @@ export const ARTIGOS: Artigo[] = [
     descricao: 'Qual o melhor SSD para jogos em 2026? Comparamos NVMe Gen4 vs Gen5, SATA vs NVMe, e os melhores modelos: Kingston NV2, WD Black SN850X, Samsung 990 Pro e Crucial T705. Veja qual realmente vale a pena.',
     categoria: 'comparativos',
     tags: ['ssd', 'nvme', 'gen4', 'gen5', 'ssd para jogos', 'wd black', 'samsung 990 pro', 'melhor ssd 2026'],
-    autor: 'BestHard',
+    autor: 'Ronaldo Bueno',
     dataPublicacao: '2026-07-01',
     tempoLeitura: 8,
     destaque: false,
@@ -1132,7 +1132,7 @@ export const ARTIGOS: Artigo[] = [
     descricao: 'Quanto de memória RAM você precisa para jogos em 2026? Explicamos 16GB vs 32GB, DDR4 vs DDR5, velocidade (MHz), dual channel e os melhores kits para comprar no Brasil.',
     categoria: 'guias',
     tags: ['ram', 'memória', '16gb', '32gb', 'ddr4', 'ddr5', 'dual channel', 'guia ram 2026'],
-    autor: 'BestHard',
+    autor: 'Ronaldo Bueno',
     dataPublicacao: '2026-07-01',
     tempoLeitura: 8,
     destaque: false,
@@ -1267,7 +1267,7 @@ export const ARTIGOS: Artigo[] = [
     descricao: 'Water cooler ou cooler a ar em 2026? Comparamos desempenho, preço, ruído, manutenção e risco. Veja quando cada um vale a pena e os melhores modelos para seu processador no Brasil.',
     categoria: 'guias',
     tags: ['cooler', 'water cooler', 'air cooler', 'refrigeração', 'aio', 'temperatura cpu', 'guia cooler 2026'],
-    autor: 'BestHard',
+    autor: 'Ronaldo Bueno',
     dataPublicacao: '2026-06-30',
     tempoLeitura: 7,
     destaque: false,
@@ -1396,7 +1396,7 @@ export const ARTIGOS: Artigo[] = [
     descricao: 'Ranking das melhores placas de vídeo custo-benefício em 2026 por faixa de preço. De GPUs de entrada para 1080p até a RTX 4090 para 4K. Veja qual GPU comprar para o seu monitor e orçamento.',
     categoria: 'comparativos',
     tags: ['placa de vídeo', 'gpu', 'ranking gpu', 'custo-benefício', '1080p', '1440p', '4k', 'melhor gpu 2026'],
-    autor: 'BestHard',
+    autor: 'Ronaldo Bueno',
     dataPublicacao: '2026-06-29',
     dataAtualizacao: '2026-07-02',
     tempoLeitura: 9,
@@ -1530,7 +1530,7 @@ export const ARTIGOS: Artigo[] = [
     descricao: 'O que é gargalo (bottleneck) no PC? Explicamos de forma simples como o processador pode limitar a placa de vídeo, como identificar, medir e evitar o gargalo ao montar ou fazer upgrade.',
     categoria: 'guias',
     tags: ['gargalo', 'bottleneck', 'cpu', 'gpu', 'upgrade', 'desempenho', 'guia pc 2026'],
-    autor: 'BestHard',
+    autor: 'Ronaldo Bueno',
     dataPublicacao: '2026-06-27',
     tempoLeitura: 7,
     destaque: false,
@@ -1640,7 +1640,7 @@ export const ARTIGOS: Artigo[] = [
     descricao: 'Quais os requisitos de PC para rodar GTA 6? Estimamos configuração mínima, recomendada e ultra para Grand Theft Auto VI, com builds prontas por orçamento e as melhores peças para comprar no Brasil.',
     categoria: 'guias',
     tags: ['gta 6', 'gta vi', 'requisitos gta 6', 'pc para gta 6', 'requisitos mínimos', 'placa de vídeo', 'build gta 6', 'grand theft auto vi'],
-    autor: 'BestHard',
+    autor: 'Ronaldo Bueno',
     dataPublicacao: '2026-07-03',
     destaque: true,
     tempoLeitura: 11,
@@ -1793,7 +1793,7 @@ export const ARTIGOS: Artigo[] = [
     descricao: 'Qual a melhor placa de vídeo para rodar GTA 6? Recomendamos a GPU ideal para cada orçamento e resolução — de RTX 3060 no 1080p à RTX 4090 no 4K — com base nos requisitos estimados de GTA 6.',
     categoria: 'comparativos',
     tags: ['gta 6', 'placa de vídeo', 'gpu para gta 6', 'melhor gpu gta 6', 'rtx 4060', 'requisitos gta 6', '1080p', '4k'],
-    autor: 'BestHard',
+    autor: 'Ronaldo Bueno',
     dataPublicacao: '2026-07-03',
     destaque: true,
     tempoLeitura: 9,
@@ -1911,7 +1911,7 @@ export const ARTIGOS: Artigo[] = [
     descricao: 'Será que GTA 6 vai rodar no seu PC? Ensinamos, passo a passo, como descobrir a configuração do seu computador e comparar com os requisitos estimados de GTA 6 — mesmo sem entender de hardware.',
     categoria: 'guias',
     tags: ['gta 6', 'gta 6 roda no meu pc', 'requisitos gta 6', 'configuração do pc', 'como ver specs do pc', 'gargalo'],
-    autor: 'BestHard',
+    autor: 'Ronaldo Bueno',
     dataPublicacao: '2026-07-03',
     destaque: false,
     tempoLeitura: 8,
@@ -2035,7 +2035,7 @@ export const ARTIGOS: Artigo[] = [
     descricao: 'Como montar um PC gamer barato em 2026? Mostramos os 3 melhores caminhos custo-benefício — kit Xeon, plataforma AM4 e peças usadas — com build completa por menos de R$ 2.500 e onde economizar sem se arrepender.',
     categoria: 'builds',
     tags: ['pc barato', 'pc gamer barato', 'custo-benefício', 'kit xeon', 'ryzen 5 5600', 'am4', 'pc barato para jogos', 'build barata 2026'],
-    autor: 'BestHard',
+    autor: 'Ronaldo Bueno',
     dataPublicacao: '2026-07-04',
     destaque: true,
     tempoLeitura: 11,
@@ -2184,6 +2184,929 @@ export const ARTIGOS: Artigo[] = [
     ],
   },
 
+
+  // ════════════════════════════════════════════════════════
+  // ARTIGO 17 — Como montar um PC passo a passo
+  // ════════════════════════════════════════════════════════
+  {
+    slug: 'como-montar-um-pc-passo-a-passo-2026',
+    titulo: 'Como Montar um PC Passo a Passo: Guia Completo para Iniciantes',
+    subtitulo: 'A ordem certa de montagem, os erros que queimam peça e o que fazer quando não dá vídeo',
+    descricao: 'Guia completo de como montar um PC do zero em 2026: ferramentas, ordem de montagem peça por peça, cabeamento, primeiro boot e o que fazer quando a tela fica preta.',
+    categoria: 'guias',
+    tags: ['montagem', 'guia', 'iniciante', 'passo a passo', 'pc gamer', 'montar pc', 'tutorial'],
+    autor: 'Ronaldo Bueno',
+    dataPublicacao: '2026-08-29',
+    tempoLeitura: 12,
+    destaque: true,
+    conteudo: [
+      {
+        tipo: 'intro',
+        texto: 'Montar um PC é mais parecido com montar um móvel do que com engenharia. As peças só encaixam de um jeito, quase tudo tem trava, e o computador avisa quando algo está errado. O que assusta iniciante não é a montagem em si — é o medo de queimar uma peça cara por descuido. Este guia resolve os dois lados: mostra a ordem correta de montagem, que evita retrabalho, e marca em cada etapa o ponto exato onde as pessoas erram. Ao final tem uma seção só para o cenário mais comum de todos: você montou, apertou o botão e a tela ficou preta.',
+      },
+      {
+        tipo: 'destaque',
+        destaqueTipo: 'dica',
+        titulo: 'Reserve tempo, não pressa',
+        texto: 'Separe uma tarde inteira para a primeira montagem, mesmo que ela leve duas horas. Montagem com pressa é onde se esquece o cabo da CPU, se força um conector no lado errado e se aperta parafuso demais. Não existe prêmio por montar rápido.',
+      },
+      {
+        tipo: 'adsense',
+        anuncioId: 'montagem-topo',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'O que você precisa ter na mesa antes de começar',
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'A lista de ferramentas é curta de verdade. Montagem de PC não exige bancada de eletrônica nem instrumento caro. O que faz diferença é ter espaço livre e luz boa — muito mais do que ter ferramenta sofisticada.',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Chave Phillips média com ponta imantada — é a única ferramenta realmente obrigatória. A ponta imantada segura o parafuso e evita que ele caia dentro do gabinete',
+          'Uma mesa grande e livre, de preferência de madeira. Evite montar em cima de carpete ou tapete',
+          'Luz direta boa. Muito erro de montagem é simplesmente não enxergar o pino ou a trava',
+          'Um pote ou tampa para guardar parafusos. Parafuso de PC rola e some',
+          'Abraçadeiras de velcro ou os lacres que vêm com o gabinete, para organizar cabos no final',
+          'Opcional, mas útil: pasta térmica extra, caso a que vem no cooler já esteja ressecada',
+        ],
+      },
+      {
+        tipo: 'h3',
+        titulo: 'Sobre eletricidade estática: o que é real e o que é lenda',
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'Existe muito exagero nesse assunto. A eletricidade estática pode danificar componentes, mas o risco em ambiente doméstico normal é baixo — e você não precisa de pulseira antiestática para montar um PC. O que resolve, na prática: antes de pegar qualquer peça, encoste a mão na parte metálica do gabinete ou em qualquer metal aterrado para descarregar. Repita isso se você se levantar e voltar. Evite montar descalço em cima de carpete no seco, e não fique esfregando os pés no chão. Isso já cobre a situação real.',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'A ordem correta de montagem — e por que ela importa',
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'A maior parte da frustração em primeira montagem vem de montar na ordem errada e ter que desmontar. A regra é simples: tudo que der para instalar com a placa-mãe fora do gabinete, instale fora. Dentro do gabinete o espaço é apertado, a iluminação é pior e a força que você aplica fica mal distribuída.',
+      },
+      {
+        tipo: 'tabela',
+        colunas: ['Ordem', 'Etapa', 'Onde fazer'],
+        linhas: [
+          ['1', 'Processador na placa-mãe', 'Fora do gabinete, sobre a caixa da placa-mãe'],
+          ['2', 'Memórias RAM', 'Fora do gabinete'],
+          ['3', 'SSD M.2', 'Fora do gabinete'],
+          ['4', 'Cooler do processador', 'Fora do gabinete, se o cooler for pequeno ou médio'],
+          ['5', 'Fonte no gabinete', 'Dentro, antes da placa-mãe, para passar cabos com folga'],
+          ['6', 'Placa-mãe no gabinete', 'Dentro, sobre os espaçadores'],
+          ['7', 'Cabos de força e do painel frontal', 'Dentro, com a placa de vídeo ainda fora'],
+          ['8', 'Placa de vídeo', 'Dentro, por último — ela atrapalha o acesso a tudo'],
+          ['9', 'Organização de cabos e fechamento', 'Dentro, só depois do primeiro boot dar certo'],
+        ],
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Etapa 1 — Instalar o processador',
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'É a etapa que mais dá medo e a que menos exige força. Levante a alavanca lateral do soquete da placa-mãe até ela liberar a tampa. Repare que existe uma marcação de canto — um triângulo pequeno gravado em um dos cantos do processador — e a mesma marcação no soquete. Alinhe triângulo com triângulo, e apoie o processador. Ele deve descer sozinho, pelo próprio peso, sem que você empurre.',
+      },
+      {
+        tipo: 'destaque',
+        destaqueTipo: 'aviso',
+        titulo: 'Se precisou fazer força, está errado',
+        texto: 'Processador nunca entra na marra. Se ele não assentou sozinho, tire, confira a marcação de canto e tente de novo. Forçar entorta pino — em processadores AMD antigos os pinos ficam no próprio processador, e em plataformas modernas ficam no soquete da placa-mãe. Nos dois casos, pino entortado é conserto caro ou peça perdida.',
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'Com o processador assentado, baixe a tampa e empurre a alavanca de volta para a posição travada. Ela vai oferecer bastante resistência no final do curso — isso é normal e faz parte do mecanismo de pressão. Estranhamente, é aqui que se aplica mais força em toda a montagem, e é seguro.',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Etapa 2 — Memórias RAM',
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'Abra as travas das laterais dos slots. O pente de memória tem um entalhe fora do centro que só permite uma orientação — confira antes de empurrar. Encaixe e pressione firme nas duas pontas ao mesmo tempo, até ouvir o clique das travas fechando. Memória bem instalada faz barulho de clique; se não clicou, não está encaixada.',
+      },
+      {
+        tipo: 'destaque',
+        destaqueTipo: 'recomendacao',
+        titulo: 'Dois pentes vão nos slots 2 e 4, não nos 1 e 2',
+        texto: 'Esse é o erro silencioso mais comum da montagem, porque o PC liga normalmente mesmo errado — você só perde desempenho sem perceber. Com dois pentes, use os slots 2 e 4 contando a partir do processador (normalmente marcados como A2 e B2). Isso ativa o modo dual channel, que em jogos vale entre 10% e 20% de FPS. O manual da placa-mãe confirma quais slots usar; é a única hora em que ler o manual é obrigatório.',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Etapa 3 — SSD M.2',
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'O SSD M.2 entra em um slot horizontal na placa-mãe, geralmente coberto por uma chapinha de metal que serve como dissipador. Retire o parafuso do dissipador, remova a chapa e guarde o parafuso. Encaixe o SSD no slot em um ângulo de mais ou menos 30 graus, empurre até o fim e depois abaixe a ponta livre até encostar no apoio. Prenda com o parafuso pequeno, ou trave o clipe, se a placa usar sistema sem parafuso.',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Existe um adesivo plástico embaixo do dissipador que precisa ser retirado antes — se não retirar, o dissipador não funciona',
+          'Se a placa tem mais de um slot M.2, o slot mais próximo do processador costuma ser o mais rápido. Use ele para o SSD do sistema',
+          'Não aperte o parafuso com força. Ele só precisa segurar; apertar demais entorta a placa do SSD',
+        ],
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Etapa 4 — Cooler do processador e pasta térmica',
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'Quase todo cooler novo já vem com pasta térmica aplicada de fábrica na base — aquela camada cinza. Se vier, não passe pasta por cima e não limpe. Se você estiver reaproveitando um cooler, ou se a base estiver limpa, aplique pasta nova: uma porção do tamanho de um grão de ervilha no centro do processador é suficiente. A pressão do cooler espalha sozinha. Não precisa espalhar com cartão nem fazer desenho.',
+      },
+      {
+        tipo: 'destaque',
+        destaqueTipo: 'aviso',
+        titulo: 'A película plástica da base',
+        texto: 'Coolers vêm com uma película fina de proteção colada na base de metal. Ela é quase invisível. Montar sem retirar a película faz o PC superaquecer e desligar em minutos, e é um dos casos mais comuns de PC recém-montado que desliga sozinho. Olhe a base contra a luz antes de instalar.',
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'Aperte os parafusos do cooler em cruz — um pouco em cada canto, alternando, como se aperta roda de carro. Isso distribui a pressão por igual. Apertar um canto até o fim antes dos outros inclina o cooler e piora o contato. Por último, ligue o cabo do ventilador no conector marcado CPU_FAN na placa-mãe. Esse conector específico importa: muitas placas se recusam a ligar se não detectarem ventilador no CPU_FAN.',
+      },
+      {
+        tipo: 'adsense',
+        anuncioId: 'montagem-meio',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Etapa 5 — Fonte no gabinete',
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'A fonte entra antes da placa-mãe porque assim você passa os cabos com o gabinete ainda vazio, o que é muito mais fácil. Na maioria dos gabinetes modernos ela fica embaixo, com o ventilador virado para baixo, aproveitando o ar de fora pelo filtro inferior. Se o gabinete não tem abertura embaixo, vire o ventilador para cima. Prenda com os quatro parafusos da traseira.',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Se a fonte for modular, conecte primeiro os cabos que você vai usar: o de 24 pinos da placa-mãe, o de 8 pinos do processador e o da placa de vídeo',
+          'Cabos modulares não são intercambiáveis entre marcas de fonte, nem sempre entre modelos da mesma marca. Use apenas os cabos que vieram na caixa daquela fonte',
+          'Passe os cabos por trás da bandeja da placa-mãe agora, mesmo sem organizar, para não ter que refazer depois',
+        ],
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Etapa 6 — Placa-mãe no gabinete',
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'Antes da placa-mãe, encaixe o espelho traseiro de entradas — a chapa metálica com os recortes das portas USB — pela parte de dentro do gabinete, empurrando até ouvir o clique nos quatro cantos. Placas mais novas já vêm com esse espelho integrado, e nesse caso pule a etapa. Esquecer o espelho e só perceber com tudo montado é um clássico, porque só se resolve desmontando a placa-mãe de novo.',
+      },
+      {
+        tipo: 'destaque',
+        destaqueTipo: 'aviso',
+        titulo: 'Confira os espaçadores',
+        texto: 'Os espaçadores são pinos rosqueados que erguem a placa-mãe alguns milímetros da chapa do gabinete. A quantidade e a posição têm que bater exatamente com os furos da sua placa. Um espaçador sobrando embaixo da placa, em local sem furo, encosta na solda e causa curto — o PC simplesmente não liga, e nada indica a causa. Conte os furos da placa e conte os espaçadores antes de parafusar.',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Etapa 7 — Os cabos, um por um',
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'Esta é a etapa mais demorada e a que gera mais dúvida, mas nenhum conector entra no lugar errado — todos têm formato próprio ou trava. A lista abaixo cobre praticamente qualquer montagem.',
+      },
+      {
+        tipo: 'tabela',
+        colunas: ['Cabo', 'De onde sai', 'Onde entra'],
+        linhas: [
+          ['24 pinos (o mais grosso)', 'Fonte', 'Lateral direita da placa-mãe'],
+          ['8 pinos EPS / CPU', 'Fonte', 'Canto superior esquerdo, perto do processador'],
+          ['PCIe / 12V-2x6', 'Fonte', 'Placa de vídeo'],
+          ['SATA de força', 'Fonte', 'SSD ou HD de 2,5 e 3,5 polegadas'],
+          ['SATA de dados', 'Placa-mãe', 'SSD ou HD de 2,5 e 3,5 polegadas'],
+          ['Painel frontal (power, reset, LED)', 'Gabinete', 'Bloco de pinos no canto inferior da placa-mãe'],
+          ['USB frontal e áudio frontal', 'Gabinete', 'Conectores marcados na borda da placa-mãe'],
+          ['Ventoinhas do gabinete', 'Gabinete', 'Conectores SYS_FAN ou CHA_FAN'],
+        ],
+      },
+      {
+        tipo: 'destaque',
+        destaqueTipo: 'dica',
+        titulo: 'O cabo de 8 pinos do processador é esquecido o tempo todo',
+        texto: 'O conector de 8 pinos perto do processador é obrigatório e fica em um canto de difícil acesso, muitas vezes escondido pelo cooler. Sem ele o PC não dá vídeo nenhum, e a maioria das pessoas passa meia hora procurando defeito em outro lugar. Conecte esse cabo antes de instalar o cooler, se o cooler for grande.',
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'Os pinos do painel frontal são a parte chata: são fios finos, individuais, com letras minúsculas. Não existe padrão universal, então aqui o manual da placa-mãe é obrigatório. A boa notícia é que apenas o par de power switch precisa estar certo para o PC ligar — se o LED de energia ficar apagado ou o botão de reset não funcionar, é só inverter aquele par depois, sem risco algum. Fios de LED têm polaridade e não funcionam invertidos, mas também não queimam nada.',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Etapa 8 — Placa de vídeo',
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'Retire as tampas metálicas da traseira do gabinete correspondentes ao tamanho da placa — normalmente duas ou três. Solte a trava plástica na ponta do slot PCIe principal, o mais próximo do processador. Encaixe a placa firme até clicar e parafuse na traseira. Depois conecte a alimentação vinda da fonte.',
+      },
+      {
+        tipo: 'destaque',
+        destaqueTipo: 'aviso',
+        titulo: 'Conector de energia mal encaixado é risco real de incêndio',
+        texto: 'Placas de vídeo modernas de alto desempenho puxam muita corrente por um único conector. Um encaixe parcial concentra calor no contato e já causou conectores derretidos em várias gerações de placa. Empurre o conector até o clique, confira olhando de lado se não sobrou folga, e não force o cabo a fazer curva fechada logo na saída do conector. Deixe pelo menos três dedos de cabo reto antes de qualquer dobra.',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'O primeiro boot: o que fazer antes de fechar o gabinete',
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'Não organize cabos nem feche as tampas laterais ainda. Ligue o monitor no conector da placa de vídeo — não no da placa-mãe, esse é o erro número um de tela preta. Ligue a fonte na tomada, vire a chavinha traseira para a posição de ligado e aperte o botão do gabinete.',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Os ventiladores devem girar imediatamente e continuar girando',
+          'A tela deve mostrar a logomarca da placa-mãe em alguns segundos',
+          'É normal o PC ligar, desligar sozinho e ligar de novo na primeira vez, principalmente com memória DDR5 — a placa está treinando a memória. Isso pode levar até um minuto',
+          'Entre na BIOS apertando Delete repetidamente durante o boot e confira se o processador, a quantidade de memória e o SSD aparecem listados',
+        ],
+      },
+      {
+        tipo: 'destaque',
+        destaqueTipo: 'recomendacao',
+        titulo: 'Ative o perfil de memória na BIOS',
+        texto: 'De fábrica, a memória roda bem abaixo da velocidade que você comprou. Dentro da BIOS, procure a opção EXPO, em placas AMD, ou XMP, em placas Intel, e ative o perfil número um. Salve e reinicie. É um ajuste de dez segundos que costuma render entre 5% e 15% de desempenho em jogos, e praticamente todo mundo esquece.',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Deu tela preta: o roteiro de diagnóstico',
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'Tela preta assusta, mas quase nunca significa peça queimada. Siga esta ordem, do mais provável ao menos provável, e resolva um item por vez.',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'O monitor está ligado na placa de vídeo, e não na saída da placa-mãe? Este item resolve a maioria dos casos',
+          'A chave traseira da fonte está na posição ligada? Ela vem desligada de fábrica',
+          'O cabo de 8 pinos do processador está conectado? Só o de 24 pinos não basta',
+          'A memória está bem encaixada? Tire e recoloque, pressionando até clicar. Teste com um pente só, no slot A2',
+          'A placa de vídeo está totalmente encaixada e com a alimentação ligada?',
+          'Há espaçador sobrando embaixo da placa-mãe, causando curto?',
+          'A placa-mãe tem luzes de diagnóstico? Elas indicam qual componente falhou — CPU, DRAM, VGA ou BOOT — e o manual explica cada uma',
+        ],
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'Se depois disso ainda não der vídeo, monte o mínimo possível: placa-mãe, processador, cooler, um pente de memória e a fonte, tudo fora do gabinete, em cima da caixa da placa-mãe. Se ligar assim, o problema é curto no gabinete ou cabo do painel frontal. Se não ligar nem assim, o problema está em uma dessas peças, e você já reduziu a busca a quatro itens.',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Fechando: organização de cabos e sistema',
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'Com o PC dando vídeo e entrando na BIOS, aí sim vale organizar. Passe os cabos por trás da bandeja, prenda com abraçadeiras e feche as tampas. Organização de cabos não é vaidade: cabo solto na frente das ventoinhas atrapalha o fluxo de ar e pode encostar em pá de ventilador. Depois é instalar o Windows por um pendrive de instalação e, logo em seguida, baixar o driver da placa de vídeo direto no site do fabricante. Os drivers que o Windows instala sozinho funcionam, mas costumam ser versões antigas e limitam o desempenho em jogos.',
+      },
+    ],
+    faq: [
+      {
+        pergunta: 'Preciso de pulseira antiestática para montar um PC?',
+        resposta: 'Não é obrigatório. Encostar a mão em uma parte metálica do gabinete antes de manusear cada peça, e evitar carpete no seco, cobre o risco real em ambiente doméstico. A pulseira ajuda, mas a ausência dela não é motivo para adiar a montagem.',
+      },
+      {
+        pergunta: 'Quanto tempo leva para montar um PC pela primeira vez?',
+        resposta: 'Entre duas e quatro horas para quem nunca montou, incluindo leitura de manual e conferências. A partir da segunda vez, costuma cair para menos de uma hora. Não tente montar com pressa: quase todo erro grave de montagem acontece quando alguém está com o tempo contado.',
+      },
+      {
+        pergunta: 'Posso ligar o monitor na saída de vídeo da placa-mãe?',
+        resposta: 'Só se o seu processador tiver vídeo integrado e você não tiver placa de vídeo dedicada. Com placa de vídeo instalada, o monitor precisa ser ligado nas saídas da própria placa de vídeo. Ligar na placa-mãe com uma placa dedicada instalada resulta em tela preta, e é a causa mais comum de susto em primeira montagem.',
+      },
+      {
+        pergunta: 'É normal o PC ligar e desligar sozinho na primeira vez?',
+        resposta: 'Sim, principalmente em plataformas com memória DDR5. A placa-mãe faz um processo de treinamento de memória que pode reiniciar o sistema algumas vezes e demorar até um minuto para dar imagem. Se passar de dois ou três minutos sem vídeo, aí sim é hora de diagnosticar.',
+      },
+      {
+        pergunta: 'Preciso passar pasta térmica se o cooler já vem com pasta?',
+        resposta: 'Não. A camada cinza aplicada de fábrica na base do cooler é pasta térmica pronta para uso e tem qualidade adequada. Aplicar pasta por cima dela piora o contato. Só aplique pasta nova se a base estiver limpa ou se você estiver reaproveitando um cooler já usado.',
+      },
+    ],
+  },
+
+  // ════════════════════════════════════════════════════════
+  // ARTIGO 18 — Como escolher a placa-mãe
+  // ════════════════════════════════════════════════════════
+  {
+    slug: 'como-escolher-placa-mae-chipset-socket-2026',
+    titulo: 'Como Escolher a Placa-Mãe em 2026: Socket, Chipset e o Que Realmente Importa',
+    subtitulo: 'AM5, LGA 1851 e AM4 explicados sem enrolação — e onde gastar a mais faz diferença de verdade',
+    descricao: 'Guia para escolher placa-mãe em 2026: diferença entre os chipsets X870E, X870, B850, B650, Z890 e B860, formatos ATX e mATX, VRM, slots M.2 e quanto vale a pena gastar.',
+    categoria: 'guias',
+    tags: ['placa-mae', 'chipset', 'socket', 'am5', 'lga 1851', 'b850', 'z890', 'guia'],
+    autor: 'Ronaldo Bueno',
+    dataPublicacao: '2026-08-29',
+    tempoLeitura: 11,
+    destaque: false,
+    conteudo: [
+      {
+        tipo: 'intro',
+        texto: 'A placa-mãe é a peça em que mais se erra na hora de montar um PC — para os dois lados. Tem quem gaste dois mil reais em uma placa cheia de recursos que nunca vai usar, e tem quem economize numa placa fraca demais para o processador que comprou e perca desempenho sem entender por quê. A boa notícia é que a decisão se resume a três perguntas, nessa ordem: qual soquete o meu processador usa, qual chipset entrega o que eu preciso, e a placa aguenta esse processador com folga. O resto é acessório.',
+      },
+      {
+        tipo: 'adsense',
+        anuncioId: 'placamae-topo',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Primeiro: o soquete não é escolha, é consequência',
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'O soquete é o encaixe físico do processador. Ele não é uma preferência sua — é determinado pelo processador que você escolheu. Comprar processador e placa de soquetes diferentes é dinheiro perdido, porque não existe adaptador. Por isso a ordem correta é sempre escolher o processador primeiro e a placa-mãe depois.',
+      },
+      {
+        tipo: 'tabela',
+        colunas: ['Soquete', 'Processadores', 'Situação em 2026'],
+        linhas: [
+          ['AM5', 'Ryzen 7000, 8000 e 9000, incluindo os X3D', 'Plataforma atual da AMD, com suporte de longo prazo confirmado'],
+          ['LGA 1851', 'Core Ultra série 200 e Arrow Lake Refresh', 'Plataforma atual da Intel'],
+          ['AM4', 'Ryzen 1000 até 5000, incluindo 5600 e 5700X3D', 'Antiga, mas ainda excelente custo-benefício em builds baratas'],
+          ['LGA 1700', 'Intel 12ª, 13ª e 14ª geração', 'Antiga, encerrada, mas com muita peça no mercado a bom preço'],
+        ],
+      },
+      {
+        tipo: 'destaque',
+        destaqueTipo: 'recomendacao',
+        titulo: 'Plataforma antiga não é plataforma ruim',
+        texto: 'A AM4 continua sendo a melhor decisão para quem monta com orçamento apertado em 2026. Um Ryzen 5 5600 com placa B550 entrega ótima experiência em 1080p por uma fração do preço de uma build AM5. O que você perde é o caminho de upgrade: a AM4 acabou, então daqui a alguns anos o próximo passo será trocar placa, processador e memória juntos. Se o plano é usar o PC como está por quatro ou cinco anos, isso não é problema.',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Chipsets AMD AM5: X870E, X870, B850, B840 e os antigos',
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'O chipset é o controlador da placa-mãe. Ele define quantas portas rápidas você tem, quantos slots M.2 dá para usar de verdade e se dá para fazer overclock. Não define desempenho em jogos: o mesmo processador roda igual em uma B850 e em uma X870E, se as duas alimentarem o processador direito.',
+      },
+      {
+        tipo: 'tabela',
+        colunas: ['Chipset', 'Overclock de CPU', 'Para quem é'],
+        linhas: [
+          ['X870E', 'Sim', 'Quem quer o máximo de portas, várias placas de expansão e mais de dois SSDs rápidos'],
+          ['X870', 'Sim', 'Topo mais enxuto, com USB4 e Wi-Fi, para quem não precisa de tantas linhas PCIe'],
+          ['B850', 'Sim', 'A escolha padrão da maioria. Cobre praticamente qualquer build gamer sem desperdício'],
+          ['B840', 'Não', 'Entrada. Serve para PC de uso geral, evite para processadores de topo'],
+          ['B650 e B650E', 'Sim', 'Geração anterior, ainda ótima e frequentemente mais barata que a B850'],
+          ['A620', 'Não', 'Só para build muito básica, com processador de entrada'],
+        ],
+      },
+      {
+        tipo: 'destaque',
+        destaqueTipo: 'dica',
+        titulo: 'B850 é a resposta certa para quase todo mundo',
+        texto: 'Se você está montando um PC gamer AM5 e não tem uma necessidade específica e declarada — três SSDs rápidos, placa de captura, rede de dez gigabits — a B850 é a escolha. Ela permite overclock, tem memória rápida, tem slot PCIe adequado para qualquer placa de vídeo e sobra dinheiro para colocar em GPU, que é onde o FPS realmente vem.',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Chipsets Intel LGA 1851: Z890, B860 e H810',
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'A lógica da Intel é mais simples, porque são menos opções. A diferença principal está no overclock do processador e na quantidade de conexões rápidas.',
+      },
+      {
+        tipo: 'tabela',
+        colunas: ['Chipset', 'Overclock de CPU', 'Para quem é'],
+        linhas: [
+          ['Z890', 'Sim', 'Quem tem processador da linha K e quer ajustar frequências, ou precisa de muitas portas'],
+          ['B860', 'Não', 'A escolha equilibrada. Permite memória em perfil rápido e cobre bem qualquer build gamer'],
+          ['H810', 'Não', 'Entrada, com menos portas e menos slots. Só para uso básico'],
+        ],
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'Uma diferença importante em relação à AMD: nas placas Intel que não são Z, o overclock do processador fica bloqueado, mas o perfil rápido de memória continua disponível. Como o ganho real em jogos vem muito mais da memória em perfil correto do que do overclock manual do processador, uma B860 raramente deixa desempenho na mesa. Só compre Z890 se você realmente pretende ajustar o processador.',
+      },
+      {
+        tipo: 'adsense',
+        anuncioId: 'placamae-meio',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'VRM: o item invisível que separa placa boa de placa ruim',
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'O VRM é o circuito que converte a energia da fonte para a tensão que o processador usa. Ele fica na parte de cima da placa, embaixo daqueles blocos de metal com aletas. É o componente que mais diferencia uma placa barata de uma placa boa dentro do mesmo chipset — e o que menos aparece na embalagem.',
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'Um VRM subdimensionado esquenta, e quando esquenta o sistema reduz a frequência do processador para se proteger. O resultado é um PC que começa rápido e vai ficando mais lento conforme a sessão longa avança — em edição de vídeo, compilação ou jogo pesado. O usuário culpa o processador, mas o problema é a placa.',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Olhe fotos da placa antes de comprar: blocos de metal grandes e altos sobre o VRM são bom sinal',
+          'Placa de topo de linha sem nenhum dissipador na região do processador é sinal de alerta',
+          'Processador de seis núcleos funciona bem em quase qualquer placa. Processador de doze ou dezesseis núcleos exige placa com VRM decente',
+          'Se você vai usar um processador de topo, gastar um pouco mais na placa não é luxo — é requisito',
+        ],
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Formato: ATX, Micro-ATX e Mini-ITX',
+      },
+      {
+        tipo: 'tabela',
+        colunas: ['Formato', 'Tamanho', 'Slots de expansão', 'Observação'],
+        linhas: [
+          ['ATX', 'Padrão', 'Vários', 'Melhor espaçamento, mais slots M.2, mais fácil de montar'],
+          ['Micro-ATX', 'Menor', 'Poucos', 'Mais barata e cabe em gabinete menor. Ótima para build econômica'],
+          ['Mini-ITX', 'Muito pequena', 'Um só', 'Cara, para gabinete compacto. Montagem apertada e exige planejamento'],
+        ],
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'Para a maioria das pessoas, ATX ou Micro-ATX resolvem. Mini-ITX é uma escolha de projeto, não de economia: placas ITX custam caro, aceitam apenas dois pentes de memória e limitam o tamanho do cooler. Só vale a pena se o PC pequeno for realmente um objetivo, e não uma consequência do gabinete que sobrou.',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Slots M.2: conte quantos você pode usar de verdade',
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'Aqui existe uma pegadinha que aparece na especificação e ninguém lê. Muitas placas anunciam três ou quatro slots M.2, mas alguns deles compartilham linhas com as portas SATA ou com o slot da placa de vídeo. Na prática, ocupar o terceiro M.2 pode desligar duas portas SATA, ou fazer a placa de vídeo cair pela metade da velocidade.',
+      },
+      {
+        tipo: 'destaque',
+        destaqueTipo: 'aviso',
+        titulo: 'Leia a nota de rodapé da especificação',
+        texto: 'No site do fabricante, a página de especificações da placa sempre traz uma observação em letra pequena explicando o que é desativado quando cada slot é ocupado. Se você pretende usar dois ou três SSDs, essa nota é a informação mais importante da página inteira. Vale mais do que qualquer selo de marketing na caixa.',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'O que quase ninguém precisa e encarece a placa',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Rede de dez gigabits: sua internet doméstica não chega perto disso. Só faz sentido em rede local com servidor de arquivos',
+          'Quatro slots M.2: a maioria das pessoas usa um ou dois pelo tempo de vida inteiro do PC',
+          'Iluminação e telas embutidas: não afetam desempenho em nada',
+          'Dissipadores gigantes de chipset: bonitos, sem efeito prático',
+          'Botões de liga e reset na própria placa: úteis para quem testa peça toda hora, inúteis para uso normal',
+        ],
+      },
+      {
+        tipo: 'h2',
+        titulo: 'O que vale a pena, mesmo custando um pouco mais',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'VRM com dissipador de verdade, se o processador for de topo',
+          'Botão de atualização de BIOS sem processador — permite atualizar a placa mesmo com um processador novo demais para a versão de fábrica. Já salvou muita montagem',
+          'Wi-Fi integrado, se o PC não fica perto do roteador. Sai mais barato do que comprar placa Wi-Fi depois',
+          'Luzes de diagnóstico ou visor de códigos — transformam um problema de tela preta de duas horas em cinco minutos',
+          'Quatro slots de memória, se houver chance de você aumentar a RAM no futuro',
+        ],
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Resumo prático por orçamento',
+      },
+      {
+        tipo: 'tabela',
+        colunas: ['Perfil', 'Recomendação AMD', 'Recomendação Intel'],
+        linhas: [
+          ['Build econômica em 1080p', 'B550 (AM4) ou A620/B840', 'H810 ou B760 (LGA 1700)'],
+          ['Build gamer equilibrada', 'B850 ou B650', 'B860'],
+          ['Processador de topo, uso pesado', 'B850 robusta ou X870', 'Z890'],
+          ['Muitos SSDs e placas de expansão', 'X870E', 'Z890'],
+        ],
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'A regra que resume tudo: a placa-mãe não faz o PC ser rápido, ela faz o PC funcionar de forma estável e permitir que as outras peças rendam o que prometem. Dinheiro economizado numa placa adequada rende muito mais dentro de uma placa de vídeo melhor. Mas economizar abaixo do adequado custa desempenho e dor de cabeça — e isso é o pior dos dois mundos.',
+      },
+    ],
+    faq: [
+      {
+        pergunta: 'A placa-mãe influencia no FPS dos jogos?',
+        resposta: 'Diretamente, quase nada. O mesmo processador e a mesma placa de vídeo rendem praticamente igual em uma placa intermediária e em uma de topo. A placa influencia indiretamente em dois pontos: se o VRM esquentar demais, o processador reduz frequência e você perde desempenho em sessões longas; e se a placa não suportar o perfil rápido de memória, você perde entre 5% e 15% de FPS.',
+      },
+      {
+        pergunta: 'Preciso atualizar a BIOS antes de instalar um processador novo?',
+        resposta: 'Depende da idade da placa. Uma placa que ficou meses no estoque pode ter uma BIOS anterior ao lançamento do seu processador e simplesmente não dar vídeo. Placas com botão de atualização de BIOS resolvem isso sem processador instalado, usando só um pendrive e a fonte. Sem esse botão, você precisa de um processador mais antigo emprestado para atualizar.',
+      },
+      {
+        pergunta: 'Vale a pena comprar placa-mãe usada?',
+        resposta: 'É a peça em que o risco de usado é mais alto, porque defeito de placa-mãe costuma ser intermitente e difícil de detectar em teste rápido. Pinos de soquete entortados são comuns e nem sempre visíveis nas fotos do anúncio. Se for comprar usada, exija foto do soquete em close, com boa luz, e teste o PC ligado antes de pagar.',
+      },
+      {
+        pergunta: 'Posso usar qualquer memória em qualquer placa-mãe?',
+        resposta: 'Não. Plataformas AM5 e LGA 1851 usam apenas DDR5, e AM4 e LGA 1700 usam DDR4, com algumas placas LGA 1700 aceitando DDR5. Não existe adaptador nem encaixe forçado — o entalhe do pente é diferente. Confira o tipo de memória na especificação da placa antes de comprar.',
+      },
+      {
+        pergunta: 'Qual a diferença entre B850 e X870?',
+        resposta: 'Basicamente quantidade de conexões, não desempenho. A X870 oferece mais linhas PCIe, mais portas USB rápidas e USB4 de série. Para um PC gamer com uma placa de vídeo e um ou dois SSDs, a B850 entrega exatamente o mesmo desempenho por menos dinheiro.',
+      },
+    ],
+  },
+// ════════════════════════════════════════════════════════
+  // ARTIGO 19 — Placa de vídeo usada
+  // ════════════════════════════════════════════════════════
+  {
+    slug: 'placa-de-video-usada-vale-a-pena-como-testar',
+    titulo: 'Placa de Vídeo Usada Vale a Pena? Como Testar Antes de Pagar',
+    subtitulo: 'O checklist de dez minutos que separa uma boa compra de um prejuízo de mil reais',
+    descricao: 'Guia prático para comprar placa de vídeo usada com segurança: como identificar placa de mineração, o que testar na hora, preço justo e quando não vale o risco.',
+    categoria: 'guias',
+    tags: ['placa de video', 'gpu usada', 'usado', 'mineracao', 'custo-beneficio', 'guia', 'seminovo'],
+    autor: 'Ronaldo Bueno',
+    dataPublicacao: '2026-08-29',
+    tempoLeitura: 10,
+    destaque: false,
+    conteudo: [
+      {
+        tipo: 'intro',
+        texto: 'Comprar placa de vídeo usada é, hoje, a forma mais barata de conseguir desempenho de verdade em jogos. Também é a compra em que mais gente se dá mal. As duas coisas são verdade ao mesmo tempo, e a diferença entre elas não é sorte — é processo. Uma placa usada bem testada costuma durar tanto quanto uma nova, porque componente eletrônico que sobrevive aos primeiros meses tende a durar anos. O problema é que defeito de placa de vídeo raramente aparece na primeira meia hora. Este guia mostra exatamente o que olhar, o que perguntar e o que testar para não descobrir o problema depois que o dinheiro já saiu.',
+      },
+      {
+        tipo: 'destaque',
+        destaqueTipo: 'aviso',
+        titulo: 'A regra que vale mais que todas as outras',
+        texto: 'Nunca pague antes de ver a placa funcionando. Nem com desconto, nem com vendedor bem avaliado, nem com promessa de teste depois. Se o vendedor se recusa a mostrar a placa ligada rodando alguma coisa, a resposta é não — independentemente do preço.',
+      },
+      {
+        tipo: 'adsense',
+        anuncioId: 'gpu-usada-topo',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Quando faz sentido comprar usado — e quando não faz',
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'A conta é simples: o desconto precisa compensar a perda de garantia. Uma placa usada por 25% menos que a nova quase nunca vale a pena, porque você abre mão da garantia inteira para economizar pouco. A partir de 40% de desconto, a conta começa a fechar. Acima de 50%, o usado passa a ser claramente a melhor decisão para quem tem orçamento limitado.',
+      },
+      {
+        tipo: 'tabela',
+        colunas: ['Situação', 'Vale a pena?'],
+        linhas: [
+          ['Placa da geração anterior, com 40% ou mais de desconto', 'Sim, é o melhor cenário de custo-benefício'],
+          ['Placa de dois a três anos, testada pessoalmente', 'Sim, com o checklist deste guia'],
+          ['Placa nova recém-lançada, com 15% de desconto', 'Não. O desconto não paga a garantia perdida'],
+          ['Placa muito antiga, com pouca memória de vídeo', 'Não. Memória insuficiente derruba jogos atuais mesmo com boa GPU'],
+          ['Placa vinda de outro estado, sem poder testar', 'Só com plataforma que ofereça garantia de devolução'],
+        ],
+      },
+      {
+        tipo: 'h2',
+        titulo: 'O mito da placa de mineração — o que é real',
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'Existe muito exagero nos dois sentidos. A verdade técnica é menos dramática do que se fala: uma placa que trabalhou minerando ficou ligada muitas horas por dia, mas em carga constante e temperatura estável, geralmente com limite de consumo reduzido. Isso desgasta menos que uma placa de jogo que esquenta e esfria várias vezes ao dia. O componente que sofre de fato não é o chip — são os ventiladores, que rodaram continuamente, e a pasta térmica, que resseca.',
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'Ou seja: placa de mineração não é automaticamente ruim. O que preocupa é a placa de mineração sem manutenção nenhuma, cheia de poeira, com ventilador chiando e pasta ressecada de três anos. Essa vai esquentar demais e reduzir desempenho. A diferença entre uma e outra é visível e audível na hora do teste.',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Ventilador que faz barulho de chiado, rangido ou que gira irregular: sinal claro de desgaste',
+          'Poeira acumulada nas aletas ao ponto de tapar a passagem de ar: indica que nunca houve limpeza',
+          'Parafusos do dissipador com marcas de chave: a placa já foi aberta. Isso não é ruim por si só, se foi para trocar pasta, mas o vendedor precisa dizer',
+          'Marcas de aquecimento na traseira, como pontos escurecidos perto dos conectores: sinal de alerta sério',
+        ],
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Checklist de inspeção visual, antes de ligar',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Conectores de energia: olhe se os pinos estão escurecidos, derretidos ou deformados. Este é o item mais importante da inspeção visual',
+          'Conectores de vídeo na traseira: pinos tortos ou faltando são motivo para desistir',
+          'Placa empenada: apoie sobre uma superfície plana e veja se ela balança. Empenamento leve é comum, forte não é',
+          'Capacitores estufados ou com marca de vazamento na parte de baixo da placa',
+          'Cheiro de queimado. Parece óbvio, mas cheire a placa. Componente que já sobreaqueceu deixa cheiro',
+          'Etiqueta de garantia rompida ou removida — pergunte diretamente sobre isso',
+        ],
+      },
+      {
+        tipo: 'destaque',
+        destaqueTipo: 'dica',
+        titulo: 'Peça o número de série antes de sair de casa',
+        texto: 'Muitos fabricantes permitem consultar a data de fabricação e o status de garantia pelo número de série, no próprio site. Peça uma foto da etiqueta antes de marcar o encontro. Além de confirmar a idade real da placa, isso revela se ainda resta garantia — algumas marcas transferem a garantia junto com a placa, o que muda completamente o valor da compra.',
+      },
+      {
+        tipo: 'adsense',
+        anuncioId: 'gpu-usada-meio',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'O teste na hora: dez minutos que valem o preço da placa',
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'Leve um pendrive com os programas prontos. Se o teste for na casa do vendedor, o PC dele serve. O objetivo não é fazer uma bateria completa de testes de laboratório: é forçar a placa o suficiente para que um defeito latente apareça. Defeito de placa de vídeo aparece sob calor e carga, nunca na área de trabalho parada.',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Abra um programa de monitoramento e confira o modelo detectado, a quantidade de memória de vídeo e a temperatura em repouso',
+          'Rode um teste de esforço gráfico por pelo menos dez minutos, sem interrupção. Cinco minutos não é suficiente',
+          'Observe a temperatura subindo. É esperado estabilizar entre 65 e 80 graus sob carga. Passar de 85 e continuar subindo é sinal de pasta ressecada ou dissipador entupido',
+          'Olhe a tela procurando artefatos: pontos coloridos, linhas, texturas piscando ou quadrados fora do lugar. Artefato é o sintoma clássico de memória de vídeo com defeito',
+          'Escute os ventiladores em rotação alta. Chiado, batida ou rangido indicam rolamento gasto',
+          'Confira se o desempenho está na faixa esperada para aquele modelo. Uma placa que entrega bem menos que o normal pode estar com problema térmico ou já ter sido modificada',
+          'Teste todas as saídas de vídeo da placa, uma por uma. Saída queimada é defeito comum e passa despercebido',
+        ],
+      },
+      {
+        tipo: 'destaque',
+        destaqueTipo: 'aviso',
+        titulo: 'Travamento durante o teste encerra a negociação',
+        texto: 'Se o PC travar, reiniciar sozinho ou a tela ficar preta durante o teste de esforço, não aceite a explicação de que é a fonte, o driver ou o computador do vendedor. Pode até ser — mas o risco passa a ser seu, e você não tem como confirmar. Agradeça e vá embora. Sempre aparece outra placa.',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Como saber se o preço está justo',
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'A referência não é o preço de lançamento da placa, e nem o valor que o vendedor pagou. A referência é quanto custa hoje o desempenho equivalente em uma placa nova. Se uma placa usada entrega o mesmo que uma placa nova de entrada que custa 2.000 reais, ela precisa custar bem menos que isso para valer o risco.',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Pesquise anúncios do mesmo modelo em pelo menos três lugares diferentes e monte uma média real, ignorando os extremos',
+          'Desconte da média qualquer defeito visível: ventilador barulhento, ausência de caixa, placa já aberta',
+          'Compare com o preço de uma placa nova de desempenho parecido. Se a diferença for menor que 35%, prefira a nova',
+          'Considere a memória de vídeo. Uma placa mais antiga com boa quantidade de memória pode envelhecer melhor que uma mais nova com pouca',
+          'Placas que ainda têm garantia de fábrica transferível valem um valor claramente maior. Vale perguntar',
+        ],
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Onde comprar, em ordem de segurança',
+      },
+      {
+        tipo: 'tabela',
+        colunas: ['Canal', 'Risco', 'Observação'],
+        linhas: [
+          ['Loja física de seminovos com garantia própria', 'Baixo', 'Mais caro, mas com garantia real e nota fiscal'],
+          ['Marketplace com política de devolução', 'Médio-baixo', 'Dá para devolver, mas exige acompanhar prazos'],
+          ['Encontro presencial com teste completo', 'Médio', 'Seguro se você fizer o checklist deste guia'],
+          ['Grupos e redes sociais, com envio sem teste', 'Alto', 'Só com alguém de confiança pessoal'],
+          ['Anúncio com preço muito abaixo do mercado', 'Muito alto', 'Preço fora da curva quase sempre esconde defeito ou golpe'],
+        ],
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Depois de comprar: os primeiros dias importam',
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'Use a placa pesado na primeira semana, não leve. Se existe defeito latente, ele aparece justamente sob uso intenso — e é nesse período que você ainda tem alguma chance de reclamar com o vendedor ou acionar a devolução do marketplace. Jogar duas horas por dia em jogo pesado, nos primeiros sete dias, vale mais que qualquer teste de bancada.',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Instale o driver limpo, removendo antes qualquer resto de driver da placa anterior',
+          'Monitore a temperatura nas primeiras sessões longas e anote o valor máximo',
+          'Se a placa tiver mais de dois anos e a temperatura estiver alta, considere trocar a pasta térmica e limpar o dissipador. É um serviço barato e costuma derrubar dez graus ou mais',
+          'Guarde toda a conversa com o vendedor e o comprovante de pagamento até ter certeza de que está tudo bem',
+        ],
+      },
+    ],
+    faq: [
+      {
+        pergunta: 'Placa de vídeo que foi usada em mineração dura menos?',
+        resposta: 'Não necessariamente. Mineração trabalha em carga constante e temperatura estável, o que desgasta o chip menos que o ciclo de esquentar e esfriar dos jogos. O que realmente sofre são os ventiladores e a pasta térmica. Uma placa de mineração limpa, com ventiladores silenciosos e pasta trocada, pode ser uma ótima compra. Uma sem manutenção nenhuma, não.',
+      },
+      {
+        pergunta: 'Quanto de desconto justifica comprar uma placa de vídeo usada?',
+        resposta: 'Como referência prática, a partir de 40% abaixo do preço de uma placa nova de desempenho equivalente a conta começa a fazer sentido. Abaixo de 35%, o desconto não compensa a garantia que você abre mão. Acima de 50%, o usado costuma ser claramente a melhor escolha para orçamento limitado.',
+      },
+      {
+        pergunta: 'O que são artefatos e por que eles importam tanto?',
+        resposta: 'Artefatos são falhas visuais na imagem: pontos coloridos, linhas atravessando a tela, texturas piscando ou quadrados deslocados. Eles indicam memória de vídeo com defeito, que é um problema progressivo e sem conserto viável. Se aparecer qualquer artefato durante o teste, a placa está condenada, mesmo que ainda funcione para tarefas leves.',
+      },
+      {
+        pergunta: 'Posso testar a placa apenas abrindo um jogo por alguns minutos?',
+        resposta: 'É melhor que nada, mas insuficiente. Defeitos térmicos só aparecem depois que a placa aquece de verdade, o que leva por volta de dez minutos de carga contínua. Um teste de cinco minutos aprova placas que vão falhar na primeira semana.',
+      },
+      {
+        pergunta: 'Vale mais a pena uma placa usada de topo ou uma nova de entrada?',
+        resposta: 'Na maioria dos casos, a usada de topo entrega bem mais desempenho pelo mesmo dinheiro, principalmente por ter mais memória de vídeo. A exceção é quando a placa usada é tão antiga que perdeu suporte a recursos importantes dos jogos atuais. Compare o desempenho real dos dois modelos antes de decidir, e não a idade.',
+      },
+    ],
+  },
+
+  // ════════════════════════════════════════════════════════
+  // ARTIGO 20 — Upgrade de PC antigo
+  // ════════════════════════════════════════════════════════
+  {
+    slug: 'upgrade-pc-antigo-o-que-trocar-primeiro',
+    titulo: 'Upgrade de PC Antigo: O Que Trocar Primeiro sem Refazer Tudo',
+    subtitulo: 'Como descobrir a peça que está segurando o seu PC — e a hora de parar de fazer upgrade',
+    descricao: 'Guia de upgrade de PC antigo: como identificar o gargalo real, a ordem certa de troca de peças, quanto cada upgrade rende e quando vale mais montar outro PC.',
+    categoria: 'guias',
+    tags: ['upgrade', 'pc antigo', 'gargalo', 'melhorar pc', 'custo-beneficio', 'guia', 'manutencao'],
+    autor: 'Ronaldo Bueno',
+    dataPublicacao: '2026-08-29',
+    tempoLeitura: 11,
+    destaque: false,
+    conteudo: [
+      {
+        tipo: 'intro',
+        texto: 'Existe um erro que se repete em toda conversa sobre PC lento: a pessoa decide o que trocar antes de descobrir o que está travando. Compra memória num PC que precisava de SSD, ou troca a placa de vídeo num PC cujo processador não dá conta. O resultado é dinheiro gasto sem melhora perceptível, e a conclusão errada de que o PC não tem mais jeito. Fazer upgrade bem é, antes de tudo, um trabalho de diagnóstico. Este guia mostra como descobrir a peça que está segurando o seu PC, qual a ordem que rende mais por real gasto, e o ponto em que continuar trocando peça deixa de fazer sentido.',
+      },
+      {
+        tipo: 'adsense',
+        anuncioId: 'upgrade-topo',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Primeiro passo: descobrir o que está travando',
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'O diagnóstico não exige ferramenta paga nem conhecimento técnico. Basta abrir o gerenciador de tarefas do Windows enquanto você usa o PC do jeito que ele fica lento — jogando o jogo que trava, abrindo os programas que demoram. Deixe aberto na aba de desempenho e observe qual item chega perto de 100% e fica lá.',
+      },
+      {
+        tipo: 'tabela',
+        colunas: ['O que fica em 100%', 'Peça responsável', 'Solução'],
+        linhas: [
+          ['Disco', 'HD mecânico antigo', 'Trocar por SSD. É o upgrade que mais muda a sensação de uso'],
+          ['Memória', 'RAM insuficiente', 'Aumentar a memória ou instalar em dual channel'],
+          ['CPU', 'Processador', 'Trocar processador, se a placa permitir'],
+          ['GPU', 'Placa de vídeo', 'Situação saudável em jogos. A placa está sendo bem aproveitada'],
+          ['Nada chega perto de 100%', 'Provável gargalo de CPU em jogos', 'Verificar uso por núcleo, e a temperatura'],
+        ],
+      },
+      {
+        tipo: 'destaque',
+        destaqueTipo: 'dica',
+        titulo: 'Em jogos, a placa de vídeo em 95% ou mais é sinal de saúde',
+        texto: 'Isso costuma confundir. Quando a placa de vídeo está próxima de 100% durante o jogo, significa que ela é o limite do conjunto — e é exatamente assim que um PC equilibrado deve se comportar. O problema é o contrário: se a placa de vídeo fica em 60% enquanto o FPS está baixo, alguma outra peça está segurando, quase sempre o processador ou a memória.',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'A ordem de upgrade que rende mais por real gasto',
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'Considerando um PC de cinco a oito anos usado para trabalho e jogos, esta é a ordem que costuma entregar mais resultado. Ela vale como ponto de partida — o diagnóstico do passo anterior tem prioridade sobre a lista.',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '1. SSD, se o PC ainda usa HD mecânico. Nenhum outro upgrade muda tanto a sensação de uso por tão pouco dinheiro. O PC liga em segundos e os programas abrem na hora',
+          '2. Memória, se estiver com 8 GB ou em canal único. Ir para 16 GB em dual channel resolve travamento de jogo e lentidão com muitas abas abertas',
+          '3. Placa de vídeo, se o objetivo for jogo e o processador ainda tiver fôlego',
+          '4. Processador, apenas se a placa-mãe suportar um modelo bem melhor sem trocar plataforma',
+          '5. Fonte, se ela for genérica ou se você vai instalar uma placa de vídeo mais exigente',
+        ],
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Upgrade 1 — SSD: o mais barato e o mais transformador',
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'Se o PC ainda inicia a partir de um HD mecânico, esse é o gargalo, e nenhum outro upgrade vai esconder isso. Um HD entrega alguns poucos megabytes por segundo em leituras pequenas e espalhadas, que é exatamente o padrão do sistema operacional. Um SSD entrega centenas de vezes mais nesse cenário. É a diferença entre um PC que demora dois minutos para ficar utilizável e um que fica pronto em quinze segundos.',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Se a placa-mãe tem slot M.2, use um SSD M.2. É mais rápido e não ocupa cabo nem baia',
+          'Se não tem slot M.2, um SSD SATA de 2,5 polegadas resolve. A diferença entre SATA e M.2 no uso diário é pequena perto do salto que os dois dão em relação ao HD',
+          'Instale o sistema no SSD, não apenas mova arquivos para ele. O ganho vem de o sistema rodar a partir do SSD',
+          'Mantenha o HD antigo como armazenamento de arquivos grandes. Ele continua útil para isso',
+        ],
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Upgrade 2 — Memória: quantidade e canais',
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'Muita gente tem 16 GB de memória instalados e mesmo assim sofre com travamentos, porque colocou um pente único de 16 GB. Um pente só faz a memória trabalhar em canal único, cortando pela metade a largura de banda disponível. Em jogos, isso custa entre 10% e 20% de desempenho, e o pior é que não aparece em nenhuma tela do sistema — o Windows mostra 16 GB e parece tudo certo.',
+      },
+      {
+        tipo: 'destaque',
+        destaqueTipo: 'recomendacao',
+        titulo: 'Dois pentes de 8 GB são melhores que um pente de 16 GB',
+        texto: 'Mesma quantidade total, mesmo preço aproximado, desempenho consideravelmente maior. Se você tem um pente único, o upgrade mais barato que existe é comprar um segundo pente igual e instalar nos slots corretos. Se for comprar memória agora, compre sempre em kit de dois pentes, nunca um pente sozinho.',
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'Sobre quantidade: 8 GB hoje é pouco para jogo moderno e para trabalho com navegador cheio de abas. 16 GB é o padrão confortável para a grande maioria. 32 GB só faz diferença real em edição de vídeo, máquinas virtuais, modelagem 3D ou jogos específicos com muitos mods. Comprar 32 GB para jogar não melhora FPS.',
+      },
+      {
+        tipo: 'adsense',
+        anuncioId: 'upgrade-meio',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Upgrade 3 — Placa de vídeo: confira a fonte antes',
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'Trocar a placa de vídeo é o upgrade que mais aumenta FPS, desde que o processador acompanhe. Mas é também o upgrade que mais causa problema quando feito sem verificar o resto do PC. Duas checagens são obrigatórias antes de comprar.',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Fonte: confira a potência real e se ela tem os conectores de energia que a placa nova exige. Fonte genérica sem certificação, mesmo dizendo ter potência suficiente, costuma entregar bem menos do que promete e é causa comum de desligamento durante jogo',
+          'Espaço físico: meça o comprimento disponível dentro do gabinete. Placas de desempenho alto são longas e grossas, e muita gente descobre que não cabe depois de comprar',
+          'Processador: se o seu processador já é o gargalo, uma placa de vídeo muito superior não vai render. Nesse caso, uma placa intermediária entrega quase o mesmo resultado por bem menos',
+          'Fluxo de ar do gabinete: uma placa mais potente joga mais calor dentro do gabinete. Se não há ventoinha de entrada e saída, a temperatura geral sobe',
+        ],
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Upgrade 4 — Processador: quando ainda dá, e quando não dá',
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'Trocar processador só é um upgrade barato quando a placa-mãe atual aceita um modelo significativamente melhor. Se for preciso trocar a placa-mãe, você automaticamente troca a memória junto, porque a geração de memória muda. Aí não é mais upgrade — é um PC novo com aproveitamento de gabinete, fonte e armazenamento.',
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'A plataforma AM4 é o melhor exemplo de upgrade que ainda vale muito a pena. Um PC com processador de entrada dessa geração pode receber um modelo bem superior sem trocar mais nada, muitas vezes só atualizando a BIOS. É um dos poucos casos em que uma troca única transforma o PC inteiro.',
+      },
+      {
+        tipo: 'destaque',
+        destaqueTipo: 'aviso',
+        titulo: 'Atualize a BIOS antes de trocar o processador',
+        texto: 'Uma placa-mãe com BIOS antiga simplesmente não liga com um processador mais novo, mesmo sendo do mesmo soquete. E você não consegue atualizar a BIOS sem um processador que funcione. Ou seja: atualize a BIOS com o processador antigo ainda instalado, antes de removê-lo. Inverter essa ordem cria uma situação em que o PC não liga de jeito nenhum.',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Os upgrades gratuitos que quase ninguém faz',
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'Antes de gastar qualquer coisa, três procedimentos sem custo costumam recuperar desempenho perdido em PC antigo. Em máquinas de cinco anos ou mais, o ganho às vezes supera o de um upgrade pago.',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Limpeza física: poeira acumulada no cooler do processador e no dissipador da placa de vídeo faz a temperatura subir, e temperatura alta faz o sistema reduzir a frequência automaticamente. Um PC empoeirado pode estar rodando bem abaixo do que consegue',
+          'Troca da pasta térmica: pasta ressecada de cinco anos não conduz mais calor direito. Trocar custa muito pouco e derruba a temperatura de forma expressiva',
+          'Ativar o perfil de memória na BIOS: procure a opção EXPO ou XMP e ative o perfil um. A memória sai da velocidade básica de fábrica e vai para a velocidade que você comprou. Ganho imediato e gratuito',
+          'Instalar o driver de vídeo atual direto do site do fabricante, no lugar do que o Windows instalou sozinho',
+        ],
+      },
+      {
+        tipo: 'h2',
+        titulo: 'A hora de parar: quando montar outro PC sai mais barato',
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'Existe um ponto em que continuar fazendo upgrade vira desperdício. O sinal mais claro é quando a lista do que precisa ser trocado inclui placa-mãe, processador e memória ao mesmo tempo. Essas três peças formam o núcleo do PC, e trocar as três é montar uma máquina nova reaproveitando periféricos.',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Se o custo do upgrade passa de 60% do valor de um PC novo equivalente, prefira montar do zero',
+          'Se a plataforma é tão antiga que o processador mais rápido compatível ainda é insuficiente, não há upgrade que resolva',
+          'Se a fonte também precisa ser trocada, some isso à conta — ela costuma inclinar a balança',
+          'Gabinete, fonte de qualidade, SSD, monitor, teclado e mouse são aproveitáveis em um PC novo. Isso reduz bastante o custo de recomeçar',
+        ],
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'Vale dizer o outro lado com a mesma clareza: um PC antigo bem diagnosticado, com SSD, memória em dual channel e limpeza feita, atende muito bem para trabalho, estudo e jogos mais leves por vários anos. Nem todo PC lento precisa ser substituído. A maioria precisa de diagnóstico honesto e de uma ou duas trocas certas, e não de uma reforma completa.',
+      },
+    ],
+    faq: [
+      {
+        pergunta: 'Qual upgrade melhora mais o desempenho de um PC antigo?',
+        resposta: 'Se o PC ainda usa HD mecânico, trocar por SSD é disparado o que mais muda a experiência, e por um custo baixo. Se o PC já tem SSD, o próximo maior ganho costuma vir da memória, principalmente ao sair de um pente único para dois pentes em dual channel. Para jogos especificamente, a placa de vídeo é o que mais aumenta FPS, desde que o processador acompanhe.',
+      },
+      {
+        pergunta: 'Adicionar mais memória RAM aumenta o FPS nos jogos?',
+        resposta: 'Só até certo ponto. Sair de 8 GB para 16 GB costuma eliminar travamentos e engasgos em jogos modernos, o que melhora bastante a experiência. Já ir de 16 GB para 32 GB praticamente não muda FPS em jogos. O que aumenta desempenho de verdade é usar dois pentes em dual channel e ativar o perfil de memória na BIOS.',
+      },
+      {
+        pergunta: 'Posso colocar uma placa de vídeo nova em um PC antigo?',
+        resposta: 'Na maioria dos casos sim, desde que a fonte tenha potência e conectores adequados e a placa caiba fisicamente no gabinete. O ponto de atenção é o equilíbrio: um processador antigo pode limitar a placa nova, principalmente em jogos que dependem de processador. Nesses casos, uma placa intermediária entrega quase o mesmo resultado por bem menos dinheiro.',
+      },
+      {
+        pergunta: 'Vale a pena trocar a pasta térmica de um PC antigo?',
+        resposta: 'Sim, e é um dos melhores retornos que existem por quase nenhum custo. Pasta térmica ressecada faz a temperatura subir, e o sistema reduz a frequência automaticamente para se proteger. Em PCs de cinco anos ou mais sem manutenção, trocar a pasta e limpar o cooler costuma recuperar desempenho que a pessoa achava que tinha perdido para sempre.',
+      },
+      {
+        pergunta: 'Como saber se o problema é o processador ou a placa de vídeo?',
+        resposta: 'Abra o gerenciador de tarefas durante o jogo e observe. Se a placa de vídeo está próxima de 100% de uso, ela é o limite e o PC está equilibrado. Se a placa de vídeo está em 60% ou 70% enquanto o FPS está baixo, o gargalo é o processador ou a memória. Essa única observação evita a maior parte dos upgrades errados.',
+      },
+    ],
+  },
 ]
 
 export function getArtigos() {
