@@ -2,6 +2,7 @@ import Link from "next/link";
 import ComparePanel from "@/components/ComparePanel";
 import { BannerDestaques } from "@/components/BannerDestaques";
 import { ProdutoThumb } from "@/components/ProdutoThumb";
+import { Gta6LaunchFeature } from "@/components/Gta6LaunchFeature";
 import { PRODUTOS_ENRIQUECIDOS } from "@/lib/hardware-data";
 import { ehAfiliado } from "@/lib/afiliados";
 
@@ -78,16 +79,18 @@ export default async function Home({
       )}
 
       <div className="relative">
-        {/* HERO + COMPARADOR */}
-        <section id="comparar" className="mx-auto max-w-6xl px-6 pb-16 pt-10 text-center sm:pt-16">
+        <Gta6LaunchFeature />
+
+        {/* COMPARADOR */}
+        <section id="comparar" className="mx-auto max-w-6xl scroll-mt-24 px-6 pb-16 pt-10 text-center sm:pt-16">
           <div className="mx-auto mb-5 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs text-gray-300">
             <span className="h-2 w-2 animate-pulse-slow rounded-full bg-brand-primary" />
             Powered by Claude AI
           </div>
-          <h1 className="mx-auto max-w-3xl text-4xl font-black leading-tight sm:text-6xl">
-            Compare qualquer hardware com{" "}
+          <h2 className="mx-auto max-w-3xl text-3xl font-black leading-tight sm:text-5xl">
+            Compare e ajuste sua configuração com{" "}
             <span className="gradient-text">inteligência artificial</span>
-          </h1>
+          </h2>
           <p className="mx-auto mt-5 max-w-2xl text-lg text-gray-400">
             Placas de vídeo, processadores, SSDs, notebooks e PCs. Desempenho,
             FPS, consumo, custo-benefício e um veredito humano — em segundos.
