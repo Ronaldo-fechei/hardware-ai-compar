@@ -30,6 +30,219 @@ export interface SecaoArtigo {
 }
 
 export const ARTIGOS: Artigo[] = [
+  // ════════════════════════════════════════════════════════
+  // ARTIGO — Quanto o PC gamer gasta de luz (2026)
+  // Cálculo próprio a partir das tarifas de distribuidoras e
+  // das bandeiras tarifárias da ANEEL vigentes em 2026.
+  // ════════════════════════════════════════════════════════
+  {
+    slug: 'quanto-gasta-de-luz-um-pc-gamer-2026',
+    titulo: 'Quanto Gasta de Luz um PC Gamer? A Conta Real em 2026',
+    subtitulo: 'Fizemos a conta com as tarifas de 2026 — e o vilão da sua fatura provavelmente não é o PC',
+    descricao: 'Quanto seu PC gamer pesa na conta de luz? Calculamos o consumo real por faixa de máquina, com as tarifas brasileiras de 2026 e as bandeiras da ANEEL. Com tabela por distribuidora e o que realmente reduz o gasto.',
+    categoria: 'guias',
+    tags: ['conta de luz', 'consumo', 'pc gamer', 'energia', 'fonte', 'economia', 'watts'],
+    autor: 'Ronaldo Bueno',
+    dataPublicacao: '2026-09-05',
+    tempoLeitura: 9,
+    destaque: false,
+    faq: [
+      {
+        pergunta: 'Deixar o PC ligado a noite toda gasta muito?',
+        resposta: 'Em repouso, um PC gamer consome entre 60 W e 90 W com a tela desligada. Oito horas nesse estado custam cerca de R$ 0,50 por noite, ou aproximadamente R$ 15 por mês. Não é um valor que quebre ninguém, mas é dinheiro jogado fora se a máquina não está fazendo nada. O modo de suspensão derruba isso para menos de 5 W.',
+      },
+      {
+        pergunta: 'Desligar e ligar o PC várias vezes ao dia estraga?',
+        resposta: 'Não. A ideia de que ligar e desligar desgasta o computador vem da época dos discos rígidos mecânicos, e mesmo lá o efeito era pequeno. Com SSD, a questão praticamente desapareceu. Se você vai ficar mais de duas horas longe, desligar ou suspender compensa.',
+      },
+      {
+        pergunta: 'Fonte de maior eficiência economiza de verdade?',
+        resposta: 'Economiza, mas menos do que se imagina em uso doméstico. A diferença entre uma fonte 80 Plus Bronze e uma Gold é de cerca de 4 pontos percentuais de eficiência. Numa máquina que puxa 350 W durante 4 horas por dia, isso dá em torno de R$ 1,50 por mês. A fonte melhor se justifica por segurança e durabilidade, não pela conta de luz.',
+      },
+      {
+        pergunta: 'Limitar os FPS reduz o consumo?',
+        resposta: 'Reduz, e é a medida mais eficaz da lista. Uma placa de vídeo rodando destravada a 200 quadros por segundo trabalha em carga total; travada em 60 ou na taxa do seu monitor, ela cai para uma fração disso. Em jogos leves, o consumo pode cair pela metade sem nenhuma perda visível na sua tela.',
+      },
+      {
+        pergunta: 'Preciso de estabilizador para o PC?',
+        resposta: 'Fontes com PFC ativo, que são praticamente todas as de marca conhecida hoje, já lidam bem com variação de tensão, e estabilizadores comuns podem até atrapalhar. O que faz diferença de verdade é um nobreak, pela proteção contra queda de energia durante escrita em disco — útil sobretudo em região com fornecimento instável.',
+      },
+    ],
+    conteudo: [
+      {
+        tipo: 'intro',
+        texto: 'Toda vez que a conta de luz vem alta, o PC gamer entra na lista de suspeitos. Faz sentido: é a máquina mais visível da casa, fica ligada horas seguidas e tem uma fonte de 750 W estampada na caixa. Só que o número na caixa da fonte não é o que ela consome — é o teto que ela consegue entregar. Neste guia a gente faz a conta de verdade, com as tarifas brasileiras de 2026, e mostra onde o dinheiro realmente vai.',
+      },
+      {
+        tipo: 'adsense',
+        anuncioId: 'consumo-topo',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'O erro que quase todo mundo comete na conta',
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'Uma fonte de 750 W não consome 750 W. Ela é capaz de fornecer até 750 W se o sistema pedir. O que o sistema pede depende do que ele está fazendo naquele instante: navegando, um PC gamer inteiro puxa entre 70 W e 120 W; jogando, entre 200 W e 550 W dependendo das peças; em um teste de estresse sintético, pode passar disso — mas você não passa o dia rodando teste de estresse.',
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'A conta correta parte do consumo médio durante o uso real, não do teto do equipamento. E a fórmula é simples: potência em watts, vezes horas de uso, vezes 30 dias, dividido por mil, dá o consumo em kWh por mês. Multiplique pela tarifa da sua distribuidora e você tem o valor em reais.',
+      },
+      {
+        tipo: 'destaque',
+        destaqueTipo: 'dica',
+        texto: 'Fórmula: (watts × horas por dia × 30) ÷ 1000 = kWh no mês. Depois: kWh × tarifa = reais. Guarde essa conta — ela serve para qualquer aparelho da casa, não só para o PC.',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Quanto cada tipo de PC consome de verdade',
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'Os valores abaixo consideram o sistema completo em uso: gabinete, monitor, teclado e mouse. São médias de consumo durante jogo, que é o cenário de maior gasto no dia a dia de quem usa o PC para isso.',
+      },
+      {
+        tipo: 'tabela',
+        colunas: ['Tipo de máquina', 'Navegando', 'Jogando', 'Monitor'],
+        linhas: [
+          ['Entrada (GPU de entrada, CPU de 6 núcleos)', '65 W', '200 W', '25 W'],
+          ['Intermediária (GPU mid-range)', '80 W', '330 W', '35 W'],
+          ['Alta (GPU high-end)', '95 W', '450 W', '45 W'],
+          ['Topo (GPU flagship, CPU de topo)', '110 W', '600 W', '55 W'],
+        ],
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'Repare na diferença entre navegar e jogar: é de três a seis vezes. Isso significa que o seu gasto depende muito mais de quantas horas você joga do que de quantas horas o PC fica ligado. Uma máquina de topo usada duas horas por dia gasta menos que uma intermediária usada seis.',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'A conta em reais, com as tarifas de 2026',
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'A tarifa residencial efetiva no Brasil em 2026 varia de cerca de R$ 0,73 a R$ 0,95 por kWh, já com impostos. A diferença entre estados é grande porque o ICMS sobre energia vai de 17% a 27% dependendo da unidade da federação. Para os cálculos aqui usamos R$ 0,90 por kWh, que é aproximadamente o valor praticado em São Paulo, Rio e Minas — se você paga menos, o seu custo cai proporcionalmente.',
+      },
+      {
+        tipo: 'tabela',
+        colunas: ['Distribuidora', 'Tarifa aproximada (R$/kWh)'],
+        linhas: [
+          ['CEMIG (MG)', 'R$ 0,93'],
+          ['Enel (SP)', 'R$ 0,91'],
+          ['CPFL Paulista (SP)', 'R$ 0,90'],
+          ['Light (RJ)', 'R$ 0,89'],
+          ['Copel (PR)', 'R$ 0,88'],
+          ['Coelba (BA)', 'R$ 0,80'],
+        ],
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'Agora o resultado. A tabela abaixo considera o uso mais comum entre quem joga: 4 horas de jogo por dia e mais 2 horas de uso leve, todos os dias do mês, com monitor ligado o tempo todo.',
+      },
+      {
+        tipo: 'tabela',
+        colunas: ['Tipo de máquina', 'Consumo mensal', 'Custo a R$ 0,90/kWh'],
+        linhas: [
+          ['Entrada', '32 kWh', 'R$ 29'],
+          ['Intermediária', '50 kWh', 'R$ 45'],
+          ['Alta', '66 kWh', 'R$ 59'],
+          ['Topo', '86 kWh', 'R$ 77'],
+        ],
+      },
+      {
+        tipo: 'destaque',
+        destaqueTipo: 'recomendacao',
+        texto: 'Traduzindo: mesmo uma máquina de topo jogando quatro horas por dia todos os dias custa cerca de R$ 77 por mês de energia. É dinheiro, mas está longe do monstro que muita gente imagina.',
+      },
+      {
+        tipo: 'adsense',
+        anuncioId: 'consumo-meio',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Comparando com o resto da casa',
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'Aqui está o que costuma surpreender. O chuveiro elétrico, o ar-condicionado e a geladeira dominam a conta de luz de uma casa brasileira com folga, e o PC quase nunca aparece no topo. Os números abaixo usam a mesma tarifa de R$ 0,90 por kWh.',
+      },
+      {
+        tipo: 'tabela',
+        colunas: ['Aparelho', 'Uso considerado', 'Custo mensal'],
+        linhas: [
+          ['Chuveiro elétrico (5.500 W)', '15 min por dia, 1 pessoa', 'R$ 37'],
+          ['Chuveiro elétrico (5.500 W)', '15 min por dia, 4 pessoas', 'R$ 149'],
+          ['Ar-condicionado (1.200 W)', '8 h por noite', 'R$ 259'],
+          ['Geladeira (média)', '24 h, ciclo normal', 'R$ 32'],
+          ['PC gamer intermediário', '4 h de jogo + 2 h leve', 'R$ 45'],
+        ],
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'Um PC gamer intermediário usado seis horas por dia custa mais ou menos o mesmo que uma geladeira, e menos que um único chuveiro em uma casa de quatro pessoas. Se a sua conta pulou de um mês para o outro, o ar-condicionado e o chuveiro são suspeitos muito mais prováveis.',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'As bandeiras tarifárias entram na conta',
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'Além da tarifa, a ANEEL aplica um adicional mensal conforme a situação dos reservatórios e o custo de geração. Em 2026 os valores de referência são um acréscimo por 100 kWh consumidos, e a bandeira do mês é anunciada no último dia útil do mês anterior.',
+      },
+      {
+        tipo: 'tabela',
+        colunas: ['Bandeira', 'Acréscimo por 100 kWh', 'Impacto num PC intermediário'],
+        linhas: [
+          ['Verde', 'R$ 0,00', 'nenhum'],
+          ['Amarela', 'R$ 1,88', 'cerca de R$ 0,94 no mês'],
+          ['Vermelha patamar 1', 'R$ 4,46', 'cerca de R$ 2,23 no mês'],
+          ['Vermelha patamar 2', 'R$ 7,87', 'cerca de R$ 3,94 no mês'],
+        ],
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'Ou seja: mesmo na bandeira vermelha mais cara, o adicional referente ao seu PC fica abaixo de R$ 4 por mês. A bandeira pesa na sua conta, mas ela pesa sobre o consumo total da casa — não é o computador que faz a diferença ali.',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'O que realmente reduz o consumo, em ordem de eficácia',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Limitar os quadros por segundo. É de longe a medida mais eficaz. Travar o jogo na taxa do seu monitor faz a placa de vídeo parar de trabalhar à toa. Em títulos leves, o consumo da GPU pode cair pela metade sem nenhuma diferença visível na tela.',
+          'Ativar a suspensão em vez de deixar ligado. Um PC em repouso com a tela apagada ainda puxa de 60 W a 90 W; suspenso, fica abaixo de 5 W. Se você sai de casa e deixa o PC ligado por costume, essa é a economia mais fácil da lista.',
+          'Reduzir o brilho do monitor. Monitores grandes com brilho no máximo consomem quase o dobro de quando estão em 50%. E ainda cansa menos a vista em ambiente fechado.',
+          'Fazer undervolt na placa de vídeo. Reduzir a tensão mantendo o clock derruba consumo e temperatura com perda de desempenho quase nula. Exige um pouco de paciência para achar o ponto estável, mas o ganho é permanente.',
+          'Trocar por uma fonte mais eficiente. Funciona, mas é a última da lista por retorno: a diferença entre Bronze e Gold rende em torno de R$ 1,50 por mês numa máquina intermediária. Troque a fonte por segurança e durabilidade, não pela conta de luz.',
+        ],
+      },
+      {
+        tipo: 'destaque',
+        destaqueTipo: 'aviso',
+        texto: 'Cuidado com a economia que sai cara: não desligue o PC no botão da régua nem tire da tomada com o sistema ligado. Desligamento abrupto durante escrita em disco é uma das formas mais rápidas de corromper arquivo de sistema.',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Como calcular o seu caso específico',
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'Se você quer o número da sua máquina em vez da média, o caminho mais preciso é medir. Um wattímetro de tomada custa entre R$ 60 e R$ 120 e mostra o consumo instantâneo e o acumulado. Ligue o PC nele, jogue uma hora normalmente e veja o kWh acumulado — multiplique por 30 e pela sua tarifa.',
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'Sem wattímetro, use a nossa tabela por tipo de máquina e ajuste pelas suas horas reais de uso. A tarifa exata está na sua conta de luz: procure o valor por kWh na parte de tributos e tarifas, ou divida o valor total da fatura pelo consumo em kWh do mês. Esse segundo método já inclui bandeira, impostos e taxa de iluminação pública, então costuma ser o mais fiel ao que você paga na prática.',
+      },
+      {
+        tipo: 'destaque',
+        destaqueTipo: 'dica',
+        texto: 'Os valores de tarifa e bandeira deste guia são referências de 2026 e mudam com os reajustes anuais de cada distribuidora. A fórmula, essa não muda — e é ela que importa.',
+      },
+    ],
+  },
+
 
   // ════════════════════════════════════════════════════════
   // ARTIGO 1 — Melhor processador para jogos 2026
@@ -39,7 +252,7 @@ export const ARTIGOS: Artigo[] = [
     slug: 'melhor-processador-para-jogos-2026',
     titulo: 'Melhor Processador para Jogos em 2026',
     subtitulo: 'Ryzen 9800X3D ainda reina — mas Arrow Lake Refresh mudou o jogo da Intel',
-    descricao: 'Qual o melhor processador para jogos em 2026? Testamos Ryzen 7 9800X3D, Core Ultra 7 270K Plus, i7-14700K e mais. Veja qual vale mais a pena para o seu orçamento.',
+    descricao: 'Qual o melhor processador para jogos em 2026? Comparamos Ryzen 7 9800X3D, Core Ultra 7 270K Plus, i7-14700K e mais. Veja qual vale mais a pena para o seu orçamento.',
     categoria: 'comparativos',
     tags: ['processador', 'cpu', 'jogos', 'ryzen 9800x3d', 'arrow lake', 'amd', 'intel', 'pc gamer 2026'],
     autor: 'Ronaldo Bueno',
