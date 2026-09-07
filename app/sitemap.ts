@@ -18,6 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/transparencia`, lastModified: revisaoEditorial, changeFrequency: "yearly", priority: 0.5 },
     { url: `${SITE_URL}/contato`, lastModified: revisaoEditorial, changeFrequency: "yearly", priority: 0.4 },
     { url: `${SITE_URL}/privacidade`, lastModified: revisaoEditorial, changeFrequency: "yearly", priority: 0.4 },
+    { url: `${SITE_URL}/termos`, lastModified: "2026-09-07T12:00:00-03:00", changeFrequency: "yearly", priority: 0.4 },
     { url: `${SITE_URL}/autores/ronaldo-bueno`, lastModified: revisaoEditorial, changeFrequency: "yearly", priority: 0.6 },
   ];
 

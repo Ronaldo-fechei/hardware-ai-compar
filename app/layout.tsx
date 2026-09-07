@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { GoogleAnalytics } from "@next/third-parties/google";
+import Script from "next/script";
 import { Header } from "@/components/Header";
 import { Sidebar } from "@/components/Sidebar";
 import { Footer } from "@/components/Footer";
+import { CookieConsent } from "@/components/CookieConsent";
 import AuthNav from "@/components/AuthNav";
 import { CATEGORIAS } from "@/lib/hardware-data";
 import { SITE_URL } from "@/lib/site";
@@ -52,28 +53,47 @@ export default function RootLayout({
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'BestHard',
+    legalName: 'MARTINS STORE COMERCIAL LTDA',
+    taxID: '54.471.703/0001-27',
     url: SITE_URL,
     logo: `${SITE_URL}/logo.svg`,
-    contactPoint: {
-      '@type': 'ContactPoint',
-      email: 'contato@besthard.com.br',
-      contactType: 'editorial',
-      availableLanguage: 'Portuguese',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Diadema',
+      addressRegion: 'SP',
+      addressCountry: 'BR',
     },
+    contactPoint: [
+      {
+        '@type': 'ContactPoint',
+        email: 'contato@besthard.com.br',
+        contactType: 'editorial',
+        availableLanguage: 'Portuguese',
+      },
+      {
+        '@type': 'ContactPoint',
+        email: 'privacidade@besthard.com.br',
+        contactType: 'privacy',
+        availableLanguage: 'Portuguese',
+      },
+    ],
     publishingPrinciples: `${SITE_URL}/metodologia`,
   };
 
   return (
     <html lang="pt-BR">
-      <head>
-        {/* Google AdSense — tag <script> literal no <head> de todas as páginas */}
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7131553700052528"
-          crossOrigin="anonymous"
-        />
-      </head>
       <body className="flex min-h-screen flex-col font-sans antialiased">
+        <Script id="google-consent-mode-default" strategy="beforeInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('consent', 'default', {
+  analytics_storage: 'denied',
+  ad_storage: 'denied',
+  ad_user_data: 'denied',
+  ad_personalization: 'denied',
+  wait_for_update: 500
+});`}
+        </Script>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
@@ -87,9 +107,8 @@ export default function RootLayout({
           <main className="min-w-0 flex-1 overflow-y-auto">{children}</main>
         </div>
         <Footer />
+        <CookieConsent />
       </body>
-      {/* Google Analytics 4 (carregamento otimizado via @next/third-parties) */}
-      <GoogleAnalytics gaId="G-GT70ZCKLQF" />
     </html>
   );
 }

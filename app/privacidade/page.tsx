@@ -1,261 +1,158 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { EditorialList, EditorialPage, EditorialSection } from '@/components/EditorialPage'
 import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
-  title: 'Política de Privacidade | BestHard',
-  description: 'Política de privacidade do BestHard — como coletamos, usamos e protegemos seus dados pessoais, cookies e links de afiliados.',
+  title: 'Política de Privacidade e Cookies',
+  description: 'Saiba como a BestHard trata dados pessoais, usa cookies e permite gerenciar preferências de Analytics e publicidade.',
   robots: { index: true, follow: true },
   alternates: { canonical: `${SITE_URL}/privacidade` },
 }
 
-const ULTIMA_ATUALIZACAO = '30 de junho de 2026'
-
 export default function PrivacidadePage() {
   return (
-    <div className="pb-20">
-
-      {/* HERO */}
-      <div className="px-8 pt-8 pb-6" style={{ borderBottom: '1px solid var(--border)' }}>
-        <nav className="flex items-center gap-2 font-mono text-[10px] mb-4" style={{ color: 'var(--muted)' }}>
-          <Link href="/" className="hover:text-[var(--label)] transition-colors">Home</Link>
-          <span style={{ opacity: 0.3 }}>/</span>
-          <span style={{ color: 'var(--accent)' }}>Política de Privacidade</span>
-        </nav>
-        <h1 className="text-3xl font-bold mb-2" style={{ letterSpacing: '-1.5px' }}>
-          Política de Privacidade
-        </h1>
-        <p className="text-[13px]" style={{ color: 'var(--muted)' }}>
-          Última atualização: {ULTIMA_ATUALIZACAO}
+    <EditorialPage
+      eyebrow="// privacidade e cookies"
+      title="Política de Privacidade e Cookies"
+      description="Este documento explica, de forma clara, quais dados podem ser tratados pela BestHard, para quais finalidades e como você pode exercer seus direitos."
+      updatedAt="7 de setembro de 2026"
+    >
+      <div className="rounded-xl border px-5 py-4" style={{ background: 'rgba(0,229,255,.06)', borderColor: 'rgba(0,229,255,.2)' }}>
+        <p>
+          <strong style={{ color: 'var(--accent)' }}>Resumo:</strong> cookies não essenciais ficam desligados até que você faça uma escolha. Não vendemos dados pessoais. Analytics e publicidade podem ser recusados separadamente e suas preferências podem ser alteradas pelo rodapé.
         </p>
       </div>
 
-      {/* CONTEÚDO */}
-      <div className="px-8 pt-8 max-w-3xl space-y-10">
+      <EditorialSection title="1. Controlador dos dados">
+        <p>O site BestHard, disponível em <strong>besthard.com.br</strong>, é operado por:</p>
+        <EditorialList items={[
+          'MARTINS STORE COMERCIAL LTDA',
+          'CNPJ 54.471.703/0001-27',
+          'Sede em Diadema/SP, Brasil',
+          'Canal de privacidade: privacidade@besthard.com.br',
+        ]} />
+        <p>A empresa acima é a controladora das decisões sobre o tratamento de dados pessoais realizado diretamente pela BestHard.</p>
+      </EditorialSection>
 
-        {/* AVISO DESTAQUE */}
-        <div className="rounded-xl px-5 py-4"
-          style={{ background: 'rgba(0,229,255,.06)', border: '1px solid rgba(0,229,255,.2)' }}>
-          <p className="text-[13px] leading-relaxed" style={{ color: 'var(--text)' }}>
-            <strong style={{ color: 'var(--accent)' }}>Resumo simples:</strong> O BestHard coleta dados básicos de navegação para melhorar a experiência do site e medir o desempenho do conteúdo. Não vendemos seus dados a terceiros. Alguns links são publicidade dos programas de afiliados da Amazon, do Mercado Livre e da Shopee e podem gerar comissão por compras qualificadas.
-          </p>
-        </div>
+      <EditorialSection title="2. Dados que podem ser tratados">
+        <EditorialList items={[
+          'Dados técnicos de acesso, como endereço IP, navegador, dispositivo, data, horário e registros de segurança.',
+          'Dados de uso, como páginas visitadas, comparações realizadas e cliques, quando Analytics estiver autorizado.',
+          'E-mail e dados de autenticação necessários para criar conta e sincronizar o histórico, quando esse recurso for utilizado.',
+          'Textos informados ao comparador, ao montador de PC e a outras ferramentas de inteligência artificial.',
+          'Dados de assinatura, como plano, situação da cobrança e identificadores da transação, caso planos pagos sejam oferecidos e contratados.',
+          'Mensagens enviadas voluntariamente aos canais de contato.',
+          'Preferências salvas no navegador, inclusive histórico local e escolha de cookies.',
+        ]} />
+        <p>A BestHard não armazena o número completo de cartão. Quando houver pagamento, os dados financeiros são inseridos e processados no ambiente do Mercado Pago.</p>
+      </EditorialSection>
 
-        <Secao titulo="1. Quem somos">
-          <p>O <strong>BestHard</strong> (<strong>besthard.com.br</strong>) é um site brasileiro de comparação de hardware e guias de compra, operado como pessoa jurídica com sede em São Paulo, Brasil. Para questões relacionadas à privacidade, entre em contato pelo e-mail: <a href="mailto:privacidade@besthard.com.br" style={{ color: 'var(--accent)' }}>privacidade@besthard.com.br</a></p>
-        </Secao>
+      <EditorialSection title="3. Finalidades e bases legais">
+        <EditorialList items={[
+          'Prestar o serviço solicitado, manter a conta e executar funcionalidades: execução de contrato ou procedimentos preliminares.',
+          'Processar assinatura e suporte relacionado à compra: execução de contrato, cumprimento de obrigação legal e exercício regular de direitos.',
+          'Proteger o site, prevenir fraude e corrigir falhas: legítimo interesse, segurança e exercício regular de direitos.',
+          'Medir audiência e melhorar o conteúdo com Google Analytics 4: consentimento, quando solicitado no banner.',
+          'Exibir e medir publicidade do Google AdSense: consentimento, quando solicitado no banner.',
+          'Responder solicitações de privacidade e cumprir determinações legais: cumprimento de obrigação legal ou regulatória.',
+        ]} />
+      </EditorialSection>
 
-        <Secao titulo="2. Dados que coletamos">
-          <SubSecao titulo="2.1 Dados coletados automaticamente">
-            <p>Quando você acessa o BestHard, coletamos automaticamente:</p>
-            <Lista itens={[
-              'Endereço IP (anonimizado após 90 dias)',
-              'Tipo de dispositivo, sistema operacional e navegador',
-              'Páginas visitadas, tempo de permanência e links clicados',
-              'Origem do acesso (mecanismo de busca, redes sociais, link direto)',
-              'Eventos de interação (comparações realizadas, cliques em botões de compra)',
-            ]} />
-          </SubSecao>
-          <SubSecao titulo="2.2 Dados que você fornece voluntariamente">
-            <p>Caso você crie uma conta ou use formulários de contato:</p>
-            <Lista itens={[
-              'Endereço de e-mail (para login e histórico de comparações)',
-              'Preferências de conteúdo informadas pelo usuário',
-            ]} />
-          </SubSecao>
-          <SubSecao titulo="2.3 O que NÃO coletamos">
-            <p>O BestHard <strong>não</strong> coleta:</p>
-            <Lista itens={[
-              'Dados de cartão de crédito ou informações financeiras',
-              'Documentos de identificação (CPF, RG, passaporte)',
-              'Dados de saúde ou informações sensíveis',
-              'Localização em tempo real',
-            ]} />
-          </SubSecao>
-        </Secao>
-
-        <Secao titulo="3. Como usamos seus dados">
-          <Lista itens={[
-            'Analisar o desempenho do site e identificar conteúdos mais úteis para os usuários',
-            'Entender como os visitantes navegam entre comparações e categorias',
-            'Medir a efetividade dos artigos e guias de compra',
-            'Detectar e corrigir problemas técnicos',
-            'Prevenir fraudes e abusos',
-            'Cumprir obrigações legais',
-          ]} />
-          <p className="mt-3 text-[13px]" style={{ color: 'var(--label)' }}>
-            Base legal (LGPD, Art. 7º): legítimo interesse do controlador (melhoria contínua do serviço) e, onde aplicável, consentimento do titular.
-          </p>
-        </Secao>
-
-        <Secao titulo="4. Cookies e tecnologias de rastreamento">
-          <SubSecao titulo="4.1 Tipos de cookies utilizados">
-            <table className="w-full text-[13px] rounded-xl overflow-hidden" style={{ border: '1px solid var(--border)' }}>
-              <thead>
-                <tr style={{ background: 'var(--surface2)' }}>
-                  {['Tipo', 'Finalidade', 'Duração'].map(h => (
-                    <th key={h} className="px-4 py-3 text-left font-mono text-[10px] uppercase"
-                      style={{ color: 'var(--label)', borderBottom: '1px solid var(--border)' }}>{h}</th>
-                  ))}
+      <section id="cookies" className="scroll-mt-24">
+        <h2 className="mb-3 text-xl font-bold" style={{ color: 'var(--text)', letterSpacing: '-0.5px' }}>4. Cookies e tecnologias semelhantes</h2>
+        <div className="space-y-4">
+          <p>A BestHard separa o armazenamento usado no site nas seguintes categorias:</p>
+          <div className="overflow-x-auto rounded-xl border" style={{ borderColor: 'var(--border)' }}>
+            <table className="w-full min-w-[560px] text-left text-[13px]">
+              <thead style={{ background: 'var(--surface2)', color: 'var(--label)' }}>
+                <tr>
+                  <th className="px-4 py-3">Categoria</th>
+                  <th className="px-4 py-3">Finalidade</th>
+                  <th className="px-4 py-3">Ativação</th>
                 </tr>
               </thead>
-              <tbody style={{ background: 'var(--surface)' }}>
-                {[
-                  ['Essenciais', 'Funcionamento básico do site e login', 'Sessão'],
-                  ['Analíticos (GA4)', 'Medir tráfego e comportamento', '13 meses'],
-                  ['Afiliados', 'Rastrear cliques e comissões', '30-90 dias'],
-                  ['Publicidade (AdSense)', 'Exibir anúncios relevantes', 'Até 2 anos'],
-                ].map(([tipo, fin, dur], i, arr) => (
-                  <tr key={tipo} style={{ borderBottom: i < arr.length - 1 ? '1px solid var(--border)' : 'none' }}>
-                    <td className="px-4 py-3 font-semibold" style={{ color: 'var(--text)' }}>{tipo}</td>
-                    <td className="px-4 py-3" style={{ color: 'var(--label)' }}>{fin}</td>
-                    <td className="px-4 py-3 font-mono text-[11px]" style={{ color: 'var(--muted)' }}>{dur}</td>
-                  </tr>
-                ))}
+              <tbody>
+                <tr className="border-t" style={{ borderColor: 'var(--border)' }}>
+                  <td className="px-4 py-3 font-semibold">Essenciais</td>
+                  <td className="px-4 py-3">Login, sessão, segurança, limite de uso e registro da escolha de privacidade.</td>
+                  <td className="px-4 py-3">Sempre ativos</td>
+                </tr>
+                <tr className="border-t" style={{ borderColor: 'var(--border)' }}>
+                  <td className="px-4 py-3 font-semibold">Analytics</td>
+                  <td className="px-4 py-3">Medição de audiência e desempenho com Google Analytics 4.</td>
+                  <td className="px-4 py-3">Somente após autorização</td>
+                </tr>
+                <tr className="border-t" style={{ borderColor: 'var(--border)' }}>
+                  <td className="px-4 py-3 font-semibold">Publicidade</td>
+                  <td className="px-4 py-3">Exibição, medição e personalização de anúncios pelo Google AdSense.</td>
+                  <td className="px-4 py-3">Somente após autorização</td>
+                </tr>
               </tbody>
             </table>
-          </SubSecao>
-          <SubSecao titulo="4.2 Como gerenciar cookies">
-            <p>Você pode desativar cookies nas configurações do seu navegador. Note que desativar cookies analíticos e de publicidade pode afetar a personalização da experiência, mas não impede o uso básico do site. Para desativar o Google Analytics especificamente, use o <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent)' }}>complemento de desativação do navegador</a>.</p>
-          </SubSecao>
-        </Secao>
-
-        <Secao titulo="5. Links de afiliados — transparência total">
-          <div className="rounded-xl px-5 py-4 mb-4"
-            style={{ background: 'rgba(34,197,94,.06)', border: '1px solid rgba(34,197,94,.2)' }}>
-            <p className="text-[13px]" style={{ color: 'var(--text)' }}>
-              <strong style={{ color: '#22C55E' }}>Declaração obrigatória:</strong> Como participante do Programa de Associados da Amazon, sou remunerado pelas compras qualificadas efetuadas. O BestHard também participa dos programas de afiliados do Mercado Livre e da Shopee e pode receber comissão por compras feitas através dos links identificados como publicidade.
-            </p>
           </div>
-          <Lista itens={[
-            'Os preços exibidos são verificados periodicamente mas podem variar — sempre confirme na loja antes de comprar',
-            'As comissões não influenciam nossas avaliações ou recomendações de produtos',
-            'Todos os links de afiliado contêm o atributo rel="sponsored" conforme recomendação do Google',
-            'Não recebemos pagamento para recomendar produtos específicos — apenas comissão por conversão',
-          ]} />
-        </Secao>
-
-        <Secao titulo="6. Google AdSense e publicidade">
-          <p>O BestHard poderá exibir anúncios do Google AdSense após a ativação do serviço. O Google pode usar cookies para exibir anúncios com base em suas visitas ao nosso site e a outros sites. Você pode desativar a publicidade personalizada em <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent)' }}>Configurações de anúncios do Google</a>. O BestHard não tem acesso nem controle sobre os cookies usados pelo Google AdSense.</p>
-        </Secao>
-
-        <Secao titulo="7. Compartilhamento de dados com terceiros">
-          <p className="mb-3">O BestHard <strong>não vende</strong> seus dados pessoais. Compartilhamos dados apenas nas seguintes situações:</p>
-          <Lista itens={[
-            'Google Analytics 4 — dados de navegação anonimizados para análise de tráfego',
-            'Google AdSense — dados de comportamento para personalização de anúncios',
-            'Programa de Associados da Amazon — apenas dados de clique/conversão por meio dos links identificados',
-            'Programa de Afiliados do Mercado Livre — apenas dados de clique/conversão por meio dos links identificados',
-            'Programa de Afiliados da Shopee — apenas dados de clique/conversão por meio dos links identificados',
-            'Supabase — armazenamento seguro de conta e histórico (quando você faz login)',
-            'Autoridades públicas — somente quando exigido por lei ou ordem judicial',
-          ]} />
-        </Secao>
-
-        <Secao titulo="8. Seus direitos (LGPD — Lei 13.709/2018)">
-          <p className="mb-3">Como titular de dados pessoais, você tem direito a:</p>
-          <Lista itens={[
-            'Confirmação da existência de tratamento de seus dados',
-            'Acesso aos dados que temos sobre você',
-            'Correção de dados incompletos, inexatos ou desatualizados',
-            'Anonimização, bloqueio ou eliminação de dados desnecessários ou excessivos',
-            'Portabilidade dos dados a outro fornecedor de serviço',
-            'Eliminação dos dados tratados com base no consentimento',
-            'Informação sobre entidades com quem compartilhamos seus dados',
-            'Revogação do consentimento a qualquer momento',
-            'Oposição ao tratamento com base em legítimo interesse',
-          ]} />
-          <p className="mt-3 text-[13px]" style={{ color: 'var(--label)' }}>
-            Para exercer qualquer desses direitos, entre em contato em <a href="mailto:privacidade@besthard.com.br" style={{ color: 'var(--accent)' }}>privacidade@besthard.com.br</a>. Responderemos em até 15 dias úteis.
-          </p>
-        </Secao>
-
-        <Secao titulo="9. Segurança dos dados">
-          <Lista itens={[
-            'O site utiliza HTTPS com certificado SSL/TLS em todas as páginas',
-            'Não armazenamos dados de pagamento — transações ocorrem exclusivamente nas lojas parceiras',
-            'Dados analíticos são tratados pelo Google com suas próprias políticas de segurança',
-            'Revisamos periodicamente nossas práticas de segurança',
-          ]} />
-        </Secao>
-
-        <Secao titulo="10. Retenção de dados">
-          <Lista itens={[
-            'Dados de Google Analytics: 13 meses (configuração padrão, com IP anonimizado)',
-            'Logs de servidor: 90 dias',
-            'E-mails de contato: 5 anos (conforme obrigação legal)',
-            'Dados de conta: até solicitação de exclusão',
-          ]} />
-        </Secao>
-
-        <Secao titulo="11. Menores de idade">
-          <p>O BestHard não é direcionado a menores de 13 anos e não coleta intencionalmente dados de crianças. Se você acredita que coletamos dados de um menor, entre em contato imediatamente para que possamos excluí-los.</p>
-        </Secao>
-
-        <Secao titulo="12. Alterações nesta política">
-          <p>Esta política pode ser atualizada periodicamente. Mudanças significativas serão comunicadas com destaque na página inicial. A data da última atualização está sempre exibida no topo desta página. Recomendamos revisitar esta política periodicamente.</p>
-        </Secao>
-
-        <Secao titulo="13. Contato e DPO">
-          <p className="mb-2">Para dúvidas, solicitações ou reclamações relacionadas à privacidade:</p>
-          <Lista itens={[
-            'E-mail: privacidade@besthard.com.br',
-            'Prazo de resposta: até 15 dias úteis',
-            'Autoridade Nacional de Proteção de Dados (ANPD): gov.br/anpd — para reclamações não resolvidas',
-          ]} />
-        </Secao>
-
-        {/* Navegação rápida */}
-        <div className="pt-4" style={{ borderTop: '1px solid var(--border)' }}>
-          <div className="flex gap-4 flex-wrap">
-            <Link href="/"
-              className="text-[12px] font-semibold hover:opacity-80 transition-opacity"
-              style={{ color: 'var(--accent)' }}>
-              ← Voltar para a Home
-            </Link>
-            <Link href="/blog"
-              className="text-[12px] font-semibold hover:opacity-80 transition-opacity"
-              style={{ color: 'var(--label)' }}>
-              Blog e Guias
-            </Link>
-          </div>
+          <p>Analytics e publicidade ficam desativados por padrão. O painel permite aceitar, rejeitar ou escolher cada finalidade. A decisão é guardada no armazenamento local do navegador com a data e a versão desta configuração.</p>
+          <p>Você pode revogar ou alterar a escolha a qualquer momento em <strong>Preferências de cookies</strong>, no rodapé. A revogação interrompe novos carregamentos opcionais; cookies já gravados também podem ser removidos nas configurações do navegador.</p>
         </div>
+      </section>
 
-      </div>
-    </div>
-  )
-}
+      <EditorialSection title="5. Inteligência artificial">
+        <p>Quando você usa recursos de comparação ou montagem assistida, o texto necessário para responder à solicitação pode ser processado pela Anthropic, provedora do modelo Claude. Evite inserir dados pessoais, informações confidenciais, senhas ou dados financeiros nos campos de comparação.</p>
+        <p>As respostas da IA são estimativas informativas, podem conter erros e não substituem a consulta às especificações oficiais do fabricante.</p>
+      </EditorialSection>
 
-// ── Componentes auxiliares ─────────────────────────────────────────────
-function Secao({ titulo, children }: { titulo: string; children: React.ReactNode }) {
-  return (
-    <section>
-      <h2 className="text-[18px] font-bold mb-4" style={{ letterSpacing: '-0.5px' }}>{titulo}</h2>
-      <div className="space-y-3 text-[14px] leading-relaxed" style={{ color: 'var(--label)' }}>
-        {children}
-      </div>
-    </section>
-  )
-}
+      <EditorialSection title="6. Compartilhamento e operadores">
+        <p>Dados podem ser tratados por fornecedores necessários à operação, cada qual de acordo com sua função e suas políticas:</p>
+        <EditorialList items={[
+          'Vercel: hospedagem, entrega do site, segurança e registros técnicos.',
+          'Supabase: autenticação, conta e sincronização do histórico, quando habilitados.',
+          'Anthropic: processamento das solicitações feitas às ferramentas de inteligência artificial.',
+          'Google: Analytics e AdSense, apenas conforme as preferências autorizadas.',
+          'Mercado Pago: processamento de pagamento e gestão da assinatura, quando aplicável.',
+          'Amazon, Mercado Livre, Shopee e outros parceiros: recebem os dados da navegação quando você decide abrir um link externo.',
+        ]} />
+        <p>A BestHard não vende bases de dados pessoais. Informações também poderão ser fornecidas a autoridades quando houver obrigação legal ou ordem válida.</p>
+      </EditorialSection>
 
-function SubSecao({ titulo, children }: { titulo: string; children: React.ReactNode }) {
-  return (
-    <div className="mt-3">
-      <h3 className="text-[14px] font-bold mb-2" style={{ color: 'var(--text)' }}>{titulo}</h3>
-      <div className="space-y-2">{children}</div>
-    </div>
-  )
-}
+      <EditorialSection title="7. Links de afiliados">
+        <p>Links identificados como publicidade ou patrocinados podem conter parâmetros de afiliado. Ao clicar, você deixa o domínio da BestHard e passa a se relacionar com a loja de destino, que poderá usar cookies próprios. A BestHard pode receber comissão por compras qualificadas, sem alteração do preço para você.</p>
+      </EditorialSection>
 
-function Lista({ itens }: { itens: string[] }) {
-  return (
-    <ul className="space-y-2 mt-2">
-      {itens.map((item, i) => (
-        <li key={i} className="flex items-start gap-3">
-          <span className="mt-[3px] flex-shrink-0 font-bold" style={{ color: 'var(--accent)' }}>→</span>
-          <span>{item}</span>
-        </li>
-      ))}
-    </ul>
+      <EditorialSection title="8. Transferências internacionais">
+        <p>Alguns fornecedores de tecnologia podem processar ou armazenar dados fora do Brasil. Nesses casos, buscamos utilizar serviços reconhecidos e mecanismos compatíveis com a LGPD e com as regras aplicáveis de transferência internacional.</p>
+      </EditorialSection>
+
+      <EditorialSection title="9. Retenção e eliminação">
+        <p>Os dados são mantidos somente pelo tempo necessário à finalidade informada, ao funcionamento do serviço, ao cumprimento de obrigações legais ou ao exercício regular de direitos. Os prazos também podem variar conforme a configuração e a política do fornecedor envolvido.</p>
+        <p>O histórico salvo apenas no navegador pode ser apagado pelo próprio usuário. Dados de conta podem ser eliminados mediante solicitação, ressalvadas hipóteses legais de conservação.</p>
+      </EditorialSection>
+
+      <EditorialSection title="10. Direitos do titular">
+        <p>Nos termos da LGPD, você pode solicitar, conforme aplicável:</p>
+        <EditorialList items={[
+          'Confirmação da existência de tratamento e acesso aos dados.',
+          'Correção de dados incompletos, inexatos ou desatualizados.',
+          'Anonimização, bloqueio ou eliminação de dados desnecessários, excessivos ou tratados irregularmente.',
+          'Portabilidade, quando regulamentada e tecnicamente aplicável.',
+          'Informações sobre compartilhamento e sobre a possibilidade de negar consentimento.',
+          'Revogação do consentimento, oposição ao tratamento e revisão de decisões automatizadas, quando cabíveis.',
+        ]} />
+        <p>Envie a solicitação para <a href="mailto:privacidade@besthard.com.br" className="font-semibold" style={{ color: 'var(--accent)' }}>privacidade@besthard.com.br</a>. Poderemos solicitar informações suficientes para confirmar a identidade do titular e responderemos nos prazos legais aplicáveis.</p>
+      </EditorialSection>
+
+      <EditorialSection title="11. Segurança e incidentes">
+        <p>Adotamos medidas técnicas e organizacionais compatíveis com o porte e a natureza do serviço, incluindo HTTPS, restrição de acesso e uso de provedores especializados. Nenhum ambiente é totalmente isento de riscos; incidentes relevantes serão tratados e comunicados conforme a legislação.</p>
+      </EditorialSection>
+
+      <EditorialSection title="12. Crianças e adolescentes">
+        <p>A BestHard não é dirigida especificamente a crianças. Não solicitamos intencionalmente dados pessoais de crianças para fins de publicidade comportamental. Caso um responsável identifique tratamento indevido, poderá solicitar análise e eliminação pelo canal de privacidade.</p>
+      </EditorialSection>
+
+      <EditorialSection title="13. Alterações e contato">
+        <p>Esta política poderá ser atualizada para refletir mudanças legais, técnicas ou operacionais. A versão vigente e a data da última revisão permanecerão publicadas nesta página.</p>
+        <p>Para dúvidas ou solicitações: <a href="mailto:privacidade@besthard.com.br" className="font-semibold" style={{ color: 'var(--accent)' }}>privacidade@besthard.com.br</a>.</p>
+        <p>Consulte também os <Link href="/termos" className="font-semibold" style={{ color: 'var(--accent)' }}>Termos de Uso</Link>.</p>
+      </EditorialSection>
+    </EditorialPage>
   )
 }
