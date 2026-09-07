@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { CookiePreferencesButton } from '@/components/CookiePreferencesButton'
 
 export function Footer() {
   const ano = new Date().getFullYear()
@@ -18,6 +19,7 @@ export function Footer() {
           { label: 'Metodologia', href: '/metodologia' },
           { label: 'Transparência', href: '/transparencia' },
           { label: 'Privacidade', href: '/privacidade' },
+          { label: 'Termos de uso', href: '/termos' },
           { label: 'Contato', href: '/contato' },
         ].map(({ label, href }) => (
           <Link key={href} href={href}
@@ -26,7 +28,11 @@ export function Footer() {
             {label}
           </Link>
         ))}
+        <CookiePreferencesButton />
       </nav>
+      <p className="w-full text-[11px]" style={{ color: 'var(--label)' }}>
+        Operado por <strong>MARTINS STORE COMERCIAL LTDA</strong> · CNPJ 54.471.703/0001-27 · Diadema/SP
+      </p>
       <p className="text-[10px] w-full mt-1" style={{ color: 'var(--muted)', opacity: 0.6 }}>
         Como participante do Programa de Associados da Amazon, o BestHard é remunerado pelas compras qualificadas efetuadas.
         Alguns links do Mercado Livre e da Shopee também podem gerar comissão. A comissão não interfere nas análises e os preços podem mudar nas lojas.

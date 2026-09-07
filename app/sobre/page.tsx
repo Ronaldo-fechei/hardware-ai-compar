@@ -15,7 +15,7 @@ export default function SobrePage() {
       eyebrow="// sobre o besthard"
       title="Hardware explicado para decisões melhores"
       description="O BestHard é um projeto editorial brasileiro independente que organiza especificações, contexto de uso e faixas de orçamento para ajudar pessoas a escolher peças e periféricos sem pagar pelo que não precisam."
-      updatedAt="16 de julho de 2026"
+      updatedAt="7 de setembro de 2026"
     >
       <EditorialSection title="Nossa missão">
         <p>Traduzimos informações técnicas em recomendações práticas para o mercado brasileiro. O objetivo não é apontar um único “melhor produto”, mas explicar qual opção faz sentido para cada orçamento, resolução, tipo de jogo e possibilidade de upgrade.</p>
@@ -40,6 +40,10 @@ export default function SobrePage() {
 
       <EditorialSection title="Como o site se mantém">
         <p>O acesso ao conteúdo é gratuito. Alguns links para Amazon, Mercado Livre e Shopee podem gerar comissão quando uma compra qualificada é realizada, sem alterar o preço para o leitor. Essa remuneração ajuda a manter o projeto e não interfere no veredito editorial.</p>
+      </EditorialSection>
+
+      <EditorialSection title="Responsável legal">
+        <p>A BestHard é operada por <strong>MARTINS STORE COMERCIAL LTDA</strong>, CNPJ <strong>54.471.703/0001-27</strong>, com sede em Diadema/SP. O contato geral é <a href="mailto:contato@besthard.com.br" className="font-semibold" style={{ color: 'var(--accent)' }}>contato@besthard.com.br</a>.</p>
       </EditorialSection>
     </EditorialPage>
   )

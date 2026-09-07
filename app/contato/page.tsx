@@ -14,7 +14,7 @@ export default function ContatoPage() {
       eyebrow="// fale com a equipe"
       title="Contato"
       description="Use os canais abaixo para enviar uma correção, sugerir uma pauta, tirar dúvidas sobre o conteúdo ou tratar de privacidade."
-      updatedAt="16 de julho de 2026"
+      updatedAt="7 de setembro de 2026"
     >
       <EditorialSection title="Dúvidas e sugestões editoriais">
         <p>Envie a URL da página, descreva o trecho e, quando possível, inclua a fonte que sustenta a correção.</p>
@@ -27,7 +27,11 @@ export default function ContatoPage() {
       </EditorialSection>
 
       <EditorialSection title="Prazo de resposta">
-        <p>Buscamos responder mensagens editoriais em até cinco dias úteis. Solicitações de privacidade seguem os prazos informados na Política de Privacidade.</p>
+        <p>Buscamos responder mensagens editoriais em até cinco dias úteis. Solicitações de privacidade são atendidas nos prazos legais aplicáveis.</p>
+      </EditorialSection>
+
+      <EditorialSection title="Responsável pelo site">
+        <p><strong>MARTINS STORE COMERCIAL LTDA</strong> · CNPJ 54.471.703/0001-27 · Diadema/SP.</p>
       </EditorialSection>
     </EditorialPage>
   )

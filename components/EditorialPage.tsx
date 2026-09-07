@@ -35,6 +35,7 @@ export function EditorialPage({ eyebrow, title, description, updatedAt, children
           <Link href="/transparencia" className="font-semibold" style={{ color: 'var(--accent)' }}>Transparência</Link>
           <Link href="/contato" className="font-semibold" style={{ color: 'var(--accent)' }}>Contato</Link>
           <Link href="/privacidade" className="font-semibold" style={{ color: 'var(--accent)' }}>Privacidade</Link>
+          <Link href="/termos" className="font-semibold" style={{ color: 'var(--accent)' }}>Termos de uso</Link>
         </nav>
       </div>
     </div>

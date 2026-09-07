@@ -14,7 +14,7 @@ export default function TransparenciaPage() {
       eyebrow="// transparência comercial"
       title="Como publicidade e afiliados funcionam no BestHard"
       description="Queremos que o leitor saiba quando um link pode remunerar o site e como separamos decisões comerciais de decisões editoriais."
-      updatedAt="16 de julho de 2026"
+      updatedAt="7 de setembro de 2026"
     >
       <EditorialSection title="Links de afiliados">
         <p>Alguns botões de compra levam a páginas da Amazon, Mercado Livre ou Shopee e podem conter identificação de afiliado. Se uma compra qualificada ocorrer, o BestHard poderá receber comissão. O preço pago pelo comprador não aumenta por causa disso.</p>
@@ -35,7 +35,7 @@ export default function TransparenciaPage() {
       </EditorialSection>
 
       <EditorialSection title="Publicidade do Google">
-        <p>O site pode exibir anúncios automáticos do Google AdSense. Os anúncios são identificados pela plataforma e não representam recomendação editorial do BestHard. A personalização e o uso de cookies seguem as preferências de privacidade aplicáveis.</p>
+        <p>O site pode exibir anúncios automáticos do Google AdSense após a autorização da categoria de publicidade nas preferências de cookies. Os anúncios são identificados pela plataforma e não representam recomendação editorial do BestHard.</p>
       </EditorialSection>
 
       <EditorialSection title="Produtos recebidos e conteúdo patrocinado">
