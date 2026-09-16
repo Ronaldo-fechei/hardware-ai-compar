@@ -2,11 +2,15 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import AuthNav from "@/components/AuthNav";
 import BottleneckSimulator from "@/components/BottleneckSimulator";
+import { ToolGuide } from "@/components/ToolGuide";
+import { GUIA_GARGALO } from "@/content/ferramentas";
+import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Simulador de Gargalo (Bottleneck) CPU + GPU",
   description:
     "Descubra o gargalo entre seu processador e placa de vídeo. Estimativa por IA do componente limitante em jogos e produtividade.",
+  alternates: { canonical: `${SITE_URL}/gargalo` },
 };
 
 export default function GargaloPage() {
@@ -27,6 +31,7 @@ export default function GargaloPage() {
           <div className="mt-10 text-left">
             <BottleneckSimulator />
           </div>
+          <ToolGuide guia={GUIA_GARGALO} />
         </section>
       </div>
     </main>
