@@ -2,11 +2,15 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import AuthNav from "@/components/AuthNav";
 import BuildAssistant from "@/components/BuildAssistant";
+import { ToolGuide } from "@/components/ToolGuide";
+import { GUIA_MONTAR } from "@/content/ferramentas";
+import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Assistente de Montagem — Monte seu PC com IA",
+  title: "Monte seu PC — Assistente de configuração por orçamento",
   description:
     "Diga seu orçamento e para que vai usar: a IA monta uma configuração completa, compatível e com preços do mercado brasileiro.",
+  alternates: { canonical: `${SITE_URL}/montar` },
 };
 
 export default function MontarPage() {
@@ -27,6 +31,7 @@ export default function MontarPage() {
           <div className="mt-10 text-left">
             <BuildAssistant />
           </div>
+          <ToolGuide guia={GUIA_MONTAR} />
         </section>
       </div>
     </main>
