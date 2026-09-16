@@ -12,11 +12,11 @@ import { SITE_URL } from "@/lib/site";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "BestHard — Comparador de Hardware com IA",
+    default: "BestHard — Comparativos e guias de hardware para PC",
     template: "%s | BestHard",
   },
   description:
-    "Compare processadores, placas de vídeo, SSDs, notebooks e PCs com inteligência artificial. Benchmarks estimados, FPS, consumo, custo-benefício e veredito humano.",
+    "Guias de compra, comparativos e ferramentas para montar e atualizar seu PC: processadores, placas de vídeo, SSDs, fontes e monitores, com contexto de preço no Brasil.",
   keywords: [
     "comparar hardware",
     "RTX vs RX",
@@ -28,15 +28,15 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "pt_BR",
-    title: "BestHard — Comparador de Hardware com IA",
+    title: "BestHard — Comparativos e guias de hardware para PC",
     description:
-      "Compare hardware com IA: desempenho, FPS, consumo, custo-benefício e veredito humano.",
+      "Guias de compra, comparativos e ferramentas para montar e atualizar seu PC.",
     siteName: "BestHard",
   },
   twitter: {
     card: "summary_large_image",
     title: "BestHard",
-    description: "Compare hardware de PC com inteligência artificial.",
+    description: "Comparativos e guias de hardware para PC.",
   },
   // Meta tag de verificação do Google AdSense (renderizada no <head>).
   other: {

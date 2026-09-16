@@ -1,16 +1,29 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import ComparePanel from "@/components/ComparePanel";
-import { BannerDestaques } from "@/components/BannerDestaques";
 import { ProdutoThumb } from "@/components/ProdutoThumb";
-import { Gta6LaunchFeature } from "@/components/Gta6LaunchFeature";
 import { PRODUTOS_ENRIQUECIDOS } from "@/lib/hardware-data";
 import { ehAfiliado } from "@/lib/afiliados";
+import { getArtigos } from "@/lib/blog-data";
+import { SITE_URL } from "@/lib/site";
+
+export const metadata: Metadata = {
+  alternates: { canonical: SITE_URL },
+};
+
+function formatarData(iso: string) {
+  return new Date(iso + "T12:00:00-03:00").toLocaleDateString("pt-BR", {
+    day: "2-digit",
+    month: "long",
+    year: "numeric",
+  });
+}
 
 const RECURSOS = [
   {
     icon: "🧠",
-    titulo: "Comparação inteligente",
-    desc: "A IA estima desempenho, FPS, consumo, temperatura e custo-benefício de qualquer hardware.",
+    titulo: "Comparação lado a lado",
+    desc: "Desempenho, FPS estimado, consumo e custo-benefício de dois produtos, com a explicação de cada diferença.",
   },
   {
     icon: "📊",
@@ -63,6 +76,7 @@ export default async function Home({
 }) {
   const query = await searchParams;
   const assinaturaOk = query?.assinatura === "sucesso";
+  const guias = getArtigos().slice(0, 6);
   return (
     <div className="relative overflow-hidden">
       {/* fundo grade tech */}
@@ -79,17 +93,88 @@ export default async function Home({
       )}
 
       <div className="relative">
-        <Gta6LaunchFeature />
+        {/* HERO EDITORIAL */}
+        <section className="mx-auto max-w-6xl px-6 pb-6 pt-12 sm:pt-16">
+          <p className="font-mono text-xs uppercase tracking-[2px] text-brand-primary">
+            Guias, comparativos e ferramentas
+          </p>
+          <h1 className="mt-3 max-w-3xl text-4xl font-black leading-tight sm:text-5xl">
+            Escolha as peças do seu PC <span className="gradient-text">sem gastar à toa</span>
+          </h1>
+          <p className="mt-5 max-w-2xl text-lg text-gray-400">
+            O BestHard explica, em português e com preços do mercado brasileiro, qual processador,
+            placa de vídeo, SSD ou fonte faz sentido para o seu uso — e quando não vale a pena
+            trocar. Cada guia informa a data de revisão, as fontes consultadas e quem escreveu.
+          </p>
+          <div className="mt-8 flex flex-wrap gap-3">
+            <Link href="/blog" className="btn-primary rounded-xl px-6 py-3 font-semibold">
+              Ler os guias
+            </Link>
+            <a
+              href="#comparar"
+              className="rounded-xl border border-white/15 px-6 py-3 font-semibold text-gray-200 hover:border-brand-primary/50"
+            >
+              Comparar componentes
+            </a>
+          </div>
+        </section>
+
+        {/* GUIAS RECENTES */}
+        <section id="guias" className="mx-auto max-w-6xl px-6 py-12">
+          <div className="mb-8 flex items-end justify-between gap-4">
+            <h2 className="text-3xl font-bold">
+              Guias <span className="gradient-text">recentes</span>
+            </h2>
+            <Link href="/blog" className="text-sm text-brand-primary hover:underline">
+              Ver todos →
+            </Link>
+          </div>
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {guias.map((a) => (
+              <Link
+                key={a.slug}
+                href={`/blog/${a.slug}`}
+                className="glass-card group flex flex-col p-6 transition hover:shadow-glow"
+              >
+                <span className="text-[10px] font-semibold uppercase tracking-wider text-brand-primary">
+                  {a.categoria}
+                </span>
+                <h3 className="mt-2 text-lg font-bold leading-snug text-white">{a.titulo}</h3>
+                <p className="mt-2 flex-1 text-sm text-gray-400">{a.descricao}</p>
+                <p className="mt-4 text-xs text-gray-500">
+                  {a.autor} · {formatarData(a.dataAtualizacao || a.dataPublicacao)} ·{" "}
+                  {a.tempoLeitura} min de leitura
+                </p>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        {/* ESPECIAL GTA VI */}
+        <section className="mx-auto max-w-6xl px-6 py-6">
+          <Link
+            href="/blog/pc-para-rodar-gta-6-requisitos-2026"
+            className="glass-card group block p-6 transition hover:shadow-glow"
+          >
+            <span className="text-[10px] font-semibold uppercase tracking-wider text-brand-primary">
+              Especial GTA VI
+            </span>
+            <h2 className="mt-2 text-2xl font-bold text-white">
+              Que PC vai rodar GTA VI? O que já foi confirmado e o que ainda é projeção
+            </h2>
+            <p className="mt-2 text-sm text-gray-400">
+              O jogo chega aos consoles em 19 de novembro de 2026 e a versão de PC ainda não tem data
+              nem requisitos oficiais. Explicamos o que dá para planejar agora sem desperdiçar dinheiro.
+            </p>
+            <span className="mt-3 inline-block text-sm text-brand-primary">Ler o guia →</span>
+          </Link>
+        </section>
 
         {/* COMPARADOR */}
         <section id="comparar" className="mx-auto max-w-6xl scroll-mt-24 px-6 pb-16 pt-10 text-center sm:pt-16">
-          <div className="mx-auto mb-5 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs text-gray-300">
-            <span className="h-2 w-2 animate-pulse-slow rounded-full bg-brand-primary" />
-            Powered by Claude AI
-          </div>
           <h2 className="mx-auto max-w-3xl text-3xl font-black leading-tight sm:text-5xl">
-            Compare e ajuste sua configuração com{" "}
-            <span className="gradient-text">inteligência artificial</span>
+            Compare dois componentes{" "}
+            <span className="gradient-text">lado a lado</span>
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-lg text-gray-400">
             Placas de vídeo, processadores, SSDs, notebooks e PCs. Desempenho,
@@ -100,9 +185,6 @@ export default async function Home({
             <ComparePanel />
           </div>
         </section>
-
-        {/* BANNER DE PRODUTOS EM DESTAQUE (afiliados) */}
-        <BannerDestaques />
 
         {/* RECURSOS */}
         <section id="recursos" className="mx-auto max-w-6xl px-6 py-16">
@@ -123,7 +205,7 @@ export default async function Home({
         {/* FERRAMENTAS */}
         <section id="ferramentas" className="mx-auto max-w-6xl px-6 py-16">
           <h2 className="mb-10 text-center text-3xl font-bold">
-            Ferramentas <span className="gradient-text">inteligentes</span>
+            Ferramentas <span className="gradient-text">gratuitas</span>
           </h2>
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             <Link
@@ -152,7 +234,7 @@ export default async function Home({
                   <span className="text-brand-primary transition group-hover:translate-x-1">→</span>
                 </span>
                 <span className="mt-1 block text-sm text-gray-400">
-                  Diga seu orçamento e a IA monta a configuração ideal pra você.
+                  Informe orçamento, uso e resolução e receba uma configuração equilibrada.
                 </span>
               </span>
             </Link>
@@ -347,7 +429,7 @@ export default async function Home({
             applicationCategory: "Utility",
             operatingSystem: "Web",
             description:
-              "Comparador de hardware de computador com inteligência artificial.",
+              "Guias, comparativos e ferramentas para escolher componentes de PC.",
             offers: {
               "@type": "Offer",
               price: "0",
