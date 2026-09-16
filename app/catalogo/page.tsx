@@ -2,12 +2,16 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import AuthNav from "@/components/AuthNav";
 import CatalogCompare from "@/components/CatalogCompare";
+import { ToolGuide } from "@/components/ToolGuide";
+import { GUIA_CATALOGO } from "@/content/ferramentas";
+import { SITE_URL } from "@/lib/site";
 import { CATEGORIAS } from "@/lib/hardware-data";
 
 export const metadata: Metadata = {
   title: "Catálogo — Escolha e Compare Hardware",
   description:
-    "Escolha produtos de uma lista por categoria (placas de vídeo, processadores, SSDs, notebooks, consoles) e compare com inteligência artificial.",
+    "Escolha produtos por categoria — processadores, placas de vídeo, monitores, SSDs, fontes e periféricos — e compare lado a lado, com fichas técnicas e explicações.",
+  alternates: { canonical: `${SITE_URL}/catalogo` },
 };
 
 export default function CatalogoPage() {
@@ -47,6 +51,7 @@ export default function CatalogoPage() {
               ))}
             </div>
           </div>
+          <ToolGuide guia={GUIA_CATALOGO} />
         </section>
       </div>
     </main>
