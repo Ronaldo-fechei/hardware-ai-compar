@@ -2,11 +2,15 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import AuthNav from "@/components/AuthNav";
 import BuildComparator from "@/components/BuildComparator";
+import { ToolGuide } from "@/components/ToolGuide";
+import { GUIA_BUILDS } from "@/content/ferramentas";
+import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Comparador de Builds — Build A vs Build B",
   description:
     "Monte duas configurações de PC e compare preço, FPS, consumo, potencial de upgrade e nota final com inteligência artificial.",
+  alternates: { canonical: `${SITE_URL}/builds` },
 };
 
 export default function BuildsPage() {
@@ -27,6 +31,7 @@ export default function BuildsPage() {
           <div className="mt-10 text-left">
             <BuildComparator />
           </div>
+          <ToolGuide guia={GUIA_BUILDS} />
         </section>
       </div>
     </main>
