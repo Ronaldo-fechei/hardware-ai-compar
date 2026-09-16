@@ -1,6 +1,7 @@
-import { notFound } from 'next/navigation'
+import { notFound, redirect } from 'next/navigation'
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { FICHAS_PUBLICAS } from '@/lib/fichas'
 import { PRODUTOS_ENRIQUECIDOS, getProdutoBySlug, getCategoriaConfig, getProdutosByCategoria, tipoProduto } from '@/lib/hardware-data'
 import { BlocoPrecos } from '@/components/BlocoPrecos'
 import { ProdutoThumb } from '@/components/ProdutoThumb'
@@ -43,7 +44,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: {
       canonical: `${SITE_URL}/produto/${slug}`,
     },
-    authors: [{ name: 'Equipe Editorial BestHard', url: `${SITE_URL}/autores/equipe-besthard` }],
+    authors: [{ name: 'Ronaldo Bueno', url: `${SITE_URL}/autores/ronaldo-bueno` }],
   }
 }
 
@@ -99,6 +100,11 @@ export default async function ProdutoPage({ params }: Props) {
   const produto = getProdutoBySlug(slug)
   if (!produto) notFound()
 
+  // Enquanto a conta do AdSense está em análise, a ficha não fica de pé
+  // sozinha: manda o visitante para o comparador da categoria, que tem
+  // conteúdo editorial próprio. Ver o porquê em lib/fichas.ts.
+  if (!FICHAS_PUBLICAS) redirect(`/comparar/${produto.categoria}`)
+
   const cat = getCategoriaConfig(produto.categoria)
   const menorPreco = produto.precos?.filter(p => p.disponivel && ehAfiliado(p.loja)).sort((a, b) => a.preco - b.preco)[0]
   const tierCor = TIER_COR[produto.tier || ''] || 'var(--label)'
@@ -123,7 +129,7 @@ export default async function ProdutoPage({ params }: Props) {
           <nav className="flex items-center gap-2 font-mono text-[10px]" style={{ color: 'var(--muted)' }}>
             <Link href="/" className="hover:text-[var(--label)] transition-colors">Home</Link>
             <span style={{ opacity: 0.3 }}>/</span>
-            <Link href="/catalogo" className="hover:text-[var(--label)] transition-colors">
+            <Link href={`/comparar/${produto.categoria}`} className="hover:text-[var(--label)] transition-colors">
               {cat?.label}
             </Link>
             <span style={{ opacity: 0.3 }}>/</span>
@@ -228,7 +234,7 @@ export default async function ProdutoPage({ params }: Props) {
 
           <aside className="rounded-xl p-5 text-[12px] leading-relaxed" style={{ background: 'rgba(0,229,255,.05)', border: '1px solid rgba(0,229,255,.18)', color: 'var(--label)' }}>
             <strong style={{ color: 'var(--text)' }}>Análise editorial:</strong> ficha revisada pela{' '}
-            <Link href="/autores/equipe-besthard" className="font-semibold" style={{ color: 'var(--accent)' }}>Equipe BestHard</Link>. O score é um índice comparativo da categoria, não uma média de avaliações de consumidores. Consulte a{' '}
+            <Link href="/autores/ronaldo-bueno" className="font-semibold" style={{ color: 'var(--accent)' }}>Ronaldo Bueno</Link>. O score é um índice comparativo da categoria, não uma média de avaliações de consumidores. Consulte a{' '}
             <Link href="/metodologia" className="font-semibold" style={{ color: 'var(--accent)' }}>metodologia</Link> para entender os critérios.
           </aside>
 

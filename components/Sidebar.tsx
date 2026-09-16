@@ -3,7 +3,6 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import type { CategoriaConfig } from '@/types/hardware'
 import { getProdutosByCategoria } from '@/lib/hardware-data'
-import { buscaAmazon } from '@/lib/afiliados'
 
 interface Props { categorias: CategoriaConfig[] }
 
@@ -79,20 +78,13 @@ export function Sidebar({ categorias }: Props) {
       </div>
 
       <div className="mt-auto p-3 space-y-2">
-        {/* Atalho de afiliado — Ofertas na Amazon */}
-        <a
-          href={buscaAmazon('hardware para PC gamer')}
-          target="_blank"
-          rel="noopener noreferrer sponsored"
-          className="flex items-center gap-[10px] rounded-[9px] px-[10px] py-[9px] transition-all hover:-translate-y-px"
-          style={{ background: 'rgba(255,153,0,0.08)', border: '1px solid rgba(255,153,0,0.25)' }}
-        >
-          <span className="w-5 text-center text-sm">📦</span>
-          <span className="flex-1 text-[12px] font-semibold" style={{ color: '#FF9900' }}>
-            Amazon <span className="block text-[8px] uppercase tracking-[1px] opacity-70">Publicidade</span>
-          </span>
-          <span className="text-[12px] font-bold" style={{ color: '#FF9900' }}>→</span>
-        </a>
+        {/* O atalho de afiliado da Amazon saiu daqui em 16/09/2026.
+            Estava na barra lateral, ou seja, aparecia em TODAS as páginas —
+            inclusive em privacidade, termos e contato. Um bloco de publicidade
+            nas páginas legais passa a impressão de site montado em volta do
+            anúncio, que é justamente a leitura que atrapalha a aprovação no
+            AdSense. Os links comissionados continuam onde fazem sentido: nos
+            comparadores, nos blocos de preço e no fim dos artigos. */}
 
         <div className="rounded-[9px] p-3 text-[10px] leading-relaxed"
           style={{ background: 'rgba(0,229,255,.05)', border: '1px solid rgba(0,229,255,.15)', color: 'var(--label)' }}>
