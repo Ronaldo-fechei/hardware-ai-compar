@@ -822,7 +822,7 @@ export const ARTIGOS: Artigo[] = [
     conteudo: [
       {
         tipo: 'intro',
-        texto: 'O Ryzen 5 9600X chegou em 2025 com a promessa de reinventar o segmento mid-range com a arquitetura Zen 5. Em 2026, com os preços acomodados e mais comparativos disponíveis, a pergunta real é: ele justifica o custo extra em relação ao i5-14600K, que baixou de preço e segue sendo o queridinho dos gamers? Este comparativo responde isso com dados reais e sem rodeios.',
+        texto: 'O Ryzen 5 9600X chegou em agosto de 2024 com a promessa de reinventar o segmento mid-range com a arquitetura Zen 5. Em 2026, com os preços acomodados e mais comparativos disponíveis, a pergunta real é: ele justifica o custo extra em relação ao i5-14600K, que baixou de preço e segue sendo o queridinho dos gamers? Este comparativo responde isso com base nas especificações oficiais, em testes publicados por veículos especializados e nos preços praticados no Brasil.',
       },
       {
         tipo: 'h2',

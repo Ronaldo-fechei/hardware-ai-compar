@@ -3370,7 +3370,7 @@ const ENRICHMENT: Record<string, Partial<import('@/types/hardware').Produto>> = 
     tier: 'high-end',
     anoLancamento: 2023,
     scoreCustoBeneficio: 89,
-    descricao: 'O AMD Ryzen 7 7800X3D é o processador mais rápido para jogos disponível no mercado em 2024, graças à tecnologia 3D V-Cache que adiciona 64 MB de cache L3 empilhado diretamente sobre o chiplet de CPU. Esse cache extra reduz drasticamente a latência de acesso à memória em títulos como Cyberpunk 2077, Baldur\'s Gate 3 e Counter-Strike 2, entregando até 15-20% mais FPS que processadores convencionais na mesma faixa de preço. Baseado na arquitetura Zen 4 com soquete AM5, ele é compatível com memórias DDR5 e PCIe 5.0, garantindo longevidade para a plataforma.',
+    descricao: 'O AMD Ryzen 7 7800X3D foi o processador mais rápido para jogos em 2023–2024 e, mesmo depois da chegada do Ryzen 7 9800X3D, segue entre as melhores CPUs para jogos em 2026, graças à tecnologia 3D V-Cache que adiciona 64 MB de cache L3 empilhado diretamente sobre o chiplet de CPU. Esse cache extra reduz drasticamente a latência de acesso à memória em títulos como Cyberpunk 2077, Baldur\'s Gate 3 e Counter-Strike 2, entregando até 15-20% mais FPS que processadores convencionais na mesma faixa de preço. Baseado na arquitetura Zen 4 com soquete AM5, ele é compatível com memórias DDR5 e PCIe 5.0, garantindo longevidade para a plataforma.',
     proCons: {
       pros: [
         'Melhor desempenho em jogos do mercado',
