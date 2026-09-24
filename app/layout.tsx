@@ -38,9 +38,12 @@ export const metadata: Metadata = {
     title: "BestHard",
     description: "Comparativos e guias de hardware para PC.",
   },
-  // Meta tag de verificação do Google AdSense (renderizada no <head>).
+  // Meta tags de verificação de propriedade do domínio (renderizadas no <head>).
   other: {
     "google-adsense-account": "ca-pub-7131553700052528",
+    // Pinterest: confirma que besthard.com.br pertence à conta Business
+    // @martinsstore011, requisito para publicar Pins pela API.
+    "p:domain_verify": "f87407241fde2b0a27577a0beb14d8b7",
   },
 };
 

@@ -16,7 +16,7 @@ export default function PrivacidadePage() {
       eyebrow="// privacidade e cookies"
       title="Política de Privacidade e Cookies"
       description="Este documento explica, de forma clara, quais dados podem ser tratados pela BestHard, para quais finalidades e como você pode exercer seus direitos."
-      updatedAt="7 de setembro de 2026"
+      updatedAt="24 de setembro de 2026"
     >
       <div className="rounded-xl border px-5 py-4" style={{ background: 'rgba(0,229,255,.06)', borderColor: 'rgba(0,229,255,.2)' }}>
         <p>
@@ -118,16 +118,27 @@ export default function PrivacidadePage() {
         <p>Links identificados como publicidade ou patrocinados podem conter parâmetros de afiliado. Ao clicar, você deixa o domínio da BestHard e passa a se relacionar com a loja de destino, que poderá usar cookies próprios. A BestHard pode receber comissão por compras qualificadas, sem alteração do preço para você.</p>
       </EditorialSection>
 
-      <EditorialSection title="8. Transferências internacionais">
+      <EditorialSection title="8. Integração com o Pinterest">
+        <p>A BestHard mantém uma conta comercial no Pinterest (<strong>@martinsstore011</strong>) e utiliza a API oficial do Pinterest para divulgar os artigos e as análises publicadas em besthard.com.br.</p>
+        <EditorialList items={[
+          'A integração serve exclusivamente para criar e gerenciar Pins e pastas da própria conta Business da BestHard, com conteúdo publicado neste site.',
+          'Não coletamos, não armazenamos e não vendemos dados de usuários do Pinterest nem de terceiros por meio dessa integração.',
+          'Os tokens de acesso OAuth são guardados de forma segura, ficam restritos ao servidor e são usados apenas para publicar conteúdo próprio.',
+          'A autorização pode ser revogada a qualquer momento pelo titular da conta em Pinterest > Configurações > Aplicativos.',
+        ]} />
+        <p>A integração não altera o conteúdo exibido neste site e não cria perfis de comportamento de visitantes. Dúvidas sobre esse tratamento podem ser enviadas para <a href="mailto:privacidade@besthard.com.br" className="font-semibold" style={{ color: 'var(--accent)' }}>privacidade@besthard.com.br</a>.</p>
+      </EditorialSection>
+
+      <EditorialSection title="9. Transferências internacionais">
         <p>Alguns fornecedores de tecnologia podem processar ou armazenar dados fora do Brasil. Nesses casos, buscamos utilizar serviços reconhecidos e mecanismos compatíveis com a LGPD e com as regras aplicáveis de transferência internacional.</p>
       </EditorialSection>
 
-      <EditorialSection title="9. Retenção e eliminação">
+      <EditorialSection title="10. Retenção e eliminação">
         <p>Os dados são mantidos somente pelo tempo necessário à finalidade informada, ao funcionamento do serviço, ao cumprimento de obrigações legais ou ao exercício regular de direitos. Os prazos também podem variar conforme a configuração e a política do fornecedor envolvido.</p>
         <p>O histórico salvo apenas no navegador pode ser apagado pelo próprio usuário. Dados de conta podem ser eliminados mediante solicitação, ressalvadas hipóteses legais de conservação.</p>
       </EditorialSection>
 
-      <EditorialSection title="10. Direitos do titular">
+      <EditorialSection title="11. Direitos do titular">
         <p>Nos termos da LGPD, você pode solicitar, conforme aplicável:</p>
         <EditorialList items={[
           'Confirmação da existência de tratamento e acesso aos dados.',
@@ -140,15 +151,15 @@ export default function PrivacidadePage() {
         <p>Envie a solicitação para <a href="mailto:privacidade@besthard.com.br" className="font-semibold" style={{ color: 'var(--accent)' }}>privacidade@besthard.com.br</a>. Poderemos solicitar informações suficientes para confirmar a identidade do titular e responderemos nos prazos legais aplicáveis.</p>
       </EditorialSection>
 
-      <EditorialSection title="11. Segurança e incidentes">
+      <EditorialSection title="12. Segurança e incidentes">
         <p>Adotamos medidas técnicas e organizacionais compatíveis com o porte e a natureza do serviço, incluindo HTTPS, restrição de acesso e uso de provedores especializados. Nenhum ambiente é totalmente isento de riscos; incidentes relevantes serão tratados e comunicados conforme a legislação.</p>
       </EditorialSection>
 
-      <EditorialSection title="12. Crianças e adolescentes">
+      <EditorialSection title="13. Crianças e adolescentes">
         <p>A BestHard não é dirigida especificamente a crianças. Não solicitamos intencionalmente dados pessoais de crianças para fins de publicidade comportamental. Caso um responsável identifique tratamento indevido, poderá solicitar análise e eliminação pelo canal de privacidade.</p>
       </EditorialSection>
 
-      <EditorialSection title="13. Alterações e contato">
+      <EditorialSection title="14. Alterações e contato">
         <p>Esta política poderá ser atualizada para refletir mudanças legais, técnicas ou operacionais. A versão vigente e a data da última revisão permanecerão publicadas nesta página.</p>
         <p>Para dúvidas ou solicitações: <a href="mailto:privacidade@besthard.com.br" className="font-semibold" style={{ color: 'var(--accent)' }}>privacidade@besthard.com.br</a>.</p>
         <p>Consulte também os <Link href="/termos" className="font-semibold" style={{ color: 'var(--accent)' }}>Termos de Uso</Link>.</p>

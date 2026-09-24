@@ -18,7 +18,7 @@ export function Footer() {
           { label: 'Sobre', href: '/sobre' },
           { label: 'Metodologia', href: '/metodologia' },
           { label: 'Transparência', href: '/transparencia' },
-          { label: 'Privacidade', href: '/privacidade' },
+          { label: 'Política de Privacidade', href: '/privacidade' },
           { label: 'Termos de uso', href: '/termos' },
           { label: 'Contato', href: '/contato' },
         ].map(({ label, href }) => (

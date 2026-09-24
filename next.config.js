@@ -12,6 +12,15 @@ const nextConfig = {
         destination: '/autores/ronaldo-bueno',
         permanent: true,
       },
+      // A política completa mora em /privacidade desde o início e é essa URL
+      // que está no sitemap e nos links internos. /politica-de-privacidade é o
+      // endereço que plataformas externas (Pinterest, AdSense) esperam, então
+      // ele responde aqui em vez de duplicar o mesmo texto em duas URLs.
+      {
+        source: '/politica-de-privacidade',
+        destination: '/privacidade',
+        permanent: true,
+      },
     ];
   },
 };
