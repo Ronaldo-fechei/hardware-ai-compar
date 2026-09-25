@@ -1,59 +1,20 @@
-import { NextResponse } from "next/server";
+import type { NextRequest } from "next/server";
+import { isPinterestConfigured, salvarToken, trocarCodePorToken } from "@/lib/pinterest";
+import { STATE_COOKIE, pagina, recusaSeNaoForAdmin } from "../shared";
 
 /**
  * Callback do OAuth do Pinterest.
  *
- * O Pinterest redireciona para cá depois que o titular da conta autoriza o
- * aplicativo, passando `?code=` (código de autorização, uso único) e `?state=`
- * (o valor que enviamos no início do fluxo, para conferir que a resposta é
- * nossa).
- *
- * Por enquanto esta rota só confirma o recebimento. A troca do `code` pelo
- * access token acontece em um passo posterior, no servidor, junto com a
- * validação do `state`.
+ * O Pinterest redireciona para cá depois que o administrador autoriza o
+ * aplicativo, passando `?code=` (código de autorização, uso único) e
+ * `?state=` (o valor que enviamos em /pinterest/autorizar).
  *
  * O `code` NÃO é registrado em log nem devolvido na página: é uma credencial
- * de curta duração e log é lugar onde credencial não deve passar.
+ * de curta duração e log é lugar onde credencial não deve passar. O mesmo
+ * vale para o token que ele vira — quem precisa dele é o servidor, pelo
+ * Supabase.
  */
-
-function pagina(titulo: string, mensagem: string, status: number) {
-  const html = `<!DOCTYPE html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="robots" content="noindex, nofollow" />
-    <title>${titulo} — BestHard</title>
-    <style>
-      body { margin: 0; min-height: 100vh; display: grid; place-items: center;
-             background: #0b0e14; color: #e6e8ee;
-             font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
-      main { max-width: 32rem; padding: 2rem; text-align: center; }
-      h1 { font-size: 1.5rem; margin: 0 0 .75rem; letter-spacing: -.5px; }
-      p { margin: 0 0 1.25rem; line-height: 1.6; color: #9aa3b2; font-size: .95rem; }
-      a { color: #00e5ff; font-weight: 600; text-decoration: none; }
-    </style>
-  </head>
-  <body>
-    <main>
-      <h1>${titulo}</h1>
-      <p>${mensagem}</p>
-      <a href="/">Voltar para a BestHard</a>
-    </main>
-  </body>
-</html>`;
-
-  return new NextResponse(html, {
-    status,
-    headers: {
-      "Content-Type": "text/html; charset=utf-8",
-      "Cache-Control": "no-store",
-      "X-Robots-Tag": "noindex, nofollow",
-    },
-  });
-}
-
-export async function GET(req: Request) {
+export async function GET(req: NextRequest) {
   const { searchParams } = new URL(req.url);
   const code = searchParams.get("code");
   const state = searchParams.get("state");
@@ -62,7 +23,7 @@ export async function GET(req: Request) {
   if (erro) {
     return pagina(
       "Autorização não concluída",
-      "O Pinterest informou que a autorização foi recusada ou cancelada. Você pode tentar novamente a partir do painel.",
+      "O Pinterest informou que a autorização foi recusada ou cancelada. Você pode tentar de novo em /pinterest/autorizar.",
       400,
     );
   }
@@ -75,9 +36,47 @@ export async function GET(req: Request) {
     );
   }
 
-  return pagina(
+  if (!isPinterestConfigured()) {
+    return pagina(
+      "Integração não configurada",
+      "Faltam as variáveis PINTEREST_APP_ID e PINTEREST_APP_SECRET neste ambiente.",
+      503,
+    );
+  }
+
+  const recusa = await recusaSeNaoForAdmin();
+  if (recusa) return recusa;
+
+  // O `state` precisa ser o mesmo que saiu daqui. Diferente (ou ausente,
+  // porque o cookie expirou) significa que este retorno não pertence ao
+  // fluxo que começamos.
+  const esperado = req.cookies.get(STATE_COOKIE)?.value;
+
+  if (!esperado || esperado !== state) {
+    return pagina(
+      "Autorização expirada",
+      "Não reconhecemos esta resposta do Pinterest. Comece de novo em /pinterest/autorizar.",
+      400,
+    );
+  }
+
+  try {
+    const token = await trocarCodePorToken(code);
+    await salvarToken(token);
+  } catch {
+    // A mensagem do erro pode carregar o código; fica fora da página.
+    return pagina(
+      "Não foi possível concluir",
+      "A troca do código pelo token falhou. Confira PINTEREST_APP_ID, PINTEREST_APP_SECRET e o endereço de retorno registrado no painel do Pinterest, e tente de novo.",
+      502,
+    );
+  }
+
+  const ok = pagina(
     "Autorização recebida",
-    "O Pinterest confirmou a autorização da conta. A troca do código pelo token de acesso será feita no próximo passo da integração.",
+    "A conta do Pinterest está conectada e o token ficou guardado. Já dá para publicar Pins pela API.",
     200,
   );
+  ok.cookies.set(STATE_COOKIE, "", { path: "/pinterest", maxAge: 0 });
+  return ok;
 }
