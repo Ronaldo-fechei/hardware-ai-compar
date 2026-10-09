@@ -5,6 +5,7 @@ import { CATALOG, type CatalogItem } from "@/lib/catalog";
 import type { ComparisonResult } from "@/lib/types";
 import { saveComparison } from "@/lib/history";
 import ComparisonResultView from "./ComparisonResultView";
+import { corTexto } from '@/lib/tema'
 
 const COLORS = ["#00E5FF", "#7B2FFF"];
 
@@ -226,7 +227,7 @@ function Slot({
       className="glass-card flex min-h-[120px] w-full flex-col items-center justify-center gap-2 p-5 text-center transition hover:border-brand-primary/40"
       style={{ boxShadow: sel ? `0 0 30px -16px ${cor}` : undefined }}
     >
-      <span className="text-[10px] uppercase tracking-wider" style={{ color: cor }}>
+      <span className="text-[10px] uppercase tracking-wider" style={{ color: corTexto(cor) }}>
         {rotulo}
       </span>
       {sel ? (

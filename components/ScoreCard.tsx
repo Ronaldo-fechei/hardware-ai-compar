@@ -25,7 +25,7 @@ export function ScoreCard({ produto, isWinner }: Props) {
       {isWinner && (
         <span
           className="absolute right-3 top-3 rounded px-2 py-[2px] font-mono text-[9px] font-bold uppercase"
-          style={{ background: 'var(--accent)', color: '#0A0C10' }}
+          style={{ background: 'var(--accent)', color: 'var(--on-accent)' }}
         >
           ✓ Vencedor
         </span>

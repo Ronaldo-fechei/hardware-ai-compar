@@ -38,8 +38,8 @@ export default function RadarChart({ criterios, nomes }: Props) {
             key={i}
             points={pts}
             fill="none"
-            stroke="rgba(255,255,255,0.08)"
             strokeWidth={1}
+            style={{ stroke: "var(--radar-grid)" }}
           />
         ))}
         {/* eixos + rótulos */}
@@ -53,13 +53,13 @@ export default function RadarChart({ criterios, nomes }: Props) {
                 y1={center}
                 x2={x}
                 y2={y}
-                stroke="rgba(255,255,255,0.08)"
                 strokeWidth={1}
+                style={{ stroke: "var(--radar-grid)" }}
               />
               <text
                 x={lx}
                 y={ly}
-                fill="#9ca3af"
+                style={{ fill: "var(--label)" }}
                 fontSize="9"
                 textAnchor="middle"
                 dominantBaseline="middle"

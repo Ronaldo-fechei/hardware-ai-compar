@@ -4,6 +4,7 @@ import { linkAfiliado, ehAfiliado, buscaAmazon, buscaTerabyte } from '@/lib/afil
 import { linkMercadoLivre } from '@/lib/mercadolivre-links'
 import { linkShopee } from '@/lib/shopee-links'
 import { AvisoAfiliado } from '@/components/AvisoAfiliado'
+import { corTexto } from '@/lib/tema'
 
 const LOJAS: Record<PrecoLoja['loja'], { nome: string; emoji: string; cor: string; bg: string }> = {
   amazon:       { nome: 'Amazon',        emoji: '📦', cor: '#FF9900', bg: 'rgba(255,153,0,0.08)' },
@@ -67,7 +68,7 @@ function CardPreco({ produto, isWinner, fullWidth }: {
           {isWinner && (
             <span
               className="flex-shrink-0 ml-2 rounded px-2 py-[2px] font-mono text-[9px] font-bold uppercase"
-              style={{ background: 'var(--accent)', color: '#0A0C10' }}
+              style={{ background: 'var(--accent)', color: 'var(--on-accent)' }}
             >
               ✓ Vencedor
             </span>
@@ -121,10 +122,10 @@ function CardPreco({ produto, isWinner, fullWidth }: {
               <span className="text-[15px] w-5 text-center flex-shrink-0">{loja.emoji}</span>
               <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-[6px] flex-wrap">
-                  <span className="text-[12px] font-semibold" style={{ color: loja.cor }}>{loja.nome} · Publicidade</span>
+                  <span className="text-[12px] font-semibold" style={{ color: corTexto(loja.cor, true) }}>{loja.nome} · Publicidade</span>
                   {isMenor && (
                     <span className="rounded px-[5px] py-[1px] font-mono text-[8px] font-bold uppercase"
-                      style={{ background: loja.cor + '20', color: loja.cor }}>referência</span>
+                      style={{ background: loja.cor + '20', color: corTexto(loja.cor, true) }}>referência</span>
                   )}
                   {item.frete === 'gratis' && (
                     <span className="rounded px-[5px] py-[1px] font-mono text-[8px]"
@@ -132,7 +133,7 @@ function CardPreco({ produto, isWinner, fullWidth }: {
                   )}
                   {item.frete === 'prime' && (
                     <span className="rounded px-[5px] py-[1px] font-mono text-[8px]"
-                      style={{ background: 'rgba(255,153,0,.15)', color: '#FF9900' }}>✦ Prime</span>
+                      style={{ background: 'rgba(255,153,0,.15)', color: corTexto('#FF9900', true) }}>✦ Prime</span>
                   )}
                 </div>
                 {item.parcelamento && (
@@ -140,7 +141,7 @@ function CardPreco({ produto, isWinner, fullWidth }: {
                 )}
               </div>
               <div className="flex items-center gap-2 flex-shrink-0">
-                <span className="font-mono text-[13px] font-bold" style={{ color: isMenor ? loja.cor : 'var(--text)' }}>
+                <span className="font-mono text-[13px] font-bold" style={{ color: isMenor ? corTexto(loja.cor, true) : 'var(--text)' }}>
                   {formatBRL(item.preco)}
                 </span>
                 <span
@@ -166,7 +167,7 @@ function CardPreco({ produto, isWinner, fullWidth }: {
           >
             <span className="text-[15px] w-5 text-center flex-shrink-0">📦</span>
             <div className="flex-1 min-w-0">
-              <span className="text-[12px] font-semibold" style={{ color: '#FF9900' }}>Amazon · Publicidade</span>
+              <span className="text-[12px] font-semibold" style={{ color: corTexto('#FF9900', true) }}>Amazon · Publicidade</span>
               <p className="text-[10px] mt-[1px]" style={{ color: 'var(--muted)' }}>Ver ofertas e preço atual</p>
             </div>
             <span

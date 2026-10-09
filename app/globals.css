@@ -14,6 +14,11 @@
   --text: #e8eaf0;
   --muted: #5a6070;
   --label: #8a92a6;
+  --header-bg: rgba(10, 12, 16, 0.95);
+  --on-accent: #0a0c10; /* texto sobre fundo --accent */
+  --radar-grid: rgba(255, 255, 255, 0.08);
+  --cor-mix: 100%; /* ver lib/tema.ts */
+  --cor-mix-forte: 100%;
 }
 
 * {
@@ -74,3 +79,97 @@ body {
   0%, 100% { opacity: 1; }
   50% { opacity: 0.3; }
 }
+
+/* ══════════════════════════════════════════════════════════════════════════
+   TEMA CLARO  —  html[data-theme="light"]
+   O tema é escolhido pelo botão do cabeçalho (components/ThemeToggle.tsx) e
+   aplicado antes da pintura por um script em app/layout.tsx.
+
+   Como funciona: a maior parte do site já usa as variáveis acima, então basta
+   redefini-las. O restante são classes fixas do Tailwind pensadas para fundo
+   escuro (text-white, border-white/10, bg-[#111318]...); elas são remapeadas
+   aqui. Áreas que ficam escuras nos dois temas (o banner do GTA VI, sobre uma
+   imagem noturna) levam a classe `on-dark` e são ignoradas por estas regras
+   por meio de :not(.on-dark *).
+   ══════════════════════════════════════════════════════════════════════════ */
+html[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f5f7fb;
+  --surface: #ffffff;
+  --surface2: #eceff6;
+  --border: #d9dfeb;
+  --accent: #0e7490; /* ciano escuro: o #00e5ff original some no fundo claro */
+  --text: #10162a;
+  --muted: #667085;
+  --label: #475467;
+  --header-bg: rgba(255, 255, 255, 0.92);
+  --on-accent: #ffffff;
+  --radar-grid: rgba(16, 22, 42, 0.14);
+  --cor-mix: 50%;
+  --cor-mix-forte: 38%;
+}
+
+/* texto */
+html[data-theme="light"] .text-white:not(.on-dark *),
+html[data-theme="light"] .text-gray-100:not(.on-dark *),
+html[data-theme="light"] .text-gray-200:not(.on-dark *),
+html[data-theme="light"] .text-\[\#e8eaf0\]:not(.on-dark *) { color: var(--text); }
+html[data-theme="light"] .text-gray-300:not(.on-dark *) { color: #344054; }
+html[data-theme="light"] .text-gray-400:not(.on-dark *),
+html[data-theme="light"] [class*="text-white/"]:not(.on-dark *),
+html[data-theme="light"] .text-\[\#8a92a6\]:not(.on-dark *) { color: var(--label); }
+html[data-theme="light"] .text-gray-500:not(.on-dark *),
+html[data-theme="light"] .text-gray-600:not(.on-dark *),
+html[data-theme="light"] .text-\[\#5a6070\]:not(.on-dark *) { color: var(--muted); }
+html[data-theme="light"] .text-brand-primary:not(.on-dark *) { color: var(--accent); }
+html[data-theme="light"] .text-\[\#73efff\]:not(.on-dark *),
+html[data-theme="light"] .text-\[\#38e7ff\]:not(.on-dark *) { color: #0e7490; }
+html[data-theme="light"] .text-\[\#ff82bb\]:not(.on-dark *),
+html[data-theme="light"] .text-\[\#ff6cae\]:not(.on-dark *) { color: #be185d; }
+html[data-theme="light"] [class*="text-red-"]:not(.on-dark *) { color: #b42318; }
+html[data-theme="light"] [class*="text-amber-"]:not(.on-dark *) { color: #92400e; }
+
+/* hover (as regras acima têm mais especificidade que as variantes hover:) */
+html[data-theme="light"] .hover\:text-white:hover:not(.on-dark *),
+html[data-theme="light"] .hover\:text-\[\#e8eaf0\]:hover:not(.on-dark *) { color: var(--text); }
+html[data-theme="light"] .hover\:text-brand-primary:hover:not(.on-dark *) { color: var(--accent); }
+html[data-theme="light"] .hover\:text-\[\#73efff\]:hover:not(.on-dark *) { color: #0e7490; }
+html[data-theme="light"] .hover\:bg-\[\#181b22\]:hover:not(.on-dark *) { background-color: var(--surface2); }
+html[data-theme="light"] [class*="hover:bg-white/"]:hover:not(.on-dark *) { background-color: rgba(16, 22, 42, 0.08); }
+
+/* fundos e bordas */
+html[data-theme="light"] [class*="bg-white/"]:not(.on-dark *) { background-color: rgba(16, 22, 42, 0.045); }
+html[data-theme="light"] [class*="border-white/"]:not(.on-dark *) { border-color: rgba(16, 22, 42, 0.14); }
+html[data-theme="light"] .bg-\[\#111318\]:not(.on-dark *) { background-color: var(--surface); }
+html[data-theme="light"] .bg-\[\#181b22\]:not(.on-dark *) { background-color: var(--surface2); }
+html[data-theme="light"] .bg-\[\#1e2230\]:not(.on-dark *) { background-color: var(--border); }
+html[data-theme="light"] .border-\[\#1e2230\]:not(.on-dark *) { border-color: var(--border); }
+
+/* texto branco sobre botão rosa continua branco */
+html[data-theme="light"] .bg-\[\#ff4d9d\].text-white:not(.on-dark *),
+html[data-theme="light"] .from-\[\#ff4d9d\].text-white:not(.on-dark *) { color: #fff; }
+
+/* componentes */
+html[data-theme="light"] .glass-card {
+  background-color: #fff;
+  border-color: var(--border);
+  box-shadow: 0 1px 2px rgba(16, 22, 42, 0.04), 0 10px 28px -14px rgba(16, 22, 42, 0.14);
+}
+html[data-theme="light"] .glass { background-color: rgba(255, 255, 255, 0.8); border-color: var(--border); }
+html[data-theme="light"] .gradient-text { background-image: linear-gradient(to right, #0e7490, #6d28d9); }
+html[data-theme="light"] .aurora {
+  background:
+    radial-gradient(40% 50% at 20% 10%, rgba(14, 116, 144, 0.1), transparent 60%),
+    radial-gradient(40% 50% at 85% 15%, rgba(109, 40, 217, 0.08), transparent 60%);
+}
+html[data-theme="light"] .campo {
+  border-color: var(--border);
+  background: #fff;
+  color: var(--text);
+}
+html[data-theme="light"] ::-webkit-scrollbar-thumb { background: #c3cad9; }
+
+/* botão de tema: mostra o sol no escuro (leva ao claro) e a lua no claro (leva ao escuro) */
+.theme-toggle .ti-moon { display: none; }
+html[data-theme="light"] .theme-toggle .ti-sun { display: none; }
+html[data-theme="light"] .theme-toggle .ti-moon { display: block; }
