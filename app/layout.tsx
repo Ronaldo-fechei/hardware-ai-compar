@@ -105,7 +105,7 @@ gtag('consent', 'default', {
         <Header>
           <AuthNav />
         </Header>
-        <div className="flex flex-1">
+        <div className="flex flex-1 flex-col lg:flex-row">
           <Sidebar categorias={CATEGORIAS} />
           <main className="min-w-0 flex-1 overflow-y-auto">{children}</main>
         </div>

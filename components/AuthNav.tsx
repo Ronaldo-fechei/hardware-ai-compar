@@ -24,16 +24,13 @@ export default async function AuthNav() {
   }
 
   return (
-    <div className="flex items-center gap-4 text-sm">
+    <div className="flex items-center gap-2 text-sm sm:gap-4">
       {isAdminEmail(email) && (
         <Link href="/admin" className="text-brand-primary hover:underline">
           Admin
         </Link>
       )}
-      <Link href="/blog" className="hidden text-gray-400 hover:text-white sm:inline">
-        Blog
-      </Link>
-      <Link href="/historico" className="text-gray-400 hover:text-white">
+      <Link href="/historico" className="hidden text-gray-400 hover:text-white sm:inline">
         Histórico
       </Link>
       {email ? (
@@ -49,7 +46,7 @@ export default async function AuthNav() {
       ) : (
         <Link
           href="/login"
-          className="rounded-lg bg-gradient-to-r from-brand-primary to-brand-secondary px-4 py-1.5 font-semibold text-black"
+          className="rounded-lg bg-gradient-to-r from-brand-primary to-brand-secondary px-3 py-1.5 font-semibold text-black sm:px-4"
         >
           Entrar
         </Link>

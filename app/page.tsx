@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ComparePanel from "@/components/ComparePanel";
+import { Gta6LaunchFeature } from "@/components/Gta6LaunchFeature";
 import { ProdutoThumb } from "@/components/ProdutoThumb";
 import { PRODUTOS_ENRIQUECIDOS } from "@/lib/hardware-data";
 import { ehAfiliado } from "@/lib/afiliados";
@@ -93,6 +94,11 @@ export default async function Home({
       )}
 
       <div className="relative">
+        {/* PRIMEIRA DOBRA: banner do especial GTA VI + artigo "PC ideal".
+            Para tirar a campanha do ar depois do lançamento, basta remover
+            esta linha e o import lá em cima. */}
+        <Gta6LaunchFeature />
+
         {/* HERO EDITORIAL */}
         <section className="mx-auto max-w-6xl px-6 pb-6 pt-12 sm:pt-16">
           <p className="font-mono text-xs uppercase tracking-[2px] text-brand-primary">
@@ -148,26 +154,6 @@ export default async function Home({
               </Link>
             ))}
           </div>
-        </section>
-
-        {/* ESPECIAL GTA VI */}
-        <section className="mx-auto max-w-6xl px-6 py-6">
-          <Link
-            href="/blog/pc-para-rodar-gta-6-requisitos-2026"
-            className="glass-card group block p-6 transition hover:shadow-glow"
-          >
-            <span className="text-[10px] font-semibold uppercase tracking-wider text-brand-primary">
-              Especial GTA VI
-            </span>
-            <h2 className="mt-2 text-2xl font-bold text-white">
-              Que PC vai rodar GTA VI? O que já foi confirmado e o que ainda é projeção
-            </h2>
-            <p className="mt-2 text-sm text-gray-400">
-              O jogo chega aos consoles em 19 de novembro de 2026 e a versão de PC ainda não tem data
-              nem requisitos oficiais. Explicamos o que dá para planejar agora sem desperdiçar dinheiro.
-            </p>
-            <span className="mt-3 inline-block text-sm text-brand-primary">Ler o guia →</span>
-          </Link>
         </section>
 
         {/* COMPARADOR */}
