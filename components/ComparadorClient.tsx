@@ -114,7 +114,7 @@ export function ComparadorClient({ categoria, produtos, slugA, slugB }: Props) {
           <button
             onClick={handleComparar}
             className="flex-shrink-0 rounded-lg px-5 py-[11px] text-[12px] font-bold transition-all hover:-translate-y-px hover:opacity-90"
-            style={{ background: 'var(--accent)', color: '#0A0C10' }}
+            style={{ background: 'var(--accent)', color: 'var(--on-accent)' }}
           >
             Comparar →
           </button>

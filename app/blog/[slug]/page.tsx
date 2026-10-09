@@ -8,6 +8,7 @@ import { SITE_URL } from '@/lib/site'
 import { buscaAmazon } from '@/lib/afiliados'
 import { linkMercadoLivre } from '@/lib/mercadolivre-links'
 import { linkShopee } from '@/lib/shopee-links'
+import { corTexto } from '@/lib/tema'
 
 interface Props { params: Promise<{ slug: string }> }
 
@@ -235,7 +236,7 @@ function RenderSecao({ secao }: { secao: any }) {
         <div className="py-2">
           <Link href={secao.ctaHref || '/'}
             className="inline-flex items-center gap-2 rounded-xl px-6 py-3 text-[13px] font-bold transition-all hover:-translate-y-px hover:opacity-90"
-            style={{ background: 'var(--accent)', color: '#0A0C10' }}>
+            style={{ background: 'var(--accent)', color: 'var(--on-accent)' }}>
             {secao.ctaTexto || 'Saiba mais →'}
           </Link>
         </div>
@@ -269,14 +270,14 @@ export default async function ArtigoPage({ params }: Props) {
             <span style={{ opacity: 0.3 }}>/</span>
             <Link href="/blog" className="hover:text-[var(--label)] transition-colors">Blog</Link>
             <span style={{ opacity: 0.3 }}>/</span>
-            <span style={{ color: cor }}>{CAT_LABEL[artigo.categoria]}</span>
+            <span style={{ color: corTexto(cor) }}>{CAT_LABEL[artigo.categoria]}</span>
           </nav>
         </div>
 
         {/* HERO */}
         <div className="px-8 pt-4 pb-7" style={{ borderBottom: '1px solid var(--border)' }}>
           <span className="inline-block mb-4 rounded px-2 py-[3px] font-mono text-[9px] font-bold uppercase"
-            style={{ background: cor + '18', color: cor, border: `1px solid ${cor}40` }}>
+            style={{ background: cor + '18', color: corTexto(cor), border: `1px solid ${cor}40` }}>
             {CAT_LABEL[artigo.categoria]}
           </span>
           <h1 className="text-3xl font-bold mb-3 md:text-4xl" style={{ letterSpacing: '-1.5px', lineHeight: 1.1 }}>

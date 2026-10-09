@@ -33,7 +33,7 @@ export function Footer() {
       <p className="w-full text-[11px]" style={{ color: 'var(--label)' }}>
         Operado por <strong>MARTINS STORE COMERCIAL LTDA</strong> · CNPJ 54.471.703/0001-27 · Diadema/SP
       </p>
-      <p className="text-[10px] w-full mt-1" style={{ color: 'var(--muted)', opacity: 0.6 }}>
+      <p className="text-[10px] w-full mt-1" style={{ color: 'var(--muted)' }}>
         Como participante do Programa de Associados da Amazon, o BestHard é remunerado pelas compras qualificadas efetuadas.
         Alguns links do Mercado Livre e da Shopee também podem gerar comissão. A comissão não interfere nas análises e os preços podem mudar nas lojas.
       </p>

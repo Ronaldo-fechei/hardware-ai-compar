@@ -7,6 +7,7 @@ import { BlocoPrecos } from '@/components/BlocoPrecos'
 import { ProdutoThumb } from '@/components/ProdutoThumb'
 import { SITE_URL } from '@/lib/site'
 import { ehAfiliado } from '@/lib/afiliados'
+import { corTexto } from '@/lib/tema'
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -181,7 +182,7 @@ export default async function ProdutoPage({ params }: Props) {
               <div className="flex items-center gap-3">
                 <div
                   className="w-14 h-14 rounded-xl flex items-center justify-center font-mono text-xl font-bold"
-                  style={{ background: 'var(--surface)', border: `2px solid ${cat?.cor || 'var(--accent)'}`, color: cat?.cor || 'var(--accent)' }}
+                  style={{ background: 'var(--surface)', border: `2px solid ${cat?.cor || 'var(--accent)'}`, color: corTexto(cat?.cor || 'var(--accent)') }}
                 >
                   {produto.score}
                 </div>
@@ -371,13 +372,13 @@ export default async function ProdutoPage({ params }: Props) {
                     <div className="flex items-center justify-between">
                       <span
                         className="font-mono text-base font-bold"
-                        style={{ color: cat?.cor || 'var(--accent)' }}
+                        style={{ color: corTexto(cat?.cor || 'var(--accent)') }}
                       >
                         {alt!.score}
                       </span>
                       <span
                         className="text-[11px] font-semibold opacity-0 group-hover:opacity-100 transition-opacity"
-                        style={{ color: cat?.cor || 'var(--accent)' }}
+                        style={{ color: corTexto(cat?.cor || 'var(--accent)') }}
                       >
                         Comparar →
                       </span>

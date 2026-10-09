@@ -125,7 +125,7 @@ export function Gta6LaunchFeature() {
       {/* ───────────────────────── BANNER (primeira dobra) ───────────────────────── */}
       <section
         aria-labelledby="gta6-banner-title"
-        className="relative"
+        className="on-dark relative"
       >
         <div className="relative isolate overflow-hidden border-b border-white/10 bg-[#080912]">
           <Image

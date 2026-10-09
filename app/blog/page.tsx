@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import { getArtigos, getArtigosDestaque } from '@/lib/blog-data'
 import { SITE_URL } from '@/lib/site'
+import { corTexto } from '@/lib/tema'
 
 export const metadata: Metadata = {
   title: 'Blog — Guias, Comparativos e Builds | BestHard',
@@ -68,7 +69,7 @@ export default function BlogPage() {
                 {/* Badge categoria */}
                 <span
                   className="inline-block mb-3 rounded px-2 py-[2px] font-mono text-[9px] font-bold uppercase"
-                  style={{ background: cor + '18', color: cor, border: `1px solid ${cor}40` }}
+                  style={{ background: cor + '18', color: corTexto(cor), border: `1px solid ${cor}40` }}
                 >
                   {CAT_LABEL[a.categoria]}
                 </span>
@@ -91,7 +92,7 @@ export default function BlogPage() {
                   </div>
                   <span
                     className="text-[12px] font-bold opacity-0 group-hover:opacity-100 transition-opacity"
-                    style={{ color: cor }}
+                    style={{ color: corTexto(cor) }}
                   >
                     Ler artigo →
                   </span>
@@ -123,7 +124,7 @@ export default function BlogPage() {
                   <div className="flex items-center gap-2 mb-1">
                     <span
                       className="rounded px-[6px] py-[1px] font-mono text-[8px] font-bold uppercase"
-                      style={{ background: cor + '18', color: cor }}
+                      style={{ background: cor + '18', color: corTexto(cor) }}
                     >
                       {CAT_LABEL[a.categoria]}
                     </span>
@@ -136,7 +137,7 @@ export default function BlogPage() {
                 </div>
                 <span
                   className="text-[12px] font-bold flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity"
-                  style={{ color: cor }}
+                  style={{ color: corTexto(cor) }}
                 >
                   Ler →
                 </span>

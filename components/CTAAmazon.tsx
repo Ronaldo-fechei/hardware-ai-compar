@@ -1,4 +1,5 @@
 import { buscaAmazon } from '@/lib/afiliados'
+import { corTexto } from '@/lib/tema'
 
 interface Props {
   /** Termo de busca na Amazon (define o que aparece na loja). */
@@ -27,7 +28,7 @@ export function CTAAmazon({
       <div className="flex items-center gap-3 min-w-0">
         <span className="text-2xl flex-shrink-0">📦</span>
         <div className="min-w-0">
-          <p className="font-mono text-[8px] font-bold uppercase tracking-[1px]" style={{ color: '#FF9900' }}>Publicidade</p>
+          <p className="font-mono text-[8px] font-bold uppercase tracking-[1px]" style={{ color: corTexto('#FF9900', true) }}>Publicidade</p>
           <p className="text-[14px] font-bold" style={{ color: 'var(--text)' }}>{titulo}</p>
           <p className="text-[11px]" style={{ color: 'var(--muted)' }}>{texto}</p>
         </div>

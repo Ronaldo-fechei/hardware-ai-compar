@@ -84,7 +84,18 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="pt-BR">
+    <html lang="pt-BR" data-theme="dark" suppressHydrationWarning>
+      <head>
+        {/* Aplica o tema salvo ANTES da primeira pintura, para a página não
+            piscar escuro->claro. Sem preferência salva (ou sem JavaScript), vale
+            o tema escuro, que é o visual original do site. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "try{var t=localStorage.getItem('besthard-theme');document.documentElement.dataset.theme=t==='light'?'light':'dark'}catch(e){}",
+          }}
+        />
+      </head>
       <body className="flex min-h-screen flex-col font-sans antialiased">
         <Script id="google-consent-mode-default" strategy="beforeInteractive">
           {`window.dataLayer = window.dataLayer || [];

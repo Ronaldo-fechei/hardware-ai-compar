@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import type { CategoriaConfig } from '@/types/hardware'
 import { getProdutosByCategoria } from '@/lib/hardware-data'
+import { corTexto } from '@/lib/tema'
 
 interface Props { categorias: CategoriaConfig[] }
 
@@ -51,7 +52,7 @@ export function Sidebar({ categorias }: Props) {
                 )}
                 <span className="w-5 text-center text-base">{cat.icon}</span>
                 <span className="flex-1 truncate text-[12px] font-semibold"
-                  style={{ color: isActive ? cat.cor : 'var(--text)' }}>
+                  style={{ color: isActive ? corTexto(cat.cor) : 'var(--text)' }}>
                   {cat.label}
                 </span>
                 <span className="flex-shrink-0 rounded px-[5px] py-[1px] font-mono text-[9px]"
