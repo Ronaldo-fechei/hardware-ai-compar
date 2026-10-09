@@ -10,8 +10,26 @@ export function Sidebar({ categorias }: Props) {
   const pathname = usePathname()
 
   return (
+    <>
+    {/* Celular/tablet: a barra lateral de 220px comia mais da metade da tela.
+        Abaixo de lg ela some e as categorias viram uma faixa rolável. */}
+    <nav
+      aria-label="Categorias de hardware"
+      className="flex gap-2 overflow-x-auto border-b px-3 py-2 lg:hidden"
+      style={{ background: 'var(--surface)', borderColor: 'var(--border)' }}
+    >
+      {categorias.filter((c) => c.disponivel).map((cat) => (
+        <Link key={cat.slug} href={`/comparar/${cat.slug}`}
+          className="flex flex-shrink-0 items-center gap-[6px] rounded-full border px-3 py-[6px] text-[12px] font-semibold"
+          style={{ borderColor: 'var(--border)', color: 'var(--text)', background: pathname === `/comparar/${cat.slug}` ? 'var(--surface2)' : 'transparent' }}
+        >
+          <span aria-hidden="true">{cat.icon}</span>
+          {cat.label}
+        </Link>
+      ))}
+    </nav>
     <aside
-      className="sticky top-[52px] flex h-[calc(100vh-52px)] w-[220px] flex-shrink-0 flex-col overflow-y-auto border-r"
+      className="sticky top-[52px] hidden h-[calc(100vh-52px)] w-[220px] flex-shrink-0 flex-col overflow-y-auto border-r lg:flex"
       style={{ background: 'var(--surface)', borderColor: 'var(--border)' }}
     >
       <div className="p-3 pb-2">
@@ -93,5 +111,6 @@ export function Sidebar({ categorias }: Props) {
         </div>
       </div>
     </aside>
+    </>
   )
 }

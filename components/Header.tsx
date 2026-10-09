@@ -24,16 +24,16 @@ export function Header({ children }: { children?: React.ReactNode }) {
 
   return (
     <header
-      className="sticky top-0 z-50 flex h-[52px] items-center justify-between border-b px-5 gap-4"
+      className="sticky top-0 z-50 flex h-[52px] items-center justify-between gap-2 border-b px-3 sm:gap-4 sm:px-5"
       style={{ background: 'rgba(10,12,16,.95)', borderColor: 'var(--border)', backdropFilter: 'blur(12px)' }}
     >
       <Link href="/" className="flex items-center gap-2 text-[17px] font-bold flex-shrink-0" style={{ letterSpacing: '-0.5px' }}>
         <img src="/logo.svg" alt="BestHard" width={30} height={30} className="rounded-md" />
-        Best<span style={{ color: 'var(--accent)' }}>Hard</span>
+        <span>Best<span style={{ color: 'var(--accent)' }}>Hard</span></span>
       </Link>
 
       <form onSubmit={handleSearch}
-        className="flex flex-1 max-w-[380px] overflow-hidden rounded-lg border"
+        className="hidden flex-1 max-w-[380px] overflow-hidden rounded-lg border md:flex"
         style={{ background: 'var(--surface)', borderColor: 'var(--border)' }}>
         <input
           name="q"
@@ -47,7 +47,7 @@ export function Header({ children }: { children?: React.ReactNode }) {
         </button>
       </form>
 
-      <nav className="flex items-center gap-1 flex-shrink-0">
+      <nav className="ml-auto flex flex-shrink-0 items-center gap-1">
         <Link href="/blog"
           className="px-3 py-[6px] rounded-lg text-[12px] font-semibold transition-colors hover:bg-[var(--surface2)]"
           style={{ color: 'var(--label)' }}>
