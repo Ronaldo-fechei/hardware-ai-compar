@@ -125,83 +125,85 @@ export function Gta6LaunchFeature() {
       {/* ───────────────────────── BANNER (primeira dobra) ───────────────────────── */}
       <section
         aria-labelledby="gta6-banner-title"
-        className="relative mx-auto max-w-6xl px-4 pt-4 sm:px-6 sm:pt-6"
+        className="relative"
       >
-        <div className="relative isolate overflow-hidden rounded-3xl border border-white/10 bg-[#080912] shadow-[0_30px_100px_rgba(0,0,0,0.55)]">
+        <div className="relative isolate overflow-hidden border-b border-white/10 bg-[#080912]">
           <Image
             src="/gta6-pc-hero.png"
             alt="Cidade tropical iluminada por néons ao anoitecer, com palmeiras e um carro esportivo"
             fill
             priority
-            sizes="(max-width: 1152px) 100vw, 1152px"
+            sizes="100vw"
             className="object-cover object-[88%_center] sm:object-center"
           />
           {/* Escurecimento: horizontal no desktop (texto à esquerda), vertical no celular (texto embaixo). */}
-          <div className="absolute inset-0 hidden bg-[linear-gradient(90deg,rgba(5,7,15,0.98)_0%,rgba(5,7,15,0.88)_34%,rgba(5,7,15,0.3)_68%,rgba(5,7,15,0.08)_100%)] sm:block" />
+          <div className="absolute inset-0 hidden bg-[linear-gradient(90deg,rgba(5,7,15,0.98)_0%,rgba(5,7,15,0.9)_38%,rgba(5,7,15,0.42)_64%,rgba(5,7,15,0.06)_100%)] sm:block" />
           <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(5,7,15,0.97)_0%,rgba(5,7,15,0.82)_46%,rgba(5,7,15,0.05)_100%)] sm:bg-[linear-gradient(0deg,rgba(5,7,15,0.7)_0%,transparent_42%)]" />
           <div
             aria-hidden="true"
             className="pointer-events-none absolute -left-24 top-1/4 h-72 w-72 rounded-full bg-[#ff4d9d]/20 blur-3xl"
           />
 
-          <div className="relative z-10 flex min-h-[600px] max-w-[700px] flex-col justify-end px-5 pb-8 pt-44 sm:min-h-[560px] sm:justify-center sm:px-12 sm:py-14 lg:px-14">
-            <div className="mb-5 flex flex-wrap items-center gap-2 text-[11px] font-bold uppercase tracking-[0.16em] sm:text-xs">
-              <span className="rounded-full border border-[#ff4d9d]/40 bg-[#ff4d9d]/15 px-3 py-1.5 text-[#ff82bb]">
-                Especial GTA VI
-              </span>
-              <Gta6Countdown alvo={LANCAMENTO_ISO} />
-            </div>
+          <div className="relative z-10 mx-auto flex min-h-[600px] w-full max-w-6xl flex-col justify-end px-6 pb-8 pt-44 sm:min-h-[600px] sm:justify-center sm:py-16 lg:min-h-[640px]">
+            <div className="max-w-[700px]">
+              <div className="mb-5 flex flex-wrap items-center gap-2 text-[11px] font-bold uppercase tracking-[0.16em] sm:text-xs">
+                <span className="rounded-full border border-[#ff4d9d]/40 bg-[#ff4d9d]/15 px-3 py-1.5 text-[#ff82bb]">
+                  Especial GTA VI
+                </span>
+                <Gta6Countdown alvo={LANCAMENTO_ISO} />
+              </div>
 
-            <p className="mb-3 font-mono text-xs uppercase tracking-[0.26em] text-[#38e7ff]">
-              Guia de preparação BestHard
-            </p>
-            <h2
-              id="gta6-banner-title"
-              className="text-balance text-[2.35rem] font-black leading-[1.02] text-white sm:text-5xl lg:text-6xl"
-            >
-              Seu PC está preparado para o{" "}
-              <span className="bg-gradient-to-r from-[#ff4d9d] via-[#ff8a5b] to-[#3de7ff] bg-clip-text text-transparent">
-                jogo do ano?
-              </span>
-            </h2>
-            <p className="mt-5 max-w-xl text-base leading-relaxed text-white/75 sm:text-lg">
-              GTA VI chega aos consoles em 19 de novembro. No PC ainda não há data, mas quem se
-              prepara agora escolhe melhor e não paga caro por impulso. Veja a build que
-              montaríamos, só com peças que já comparamos aqui.
-            </p>
-
-            <div className="mt-7 flex flex-col gap-3 sm:flex-row">
-              <a
-                href="#pc-ideal-gta6"
-                className="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-[#ff4d9d] to-[#ff8059] px-6 py-3.5 text-sm font-black text-white shadow-[0_14px_38px_rgba(255,77,157,0.3)] transition hover:-translate-y-0.5 hover:shadow-[0_18px_48px_rgba(255,77,157,0.42)]"
+              <p className="mb-3 font-mono text-xs uppercase tracking-[0.26em] text-[#38e7ff]">
+                Guia de preparação BestHard
+              </p>
+              <h2
+                id="gta6-banner-title"
+                className="text-balance text-[2.35rem] font-black leading-[1.02] text-white sm:text-5xl lg:text-6xl"
               >
-                Ver o PC ideal para GTA VI <span aria-hidden="true" className="ml-2">↓</span>
-              </a>
-              <Link
-                href="/gargalo"
-                className="inline-flex items-center justify-center rounded-xl border border-white/20 bg-black/30 px-6 py-3.5 text-sm font-bold text-white backdrop-blur-md transition hover:border-[#38e7ff]/60 hover:bg-[#38e7ff]/10"
-              >
-                Testar o meu PC
-              </Link>
-            </div>
+                Seu PC está preparado para o{" "}
+                <span className="bg-gradient-to-r from-[#ff4d9d] via-[#ff8a5b] to-[#3de7ff] bg-clip-text text-transparent">
+                  jogo do ano?
+                </span>
+              </h2>
+              <p className="mt-5 max-w-xl text-base leading-relaxed text-white/75 sm:text-lg">
+                GTA VI chega aos consoles em 19 de novembro. No PC ainda não há data, mas quem se
+                prepara agora escolhe melhor e não paga caro por impulso. Veja a build que
+                montaríamos, só com peças que já comparamos aqui.
+              </p>
 
-            <ul className="mt-7 grid max-w-xl grid-cols-2 gap-2 sm:grid-cols-4" aria-label="Metas da build">
-              {STATS.map((s) => (
-                <li
-                  key={s.rotulo}
-                  className="rounded-xl border border-white/10 bg-black/35 px-3 py-2.5 backdrop-blur-md"
+              <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+                <a
+                  href="#pc-ideal-gta6"
+                  className="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-[#ff4d9d] to-[#ff8059] px-6 py-3.5 text-sm font-black text-white shadow-[0_14px_38px_rgba(255,77,157,0.3)] transition hover:-translate-y-0.5 hover:shadow-[0_18px_48px_rgba(255,77,157,0.42)]"
                 >
-                  <span className="block text-lg font-black leading-none text-white">{s.valor}</span>
-                  <span className="mt-1 block text-[10px] uppercase tracking-wider text-white/55">
-                    {s.rotulo}
-                  </span>
-                </li>
-              ))}
-            </ul>
+                  Ver o PC ideal para GTA VI <span aria-hidden="true" className="ml-2">↓</span>
+                </a>
+                <Link
+                  href="/gargalo"
+                  className="inline-flex items-center justify-center rounded-xl border border-white/20 bg-black/30 px-6 py-3.5 text-sm font-bold text-white backdrop-blur-md transition hover:border-[#38e7ff]/60 hover:bg-[#38e7ff]/10"
+                >
+                  Testar o meu PC
+                </Link>
+              </div>
 
-            <p className="mt-5 max-w-lg text-xs leading-relaxed text-white/50">
-              Projeção editorial. Não representa requisitos oficiais da Rockstar Games.
-            </p>
+              <ul className="mt-7 grid max-w-xl grid-cols-2 gap-2 sm:grid-cols-4" aria-label="Metas da build">
+                {STATS.map((s) => (
+                  <li
+                    key={s.rotulo}
+                    className="rounded-xl border border-white/10 bg-black/35 px-3 py-2.5 backdrop-blur-md"
+                  >
+                    <span className="block text-lg font-black leading-none text-white">{s.valor}</span>
+                    <span className="mt-1 block text-[10px] uppercase tracking-wider text-white/55">
+                      {s.rotulo}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+
+              <p className="mt-5 max-w-lg text-xs leading-relaxed text-white/50">
+                Projeção editorial. Não representa requisitos oficiais da Rockstar Games.
+              </p>
+            </div>
           </div>
         </div>
       </section>
