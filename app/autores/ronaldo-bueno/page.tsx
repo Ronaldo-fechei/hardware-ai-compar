@@ -32,6 +32,7 @@ export const metadata: Metadata = {
     type: 'profile',
     title: NOME,
     description: `${CARGO} — comparativos de hardware com preço do mercado brasileiro.`,
+    images: [{ url: '/og.png', width: 1200, height: 630, alt: 'BestHard' }],
   },
 }
 

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Script from "next/script";
+import { Space_Grotesk, JetBrains_Mono } from "next/font/google";
 import { Header } from "@/components/Header";
 import { Sidebar } from "@/components/Sidebar";
 import { Footer } from "@/components/Footer";
@@ -8,6 +9,31 @@ import { CookieConsent } from "@/components/CookieConsent";
 import AuthNav from "@/components/AuthNav";
 import { CATEGORIAS } from "@/lib/hardware-data";
 import { SITE_URL } from "@/lib/site";
+
+// Fontes servidas pelo próprio site (next/font), em vez do @import de CSS do Google
+// que ficava no globals.css: o @import é descoberto só depois de o CSS do site
+// baixar e bloqueia a pintura, o que pesava no FCP/LCP do celular.
+const fonteSans = Space_Grotesk({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
+  variable: "--font-sans",
+});
+const fonteMono = JetBrains_Mono({
+  subsets: ["latin"],
+  weight: ["400", "600"],
+  display: "swap",
+  variable: "--font-mono",
+});
+
+// Imagem de compartilhamento padrão (1200x630). Páginas que definem o próprio
+// openGraph precisam repetir `images`: o Next substitui o objeto inteiro.
+const OG_PADRAO = {
+  url: "/og.png",
+  width: 1200,
+  height: 630,
+  alt: "BestHard — guias e comparativos de hardware para PC",
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -32,11 +58,13 @@ export const metadata: Metadata = {
     description:
       "Guias de compra, comparativos e ferramentas para montar e atualizar seu PC.",
     siteName: "BestHard",
+    images: [OG_PADRAO],
   },
   twitter: {
     card: "summary_large_image",
     title: "BestHard",
     description: "Comparativos e guias de hardware para PC.",
+    images: [OG_PADRAO.url],
   },
   // Meta tags de verificação de propriedade do domínio (renderizadas no <head>).
   other: {
@@ -84,7 +112,12 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="pt-BR" data-theme="dark" suppressHydrationWarning>
+    <html
+      lang="pt-BR"
+      data-theme="dark"
+      className={`${fonteSans.variable} ${fonteMono.variable}`}
+      suppressHydrationWarning
+    >
       <head>
         {/* Aplica o tema salvo ANTES da primeira pintura, para a página não
             piscar escuro->claro. Sem preferência salva (ou sem JavaScript), vale
