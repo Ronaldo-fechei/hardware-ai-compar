@@ -25,8 +25,8 @@ const config: Config = {
         textc: "#E8EAF0",
       },
       fontFamily: {
-        sans: ["Space Grotesk", "system-ui", "sans-serif"],
-        mono: ["JetBrains Mono", "monospace"],
+        sans: ["var(--font-sans)", "Space Grotesk", "system-ui", "sans-serif"],
+        mono: ["var(--font-mono)", "JetBrains Mono", "monospace"],
       },
       boxShadow: {
         glow: "0 0 40px -10px rgba(0, 229, 255, 0.45)",

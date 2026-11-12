@@ -5,14 +5,20 @@ import { SITE_URL } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const revisaoEditorial = "2026-07-16T12:00:00-03:00";
+  // A home e a listagem do blog mudam a cada artigo novo ou atualizado. Com a data
+  // fixa de antes, o Google lia as duas como "paradas desde julho".
+  const ultimaDoBlog = ARTIGOS.map((a) => a.dataAtualizacao || a.dataPublicacao)
+    .sort()
+    .at(-1)!;
+  const modificadoBlog = `${ultimaDoBlog}T12:00:00-03:00`;
 
   const estaticas: MetadataRoute.Sitemap = [
-    { url: SITE_URL, lastModified: revisaoEditorial, changeFrequency: "weekly", priority: 1.0 },
+    { url: SITE_URL, lastModified: modificadoBlog, changeFrequency: "weekly", priority: 1.0 },
     { url: `${SITE_URL}/catalogo`, lastModified: revisaoEditorial, changeFrequency: "weekly", priority: 0.9 },
     { url: `${SITE_URL}/montar`, lastModified: revisaoEditorial, changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE_URL}/gargalo`, lastModified: revisaoEditorial, changeFrequency: "monthly", priority: 0.7 },
     { url: `${SITE_URL}/builds`, lastModified: revisaoEditorial, changeFrequency: "monthly", priority: 0.7 },
-    { url: `${SITE_URL}/blog`, lastModified: revisaoEditorial, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${SITE_URL}/blog`, lastModified: modificadoBlog, changeFrequency: "weekly", priority: 0.9 },
     { url: `${SITE_URL}/sobre`, lastModified: revisaoEditorial, changeFrequency: "yearly", priority: 0.5 },
     { url: `${SITE_URL}/metodologia`, lastModified: revisaoEditorial, changeFrequency: "yearly", priority: 0.6 },
     { url: `${SITE_URL}/transparencia`, lastModified: revisaoEditorial, changeFrequency: "yearly", priority: 0.5 },

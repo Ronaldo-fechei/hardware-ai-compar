@@ -8,6 +8,8 @@ export interface Artigo {
   autor: string
   dataPublicacao: string
   dataAtualizacao?: string
+  /** Imagem de compartilhamento (1200x630) em /public. Sem ela, vale a padrão /og.png. */
+  capa?: string
   tempoLeitura: number
   destaque: boolean
   conteudo: SecaoArtigo[]
@@ -1854,6 +1856,7 @@ export const ARTIGOS: Artigo[] = [
     categoria: 'guias',
     tags: ['gta 6', 'gta vi', 'requisitos gta 6', 'pc para gta 6', 'requisitos mínimos', 'placa de vídeo', 'build gta 6', 'grand theft auto vi'],
     autor: 'Ronaldo Bueno',
+    capa: '/og-gta6.jpg',
     dataPublicacao: '2026-07-03',
     dataAtualizacao: '2026-11-12',
     destaque: true,
@@ -2012,6 +2015,7 @@ export const ARTIGOS: Artigo[] = [
     categoria: 'comparativos',
     tags: ['gta 6', 'placa de vídeo', 'gpu para gta 6', 'melhor gpu gta 6', 'rtx 4060', 'requisitos gta 6', '1080p', '4k'],
     autor: 'Ronaldo Bueno',
+    capa: '/og-gta6.jpg',
     dataPublicacao: '2026-07-03',
     dataAtualizacao: '2026-11-12',
     destaque: true,
@@ -2131,6 +2135,7 @@ export const ARTIGOS: Artigo[] = [
     categoria: 'guias',
     tags: ['gta 6', 'gta 6 roda no meu pc', 'requisitos gta 6', 'configuração do pc', 'como ver specs do pc', 'gargalo'],
     autor: 'Ronaldo Bueno',
+    capa: '/og-gta6.jpg',
     dataPublicacao: '2026-07-03',
     dataAtualizacao: '2026-11-12',
     destaque: false,
@@ -3344,6 +3349,7 @@ export const ARTIGOS: Artigo[] = [
     categoria: 'guias',
     tags: ['gta 6 pc', 'data de lançamento gta 6 pc', 'gta 6 pc release date', 'gta 6 requisitos', 'gta 6 pc ou ps5', 'gta vi', 'rockstar', 'pc gamer'],
     autor: 'Ronaldo Bueno',
+    capa: '/og-gta6.jpg',
     dataPublicacao: '2026-11-12',
     destaque: false,
     tempoLeitura: 8,
