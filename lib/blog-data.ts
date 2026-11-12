@@ -1855,6 +1855,7 @@ export const ARTIGOS: Artigo[] = [
     tags: ['gta 6', 'gta vi', 'requisitos gta 6', 'pc para gta 6', 'requisitos mínimos', 'placa de vídeo', 'build gta 6', 'grand theft auto vi'],
     autor: 'Ronaldo Bueno',
     dataPublicacao: '2026-07-03',
+    dataAtualizacao: '2026-11-12',
     destaque: true,
     tempoLeitura: 11,
     produtosRelacionados: ['nvidia-geforce-rtx-4060', 'amd-radeon-rx-7600', 'nvidia-geforce-rtx-4070-super', 'amd-ryzen-7-9800x3d'],
@@ -1870,7 +1871,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'destaque',
         destaqueTipo: 'aviso',
-        texto: '⚠️ Importante: a Rockstar ainda NÃO divulgou os requisitos oficiais de PC para GTA 6. A versão de PC costuma chegar depois das versões de console. Os números abaixo são estimativas baseadas na ambição gráfica do jogo, no hardware dos consoles atuais e no histórico da Rockstar (RDR2/GTA V). Vamos atualizar este guia assim que a Rockstar publicar os requisitos oficiais.',
+        texto: '⚠️ Atualizado em 12/11/2026: GTA 6 chega em 19 de novembro para PS5 e Xbox Series X|S, e a Rockstar ainda NÃO anunciou versão de PC, data ou requisitos oficiais. Os números abaixo são estimativas baseadas na ambição gráfica do jogo, no hardware dos consoles e no histórico da Rockstar (GTA V e RDR2 chegaram ao PC depois dos consoles). Vamos atualizar este guia assim que a Rockstar publicar os requisitos oficiais.',
       },
       {
         tipo: 'h2',
@@ -1885,14 +1886,14 @@ export const ARTIGOS: Artigo[] = [
           ['Placa de Vídeo', 'GTX 1660 Super / RX 5600 XT', 'RTX 4060 / RX 7600', 'RTX 4080 Super / RTX 4090'],
           ['Memória RAM', '16 GB', '16 GB', '32 GB'],
           ['Armazenamento', 'SSD SATA (obrigatório)', 'SSD NVMe', 'SSD NVMe Gen4'],
-          ['Espaço em disco', '~150 GB', '~150 GB', '~150 GB'],
+          ['Espaço em disco', 'Reserve 250 GB livres', 'Reserve 250 GB livres', 'Reserve 250 GB livres'],
           ['Sistema', 'Windows 10/11 64-bit', 'Windows 11 64-bit', 'Windows 11 64-bit'],
         ],
       },
       {
         tipo: 'destaque',
         destaqueTipo: 'dica',
-        texto: '💡 SSD deixou de ser luxo: assim como em muitos jogos modernos, é praticamente certo que GTA 6 vá exigir SSD (não HD). O carregamento em mundo aberto e o streaming de texturas dependem da velocidade do SSD. Se você ainda usa HD, este é o upgrade número 1 antes do lançamento.',
+        texto: '💡 SSD deixou de ser luxo: assim como em muitos jogos modernos, é praticamente certo que GTA 6 vá exigir SSD (não HD). O carregamento em mundo aberto e o streaming de texturas dependem da velocidade do SSD. Se você ainda usa HD, este é o upgrade número 1 antes do lançamento. Sobre espaço: nos consoles, a Rockstar informou que o download antecipado chega a até 212 GB; para o PC ainda não há número oficial, por isso a nossa margem de 250 GB livres.',
       },
       {
         tipo: 'h2',
@@ -1950,7 +1951,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'h2',
         titulo: 'Devo montar/atualizar meu PC agora ou esperar?',
-        texto: 'A versão de PC de GTA 6 provavelmente chega depois das versões de console, então há tempo. Nossa recomendação: se você já quer jogar outros títulos agora, monte um PC na faixa recomendada (RTX 4060/RX 7600 + CPU atual + SSD) — ele roda tudo hoje e estará muito bem posicionado para GTA 6. Se você só liga para GTA 6, vale esperar os requisitos oficiais e possíveis lançamentos de novas placas antes de gastar. O que não muda em nenhum cenário: garanta 16GB+ de RAM e um SSD.',
+        texto: 'A versão de PC de GTA 6 provavelmente chega depois das versões de console, então há tempo. Um relato do GamesBeat de 13/10/2026, baseado em fontes anônimas, aponta o primeiro trimestre de 2027 para o PC, mas a Rockstar não confirmou nada. Nossa recomendação: se você já quer jogar outros títulos agora, monte um PC na faixa recomendada (RTX 4060/RX 7600 + CPU atual + SSD) — ele roda tudo hoje e estará muito bem posicionado para GTA 6. Se você só liga para GTA 6, vale esperar os requisitos oficiais e possíveis lançamentos de novas placas antes de gastar. O que não muda em nenhum cenário: garanta 16GB+ de RAM e um SSD.',
       },
       {
         tipo: 'destaque',
@@ -1987,11 +1988,15 @@ export const ARTIGOS: Artigo[] = [
       },
       {
         pergunta: 'Quando GTA 6 chega para PC?',
-        resposta: 'A Rockstar historicamente lança primeiro nos consoles e traz a versão de PC depois (foi assim com GTA V e Red Dead Redemption 2). Uma data oficial de PC ainda não foi confirmada — por isso vale acompanhar os anúncios da Rockstar. Enquanto isso, montar um PC na faixa recomendada já deixa você pronto.',
+        resposta: 'GTA 6 chega em 19 de novembro de 2026 para PS5 e Xbox Series X|S. Para PC não existe data oficial: a Rockstar não anunciou a versão. A empresa costuma lançar primeiro nos consoles (GTA V levou cerca de 19 meses e Red Dead Redemption 2, cerca de um ano). Um relato não confirmado do GamesBeat cita o primeiro trimestre de 2027, então acompanhe os anúncios da Rockstar.',
       },
       {
         pergunta: 'Quanto de RAM preciso para GTA 6?',
         resposta: '16GB deve ser o mínimo confortável, e 32GB é a aposta segura para quem quer folga em 4K e para os próximos anos. Lembre de usar a memória em dual channel (2 pentes) para o melhor desempenho.',
+      },
+      {
+        pergunta: 'Quanto espaço GTA 6 ocupa?',
+        resposta: 'No console, a Rockstar informou que o download antecipado pode chegar a 212 GB, dependendo do aparelho. Para o PC não há tamanho oficial. Como margem, reserve pelo menos 250 GB livres, de preferência em um SSD NVMe.',
       },
     ],
   },
@@ -2008,6 +2013,7 @@ export const ARTIGOS: Artigo[] = [
     tags: ['gta 6', 'placa de vídeo', 'gpu para gta 6', 'melhor gpu gta 6', 'rtx 4060', 'requisitos gta 6', '1080p', '4k'],
     autor: 'Ronaldo Bueno',
     dataPublicacao: '2026-07-03',
+    dataAtualizacao: '2026-11-12',
     destaque: true,
     tempoLeitura: 9,
     produtosRelacionados: ['nvidia-geforce-rtx-4060', 'amd-radeon-rx-7600', 'nvidia-geforce-rtx-4070', 'nvidia-geforce-rtx-4080-super'],
@@ -2023,7 +2029,7 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'destaque',
         destaqueTipo: 'aviso',
-        texto: '⚠️ Requisitos ainda não oficiais: a Rockstar não publicou os requisitos de PC de GTA 6. As recomendações abaixo são estimativas baseadas na ambição gráfica do jogo e no hardware dos consoles atuais (PS5/Xbox Series X). Atualizaremos assim que os requisitos oficiais saírem.',
+        texto: '⚠️ Requisitos ainda não oficiais (atualizado em 12/11/2026): GTA 6 chega em 19 de novembro para PS5 e Xbox Series X|S, mas a Rockstar não anunciou versão de PC nem requisitos. As recomendações abaixo são estimativas baseadas na ambição gráfica do jogo e no hardware dos consoles (PS5/Xbox Series X). Atualizaremos assim que os requisitos oficiais saírem.',
       },
       {
         tipo: 'h2',
@@ -2126,6 +2132,7 @@ export const ARTIGOS: Artigo[] = [
     tags: ['gta 6', 'gta 6 roda no meu pc', 'requisitos gta 6', 'configuração do pc', 'como ver specs do pc', 'gargalo'],
     autor: 'Ronaldo Bueno',
     dataPublicacao: '2026-07-03',
+    dataAtualizacao: '2026-11-12',
     destaque: false,
     tempoLeitura: 8,
     conteudo: [
@@ -2136,6 +2143,11 @@ export const ARTIGOS: Artigo[] = [
       {
         tipo: 'adsense',
         anuncioId: 'gta6-roda-topo',
+      },
+      {
+        tipo: 'destaque',
+        destaqueTipo: 'novidade',
+        texto: '📅 Atualizado em 12/11/2026: GTA 6 chega em 19 de novembro para PS5 e Xbox Series X|S. A versão de PC ainda não foi anunciada e não há requisitos oficiais, por isso este passo a passo compara o seu PC com requisitos estimados. No console, a Rockstar informou que o download antecipado chega a até 212 GB, então confira também o espaço livre do seu SSD.',
       },
       {
         tipo: 'h2',
@@ -3317,6 +3329,203 @@ export const ARTIGOS: Artigo[] = [
       {
         pergunta: 'Como saber se o problema é o processador ou a placa de vídeo?',
         resposta: 'Abra o gerenciador de tarefas durante o jogo e observe. Se a placa de vídeo está próxima de 100% de uso, ela é o limite e o PC está equilibrado. Se a placa de vídeo está em 60% ou 70% enquanto o FPS está baixo, o gargalo é o processador ou a memória. Essa única observação evita a maior parte dos upgrades errados.',
+      },
+    ],
+  },
+  // ════════════════════════════════════════════════════════
+  // ARTIGO — GTA 6 no PC: quando sai e o que se sabe (semana do lançamento)
+  // Conferido em 12/11/2026 em páginas da Rockstar e na imprensa especializada.
+  // ════════════════════════════════════════════════════════
+  {
+    slug: 'gta-6-no-pc-quando-sai-o-que-se-sabe-2026',
+    titulo: 'GTA 6 no PC: Quando Sai? O Que Se Sabe em Novembro de 2026',
+    subtitulo: 'O console tem data. O PC continua sem data, sem requisitos e sem loja anunciada',
+    descricao: 'GTA 6 sai em 19/11 para PS5 e Xbox. E o PC? Veja o que a Rockstar confirmou, o que é só rumor, o histórico de GTA V e RDR2 e como se preparar sem gastar à toa.',
+    categoria: 'guias',
+    tags: ['gta 6 pc', 'data de lançamento gta 6 pc', 'gta 6 pc release date', 'gta 6 requisitos', 'gta 6 pc ou ps5', 'gta vi', 'rockstar', 'pc gamer'],
+    autor: 'Ronaldo Bueno',
+    dataPublicacao: '2026-11-12',
+    destaque: false,
+    tempoLeitura: 8,
+    conteudo: [
+      {
+        tipo: 'intro',
+        texto: 'GTA 6 chega às lojas em 19 de novembro de 2026, mas só para PlayStation 5 e Xbox Series X|S. Quem joga no computador faz a mesma pergunta há meses: e a versão de PC? A resposta curta é que a Rockstar ainda não anunciou nada, nem data, nem requisitos, nem a loja em que o jogo seria vendido. Este guia separa o que é confirmado do que é rumor, mostra o que o histórico da própria Rockstar sugere e explica como se preparar sem comprar peça por impulso. Tudo foi conferido em 12 de novembro de 2026.',
+      },
+      {
+        tipo: 'adsense',
+        anuncioId: 'gta6pcdata-topo',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'O que a Rockstar já confirmou',
+        texto: 'Tudo o que é oficial hoje diz respeito aos consoles. Nas páginas da Rockstar consultadas para este guia, as plataformas citadas são o PlayStation 5 e o Xbox Series X|S, e nenhuma delas anuncia uma versão para computador.',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '📅 Lançamento em 19 de novembro de 2026, à meia-noite no horário local de cada região, em PS5 e Xbox Series X|S',
+          '⬇️ O download antecipado (pre-load) das cópias digitais foi aberto em 10 de novembro, antes da data de lançamento',
+          '💾 O arquivo de pre-load nos consoles pode chegar a 212 GB, dependendo do aparelho, segundo a Rockstar',
+          '🎮 As páginas oficiais sobre plataformas, edições e versões não listam o PC',
+        ],
+      },
+      {
+        tipo: 'h2',
+        titulo: 'O que ainda não existe',
+        texto: 'Para quem joga no computador, a lista do que falta é maior do que a do que existe:',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Versão de PC anunciada pela Rockstar',
+          'Data de lançamento no PC',
+          'Requisitos mínimos e recomendados oficiais',
+          'Loja ou plataforma de venda para PC',
+          'Informações oficiais sobre tecnologias como DLSS e FSR no PC',
+        ],
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'Qualquer site que mostre requisitos "oficiais" de GTA 6 para PC hoje está publicando estimativa ou rumor. É o caso das tabelas que circulam pela internet com processadores e placas de vídeo específicos: elas não vêm da Rockstar. Neste site, as nossas estimativas aparecem sempre identificadas como estimativa.',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Console e PC: o quadro de hoje',
+      },
+      {
+        tipo: 'tabela',
+        colunas: ['Item', 'PS5 e Xbox Series X|S', 'PC'],
+        linhas: [
+          ['Lançamento', '19/11/2026 (confirmado)', 'Sem anúncio'],
+          ['Download antecipado', 'Aberto desde 10/11', 'Não se aplica'],
+          ['Espaço em disco', 'Até 212 GB no pre-load', 'Sem número oficial'],
+          ['Requisitos', 'Hardware fixo do console', 'Sem requisitos oficiais'],
+          ['Fonte oficial', 'Páginas da Rockstar', 'Nenhuma até o momento'],
+        ],
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Quando o PC costuma chegar? O que o histórico mostra',
+        texto: 'A Rockstar não prometeu nada para GTA 6, mas dois jogos recentes da mesma escala mostram como ela costuma agir: primeiro os consoles, depois o computador.',
+      },
+      {
+        tipo: 'tabela',
+        colunas: ['Jogo', 'Consoles', 'PC', 'Intervalo'],
+        linhas: [
+          ['Grand Theft Auto V', '17/09/2013', '14/04/2015', 'cerca de 19 meses'],
+          ['Red Dead Redemption 2', '26/10/2018', '05/11/2019', 'cerca de 1 ano'],
+        ],
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'Dois casos não formam uma regra. A Rockstar pode mudar de estratégia, e o mercado de PC em 2026 é diferente do de 2015 ou 2019. Por isso tratamos qualquer data para o PC como projeção, e nunca como previsão. Se a empresa repetir o padrão, o computador ficaria para 2027, mas essa é uma conta nossa a partir do histórico, não um anúncio.',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'O relato de 2027: por que tratar como rumor',
+        texto: 'Em 13 de outubro de 2026, o GamesBeat publicou que a versão de PC estaria planejada para o primeiro trimestre de 2027. A reportagem se apoia em fontes anônimas do setor, e a Rockstar não confirmou. Outros veículos repetiram a informação, mas repetir não é confirmar: a origem continua sendo uma só.',
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'O CEO da Take-Two, controladora da Rockstar, disse que as novidades sobre PC e sobre a edição em disco virão da própria Rockstar, segundo a imprensa especializada. Na prática, a única fonte que vale para data e requisitos é a Rockstar.',
+      },
+      {
+        tipo: 'destaque',
+        destaqueTipo: 'aviso',
+        texto: '⚠️ Como ler notícias sobre GTA 6 no PC: desconfie de data cravada, de "requisitos oficiais" e de qualquer página que venda download. Enquanto a Rockstar não anunciar a versão, nada disso existe de forma oficial.',
+      },
+      {
+        tipo: 'adsense',
+        anuncioId: 'gta6pcdata-meio',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Espaço em disco: o que dá para planejar agora',
+        texto: 'O número mais concreto que existe é o do console: o pre-load pode chegar a 212 GB, segundo a Rockstar. Para o PC, não há tamanho oficial. Mesmo assim, o dado serve de referência: jogos de mundo aberto costumam crescer com patches, e você ainda precisa de espaço para o sistema e para o restante da biblioteca. Como regra nossa, e não como requisito, reserve ao menos 250 GB livres só para o jogo.',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '💽 SSD de 1 TB: o mínimo sensato se o PC tem poucos outros jogos instalados',
+          '💽 SSD de 2 TB: a escolha confortável para quem instala vários jogos grandes',
+          '⚡ NVMe é preferível a SATA para um mundo aberto que carrega cenário o tempo todo',
+          '🧹 Deixe folga no SSD: disco quase cheio pode ficar mais lento e atrapalha as atualizações',
+        ],
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Como se preparar sem gastar à toa',
+        texto: 'Sem requisitos oficiais, qualquer compra feita só por causa de GTA 6 é aposta. O caminho mais seguro é conhecer o PC que você tem e trocar apenas as peças que já fariam sentido de qualquer jeito:',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '🔎 Descubra a configuração atual: o Gerenciador de Tarefas do Windows mostra processador, memória, placa de vídeo e tipo de disco',
+          '💾 Se você ainda usa HD, o SSD é o primeiro upgrade, com ou sem GTA 6',
+          '🧠 Mire em 16 GB de RAM como mínimo e 32 GB para ter folga',
+          '🎮 Prefira placa de vídeo com pelo menos 8 GB de VRAM; 12 a 16 GB dão mais margem',
+          '⏳ Se o seu PC já é forte, espere o anúncio oficial antes de gastar',
+        ],
+      },
+      {
+        tipo: 'destaque',
+        destaqueTipo: 'recomendacao',
+        texto: '✓ Estas são apostas nossas, baseadas em jogos de mundo aberto recentes e no hardware dos consoles. Não são requisitos da Rockstar. Quando a empresa publicar os requisitos de PC, este guia será atualizado.',
+      },
+      {
+        tipo: 'cta',
+        ctaTexto: 'Teste se o seu PC está equilibrado no simulador de gargalo →',
+        ctaHref: '/gargalo',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Cuidado com golpes',
+        texto: 'Enquanto não existir versão oficial, não existe download legítimo de GTA 6 para PC. Páginas que oferecem "download", "crack", "torrent" ou chaves do jogo para computador não são da Rockstar e costumam servir de isca para golpes e programas maliciosos. As informações confiáveis saem no Rockstar Newswire e na página oficial do jogo.',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Conclusão',
+        texto: 'O quadro de 12 de novembro de 2026 é simples: GTA 6 tem data e download antecipado nos consoles, e o PC não tem nada oficial. Quem joga no computador pode esperar sem pressa, porque a única informação sobre 2027 vem de um relato anônimo e o histórico da Rockstar mostra que o intervalo pode ser longo. O melhor uso do tempo agora é conhecer o próprio PC, resolver gargalos óbvios, como um HD no lugar de um SSD, e deixar a compra grande para depois do anúncio. Vamos atualizar este guia assim que a Rockstar falar sobre o PC.',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Fontes consultadas',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Grand Theft Auto VI is Now Set to Launch November 19, 2026 — Rockstar Games Newswire (https://www.rockstargames.com/newswire/article/ak3ak31a49a221/grand-theft-auto-vi-is-now-set-to-launch-november-19-2026)',
+          'Grand Theft Auto VI Pre-Load Begins on November 10 — Rockstar Games Newswire (https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10)',
+          'Grand Theft Auto VI Platforms, Editions, and Versions — Rockstar Games Customer Support (https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions)',
+          'GTA 6 Preload Guide: 212GB Size, Staggered Start Times And What To Know — HotHardware (https://hothardware.com/news/gta-6-preload-guide-212gb-size-start-times-what-to-know)',
+          'Grand Theft Auto V Is Now Available for PC — Rockstar Games Newswire (https://rockstargames.com/newswire/article/52417/grand-theft-auto-v-is-now-available-for-pc)',
+          'Red Dead Redemption 2 Coming to PC November 5th — Rockstar Games Newswire (https://www.rockstargames.com/newswire/article/9k1248838o2974/Red-Dead-Redemption-2-Coming-to-PC-November-5th)',
+          'Grand Theft Auto VI’s PC release is slated for Q1 2027 — GamesBeat (https://gamesbeat.com/grand-theft-auto-vis-pc-release-is-slated-for-q1-2027/)',
+          'Grand Theft Auto 6 PC and physical disc news will come from Rockstar, confirms Take-Two — TweakTown (https://www.tweaktown.com/news/114580/grand-theft-auto-6-pc-and-physical-disc-news-will-come-from-rockstar-confirms-take-two/index.html)',
+        ],
+      },
+    ],
+    faq: [
+      {
+        pergunta: 'GTA 6 vai sair para PC?',
+        resposta: 'A Rockstar não anunciou versão de PC. Até 12 de novembro de 2026, só PS5 e Xbox Series X|S têm data confirmada. Um relato não confirmado fala em PC no primeiro trimestre de 2027, mas deve ser tratado como rumor.',
+      },
+      {
+        pergunta: 'Qual é a data de lançamento de GTA 6 no PC?',
+        resposta: 'Não existe data oficial para o PC. A data de 19 de novembro de 2026 vale apenas para PS5 e Xbox Series X|S. Qualquer data para computador que você veja hoje é estimativa ou rumor, não anúncio da Rockstar.',
+      },
+      {
+        pergunta: 'GTA 6 no PC já tem requisitos mínimos e recomendados?',
+        resposta: 'Não. A Rockstar não publicou requisitos de PC para GTA 6. No caso de GTA V, a empresa divulgou as especificações de PC antes do lançamento, mas para GTA 6 nada foi divulgado até agora. Tabelas com peças específicas são estimativas.',
+      },
+      {
+        pergunta: 'Quanto espaço GTA 6 ocupa?',
+        resposta: 'No console, a Rockstar informou que o download antecipado pode chegar a 212 GB, dependendo do aparelho. Para o PC não há tamanho oficial. Como margem, reserve pelo menos 250 GB livres, de preferência em um SSD NVMe.',
+      },
+      {
+        pergunta: 'Vale esperar para montar um PC para GTA 6?',
+        resposta: 'Se você só quer GTA 6 e já tem um PC capaz, esperar o anúncio oficial é a decisão mais segura, porque sem requisitos qualquer compra é aposta. Se precisa trocar o PC por outros motivos, priorize SSD, 16 a 32 GB de RAM e uma placa de vídeo com VRAM de sobra.',
       },
     ],
   },

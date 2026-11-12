@@ -87,6 +87,8 @@ const ROCKSTAR_RELEASE_URL =
 const ROCKSTAR_GAME_URL = "https://www.rockstargames.com/VI";
 
 const LANCAMENTO_ISO = "2026-11-19T00:00:00-03:00";
+const LANCAMENTO_MS = Date.parse(LANCAMENTO_ISO);
+const GUIA_PC_DATA_HREF = "/blog/gta-6-no-pc-quando-sai-o-que-se-sabe-2026";
 const GUIA_COMPLETO_HREF = "/blog/pc-para-rodar-gta-6-requisitos-2026";
 
 function brl(v: number) {
@@ -106,6 +108,9 @@ function vram(p: Produto): string {
 }
 
 export function Gta6LaunchFeature() {
+  // O texto muda sozinho no dia do lançamento. A home é renderizada a cada visita,
+  // então esta comparação vale por requisição (não fica congelada no build).
+  const lancado = Date.now() >= LANCAMENTO_MS;
   const itens = BUILD_GTA6.map((cfg) => ({
     cfg,
     produto: PRODUTOS_ENRIQUECIDOS.find((p) => p.slug === cfg.slug),
@@ -166,9 +171,9 @@ export function Gta6LaunchFeature() {
                 </span>
               </h2>
               <p className="mt-5 max-w-xl text-base leading-relaxed text-white/75 sm:text-lg">
-                GTA VI chega aos consoles em 19 de novembro. No PC ainda não há data, mas quem se
-                prepara agora escolhe melhor e não paga caro por impulso. Veja a build que
-                montaríamos, só com peças que já comparamos aqui.
+                {lancado
+                  ? "GTA VI já está disponível nos consoles. No PC ainda não há data nem anúncio de versão, mas quem se prepara agora escolhe melhor e não paga caro por impulso. Veja a build que montaríamos, só com peças que já comparamos aqui."
+                  : "GTA VI chega aos consoles em 19 de novembro. No PC ainda não há data, mas quem se prepara agora escolhe melhor e não paga caro por impulso. Veja a build que montaríamos, só com peças que já comparamos aqui."}
               </p>
 
               <div className="mt-7 flex flex-col gap-3 sm:flex-row">
@@ -215,18 +220,18 @@ export function Gta6LaunchFeature() {
       >
         <header className="mx-auto max-w-3xl text-center">
           <p className="font-mono text-[11px] uppercase tracking-[0.25em] text-[#ff6cae]">
-            Análise atualizada em 9 de outubro de 2026
+            Análise atualizada em 12 de novembro de 2026
           </p>
           <h2 className="mt-4 text-balance text-3xl font-black leading-tight text-white sm:text-5xl">
             O PC que montaríamos hoje para jogar GTA VI no lançamento para PC
           </h2>
           <p className="mt-5 text-base leading-8 text-gray-400 sm:text-lg">
-            A Rockstar confirmou GTA VI para 19 de novembro de 2026 no PlayStation 5 e no Xbox
-            Series X|S. Para PC não há anúncio de versão, data nem requisitos, e nem o modo de
-            60 fps nos consoles foi confirmado. Por isso, esta configuração não é uma promessa de
-            desempenho: é uma projeção para quem quer jogar em 1440p, qualidade alta ou ultra,
-            com 60 fps como meta e espaço para tecnologias de reconstrução de imagem quando o
-            port chegar.
+            {lancado
+              ? "A Rockstar lançou GTA VI em 19 de novembro de 2026 no PlayStation 5 e no Xbox Series X|S. Para PC não há anúncio de versão, data nem requisitos."
+              : "A Rockstar confirmou GTA VI para 19 de novembro de 2026 no PlayStation 5 e no Xbox Series X|S. Para PC não há anúncio de versão, data nem requisitos, e nem o modo de 60 fps nos consoles foi confirmado."}{" "}
+            Por isso, esta configuração não é uma promessa de desempenho: é uma projeção para
+            quem quer jogar em 1440p, qualidade alta ou ultra, com 60 fps como meta e espaço para
+            tecnologias de reconstrução de imagem quando o port chegar.
           </p>
         </header>
 
@@ -234,13 +239,15 @@ export function Gta6LaunchFeature() {
           <div className="rounded-2xl border border-[#ff4d9d]/20 bg-[#ff4d9d]/[0.07] p-5">
             <p className="text-xs font-bold uppercase tracking-wider text-[#ff82bb]">Confirmado</p>
             <p className="mt-2 text-sm leading-6 text-gray-300">
-              Lançamento em 19/11/2026 para PS5 e Xbox Series X|S, segundo a Rockstar.
+              {lancado ? "Lançado em" : "Lançamento em"} 19/11/2026 para PS5 e Xbox Series X|S, segundo a Rockstar.
             </p>
           </div>
           <div className="rounded-2xl border border-[#38e7ff]/20 bg-[#38e7ff]/[0.06] p-5">
             <p className="text-xs font-bold uppercase tracking-wider text-[#73efff]">Ainda não confirmado</p>
             <p className="mt-2 text-sm leading-6 text-gray-300">
-              Versão de PC, data, requisitos oficiais, resolução e taxa de quadros.
+              {lancado
+                ? "Versão de PC, data e requisitos oficiais."
+                : "Versão de PC, data, requisitos oficiais, resolução e taxa de quadros."}
             </p>
           </div>
           <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-5">
@@ -259,8 +266,15 @@ export function Gta6LaunchFeature() {
             Ninguém sabe ainda. Como referência histórica, GTA V chegou ao PC cerca de 19 meses
             depois dos consoles (set/2013 → abr/2015) e Red Dead Redemption 2, pouco mais de um
             ano depois (out/2018 → nov/2019). Se a Rockstar repetir o padrão, o PC ficaria para
-            2027. É uma projeção nossa, não um anúncio.
+            2027. É uma projeção nossa, não um anúncio. Um relato do GamesBeat de 13/10, baseado
+            em fontes anônimas, cita o primeiro trimestre de 2027, mas a Rockstar não confirmou.
           </p>
+          <Link
+            href={GUIA_PC_DATA_HREF}
+            className="mt-3 inline-block text-sm font-semibold text-[#73efff] hover:underline"
+          >
+            GTA 6 no PC: tudo o que se sabe até agora →
+          </Link>
         </div>
 
         {/* ───────── Build recomendada ───────── */}
@@ -424,7 +438,8 @@ export function Gta6LaunchFeature() {
           de PC ainda não existem, recomendamos esperar o anúncio oficial antes de trocar uma
           máquina que já seja forte. Se for comprar agora, priorize GPU com pelo menos 16 GB de
           VRAM, 32 GB de RAM e SSD NVMe de 2 TB: são as partes com maior chance de continuar
-          adequadas.
+          adequadas. Sobre espaço: o download antecipado nos consoles chega a até 212 GB; no PC
+          ainda não há número oficial, e é por isso que a build usa um SSD de 2 TB.
         </div>
 
         <section className="mt-12 grid gap-8 lg:grid-cols-[1fr_0.8fr]">
