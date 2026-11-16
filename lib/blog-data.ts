@@ -3535,6 +3535,202 @@ export const ARTIGOS: Artigo[] = [
       },
     ],
   },
+  // ════════════════════════════════════════════════════════
+  // ARTIGO — DDR4 ou DDR5: qual escolher em 2026
+  // Especificações conferidas em 16/11/2026 nas páginas oficiais
+  // da Intel (ARK), da ASUS (techspec) e da Micron.
+  // Largura de banda calculada aqui (MT/s × 8 bytes por canal).
+  // ════════════════════════════════════════════════════════
+  {
+    slug: 'ddr4-ou-ddr5-qual-escolher-2026',
+    titulo: 'DDR4 ou DDR5: Qual Memória Escolher em 2026',
+    subtitulo: 'A escolha não é entre dois pentes de memória — é entre duas plataformas inteiras',
+    descricao: 'DDR4 ou DDR5 em 2026? Veja o que o soquete da sua placa-mãe aceita, a conta de largura de banda, o limite de capacidade e quando cada memória ainda compensa.',
+    categoria: 'comparativos',
+    tags: ['ddr4', 'ddr5', 'memória ram', 'am4', 'am5', 'lga1700', 'lga1851', 'placa-mãe'],
+    autor: 'Ronaldo Bueno',
+    dataPublicacao: '2026-11-16',
+    tempoLeitura: 11,
+    destaque: false,
+    conteudo: [
+      {
+        tipo: 'intro',
+        texto: 'Quem pergunta "DDR4 ou DDR5?" quase sempre está fazendo a pergunta errada. Na prática, você não escolhe a memória: você escolhe o soquete do processador e a placa-mãe, e a memória vem junto por imposição. Um processador AM5 só funciona com DDR5. Uma placa B550 só funciona com DDR4. A decisão real é se vale a pena trocar a plataforma inteira — processador, placa-mãe e memória — ou aproveitar o que você já tem. Este guia mostra o que cada soquete aceita, de acordo com as páginas oficiais da Intel e da ASUS conferidas em 16 de novembro de 2026, faz a conta de largura de banda com os números dos fabricantes e explica em que situação cada caminho é o mais sensato.',
+      },
+      {
+        tipo: 'adsense',
+        anuncioId: 'ddr4ddr5-topo',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'A memória não é uma escolha solta: ela vem com o soquete',
+        texto: 'Soquete é o encaixe do processador na placa-mãe. Cada soquete tem um controlador de memória próprio dentro do processador, e esse controlador fala DDR4 ou DDR5 — nunca os dois ao mesmo tempo na mesma placa. A ficha oficial do Intel Core i9-14900K, de soquete LGA1700, informa suporte a DDR5 até 5.600 MT/s ou DDR4 até 3.200 MT/s. O "ou" é literal: o processador aceita os dois padrões, mas a placa-mãe é fabricada para um só. A ASUS Prime B760M-K D4, por exemplo, é uma placa LGA1700 que aceita exclusivamente DDR4. Já a ASUS Prime B860M-A WiFi, de soquete LGA1851, aceita exclusivamente DDR5. No lado da AMD, a separação é ainda mais seca: a TUF Gaming B550-Plus (AM4) é DDR4 e a TUF Gaming B650-Plus WiFi (AM5) é DDR5.',
+      },
+      {
+        tipo: 'destaque',
+        destaqueTipo: 'aviso',
+        texto: '⚠️ Pente de DDR5 não entra em placa DDR4, nem o contrário. O encaixe tem um recorte em posição diferente justamente para impedir isso. Se você comprar memória antes de decidir a placa-mãe, há uma boa chance de ter que devolver.',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'O que muda de verdade da DDR4 para a DDR5',
+        texto: 'A tabela técnica da Micron para os chips DDR5 mostra onde está a diferença de engenharia entre as duas gerações. Nada disso vira FPS sozinho, mas explica por que a DDR5 consegue frequências muito mais altas sem derreter.',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '⚡ Tensão mais baixa: a Micron lista 1,1 V para VDD e VDDQ na DDR5, contra 1,2 V na DDR4. Tensão é a "pressão elétrica" aplicada ao chip — menos tensão significa menos calor para a mesma frequência.',
+          '🛣️ Dois canais independentes por pente: a Micron descreve a DDR5 como tendo canais duplos independentes por módulo. Um único pente DDR5 já divide o trabalho em duas vias, enquanto o pente DDR4 trabalha com uma via só.',
+          '🧮 Correção de erro dentro do chip (on-die ECC): a especificação da Micron indica 128 bits de dados com 8 bits de verificação, capazes de corrigir um erro isolado. É uma rede de segurança contra falhas pontuais de memória, não um substituto da memória ECC de servidor.',
+          '📦 Rajada de 16 (burst length BL16): cada acesso à memória entrega o dobro de pedaços de dado por vez em relação ao padrão anterior, com a opção de cortar a rajada pela metade quando não é necessária.',
+          '🏦 Mais grupos de bancos: a Micron especifica 8 grupos de 4 bancos nos chips x4 e x8 de 16 a 64 Gb. Mais grupos significa mais pedidos de leitura e escrita atendidos em paralelo.',
+          '🧱 Chips mais densos: 16 Gb, 24 Gb e 32 Gb por pastilha, o que permite pentes de capacidade alta sem empilhar tantos chips.',
+          '🚀 Faixa de velocidade: a mesma tabela da Micron coloca a DDR5 entre 4.800 e 8.800 MT/s, enquanto a DDR4 aparece com até 3.200 MT/s.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Largura de banda: a conta que qualquer um pode fazer',
+        texto: 'MT/s significa milhões de transferências por segundo. Como o barramento de memória do PC tem 64 bits, ou seja, 8 bytes, a largura de banda teórica de um canal é simplesmente MT/s multiplicado por 8. Com dois pentes em dual channel, dobra. Fizemos essa conta abaixo para as velocidades que aparecem nas fichas oficiais da Intel e nas páginas das placas-mãe da ASUS.',
+      },
+      {
+        tipo: 'tabela',
+        colunas: ['Memória', 'MT/s', 'Por canal (GB/s)', 'Dual channel (GB/s)', 'Onde esse número aparece'],
+        linhas: [
+          ['DDR4-2133', '2.133', '17,1', '34,1', 'Velocidade de partida listada pela ASUS na B550-Plus e na B760M-K D4'],
+          ['DDR4-3200', '3.200', '25,6', '51,2', 'Máximo oficial da Intel com DDR4 no i9-12900K e no i9-14900K'],
+          ['DDR4-3600 (XMP)', '3.600', '28,8', '57,6', 'Velocidade de kit comum, acima do padrão, via perfil XMP'],
+          ['DDR5-4800', '4.800', '38,4', '76,8', 'Máximo oficial da Intel com DDR5 no i9-12900K'],
+          ['DDR5-5200', '5.200', '41,6', '83,2', 'Maior velocidade sem overclock listada pela ASUS na B650-Plus WiFi'],
+          ['DDR5-5600', '5.600', '44,8', '89,6', 'Máximo oficial da Intel com DDR5 no i9-14900K'],
+          ['DDR5-6000 (EXPO)', '6.000', '48,0', '96,0', 'Primeiro degrau de overclock listado pela ASUS na B650-Plus WiFi'],
+          ['DDR5-6400', '6.400', '51,2', '102,4', 'Máximo oficial do Intel Core Ultra 7 265F'],
+        ],
+      },
+      {
+        tipo: 'destaque',
+        destaqueTipo: 'dica',
+        texto: '💡 Repare no salto: sair de DDR4-3200 (51,2 GB/s em dual channel) para DDR5-6000 (96,0 GB/s) quase dobra a largura de banda no papel. Só que largura de banda não vira quadro por segundo na mesma proporção. Na maioria dos jogos, quem dita o FPS é a placa de vídeo; a memória só aparece como limite quando a placa de vídeo é muito forte para a resolução usada ou quando o jogo depende de simulação pesada, como estratégia e construção de cidades.',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'AM4, AM5, LGA1700 e LGA1851: quem aceita o quê',
+        texto: 'Esta é a parte que decide a compra. Abaixo, quatro placas-mãe populares de faixa intermediária, com os dados tirados das páginas de especificação técnica da própria ASUS. Repare que a diferença não é só o tipo de memória: muda a capacidade máxima, o número de slots e, principalmente, quais processadores você vai poder instalar depois.',
+      },
+      {
+        tipo: 'tabela',
+        colunas: ['Plataforma e placa de exemplo', 'Memória aceita', 'Processadores suportados', 'Capacidade máxima', 'Slots'],
+        linhas: [
+          ['AM4 — ASUS TUF Gaming B550-Plus', 'Só DDR4', 'Ryzen 3000, 4000G e 5000', '128 GB', '4'],
+          ['AM5 — ASUS TUF Gaming B650-Plus WiFi', 'Só DDR5', 'Ryzen 7000, 8000 e 9000', '256 GB', '4'],
+          ['LGA1700 — ASUS Prime B760M-K D4', 'Só DDR4', 'Intel 12ª, 13ª e 14ª geração', '64 GB', '2'],
+          ['LGA1851 — ASUS Prime B860M-A WiFi', 'Só DDR5 (aceita CUDIMM)', 'Intel Core Ultra Série 2', '256 GB', '4'],
+        ],
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'Dois detalhes dessa tabela costumam passar despercebidos e doem depois. O primeiro é a capacidade: a Prime B760M-K D4 tem apenas dois slots e teto de 64 GB, enquanto as placas DDR5 da comparação chegam a 256 GB com quatro slots. Para quem só joga, 64 GB é folga de sobra; para quem edita vídeo, roda máquinas virtuais ou trabalha com modelos de inteligência artificial em casa, o teto baixo vira problema. O segundo é o caminho de upgrade: a página da B650-Plus WiFi lista suporte a Ryzen 7000, 8000 e 9000 na mesma placa, enquanto a B550-Plus para em Ryzen 5000. Quem compra AM4 hoje está comprando o fim de uma linha, não o começo.',
+      },
+      {
+        tipo: 'adsense',
+        anuncioId: 'ddr4ddr5-meio',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Quando a DDR4 ainda é a escolha certa em 2026',
+        texto: 'DDR4 não é lixo eletrônico. Ela é a resposta certa sempre que o custo de trocar de plataforma for maior que o ganho. Os casos mais comuns:',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '✅ Você já tem uma placa AM4 ou LGA1700 DDR4 funcionando e quer apenas sair de 8 GB para 16 GB, ou de 16 GB para 32 GB. Comprar mais DDR4 custa um pente; trocar para DDR5 custa processador, placa-mãe e memória de uma vez.',
+          '✅ O PC é de uso geral: navegador, estudo, escritório, jogos competitivos mais leves. Nesse perfil, a largura de banda extra da DDR5 praticamente não aparece.',
+          '✅ A máquina é secundária — PC da sala, segundo computador para transmissão, servidor de arquivos doméstico. Aqui o critério é custo por gigabyte, não velocidade de pico.',
+          '✅ Você já tem um bom kit DDR4 de 3.200 ou 3.600 MT/s em casa. Esse kit não tem valor de revenda que justifique abandoná-lo cedo.',
+          '⚠️ Em compensação, lembre que a plataforma AM4 não vai receber processadores novos, e as placas LGA1700 DDR4 ficam presas às gerações 12, 13 e 14 da Intel. É um caminho sem continuação — o que não é um problema se você não pretende mesmo trocar o processador de novo.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Quando ir direto para DDR5 sem pensar duas vezes',
+        texto: 'Se você está montando um PC do zero em 2026, a conversa praticamente acaba aqui. Os soquetes atuais dos dois fabricantes são DDR5: AM5 do lado da AMD e LGA1851 do lado da Intel. Escolher DDR4 em um PC novo significa, obrigatoriamente, comprar uma plataforma de geração anterior.',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '🥇 PC novo do zero: não há decisão a tomar. Uma placa AM5 ou LGA1851 só aceita DDR5, e pronto.',
+          '🥇 Você quer poder trocar só o processador daqui a alguns anos: a mesma placa B650 aceita três gerações de Ryzen, segundo a lista da ASUS.',
+          '🥇 Precisa de muita memória: 256 GB de teto contra 64 GB da placa LGA1700 DDR4 da comparação.',
+          '🥇 Vai usar uma placa de vídeo forte em 1080p ou 1440p, resoluções em que o processador e a memória mais aparecem como limite.',
+          '🥇 O uso envolve edição, compilação, virtualização ou simulação, tarefas que leem e escrevem muito na memória e aproveitam a largura de banda maior.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Erros que custam caro na hora de fechar a compra',
+        texto: 'A maioria dos arrependimentos com memória não tem nada a ver com DDR4 contra DDR5. São detalhes de compatibilidade e de configuração.',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '🔍 Conte os slots antes de comprar. Placas de entrada muitas vezes têm dois slots, como a Prime B760M-K D4. Se você comprar dois pentes agora, não sobra espaço para expandir depois sem jogar os antigos fora.',
+          '🔍 Mesma família, placas diferentes. Existem placas de um mesmo chipset em versão DDR4 e em versão DDR5. O sufixo no nome, como o "D4" da Prime B760M-K D4, é o aviso. Confira isso na página do fabricante, não no anúncio da loja.',
+          '🔍 Velocidade anunciada não é velocidade automática. Tanto a ASUS quanto a Intel listam as velocidades mais altas como overclock, via perfil XMP (Intel) ou EXPO (AMD). Sem ativar o perfil na BIOS, a memória roda no padrão mais lento e você perde o que pagou.',
+          '🔍 A configuração muda o que a placa suporta. As páginas da ASUS avisam que as velocidades e capacidades suportadas dependem do processador e da combinação de pentes instalada. Compre um kit fechado de dois pentes iguais em vez de juntar módulos avulsos.',
+          '🔍 Processador novo em placa antiga pede BIOS atualizada. Antes de comprar, confira a lista de suporte de processadores da sua placa específica no site do fabricante.',
+        ],
+      },
+      {
+        tipo: 'cta',
+        ctaTexto: 'Montar seu PC com peças compatíveis →',
+        ctaHref: '/montar',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Conclusão',
+        texto: 'Em 2026, a resposta honesta é: se você está montando um PC novo, é DDR5, porque os soquetes atuais não aceitam outra coisa. Se você já tem uma máquina AM4 ou LGA1700 com DDR4 rodando bem, continue com DDR4 e invista o dinheiro em placa de vídeo, SSD ou simplesmente em mais memória do mesmo tipo — vai render muito mais do que trocar a plataforma inteira para ganhar largura de banda que a maioria dos jogos nem usa. O erro caro não é escolher o padrão errado. É comprar a memória antes de decidir a placa-mãe.',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Fontes consultadas',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Intel Core i9-14900K — Especificações — Intel ARK (https://www.intel.com/content/www/us/en/products/sku/236773/intel-core-i9-processor-14900k-36m-cache-up-to-6-00-ghz/specifications.html)',
+          'Intel Core i9-12900K — Especificações — Intel ARK (https://www.intel.com/content/www/us/en/products/sku/134599/intel-core-i912900k-processor-30m-cache-up-to-5-20-ghz/specifications.html)',
+          'Intel Core Ultra 7 265F — Especificações — Intel ARK (https://www.intel.com/content/www/us/en/products/sku/241064/intel-core-ultra-7-processor-265f-30m-cache-up-to-5-30-ghz/specifications.html)',
+          'TUF GAMING B650-PLUS WIFI — Especificações técnicas — ASUS (https://www.asus.com/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b650-plus-wifi/techspec/)',
+          'TUF GAMING B550-PLUS — Especificações técnicas — ASUS (https://www.asus.com/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b550-plus/techspec/)',
+          'PRIME B760M-K D4 — Especificações técnicas — ASUS (https://www.asus.com/motherboards-components/motherboards/prime/prime-b760m-k-d4/techspec/)',
+          'PRIME B860M-A WIFI — Especificações técnicas — ASUS (https://www.asus.com/motherboards-components/motherboards/prime/prime-b860m-a-wifi/techspec/)',
+          'DDR5 SDRAM — Micron (https://www.micron.com/products/memory/dram-components/ddr5-sdram)',
+        ],
+      },
+    ],
+    faq: [
+      {
+        pergunta: 'Posso colocar memória DDR5 em uma placa-mãe DDR4?',
+        resposta: 'Não. O recorte do conector fica em posição diferente nos dois padrões, justamente para impedir o encaixe. Além do formato, o controlador de memória dentro do processador fala um padrão só. Uma placa DDR4 aceita apenas DDR4, e uma placa DDR5 aceita apenas DDR5.',
+      },
+      {
+        pergunta: 'A DDR5 dá quantos FPS a mais do que a DDR4?',
+        resposta: 'Depende do jogo, da resolução e, principalmente, da placa de vídeo. A largura de banda teórica quase dobra ao sair de DDR4-3200 para DDR5-6000, mas isso não se converte em FPS na mesma proporção. Na maioria dos jogos em 1440p ou 4K, quem define o desempenho é a placa de vídeo, e a memória mal aparece.',
+      },
+      {
+        pergunta: 'Vale a pena trocar minha plataforma AM4 por AM5 só pela memória?',
+        resposta: 'Não, se a motivação for apenas a memória. Trocar de AM4 para AM5 significa comprar processador, placa-mãe e memória ao mesmo tempo. Faz sentido quando o processador atual já é o gargalo da sua placa de vídeo ou quando você quer um caminho de upgrade aberto, já que a AM4 não recebe processadores novos.',
+      },
+      {
+        pergunta: 'Quais processadores ainda aceitam DDR4 em 2026?',
+        resposta: 'Do lado da AMD, os de soquete AM4 — Ryzen das séries 3000, 4000G e 5000, segundo a lista de suporte da ASUS para a B550-Plus. Do lado da Intel, as gerações 12, 13 e 14 em soquete LGA1700, desde que a placa-mãe seja da versão DDR4. O soquete LGA1851, dos Core Ultra Série 2, é exclusivamente DDR5.',
+      },
+      {
+        pergunta: 'Qual velocidade de DDR5 comprar?',
+        resposta: 'Olhe a página da sua placa-mãe antes de decidir. A ASUS lista, para a TUF Gaming B650-Plus WiFi, velocidades de 4.800 a 5.200 MT/s sem overclock e degraus de 6.000 MT/s para cima com perfil EXPO. Velocidades muito acima do que a placa lista como suportada dependem de sorte na combinação de processador e pentes.',
+      },
+    ],
+  },
 ]
 
 export function getArtigos() {
