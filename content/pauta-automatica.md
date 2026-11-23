@@ -18,7 +18,7 @@ Formato: `- [ ] slug | categoria | título provisório | ângulo e fontes`
 ## Automática
 
 - [x] ddr4-ou-ddr5-qual-escolher-2026 | comparativos | DDR4 ou DDR5: Qual Memória Escolher em 2026 | Custo da plataforma inteira (placa-mãe + RAM), quando o DDR4 ainda faz sentido, AM4 x AM5 x LGA1700. Fontes: AMD, Intel, JEDEC.
-- [ ] quanto-de-vram-para-jogos-2026 | guias | Quanto de VRAM Você Precisa para Jogar em 2026 | 8, 12 e 16 GB por resolução, o que consome VRAM (texturas, RT, geração de quadros). Fontes: requisitos oficiais de jogos recentes, NVIDIA, AMD.
+- [x] quanto-de-vram-para-jogos-2026 | guias | Quanto de VRAM Você Precisa para Jogar em 2026 | 8, 12 e 16 GB por resolução, o que consome VRAM (texturas, RT, geração de quadros). Fontes: requisitos oficiais de jogos recentes, NVIDIA, AMD.
 - [ ] dlss-fsr-xess-o-que-sao-qual-usar-2026 | guias | DLSS, FSR e XeSS: O Que São e Qual Usar | Upscaling x geração de quadros, compatibilidade por placa, latência. Fontes: páginas oficiais NVIDIA, AMD, Intel.
 - [ ] temperatura-normal-cpu-gpu-como-verificar | guias | Temperatura Normal de CPU e GPU: Como Verificar | Faixas seguras pelos limites dos fabricantes (Tjmax), ferramentas gratuitas, sinais de throttling. Fontes: AMD, Intel, NVIDIA.
 - [ ] como-ativar-xmp-expo-memoria-ram | guias | Como Ativar XMP e EXPO na Memória RAM | Por que a RAM vem abaixo da velocidade anunciada, passo a passo por fabricante de placa-mãe, como verificar no Windows. Fontes: Intel XMP, AMD EXPO, manuais ASUS/Gigabyte/MSI/ASRock.
@@ -49,4 +49,5 @@ Temas que dependem de foto, medição ou teste feito pelo Ronaldo.
 (A tarefa acrescenta uma linha aqui a cada publicação: data, slug e link.)
 
 - 2026-11-16 · ddr4-ou-ddr5-qual-escolher-2026 · aguardando revisão (branch blog/2026-11-16-ddr4-ou-ddr5-qual-escolher-2026)
+- 2026-11-23 · quanto-de-vram-para-jogos-2026 · aguardando revisão (branch blog/2026-11-23-quanto-de-vram-para-jogos-2026)
 

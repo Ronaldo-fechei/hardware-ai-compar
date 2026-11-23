@@ -3731,6 +3731,221 @@ export const ARTIGOS: Artigo[] = [
       },
     ],
   },
+  // ════════════════════════════════════════════════════════
+  // ARTIGO — Quanto de VRAM para jogar (2026)
+  // Capacidades conferidas em 23/11/2026 nas páginas oficiais
+  // da NVIDIA (comparativo GeForce e DLSS), da AMD (comunicado
+  // da RDNA 4) e da Intel (ARK). Requisitos de jogos tirados
+  // das páginas oficiais na Steam. Contas de pixels e de
+  // buffers calculadas aqui.
+  // ════════════════════════════════════════════════════════
+  {
+    slug: 'quanto-de-vram-para-jogos-2026',
+    titulo: 'Quanto de VRAM Você Precisa para Jogar em 2026',
+    subtitulo: 'A resposta muda com a resolução, com as texturas e com o traçado de raios — não com o nome da placa',
+    descricao: '8, 12 ou 16 GB de VRAM? Veja o que os requisitos oficiais dos jogos pedem por resolução, o que realmente ocupa essa memória e quanto vem em cada placa atual.',
+    categoria: 'guias',
+    tags: ['vram', 'placa de vídeo', 'memória de vídeo', 'texturas', 'ray tracing', 'dlss', '1440p', '4k'],
+    autor: 'Ronaldo Bueno',
+    dataPublicacao: '2026-11-23',
+    tempoLeitura: 16,
+    destaque: false,
+    conteudo: [
+      {
+        tipo: 'intro',
+        texto: 'Toda discussão sobre placa de vídeo hoje trava no mesmo ponto: 8 GB ainda dão conta? A pergunta parece simples, mas não tem resposta única, porque VRAM não é desempenho — é espaço. Uma placa com memória sobrando e pouco poder de cálculo entrega poucos quadros por segundo; uma placa rápida com memória curta entrega quadros bons até o momento em que a memória enche, e aí trava. Este guia usa três coisas para chegar a um número por resolução: as capacidades que a NVIDIA, a AMD e a Intel publicam nas fichas oficiais dos modelos atuais, os requisitos oficiais de jogos recentes (que já trazem a VRAM escrita por faixa de qualidade) e uma conta de pixels que qualquer pessoa pode repetir. Tudo conferido em 23 de novembro de 2026.',
+      },
+      {
+        tipo: 'adsense',
+        anuncioId: 'vram-topo',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'VRAM é a memória da placa de vídeo, e ela não se mistura com a RAM',
+        texto: 'VRAM é a sigla de Video RAM: a memória soldada na própria placa de vídeo, separada dos pentes de memória do PC. Ela guarda o que o processador gráfico precisa ter à mão em cada quadro — texturas, modelos, sombras, as imagens intermediárias do quadro em construção. É uma memória muito mais rápida que a do sistema: a ficha oficial da Intel para a Arc B580 lista 12 GB de GDDR6 com 456 GB/s de banda, em um barramento de 192 bits a 19 Gbps. Já o caminho entre a placa e o resto do PC é o PCI Express, bem mais estreito — a mesma ficha mostra que a B580 se conecta por PCI Express 4.0 em oito vias. Por isso a conta é dura: quando o que o jogo precisa não cabe na VRAM, o driver passa a buscar parte do material pelo caminho estreito, e o resultado aparece como engasgo, textura que demora para carregar ou queda súbita de fluidez em uma cena que antes rodava bem.',
+      },
+      {
+        tipo: 'destaque',
+        destaqueTipo: 'aviso',
+        texto: '⚠️ Mais RAM no PC não compensa falta de VRAM. São memórias diferentes, em lugares diferentes, com velocidades muito diferentes. Colocar 32 GB de RAM em um PC com placa de 8 GB não faz a placa virar uma de 12 GB.',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'O que realmente ocupa a VRAM',
+        texto: 'Antes de escolher um número, vale saber onde a memória vai. Cinco coisas respondem pela maior parte do consumo, e três delas estão em ajustes que você controla no menu do jogo:',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '🖼️ Texturas: são as imagens coladas sobre a geometria. É aritmética simples — dobrar a largura e a altura de uma textura multiplica por quatro a quantidade de bytes dela. Por isso o ajuste de qualidade de textura é o que mais mexe na memória ocupada, e costuma ser o primeiro a baixar quando a VRAM aperta.',
+          '🧱 Geometria e cenário carregado: modelos, malhas e o pedaço de mundo que o jogo mantém pronto ao redor do jogador. Mundo aberto ocupa mais que corredor, com os mesmos ajustes.',
+          '🖥️ Resolução: cada quadro é construído em várias imagens intermediárias (cor, profundidade, sombras, histórico de movimento). Todas elas crescem junto com o número de pixels da tela, como mostra a tabela da próxima seção.',
+          '💡 Traçado de raios (ray tracing): além do cálculo da luz, a técnica exige manter na memória uma estrutura que descreve a geometria da cena para os raios serem testados contra ela. É memória que o modo tradicional de iluminação não gasta. A AMD, no comunicado da arquitetura RDNA 4, descreve aceleradores de traçado de raios de terceira geração com mais de duas vezes a vazão por unidade de cálculo em relação à geração anterior — o custo em memória, porém, continua existindo.',
+          '🧰 Extras que ninguém conta: mods de textura, resolução de sombra no máximo, monitores extras ligados, navegador com muitas abas e programas de captura também reservam um pedaço da VRAM.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        titulo: 'A conta dos pixels: por que 1440p e 4K pesam mais',
+        texto: 'Esta parte é só multiplicação, e dá para conferir na calculadora. Um quadro é construído em vários buffers — imagens intermediárias do tamanho da tela. Uma imagem de quatro bytes por pixel (os canais de cor mais transparência, com 8 bits cada) ocupa o número de pixels vezes quatro. A coluna final usa 20 buffers como exemplo de um motor gráfico moderno; é uma simplificação, não um número medido de jogo nenhum, e serve só para mostrar a proporção entre as resoluções.',
+      },
+      {
+        tipo: 'tabela',
+        colunas: ['Resolução', 'Pixels por quadro', 'Vezes o 1080p', 'Um buffer (4 bytes/pixel)', 'Exemplo com 20 buffers'],
+        linhas: [
+          ['1080p (1920 × 1080)', '2.073.600', '1,00×', '7,9 MiB', '≈ 158 MiB'],
+          ['1440p (2560 × 1440)', '3.686.400', '1,78×', '14,1 MiB', '≈ 281 MiB'],
+          ['4K (3840 × 2160)', '8.294.400', '4,00×', '31,6 MiB', '≈ 633 MiB'],
+        ],
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'Repare no que a conta diz e no que ela não diz. Sair de 1080p para 4K quadruplica o espaço gasto com essas imagens intermediárias — no exemplo, uma diferença de cerca de meio gigabyte. É muito, mas não é o bastante para explicar sozinho o salto de 8 GB para 16 GB nas recomendações. O que realmente estoura a memória em resolução alta é a combinação: mais pixels nos buffers, mais traçado de raios ligado e, principalmente, texturas em qualidade máxima, porque quem joga em 4K normalmente não quer textura média.',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'O que os jogos pedem oficialmente',
+        texto: 'Aqui o terreno fica firme: alguns estúdios já publicam a VRAM na própria lista de requisitos, junto com a resolução, a taxa de quadros e o preset que aquele hardware deve alcançar. Os dados abaixo saíram das páginas oficiais desses jogos na Steam, conferidas em 23 de novembro de 2026. Repare que o alvo declarado é quase sempre 60 quadros por segundo, e não o máximo possível.',
+      },
+      {
+        tipo: 'tabela',
+        colunas: ['Jogo', 'Faixa', 'Placa indicada e VRAM', 'Alvo declarado'],
+        linhas: [
+          ['Monster Hunter Wilds', 'Mínimo', 'GeForce GTX 1660 (6 GB) ou Radeon RX 5500 XT (8 GB)', '1080p vindo de 720p com upscaling, 30 FPS, preset mais baixo'],
+          ['Monster Hunter Wilds', 'Recomendado', 'GeForce RTX 2060 Super (8 GB) ou Radeon RX 6600 (8 GB)', '1080p, 60 FPS, preset médio, com geração de quadros ligada'],
+          ['Indiana Jones and the Great Circle', 'Mínimo', 'GeForce RTX 2060 Super (8 GB), Radeon RX 6600 (8 GB) ou Arc A580', '1080p nativo, 60 FPS, preset baixo (exige traçado de raios por hardware)'],
+          ['Indiana Jones and the Great Circle', 'Recomendado', 'GeForce RTX 3080 Ti (12 GB) ou Radeon RX 7700 XT (12 GB)', '1440p nativo, 60 FPS, preset alto'],
+        ],
+      },
+      {
+        tipo: 'paragrafo',
+        texto: 'Três leituras saem dessa tabela. A primeira: 8 GB continua sendo o patamar que os estúdios usam para 1080p a 60 quadros em qualidade média ou baixa — não é uma placa inútil, é uma placa de 1080p. A segunda: quando o alvo sobe para 1440p nativo em preset alto, o requisito oficial do Indiana Jones pula para 12 GB, e a RAM do sistema pula de 16 para 32 GB junto. A terceira é mais sutil: o requisito recomendado do Monster Hunter Wilds já conta com geração de quadros ligada para entregar 60 FPS em 1080p médio. Ou seja, os alvos oficiais de hoje embutem upscaling e geração de quadros na conta, e não o jogo rodando puro.',
+      },
+      {
+        tipo: 'adsense',
+        anuncioId: 'vram-meio',
+      },
+      {
+        tipo: 'h2',
+        titulo: '8, 12 ou 16 GB: o que esperar de cada faixa',
+        texto: 'Juntando as capacidades oficiais das placas com os requisitos acima, dá para separar as faixas por uso em vez de por marketing. Nenhuma delas é a resposta certa para todo mundo — o que decide é a resolução do seu monitor e quanto você se incomoda em baixar texturas.',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '🟢 8 GB — é placa de 1080p, e nessa resolução ainda cumpre o papel: é exatamente o que os dois jogos da tabela pedem como recomendado para 1080p a 60 FPS em preset médio. O aperto aparece quando você insiste em textura máxima, liga traçado de raios ou usa um monitor 1440p. Faz sentido para jogo competitivo (CS, Valorant, LoL, Fortnite), para quem joga em 1080p e aceita presets médios, e para quem tem orçamento curto e prefere gastar em processador ou SSD.',
+          '🟡 12 GB — é o ponto de equilíbrio para 1440p em 2026, e é o que o requisito oficial do Indiana Jones pede para 1440p nativo em preset alto. Também dá folga para textura máxima em 1080p e para ligar traçado de raios sem ficar contando bytes. É a faixa da GeForce RTX 5070, da RTX 4070 e da Arc B580, segundo as fichas oficiais dos três fabricantes.',
+          '🔵 16 GB — é o que você quer para 4K, para 1440p com traçado de raios pesado e para quem mexe com edição de vídeo, modelagem 3D ou modelos de inteligência artificial em casa, tarefas em que a memória da placa é limite duro. É a capacidade da RTX 5080, da RTX 5070 Ti, da versão de 16 GB da RTX 5060 Ti e das Radeon RX 9070 e RX 9070 XT.',
+          '🟣 24 GB ou mais — território de criação profissional e de quem quer 4K com tudo ligado sem pensar. A RTX 5090 chega a 32 GB de GDDR7 e a RTX 4090 a 24 GB de GDDR6X. Para jogar, é folga; para trabalhar com vídeo em alta resolução ou modelos grandes, pode ser necessidade.',
+          '🔴 6 GB ou menos — hoje é cenário de quebra-galho. Serve para jogos leves, títulos mais antigos e emulação, mas vários lançamentos recentes já colocam 6 GB no degrau de 30 quadros por segundo em 720p reescalado, como mostra a linha mínima do Monster Hunter Wilds.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Quanta VRAM vem nas placas atuais',
+        texto: 'Esta é a parte que resolve a dúvida na hora da compra: o mesmo nome comercial pode vir com duas capacidades diferentes. A tabela abaixo reproduz o que cada fabricante publica — o comparativo oficial de placas GeForce da NVIDIA, o comunicado da AMD sobre a RDNA 4 e a ficha da Intel na ARK.',
+      },
+      {
+        tipo: 'tabela',
+        colunas: ['Placa', 'VRAM oficial', 'Tipo de memória', 'Faixa de uso pela capacidade'],
+        linhas: [
+          ['GeForce RTX 5060', '8 GB', 'GDDR7', '1080p'],
+          ['GeForce RTX 5060 Ti', '8 GB ou 16 GB (duas versões)', 'GDDR7', '1080p na de 8 GB, 1440p na de 16 GB'],
+          ['GeForce RTX 5070', '12 GB', 'GDDR7', '1440p'],
+          ['GeForce RTX 5070 Ti', '16 GB', 'GDDR7', '1440p e 4K'],
+          ['GeForce RTX 5080', '16 GB', 'GDDR7', '4K'],
+          ['GeForce RTX 5090', '32 GB', 'GDDR7', '4K e criação de conteúdo'],
+          ['GeForce RTX 4060 / 4060 Ti', '8 GB (a 4060 Ti também em 16 GB)', 'GDDR6', '1080p, ou 1440p na de 16 GB'],
+          ['GeForce RTX 4070', '12 GB', 'GDDR6 ou GDDR6X', '1440p'],
+          ['Radeon RX 9070 e RX 9070 XT', '16 GB', 'GDDR6 em 256 bits', '1440p e 4K'],
+          ['Intel Arc B580', '12 GB', 'GDDR6, 456 GB/s', '1080p e 1440p'],
+        ],
+      },
+      {
+        tipo: 'destaque',
+        destaqueTipo: 'dica',
+        texto: '💡 Cuidado com as placas de nome igual e memória diferente. A RTX 5060 Ti existe em versão de 8 GB e de 16 GB; a RTX 4060 Ti, a RTX 3060 e a Radeon RX 9060 XT também tiveram capacidades diferentes sob o mesmo nome. Nos anúncios de loja, a capacidade às vezes aparece só na ficha técnica. Confira a quantidade de GB antes de fechar, e não só o modelo.',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Upscaling e geração de quadros entram na conta de VRAM?',
+        texto: 'Entram, mas de lados opostos, e vale entender a diferença porque os requisitos oficiais já contam com essas técnicas. A página oficial do DLSS descreve o Super Resolution como uma técnica que usa inteligência artificial para gerar quadros de resolução maior a partir de uma entrada de resolução menor. Já a geração de quadros produz quadros adicionais a partir dos quadros renderizados, com o Reflex cuidando da resposta dos comandos.',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '📉 Upscaling tende a aliviar: se o jogo renderiza internamente em 1080p e entrega 1440p na tela, os buffers internos trabalham com 2,07 milhões de pixels em vez de 3,69 milhões — 44% menos, pela conta da tabela de pixels. A imagem final é de 1440p, mas boa parte do trabalho interno é de 1080p.',
+          '📈 Geração de quadros trabalha com quadros guardados na memória para criar os intermediários, então não é de graça em espaço. A página oficial do DLSS não publica o custo em VRAM dessa etapa, e por isso não há número confiável para colocar aqui — o que existe é a indicação prática: em placa de 8 GB rodando 1440p, ligar geração de quadros é justamente onde o aperto costuma aparecer.',
+          '🎮 Quem tem acesso a quê, segundo a NVIDIA: o Super Resolution e o Ray Reconstruction funcionam nas séries RTX 20, 30, 40 e 50; a geração de quadros exige RTX 40 ou 50; e a geração de múltiplos quadros, que produz até cinco quadros por quadro renderizado, é exclusiva da série RTX 50 com os núcleos Tensor de quinta geração.',
+          '🧠 Qualidade de imagem também evoluiu: a NVIDIA descreve o modelo transformer de segunda geração, introduzido com o DLSS 4.5, aplicado ao Super Resolution e ao Ray Reconstruction, com ganho de estabilidade temporal e clareza em movimento.',
+          '⚖️ Conclusão prática: upscaling é uma ajuda real para quem tem pouca VRAM, mas não transforma uma placa de 8 GB em uma de 12 GB. Ele reduz o peso dos buffers, não o tamanho das texturas que o jogo quer carregar.',
+        ],
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Como saber quanta VRAM você tem e quando ela está faltando',
+        texto: 'Antes de trocar de placa, vale confirmar duas coisas: quanta memória você tem de fato e se é ela que está limitando o seu jogo.',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          '📄 Confirme pela ficha oficial do modelo. É o jeito mais confiável: o comparativo de placas GeForce da NVIDIA, a ARK da Intel e as páginas da AMD listam a capacidade por modelo. Isso evita a confusão com placas de nome igual e memória diferente.',
+          '🔎 Desconfie da "memória total aproximada". A própria Microsoft documenta, em um artigo de suporte arquivado (KB 2026022), que a ferramenta de diagnóstico do DirectX pode informar um valor baixo demais de memória total aproximada em sistemas com 1 GB ou mais de memória de vídeo e 4 GB ou mais de RAM, porque a interface usada para estimar esse valor não foi feita para essa configuração. Esse número também soma memória compartilhada do sistema, então não é a sua VRAM real.',
+          '🐢 Sinais de VRAM no limite: textura que aparece desfocada e só fica nítida alguns segundos depois, engasgo ao virar a câmera em área nova, queda de fluidez que piora conforme o tempo de jogo aumenta e volta ao normal depois de reiniciar a partida.',
+          '🎛️ Teste barato antes de comprar: baixe apenas a qualidade de textura um degrau, sem mexer em mais nada. Se o engasgo desaparece e os quadros por segundo quase não mudam, o limite era memória. Se os quadros continuam baixos do mesmo jeito, o limite é o poder de cálculo da placa — e aí mais VRAM não resolveria nada.',
+          '🧮 Veja o conjunto. Uma placa forte presa a um processador antigo também engasga, e o sintoma se parece. Vale checar o equilíbrio entre processador e placa antes de culpar a memória.',
+        ],
+      },
+      {
+        tipo: 'cta',
+        ctaTexto: 'Comparar placas de vídeo e a VRAM de cada uma →',
+        ctaHref: '/catalogo',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Conclusão',
+        texto: 'A resposta curta, pelos números oficiais de 23 de novembro de 2026: 8 GB para 1080p, 12 GB para 1440p e 16 GB para 4K ou para 1440p com traçado de raios pesado. Os requisitos publicados pelos próprios estúdios caminham nessa direção — 8 GB é o que pedem para 1080p a 60 quadros em preset médio, e 12 GB é o que pedem para 1440p nativo em preset alto. O erro mais comum não é comprar pouca VRAM: é comprar uma placa de 8 GB imaginando jogar em 1440p com tudo no máximo, e depois culpar o jogo. Decida primeiro a resolução do monitor que você vai usar nos próximos anos; a quantidade de memória sai dessa decisão quase sozinha. E, na hora de fechar a compra, confira os GB na ficha técnica, porque o mesmo nome comercial pode esconder duas placas bem diferentes.',
+      },
+      {
+        tipo: 'h2',
+        titulo: 'Fontes consultadas',
+      },
+      {
+        tipo: 'lista',
+        itens: [
+          'Compare GeForce Graphics Cards — NVIDIA (https://www.nvidia.com/en-us/geforce/graphics-cards/compare/)',
+          'NVIDIA DLSS — Tecnologias GeForce — NVIDIA (https://www.nvidia.com/en-us/geforce/technologies/dlss/)',
+          'AMD Unveils Next-Generation AMD RDNA 4 Architecture with the Launch of Radeon RX 9000 Series Graphics Cards — AMD Investor Relations (https://ir.amd.com/news-events/press-releases/detail/1238/amd-unveils-next-generation-amd-rdna-4-architecture-with-the-launch-of-radeon-rx-9000-series-graphics-cards)',
+          'Intel Arc B580 Graphics — Especificações — Intel ARK (https://www.intel.com/content/www/us/en/products/sku/241598/intel-arc-b580-graphics/specifications.html)',
+          'Monster Hunter Wilds — Requisitos de sistema — Steam (https://store.steampowered.com/app/2246340/Monster_Hunter_Wilds/)',
+          'Indiana Jones and the Great Circle — Requisitos de sistema — Steam (https://store.steampowered.com/app/2677660/Indiana_Jones_and_the_Great_Circle/)',
+          'DXDIAG reports low display adapters memory (KB 2026022) — Microsoft Learn (https://learn.microsoft.com/en-US/troubleshoot/windows-server/application-management/low-amount-display-adapter-memory)',
+        ],
+      },
+    ],
+    faq: [
+      {
+        pergunta: '8 GB de VRAM ainda são suficientes em 2026?',
+        resposta: 'Para 1080p, sim, e os próprios estúdios confirmam: o requisito recomendado do Monster Hunter Wilds para 1080p a 60 FPS em preset médio é uma RTX 2060 Super de 8 GB ou uma RX 6600 de 8 GB. O problema aparece em 1440p, com texturas no máximo ou com traçado de raios ligado. Se o seu monitor é 1080p e você aceita presets médios, 8 GB continuam dando conta.',
+      },
+      {
+        pergunta: 'Mais VRAM aumenta o FPS?',
+        resposta: 'Não diretamente. VRAM é espaço, não velocidade de cálculo. Memória sobrando não gera um quadro a mais. O que ela evita é a queda brusca que acontece quando falta espaço e a placa precisa buscar dados pelo PCI Express, que é muito mais lento que a memória da própria placa. Em resumo: VRAM suficiente protege a fluidez; VRAM extra, além do que o jogo usa, não faz diferença.',
+      },
+      {
+        pergunta: 'Quanta VRAM preciso para jogar em 4K?',
+        resposta: '16 GB é o alvo sensato, e é a capacidade das placas que os fabricantes posicionam nessa resolução, como a RTX 5080, a RTX 5070 Ti e as Radeon RX 9070 e RX 9070 XT. O 4K tem quatro vezes os pixels do 1080p, e quem joga nessa resolução normalmente quer texturas no máximo, que é justamente o ajuste que mais ocupa memória.',
+      },
+      {
+        pergunta: 'Posso aumentar a VRAM da minha placa de vídeo?',
+        resposta: 'Não. A memória é soldada na placa e a quantidade é definida de fábrica. Ajustes de memória compartilhada no Windows ou na BIOS valem para gráficos integrados, que usam um pedaço da RAM do sistema, e não aumentam a memória dedicada de uma placa de vídeo. A única forma de ter mais VRAM é trocar de placa.',
+      },
+      {
+        pergunta: 'DLSS e FSR resolvem a falta de VRAM?',
+        resposta: 'Ajudam, mas não resolvem. O upscaling renderiza internamente em resolução menor e reconstrói a imagem maior, o que reduz o tamanho das imagens intermediárias — entregar 1440p a partir de 1080p significa trabalhar com 44% menos pixels nesses buffers. O tamanho das texturas, porém, não muda. E a geração de quadros, que precisa guardar quadros na memória, costuma apertar ainda mais uma placa de 8 GB.',
+      },
+    ],
+  },
 ]
 
 export function getArtigos() {
